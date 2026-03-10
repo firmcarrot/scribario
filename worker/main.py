@@ -45,20 +45,101 @@ class Worker:
         logger.info("Worker stop requested")
 
     async def poll_once(self) -> dict | None:
-        """Poll pgmq for one message.
+        """Poll job_queue table for one queued job.
 
-        TODO: Wire up actual pgmq via Supabase client.
-        Fallback: SELECT ... FROM jobs WHERE status='queued'
-                  ORDER BY created_at FOR UPDATE SKIP LOCKED LIMIT 1
+        Uses the fallback job_queue table with status-based locking.
+        Atomically claims the job by setting status='processing' and locked_by.
         """
-        # Placeholder — will be replaced with real pgmq or fallback query
-        return None
+        from bot.db import get_supabase_client
+
+        try:
+            client = get_supabase_client()
+
+            # Find and claim one queued job
+            result = (
+                client.table("job_queue")
+                .select("*")
+                .eq("status", "queued")
+                .lte("scheduled_for", "now()")
+                .order("created_at")
+                .limit(1)
+                .execute()
+            )
+
+            if not result.data:
+                return None
+
+            job = result.data[0]
+            job_id = job["id"]
+
+            # Claim the job (optimistic — if another worker claimed it, the update returns empty)
+            claim_result = (
+                client.table("job_queue")
+                .update({"status": "processing", "locked_by": f"worker-{id(self)}"})
+                .eq("id", job_id)
+                .eq("status", "queued")  # Only claim if still queued
+                .execute()
+            )
+
+            if not claim_result.data:
+                return None  # Another worker claimed it
+
+            claimed = claim_result.data[0]
+            payload = claimed.get("payload", {})
+            payload["id"] = job_id
+            payload["type"] = claimed["job_type"]
+            payload["_queue_id"] = job_id  # For marking complete/failed later
+            return payload
+
+        except Exception:
+            logger.exception("Error polling job queue")
+            return None
+
+    async def _mark_job_complete(self, queue_id: str) -> None:
+        """Mark a job as completed in the queue."""
+        from bot.db import get_supabase_client
+        try:
+            client = get_supabase_client()
+            client.table("job_queue").update({
+                "status": "completed",
+                "completed_at": "now()",
+            }).eq("id", queue_id).execute()
+        except Exception:
+            logger.exception("Failed to mark job complete", extra={"queue_id": queue_id})
+
+    async def _mark_job_failed(self, queue_id: str, error: str) -> None:
+        """Mark a job as failed, or re-queue if retries remain."""
+        from bot.db import get_supabase_client
+        try:
+            client = get_supabase_client()
+            # Get current retry count
+            result = client.table("job_queue").select("retry_count, max_retries").eq("id", queue_id).execute()
+            if result.data:
+                job = result.data[0]
+                if job["retry_count"] < job["max_retries"]:
+                    # Re-queue with incremented retry count
+                    client.table("job_queue").update({
+                        "status": "queued",
+                        "retry_count": job["retry_count"] + 1,
+                        "locked_by": None,
+                        "error_message": error,
+                    }).eq("id", queue_id).execute()
+                else:
+                    # Max retries exceeded — mark as dead
+                    client.table("job_queue").update({
+                        "status": "dead",
+                        "failed_at": "now()",
+                        "error_message": error,
+                    }).eq("id", queue_id).execute()
+        except Exception:
+            logger.exception("Failed to mark job failed", extra={"queue_id": queue_id})
 
     async def _process_job(self, message: dict) -> None:
         """Process a single job with concurrency limiting."""
         async with self._semaphore:
             job_type = message.get("type", "unknown")
             job_id = message.get("id", "unknown")
+            queue_id = message.get("_queue_id", job_id)
 
             handler = JOB_HANDLERS.get(job_type)
             if not handler:
@@ -69,10 +150,10 @@ class Worker:
                 logger.info("Processing job", extra={"job_id": job_id, "type": job_type})
                 await handler(message)
                 logger.info("Job completed", extra={"job_id": job_id, "type": job_type})
-                # TODO: Delete message from pgmq / mark job as completed
-            except Exception:
+                await self._mark_job_complete(queue_id)
+            except Exception as e:
                 logger.exception("Job failed", extra={"job_id": job_id, "type": job_type})
-                # TODO: Increment retry count, re-enqueue or mark as failed
+                await self._mark_job_failed(queue_id, str(e))
 
     async def run(self) -> None:
         """Main worker loop — poll, dispatch, repeat."""
@@ -107,9 +188,11 @@ async def main() -> None:
 
     # Register job handlers
     from worker.jobs.generate_caption import handle_generate_caption
+    from worker.jobs.generate_content import handle_generate_content
     from worker.jobs.generate_image import handle_generate_image
     from worker.jobs.post_content import handle_post_content
 
+    register_handler("generate_content", handle_generate_content)
     register_handler("generate_caption", handle_generate_caption)
     register_handler("generate_image", handle_generate_image)
     register_handler("post_content", handle_post_content)

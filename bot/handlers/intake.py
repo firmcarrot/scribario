@@ -3,14 +3,11 @@
 from __future__ import annotations
 
 import logging
-import uuid
-from typing import TYPE_CHECKING
 
 from aiogram import F, Router
 from aiogram.types import Message
 
-if TYPE_CHECKING:
-    pass
+from bot.db import create_content_request, enqueue_job, get_tenant_by_telegram_user
 
 logger = logging.getLogger(__name__)
 
@@ -21,23 +18,50 @@ router = Router(name="intake")
 async def handle_content_request(message: Message) -> None:
     """Handle free-text messages as content creation requests.
 
-    Flow: user message → create content_request in DB → enqueue generation job → ack to user.
+    Flow: user message → look up tenant → create content_request → enqueue generation → ack.
     """
     user = message.from_user
     if not user or not message.text:
         return
 
-    request_id = str(uuid.uuid4())
     intent = message.text.strip()
+
+    # Look up tenant for this Telegram user
+    membership = await get_tenant_by_telegram_user(user.id)
+    if not membership:
+        await message.answer(
+            "You're not connected to any brand yet.\n"
+            "Use /start to set up your account."
+        )
+        return
+
+    tenant_id = membership["tenant_id"]
 
     logger.info(
         "Content request received",
-        extra={"request_id": request_id, "user_id": user.id, "intent": intent[:100]},
+        extra={"user_id": user.id, "tenant_id": tenant_id, "intent": intent[:100]},
     )
 
-    # TODO: Look up tenant_id from telegram_user_id via tenant_members
-    # TODO: Insert content_request row (status='pending')
-    # TODO: Enqueue generation job to pgmq
+    # Create content request in database
+    request = await create_content_request(
+        tenant_id=tenant_id,
+        intent=intent,
+        platform_targets=["instagram", "facebook"],
+    )
+    request_id = request["id"]
+
+    # Enqueue generation job
+    await enqueue_job(
+        queue_name="content_generation",
+        job_type="generate_content",
+        payload={
+            "request_id": request_id,
+            "tenant_id": tenant_id,
+            "intent": intent,
+            "platform_targets": ["instagram", "facebook"],
+        },
+        idempotency_key=f"{request_id}:generate_content",
+    )
 
     await message.answer(
         "Got it! I'm generating content for:\n\n"

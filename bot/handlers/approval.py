@@ -2,48 +2,111 @@
 
 from __future__ import annotations
 
+import hashlib
 import logging
 
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
 
+from bot.db import (
+    create_feedback_event,
+    create_posting_job,
+    enqueue_job,
+    get_draft,
+    update_draft_status,
+)
+
 logger = logging.getLogger(__name__)
 
 router = Router(name="approval")
 
-# Callback data format: "approve:{draft_id}" / "reject:{draft_id}" / "edit:{draft_id}"
+# Callback data format: "approve:{draft_id}" / "reject:{draft_id}" / "regen:{draft_id}"
 
 
 @router.callback_query(F.data.startswith("approve:"))
 async def handle_approve(callback: CallbackQuery) -> None:
-    """Handle approval — mark draft as approved, enqueue posting job."""
+    """Handle approval — mark draft as approved, enqueue posting jobs."""
     if not callback.data:
         return
 
     draft_id = callback.data.split(":", 1)[1]
     logger.info("Draft approved", extra={"draft_id": draft_id})
 
-    # TODO: Update content_draft status → 'approved'
-    # TODO: Create posting_jobs for each target platform
-    # TODO: Enqueue posting jobs to pgmq
+    # Get draft details
+    draft = await get_draft(draft_id)
+    if not draft:
+        await callback.answer("Draft not found.")
+        return
+
+    tenant_id = draft["tenant_id"]
+
+    # Update draft status
+    await update_draft_status(draft_id, "approved")
+
+    # Record feedback
+    await create_feedback_event(draft_id=draft_id, tenant_id=tenant_id, action="approve")
+
+    # Pick first caption variant (user selected this option)
+    caption_variants = draft.get("caption_variants", [])
+    caption = caption_variants[0]["text"] if caption_variants else ""
+    image_urls = draft.get("image_urls", [])
+
+    # Create posting jobs for each target platform
+    # TODO: Get platform_targets from content_request, not hardcoded
+    for platform in ["instagram", "facebook"]:
+        idempotency_key = hashlib.sha256(
+            f"{draft_id}:post_content:{platform}".encode()
+        ).hexdigest()
+
+        job = await create_posting_job(
+            draft_id=draft_id,
+            tenant_id=tenant_id,
+            platform=platform,
+            caption=caption,
+            asset_urls=image_urls,
+            idempotency_key=idempotency_key,
+        )
+
+        await enqueue_job(
+            queue_name="posting",
+            job_type="post_content",
+            payload={
+                "job_id": job["id"],
+                "draft_id": draft_id,
+                "tenant_id": tenant_id,
+                "platform": platform,
+                "caption": caption,
+                "image_urls": image_urls,
+            },
+            idempotency_key=f"{draft_id}:post:{platform}",
+        )
 
     await callback.answer("Approved! Posting now...")
     if callback.message:
         await callback.message.edit_reply_markup(reply_markup=None)
-        await callback.message.reply("Your content is being posted to all connected platforms.")
+        await callback.message.reply(
+            "Your content is being posted to all connected platforms."
+        )
 
 
 @router.callback_query(F.data.startswith("reject:"))
 async def handle_reject(callback: CallbackQuery) -> None:
-    """Handle rejection — mark draft as rejected, optionally regenerate."""
+    """Handle rejection — mark draft as rejected."""
     if not callback.data:
         return
 
     draft_id = callback.data.split(":", 1)[1]
     logger.info("Draft rejected", extra={"draft_id": draft_id})
 
-    # TODO: Update content_draft status → 'rejected'
-    # TODO: Log feedback_event
+    draft = await get_draft(draft_id)
+    if not draft:
+        await callback.answer("Draft not found.")
+        return
+
+    await update_draft_status(draft_id, "rejected")
+    await create_feedback_event(
+        draft_id=draft_id, tenant_id=draft["tenant_id"], action="reject"
+    )
 
     await callback.answer("Rejected.")
     if callback.message:
@@ -63,8 +126,27 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
     draft_id = callback.data.split(":", 1)[1]
     logger.info("Regeneration requested", extra={"draft_id": draft_id})
 
-    # TODO: Get original content_request from draft
-    # TODO: Enqueue new generation job
+    draft = await get_draft(draft_id)
+    if not draft:
+        await callback.answer("Draft not found.")
+        return
+
+    await create_feedback_event(
+        draft_id=draft_id, tenant_id=draft["tenant_id"], action="regenerate"
+    )
+
+    # Re-enqueue generation for the original request
+    await enqueue_job(
+        queue_name="content_generation",
+        job_type="generate_content",
+        payload={
+            "request_id": draft["request_id"],
+            "tenant_id": draft["tenant_id"],
+            "intent": "",  # Worker will reload from content_request
+            "platform_targets": ["instagram", "facebook"],
+        },
+        idempotency_key=f"{draft_id}:regenerate",
+    )
 
     await callback.answer("Regenerating...")
     if callback.message:

@@ -67,25 +67,81 @@ def format_brand_context(profile: BrandProfile, examples: list[FewShotExample]) 
 
 
 async def load_brand_profile(tenant_id: str) -> BrandProfile | None:
-    """Load brand profile from Supabase for a tenant.
+    """Load brand profile from Supabase for a tenant."""
+    from bot.db import get_supabase_client
 
-    TODO: Wire up Supabase client query.
-    """
     logger.info("Loading brand profile", extra={"tenant_id": tenant_id})
-    # TODO: Query brand_profiles table
-    return None
+
+    try:
+        client = get_supabase_client()
+        result = (
+            client.table("brand_profiles")
+            .select("*, tenants(name)")
+            .eq("tenant_id", tenant_id)
+            .limit(1)
+            .execute()
+        )
+
+        if not result.data:
+            return None
+
+        row = result.data[0]
+        tenant_name = "Brand"
+        tenants_data = row.get("tenants")
+        if isinstance(tenants_data, dict):
+            tenant_name = tenants_data.get("name", tenant_name)
+
+        return BrandProfile(
+            tenant_id=tenant_id,
+            name=tenant_name,
+            tone_words=row.get("tone_words", []),
+            audience_description=row.get("audience_description", ""),
+            do_list=row.get("do_list", []),
+            dont_list=row.get("dont_list", []),
+            product_catalog=row.get("product_catalog"),
+            compliance_notes=row.get("compliance_notes", ""),
+        )
+    except Exception:
+        logger.exception("Failed to load brand profile", extra={"tenant_id": tenant_id})
+        return None
 
 
 async def load_few_shot_examples(
     tenant_id: str, platform: str | None = None, limit: int = 5
 ) -> list[FewShotExample]:
-    """Load few-shot examples from Supabase.
+    """Load few-shot examples from Supabase."""
+    from bot.db import get_supabase_client
 
-    TODO: Wire up Supabase client query.
-    """
     logger.info(
         "Loading few-shot examples",
         extra={"tenant_id": tenant_id, "platform": platform, "limit": limit},
     )
-    # TODO: Query few_shot_examples table, optionally filtered by platform
-    return []
+
+    try:
+        client = get_supabase_client()
+        query = (
+            client.table("few_shot_examples")
+            .select("*")
+            .eq("tenant_id", tenant_id)
+            .order("engagement_score", desc=True)
+            .limit(limit)
+        )
+
+        if platform:
+            query = query.eq("platform", platform)
+
+        result = query.execute()
+
+        return [
+            FewShotExample(
+                platform=row["platform"],
+                content_type=row["content_type"],
+                caption=row["caption"],
+                image_url=row.get("image_url"),
+                engagement_score=row.get("engagement_score"),
+            )
+            for row in result.data
+        ]
+    except Exception:
+        logger.exception("Failed to load few-shot examples", extra={"tenant_id": tenant_id})
+        return []
