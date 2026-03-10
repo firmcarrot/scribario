@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   bot:
     build:
@@ -24,7 +22,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgresql://postiz:postiz@postiz-db:5432/postiz
+      - DATABASE_URL=postgresql://${POSTIZ_DB_USER:-postiz}:${POSTIZ_DB_PASSWORD:-postiz}@postiz-db:5432/postiz
       - REDIS_URL=redis://postiz-redis:6379
     restart: unless-stopped
     depends_on:
@@ -34,8 +32,8 @@ services:
   postiz-db:
     image: postgres:16-alpine
     environment:
-      POSTGRES_USER: postiz
-      POSTGRES_PASSWORD: postiz
+      POSTGRES_USER: ${POSTIZ_DB_USER:-postiz}
+      POSTGRES_PASSWORD: ${POSTIZ_DB_PASSWORD:-postiz}
       POSTGRES_DB: postiz
     volumes:
       - postiz-db-data:/var/lib/postgresql/data

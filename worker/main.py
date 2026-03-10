@@ -11,7 +11,7 @@ import logging
 import signal
 from typing import Any
 
-from bot.config import settings
+from bot.config import get_settings
 
 logger = logging.getLogger(__name__)
 
@@ -33,8 +33,8 @@ class Worker:
         max_concurrency: int | None = None,
         poll_interval: int | None = None,
     ) -> None:
-        self._max_concurrency = max_concurrency or settings.max_worker_concurrency
-        self._poll_interval = poll_interval or settings.worker_poll_interval_seconds
+        self._max_concurrency = max_concurrency or get_settings().max_worker_concurrency
+        self._poll_interval = poll_interval or get_settings().worker_poll_interval_seconds
         self._semaphore = asyncio.Semaphore(self._max_concurrency)
         self._running = True
         self._active_tasks: set[asyncio.Task] = set()  # type: ignore[type-arg]

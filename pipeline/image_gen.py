@@ -13,7 +13,7 @@ from dataclasses import dataclass
 
 import httpx
 
-from bot.config import settings
+from bot.config import get_settings
 
 logger = logging.getLogger(__name__)
 
@@ -50,7 +50,16 @@ class KieAiProvider(ImageProvider):
 
     def __init__(self, api_key: str) -> None:
         self._api_key = api_key
-        self._client = httpx.AsyncClient(timeout=120.0)
+        self._client: httpx.AsyncClient | None = None
+
+    def _get_client(self) -> httpx.AsyncClient:
+        if self._client is None or self._client.is_closed:
+            self._client = httpx.AsyncClient(timeout=120.0)
+        return self._client
+
+    async def close(self) -> None:
+        if self._client and not self._client.is_closed:
+            await self._client.aclose()
 
     @property
     def name(self) -> str:
@@ -73,7 +82,7 @@ class KieAiProvider(ImageProvider):
             "aspect_ratio": aspect_ratio,
         }
 
-        response = await self._client.post(
+        response = await self._get_client().post(
             f"{self.BASE_URL}/v1/images/generate",
             headers=headers,
             json=payload,
@@ -96,8 +105,8 @@ class ImageGenerationService:
         if providers is None:
             # Default: Kie.ai only for MVP
             providers = []
-            if settings.kie_ai_api_key:
-                providers.append(KieAiProvider(settings.kie_ai_api_key))
+            if get_settings().kie_ai_api_key:
+                providers.append(KieAiProvider(get_settings().kie_ai_api_key))
 
         self._providers = providers
 

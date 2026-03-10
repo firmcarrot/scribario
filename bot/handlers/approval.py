@@ -13,6 +13,7 @@ from bot.db import (
     create_posting_job,
     enqueue_job,
     get_draft,
+    get_tenant_by_telegram_user,
     update_draft_status,
 )
 
@@ -23,6 +24,33 @@ router = Router(name="approval")
 # Callback data format: "approve:{draft_id}" / "reject:{draft_id}" / "regen:{draft_id}"
 
 
+async def _validate_draft_access(
+    callback: CallbackQuery, draft_id: str
+) -> dict | None:
+    """Validate that the calling user owns the draft's tenant. Returns draft or None."""
+    user = callback.from_user
+    if not user:
+        await callback.answer("Unknown user.")
+        return None
+
+    draft = await get_draft(draft_id)
+    if not draft:
+        await callback.answer("Draft not found.")
+        return None
+
+    # Verify the user belongs to the draft's tenant
+    membership = await get_tenant_by_telegram_user(user.id)
+    if not membership or membership["tenant_id"] != draft["tenant_id"]:
+        logger.warning(
+            "Unauthorized draft access attempt",
+            extra={"user_id": user.id, "draft_id": draft_id},
+        )
+        await callback.answer("You don't have access to this content.")
+        return None
+
+    return draft
+
+
 @router.callback_query(F.data.startswith("approve:"))
 async def handle_approve(callback: CallbackQuery) -> None:
     """Handle approval — mark draft as approved, enqueue posting jobs."""
@@ -30,13 +58,13 @@ async def handle_approve(callback: CallbackQuery) -> None:
         return
 
     draft_id = callback.data.split(":", 1)[1]
-    logger.info("Draft approved", extra={"draft_id": draft_id})
 
-    # Get draft details
-    draft = await get_draft(draft_id)
+    # Validate user has access to this draft
+    draft = await _validate_draft_access(callback, draft_id)
     if not draft:
-        await callback.answer("Draft not found.")
         return
+
+    logger.info("Draft approved", extra={"draft_id": draft_id})
 
     tenant_id = draft["tenant_id"]
 
@@ -96,12 +124,12 @@ async def handle_reject(callback: CallbackQuery) -> None:
         return
 
     draft_id = callback.data.split(":", 1)[1]
-    logger.info("Draft rejected", extra={"draft_id": draft_id})
 
-    draft = await get_draft(draft_id)
+    draft = await _validate_draft_access(callback, draft_id)
     if not draft:
-        await callback.answer("Draft not found.")
         return
+
+    logger.info("Draft rejected", extra={"draft_id": draft_id})
 
     await update_draft_status(draft_id, "rejected")
     await create_feedback_event(
@@ -124,12 +152,12 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         return
 
     draft_id = callback.data.split(":", 1)[1]
-    logger.info("Regeneration requested", extra={"draft_id": draft_id})
 
-    draft = await get_draft(draft_id)
+    draft = await _validate_draft_access(callback, draft_id)
     if not draft:
-        await callback.answer("Draft not found.")
         return
+
+    logger.info("Regeneration requested", extra={"draft_id": draft_id})
 
     await create_feedback_event(
         draft_id=draft_id, tenant_id=draft["tenant_id"], action="regenerate"

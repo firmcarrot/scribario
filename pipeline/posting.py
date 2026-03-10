@@ -7,7 +7,7 @@ from dataclasses import dataclass
 
 import httpx
 
-from bot.config import settings
+from bot.config import get_settings
 
 logger = logging.getLogger(__name__)
 
@@ -27,8 +27,8 @@ class PostizClient:
     """Client for Postiz self-hosted posting API."""
 
     def __init__(self, base_url: str | None = None, api_key: str | None = None) -> None:
-        self._base_url = (base_url or settings.postiz_url).rstrip("/")
-        self._api_key = api_key or settings.postiz_api_key
+        self._base_url = (base_url or get_settings().postiz_url).rstrip("/")
+        self._api_key = api_key or get_settings().postiz_api_key
         self._client = httpx.AsyncClient(timeout=60.0)
 
     async def post(

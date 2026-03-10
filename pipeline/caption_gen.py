@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 import anthropic
 
-from bot.config import settings
+from bot.config import get_settings
 from pipeline.brand_voice import BrandProfile, FewShotExample, format_brand_context
 
 logger = logging.getLogger(__name__)
@@ -72,7 +72,7 @@ async def generate_captions(
         f"Each option should have a different angle or approach."
     )
 
-    client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
+    client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
 
     try:
         response = await client.messages.create(
@@ -87,6 +87,11 @@ async def generate_captions(
         for block in response.content:
             if block.type == "text":
                 text_content += block.text
+
+        # Strip markdown fences if Claude wraps JSON in code blocks
+        text_content = text_content.strip()
+        if text_content.startswith("```"):
+            text_content = text_content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
 
         # Parse JSON response
         parsed = json.loads(text_content)

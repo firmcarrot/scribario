@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from bot.config import settings
+from bot.config import get_settings
 from bot.handlers import approval, intake, onboarding
 
 logger = logging.getLogger(__name__)
@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 def create_bot() -> Bot:
     """Create and configure the Telegram bot instance."""
     return Bot(
-        token=settings.telegram_bot_token,
+        token=get_settings().telegram_bot_token,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
 

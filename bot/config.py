@@ -42,7 +42,3 @@ class Settings(BaseSettings):
 def get_settings() -> Settings:
     """Lazy-load settings singleton. Validates env vars only when first called."""
     return Settings()
-
-
-# Convenience accessor — lazy, won't blow up at import time
-settings = get_settings()
