@@ -6,6 +6,7 @@ then sends the preview back to the user via Telegram.
 
 from __future__ import annotations
 
+import asyncio
 import logging
 
 from aiogram import Bot
@@ -113,7 +114,6 @@ async def handle_generate_content(message: dict) -> None:
             logger.exception("Image generation failed for one variant")
             return ""
 
-    import asyncio
     images = await asyncio.gather(*[_generate_one(cap) for cap in captions])
 
     # Step 3: Create draft in database
@@ -176,68 +176,73 @@ async def _send_preview(
 
     try:
         keyboard = build_preview_keyboard(draft_id, num_options=len(captions))
+        sent = None
 
-        # If we have images, send each option as a photo with caption
-        if image_urls:
-            for i, cap in enumerate(captions):
-                image_url = image_urls[i] if i < len(image_urls) else None
-                caption_text = (
-                    f"<b>Option {i + 1}:</b>\n{cap.text}"
-                )
-                # Telegram photo captions max 1024 chars
-                if len(caption_text) > 1020:
-                    caption_text = caption_text[:1017] + "..."
-
-                if image_url:
-                    await bot.send_photo(
-                        chat_id=chat_id,
-                        photo=image_url,
-                        caption=caption_text,
-                        parse_mode=ParseMode.HTML,
+        try:
+            # If we have images, send each option as a photo with caption
+            if image_urls:
+                for i, cap in enumerate(captions):
+                    image_url = image_urls[i] if i < len(image_urls) else None
+                    caption_text = (
+                        f"<b>Option {i + 1}:</b>\n{cap.text}"
                     )
-                else:
-                    await bot.send_message(chat_id=chat_id, text=caption_text)
+                    # Telegram photo captions max 1024 chars
+                    if len(caption_text) > 1020:
+                        caption_text = caption_text[:1017] + "..."
 
-            # Send the action buttons as a separate message
-            footer = (
-                f"<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
-                "<i>Tap Approve to post the option you like, Reject All to skip, "
-                "or Regenerate for new options.</i>"
+                    if image_url:
+                        await bot.send_photo(
+                            chat_id=chat_id,
+                            photo=image_url,
+                            caption=caption_text,
+                            parse_mode=ParseMode.HTML,
+                        )
+                    else:
+                        await bot.send_message(chat_id=chat_id, text=caption_text)
+
+                # Send the action buttons as a separate message
+                footer = (
+                    f"<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
+                    "<i>Tap Approve to post the option you like, Reject All to skip, "
+                    "or Regenerate for new options.</i>"
+                )
+                sent = await bot.send_message(
+                    chat_id=chat_id, text=footer, reply_markup=keyboard
+                )
+            else:
+                # No images — text-only preview
+                lines = ["<b>Here are your caption options:</b>\n"]
+                for i, cap in enumerate(captions, 1):
+                    lines.append(f"<b>Option {i}:</b>\n{cap.text}\n")
+
+                preview_text = "\n".join(lines)
+                preview_text += (
+                    f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
+                    "<i>Tap Approve to post, Reject All to skip, or Regenerate for new options.</i>"
+                )
+
+                if len(preview_text) > 4000:
+                    preview_text = preview_text[:3997] + "..."
+
+                sent = await bot.send_message(
+                    chat_id=chat_id, text=preview_text, reply_markup=keyboard
+                )
+        except Exception:
+            logger.exception("Failed to send Telegram preview", extra={"draft_id": draft_id})
+
+        # Always update DB state — even if Telegram send partially failed
+        if sent:
+            await create_approval_request(
+                draft_id=draft_id,
+                tenant_id=tenant_id,
+                telegram_message_id=sent.message_id,
+                telegram_chat_id=chat_id,
             )
-            sent = await bot.send_message(
-                chat_id=chat_id, text=footer, reply_markup=keyboard
-            )
+            await update_draft_status(draft_id, "previewing")
+            logger.info("Preview sent", extra={"draft_id": draft_id, "chat_id": chat_id})
         else:
-            # No images — text-only preview (same as before)
-            lines = ["<b>Here are your caption options:</b>\n"]
-            for i, cap in enumerate(captions, 1):
-                lines.append(f"<b>Option {i}:</b>\n{cap.text}\n")
-
-            preview_text = "\n".join(lines)
-            preview_text += (
-                f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
-                "<i>Tap Approve to post, Reject All to skip, or Regenerate for new options.</i>"
-            )
-
-            if len(preview_text) > 4000:
-                preview_text = preview_text[:3997] + "..."
-
-            sent = await bot.send_message(
-                chat_id=chat_id, text=preview_text, reply_markup=keyboard
-            )
-
-        # Record approval request
-        await create_approval_request(
-            draft_id=draft_id,
-            tenant_id=tenant_id,
-            telegram_message_id=sent.message_id,
-            telegram_chat_id=chat_id,
-        )
-
-        # Update draft status to previewing
-        await update_draft_status(draft_id, "previewing")
-
-        logger.info("Preview sent", extra={"draft_id": draft_id, "chat_id": chat_id})
+            # Telegram failed — mark draft so it can be retried
+            logger.error("Preview send failed — draft stays in generated state", extra={"draft_id": draft_id})
 
     finally:
         await bot.session.close()

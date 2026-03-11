@@ -70,6 +70,11 @@ async def handle_approve(callback: CallbackQuery) -> None:
     if not draft:
         return
 
+    # Prevent double-click: only approve if still in "previewing" state
+    if draft.get("status") != "previewing":
+        await callback.answer("Already handled.")
+        return
+
     logger.info("Draft approved", extra={"draft_id": draft_id, "option": option_idx + 1})
 
     tenant_id = draft["tenant_id"]
@@ -140,6 +145,10 @@ async def handle_reject(callback: CallbackQuery) -> None:
     if not draft:
         return
 
+    if draft.get("status") != "previewing":
+        await callback.answer("Already handled.")
+        return
+
     logger.info("Draft rejected", extra={"draft_id": draft_id})
 
     await update_draft_status(draft_id, "rejected")
@@ -166,6 +175,10 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
 
     draft = await _validate_draft_access(callback, draft_id)
     if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
         return
 
     logger.info("Regeneration requested", extra={"draft_id": draft_id})
