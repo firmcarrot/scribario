@@ -8,6 +8,7 @@ from aiogram import F, Router
 from aiogram.types import Message
 
 from bot.db import create_content_request, enqueue_job, get_tenant_by_telegram_user
+from bot.handlers.photos import _pending_post_photos
 
 logger = logging.getLogger(__name__)
 
@@ -50,22 +51,32 @@ async def handle_content_request(message: Message) -> None:
     )
     request_id = request["id"]
 
+    # Check if user has a pending photo from "Create a Post" tap
+    pending_photo = _pending_post_photos.pop(user.id, None)
+    new_photo_storage_paths = [pending_photo["storage_path"]] if pending_photo else []
+
     # Enqueue generation job
+    payload: dict = {
+        "request_id": request_id,
+        "tenant_id": tenant_id,
+        "intent": intent,
+        "platform_targets": ["instagram", "facebook"],
+        "telegram_chat_id": message.chat.id,
+    }
+    if new_photo_storage_paths:
+        payload["new_photo_storage_paths"] = new_photo_storage_paths
+
     await enqueue_job(
         queue_name="content_generation",
         job_type="generate_content",
-        payload={
-            "request_id": request_id,
-            "tenant_id": tenant_id,
-            "intent": intent,
-            "platform_targets": ["instagram", "facebook"],
-            "telegram_chat_id": message.chat.id,
-        },
+        payload=payload,
         idempotency_key=f"{request_id}:generate_content",
     )
 
+    photo_note = " I'll use your photo as a reference." if pending_photo else ""
     await message.answer(
         "Got it! I'm generating content for:\n\n"
         f"<i>{intent}</i>\n\n"
-        "This usually takes about 30-60 seconds. I'll send you a preview with options to approve."
+        f"This usually takes about 30-60 seconds.{photo_note} I'll send you a preview with options to approve.",
+        parse_mode="HTML",
     )

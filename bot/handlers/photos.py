@@ -60,6 +60,10 @@ _album_processed: set[str] = set()
 # Avoids embedding long paths in callback_data (Telegram 64-byte limit)
 _pending_photos: dict[str, dict] = {}
 
+# Pending "Create a Post" photos: user_id → {storage_path, file_unique_id}
+# Stored when user taps "Create a Post" so next text message uses the photo
+_pending_post_photos: dict[int, dict] = {}
+
 BOT_TOKEN: str = ""  # Set at startup from config
 
 
@@ -427,10 +431,50 @@ async def handle_save_reference_callback(callback: CallbackQuery, bot: Bot) -> N
 
 @router.callback_query(F.data.startswith("photo_action:post:"))
 async def handle_post_with_photo_callback(callback: CallbackQuery, bot: Bot) -> None:
-    """User tapped 'Create a Post' — ask for the post intent."""
+    """User tapped 'Create a Post' — download photo, stash for next message, ask for intent."""
     msg = _get_message(callback)
     if not msg:
         return
+
+    if not callback.data:
+        return
+
+    parts = callback.data.split(":", 3)
+    # photo_action:post:{file_unique_id}:{file_id}
+    if len(parts) < 4:
+        await callback.answer("Something went wrong.")
+        return
+
+    file_unique_id = parts[2]
+    file_id = parts[3]
+    user = callback.from_user
+
+    membership = await get_tenant_by_telegram_user(user.id)
+    if not membership:
+        await callback.answer("Account not found. Use /start to set up.")
+        return
+
+    tenant_id = membership["tenant_id"]
+
+    # Download and store the photo now so it's ready when user sends text
+    try:
+        file = await bot.get_file(file_id)
+        token = get_settings().telegram_bot_token
+        download_url = f"https://api.telegram.org/file/bot{token}/{file.file_path}"
+        storage_path = await download_and_store(
+            download_url=download_url,
+            tenant_id=tenant_id,
+            file_unique_id=file_unique_id,
+        )
+        # Stash for the user's next text message
+        _pending_post_photos[user.id] = {
+            "storage_path": storage_path,
+            "file_unique_id": file_unique_id,
+        }
+    except Exception as e:
+        logger.error("Failed to store post photo", extra={"error": str(e)})
+        # Continue anyway — user can still describe the post, just without the photo
+        logger.warning("Continuing without photo for user %s", user.id)
 
     await msg.edit_text(
         "What should I create? Describe the post:\n\n"
@@ -439,11 +483,6 @@ async def handle_post_with_photo_callback(callback: CallbackQuery, bot: Bot) -> 
         reply_markup=None,
     )
     await callback.answer()
-    # Note: The next text message from this user will be picked up by intake handler.
-    # The photo is already uploaded and file_id stored. For a full implementation,
-    # we'd use FSM to link the pending photo to the next text message.
-    # For now: photo is available in Telegram cache; user sends text → generates without photo.
-    # TODO: FSM state to link pending photo file_id to next text message from user
 
 
 @router.callback_query(F.data.startswith("photo_label:"))
@@ -543,8 +582,8 @@ async def handle_photos_command(message: Message) -> None:
     await _send_photos_page(message, photos, page=0)
 
 
-async def _send_photos_page(message: Message, photos: list[dict], page: int = 0) -> None:
-    """Send a paginated list of reference photos."""
+def _build_photos_page(photos: list[dict], page: int = 0) -> tuple[str, InlineKeyboardMarkup | None]:
+    """Build text and keyboard for a paginated list of reference photos."""
     total = len(photos)
     start = page * PHOTOS_PER_PAGE
     end = min(start + PHOTOS_PER_PAGE, total)
@@ -588,11 +627,20 @@ async def _send_photos_page(message: Message, photos: list[dict], page: int = 0)
     if nav_row:
         buttons.append(nav_row)
 
-    await message.answer(
-        "\n".join(lines),
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons) if buttons else None,
-    )
+    markup = InlineKeyboardMarkup(inline_keyboard=buttons) if buttons else None
+    return "\n".join(lines), markup
+
+
+async def _send_photos_page(message: Message, photos: list[dict], page: int = 0) -> None:
+    """Send a new message with paginated reference photos list."""
+    text, markup = _build_photos_page(photos, page)
+    await message.answer(text, parse_mode="HTML", reply_markup=markup)
+
+
+async def _edit_photos_page(message: Message, photos: list[dict], page: int = 0) -> None:
+    """Edit existing message with paginated reference photos list (used in callbacks)."""
+    text, markup = _build_photos_page(photos, page)
+    await message.edit_text(text, parse_mode="HTML", reply_markup=markup)
 
 
 @router.callback_query(F.data.startswith("photo_mgmt:delete:"))
@@ -614,15 +662,15 @@ async def handle_delete_photo(callback: CallbackQuery) -> None:
     await soft_delete_reference_photo(photo_id=photo_id, tenant_id=membership["tenant_id"])
     await callback.answer("Photo deleted.")
 
-    # Refresh the list
+    # Refresh the list — edit in place, no second message
     photos = await get_reference_photos(membership["tenant_id"])
     if photos:
-        await msg.edit_text("Photo deleted. Here are your remaining photos:")
-        await _send_photos_page(msg, photos, page=0)
+        await _edit_photos_page(msg, photos, page=0)
     else:
         await msg.edit_text(
             "Photo deleted. You have no more saved reference photos.\n\n"
-            "Send me a photo to add one!"
+            "Send me a photo to add one!",
+            reply_markup=None,
         )
 
 
@@ -658,10 +706,10 @@ async def handle_toggle_default(callback: CallbackQuery) -> None:
     status = "set as default" if is_default else "removed from defaults"
     await callback.answer(f"Photo {status}.")
 
-    # Refresh the list
+    # Refresh the list — edit in place
     photos = await get_reference_photos(membership["tenant_id"])
     if photos:
-        await _send_photos_page(msg, photos, page=0)
+        await _edit_photos_page(msg, photos, page=0)
 
 
 @router.callback_query(F.data.startswith("photo_mgmt:page:"))
@@ -682,4 +730,4 @@ async def handle_photos_page(callback: CallbackQuery) -> None:
 
     photos = await get_reference_photos(membership["tenant_id"])
     await callback.answer()
-    await _send_photos_page(msg, photos, page=page)
+    await _edit_photos_page(msg, photos, page=page)
