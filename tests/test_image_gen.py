@@ -19,7 +19,7 @@ class FakeProvider(ImageProvider):
     def name(self) -> str:
         return self._name
 
-    async def generate(self, prompt: str, aspect_ratio: str = "1:1") -> ImageResult:
+    async def generate(self, prompt: str, aspect_ratio: str = "1:1", reference_image_urls: list[str] | None = None) -> ImageResult:
         self.call_count += 1
         if self._should_fail:
             raise RuntimeError(f"{self._name} failed")

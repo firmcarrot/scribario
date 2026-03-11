@@ -1,4 +1,8 @@
-"""Onboarding handler — /start command and new user registration."""
+"""Onboarding handler — /start command and new user registration.
+
+For new users, launches the aiogram_dialog onboarding flow.
+For returning users, shows a welcome-back message.
+"""
 
 from __future__ import annotations
 
@@ -7,8 +11,10 @@ import logging
 from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message
+from aiogram_dialog import DialogManager, StartMode
 
 from bot.db import get_tenant_by_telegram_user
+from bot.dialogs.states import OnboardingSG
 
 logger = logging.getLogger(__name__)
 
@@ -16,8 +22,8 @@ router = Router(name="onboarding")
 
 
 @router.message(CommandStart())
-async def cmd_start(message: Message) -> None:
-    """Handle /start — welcome message and registration check."""
+async def cmd_start(message: Message, dialog_manager: DialogManager) -> None:
+    """Handle /start — welcome returning users or launch onboarding dialog for new ones."""
     user = message.from_user
     if not user:
         return
@@ -38,13 +44,5 @@ async def cmd_start(message: Message) -> None:
             '<i>"Post about our new ghost pepper sauce launching Friday"</i>'
         )
     else:
-        await message.answer(
-            f"Welcome to <b>Scribario</b>, {user.first_name}!\n\n"
-            "I create and post social media content for your business.\n\n"
-            "Just tell me what you want to post, like:\n"
-            '<i>"Post about our new ghost pepper sauce launching Friday"</i>\n\n'
-            "I'll generate images and captions, send you a preview, "
-            "and post to your platforms when you approve.\n\n"
-            "To get started, your account needs to be connected to a brand. "
-            "Contact the Scribario team to set up your brand profile."
-        )
+        # New user — launch the onboarding dialog
+        await dialog_manager.start(OnboardingSG.welcome, mode=StartMode.RESET_STACK)

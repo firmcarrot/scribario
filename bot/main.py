@@ -6,8 +6,11 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
+from bot.dialogs.onboarding import dialog as onboarding_dialog
 from bot.handlers import approval, intake, onboarding
 
 logger = logging.getLogger(__name__)
@@ -23,10 +26,12 @@ def create_bot() -> Bot:
 
 def create_dispatcher() -> Dispatcher:
     """Create dispatcher and register all routers."""
-    dp = Dispatcher()
+    dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(onboarding.router)
+    dp.include_router(onboarding_dialog)
     dp.include_router(approval.router)
     dp.include_router(intake.router)  # intake last — catches free-text
+    setup_dialogs(dp)
     return dp
 
 

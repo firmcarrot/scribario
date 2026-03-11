@@ -212,3 +212,222 @@ async def enqueue_job(
 
     result = client.table("job_queue").insert(data).execute()
     return result.data[0]
+
+
+# --- Onboarding functions ---
+
+
+async def create_tenant(
+    name: str,
+    slug: str,
+    website_url: str | None = None,
+) -> dict:
+    """Create a new tenant. Returns the created tenant row."""
+    client = get_supabase_client()
+    data: dict = {"name": name, "slug": slug}
+    if website_url:
+        data["website_url"] = website_url
+    result = client.table("tenants").insert(data).execute()
+    return result.data[0]
+
+
+async def create_tenant_member(
+    tenant_id: str,
+    telegram_user_id: int,
+    role: str = "owner",
+) -> dict:
+    """Create a tenant membership for a Telegram user."""
+    client = get_supabase_client()
+    result = (
+        client.table("tenant_members")
+        .insert({
+            "tenant_id": tenant_id,
+            "telegram_user_id": telegram_user_id,
+            "role": role,
+            "onboarding_status": "pending",
+        })
+        .execute()
+    )
+    return result.data[0]
+
+
+async def upsert_brand_profile(tenant_id: str, profile_data: dict) -> dict:
+    """Insert or update a brand profile for a tenant.
+
+    profile_data should contain keys like tone_words, audience_description,
+    do_list, dont_list, product_catalog, compliance_notes, scraped_data.
+    """
+    client = get_supabase_client()
+    data = {"tenant_id": tenant_id, **profile_data}
+    result = (
+        client.table("brand_profiles")
+        .upsert(data, on_conflict="tenant_id")
+        .execute()
+    )
+    return result.data[0]
+
+
+async def update_onboarding_status(
+    tenant_id: str,
+    telegram_user_id: int,
+    status: str,
+) -> None:
+    """Update the onboarding status for a tenant member."""
+    client = get_supabase_client()
+    (
+        client.table("tenant_members")
+        .update({"onboarding_status": status})
+        .eq("tenant_id", tenant_id)
+        .eq("telegram_user_id", telegram_user_id)
+        .execute()
+    )
+
+
+async def update_tenant_website_url(tenant_id: str, website_url: str) -> None:
+    """Update the website URL for a tenant."""
+    client = get_supabase_client()
+    client.table("tenants").update({"website_url": website_url}).eq("id", tenant_id).execute()
+
+
+async def create_few_shot_examples_batch(
+    tenant_id: str,
+    examples: list[dict],
+) -> list[dict]:
+    """Insert multiple few-shot examples for a tenant.
+
+    Each example dict should have: platform, content_type, caption,
+    and optionally image_url, engagement_score.
+    """
+    client = get_supabase_client()
+    rows = [{"tenant_id": tenant_id, **ex} for ex in examples]
+    result = client.table("few_shot_examples").insert(rows).execute()
+    return result.data
+
+
+# --- Reference photo functions ---
+
+VALID_LABELS = {"owner", "partner", "product", "other"}
+MAX_PHOTOS_PER_TENANT = 50
+MAX_IMAGE_INPUTS = 14
+
+
+async def create_reference_photo(
+    tenant_id: str,
+    uploaded_by: int,
+    label: str,
+    storage_path: str,
+    file_unique_id: str,
+    file_size_bytes: int | None = None,
+    mime_type: str | None = None,
+    is_default: bool = True,
+) -> dict:
+    """Store a reference photo for a tenant.
+
+    Raises ValueError if label is not one of: owner, partner, product, other.
+    """
+    if label not in VALID_LABELS:
+        raise ValueError(f"Invalid label '{label}'. Must be one of: {VALID_LABELS}")
+
+    client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "uploaded_by": uploaded_by,
+        "label": label,
+        "storage_path": storage_path,
+        "file_unique_id": file_unique_id,
+        "is_default": is_default,
+    }
+    if file_size_bytes is not None:
+        data["file_size_bytes"] = file_size_bytes
+    if mime_type is not None:
+        data["mime_type"] = mime_type
+
+    result = client.table("reference_photos").insert(data).execute()
+    return result.data[0]
+
+
+async def get_reference_photos(tenant_id: str) -> list[dict]:
+    """Get all active (non-deleted) reference photos for a tenant, newest first."""
+    client = get_supabase_client()
+    result = (
+        client.table("reference_photos")
+        .select("*")
+        .eq("tenant_id", tenant_id)
+        .is_("deleted_at", "null")
+        .order("created_at", desc=True)
+        .execute()
+    )
+    return result.data or []
+
+
+async def get_default_reference_photos(tenant_id: str) -> list[dict]:
+    """Get active default reference photos for a tenant, newest first."""
+    client = get_supabase_client()
+    result = (
+        client.table("reference_photos")
+        .select("*")
+        .eq("tenant_id", tenant_id)
+        .eq("is_default", True)
+        .is_("deleted_at", "null")
+        .order("created_at", desc=True)
+        .execute()
+    )
+    return result.data or []
+
+
+async def get_reference_photo_by_id(photo_id: str, tenant_id: str) -> dict | None:
+    """Get a single reference photo by ID, scoped to tenant."""
+    client = get_supabase_client()
+    result = (
+        client.table("reference_photos")
+        .select("*")
+        .eq("id", photo_id)
+        .eq("tenant_id", tenant_id)
+        .is_("deleted_at", "null")
+        .limit(1)
+        .execute()
+    )
+    if result.data:
+        return result.data[0]
+    return None
+
+
+async def soft_delete_reference_photo(photo_id: str, tenant_id: str) -> None:
+    """Soft-delete a reference photo. Always requires tenant_id for safety."""
+    from datetime import datetime, timezone
+
+    client = get_supabase_client()
+    (
+        client.table("reference_photos")
+        .update({"deleted_at": datetime.now(timezone.utc).isoformat()})
+        .eq("id", photo_id)
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+
+
+async def toggle_reference_photo_default(
+    photo_id: str, tenant_id: str, is_default: bool
+) -> None:
+    """Set is_default on a reference photo. Scoped to tenant."""
+    client = get_supabase_client()
+    (
+        client.table("reference_photos")
+        .update({"is_default": is_default})
+        .eq("id", photo_id)
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+
+
+async def count_reference_photos(tenant_id: str) -> int:
+    """Count active (non-deleted) reference photos for a tenant."""
+    client = get_supabase_client()
+    result = (
+        client.table("reference_photos")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .is_("deleted_at", "null")
+        .execute()
+    )
+    return result.count or 0

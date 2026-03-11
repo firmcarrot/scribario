@@ -34,12 +34,20 @@ class ImageResult:
     metadata: dict
 
 
+MAX_IMAGE_INPUTS = 14  # Nano Banana 2 supports up to 14 reference images
+
+
 class ImageProvider(abc.ABC):
     """Abstract base for image generation providers."""
 
     @abc.abstractmethod
-    async def generate(self, prompt: str, aspect_ratio: str = "1:1") -> ImageResult:
-        """Generate an image from a text prompt."""
+    async def generate(
+        self,
+        prompt: str,
+        aspect_ratio: str = "1:1",
+        reference_image_urls: list[str] | None = None,
+    ) -> ImageResult:
+        """Generate an image from a text prompt, optionally with reference images."""
         ...
 
     @property
@@ -80,16 +88,26 @@ class KieAiProvider(ImageProvider):
             "Content-Type": "application/json",
         }
 
-    async def _create_task(self, prompt: str, aspect_ratio: str) -> str:
+    async def _create_task(
+        self,
+        prompt: str,
+        aspect_ratio: str,
+        reference_image_urls: list[str] | None = None,
+    ) -> str:
         """Submit image generation task. Returns taskId."""
+        input_data: dict = {
+            "prompt": prompt,
+            "aspect_ratio": aspect_ratio,
+            "resolution": "1K",
+            "output_format": "jpg",
+        }
+        # Add reference images if provided (Nano Banana 2 supports up to 14)
+        if reference_image_urls:
+            input_data["image_input"] = reference_image_urls
+
         payload = {
             "model": "nano-banana-2",
-            "input": {
-                "prompt": prompt,
-                "aspect_ratio": aspect_ratio,
-                "resolution": "1K",
-                "output_format": "png",
-            },
+            "input": input_data,
         }
 
         response = await self._get_client().post(
@@ -142,14 +160,25 @@ class KieAiProvider(ImageProvider):
 
         raise TimeoutError(f"Kie.ai task {task_id} timed out after {MAX_POLL_ATTEMPTS * POLL_INTERVAL_SECONDS}s")
 
-    async def generate(self, prompt: str, aspect_ratio: str = "1:1") -> ImageResult:
+    async def generate(
+        self,
+        prompt: str,
+        aspect_ratio: str = "1:1",
+        reference_image_urls: list[str] | None = None,
+    ) -> ImageResult:
         """Generate image via Kie.ai Nano Banana 2 API.
 
-        1. Create async task
+        1. Create async task (with optional reference images)
         2. Poll until complete
         3. Extract image URL from resultJson
+
+        Args:
+            prompt: Text description of what to generate.
+            aspect_ratio: Output aspect ratio.
+            reference_image_urls: Optional list of signed HTTPS URLs for reference photos.
+                Nano Banana 2 uses these for subject/style consistency. Max 14.
         """
-        task_id = await self._create_task(prompt, aspect_ratio)
+        task_id = await self._create_task(prompt, aspect_ratio, reference_image_urls)
         task_data = await self._poll_task(task_id)
 
         # Extract image URL from resultJson (it's a JSON string inside the response)
@@ -182,7 +211,12 @@ class ImageGenerationService:
 
         self._providers = providers
 
-    async def generate(self, prompt: str, aspect_ratio: str = "1:1") -> ImageResult:
+    async def generate(
+        self,
+        prompt: str,
+        aspect_ratio: str = "1:1",
+        reference_image_urls: list[str] | None = None,
+    ) -> ImageResult:
         """Generate image, trying providers in order until one succeeds."""
         if not self._providers:
             raise RuntimeError("No image generation providers configured")
@@ -190,7 +224,7 @@ class ImageGenerationService:
         last_error: Exception | None = None
         for provider in self._providers:
             try:
-                result = await provider.generate(prompt, aspect_ratio)
+                result = await provider.generate(prompt, aspect_ratio, reference_image_urls)
                 logger.info(
                     "Image generated",
                     extra={"provider": provider.name, "cost": result.cost_usd},
@@ -206,11 +240,53 @@ class ImageGenerationService:
         raise RuntimeError(f"All image providers failed. Last error: {last_error}")
 
     async def generate_batch(
-        self, prompts: list[str], aspect_ratio: str = "1:1"
+        self,
+        prompts: list[str],
+        aspect_ratio: str = "1:1",
+        reference_image_urls: list[str] | None = None,
     ) -> list[ImageResult]:
-        """Generate multiple images. Sequential to respect rate limits."""
+        """Generate multiple images. Sequential to respect rate limits.
+
+        Args:
+            prompts: One prompt per image to generate.
+            aspect_ratio: Output aspect ratio.
+            reference_image_urls: Reference photos passed to every generation in the batch.
+        """
         results = []
         for prompt in prompts:
-            result = await self.generate(prompt, aspect_ratio)
+            result = await self.generate(prompt, aspect_ratio, reference_image_urls)
             results.append(result)
         return results
+
+
+def build_image_input_array(
+    new_photo_urls: list[str],
+    default_ref_urls: list[str],
+    return_truncated: bool = False,
+) -> list[str] | tuple[list[str], bool]:
+    """Build the image_input array for Kie.ai, respecting the 14-image limit.
+
+    Priority: new photos (user just sent) > saved defaults (oldest dropped first).
+    New photos always get slots first so the user's explicit intent is always honored.
+
+    Args:
+        new_photo_urls: Photos attached in the current message (signed URLs).
+        default_ref_urls: Saved default reference photos (signed URLs), newest first.
+        return_truncated: If True, return (urls, was_truncated) tuple.
+
+    Returns:
+        List of image URLs to pass to image_input, capped at MAX_IMAGE_INPUTS.
+        If return_truncated=True, returns (list, bool) where bool indicates defaults were dropped.
+    """
+    # New photos take all available slots first
+    selected_new = new_photo_urls[:MAX_IMAGE_INPUTS]
+    remaining_slots = MAX_IMAGE_INPUTS - len(selected_new)
+
+    selected_defaults = default_ref_urls[:remaining_slots]
+    truncated = len(default_ref_urls) > remaining_slots
+
+    result = selected_new + selected_defaults
+
+    if return_truncated:
+        return result, truncated
+    return result
