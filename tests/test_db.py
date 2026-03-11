@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from bot.db import (
     create_content_request,
     create_feedback_event,

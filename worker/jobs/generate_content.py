@@ -17,19 +17,20 @@ from bot.config import get_settings
 from bot.db import (
     create_approval_request,
     create_content_draft,
+    get_default_reference_photos,
     log_usage_event,
     update_content_request_status,
     update_draft_status,
 )
-from bot.services.telegram import build_preview_caption, build_preview_keyboard
+from bot.services.storage import get_signed_urls_for_generation
+from bot.services.telegram import build_preview_keyboard
 from pipeline.brand_voice import (
     BrandProfile,
-    FewShotExample,
     load_brand_profile,
     load_few_shot_examples,
 )
 from pipeline.caption_gen import generate_captions
-from pipeline.image_gen import ImageGenerationService
+from pipeline.image_gen import ImageGenerationService, build_image_input_array
 
 logger = logging.getLogger(__name__)
 
@@ -49,6 +50,7 @@ async def handle_generate_content(message: dict) -> None:
     tenant_id = message["tenant_id"]
     intent = message["intent"]
     platform_targets = message.get("platform_targets", ["instagram"])
+    new_photo_storage_paths: list[str] = message.get("new_photo_storage_paths", [])
 
     logger.info(
         "Starting content generation",
@@ -95,13 +97,36 @@ async def handle_generate_content(message: dict) -> None:
         metadata={"request_id": request_id, "caption_count": len(captions)},
     )
 
-    # Step 2: Generate images from visual prompts — ALL IN PARALLEL
+    # Step 2: Build reference image array from saved defaults + new photos
+    default_refs = await get_default_reference_photos(tenant_id)
+    default_paths = [r["storage_path"] for r in default_refs]
+
+    # Generate signed URLs for all reference photos (fresh, 600s TTL)
+    new_signed = get_signed_urls_for_generation(new_photo_storage_paths) if new_photo_storage_paths else []
+    default_signed = get_signed_urls_for_generation(default_paths) if default_paths else []
+
+    reference_urls, truncated = build_image_input_array(
+        new_photo_urls=new_signed,
+        default_ref_urls=default_signed,
+        return_truncated=True,
+    )
+
+    if truncated:
+        logger.warning(
+            "Default reference photos truncated to fit 14-image limit",
+            extra={"tenant_id": tenant_id, "default_count": len(default_paths)},
+        )
+
+    # Step 3: Generate images from visual prompts — ALL IN PARALLEL
     image_service = ImageGenerationService()
 
     async def _generate_one(caption_obj: object) -> str:
         """Generate one image and log usage. Returns URL or empty string on failure."""
         try:
-            result = await image_service.generate(caption_obj.visual_prompt)
+            result = await image_service.generate(
+                caption_obj.visual_prompt,
+                reference_image_urls=reference_urls if reference_urls else None,
+            )
             await log_usage_event(
                 tenant_id=tenant_id,
                 event_type="image_generation",
@@ -167,7 +192,6 @@ async def _send_preview(
     platform_targets: list[str],
 ) -> None:
     """Send caption + image preview to Telegram with approval buttons."""
-    from aiogram.types import InputMediaPhoto
 
     bot = Bot(
         token=get_settings().telegram_bot_token,

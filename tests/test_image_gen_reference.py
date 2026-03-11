@@ -7,8 +7,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from pipeline.image_gen import KieAiProvider, ImageGenerationService
-
+from pipeline.image_gen import KieAiProvider
 
 FAKE_TASK_ID = "task_nano-banana-2_test123"
 FAKE_IMAGE_URL = "https://tempfile.aiquickdraw.com/test-result.jpg"
@@ -187,7 +186,7 @@ class TestBuildImageInputArray:
     def test_no_truncation_returns_false_flag(self):
         from pipeline.image_gen import build_image_input_array
 
-        result, truncated = build_image_input_array(
+        _result, truncated = build_image_input_array(
             new_photo_urls=["a.jpg"],
             default_ref_urls=["b.jpg"],
             return_truncated=True,

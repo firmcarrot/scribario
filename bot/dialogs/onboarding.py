@@ -20,7 +20,6 @@ import random
 import re
 import string
 
-from aiogram import Bot
 from aiogram.types import CallbackQuery, Message
 from aiogram_dialog import Dialog, DialogManager, Window
 from aiogram_dialog.widgets.input import MessageInput
@@ -168,7 +167,7 @@ async def on_website_url_input(
         manager.dialog_data["products"] = products_text or "(none found)"
 
         social_text = ", ".join(
-            f"{k.title()}" for k in scraped.social_links.keys()
+            f"{k.title()}" for k in scraped.social_links
         )
         manager.dialog_data["social_platforms"] = social_text or "(none found)"
 

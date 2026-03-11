@@ -10,8 +10,9 @@ import pytest
 
 class TestStripExif:
     def test_strips_metadata_from_jpeg(self):
-        from bot.services.storage import strip_exif
         from PIL import Image
+
+        from bot.services.storage import strip_exif
 
         # Create a small JPEG with fake EXIF
         buf = io.BytesIO()
@@ -24,8 +25,9 @@ class TestStripExif:
         assert len(result) > 0
 
     def test_returns_bytes(self):
-        from bot.services.storage import strip_exif
         from PIL import Image
+
+        from bot.services.storage import strip_exif
 
         buf = io.BytesIO()
         img = Image.new("RGB", (20, 20), color=(0, 255, 0))
@@ -35,8 +37,9 @@ class TestStripExif:
         assert isinstance(result, bytes)
 
     def test_preserves_image_content(self):
-        from bot.services.storage import strip_exif
         from PIL import Image
+
+        from bot.services.storage import strip_exif
 
         buf = io.BytesIO()
         img = Image.new("RGB", (5, 5), color=(128, 64, 32))
@@ -90,7 +93,7 @@ class TestGetSignedUrl:
         assert "signed" in url or "token" in url or "abc.jpg" in url
 
     def test_uses_correct_bucket(self):
-        from bot.services.storage import get_signed_url, STORAGE_BUCKET
+        from bot.services.storage import STORAGE_BUCKET, get_signed_url
 
         mock_client = MagicMock()
         mock_client.storage.from_.return_value.create_signed_url.return_value = {
@@ -106,8 +109,9 @@ class TestGetSignedUrl:
 class TestDownloadAndStore:
     @pytest.mark.asyncio
     async def test_returns_storage_path(self):
-        from bot.services.storage import download_and_store
         from PIL import Image
+
+        from bot.services.storage import download_and_store
 
         # Build fake JPEG bytes
         buf = io.BytesIO()

@@ -12,7 +12,7 @@ Postiz is self-hosted via Docker on the same VPS as the worker.
 from __future__ import annotations
 
 import logging
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import httpx
 

@@ -2,12 +2,10 @@
 
 from __future__ import annotations
 
-import json
-
 import httpx
 import pytest
 
-from pipeline.posting import PostizClient, PostingResult
+from pipeline.posting import PostizClient
 
 
 class TestPostizClient:

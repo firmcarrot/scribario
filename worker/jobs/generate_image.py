@@ -23,7 +23,7 @@ async def handle_generate_image(message: dict) -> None:
     """
     tenant_id = message["tenant_id"]
     draft_id = message["draft_id"]
-    visual_prompt = message["visual_prompt"]
+    message["visual_prompt"]
 
     logger.info(
         "Generating image",

@@ -4,9 +4,11 @@ from __future__ import annotations
 
 import asyncio
 
-import pytest
-
-from pipeline.social_scraper import FewShotCandidate, build_few_shot_from_social, scrape_social_profile
+from pipeline.social_scraper import (
+    FewShotCandidate,
+    build_few_shot_from_social,
+    scrape_social_profile,
+)
 
 
 class TestFewShotCandidateModel:

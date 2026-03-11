@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from bot.dialogs.states import OnboardingSG
 
 
@@ -38,5 +36,6 @@ class TestOnboardingDialogImports:
 
     def test_dialog_is_dialog_type(self):
         from aiogram_dialog import Dialog
+
         from bot.dialogs.onboarding import dialog
         assert isinstance(dialog, Dialog)

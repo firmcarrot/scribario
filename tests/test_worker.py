@@ -6,7 +6,7 @@ import asyncio
 
 import pytest
 
-from worker.main import Worker, register_handler, JOB_HANDLERS
+from worker.main import JOB_HANDLERS, Worker, register_handler
 
 
 @pytest.fixture(autouse=True)

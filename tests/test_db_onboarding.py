@@ -4,8 +4,6 @@ from __future__ import annotations
 
 import asyncio
 
-import pytest
-
 from bot.db import (
     create_few_shot_examples_batch,
     create_tenant,

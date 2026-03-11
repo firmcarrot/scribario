@@ -11,7 +11,7 @@ from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
 from bot.dialogs.onboarding import dialog as onboarding_dialog
-from bot.handlers import approval, intake, onboarding
+from bot.handlers import approval, intake, onboarding, photos
 
 logger = logging.getLogger(__name__)
 
@@ -29,6 +29,7 @@ def create_dispatcher() -> Dispatcher:
     dp = Dispatcher(storage=MemoryStorage())
     dp.include_router(onboarding.router)
     dp.include_router(onboarding_dialog)
+    dp.include_router(photos.router)   # photo handler before intake
     dp.include_router(approval.router)
     dp.include_router(intake.router)  # intake last — catches free-text
     setup_dialogs(dp)

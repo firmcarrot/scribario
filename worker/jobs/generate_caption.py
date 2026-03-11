@@ -23,8 +23,8 @@ async def handle_generate_caption(message: dict) -> None:
     """
     tenant_id = message["tenant_id"]
     request_id = message["request_id"]
-    intent = message["intent"]
-    platform_targets = message.get("platform_targets", ["instagram"])
+    message["intent"]
+    message.get("platform_targets", ["instagram"])
 
     logger.info(
         "Generating captions",

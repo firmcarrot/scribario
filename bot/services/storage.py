@@ -88,10 +88,9 @@ async def download_and_store(
         storage_path: Permanent path in Supabase Storage (use get_signed_url to access).
     """
     # Download from Telegram
-    async with httpx.AsyncClient(timeout=60.0) as http:
-        async with http.get(download_url) as response:
-            response.raise_for_status()
-            image_bytes = await response.read()
+    async with httpx.AsyncClient(timeout=60.0) as http, http.get(download_url) as response:
+        response.raise_for_status()
+        image_bytes = await response.read()
 
     logger.info(
         "Downloaded photo from Telegram",

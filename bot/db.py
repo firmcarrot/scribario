@@ -2,12 +2,13 @@
 
 from __future__ import annotations
 
+from datetime import UTC
 from functools import lru_cache
 
-from supabase import create_client
 from supabase.client import Client
 
 from bot.config import get_settings
+from supabase import create_client
 
 
 @lru_cache
@@ -394,12 +395,12 @@ async def get_reference_photo_by_id(photo_id: str, tenant_id: str) -> dict | Non
 
 async def soft_delete_reference_photo(photo_id: str, tenant_id: str) -> None:
     """Soft-delete a reference photo. Always requires tenant_id for safety."""
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     client = get_supabase_client()
     (
         client.table("reference_photos")
-        .update({"deleted_at": datetime.now(timezone.utc).isoformat()})
+        .update({"deleted_at": datetime.now(UTC).isoformat()})
         .eq("id", photo_id)
         .eq("tenant_id", tenant_id)
         .execute()

@@ -7,15 +7,14 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from bot.db import (
+    count_reference_photos,
     create_reference_photo,
-    get_reference_photos,
     get_default_reference_photos,
+    get_reference_photo_by_id,
+    get_reference_photos,
     soft_delete_reference_photo,
     toggle_reference_photo_default,
-    count_reference_photos,
-    get_reference_photo_by_id,
 )
-
 
 TENANT_ID = "52590da5-bc80-4161-ac13-62e9bcd75424"
 USER_ID = 7560539974

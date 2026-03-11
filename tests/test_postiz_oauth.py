@@ -4,13 +4,11 @@ from __future__ import annotations
 
 import asyncio
 
-import pytest
-
 from bot.services.postiz_oauth import (
     PostizOAuthService,
+    disconnect_platform,
     get_connect_url,
     get_connected_platforms,
-    disconnect_platform,
 )
 
 
