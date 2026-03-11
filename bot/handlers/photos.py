@@ -56,6 +56,10 @@ _album_buffer: dict[str, list[dict]] = {}
 _album_timers: dict[str, asyncio.TimerHandle] = {}
 _album_processed: set[str] = set()
 
+# Pending photo cache: short_key → {file_unique_id, storage_path}
+# Avoids embedding long paths in callback_data (Telegram 64-byte limit)
+_pending_photos: dict[str, dict] = {}
+
 BOT_TOKEN: str = ""  # Set at startup from config
 
 
@@ -82,18 +86,32 @@ def _build_disambiguation_keyboard(file_unique_id: str, file_id: str) -> InlineK
     ])
 
 
+def _store_pending_photo(file_unique_id: str, storage_path: str) -> str:
+    """Cache photo data and return a short key safe for callback_data.
+
+    Telegram callback_data is limited to 64 bytes. Storage paths are too long
+    to embed directly, so we store them in memory and pass only the short key.
+    Key format: first 8 chars of file_unique_id (stable, unique per file).
+    """
+    key = file_unique_id[:8]
+    _pending_photos[key] = {"file_unique_id": file_unique_id, "storage_path": storage_path}
+    return key
+
+
 def _build_label_keyboard(file_unique_id: str, storage_path: str) -> InlineKeyboardMarkup:
-    """Inline keyboard for labeling a saved reference photo."""
-    encoded_path = storage_path.replace(":", "__colon__")  # avoid callback_data delimiter clash
-    base = f"photo_label:{{label}}:{file_unique_id}:{encoded_path}"
+    """Inline keyboard for labeling a saved reference photo.
+
+    Uses short cache key instead of embedding storage_path (Telegram 64-byte limit).
+    """
+    key = _store_pending_photo(file_unique_id, storage_path)
     return InlineKeyboardMarkup(inline_keyboard=[
         [
-            InlineKeyboardButton(text="🙋 Me", callback_data=base.format(label="owner")),
-            InlineKeyboardButton(text="👥 My Partner", callback_data=base.format(label="partner")),
+            InlineKeyboardButton(text="🙋 Me", callback_data=f"photo_label:owner:{key}"),
+            InlineKeyboardButton(text="👥 My Partner", callback_data=f"photo_label:partner:{key}"),
         ],
         [
-            InlineKeyboardButton(text="📦 My Product", callback_data=base.format(label="product")),
-            InlineKeyboardButton(text="🏷️ Other", callback_data=base.format(label="other")),
+            InlineKeyboardButton(text="📦 My Product", callback_data=f"photo_label:product:{key}"),
+            InlineKeyboardButton(text="🏷️ Other", callback_data=f"photo_label:other:{key}"),
         ],
     ])
 
@@ -116,6 +134,7 @@ async def _download_photo(bot: Bot, message: Message) -> tuple[str, str, str]:
     return download_url, photo.file_unique_id, photo.file_id
 
 
+@router.message(F.photo)
 async def handle_photo_message(message: Message, bot: Bot) -> None:
     """Route photo messages: with caption → generate; alone → disambiguate."""
     user = message.from_user
@@ -237,7 +256,7 @@ async def _handle_album_photo(message: Message, bot: Bot, membership: dict) -> N
     if group_id in _album_timers:
         _album_timers[group_id].cancel()
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     handle = loop.call_later(
         1.5,
         lambda gid=group_id: asyncio.ensure_future(_process_album(gid, bot)),
@@ -436,15 +455,23 @@ async def handle_label_callback(callback: CallbackQuery) -> None:
     if not msg:
         return
 
-    # Format: photo_label:{label}:{file_unique_id}:{storage_path}
-    parts = callback.data.split(":", 3)
-    if len(parts) < 4:
+    # Format: photo_label:{label}:{short_key}
+    parts = callback.data.split(":", 2)
+    if len(parts) < 3:
         await callback.answer("Something went wrong.")
         return
 
     label = parts[1]
-    file_unique_id = parts[2]
-    storage_path = parts[3].replace("__colon__", ":")
+    short_key = parts[2]
+
+    pending = _pending_photos.get(short_key)
+    if not pending:
+        await callback.answer("Session expired. Please send the photo again.")
+        await msg.edit_text("This label prompt has expired. Please send your photo again.")
+        return
+
+    file_unique_id = pending["file_unique_id"]
+    storage_path = pending["storage_path"]
 
     user = callback.from_user
     membership = await get_tenant_by_telegram_user(user.id)
@@ -473,6 +500,8 @@ async def handle_label_callback(callback: CallbackQuery) -> None:
         file_unique_id=file_unique_id,
         is_default=True,
     )
+    # Clean up pending cache entry
+    _pending_photos.pop(short_key, None)
 
     label_name = _label_display(label)
     await msg.edit_text(

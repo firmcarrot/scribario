@@ -123,17 +123,14 @@ class TestDownloadAndStore:
         mock_supabase.storage.from_.return_value.upload.return_value = {}
 
         # Use httpx.AsyncClient mock that returns fake JPEG bytes
+        # http.get() is called with await, so it must be an AsyncMock.
+        # response.content is sync (bytes property), not awaitable.
         mock_response = MagicMock()
         mock_response.raise_for_status = MagicMock()
-        mock_response.read = AsyncMock(return_value=fake_jpeg)
-
-        # Async context manager for http.get(url)
-        mock_get_ctx = MagicMock()
-        mock_get_ctx.__aenter__ = AsyncMock(return_value=mock_response)
-        mock_get_ctx.__aexit__ = AsyncMock(return_value=None)
+        mock_response.content = fake_jpeg
 
         mock_client = MagicMock()
-        mock_client.get = MagicMock(return_value=mock_get_ctx)
+        mock_client.get = AsyncMock(return_value=mock_response)
         mock_client.__aenter__ = AsyncMock(return_value=mock_client)
         mock_client.__aexit__ = AsyncMock(return_value=None)
 

@@ -126,7 +126,14 @@ class TestLabelingCallback:
 
     @pytest.mark.asyncio
     async def test_label_me_saves_as_owner(self):
+        import bot.handlers.photos as photos_mod
         from bot.handlers.photos import handle_label_callback
+
+        # Pre-populate pending cache (simulates handle_save_reference_callback storing the photo)
+        photos_mod._pending_photos["AQADtest"] = {
+            "file_unique_id": "AQADtest_unique",
+            "storage_path": "ref-photos/tenant/file.jpg",
+        }
 
         mock_msg = MagicMock()
         mock_msg.edit_text = AsyncMock()
@@ -134,7 +141,7 @@ class TestLabelingCallback:
         callback = MagicMock()
         callback.from_user = MagicMock()
         callback.from_user.id = 7560539974
-        callback.data = "photo_label:owner:AQADtest_unique:ref-photos/tenant/file.jpg"
+        callback.data = "photo_label:owner:AQADtest"
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
@@ -154,7 +161,13 @@ class TestLabelingCallback:
 
     @pytest.mark.asyncio
     async def test_label_product_saves_as_product(self):
+        import bot.handlers.photos as photos_mod
         from bot.handlers.photos import handle_label_callback
+
+        photos_mod._pending_photos["AQADtest"] = {
+            "file_unique_id": "AQADtest_unique",
+            "storage_path": "ref-photos/tenant/file.jpg",
+        }
 
         mock_msg = MagicMock()
         mock_msg.edit_text = AsyncMock()
@@ -162,7 +175,7 @@ class TestLabelingCallback:
         callback = MagicMock()
         callback.from_user = MagicMock()
         callback.from_user.id = 7560539974
-        callback.data = "photo_label:product:AQADtest_unique:ref-photos/tenant/file.jpg"
+        callback.data = "photo_label:product:AQADtest"
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
@@ -180,8 +193,14 @@ class TestLabelingCallback:
 
     @pytest.mark.asyncio
     async def test_at_limit_rejects_new_photo(self):
+        import bot.handlers.photos as photos_mod
         from bot.db import MAX_PHOTOS_PER_TENANT
         from bot.handlers.photos import handle_label_callback
+
+        photos_mod._pending_photos["AQADtest"] = {
+            "file_unique_id": "AQADtest_unique",
+            "storage_path": "ref-photos/tenant/file.jpg",
+        }
 
         mock_msg = MagicMock()
         mock_msg.edit_text = AsyncMock()
@@ -189,7 +208,7 @@ class TestLabelingCallback:
         callback = MagicMock()
         callback.from_user = MagicMock()
         callback.from_user.id = 7560539974
-        callback.data = "photo_label:owner:AQADtest_unique:ref-photos/tenant/file.jpg"
+        callback.data = "photo_label:owner:AQADtest"
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
