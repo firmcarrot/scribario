@@ -53,18 +53,24 @@ async def _validate_draft_access(
 
 @router.callback_query(F.data.startswith("approve:"))
 async def handle_approve(callback: CallbackQuery) -> None:
-    """Handle approval — mark draft as approved, enqueue posting jobs."""
+    """Handle approval — mark draft as approved, enqueue posting jobs.
+
+    Callback data format: "approve:{draft_id}:{option_number}"
+    """
     if not callback.data:
         return
 
-    draft_id = callback.data.split(":", 1)[1]
+    parts = callback.data.split(":")
+    draft_id = parts[1]
+    # Option number (1-indexed), default to 1 for backwards compat
+    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
 
     # Validate user has access to this draft
     draft = await _validate_draft_access(callback, draft_id)
     if not draft:
         return
 
-    logger.info("Draft approved", extra={"draft_id": draft_id})
+    logger.info("Draft approved", extra={"draft_id": draft_id, "option": option_idx + 1})
 
     tenant_id = draft["tenant_id"]
 
@@ -74,9 +80,14 @@ async def handle_approve(callback: CallbackQuery) -> None:
     # Record feedback
     await create_feedback_event(draft_id=draft_id, tenant_id=tenant_id, action="approve")
 
-    # Pick first caption variant (user selected this option)
+    # Pick the selected caption variant
     caption_variants = draft.get("caption_variants", [])
-    caption = caption_variants[0]["text"] if caption_variants else ""
+    if option_idx < len(caption_variants):
+        caption = caption_variants[option_idx]["text"]
+    elif caption_variants:
+        caption = caption_variants[0]["text"]
+    else:
+        caption = ""
     image_urls = draft.get("image_urls", [])
 
     # Create posting jobs for each target platform
@@ -163,6 +174,18 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         draft_id=draft_id, tenant_id=draft["tenant_id"], action="regenerate"
     )
 
+    # Load the original content request to get the intent
+    from bot.db import get_supabase_client
+    client = get_supabase_client()
+    req_result = (
+        client.table("content_requests")
+        .select("intent, platform_targets")
+        .eq("id", draft["request_id"])
+        .limit(1)
+        .execute()
+    )
+    original = req_result.data[0] if req_result.data else {}
+
     # Re-enqueue generation for the original request
     await enqueue_job(
         queue_name="content_generation",
@@ -170,8 +193,9 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         payload={
             "request_id": draft["request_id"],
             "tenant_id": draft["tenant_id"],
-            "intent": "",  # Worker will reload from content_request
-            "platform_targets": ["instagram", "facebook"],
+            "intent": original.get("intent", ""),
+            "platform_targets": original.get("platform_targets", ["instagram", "facebook"]),
+            "telegram_chat_id": callback.message.chat.id if callback.message else None,
         },
         idempotency_key=f"{draft_id}:regenerate",
     )

@@ -5,19 +5,27 @@ from __future__ import annotations
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 
 
-def build_preview_keyboard(draft_id: str) -> InlineKeyboardMarkup:
-    """Build inline keyboard for draft approval/rejection."""
-    return InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton(text="Approve", callback_data=f"approve:{draft_id}"),
-                InlineKeyboardButton(text="Reject", callback_data=f"reject:{draft_id}"),
-            ],
-            [
-                InlineKeyboardButton(text="Regenerate", callback_data=f"regen:{draft_id}"),
-            ],
-        ]
-    )
+def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboardMarkup:
+    """Build inline keyboard with per-option approve buttons + reject/regen."""
+    rows: list[list[InlineKeyboardButton]] = []
+
+    # One approve button per option
+    option_buttons = [
+        InlineKeyboardButton(
+            text=f"Approve #{i}",
+            callback_data=f"approve:{draft_id}:{i}",
+        )
+        for i in range(1, num_options + 1)
+    ]
+    rows.append(option_buttons)
+
+    # Reject and regenerate
+    rows.append([
+        InlineKeyboardButton(text="Reject All", callback_data=f"reject:{draft_id}"),
+        InlineKeyboardButton(text="Regenerate", callback_data=f"regen:{draft_id}"),
+    ])
+
+    return InlineKeyboardMarkup(inline_keyboard=rows)
 
 
 def build_preview_caption(caption: str, platform_targets: list[str]) -> str:

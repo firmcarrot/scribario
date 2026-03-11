@@ -59,6 +59,7 @@ async def handle_content_request(message: Message) -> None:
             "tenant_id": tenant_id,
             "intent": intent,
             "platform_targets": ["instagram", "facebook"],
+            "telegram_chat_id": message.chat.id,
         },
         idempotency_key=f"{request_id}:generate_content",
     )
