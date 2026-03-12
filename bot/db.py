@@ -52,7 +52,7 @@ async def create_content_request(
     data: dict = {
         "tenant_id": tenant_id,
         "intent": intent,
-        "platform_targets": platform_targets,
+        "platform_targets": platform_targets or [],
         "status": "pending",
     }
     if due_at is not None:
