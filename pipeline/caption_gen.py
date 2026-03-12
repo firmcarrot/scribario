@@ -48,6 +48,7 @@ async def generate_captions(
     examples: list[FewShotExample],
     platform_targets: list[str],
     num_options: int = 3,
+    style: str | None = None,
 ) -> list[CaptionResult]:
     """Generate caption options using Claude API with brand voice context.
 
@@ -57,6 +58,7 @@ async def generate_captions(
         examples: Few-shot examples of real posts.
         platform_targets: Platforms this content will be posted to.
         num_options: Number of caption variants to generate.
+        style: Optional image style to inject into visual prompts (e.g. "cinematic").
 
     Returns:
         List of CaptionResult with text and visual prompts.
@@ -99,10 +101,13 @@ async def generate_captions(
 
         results = []
         for cap in captions[:num_options]:
+            visual_prompt = cap.get("visual_prompt", intent)
+            if style:
+                visual_prompt = f"[STYLE: {style}] {visual_prompt}"
             results.append(
                 CaptionResult(
                     text=cap["text"],
-                    visual_prompt=cap.get("visual_prompt", intent),
+                    visual_prompt=visual_prompt,
                 )
             )
 

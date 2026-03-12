@@ -12,3 +12,9 @@ class OnboardingSG(StatesGroup):
     scraping = State()
     profile_review = State()
     complete = State()
+
+
+class CaptionEditSG(StatesGroup):
+    """Caption editing dialog states."""
+
+    edit_caption = State()

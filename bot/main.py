@@ -10,8 +10,9 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
+from bot.dialogs.caption_edit import dialog as caption_edit_dialog
 from bot.dialogs.onboarding import dialog as onboarding_dialog
-from bot.handlers import approval, intake, onboarding, photos
+from bot.handlers import approval, commands, intake, onboarding, photos
 
 logger = logging.getLogger(__name__)
 
@@ -27,8 +28,10 @@ def create_bot() -> Bot:
 def create_dispatcher() -> Dispatcher:
     """Create dispatcher and register all routers."""
     dp = Dispatcher(storage=MemoryStorage())
+    dp.include_router(commands.router)  # commands before onboarding
     dp.include_router(onboarding.router)
     dp.include_router(onboarding_dialog)
+    dp.include_router(caption_edit_dialog)  # dialog registered BEFORE setup_dialogs
     dp.include_router(photos.router)   # photo handler before intake
     dp.include_router(approval.router)
     dp.include_router(intake.router)  # intake last — catches free-text

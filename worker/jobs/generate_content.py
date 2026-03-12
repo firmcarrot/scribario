@@ -51,6 +51,7 @@ async def handle_generate_content(message: dict) -> None:
     intent = message["intent"]
     platform_targets = message.get("platform_targets", ["instagram"])
     new_photo_storage_paths: list[str] = message.get("new_photo_storage_paths", [])
+    style_override: str | None = message.get("style_override")
 
     logger.info(
         "Starting content generation",
@@ -79,6 +80,9 @@ async def handle_generate_content(message: dict) -> None:
     if not examples:
         examples = []
 
+    # Resolve style: job payload style_override takes priority, then brand default
+    effective_style = style_override or profile.default_image_style
+
     # Step 1: Generate captions (includes visual prompts)
     captions = await generate_captions(
         intent=intent,
@@ -86,6 +90,7 @@ async def handle_generate_content(message: dict) -> None:
         examples=examples,
         platform_targets=platform_targets,
         num_options=3,
+        style=effective_style,
     )
 
     # Log caption generation cost

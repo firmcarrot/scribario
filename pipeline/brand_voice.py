@@ -20,6 +20,7 @@ class BrandProfile:
     dont_list: list[str]
     product_catalog: dict | None = None
     compliance_notes: str = ""
+    default_image_style: str = "photorealistic"
 
 
 @dataclass
@@ -100,6 +101,7 @@ async def load_brand_profile(tenant_id: str) -> BrandProfile | None:
             dont_list=row.get("dont_list", []),
             product_catalog=row.get("product_catalog"),
             compliance_notes=row.get("compliance_notes", ""),
+            default_image_style=row.get("default_image_style", "photorealistic"),
         )
     except Exception:
         logger.exception("Failed to load brand profile", extra={"tenant_id": tenant_id})

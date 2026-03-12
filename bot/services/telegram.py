@@ -6,7 +6,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedia
 
 
 def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboardMarkup:
-    """Build inline keyboard with per-option approve buttons + reject/regen."""
+    """Build inline keyboard with per-option approve + edit buttons + reject/regen."""
     rows: list[list[InlineKeyboardButton]] = []
 
     # One approve button per option
@@ -18,6 +18,13 @@ def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboar
         for i in range(1, num_options + 1)
     ]
     rows.append(option_buttons)
+
+    # One edit button per option — inserted after approve row
+    edit_buttons = [
+        InlineKeyboardButton(text=f"✏️ Edit #{i}", callback_data=f"edit:{draft_id}:{i}")
+        for i in range(1, num_options + 1)
+    ]
+    rows.insert(1, edit_buttons)  # after approve row, before reject/regen
 
     # Reject and regenerate
     rows.append([

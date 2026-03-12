@@ -7,6 +7,7 @@ import logging
 
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
+from aiogram_dialog import DialogManager
 
 from bot.db import (
     create_feedback_event,
@@ -93,7 +94,22 @@ async def handle_approve(callback: CallbackQuery) -> None:
         caption = caption_variants[0]["text"]
     else:
         caption = ""
-    image_urls = draft.get("image_urls", [])
+    all_image_urls = draft.get("image_urls", [])
+    image_urls = [all_image_urls[option_idx]] if option_idx < len(all_image_urls) else all_image_urls[:1]
+
+    # Load platform_targets from the originating content_request
+    from bot.db import get_supabase_client
+    _client = get_supabase_client()
+    _req = (
+        _client.table("content_requests")
+        .select("platform_targets")
+        .eq("id", draft["request_id"])
+        .limit(1)
+        .execute()
+    )
+    platform_targets: list[str] | None = (
+        _req.data[0].get("platform_targets") if _req.data else None
+    ) or None
 
     # Create one posting job — worker matches against connected Postiz integrations
     idempotency_key = hashlib.sha256(f"{draft_id}:post_content".encode()).hexdigest()
@@ -116,6 +132,7 @@ async def handle_approve(callback: CallbackQuery) -> None:
             "tenant_id": tenant_id,
             "caption": caption,
             "image_urls": image_urls,
+            "platform_targets": platform_targets,
         },
         idempotency_key=f"{draft_id}:post:all",
     )
@@ -202,7 +219,7 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
             "request_id": draft["request_id"],
             "tenant_id": draft["tenant_id"],
             "intent": original.get("intent", ""),
-            "platform_targets": original.get("platform_targets", ["instagram", "facebook"]),
+            "platform_targets": original.get("platform_targets") or None,
             "telegram_chat_id": callback.message.chat.id if callback.message else None,
         },
         idempotency_key=f"{draft_id}:regenerate",
@@ -212,3 +229,54 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
     if callback.message:
         await callback.message.edit_reply_markup(reply_markup=None)
         await callback.message.reply("Generating new options... I'll send them in a moment.")
+
+
+@router.callback_query(F.data.startswith("edit:"))
+async def handle_edit_caption(callback: CallbackQuery, dialog_manager: DialogManager) -> None:
+    """Handle caption edit — start CaptionEditSG dialog.
+
+    Callback data format: "edit:{draft_id}:{option_number}" (option_number is 1-indexed)
+    """
+    from bot.dialogs.states import CaptionEditSG
+
+    if not callback.data:
+        return
+
+    parts = callback.data.split(":")
+    if len(parts) < 3:
+        await callback.answer("Invalid edit callback.")
+        return
+
+    draft_id = parts[1]
+    try:
+        option_number = int(parts[2])
+    except ValueError:
+        await callback.answer("Invalid option number.")
+        return
+
+    option_idx = option_number - 1  # convert to 0-indexed
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    # Get current caption text for the selected option
+    caption_variants = draft.get("caption_variants") or []
+    if option_idx < len(caption_variants):
+        current_caption = caption_variants[option_idx].get("text", "")
+    elif caption_variants:
+        current_caption = caption_variants[0].get("text", "")
+    else:
+        current_caption = ""
+
+    await callback.answer()
+
+    # Start the caption edit dialog, passing data via start_data
+    await dialog_manager.start(
+        CaptionEditSG.edit_caption,
+        data={
+            "draft_id": draft_id,
+            "option_idx": option_idx,
+            "current_caption": current_caption,
+        },
+    )

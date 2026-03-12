@@ -42,17 +42,26 @@ async def create_content_request(
     tenant_id: str,
     intent: str,
     platform_targets: list[str] | None = None,
+    due_at: "datetime | None" = None,
+    style_override: str | None = None,
 ) -> dict:
     """Create a new content request in the database."""
+    from datetime import datetime  # noqa: F401 — used in type annotation above
+
     client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "intent": intent,
+        "platform_targets": platform_targets,
+        "status": "pending",
+    }
+    if due_at is not None:
+        data["due_at"] = due_at.isoformat()
+    if style_override is not None:
+        data["style_override"] = style_override
     result = (
         client.table("content_requests")
-        .insert({
-            "tenant_id": tenant_id,
-            "intent": intent,
-            "platform_targets": platform_targets or ["instagram"],
-            "status": "pending",
-        })
+        .insert(data)
         .execute()
     )
     return result.data[0]
@@ -195,12 +204,15 @@ async def enqueue_job(
     job_type: str,
     payload: dict,
     idempotency_key: str | None = None,
+    scheduled_for: "datetime | None" = None,
 ) -> dict:
     """Enqueue a job to the fallback job_queue table.
 
     Uses the job_queue table (not pgmq directly) for portability.
     The worker polls this table with FOR UPDATE SKIP LOCKED.
     """
+    from datetime import datetime  # noqa: F401 — used in type annotation above
+
     client = get_supabase_client()
     data: dict = {
         "queue_name": queue_name,
@@ -210,6 +222,8 @@ async def enqueue_job(
     }
     if idempotency_key:
         data["idempotency_key"] = idempotency_key
+    if scheduled_for is not None:
+        data["scheduled_for"] = scheduled_for.isoformat()
 
     result = client.table("job_queue").insert(data).execute()
     return result.data[0]
@@ -288,6 +302,105 @@ async def update_tenant_website_url(tenant_id: str, website_url: str) -> None:
     """Update the website URL for a tenant."""
     client = get_supabase_client()
     client.table("tenants").update({"website_url": website_url}).eq("id", tenant_id).execute()
+
+
+async def update_draft_caption(draft_id: str, option_idx: int, new_caption: str) -> None:
+    """Update a single caption variant in a content draft.
+
+    Read-modify-write: fetches caption_variants, replaces element at option_idx,
+    then writes the full array back.
+    """
+    client = get_supabase_client()
+    result = (
+        client.table("content_drafts")
+        .select("caption_variants")
+        .eq("id", draft_id)
+        .limit(1)
+        .execute()
+    )
+    if not result.data:
+        raise ValueError(f"Draft {draft_id} not found")
+
+    variants: list[dict] = result.data[0].get("caption_variants") or []
+
+    if option_idx < 0 or option_idx >= len(variants):
+        raise IndexError(
+            f"option_idx {option_idx} out of range for draft with {len(variants)} variants"
+        )
+
+    updated = list(variants)
+    updated[option_idx] = {**updated[option_idx], "text": new_caption}
+
+    client.table("content_drafts").update({"caption_variants": updated}).eq(
+        "id", draft_id
+    ).execute()
+
+
+async def get_recent_posts(tenant_id: str, limit: int = 10) -> list[dict]:
+    """Get recent posted content for a tenant.
+
+    Returns list of dicts with: draft_id, caption_preview, posted_at, platforms.
+    Uses two queries (supabase-py doesn't support JOIN directly) joined in Python.
+    """
+    client = get_supabase_client()
+
+    # 1. Get posted posting_jobs for this tenant
+    jobs_result = (
+        client.table("posting_jobs")
+        .select("draft_id, platform, updated_at")
+        .eq("tenant_id", tenant_id)
+        .eq("status", "posted")
+        .order("updated_at", desc=True)
+        .execute()
+    )
+    jobs = jobs_result.data or []
+    if not jobs:
+        return []
+
+    # Collect unique draft_ids in order, track platforms per draft
+    draft_ids_seen: list[str] = []
+    platforms_by_draft: dict[str, list[str]] = {}
+    posted_at_by_draft: dict[str, str] = {}
+
+    for job in jobs:
+        did = job["draft_id"]
+        if did not in platforms_by_draft:
+            draft_ids_seen.append(did)
+            platforms_by_draft[did] = []
+            posted_at_by_draft[did] = job.get("updated_at", "")
+        platforms_by_draft[did].append(job["platform"])
+
+    # Apply limit on unique drafts
+    draft_ids_limited = draft_ids_seen[:limit]
+
+    # 2. Fetch corresponding content_drafts
+    drafts_result = (
+        client.table("content_drafts")
+        .select("id, caption_variants, created_at")
+        .in_("id", draft_ids_limited)
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+    drafts_by_id: dict[str, dict] = {d["id"]: d for d in (drafts_result.data or [])}
+
+    # 3. Join in Python, preserving order from jobs
+    output: list[dict] = []
+    for draft_id in draft_ids_limited:
+        draft = drafts_by_id.get(draft_id)
+        if not draft:
+            continue
+        variants = draft.get("caption_variants") or []
+        first_text = variants[0].get("text", "") if variants else ""
+        caption_preview = first_text[:80] + ("..." if len(first_text) > 80 else "")
+        output.append(
+            {
+                "draft_id": draft_id,
+                "caption_preview": caption_preview,
+                "posted_at": posted_at_by_draft.get(draft_id, draft.get("created_at", "")),
+                "platforms": platforms_by_draft.get(draft_id, []),
+            }
+        )
+    return output
 
 
 async def create_few_shot_examples_batch(
@@ -432,3 +545,55 @@ async def count_reference_photos(tenant_id: str) -> int:
         .execute()
     )
     return result.count or 0
+
+
+# --- Posting functions ---
+
+
+async def get_telegram_chat_id_for_draft(draft_id: str) -> int | None:
+    """Get telegram_chat_id from approval_requests for a draft. Single-hop query."""
+    client = get_supabase_client()
+    result = (
+        client.table("approval_requests")
+        .select("telegram_chat_id")
+        .eq("draft_id", draft_id)
+        .limit(1)
+        .execute()
+    )
+    if result.data:
+        return result.data[0]["telegram_chat_id"]
+    return None
+
+
+async def update_posting_job_status(job_id: str, status: str) -> None:
+    """Update the status of a posting job."""
+    client = get_supabase_client()
+    client.table("posting_jobs").update({"status": status}).eq("id", job_id).execute()
+
+
+async def create_posting_result(
+    posting_job_id: str,
+    tenant_id: str,
+    platform: str,
+    success: bool,
+    platform_post_id: str | None = None,
+    platform_url: str | None = None,
+    error_message: str | None = None,
+) -> dict:
+    """Insert a posting_results row after attempting to post to a platform."""
+    client = get_supabase_client()
+    data: dict = {
+        "posting_job_id": posting_job_id,
+        "tenant_id": tenant_id,
+        "platform": platform,
+        "success": success,
+    }
+    if platform_post_id is not None:
+        data["platform_post_id"] = platform_post_id
+    if platform_url is not None:
+        data["platform_url"] = platform_url
+    if error_message is not None:
+        data["error_message"] = error_message
+
+    result = client.table("posting_results").insert(data).execute()
+    return result.data[0]
