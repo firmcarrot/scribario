@@ -106,11 +106,11 @@ async def handle_regen_image_job(message: dict) -> None:
     keyboard = build_preview_keyboard(draft_id, num_options=len(caption_variants))
 
     settings = get_settings()
-    bot = Bot(
-        token=settings.telegram_bot_token,
-        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
-    )
     try:
+        bot = Bot(
+            token=settings.telegram_bot_token,
+            default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+        )
         # Clear buttons on original approval message so user doesn't act on stale options
         approval = await get_approval_request_for_draft(draft_id)
         if approval and approval.get("telegram_message_id"):

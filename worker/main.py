@@ -11,6 +11,8 @@ import logging
 import signal
 from typing import Any
 
+from datetime import UTC, datetime
+
 from bot.config import get_settings
 
 logger = logging.getLogger(__name__)
@@ -60,7 +62,7 @@ class Worker:
                 client.table("job_queue")
                 .select("*")
                 .eq("status", "queued")
-                .lte("scheduled_for", "now()")
+                .lte("scheduled_for", datetime.now(UTC).isoformat())
                 .order("created_at")
                 .limit(1)
                 .execute()

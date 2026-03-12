@@ -73,6 +73,9 @@ async def handle_edit_start(callback: CallbackQuery, state: FSMContext) -> None:
 
     await callback.answer()
 
+    if not callback.message:
+        return
+
     # Send prompt showing current caption
     preview = current_caption[:300] + "..." if len(current_caption) > 300 else current_caption
     await callback.message.answer(

@@ -5,6 +5,8 @@ from __future__ import annotations
 import logging
 
 from aiogram import Bot
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 
 from bot.config import get_settings
 from bot.db import (
@@ -174,7 +176,10 @@ async def handle_post_content(message: dict) -> None:
     telegram_chat_id = await get_telegram_chat_id_for_draft(draft_id)
     if telegram_chat_id:
         settings = get_settings()
-        bot = Bot(token=settings.telegram_bot_token)
+        bot = Bot(
+            token=settings.telegram_bot_token,
+            default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+        )
         try:
             if final_status == "posted":
                 text = f"✅ Posted to: {', '.join(succeeded)}"
