@@ -94,15 +94,18 @@ async def handle_post_content(message: dict) -> None:
         )
 
         if job_id:
-            await create_posting_result(
-                posting_job_id=job_id,
-                tenant_id=tenant_id,
-                platform=result.platform,
-                success=result.success,
-                platform_post_id=result.platform_post_id,
-                platform_url=result.platform_url,
-                error_message=result.error_message,
-            )
+            try:
+                await create_posting_result(
+                    posting_job_id=job_id,
+                    tenant_id=tenant_id,
+                    platform=result.platform,
+                    success=result.success,
+                    platform_post_id=result.platform_post_id,
+                    platform_url=result.platform_url,
+                    error_message=result.error_message,
+                )
+            except Exception:
+                logger.exception("Failed to save posting_result — non-fatal", extra={"job_id": job_id})
 
         if result.success:
             succeeded.append(result.platform)
