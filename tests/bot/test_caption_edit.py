@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from unittest.mock import MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
@@ -13,14 +13,11 @@ from bot.services.telegram import build_preview_keyboard
 class TestCaptionEditState:
     """CaptionEditSG state group has the expected state."""
 
-    def test_has_edit_caption_state(self):
-        assert hasattr(CaptionEditSG, "edit_caption")
+    def test_has_waiting_for_edit_instruction_state(self):
+        assert hasattr(CaptionEditSG, "waiting_for_edit_instruction")
 
-    def test_edit_caption_is_state_instance(self):
-        from aiogram.fsm.state import State
-
-        # The state group class has a group attribute, states are accessible via the class
-        assert CaptionEditSG.edit_caption is not None
+    def test_waiting_for_edit_instruction_is_state_instance(self):
+        assert CaptionEditSG.waiting_for_edit_instruction is not None
 
 
 class TestBuildPreviewKeyboardEditButtons:
@@ -154,3 +151,136 @@ class TestUpdateDraftCaption:
 
             with pytest.raises(IndexError):
                 await update_draft_caption("draft-789", 5, "boom")
+
+
+class TestHandleEditInstruction:
+    """handle_edit_instruction calls revise_caption and sends re-preview."""
+
+    def _make_draft(self, draft_id: str = "draft-123", tenant_id: str = "tenant-abc") -> dict:
+        return {
+            "id": draft_id,
+            "tenant_id": tenant_id,
+            "caption_variants": [
+                {"text": "Caption option 1"},
+                {"text": "Caption option 2"},
+            ],
+            "image_urls": ["https://img.example.com/1.jpg", "https://img.example.com/2.jpg"],
+        }
+
+    @pytest.mark.asyncio
+    async def test_calls_revise_caption_with_instruction(self):
+        """handle_edit_instruction passes the instruction to revise_caption."""
+        from bot.handlers.caption_edit import handle_edit_instruction
+
+        message = MagicMock()
+        message.text = "make it shorter"
+        message.answer = AsyncMock()
+        message.answer_photo = AsyncMock()
+
+        state = AsyncMock()
+        state.get_data = AsyncMock(return_value={"draft_id": "draft-123", "option_idx": 0})
+
+        draft = self._make_draft()
+
+        with (
+            patch("bot.handlers.caption_edit.get_draft", AsyncMock(return_value=draft)),
+            patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
+            patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
+            patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Short! 🔥")) as mock_revise,
+            patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+        ):
+            await handle_edit_instruction(message, state)
+
+        mock_revise.assert_called_once()
+        call_kwargs = mock_revise.call_args
+        assert call_kwargs[1]["instruction"] == "make it shorter" or call_kwargs[0][1] == "make it shorter"
+
+    @pytest.mark.asyncio
+    async def test_revised_caption_appears_in_re_preview(self):
+        """The revised caption text is included in the bot's reply."""
+        from bot.handlers.caption_edit import handle_edit_instruction
+
+        message = MagicMock()
+        message.text = "add emojis"
+        message.answer = AsyncMock()
+        message.answer_photo = AsyncMock()
+
+        state = AsyncMock()
+        state.get_data = AsyncMock(return_value={"draft_id": "draft-123", "option_idx": 0})
+
+        draft = self._make_draft()
+
+        with (
+            patch("bot.handlers.caption_edit.get_draft", AsyncMock(return_value=draft)),
+            patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
+            patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
+            patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Caption with emojis 🔥🌶️")),
+            patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+        ):
+            await handle_edit_instruction(message, state)
+
+        # Check that the revised caption appears somewhere in the sent message
+        all_calls = message.answer_photo.call_args_list + message.answer.call_args_list
+        all_text = " ".join(
+            str(c) for c in all_calls
+        )
+        assert "Caption with emojis 🔥🌶️" in all_text
+
+    @pytest.mark.asyncio
+    async def test_re_preview_has_post_edit_again_cancel_buttons(self):
+        """Re-preview keyboard has Post it, Edit Again, and Cancel buttons."""
+        from bot.handlers.caption_edit import handle_edit_instruction
+
+        message = MagicMock()
+        message.text = "stronger CTA"
+        message.answer = AsyncMock()
+        message.answer_photo = AsyncMock()
+
+        state = AsyncMock()
+        state.get_data = AsyncMock(return_value={"draft_id": "draft-123", "option_idx": 1})
+
+        draft = self._make_draft()
+
+        with (
+            patch("bot.handlers.caption_edit.get_draft", AsyncMock(return_value=draft)),
+            patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
+            patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
+            patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Revised!")),
+            patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+        ):
+            await handle_edit_instruction(message, state)
+
+        # Find the keyboard from the answer_photo or answer call
+        keyboard = None
+        if message.answer_photo.called:
+            keyboard = message.answer_photo.call_args[1].get("reply_markup")
+        elif message.answer.called:
+            keyboard = message.answer.call_args[1].get("reply_markup")
+
+        assert keyboard is not None
+        all_buttons = [btn for row in keyboard.inline_keyboard for btn in row]
+        button_texts = [b.text for b in all_buttons]
+        assert "✅ Post it" in button_texts
+        assert "✏️ Edit Again" in button_texts
+        assert "❌ Discard" in button_texts
+
+    @pytest.mark.asyncio
+    async def test_empty_instruction_asks_to_retry(self):
+        """Empty instruction message prompts user to try again."""
+        from bot.handlers.caption_edit import handle_edit_instruction
+
+        message = MagicMock()
+        message.text = "   "  # whitespace only
+        message.answer = AsyncMock()
+
+        state = AsyncMock()
+        state.get_data = AsyncMock(return_value={"draft_id": "draft-123", "option_idx": 0})
+
+        await handle_edit_instruction(message, state)
+
+        message.answer.assert_called_once()
+        assert "try again" in message.answer.call_args[0][0].lower() or \
+               "empty" in message.answer.call_args[0][0].lower()

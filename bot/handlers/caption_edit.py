@@ -1,4 +1,4 @@
-"""Caption edit flow — plain FSM, no aiogram_dialog dependency."""
+"""Caption edit flow — AI-assisted revision via plain FSM."""
 
 from __future__ import annotations
 
@@ -6,18 +6,21 @@ import logging
 
 from aiogram import F, Router
 from aiogram.fsm.context import FSMContext
-from aiogram.fsm.state import State, StatesGroup
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from bot.db import get_draft, get_tenant_by_telegram_user, update_draft_caption
+from bot.db import (
+    create_feedback_event,
+    get_draft,
+    get_tenant_by_telegram_user,
+    update_draft_caption,
+)
+from bot.dialogs.states import CaptionEditSG
+from pipeline.brand_voice import load_brand_profile, load_few_shot_examples
+from pipeline.caption_gen import revise_caption
 
 logger = logging.getLogger(__name__)
 
 router = Router(name="caption_edit")
-
-
-class CaptionEditState(StatesGroup):
-    waiting_for_caption = State()
 
 
 # ---------------------------------------------------------------------------
@@ -27,7 +30,7 @@ class CaptionEditState(StatesGroup):
 
 @router.callback_query(F.data.startswith("edit:"))
 async def handle_edit_start(callback: CallbackQuery, state: FSMContext) -> None:
-    """User tapped ✏️ Edit — prompt for new caption text."""
+    """User tapped ✏️ Edit — show current caption and ask what to change."""
     if not callback.data:
         return
 
@@ -68,7 +71,7 @@ async def handle_edit_start(callback: CallbackQuery, state: FSMContext) -> None:
         current_caption = ""
 
     # Store context in FSM state
-    await state.set_state(CaptionEditState.waiting_for_caption)
+    await state.set_state(CaptionEditSG.waiting_for_edit_instruction)
     await state.update_data(draft_id=draft_id, option_idx=option_idx)
 
     await callback.answer()
@@ -76,79 +79,133 @@ async def handle_edit_start(callback: CallbackQuery, state: FSMContext) -> None:
     if not callback.message:
         return
 
-    # Send prompt showing current caption
-    preview = current_caption[:300] + "..." if len(current_caption) > 300 else current_caption
+    await callback.message.answer(current_caption)
     await callback.message.answer(
-        f"<b>Option {option_number} — current caption:</b>\n\n"
-        f"{preview}\n\n"
-        f"<i>Type your new version and send it. Or send /cancel to keep the original.</i>",
+        f"<b>✏️ Option {option_number} — what should I change?</b>\n\n"
+        'Tell me what to fix, e.g. <i>"make it shorter"</i>, <i>"add emojis"</i>, '
+        '<i>"stronger CTA"</i>\n\n'
+        "<i>Send /cancel to keep the original.</i>",
         parse_mode="HTML",
     )
 
 
 # ---------------------------------------------------------------------------
-# /cancel while in edit state
+# /cancel while waiting for edit instruction
 # ---------------------------------------------------------------------------
 
 
-@router.message(CaptionEditState.waiting_for_caption, F.text == "/cancel")
+@router.message(CaptionEditSG.waiting_for_edit_instruction, F.text == "/cancel")
 async def handle_edit_cancel(message: Message, state: FSMContext) -> None:
     await state.clear()
     await message.answer("No changes made.")
 
 
 # ---------------------------------------------------------------------------
-# Receive the new caption text
+# Receive the edit instruction — call Claude, re-preview
 # ---------------------------------------------------------------------------
 
 
-@router.message(CaptionEditState.waiting_for_caption, F.text)
-async def handle_new_caption(message: Message, state: FSMContext) -> None:
-    """User sent their edited caption — save and re-send preview."""
-    new_caption = (message.text or "").strip()
-    if not new_caption:
-        await message.answer("Caption can't be empty. Try again, or send /cancel.")
+@router.message(CaptionEditSG.waiting_for_edit_instruction, F.text)
+async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
+    """User described what to change — revise with AI and re-preview."""
+    instruction = (message.text or "").strip()
+    if not instruction:
+        await message.answer("Instruction can't be empty. Try again, or send /cancel.")
         return
 
     data = await state.get_data()
     draft_id: str = data.get("draft_id", "")
     option_idx: int = data.get("option_idx", 0)
 
-    await state.clear()
-
-    try:
-        await update_draft_caption(draft_id, option_idx, new_caption)
-    except Exception:
-        logger.exception("Failed to update draft caption", extra={"draft_id": draft_id})
-        await message.answer("Something went wrong saving your edit. Please try again.")
+    # Validate the draft exists before clearing state — transient DB errors stay recoverable
+    draft = await get_draft(draft_id)
+    if not draft:
+        await state.clear()
+        await message.answer("Couldn't find the original draft. Please try again.")
         return
 
-    # Show the edited option with a single Approve button — just post it
+    await state.clear()
+
+    # Get current caption text
+    caption_variants = draft.get("caption_variants") or []
+    if option_idx < len(caption_variants):
+        current_caption = caption_variants[option_idx].get("text", "")
+    else:
+        current_caption = caption_variants[0].get("text", "") if caption_variants else ""
+
+    tenant_id: str = draft["tenant_id"]
+
+    # Load brand context
+    profile = await load_brand_profile(tenant_id)
+    if profile is None:
+        logger.error("Brand profile not found for revision", extra={"tenant_id": tenant_id})
+        await message.answer("Brand profile not found. Please contact support.")
+        return
+
+    examples = await load_few_shot_examples(tenant_id)
+
+    # Revise with Claude
     try:
-        draft = await get_draft(draft_id)
-        if not draft:
-            await message.answer("✅ Caption saved.")
-            return
+        revised = await revise_caption(
+            current_caption=current_caption,
+            instruction=instruction,
+            profile=profile,
+            examples=examples,
+        )
+    except Exception:
+        logger.exception("Caption revision failed", extra={"draft_id": draft_id})
+        await message.answer("Something went wrong generating the revision. Please try again.")
+        return
 
-        image_urls = draft.get("image_urls") or []
-        image_url = image_urls[option_idx] if option_idx < len(image_urls) else None
+    # Save the revised caption
+    try:
+        await update_draft_caption(draft_id, option_idx, revised)
+    except Exception:
+        logger.exception("Failed to save revised caption", extra={"draft_id": draft_id})
+        await message.answer("Something went wrong saving the revision. Please try again.")
+        return
 
-        from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[[
-            InlineKeyboardButton(
-                text="✅ Post it",
-                callback_data=f"approve:{draft_id}:{option_idx + 1}",
-            ),
-            InlineKeyboardButton(
-                text="❌ Cancel",
-                callback_data=f"reject:{draft_id}",
-            ),
-        ]])
+    # Log feedback event for brand voice learning
+    try:
+        await create_feedback_event(
+            draft_id=draft_id,
+            tenant_id=tenant_id,
+            action="edit",
+            edited_caption=revised,
+        )
+    except Exception:
+        logger.warning("Failed to log feedback event for edit", extra={"draft_id": draft_id})
+        # Non-critical — don't block the user
 
-        caption_text = f"<b>Your edited caption:</b>\n\n{new_caption}"
-        if len(caption_text) > 1020:
-            caption_text = caption_text[:1017] + "..."
+    # Build re-preview keyboard: Post it / Edit Again / Discard (permanently rejects draft)
+    option_number = option_idx + 1
+    keyboard = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(
+                    text="✅ Post it",
+                    callback_data=f"approve:{draft_id}:{option_number}",
+                ),
+                InlineKeyboardButton(
+                    text="✏️ Edit Again",
+                    callback_data=f"edit:{draft_id}:{option_number}",
+                ),
+                InlineKeyboardButton(
+                    text="❌ Discard",
+                    callback_data=f"reject:{draft_id}",
+                ),
+            ]
+        ]
+    )
 
+    # Truncate the raw caption before wrapping in HTML to avoid cutting mid-tag
+    display_caption = revised if len(revised) <= 950 else revised[:947] + "..."
+    caption_text = f"<b>Revised caption:</b>\n\n{display_caption}"
+
+    image_urls = draft.get("image_urls") or []
+    image_url = image_urls[option_idx] if option_idx < len(image_urls) else None
+
+    try:
         if image_url:
             await message.answer_photo(
                 photo=image_url,
@@ -158,7 +215,6 @@ async def handle_new_caption(message: Message, state: FSMContext) -> None:
             )
         else:
             await message.answer(caption_text, parse_mode="HTML", reply_markup=keyboard)
-
     except Exception:
-        logger.exception("Failed to send post-edit preview", extra={"draft_id": draft_id})
-        await message.answer("✅ Caption saved. Use the original approval buttons to post.")
+        logger.exception("Failed to send re-preview", extra={"draft_id": draft_id})
+        await message.answer("✅ Caption revised. Use the original approval buttons to post.")

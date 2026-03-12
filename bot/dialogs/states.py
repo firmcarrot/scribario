@@ -17,4 +17,4 @@ class OnboardingSG(StatesGroup):
 class CaptionEditSG(StatesGroup):
     """Caption editing dialog states."""
 
-    edit_caption = State()
+    waiting_for_edit_instruction = State()
