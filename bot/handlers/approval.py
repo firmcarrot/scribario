@@ -228,3 +228,72 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         await callback.message.edit_reply_markup(reply_markup=None)
         await callback.message.reply("Generating new options... I'll send them in a moment.")
 
+
+@router.callback_query(F.data.startswith("regen_image:"))
+async def handle_regen_image(callback: CallbackQuery) -> None:
+    """Handle image-only regeneration — regenerate one image, keep its caption.
+
+    Callback data format: "regen_image:{draft_id}:{option_number}"
+    """
+    if not callback.data:
+        return
+
+    parts = callback.data.split(":")
+    if len(parts) < 3:
+        await callback.answer("Invalid request.")
+        return
+
+    draft_id = parts[1]
+    try:
+        option_number = int(parts[2])
+    except ValueError:
+        await callback.answer("Invalid option number.")
+        return
+
+    option_idx = option_number - 1  # 0-indexed
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
+        return
+
+    # Get the visual prompt for this option
+    caption_variants = draft.get("caption_variants") or []
+    if option_idx >= len(caption_variants):
+        await callback.answer("Option not found.")
+        return
+
+    visual_prompt = caption_variants[option_idx].get("visual_prompt", "")
+    tenant_id = draft["tenant_id"]
+
+    logger.info(
+        "Image-only regen requested",
+        extra={"draft_id": draft_id, "option_idx": option_idx, "tenant_id": tenant_id},
+    )
+
+    await create_feedback_event(
+        draft_id=draft_id, tenant_id=tenant_id, action="regenerate"
+    )
+
+    await enqueue_job(
+        queue_name="content_generation",
+        job_type="regen_image",
+        payload={
+            "draft_id": draft_id,
+            "tenant_id": tenant_id,
+            "option_idx": option_idx,
+            "visual_prompt": visual_prompt,
+            "telegram_chat_id": callback.message.chat.id if callback.message else None,
+        },
+        idempotency_key=f"{draft_id}:regen_image:{option_idx}",
+    )
+
+    await callback.answer(f"Regenerating image #{option_number}...")
+    if callback.message:
+        await callback.message.reply(
+            f"Generating a new image for option #{option_number}... I'll send it in a moment."
+        )
+

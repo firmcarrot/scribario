@@ -19,14 +19,21 @@ def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboar
     ]
     rows.append(option_buttons)
 
-    # One edit button per option — inserted after approve row
+    # One edit button per option
     edit_buttons = [
         InlineKeyboardButton(text=f"✏️ Edit #{i}", callback_data=f"edit:{draft_id}:{i}")
         for i in range(1, num_options + 1)
     ]
-    rows.insert(1, edit_buttons)  # after approve row, before reject/regen
+    rows.insert(1, edit_buttons)  # after approve row
 
-    # Reject and regenerate
+    # One regen-image button per option
+    regen_image_buttons = [
+        InlineKeyboardButton(text=f"🖼️ New Image #{i}", callback_data=f"regen_image:{draft_id}:{i}")
+        for i in range(1, num_options + 1)
+    ]
+    rows.append(regen_image_buttons)
+
+    # Reject and regenerate all
     rows.append([
         InlineKeyboardButton(text="Reject All", callback_data=f"reject:{draft_id}"),
         InlineKeyboardButton(text="Regenerate", callback_data=f"regen:{draft_id}"),

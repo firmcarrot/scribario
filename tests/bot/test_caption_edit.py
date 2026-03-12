@@ -49,10 +49,10 @@ class TestBuildPreviewKeyboardEditButtons:
         assert all(btn.text.startswith("Approve") for btn in rows[0])
         assert all(btn.text.startswith("✏️ Edit") for btn in rows[1])
 
-    def test_keyboard_has_three_rows_for_default_options(self):
+    def test_keyboard_has_four_rows_for_default_options(self):
         keyboard = build_preview_keyboard("draft-999", num_options=3)
-        # approve row + edit row + reject/regen row = 3 rows
-        assert len(keyboard.inline_keyboard) == 3
+        # approve row + edit row + regen_image row + reject/regen row = 4 rows
+        assert len(keyboard.inline_keyboard) == 4
 
 
 class TestUpdateDraftCaption:

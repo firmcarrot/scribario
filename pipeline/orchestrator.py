@@ -91,9 +91,8 @@ async def generate_content(
         platform_targets=platform_targets,
     )
 
-    # TODO: Store draft in content_drafts table
-    # TODO: Store images in Supabase Storage
-    # TODO: Log usage_events for cost tracking
+    # NOTE: Storage and usage logging are handled by worker/jobs/generate_content.py.
+    # This orchestrator is used for unit-testing the pipeline in isolation only.
 
     logger.info(
         "Content draft complete",

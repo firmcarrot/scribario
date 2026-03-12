@@ -2,7 +2,7 @@
 
 **Your AI social media team — in a Telegram bot.**
 
-[![Tests](https://img.shields.io/badge/tests-216%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-226%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Telegram](https://img.shields.io/badge/bot-%40ScribarioBot-2CA5E0?logo=telegram)](https://t.me/ScribarioBot)
@@ -78,7 +78,8 @@ You (Telegram)           Scribario                    The Internet
 - **Multi-tenant architecture** — every business gets isolated data, brand profiles, and posting credentials
 - **Fully self-hosted** — your API keys, your data, your infrastructure
 - **Reference photo support** — send a photo as creative direction for the image style
-- **216 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
+- **Image-only regeneration** — 🖼️ New Image per option — regenerates the photo, keeps the caption
+- **226 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
 
 ---
 
@@ -161,7 +162,7 @@ python -m bot.main
 Scribario is in active development with a live beta deployment serving its first client.
 
 - **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, Redis FSM
-- **Phase 2:** Complete — scheduling, style system, caption editing, platform selection, /history, brand voice learning, posting confirmation (216 tests)
+- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation (226 tests)
 - **Phase 3:** Planned — analytics, agency dashboard, Meta App Review for public Instagram access
 
 See the full roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)

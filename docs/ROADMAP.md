@@ -22,27 +22,34 @@ The foundation: a working end-to-end system that takes a text message and publis
 - [x] Reference photo support — users can send a photo as image direction
 - [x] Brand profile onboarding dialog (aiogram-dialog state machine)
 - [x] 147 passing tests, full mypy --strict type checking
+- [x] Redis FSM storage — bot state survives restarts
 
 **First live client:** Mondo Shrimp (beta) — posting to Facebook and Instagram
 
 ---
 
-## Phase 2 — Growth Features 🔄 In Progress
+## Phase 2 — Growth Features ✅ Complete
 
-*Target: Q2 2026*
+*Shipped March 2026*
 
 Making Scribario useful enough that clients don't want to churn.
 
-- [ ] **Scheduled posting** — "Post this Saturday at 10am" — pg_cron integration
-- [ ] **Style system** — persistent per-tenant image style preferences (photography vs illustrated vs product-forward)
-- [ ] **Bluesky integration** — zero-friction platform, AT Protocol OAuth
-- [ ] **LinkedIn personal posting** — no review needed, fast to ship
-- [ ] **Post history** — view past posts from the bot
-- [ ] **Caption editing** — approve a post but tweak the copy before it goes live
+- [x] **Scheduled posting** — "Post this Saturday at 10am" — dateparser + job_queue.scheduled_for
+- [x] **Style system** — per-post style override + per-brand default (photorealistic/cinematic/cartoon/watercolor)
+- [x] **Post history** — `/history` shows last 10 posted pieces with platforms + caption preview
+- [x] **Caption editing** — ✏️ Edit button per option, FSM flow, re-preview before approving
+- [x] **Image regeneration only** — 🖼️ New Image button per option, regenerates image only, keeps caption
+- [x] **Usage tracking** — per-tenant cost logging to usage_events (anthropic + kie_ai, per request)
+- [x] **Brand voice learning** — approved posts auto-added as few_shot_examples; dedup + 20-example cap
+- [x] **Posting confirmation** — Telegram message after every post with actual platform names
+- [x] **Multi-platform targeting** — "post to LinkedIn only" narrows which platforms receive the post
+- [x] **226 tests**, Redis FSM storage, full type checking
+
+Still in Phase 2 (needs external API access or infrastructure):
+- [ ] **Bluesky integration** — AT Protocol OAuth — no review required, pending implementation
+- [ ] **LinkedIn personal posting** — no review required, pending implementation
 - [ ] **Multi-user tenants** — add team members to a Scribario account
 - [ ] **Webhook-based worker** — replace polling with pgmq NOTIFY for lower latency
-- [ ] **Image regeneration only** — regenerate just the image, keep the caption you liked
-- [ ] **Usage tracking** — per-tenant cost visibility (tokens, images, posts)
 
 ---
 
@@ -52,7 +59,7 @@ Making Scribario useful enough that clients don't want to churn.
 
 Making Scribario smarter the longer you use it.
 
-- [ ] **Brand voice learning** — automatically improve brand profiles from approved content
+- [x] **Brand voice learning** — automatically improve brand profiles from approved content *(shipped Phase 2)*
 - [ ] **Performance feedback loop** — connect analytics data to influence future generation
 - [ ] **Composition awareness** — Nano Banana composition guidance for consistent visual identity
 - [ ] **Content calendar** — suggest when to post based on historical engagement patterns
@@ -114,7 +121,7 @@ Scribario is solving a real, recurring pain: small and medium businesses know th
 **Current traction:**
 - First beta client live, posting to Facebook + Instagram
 - End-to-end working: message → preview → approve → live post in under 45 seconds
-- 147 automated tests, production-grade architecture from day one
+- 226 automated tests, production-grade architecture from day one
 
 **Revenue model:**
 - SaaS subscription tiers (Starter / Growth / Pro) based on post volume
