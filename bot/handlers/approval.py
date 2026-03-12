@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+import time
 
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
@@ -278,18 +279,28 @@ async def handle_regen_image(callback: CallbackQuery) -> None:
         draft_id=draft_id, tenant_id=tenant_id, action="regenerate"
     )
 
-    await enqueue_job(
-        queue_name="content_generation",
-        job_type="regen_image",
-        payload={
-            "draft_id": draft_id,
-            "tenant_id": tenant_id,
-            "option_idx": option_idx,
-            "visual_prompt": visual_prompt,
-            "telegram_chat_id": callback.message.chat.id if callback.message else None,
-        },
-        idempotency_key=f"{draft_id}:regen_image:{option_idx}",
-    )
+    # Use a minute-bucket key so users can retry regen after each completes
+    minute_bucket = int(time.time()) // 60
+    try:
+        await enqueue_job(
+            queue_name="content_generation",
+            job_type="regen_image",
+            payload={
+                "draft_id": draft_id,
+                "tenant_id": tenant_id,
+                "option_idx": option_idx,
+                "visual_prompt": visual_prompt,
+                "telegram_chat_id": callback.message.chat.id if callback.message else None,
+            },
+            idempotency_key=f"{draft_id}:regen_image:{option_idx}:{minute_bucket}",
+        )
+    except Exception:
+        logger.warning(
+            "regen_image job already queued (duplicate tap)",
+            extra={"draft_id": draft_id, "option_idx": option_idx},
+        )
+        await callback.answer("Already regenerating — please wait a moment.")
+        return
 
     await callback.answer(f"Regenerating image #{option_number}...")
     if callback.message:

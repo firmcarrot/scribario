@@ -16,6 +16,7 @@ class TestHandleRegenImage:
         draft = {
             "id": "draft-abc",
             "tenant_id": "tenant-xyz",
+            "status": "previewing",
             "caption_variants": [
                 {"text": "Cap 1", "visual_prompt": "shrimp dish"},
                 {"text": "Cap 2", "visual_prompt": "sauce bottle"},
@@ -44,6 +45,11 @@ class TestHandleRegenImage:
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
             patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+            patch(
+                "worker.jobs.regen_image.get_approval_request_for_draft",
+                new_callable=AsyncMock,
+                return_value={"telegram_chat_id": 12345, "telegram_message_id": None},
+            ),
             patch("worker.jobs.regen_image.Bot") as mock_bot_class,
             patch("worker.jobs.regen_image.get_settings") as mock_settings,
         ):
@@ -77,6 +83,7 @@ class TestHandleRegenImage:
         draft = {
             "id": "draft-abc",
             "tenant_id": "tenant-xyz",
+            "status": "previewing",
             "caption_variants": [{"text": "Cap 1", "visual_prompt": "shrimp dish"}],
             "image_urls": ["https://old1.com"],
         }
@@ -102,6 +109,11 @@ class TestHandleRegenImage:
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
             patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+            patch(
+                "worker.jobs.regen_image.get_approval_request_for_draft",
+                new_callable=AsyncMock,
+                return_value={"telegram_chat_id": 12345, "telegram_message_id": None},
+            ),
             patch("worker.jobs.regen_image.Bot", return_value=mock_bot),
             patch("worker.jobs.regen_image.get_settings") as mock_settings,
         ):
@@ -131,6 +143,7 @@ class TestHandleRegenImage:
         draft = {
             "id": "draft-abc",
             "tenant_id": "tenant-xyz",
+            "status": "previewing",
             "caption_variants": [{"text": "Cap 1", "visual_prompt": "shrimp dish"}],
             "image_urls": ["https://old1.com"],
         }
@@ -156,6 +169,7 @@ class TestHandleRegenImage:
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
             patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+            patch("worker.jobs.regen_image.get_approval_request_for_draft", new_callable=AsyncMock),
             patch("worker.jobs.regen_image.Bot", return_value=mock_bot),
             patch("worker.jobs.regen_image.get_settings") as mock_settings,
         ):

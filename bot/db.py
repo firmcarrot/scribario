@@ -563,6 +563,21 @@ async def get_telegram_chat_id_for_draft(draft_id: str) -> int | None:
     return None
 
 
+async def get_approval_request_for_draft(draft_id: str) -> dict | None:
+    """Get telegram_chat_id and telegram_message_id from approval_requests. Single-hop query."""
+    client = get_supabase_client()
+    result = (
+        client.table("approval_requests")
+        .select("telegram_chat_id, telegram_message_id")
+        .eq("draft_id", draft_id)
+        .limit(1)
+        .execute()
+    )
+    if result.data:
+        return result.data[0]
+    return None
+
+
 async def update_posting_job_status(job_id: str, status: str) -> None:
     """Update the status of a posting job."""
     client = get_supabase_client()

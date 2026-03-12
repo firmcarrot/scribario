@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import httpx
 
@@ -124,7 +124,7 @@ class PostizClient:
         payload = {
             "type": "now",
             "shortLink": False,
-            "date": datetime.now(timezone.utc).isoformat(),
+            "date": datetime.now(UTC).isoformat(),
             "tags": [],
             "posts": [p for _, p in posts],
         }

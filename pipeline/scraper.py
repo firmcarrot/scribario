@@ -190,7 +190,6 @@ def _extract_products_from_jsonld(jsonld_items: list[dict]) -> list[str]:
             for element in item.get("itemListElement", []):
                 if isinstance(element, dict):
                     nested = element.get("item", element)
-                    if isinstance(nested, dict) and nested.get("@type") == "Product":
-                        if nested.get("name"):
-                            products.append(nested["name"])
+                    if isinstance(nested, dict) and nested.get("@type") == "Product" and nested.get("name"):
+                        products.append(nested["name"])
     return products

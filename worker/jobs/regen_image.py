@@ -9,7 +9,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from bot.config import get_settings
-from bot.db import get_supabase_client, log_usage_event
+from bot.db import get_approval_request_for_draft, get_supabase_client, log_usage_event
 from pipeline.image_gen import ImageGenerationService
 
 logger = logging.getLogger(__name__)
@@ -38,9 +38,10 @@ async def handle_regen_image_job(message: dict) -> None:
         extra={"draft_id": draft_id, "option_idx": option_idx, "tenant_id": tenant_id},
     )
 
-    # 1. Generate the new image
+    # 1. Generate the new image — guard against empty prompt
+    effective_prompt = visual_prompt or "professional product photo, clean background"
     image_service = ImageGenerationService()
-    result = await image_service.generate(visual_prompt)
+    result = await image_service.generate(effective_prompt)
 
     await log_usage_event(
         tenant_id=tenant_id,
@@ -50,11 +51,11 @@ async def handle_regen_image_job(message: dict) -> None:
         metadata={"draft_id": draft_id, "option_idx": option_idx, "prompt": visual_prompt[:100]},
     )
 
-    # 2. Load current draft and replace image_urls[option_idx]
+    # 2. Load current draft — check status before writing (race guard)
     client = get_supabase_client()
     draft_result = (
         client.table("content_drafts")
-        .select("image_urls, caption_variants")
+        .select("image_urls, caption_variants, status")
         .eq("id", draft_id)
         .limit(1)
         .execute()
@@ -64,6 +65,14 @@ async def handle_regen_image_job(message: dict) -> None:
         return
 
     draft = draft_result.data[0]
+
+    # If draft was approved/rejected while this job was queued, abort silently
+    if draft.get("status") not in ("previewing", "generated"):
+        logger.info(
+            "Draft no longer in regen-able state — skipping image write",
+            extra={"draft_id": draft_id, "status": draft.get("status")},
+        )
+        return
     image_urls: list[str] = list(draft.get("image_urls") or [])
     caption_variants: list[dict] = draft.get("caption_variants") or []
 
@@ -102,6 +111,22 @@ async def handle_regen_image_job(message: dict) -> None:
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
     try:
+        # Clear buttons on original approval message so user doesn't act on stale options
+        approval = await get_approval_request_for_draft(draft_id)
+        if approval and approval.get("telegram_message_id"):
+            try:
+                await bot.edit_message_reply_markup(
+                    chat_id=telegram_chat_id,
+                    message_id=approval["telegram_message_id"],
+                    reply_markup=None,
+                )
+            except Exception:
+                # Silently ignore if message was already edited or deleted
+                logger.debug(
+                    "Could not clear old approval message markup",
+                    extra={"draft_id": draft_id},
+                )
+
         await bot.send_photo(
             chat_id=telegram_chat_id,
             photo=result.url,

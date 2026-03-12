@@ -7,8 +7,6 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMedia
 
 def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboardMarkup:
     """Build inline keyboard with per-option approve + edit buttons + reject/regen."""
-    rows: list[list[InlineKeyboardButton]] = []
-
     # One approve button per option
     option_buttons = [
         InlineKeyboardButton(
@@ -17,29 +15,35 @@ def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboar
         )
         for i in range(1, num_options + 1)
     ]
-    rows.append(option_buttons)
 
     # One edit button per option
     edit_buttons = [
         InlineKeyboardButton(text=f"✏️ Edit #{i}", callback_data=f"edit:{draft_id}:{i}")
         for i in range(1, num_options + 1)
     ]
-    rows.insert(1, edit_buttons)  # after approve row
 
     # One regen-image button per option
     regen_image_buttons = [
-        InlineKeyboardButton(text=f"🖼️ New Image #{i}", callback_data=f"regen_image:{draft_id}:{i}")
+        InlineKeyboardButton(
+            text=f"🖼️ New Image #{i}", callback_data=f"regen_image:{draft_id}:{i}"
+        )
         for i in range(1, num_options + 1)
     ]
-    rows.append(regen_image_buttons)
 
     # Reject and regenerate all
-    rows.append([
+    action_buttons = [
         InlineKeyboardButton(text="Reject All", callback_data=f"reject:{draft_id}"),
         InlineKeyboardButton(text="Regenerate", callback_data=f"regen:{draft_id}"),
-    ])
+    ]
 
-    return InlineKeyboardMarkup(inline_keyboard=rows)
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            option_buttons,
+            edit_buttons,
+            regen_image_buttons,
+            action_buttons,
+        ]
+    )
 
 
 def build_preview_caption(caption: str, platform_targets: list[str]) -> str:

@@ -93,7 +93,7 @@ def _strip_scheduling_language(text: str) -> str:
         text,
         flags=re.IGNORECASE,
     ).strip()
-    cleaned = cleaned.strip(" ,;.—–-")
+    cleaned = cleaned.strip(" ,;.\u2014\u2013-")
     return cleaned if cleaned else text
 
 
@@ -137,10 +137,7 @@ async def handle_content_request(message: Message) -> None:
 
     # --- Feature 3: Scheduling ---
     scheduled_time = parse_scheduled_time(raw_intent)
-    if scheduled_time:
-        intent = _strip_scheduling_language(raw_intent)
-    else:
-        intent = raw_intent
+    intent = _strip_scheduling_language(raw_intent) if scheduled_time else raw_intent
 
     # --- Feature 4: Style override ---
     style_override = parse_style_override(raw_intent)
