@@ -13,7 +13,7 @@
 
 Scribario turns a single Telegram message into a polished, platform-ready social media post — complete with an AI-generated image and brand-tuned caption — and publishes it automatically. No dashboard. No design tools. No copywriting. Just text your bot and approve what you like.
 
-Business owners describe what they want to post. Scribario generates three unique caption + image combinations, each calibrated to the brand's voice and target audience. One tap approves the winner and schedules it for posting across Facebook, Instagram, and beyond.
+Business owners describe what they want to post. Scribario generates three unique caption + image combinations, each calibrated to the brand's voice and target audience. One tap approves the winner and publishes it simultaneously across Facebook, Instagram, LinkedIn, X (Twitter), TikTok, YouTube, Bluesky, Pinterest, and Threads.
 
 ---
 
@@ -54,10 +54,10 @@ You (Telegram)           Scribario                    The Internet
                              │  (self-host) │
                              └──────┬───────┘
                                     │
-                          ┌─────────┴──────────┐
-                          ▼                    ▼
-                    Facebook Page         Instagram
-                    ✓ Posted              ✓ Posted
+         ┌──────┬──────┬──────┬──────┬──────┬──────┐
+         ▼      ▼      ▼      ▼      ▼      ▼      ▼
+      Facebook  IG  LinkedIn  X   TikTok Bluesky YouTube
+      ✓ Posted ✓    ✓        ✓    ✓      ✓       ✓
 ```
 
 ---
@@ -68,7 +68,7 @@ You (Telegram)           Scribario                    The Internet
 - **Brand voice that actually sounds like you** — few-shot learning from your best past posts
 - **3 image options per request** — generated in parallel by Kie.ai Nano Banana 2 (~25s)
 - **One-tap approval** — Approve, Reject All, or Regenerate without leaving Telegram
-- **Multi-platform publishing** — Facebook, Instagram, and more coming
+- **Multi-platform publishing** — Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, Threads
 - **Multi-tenant architecture** — every business gets isolated data, brand profiles, and posting credentials
 - **Fully self-hosted** — your API keys, your data, your infrastructure
 - **Reference photo support** — send a photo as creative direction for the image style
@@ -105,7 +105,7 @@ Scribario generates three options in ~30 seconds:
 | #2 | *"Most interesting weekend special in the world. Dare to try it? Stay hungry, my friends."* | Lifestyle photo with warm lighting |
 | #3 | *"The VIP Club told us to keep this quiet. We didn't listen. Weekend special is LIVE."* | Bold product-forward composition |
 
-User taps **Approve #2** → posted to Facebook + Instagram within seconds.
+User taps **Approve #2** → posted to all connected platforms (Facebook, Instagram, LinkedIn, and more) within seconds.
 
 ---
 

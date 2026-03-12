@@ -167,9 +167,16 @@ This is the complete lifecycle of a single user request:
    └─► POST to Postiz API (image + caption + platform targets)
 
 10. POSTIZ PUBLISHES
-    Postiz handles platform-specific posting:
+    Postiz handles platform-specific OAuth, rate limiting, and media upload:
     ├─► Facebook: Graph API post with media
-    └─► Instagram: Graph API media publish
+    ├─► Instagram: Graph API media publish
+    ├─► LinkedIn: Share API
+    ├─► X (Twitter): v2 Tweet API
+    ├─► TikTok: Content Posting API
+    ├─► YouTube: Data API v3
+    ├─► Bluesky: AT Protocol
+    ├─► Pinterest: Pins API
+    └─► Threads: Threads API
 
 11. CONFIRMATION
     ├─► Update posting_jobs (status: "posted")
@@ -297,7 +304,7 @@ Scribario uses [pgmq](https://github.com/tembo-io/pgmq) — a Postgres-native me
 - Provider abstraction: `ImageGenerationService` wraps the API — swap providers without touching the pipeline
 
 ### Postiz API
-- Used for: Social media publishing (Facebook, Instagram, more coming)
+- Used for: Social media publishing — Facebook, Instagram, LinkedIn, X (Twitter), TikTok, YouTube, Bluesky, Pinterest, Threads
 - Pattern: REST API — upload media, create post, attach to social account
 - Auth: API key + org ID in headers
 - Self-hosted at `https://postiz.scribario.com`
