@@ -7,7 +7,6 @@ import logging
 
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
-from aiogram_dialog import DialogManager
 
 from bot.db import (
     create_feedback_event,
@@ -230,53 +229,3 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         await callback.message.edit_reply_markup(reply_markup=None)
         await callback.message.reply("Generating new options... I'll send them in a moment.")
 
-
-@router.callback_query(F.data.startswith("edit:"))
-async def handle_edit_caption(callback: CallbackQuery, dialog_manager: DialogManager) -> None:
-    """Handle caption edit — start CaptionEditSG dialog.
-
-    Callback data format: "edit:{draft_id}:{option_number}" (option_number is 1-indexed)
-    """
-    from bot.dialogs.states import CaptionEditSG
-
-    if not callback.data:
-        return
-
-    parts = callback.data.split(":")
-    if len(parts) < 3:
-        await callback.answer("Invalid edit callback.")
-        return
-
-    draft_id = parts[1]
-    try:
-        option_number = int(parts[2])
-    except ValueError:
-        await callback.answer("Invalid option number.")
-        return
-
-    option_idx = option_number - 1  # convert to 0-indexed
-
-    draft = await _validate_draft_access(callback, draft_id)
-    if not draft:
-        return
-
-    # Get current caption text for the selected option
-    caption_variants = draft.get("caption_variants") or []
-    if option_idx < len(caption_variants):
-        current_caption = caption_variants[option_idx].get("text", "")
-    elif caption_variants:
-        current_caption = caption_variants[0].get("text", "")
-    else:
-        current_caption = ""
-
-    await callback.answer()
-
-    # Start the caption edit dialog, passing data via start_data
-    await dialog_manager.start(
-        CaptionEditSG.edit_caption,
-        data={
-            "draft_id": draft_id,
-            "option_idx": option_idx,
-            "current_caption": current_caption,
-        },
-    )
