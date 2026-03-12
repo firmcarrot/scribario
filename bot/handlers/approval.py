@@ -89,9 +89,9 @@ async def handle_approve(callback: CallbackQuery) -> None:
     # Pick the selected caption variant
     caption_variants = draft.get("caption_variants", [])
     if option_idx < len(caption_variants):
-        caption = caption_variants[option_idx]["text"]
+        caption = caption_variants[option_idx].get("text", "")
     elif caption_variants:
-        caption = caption_variants[0]["text"]
+        caption = caption_variants[0].get("text", "")
     else:
         caption = ""
     all_image_urls = draft.get("image_urls", [])

@@ -58,10 +58,10 @@ async def handle_post_content(message: dict) -> None:
             .limit(1)
             .execute()
         )
-        if existing.data and existing.data[0].get("status") == "posted":
+        if existing.data and existing.data[0].get("status") in ("posted", "failed", "partial"):
             logger.info(
-                "Skipping duplicate post_content job — already posted",
-                extra={"job_id": job_id, "draft_id": draft_id},
+                "Skipping duplicate post_content job — already processed",
+                extra={"job_id": job_id, "draft_id": draft_id, "status": existing.data[0].get("status")},
             )
             return
 
