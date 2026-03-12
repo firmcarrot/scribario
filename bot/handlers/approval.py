@@ -95,35 +95,30 @@ async def handle_approve(callback: CallbackQuery) -> None:
         caption = ""
     image_urls = draft.get("image_urls", [])
 
-    # Create posting jobs for each target platform
-    # TODO: Get platform_targets from content_request, not hardcoded
-    for platform in ["instagram", "facebook"]:
-        idempotency_key = hashlib.sha256(
-            f"{draft_id}:post_content:{platform}".encode()
-        ).hexdigest()
+    # Create one posting job — worker matches against connected Postiz integrations
+    idempotency_key = hashlib.sha256(f"{draft_id}:post_content".encode()).hexdigest()
 
-        job = await create_posting_job(
-            draft_id=draft_id,
-            tenant_id=tenant_id,
-            platform=platform,
-            caption=caption,
-            asset_urls=image_urls,
-            idempotency_key=idempotency_key,
-        )
+    job = await create_posting_job(
+        draft_id=draft_id,
+        tenant_id=tenant_id,
+        platform="all",
+        caption=caption,
+        asset_urls=image_urls,
+        idempotency_key=idempotency_key,
+    )
 
-        await enqueue_job(
-            queue_name="posting",
-            job_type="post_content",
-            payload={
-                "job_id": job["id"],
-                "draft_id": draft_id,
-                "tenant_id": tenant_id,
-                "platform": platform,
-                "caption": caption,
-                "image_urls": image_urls,
-            },
-            idempotency_key=f"{draft_id}:post:{platform}",
-        )
+    await enqueue_job(
+        queue_name="posting",
+        job_type="post_content",
+        payload={
+            "job_id": job["id"],
+            "draft_id": draft_id,
+            "tenant_id": tenant_id,
+            "caption": caption,
+            "image_urls": image_urls,
+        },
+        idempotency_key=f"{draft_id}:post:all",
+    )
 
     await callback.answer("Approved! Posting now...")
     if callback.message:

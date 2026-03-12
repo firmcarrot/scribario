@@ -1,0 +1,121 @@
+# Scribario — Social Media Integrations
+
+All credentials also live in `.env` on dev and `/opt/scribario/.env` on VPS.
+
+---
+
+## Infrastructure
+
+| Service | URL | Notes |
+|---|---|---|
+| Postiz | https://postiz.scribario.com | Self-hosted Docker on VPS |
+| Postiz Admin Login | ron@scribario.com / Scribario2026x | Admin account |
+| Postiz Org ID | `06f9862f-ea5f-4b95-a4cd-c8ad9cc2f73a` | Scribario org |
+| Postiz API Key | `87f3585eb2cb7ebf216485407aac16d4cd33689951fe99cdec361575770380f8` | In .env as POSTIZ_API_KEY |
+| VPS | 31.97.13.213 (Hostinger) | SSH: `ssh -i ~/.ssh/id_hostinger root@31.97.13.213` |
+
+---
+
+## Meta (Facebook + Instagram + Threads)
+
+**Status:** App created, credentials in Postiz, OAuth redirect registered. NOT yet published — in development mode only.
+
+| Field | Value |
+|---|---|
+| Meta App Name | Scribario |
+| App ID | `1580831456516304` |
+| App Secret | `1abadec628b059e6e92f607399d111ae` |
+| Facebook Page | Scribario (created 2026-03-11) |
+| Developer Account | ronald.nadelberg@gmail.com |
+| App Status | Development (unpublished) |
+| Use Cases | Manage everything on your Page, Manage messaging & content on Instagram |
+| OAuth Redirect URI | `https://postiz.scribario.com/integrations/social/facebook` |
+| Business Portfolio | None connected yet |
+
+**To go live:** Need App Review submission with screen recording demo + privacy policy URL.
+
+**In .env:**
+```
+FACEBOOK_APP_ID=1580831456516304
+FACEBOOK_APP_SECRET=1abadec628b059e6e92f607399d111ae
+```
+
+---
+
+## Instagram
+
+Shares the same Meta app as Facebook (same App ID/Secret).
+OAuth redirect: `https://postiz.scribario.com/integrations/social/instagram`
+
+---
+
+## Threads
+
+Shares the same Meta app as Facebook.
+OAuth redirect: `https://postiz.scribario.com/integrations/social/threads`
+
+---
+
+## TikTok
+
+**Status:** NOT SET UP
+
+Requires: TikTok Developer account + app review + separate audit for public posting.
+Estimated time: 4-12 weeks after submission.
+
+---
+
+## LinkedIn
+
+**Status:** NOT SET UP
+
+Personal posting: No review needed.
+Company page posting: Requires Marketing Developer Program + legal business entity.
+
+---
+
+## YouTube / Google
+
+**Status:** NOT SET UP
+
+Requires: Google Cloud project + YouTube Data API v3 + OAuth consent screen verification (1-4 weeks).
+Default quota: 10,000 units/day (~6 video uploads). Need quota extension for real usage.
+
+---
+
+## X / Twitter
+
+**Status:** NOT SET UP
+
+Cost: $200/month minimum (Basic tier, 10K posts/month).
+Recommendation: Add as paid premium add-on after initial launch.
+
+---
+
+## Pinterest
+
+**Status:** NOT SET UP
+
+Requires: Standard access review (2-8 weeks, opaque process).
+
+---
+
+## Bluesky
+
+**Status:** NOT SET UP
+
+No app review, no cost, fully open. Easiest platform to add.
+Uses AT Protocol OAuth — publish `client_metadata.json` at a public URL.
+
+---
+
+## Setup Priority
+
+1. ✅ Facebook + Instagram + Threads (one Meta app — DONE, needs App Review to go public)
+2. ⬜ Bluesky (zero friction, build next)
+3. ⬜ LinkedIn personal (no review needed)
+4. ⬜ YouTube (OAuth consent screen, 1-4 weeks)
+5. ⬜ Pinterest (Standard access, 2-8 weeks)
+6. ⬜ X/Twitter (after revenue, $200/mo)
+7. ⬜ TikTok (after other platforms, 4-12 week audit)
+8. ⬜ LinkedIn company pages (after incorporation)

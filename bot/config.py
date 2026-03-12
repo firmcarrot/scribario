@@ -27,9 +27,15 @@ class Settings(BaseSettings):
     # ElevenLabs (Phase 2)
     elevenlabs_api_key: str = ""
 
+    # Meta (Facebook / Instagram / Threads)
+    facebook_app_id: str = ""
+    facebook_app_secret: str = ""
+
     # Postiz
-    postiz_url: str = "http://localhost:5000"
+    postiz_url: str = "https://postiz.scribario.com"
     postiz_api_key: str = ""
+    postiz_org_id: str = ""
+    postiz_session_token: str = ""
 
     # Worker
     max_worker_concurrency: int = 3

@@ -27,7 +27,8 @@ async def handle_post_content(message: dict) -> None:
     draft_id = message["draft_id"]
     caption = message["caption"]
     image_urls = message.get("image_urls", [])
-    platforms = message.get("platforms", [])
+    # If no platforms specified, post to all connected integrations
+    platforms = message.get("platforms") or ([message["platform"]] if message.get("platform") else None)
 
     logger.info(
         "Posting content",
@@ -41,7 +42,7 @@ async def handle_post_content(message: dict) -> None:
     results = await client.post(
         caption=caption,
         image_urls=image_urls,
-        platforms=platforms,
+        platforms=platforms or None,
     )
 
     for result in results:
