@@ -10,3 +10,4 @@ structlog>=24.0,<25
 pydantic>=2.0,<3
 pydantic-settings>=2.0,<3
 dateparser~=1.2
+redis>=5.0,<6

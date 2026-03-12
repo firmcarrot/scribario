@@ -54,7 +54,7 @@ def build_multi_option_media_group(
         media.append(
             InputMediaPhoto(
                 media=url,
-                caption=f"<b>Option {i}:</b>\n{cap}" if i == 1 else f"<b>Option {i}:</b>\n{cap}",
+                caption=f"<b>Option {i}:</b>\n{cap}",
                 parse_mode="HTML",
             )
         )

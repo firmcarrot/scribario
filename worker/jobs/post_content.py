@@ -38,7 +38,6 @@ async def handle_post_content(message: dict) -> None:
     tenant_id = message["tenant_id"]
     caption = message["caption"]
     image_urls = message.get("image_urls", [])
-    idempotency_key = message.get("idempotency_key", "")
 
     # Read platform_targets from message (None = post to all connected)
     platform_targets: list[str] | None = message.get("platform_targets") or None

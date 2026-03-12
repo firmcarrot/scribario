@@ -30,11 +30,12 @@ async def handle_generate_image(message: dict) -> None:
         extra={"draft_id": draft_id, "tenant_id": tenant_id},
     )
 
-    # TODO: Check idempotency_key — skip if already completed
-    # TODO: Call pipeline.image_gen.ImageGenerationService.generate
-    # TODO: Upload image to Supabase Storage (private bucket, tenant-scoped)
-    # TODO: Update content_drafts with image URL
-    # TODO: Log usage_event for cost tracking
-    # TODO: If all images for this draft are done, update status → 'generated'
-
-    logger.info("Image generation complete", extra={"draft_id": draft_id})
+    # DEPRECATED: This handler is superseded by generate_content.
+    # No jobs of type "generate_image" should be enqueued in normal operation.
+    logger.error(
+        "generate_image job type is deprecated — use generate_content instead",
+        extra={"draft_id": draft_id, "tenant_id": tenant_id},
+    )
+    raise NotImplementedError(
+        "generate_image is a deprecated stub. Enqueue 'generate_content' jobs instead."
+    )

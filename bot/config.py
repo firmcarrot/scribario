@@ -37,6 +37,9 @@ class Settings(BaseSettings):
     postiz_org_id: str = ""
     postiz_session_token: str = ""
 
+    # Redis (FSM storage for bot state)
+    redis_url: str = "redis://localhost:6379/0"
+
     # Worker
     max_worker_concurrency: int = 3
     worker_poll_interval_seconds: int = 5

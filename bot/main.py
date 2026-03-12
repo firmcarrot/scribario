@@ -6,7 +6,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.fsm.storage.redis import RedisStorage
 from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
@@ -26,7 +26,8 @@ def create_bot() -> Bot:
 
 def create_dispatcher() -> Dispatcher:
     """Create dispatcher and register all routers."""
-    dp = Dispatcher(storage=MemoryStorage())
+    redis_url = get_settings().redis_url
+    dp = Dispatcher(storage=RedisStorage.from_url(redis_url))
     dp.include_router(commands.router)    # commands first
     dp.include_router(caption_edit.router)  # FSM edit state — before approval/intake
     dp.include_router(onboarding.router)

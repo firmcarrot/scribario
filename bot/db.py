@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC
+from datetime import UTC, datetime
 from functools import lru_cache
 
 from supabase.client import Client
@@ -42,11 +42,10 @@ async def create_content_request(
     tenant_id: str,
     intent: str,
     platform_targets: list[str] | None = None,
-    due_at: "datetime | None" = None,
+    due_at: datetime | None = None,
     style_override: str | None = None,
 ) -> dict:
     """Create a new content request in the database."""
-    from datetime import datetime  # noqa: F401 — used in type annotation above
 
     client = get_supabase_client()
     data: dict = {
@@ -204,14 +203,13 @@ async def enqueue_job(
     job_type: str,
     payload: dict,
     idempotency_key: str | None = None,
-    scheduled_for: "datetime | None" = None,
+    scheduled_for: datetime | None = None,
 ) -> dict:
     """Enqueue a job to the fallback job_queue table.
 
     Uses the job_queue table (not pgmq directly) for portability.
     The worker polls this table with FOR UPDATE SKIP LOCKED.
     """
-    from datetime import datetime  # noqa: F401 — used in type annotation above
 
     client = get_supabase_client()
     data: dict = {

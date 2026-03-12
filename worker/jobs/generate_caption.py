@@ -31,11 +31,12 @@ async def handle_generate_caption(message: dict) -> None:
         extra={"request_id": request_id, "tenant_id": tenant_id},
     )
 
-    # TODO: Check idempotency_key — skip if already completed
-    # TODO: Load brand profile + few-shot examples
-    # TODO: Call pipeline.caption_gen.generate_captions
-    # TODO: Store results in content_drafts table
-    # TODO: Log usage_event for cost tracking
-    # TODO: Enqueue generate_image jobs for each caption's visual_prompt
-
-    logger.info("Caption generation complete", extra={"request_id": request_id})
+    # DEPRECATED: This handler is superseded by generate_content.
+    # No jobs of type "generate_caption" should be enqueued in normal operation.
+    logger.error(
+        "generate_caption job type is deprecated — use generate_content instead",
+        extra={"request_id": request_id, "tenant_id": tenant_id},
+    )
+    raise NotImplementedError(
+        "generate_caption is a deprecated stub. Enqueue 'generate_content' jobs instead."
+    )

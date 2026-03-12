@@ -6,6 +6,7 @@ Business owners text → AI generates image + copy → preview → approve → a
 
 ## Stack
 - **Bot:** Python 3.11+, aiogram 3.x, aiogram_dialog
+- **FSM Storage:** Redis 7 (`redis://localhost:6379/0`) — required for caption edit state to survive restarts
 - **Pipeline/Worker:** Python, httpx, anthropic SDK
 - **Edge Functions:** Deno/TypeScript (Supabase)
 - **Database:** Supabase Postgres + pgmq + pg_cron
@@ -44,6 +45,15 @@ tests/                # Pytest test suite
 ## TDD (THE IRON LAW)
 NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
 1. Write test FIRST → 2. Watch fail → 3. Minimal code → 4. Watch pass → 5. Refactor
+
+## NO PATCHWORK. NO WORKAROUNDS. NO FRANKENSTEIN CODE. (NON-NEGOTIABLE)
+- If the right fix requires installing a dependency → install it.
+- If the right fix requires a DB migration → write it.
+- If the right fix requires refactoring existing code → refactor it.
+- NEVER encode state in message text, hidden fields, or other hacks to avoid proper storage.
+- NEVER use MemoryStorage in production — it loses all state on restart. Use Redis.
+- When a known issue exists (DA finding, TODO, etc.) → fix it properly or flag it clearly. Never paper over it.
+- "Quick workaround" is not a valid option. If you can't do it right, stop and say so.
 
 ## Supabase
 - **Project:** Scribario (ID: `iptivnzimbpoepwdlwri`)

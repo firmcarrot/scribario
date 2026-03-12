@@ -2,7 +2,7 @@
 
 **Your AI social media team — in a Telegram bot.**
 
-[![Tests](https://img.shields.io/badge/tests-147%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-216%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Telegram](https://img.shields.io/badge/bot-%40ScribarioBot-2CA5E0?logo=telegram)](https://t.me/ScribarioBot)
@@ -65,14 +65,20 @@ You (Telegram)           Scribario                    The Internet
 ## Features
 
 - **Text-to-post in seconds** — describe it in plain English, get three professional options
-- **Brand voice that actually sounds like you** — few-shot learning from your best past posts
+- **Brand voice that actually sounds like you** — few-shot learning from your best past posts, auto-updated after every approved post
 - **3 image options per request** — generated in parallel by Kie.ai Nano Banana 2 (~25s)
 - **One-tap approval** — Approve, Reject All, or Regenerate without leaving Telegram
+- **Caption editing** — tap ✏️ Edit on any option, type your revision, re-preview before approving
+- **Scheduling** — "post this Friday at 9am" → automatically queues and posts at the right time
+- **Style control** — "make it cinematic" / "watercolor" / "cartoon" / "photorealistic" overrides per post; brand default configurable
+- **Platform selection** — "post to LinkedIn only" or "facebook and instagram" narrows which platforms get the post
+- **Post history** — `/history` shows your last 10 posted pieces with platforms and caption preview
+- **Posting confirmation** — Telegram message after every successful post with exact platform names
 - **Multi-platform publishing** — Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, Threads
 - **Multi-tenant architecture** — every business gets isolated data, brand profiles, and posting credentials
 - **Fully self-hosted** — your API keys, your data, your infrastructure
 - **Reference photo support** — send a photo as creative direction for the image style
-- **147 tests, 0 regressions** — TDD-first codebase, fully type-checked with mypy --strict
+- **216 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
 
 ---
 
@@ -85,6 +91,8 @@ You (Telegram)           Scribario                    The Internet
 | Image generation | [Kie.ai Nano Banana 2](https://kie.ai/) |
 | Social publishing | [Postiz](https://postiz.app/) (self-hosted) |
 | Database + queues | [Supabase](https://supabase.com/) (Postgres + pgmq + pg_cron) |
+| FSM state storage | [Redis 7](https://redis.io/) (survives restarts) |
+| Date parsing | [dateparser](https://dateparser.readthedocs.io/) |
 | Background workers | Python async workers polling pgmq |
 | Infrastructure | Hostinger VPS, systemd |
 | Testing | pytest + pytest-asyncio |
@@ -115,6 +123,7 @@ See the full setup guide: **[docs/SETUP.md](docs/SETUP.md)**
 
 **Prerequisites:**
 - Python 3.11+
+- Redis 7+ (`apt install redis-server` on Ubuntu)
 - Supabase account (free tier works for testing)
 - Telegram bot token ([@BotFather](https://t.me/BotFather))
 - Anthropic API key
@@ -151,9 +160,9 @@ python -m bot.main
 
 Scribario is in active development with a live beta deployment serving its first client.
 
-- **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, 147 tests
-- **Phase 2:** In progress — scheduling, style system, multi-platform expansion
-- **Phase 3:** Planned — analytics, brand voice learning, agency dashboard
+- **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, Redis FSM
+- **Phase 2:** Complete — scheduling, style system, caption editing, platform selection, /history, brand voice learning, posting confirmation (216 tests)
+- **Phase 3:** Planned — analytics, agency dashboard, Meta App Review for public Instagram access
 
 See the full roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)
 

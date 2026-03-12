@@ -13,6 +13,7 @@ from bot.db import (
     create_posting_job,
     enqueue_job,
     get_draft,
+    get_supabase_client,
     get_tenant_by_telegram_user,
     update_draft_status,
 )
@@ -97,7 +98,6 @@ async def handle_approve(callback: CallbackQuery) -> None:
     image_urls = [all_image_urls[option_idx]] if option_idx < len(all_image_urls) else all_image_urls[:1]
 
     # Load platform_targets from the originating content_request
-    from bot.db import get_supabase_client
     _client = get_supabase_client()
     _req = (
         _client.table("content_requests")
@@ -199,7 +199,6 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
     )
 
     # Load the original content request to get the intent
-    from bot.db import get_supabase_client
     client = get_supabase_client()
     req_result = (
         client.table("content_requests")
