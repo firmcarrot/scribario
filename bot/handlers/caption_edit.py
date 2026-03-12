@@ -10,7 +10,6 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 
 from bot.db import get_draft, get_tenant_by_telegram_user, update_draft_caption
-from bot.services.telegram import build_preview_keyboard
 
 logger = logging.getLogger(__name__)
 
@@ -121,47 +120,42 @@ async def handle_new_caption(message: Message, state: FSMContext) -> None:
         await message.answer("Something went wrong saving your edit. Please try again.")
         return
 
-    await message.answer("✅ Caption updated!")
-
-    # Re-send the full draft preview with updated captions
+    # Show the edited option with a single Approve button — just post it
     try:
         draft = await get_draft(draft_id)
         if not draft:
+            await message.answer("✅ Caption saved.")
             return
 
-        caption_variants = draft.get("caption_variants") or []
         image_urls = draft.get("image_urls") or []
-        num_options = len(caption_variants)
-        keyboard = build_preview_keyboard(draft_id, num_options)
+        image_url = image_urls[option_idx] if option_idx < len(image_urls) else None
 
-        if image_urls:
-            for i, variant in enumerate(caption_variants):
-                cap_text = variant.get("text", "")
-                label = f"<b>Option {i + 1}{'  (edited)' if i == option_idx else ''}:</b>\n{cap_text}"
-                if len(label) > 1020:
-                    label = label[:1017] + "..."
+        from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[[
+            InlineKeyboardButton(
+                text="✅ Post it",
+                callback_data=f"approve:{draft_id}:{option_idx + 1}",
+            ),
+            InlineKeyboardButton(
+                text="❌ Cancel",
+                callback_data=f"reject:{draft_id}",
+            ),
+        ]])
 
-                img = image_urls[i] if i < len(image_urls) else None
-                if img:
-                    await message.answer_photo(photo=img, caption=label, parse_mode="HTML")
-                else:
-                    await message.answer(label, parse_mode="HTML")
+        caption_text = f"<b>Your edited caption:</b>\n\n{new_caption}"
+        if len(caption_text) > 1020:
+            caption_text = caption_text[:1017] + "..."
 
-            await message.answer(
-                "<i>Tap Approve to post, Reject All to skip, or Regenerate for new options.</i>",
+        if image_url:
+            await message.answer_photo(
+                photo=image_url,
+                caption=caption_text,
                 parse_mode="HTML",
                 reply_markup=keyboard,
             )
         else:
-            lines = []
-            for i, variant in enumerate(caption_variants):
-                label = f"<b>Option {i + 1}{'  (edited)' if i == option_idx else ''}:</b>\n{variant.get('text', '')}"
-                lines.append(label)
-            preview_text = "\n\n".join(lines)
-            if len(preview_text) > 3900:
-                preview_text = preview_text[:3897] + "..."
-            await message.answer(preview_text, parse_mode="HTML", reply_markup=keyboard)
+            await message.answer(caption_text, parse_mode="HTML", reply_markup=keyboard)
 
     except Exception:
-        logger.exception("Failed to re-send preview after edit", extra={"draft_id": draft_id})
-        # Non-fatal — caption was saved
+        logger.exception("Failed to send post-edit preview", extra={"draft_id": draft_id})
+        await message.answer("✅ Caption saved. Use the original approval buttons to post.")
