@@ -64,7 +64,7 @@ async def generate_captions(
         List of CaptionResult with text and visual prompts.
     """
     brand_context = format_brand_context(profile, examples)
-    platforms_str = ", ".join(platform_targets)
+    platforms_str = ", ".join(platform_targets) if platform_targets else "all connected platforms"
 
     user_message = (
         f"{brand_context}\n\n"

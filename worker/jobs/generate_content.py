@@ -49,7 +49,7 @@ async def handle_generate_content(message: dict) -> None:
     request_id = message["request_id"]
     tenant_id = message["tenant_id"]
     intent = message["intent"]
-    platform_targets = message.get("platform_targets", ["instagram"])
+    platform_targets: list[str] = message.get("platform_targets") or []
     new_photo_storage_paths: list[str] = message.get("new_photo_storage_paths", [])
     style_override: str | None = message.get("style_override")
 
@@ -231,7 +231,7 @@ async def _send_preview(
 
                 # Send the action buttons as a separate message
                 footer = (
-                    f"<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
+                    f"<b>Posting to:</b> {', '.join(p.title() for p in platform_targets) if platform_targets else 'all connected platforms'}\n\n"
                     "<i>Tap Approve to post the option you like, Reject All to skip, "
                     "or Regenerate for new options.</i>"
                 )
@@ -246,7 +246,7 @@ async def _send_preview(
 
                 preview_text = "\n".join(lines)
                 preview_text += (
-                    f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets)}\n\n"
+                    f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets) if platform_targets else 'all connected platforms'}\n\n"
                     "<i>Tap Approve to post, Reject All to skip, or Regenerate for new options.</i>"
                 )
 
