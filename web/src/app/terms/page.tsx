@@ -37,12 +37,14 @@ export default function TermsPage() {
           <Section title="2. Description of Service">
             <p>Scribario provides:</p>
             <ul>
-              <li>AI-powered content generation (captions and images) for social media posts</li>
-              <li>OAuth-based connection to your social media accounts (Facebook, Instagram, LinkedIn, TikTok, Bluesky)</li>
+              <li>AI-powered content generation (captions, images, and videos) for social media</li>
+              <li>AI-generated short-form video creation with voiceover, sound effects, and music</li>
+              <li>OAuth-based connection to your social media accounts (Facebook, Instagram, LinkedIn, TikTok, Bluesky, YouTube, Pinterest, X)</li>
               <li>Automated posting to connected platforms on your behalf</li>
+              <li>Scheduled posting and content management</li>
             </ul>
             <p>
-              <strong>AI Disclosure:</strong> Scribario uses artificial intelligence (including Anthropic&apos;s Claude for text generation and Kie.ai for image generation) to create content suggestions. All content is AI-generated and should be reviewed before publishing.
+              <strong>AI Disclosure:</strong> Scribario uses artificial intelligence (including Anthropic&apos;s Claude for text and script generation, Kie.ai for image generation, and ElevenLabs for voice synthesis) to create content. All content is AI-generated and should be reviewed before publishing.
             </p>
           </Section>
 
@@ -154,7 +156,9 @@ export default function TermsPage() {
           <Section title="16. Contact">
             <p>
               For questions about these Terms, contact us at:<br />
-              Email: privacy@scribario.com
+              Scribario LLC<br />
+              Email: privacy@scribario.com<br />
+              Address: 1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001
             </p>
           </Section>
         </div>

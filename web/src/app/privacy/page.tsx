@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
           <Section title="1. Controller Identity">
             <p>
-              Scribario LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is the data controller responsible for your personal data. For privacy-related inquiries, contact us at privacy@scribario.com.
+              Scribario LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), located at 1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001, is the data controller responsible for your personal data. For privacy-related inquiries, contact our Data Protection Officer at privacy@scribario.com.
             </p>
           </Section>
 
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
                 <tr><td>Social connections</td><td>OAuth tokens (encrypted at rest), account IDs, page IDs</td></tr>
                 <tr><td>Platform data</td><td>Profile information and account details received via API</td></tr>
                 <tr><td>User uploads</td><td>Brand guidelines, reference images, text prompts</td></tr>
-                <tr><td>AI interactions</td><td>Prompts sent to AI providers, generated outputs, approval/rejection signals</td></tr>
+                <tr><td>AI interactions</td><td>Prompts sent to AI providers, generated outputs (text, images, videos, audio), approval/rejection signals</td></tr>
                 <tr><td>Usage &amp; technical</td><td>IP address, device type, feature usage, Telegram user ID</td></tr>
               </tbody>
             </table>
@@ -65,11 +65,13 @@ export default function PrivacyPage() {
                 <tr><th>Subprocessor</th><th>Data Received</th><th>Purpose</th></tr>
               </thead>
               <tbody>
-                <tr><td>Anthropic (Claude)</td><td>Text prompts, brand data</td><td>Caption generation</td></tr>
+                <tr><td>Anthropic (Claude)</td><td>Text prompts, brand data</td><td>Caption and script generation</td></tr>
                 <tr><td>Kie.ai</td><td>Image prompts</td><td>Image generation</td></tr>
+                <tr><td>ElevenLabs</td><td>Text scripts</td><td>Voice synthesis for video</td></tr>
                 <tr><td>Supabase</td><td>All stored data</td><td>Database hosting</td></tr>
+                <tr><td>Vercel</td><td>Static assets</td><td>Website hosting</td></tr>
                 <tr><td>Stripe</td><td>Billing data</td><td>Payment processing</td></tr>
-                <tr><td>Meta, TikTok, LinkedIn, Bluesky</td><td>Post content</td><td>Publishing via API</td></tr>
+                <tr><td>Meta, TikTok, LinkedIn, Bluesky, YouTube, Pinterest, X</td><td>Post content</td><td>Publishing via API</td></tr>
               </tbody>
             </table>
           </Section>
@@ -133,7 +135,7 @@ export default function PrivacyPage() {
 
           <Section title="12. AI-Specific Disclosures">
             <p>
-              Scribario uses Anthropic&apos;s Claude for text generation and Kie.ai for image generation. Your prompts sent via the API are not used to train these AI models (per Anthropic&apos;s API terms). AI-generated content may not be copyrightable under current law. We comply with the EU AI Act Article 50 transparency requirements.
+              Scribario uses Anthropic&apos;s Claude for text and script generation, Kie.ai for image generation, and ElevenLabs for voice synthesis in video content. Your prompts sent via these APIs are not used to train AI models (per each provider&apos;s API terms). AI-generated content may not be copyrightable under current law. We comply with the EU AI Act Article 50 transparency requirements.
             </p>
           </Section>
 
@@ -152,6 +154,8 @@ export default function PrivacyPage() {
           <Section title="15. Contact">
             <p>
               For privacy-related questions or to exercise your rights:<br />
+              Scribario LLC<br />
+              1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001<br />
               Email: privacy@scribario.com<br />
               <br />
               EU residents have the right to lodge a complaint with their local supervisory authority.
