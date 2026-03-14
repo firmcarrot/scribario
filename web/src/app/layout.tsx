@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Scribario",
     images: [
       {
-        url: "/images/demo/og.webp",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Scribario — Social media on autopilot",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Scribario — Your social media team in a text",
     description:
       "Text what you want. AI creates it. One tap publishes everywhere.",
-    images: ["/images/demo/og.webp"],
+    images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://scribario.com" },
