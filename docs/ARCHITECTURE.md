@@ -366,17 +366,38 @@ OAuth tokens for social accounts are stored in Supabase Vault (encrypted) and re
 
 ---
 
-## Cost Per Video
+## Cost Per Content Type
+
+### Image Post (3 images + captions)
 
 | Component | Cost |
 |-----------|------|
-| Intake Agent (Haiku) | $0.001 |
+| Intake Agent (Haiku) | $0.002 |
 | Prompt Engine (Sonnet) | $0.04 |
-| ElevenLabs TTS (4 scenes) | $0.04 |
-| ElevenLabs SFX (4 scenes) | $0.04 |
-| Nano Banana frames (8 @ $0.04) | $0.32 |
-| Veo 3.1 clips (4 @ $0.40) | $1.60 |
-| FFmpeg | Free |
-| **Total** | **~$2.04** |
+| Nano Banana 2 images (3 @ $0.04) | $0.12 |
+| **Total** | **~$0.16** |
 
-At $5/video: **$2.96 profit (59% margin)**
+### Short Video (single 8s clip)
+
+| Component | Cost |
+|-----------|------|
+| Intake Agent (Haiku) | $0.002 |
+| Prompt Engine (Sonnet) | $0.04 |
+| Nano Banana 2 frame (1 @ $0.04) | $0.04 |
+| Veo 3 Fast via Kie.ai | $0.40 |
+| **Total** | **~$0.48** |
+
+### Long Video (4 scenes, ~30s)
+
+| Component | Cost |
+|-----------|------|
+| Intake Agent (Haiku) | $0.002 |
+| Prompt Engine (Sonnet) | $0.04 |
+| ElevenLabs TTS (4 scenes) | $0.07 |
+| ElevenLabs SFX (4 scenes) | $0.09 |
+| Nano Banana 2 frames (8 @ $0.04) | $0.32 |
+| Veo 3 Fast via Kie.ai (4 clips @ $0.40) | $1.60 |
+| FFmpeg | Free |
+| **Total** | **~$2.18** |
+
+*Prices verified against live source pages 2026-03-13. See [COST-ANALYSIS.md](COST-ANALYSIS.md) for full breakdown with citations.*
