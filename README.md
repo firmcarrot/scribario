@@ -2,6 +2,7 @@
 
 **Your AI social media team — in a Telegram bot.**
 
+[![Website](https://img.shields.io/badge/web-scribario.com-FF6B4A)](https://scribario.com)
 [![Tests](https://img.shields.io/badge/tests-226%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -134,7 +135,7 @@ See the full setup guide: **[docs/SETUP.md](docs/SETUP.md)**
 **Quick start:**
 
 ```bash
-git clone https://github.com/your-org/scribario.git
+git clone https://github.com/firmcarrot/scribario.git
 cd scribario
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -154,6 +155,24 @@ python -m bot.main
 | [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) | Developer guide — standards, TDD, adding platforms |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Where we're going |
 | [docs/INTEGRATIONS.md](docs/INTEGRATIONS.md) | Social platform integration status and credentials reference |
+| [web/README.md](web/README.md) | Marketing website — tech stack, deployment, DNS, brand system |
+
+---
+
+## Repository Structure
+
+```
+scribario/
+├── bot/                # Telegram bot (aiogram 3.x)
+├── pipeline/           # Content generation pipeline (Claude + Kie.ai)
+├── worker/             # Background job processor (pgmq poller)
+├── web/                # Marketing website (Next.js 16, Vercel)
+├── supabase/           # Database migrations and edge functions
+├── tests/              # 226+ automated tests
+├── docs/               # Architecture, setup, user guide, roadmap
+├── docker-compose.yml  # Local development stack
+└── .env.example        # Environment variable template
+```
 
 ---
 
