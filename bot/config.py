@@ -44,6 +44,9 @@ class Settings(BaseSettings):
     max_worker_concurrency: int = 3
     worker_poll_interval_seconds: int = 5
 
+    # Long video pipeline
+    long_video_max_cost_usd: float = 10.0
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

@@ -30,6 +30,14 @@ def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboar
         for i in range(1, num_options + 1)
     ]
 
+    # Video button
+    video_buttons = [
+        InlineKeyboardButton(
+            text="Make Video",
+            callback_data=f"make_video:{draft_id}",
+        ),
+    ]
+
     # Reject and regenerate all
     action_buttons = [
         InlineKeyboardButton(text="Reject All", callback_data=f"reject:{draft_id}"),
@@ -41,6 +49,7 @@ def build_preview_keyboard(draft_id: str, num_options: int = 3) -> InlineKeyboar
             option_buttons,
             edit_buttons,
             regen_image_buttons,
+            video_buttons,
             action_buttons,
         ]
     )

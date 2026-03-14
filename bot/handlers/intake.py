@@ -13,6 +13,7 @@ from aiogram.types import Message
 
 from bot.db import create_content_request, enqueue_job, get_tenant_by_telegram_user
 from bot.handlers.photos import _pending_post_photos
+from pipeline.prompt_engine.intake import IntakeAction, check_intake
 
 logger = logging.getLogger(__name__)
 
@@ -97,6 +98,27 @@ def _strip_scheduling_language(text: str) -> str:
     return cleaned if cleaned else text
 
 
+_VIDEO_KEYWORDS = re.compile(
+    r"\b(video|reel|clip|animate|animation|motion)\b", re.IGNORECASE
+)
+
+_VERTICAL_VIDEO_KEYWORDS = re.compile(
+    r"\b(reel|reels|story|stories|tiktok|shorts)\b", re.IGNORECASE
+)
+
+
+def detect_video_request(text: str) -> bool:
+    """Return True if the text contains video-related keywords."""
+    return bool(_VIDEO_KEYWORDS.search(text))
+
+
+def parse_video_aspect_ratio(text: str) -> str:
+    """Return "9:16" for vertical video keywords (reel, story, tiktok, shorts), else "16:9"."""
+    if _VERTICAL_VIDEO_KEYWORDS.search(text):
+        return "9:16"
+    return "16:9"
+
+
 def parse_style_override(text: str) -> str | None:
     """Return a style string if a style keyword is found in text, else None.
 
@@ -133,7 +155,24 @@ async def handle_content_request(message: Message) -> None:
         )
         return
 
+    # Guard: incomplete onboarding
+    if membership.get("onboarding_status") != "complete":
+        await message.answer(
+            "Looks like you haven't finished setting up yet. "
+            "Use /start to complete your profile."
+        )
+        return
+
     tenant_id = membership["tenant_id"]
+
+    # --- Intake Agent: check if we need clarification before generating ---
+    try:
+        intake_result = await check_intake(raw_intent, tenant_id)
+        if intake_result.action != IntakeAction.PROCEED:
+            await message.answer(intake_result.message or "Could you tell me more about what you'd like?")
+            return
+    except Exception:
+        logger.warning("Intake agent check failed, proceeding anyway", exc_info=True)
 
     # --- Feature 3: Scheduling ---
     scheduled_time = parse_scheduled_time(raw_intent)
@@ -141,6 +180,10 @@ async def handle_content_request(message: Message) -> None:
 
     # --- Feature 4: Style override ---
     style_override = parse_style_override(raw_intent)
+
+    # --- Feature 5: Video detection ---
+    is_video = detect_video_request(raw_intent)
+    video_aspect_ratio = parse_video_aspect_ratio(raw_intent) if is_video else None
 
     logger.info(
         "Content request received",
@@ -150,6 +193,7 @@ async def handle_content_request(message: Message) -> None:
             "intent": intent[:100],
             "scheduled_time": scheduled_time.isoformat() if scheduled_time else None,
             "style_override": style_override,
+            "is_video": is_video,
         },
     )
 
@@ -182,6 +226,9 @@ async def handle_content_request(message: Message) -> None:
         payload["new_photo_storage_paths"] = new_photo_storage_paths
     if style_override:
         payload["style_override"] = style_override
+    if is_video:
+        payload["generate_video"] = True
+        payload["video_aspect_ratio"] = video_aspect_ratio
 
     await enqueue_job(
         queue_name="content_generation",
@@ -197,11 +244,13 @@ async def handle_content_request(message: Message) -> None:
         if scheduled_time
         else ""
     )
+    video_note = " I'll also generate a video." if is_video else ""
+    time_note = "1-3 minutes" if is_video else "30-60 seconds"
 
     await message.answer(
         "Got it! I'm generating content for:\n\n"
         f"<i>{intent}</i>\n\n"
-        f"This usually takes about 30-60 seconds.{photo_note} "
+        f"This usually takes about {time_note}.{photo_note}{video_note} "
         f"I'll send you a preview with options to approve.{schedule_note}",
         parse_mode="HTML",
     )

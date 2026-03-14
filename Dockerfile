@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Install system dependencies for Pillow
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libjpeg62-turbo-dev libpng-dev && \
+    libjpeg62-turbo-dev libpng-dev ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .

@@ -230,6 +230,179 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         await callback.message.reply("Generating new options... I'll send them in a moment.")
 
 
+@router.callback_query(F.data.startswith("make_video:"))
+async def handle_make_video(callback: CallbackQuery) -> None:
+    """Handle "Make Video" — enqueue video generation using the draft's first image + caption.
+
+    Callback data format: "make_video:{draft_id}"
+    """
+    if not callback.data:
+        return
+
+    draft_id = callback.data.split(":", 1)[1]
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
+        return
+
+    tenant_id = draft["tenant_id"]
+
+    # Build prompt from first caption's visual_prompt, fallback to caption text
+    caption_variants = draft.get("caption_variants") or []
+    prompt = ""
+    if caption_variants:
+        prompt = caption_variants[0].get("visual_prompt", "") or caption_variants[0].get("text", "")
+
+    # Use first image as reference if available
+    image_urls = draft.get("image_urls") or []
+    generation_type = "REFERENCE_2_VIDEO" if image_urls else "TEXT_2_VIDEO"
+    ref_urls = image_urls[:1] if image_urls else None
+
+    logger.info(
+        "Make Video requested",
+        extra={"draft_id": draft_id, "tenant_id": tenant_id, "generation_type": generation_type},
+    )
+
+    await create_feedback_event(
+        draft_id=draft_id, tenant_id=tenant_id, action="make_video"
+    )
+
+    minute_bucket = int(time.time()) // 60
+    try:
+        await enqueue_job(
+            queue_name="content_generation",
+            job_type="generate_video",
+            payload={
+                "draft_id": draft_id,
+                "tenant_id": tenant_id,
+                "prompt": prompt,
+                "aspect_ratio": "16:9",
+                "generation_type": generation_type,
+                "image_urls": ref_urls,
+                "telegram_chat_id": callback.message.chat.id if callback.message else None,
+            },
+            idempotency_key=f"{draft_id}:make_video:{minute_bucket}",
+        )
+    except Exception as exc:
+        logger.warning(
+            "make_video enqueue failed (likely duplicate tap)",
+            extra={"draft_id": draft_id, "error": str(exc)},
+        )
+        await callback.answer("Already generating video — please wait.")
+        return
+
+    await callback.answer("Generating video...")
+    if callback.message:
+        await callback.message.reply(
+            "Generating a video from your content... This takes 1-3 minutes."
+        )
+
+
+@router.callback_query(F.data.startswith("approve_video:"))
+async def handle_approve_video(callback: CallbackQuery) -> None:
+    """Handle video approval — enqueue posting with video."""
+    if not callback.data:
+        return
+
+    draft_id = callback.data.split(":", 1)[1]
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
+        return
+
+    tenant_id = draft["tenant_id"]
+
+    await update_draft_status(draft_id, "approved")
+    await create_feedback_event(draft_id=draft_id, tenant_id=tenant_id, action="approve_video")
+
+    # Use the video_url for posting
+    video_url = draft.get("video_url", "")
+    caption_variants = draft.get("caption_variants", [])
+    caption = caption_variants[0].get("text", "") if caption_variants else ""
+
+    # Load platform_targets from originating content_request
+    _client = get_supabase_client()
+    _req = (
+        _client.table("content_requests")
+        .select("platform_targets")
+        .eq("id", draft["request_id"])
+        .limit(1)
+        .execute()
+    )
+    platform_targets: list[str] | None = (
+        _req.data[0].get("platform_targets") if _req.data else None
+    ) or None
+
+    idempotency_key = hashlib.sha256(f"{draft_id}:post_video".encode()).hexdigest()
+
+    job = await create_posting_job(
+        draft_id=draft_id,
+        tenant_id=tenant_id,
+        platform="all",
+        caption=caption,
+        asset_urls=[video_url] if video_url else [],
+        idempotency_key=idempotency_key,
+    )
+
+    await enqueue_job(
+        queue_name="posting",
+        job_type="post_content",
+        payload={
+            "job_id": job["id"],
+            "draft_id": draft_id,
+            "tenant_id": tenant_id,
+            "caption": caption,
+            "image_urls": [video_url] if video_url else [],
+            "media_type": "video",
+            "platform_targets": platform_targets,
+        },
+        idempotency_key=f"{draft_id}:post:video",
+    )
+
+    await callback.answer("Approved! Posting video now...")
+    if callback.message:
+        await callback.message.edit_reply_markup(reply_markup=None)
+        await callback.message.reply(
+            "Your video is being posted to all connected platforms."
+        )
+
+
+@router.callback_query(F.data.startswith("reject_video:"))
+async def handle_reject_video(callback: CallbackQuery) -> None:
+    """Handle video rejection."""
+    if not callback.data:
+        return
+
+    draft_id = callback.data.split(":", 1)[1]
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
+        return
+
+    await create_feedback_event(
+        draft_id=draft_id, tenant_id=draft["tenant_id"], action="reject_video"
+    )
+
+    await callback.answer("Video rejected.")
+    if callback.message:
+        await callback.message.edit_reply_markup(reply_markup=None)
+        await callback.message.reply(
+            "No problem! The original images are still available above."
+        )
+
+
 @router.callback_query(F.data.startswith("regen_image:"))
 async def handle_regen_image(callback: CallbackQuery) -> None:
     """Handle image-only regeneration — regenerate one image, keep its caption.

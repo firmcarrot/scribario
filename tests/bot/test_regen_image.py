@@ -34,10 +34,10 @@ class TestRegenImageButton:
         assert all(btn.text.startswith("✏️ Edit") for btn in rows[1])
         assert all("New Image" in btn.text for btn in rows[2])
 
-    def test_keyboard_has_four_rows_for_default_options(self):
+    def test_keyboard_has_five_rows_for_default_options(self):
         keyboard = build_preview_keyboard("draft-999", num_options=3)
-        # approve + edit + regen_image + reject/regen = 4 rows
-        assert len(keyboard.inline_keyboard) == 4
+        # approve + edit + regen_image + video + reject/regen = 5 rows
+        assert len(keyboard.inline_keyboard) == 5
 
 
 class TestHandleRegenImage:

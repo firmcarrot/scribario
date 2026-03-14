@@ -194,12 +194,16 @@ async def main() -> None:
     from worker.jobs.generate_image import handle_generate_image
     from worker.jobs.post_content import handle_post_content
     from worker.jobs.regen_image import handle_regen_image_job
+    from worker.jobs.generate_video import handle_generate_video
+    from worker.jobs.generate_long_video import handle_generate_long_video
 
     register_handler("generate_content", handle_generate_content)
     register_handler("generate_caption", handle_generate_caption)
     register_handler("generate_image", handle_generate_image)
     register_handler("post_content", handle_post_content)
     register_handler("regen_image", handle_regen_image_job)
+    register_handler("generate_video", handle_generate_video)
+    register_handler("generate_long_video", handle_generate_long_video)
 
     worker = Worker()
 

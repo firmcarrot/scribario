@@ -154,6 +154,14 @@ async def handle_photo_message(message: Message, bot: Bot) -> None:
         )
         return
 
+    # Guard: incomplete onboarding
+    if membership.get("onboarding_status") != "complete":
+        await message.answer(
+            "Looks like you haven't finished setting up yet. "
+            "Use /start to complete your profile."
+        )
+        return
+
     # Album handling — debounce multi-photo messages
     if message.media_group_id:
         await _handle_album_photo(message, bot, membership)

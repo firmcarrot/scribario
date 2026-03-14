@@ -28,7 +28,7 @@ async def get_tenant_by_telegram_user(telegram_user_id: int) -> dict | None:
     client = get_supabase_client()
     result = (
         client.table("tenant_members")
-        .select("tenant_id, role, tenants(id, name, slug)")
+        .select("tenant_id, role, onboarding_status, tenants(id, name, slug)")
         .eq("telegram_user_id", telegram_user_id)
         .limit(1)
         .execute()
@@ -610,3 +610,155 @@ async def create_posting_result(
 
     result = client.table("posting_results").insert(data).execute()
     return result.data[0]
+
+
+# --- Long video functions ---
+
+
+async def create_video_project(
+    tenant_id: str,
+    intent: str,
+    request_id: str | None = None,
+    aspect_ratio: str = "16:9",
+    script_data: dict | None = None,
+    status: str = "scripting",
+    telegram_chat_id: int | None = None,
+) -> dict:
+    """Create a new video project."""
+    client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "intent": intent,
+        "aspect_ratio": aspect_ratio,
+        "status": status,
+    }
+    if request_id is not None:
+        data["request_id"] = request_id
+    if script_data is not None:
+        data["script"] = script_data
+    if telegram_chat_id is not None:
+        data["metadata"] = {"telegram_chat_id": telegram_chat_id}
+    result = client.table("video_projects").insert(data).execute()
+    return result.data[0]
+
+
+async def update_video_project_status(
+    project_id: str,
+    status: str,
+    **kwargs: object,
+) -> None:
+    """Update video project status and optional fields."""
+    client = get_supabase_client()
+    data: dict = {
+        "status": status,
+        "updated_at": datetime.now(UTC).isoformat(),
+        **kwargs,
+    }
+    client.table("video_projects").update(data).eq("id", project_id).execute()
+
+
+async def update_video_project_script(project_id: str, script_data: dict) -> None:
+    """Update the script JSON on a video project."""
+    client = get_supabase_client()
+    client.table("video_projects").update({"script": script_data}).eq(
+        "id", project_id
+    ).execute()
+
+
+async def get_video_project(
+    project_id: str, tenant_id: str | None = None
+) -> dict | None:
+    """Get a video project by ID, optionally scoped to tenant."""
+    client = get_supabase_client()
+    query = client.table("video_projects").select("*").eq("id", project_id)
+    if tenant_id is not None:
+        query = query.eq("tenant_id", tenant_id)
+    result = query.limit(1).execute()
+    if result.data:
+        return result.data[0]
+    return None
+
+
+async def create_video_scenes(
+    project_id: str,
+    tenant_id: str,
+    scenes: list[dict],
+) -> list[dict]:
+    """Batch insert video scenes."""
+    client = get_supabase_client()
+    rows = [
+        {"project_id": project_id, "tenant_id": tenant_id, **scene}
+        for scene in scenes
+    ]
+    result = client.table("video_scenes").insert(rows).execute()
+    return result.data
+
+
+async def update_video_scene(
+    scene_id: str,
+    **kwargs: object,
+) -> None:
+    """Update a video scene with arbitrary fields."""
+    client = get_supabase_client()
+    client.table("video_scenes").update(dict(kwargs)).eq("id", scene_id).execute()
+
+
+async def get_video_scenes(project_id: str) -> list[dict]:
+    """Get all scenes for a project, ordered by scene_index."""
+    client = get_supabase_client()
+    result = (
+        client.table("video_scenes")
+        .select("*")
+        .eq("project_id", project_id)
+        .order("scene_index")
+        .execute()
+    )
+    return result.data or []
+
+
+async def check_tenant_long_video_in_progress(tenant_id: str) -> bool:
+    """Check if tenant already has a long video in progress (concurrency limit)."""
+    client = get_supabase_client()
+    active_statuses = [
+        "scripting", "tts", "generating_frames",
+        "generating_clips", "stitching",
+    ]
+    result = (
+        client.table("video_projects")
+        .select("id")
+        .eq("tenant_id", tenant_id)
+        .in_("status", active_statuses)
+        .limit(1)
+        .execute()
+    )
+    return bool(result.data)
+
+
+async def get_tenant_daily_video_cost(tenant_id: str) -> float:
+    """Get total video generation cost for tenant today.
+
+    Includes both short-form (video_generation) and long-form
+    (long_video_generation) usage events.
+    """
+    from datetime import timedelta
+
+    client = get_supabase_client()
+    today_start = datetime.now(UTC).replace(
+        hour=0, minute=0, second=0, microsecond=0,
+    ).isoformat()
+    tomorrow_start = (
+        datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+        + timedelta(days=1)
+    ).isoformat()
+
+    video_event_types = ["video_generation", "long_video_generation"]
+    result = (
+        client.table("usage_events")
+        .select("cost_usd")
+        .eq("tenant_id", tenant_id)
+        .in_("event_type", video_event_types)
+        .gte("created_at", today_start)
+        .lt("created_at", tomorrow_start)
+        .execute()
+    )
+    return sum(row.get("cost_usd", 0.0) for row in (result.data or []))

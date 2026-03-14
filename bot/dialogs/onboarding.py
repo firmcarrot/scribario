@@ -4,8 +4,9 @@ Flow:
 1. Welcome — explain what Scribario does
 2. Business Name — ask for their business name
 3. Website URL — ask for their website (triggers scrape + brand gen inline)
+   OR skip (creates basic profile from business name only)
 4. Profile Review — show generated profile, ask for confirmation
-5. Complete — welcome them, ready to create content
+5. Complete — welcome them, prompt to connect platforms
 
 NOTE: The "scraping" state exists only as a visual placeholder. All scraping
 and brand generation happens inline in on_website_url_input before switching
@@ -15,12 +16,13 @@ to profile_review. This avoids the aiogram_dialog on_process_result issue
 
 from __future__ import annotations
 
+import asyncio
 import logging
 import random
 import re
 import string
 
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import CallbackQuery, Message, User
 from aiogram_dialog import Dialog, DialogManager, Window
 from aiogram_dialog.widgets.input import MessageInput
 from aiogram_dialog.widgets.kbd import Button
@@ -30,12 +32,84 @@ from bot.dialogs.states import OnboardingSG
 
 logger = logging.getLogger(__name__)
 
+# Store references to fire-and-forget tasks to prevent GC collection
+_background_tasks: set[asyncio.Task] = set()
+
 
 def _make_slug(name: str) -> str:
     """Generate a URL-safe slug from a business name with random suffix."""
     base = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
     suffix = "".join(random.choices(string.ascii_lowercase + string.digits, k=4))
     return f"{base}-{suffix}"
+
+
+async def _ensure_tenant(
+    manager: DialogManager, telegram_user: User, website_url: str | None = None
+) -> str:
+    """Create tenant + tenant_member if not already created. Returns tenant_id.
+
+    Reuses existing tenant_id from dialog_data if present (retry scenario).
+    Takes a telegram_user param (works with both message.from_user and
+    callback.from_user).
+    """
+    from bot.db import create_tenant, create_tenant_member
+
+    tenant_id = manager.dialog_data.get("tenant_id")
+    if tenant_id:
+        # On retry, update website URL if a new one was provided
+        if website_url:
+            from bot.db import update_tenant_website_url
+            await update_tenant_website_url(tenant_id, website_url)
+        return tenant_id
+
+    business_name = manager.dialog_data.get("business_name", "Brand")
+    slug = _make_slug(business_name)
+    tenant = await create_tenant(
+        name=business_name,
+        slug=slug,
+        website_url=website_url,
+    )
+    tenant_id = tenant["id"]
+
+    await create_tenant_member(
+        tenant_id=tenant_id,
+        telegram_user_id=telegram_user.id,
+        role="owner",
+    )
+    manager.dialog_data["tenant_id"] = tenant_id
+    return tenant_id
+
+
+async def _seed_few_shot_examples(
+    tenant_id: str,
+    business_name: str,
+    profile: object | None = None,
+) -> None:
+    """Fire-and-forget task: generate and save starter few-shot examples.
+
+    Wraps in try/except — silent failures mean first posts have zero examples
+    but don't crash the bot.
+    """
+    try:
+        from bot.db import create_few_shot_examples_batch
+        from pipeline.brand_gen import generate_starter_examples
+
+        examples = await generate_starter_examples(
+            profile=profile,
+            business_name=business_name,
+        )
+        if examples:
+            await create_few_shot_examples_batch(tenant_id, examples)
+            logger.info(
+                "Seeded %d starter few-shot examples",
+                len(examples),
+                extra={"tenant_id": tenant_id},
+            )
+    except Exception:
+        logger.exception(
+            "Failed to seed few-shot examples",
+            extra={"tenant_id": tenant_id},
+        )
 
 
 # --- Handlers ---
@@ -61,16 +135,63 @@ async def on_business_name_input(
     await manager.switch_to(OnboardingSG.website_url)
 
 
+async def on_skip_website(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    """User tapped 'Skip — no website'. Create tenant with basic profile."""
+    from bot.db import update_onboarding_status, upsert_brand_profile
+
+    user = callback.from_user
+    if not user:
+        return
+
+    business_name = manager.dialog_data.get("business_name", "Brand")
+
+    try:
+        tenant_id = await _ensure_tenant(manager, user)
+
+        await upsert_brand_profile(tenant_id, {
+            "tone_words": ["professional", "friendly", "engaging"],
+            "audience_description": f"Customers and fans of {business_name}",
+            "do_list": [
+                "Use a warm, approachable tone",
+                "Highlight what makes the business unique",
+                "Include clear calls to action",
+            ],
+            "dont_list": [
+                "Don't use overly formal language",
+                "Don't make claims without backing them up",
+            ],
+            "compliance_notes": "",
+        })
+
+        await update_onboarding_status(tenant_id, user.id, "complete")
+        manager.dialog_data["profile_name"] = business_name
+
+        # Seed few-shot examples in background (no profile object in skip path)
+        task = asyncio.create_task(
+            _seed_few_shot_examples(tenant_id, business_name, profile=None)
+        )
+        _background_tasks.add(task)
+        task.add_done_callback(_background_tasks.discard)
+
+    except Exception:
+        logger.exception("Skip-website onboarding failed")
+        if callback.message and isinstance(callback.message, Message):
+            await callback.message.answer(
+                "Something went wrong setting up your profile. "
+                "Please try again by tapping 'Get Started' or sending /start."
+            )
+        return
+
+    await manager.switch_to(OnboardingSG.complete)
+
+
 async def on_website_url_input(
     message: Message, widget: MessageInput, manager: DialogManager
 ) -> None:
     """User typed their website URL — validate, scrape, generate profile, then show review."""
-    from bot.db import (
-        create_tenant,
-        create_tenant_member,
-        update_tenant_website_url,
-        upsert_brand_profile,
-    )
+    from bot.db import update_onboarding_status, upsert_brand_profile
     from pipeline.brand_gen import generate_brand_profile
     from pipeline.scraper import scrape_website
 
@@ -106,25 +227,8 @@ async def on_website_url_input(
 
     try:
         # Reuse existing tenant if retrying (C2 fix — no duplicates on "Try Again")
-        tenant_id = manager.dialog_data.get("tenant_id")
-        if not tenant_id:
-            slug = _make_slug(business_name)
-            tenant = await create_tenant(
-                name=business_name,
-                slug=slug,
-                website_url=url,
-            )
-            tenant_id = tenant["id"]
-
-            await create_tenant_member(
-                tenant_id=tenant_id,
-                telegram_user_id=user.id,
-                role="owner",
-            )
-            manager.dialog_data["tenant_id"] = tenant_id
-        else:
-            # Retry path — just update the website URL
-            await update_tenant_website_url(tenant_id, url)
+        # _ensure_tenant handles URL update on retry automatically
+        tenant_id = await _ensure_tenant(manager, user, website_url=url)
 
         # Scrape website
         scraped = await scrape_website(url)
@@ -152,6 +256,17 @@ async def on_website_url_input(
             },
         }
         await upsert_brand_profile(tenant_id, profile_data)
+
+        # Store profile object for few-shot seeding after approval
+        manager.dialog_data["_profile_obj"] = {
+            "name": profile.name,
+            "tone_words": profile.tone_words,
+            "audience_description": profile.audience_description,
+            "do_list": profile.do_list,
+            "dont_list": profile.dont_list,
+            "product_catalog": profile.product_catalog,
+            "tagline": profile.tagline,
+        }
 
         # Store results for the review screen
         manager.dialog_data["profile_name"] = profile.name
@@ -184,19 +299,7 @@ async def on_website_url_input(
 
         # Fallback: reuse existing tenant if already created, otherwise create one
         try:
-            tenant_id = manager.dialog_data.get("tenant_id")
-            if not tenant_id:
-                slug = _make_slug(business_name)
-                tenant = await create_tenant(
-                    name=business_name, slug=slug, website_url=url
-                )
-                tenant_id = tenant["id"]
-                await create_tenant_member(
-                    tenant_id=tenant_id,
-                    telegram_user_id=user.id,
-                    role="owner",
-                )
-                manager.dialog_data["tenant_id"] = tenant_id
+            tenant_id = await _ensure_tenant(manager, user, website_url=url)
 
             await upsert_brand_profile(tenant_id, {
                 "tone_words": ["professional", "engaging"],
@@ -206,6 +309,17 @@ async def on_website_url_input(
                 "compliance_notes": "",
             })
             manager.dialog_data["profile_name"] = business_name
+
+            # BUG FIX: error fallback was missing onboarding_status update
+            await update_onboarding_status(tenant_id, user.id, "complete")
+
+            # Seed few-shot examples even on error path
+            task = asyncio.create_task(
+                _seed_few_shot_examples(tenant_id, business_name, profile=None)
+            )
+            _background_tasks.add(task)
+            task.add_done_callback(_background_tasks.discard)
+
         except Exception:
             logger.exception("Fallback tenant creation also failed")
 
@@ -223,6 +337,30 @@ async def on_approve_profile(
     if tenant_id and user:
         await update_onboarding_status(tenant_id, user.id, "complete")
 
+        # Seed few-shot examples in background
+        business_name = manager.dialog_data.get("profile_name", "Brand")
+        profile_data = manager.dialog_data.get("_profile_obj")
+
+        # Reconstruct profile object if we have it
+        profile_obj = None
+        if profile_data:
+            from pipeline.brand_gen import GeneratedBrandProfile
+            profile_obj = GeneratedBrandProfile(
+                name=profile_data.get("name", business_name),
+                tone_words=profile_data.get("tone_words", []),
+                audience_description=profile_data.get("audience_description", ""),
+                do_list=profile_data.get("do_list", []),
+                dont_list=profile_data.get("dont_list", []),
+                product_catalog=profile_data.get("product_catalog", []),
+                tagline=profile_data.get("tagline"),
+            )
+
+        task = asyncio.create_task(
+            _seed_few_shot_examples(tenant_id, business_name, profile=profile_obj)
+        )
+        _background_tasks.add(task)
+        task.add_done_callback(_background_tasks.discard)
+
     await manager.switch_to(OnboardingSG.complete)
 
 
@@ -231,6 +369,21 @@ async def on_reject_profile(
 ) -> None:
     """User wants to redo — go back to website URL step."""
     await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_connect_platforms(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    """User tapped 'Connect Platforms' — close dialog and send OAuth buttons."""
+    from bot.handlers.onboarding import send_platform_buttons
+
+    chat_id = callback.message.chat.id if callback.message else None
+    bot = callback.bot
+
+    await manager.done()
+
+    if chat_id and bot:
+        await send_platform_buttons(bot, chat_id)
 
 
 # --- Getters (data providers for Format widgets) ---
@@ -283,9 +436,15 @@ dialog = Dialog(
         Const(
             "<b>What's your website URL?</b>\n\n"
             "I'll scrape it to learn about your brand, products, and voice.\n\n"
-            "Just type it below (e.g., mondoshrimp.com)"
+            "Type it below (e.g., mondoshrimp.com) or tap Skip if you "
+            "don't have a website."
         ),
         MessageInput(on_website_url_input),
+        Button(
+            Const("Skip \u2014 no website"),
+            id="skip_website",
+            on_click=on_skip_website,
+        ),
         state=OnboardingSG.website_url,
     ),
     Window(
@@ -314,10 +473,18 @@ dialog = Dialog(
         Format(
             "<b>You're all set!</b>\n\n"
             "Your brand profile for <b>{profile_name}</b> is ready.\n\n"
-            "Just send me a message anytime about what you want to post, like:\n"
+            "<b>Next step:</b> Connect at least one social platform so your "
+            "approved posts have somewhere to go.\n\n"
+            "After connecting, just send me a message anytime about what you "
+            "want to post, like:\n"
             '<i>"Post about our weekend special"</i>\n\n'
             "I'll generate images and captions, show you a preview, "
-            "and post to your platforms when you approve."
+            "and post when you approve."
+        ),
+        Button(
+            Const("Connect Platforms"),
+            id="connect_platforms",
+            on_click=on_connect_platforms,
         ),
         state=OnboardingSG.complete,
         getter=get_complete_data,
