@@ -4,43 +4,27 @@
 
 Scribario is built around a simple invariant: **all business logic lives in the pipeline and worker, never in the bot.** The Telegram bot is a thin UI layer. State transitions are database writes. The worker is a dumb job processor.
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           SCRIBARIO SYSTEM                               │
-│                                                                          │
-│  ┌──────────────┐     ┌───────────────────────────────────────────────┐ │
-│  │   TELEGRAM   │     │                  SUPABASE                     │ │
-│  │              │     │                                               │ │
-│  │  @Scribario  │ ──► │  ┌────────────┐   ┌────────────────────────┐ │ │
-│  │  Bot (user   │     │  │  Postgres  │   │        pgmq            │ │ │
-│  │  interface)  │ ◄── │  │  (state +  │   │  content_generation    │ │ │
-│  │              │     │  │   data)    │   │  posting               │ │ │
-│  └──────────────┘     │  └─────┬──────┘   └──────────┬─────────────┘ │ │
-│                        │        │                      │               │ │
-│                        └────────┼──────────────────────┼───────────────┘ │
-│                                 │                      │                  │
-│                        ┌────────┼──────────────────────┼─────────────┐   │
-│                        │        ▼                      ▼             │   │
-│                        │   ┌──────────┐         ┌──────────┐         │   │
-│                        │   │ PIPELINE │         │  WORKER  │         │   │
-│                        │   │          │         │  (async  │         │   │
-│                        │   │ caption  │         │  pgmq    │         │   │
-│                        │   │ image    │         │  poller) │         │   │
-│                        │   │ brand    │         │          │         │   │
-│                        │   └────┬─────┘         └────┬─────┘         │   │
-│                        │        │                    │                │   │
-│                        └────────┼────────────────────┼────────────────┘   │
-│                                 │                    │                    │
-│              ┌──────────────────┼────────────────────┼──────────────────┐ │
-│              │   EXTERNAL APIs  │                    │                  │ │
-│              │                  ▼                    ▼                  │ │
-│              │  ┌────────────┐  ┌──────────┐  ┌──────────────────────┐ │ │
-│              │  │ Claude API │  │  Kie.ai  │  │       Postiz         │ │ │
-│              │  │ (captions) │  │  (images)│  │  (social publishing) │ │ │
-│              │  └────────────┘  └──────────┘  └──────────────────────┘ │ │
-│              └──────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+**Architecture Diagram:** See [`scribario-architecture.excalidraw`](./scribario-architecture.excalidraw) for the full visual. [Open in Excalidraw](https://excalidraw.com) and import the file, or view the rendered PNG at [`scribario-architecture.png`](./scribario-architecture.png).
+
+### Two-Layer Intelligence
+
+The core differentiator is the AI Intelligence Layer:
+
+1. **Intake Agent** (Claude Haiku, ~$0.001/call) — Classifies whether we have enough to proceed or need to ask the user for photos/clarity. Philosophy: ask as few questions as possible, but as many as necessary for quality output.
+
+2. **Prompt Engine** (Claude Sonnet, ~$0.04/call) — Takes user intent + brand profile + reference photos and outputs a complete `GenerationPlan`: content format, scene-by-scene prompts, reference image assignments, 3 caption options with unique copywriting formulas, voice style, and compositing instructions.
+
+### Three Content Pipelines
+
+The engine routes to one of three pipelines based on intent:
+
+| Pipeline | Output | Cost |
+|----------|--------|------|
+| **IMAGE POST** | 1-3 static images via Nano Banana 2 | ~$0.12 |
+| **SHORT VIDEO** | Single 8s clip (frame + Veo 3.1) | ~$0.44 |
+| **LONG VIDEO** | 15-60s multi-scene video (TTS + frames + clips + SFX + FFmpeg stitch) | ~$2.00 |
+
+All pipelines converge on: Preview in Telegram → Approve → Auto-Post via Postiz.
 
 ---
 
@@ -70,22 +54,48 @@ The Telegram interface built with aiogram 3.x and aiogram-dialog.
 - All approval state is in `content_drafts` — the bot is stateless between messages
 - aiogram-dialog handles multi-step flows (onboarding) with explicit state machines
 
+### Prompt Engine (`pipeline/prompt_engine/`)
+
+The AI brain. Turns any user request into a structured `GenerationPlan`.
+
+| File | Responsibility |
+|---|---|
+| `models.py` | `GenerationPlan`, `ScenePlan`, `FramePrompt`, `AnimationPrompt`, `ContentFormat`, `VeoMode` |
+| `engine.py` | `generate_plan()` — single Claude Sonnet call with tool_use structured output |
+| `system_prompt.py` | Layered prompt builder: role + format rules + scene rules + ref image strategy + quality rules + brand voice |
+| `asset_resolver.py` | Load + categorize tenant assets (product photos, people photos, logo) |
+| `intake.py` | `check_intake()` — Claude Haiku classifier (proceed / ask_for_asset / ask_for_clarity) |
+| `voice_pool.py` | Gender-aware voice selection from tenant's voice pool JSONB |
+
 ### Pipeline (`pipeline/`)
 
 The content generation engine. Called by workers, never by the bot directly.
 
 | File | Responsibility |
 |---|---|
-| `orchestrator.py` | Coordinates the full caption → image → draft flow |
-| `caption_gen.py` | Claude API client — generates 3 caption + visual prompt options |
+| `orchestrator.py` | Coordinates the full caption → image → draft flow (image posts) |
+| `caption_gen.py` | Claude API client — generates 3 caption + visual prompt options (legacy, still used for `revise_caption()`) |
 | `image_gen.py` | Kie.ai Nano Banana 2 client — generates images in parallel |
 | `brand_voice.py` | Loads brand profile + few-shot examples from DB |
 | `brand_gen.py` | AI-assisted brand profile generation from website scraping |
 | `posting.py` | Postiz posting wrapper |
-| `scraper.py` | Website content scraper for brand setup |
-| `social_scraper.py` | Social media content scraper |
 
-**Generation order:** Captions are generated first because the caption contains the `visual_prompt` that drives the image. This produces better brand alignment than image-first generation.
+### Long Video Pipeline (`pipeline/long_video/`)
+
+Multi-scene video generation. Orchestrates TTS, frame generation, video clip creation, sound effects, and FFmpeg stitching.
+
+| File | Responsibility |
+|---|---|
+| `orchestrator.py` | `run_pipeline()` — scene-by-scene orchestration with auto-plan generation and legacy fallback |
+| `script_gen.py` | Legacy script generation (fallback when Prompt Engine unavailable) |
+| `tts.py` | ElevenLabs text-to-speech per scene |
+| `frame_gen.py` | Nano Banana 2 start/end frame generation with reference images |
+| `clip_gen.py` | Veo 3.1 / Randy GenLens video clip generation |
+| `sfx.py` | ElevenLabs sound effect generation |
+| `stitcher.py` | FFmpeg compositing — frames + clips + audio + logo overlay |
+| `voice_library.py` | ElevenLabs voice management + voice pool integration |
+
+**Generation order:** Captions are generated first because the caption contains the `visual_prompt` that drives the image. For long videos, the Prompt Engine outputs the complete scene plan, then the orchestrator runs TTS → frames → clips → SFX → stitch in sequence.
 
 ### Worker (`worker/`)
 
@@ -220,6 +230,8 @@ dos text[]             -- things to always do
 donts text[]           -- things to never do
 product_catalog jsonb  -- products/services
 signature_phrases text[]
+logo_storage_path text -- Supabase Storage path for brand logo
+voice_pool jsonb       -- [{voice_id, gender, style_label}] — gender-aware rotation
 ```
 
 **`few_shot_examples`** — Past posts used for brand voice training
@@ -269,6 +281,7 @@ posted_at timestamptz
 id uuid PK
 tenant_id uuid FK
 storage_path text      -- Supabase Storage path
+label text             -- 'product', 'owner', 'partner', 'other'
 uploaded_at timestamptz
 ```
 
@@ -282,7 +295,8 @@ Scribario uses [pgmq](https://github.com/tembo-io/pgmq) — a Postgres-native me
 
 | Queue | Producer | Consumer | Job Type |
 |---|---|---|---|
-| `content_generation` | `intake.py` | `generate_content.py` | Run pipeline, store draft, send preview |
+| `content_generation` | `intake.py` | `generate_content.py` | Run image post pipeline, store draft, send preview |
+| `long_video_generation` | `long_video.py` | `generate_long_video.py` | Run long video pipeline (TTS → frames → clips → stitch) |
 | `posting` | `approval.py` | `post_content.py` | Post approved draft via Postiz |
 
 **Visibility timeout:** Jobs become visible again after 30s if not explicitly deleted, providing automatic retry on worker crash.
@@ -294,17 +308,28 @@ Scribario uses [pgmq](https://github.com/tembo-io/pgmq) — a Postgres-native me
 ## API Integrations
 
 ### Anthropic Claude API
-- Used for: Caption generation (3 options per request), brand profile generation, intent parsing
-- Model: Claude claude-sonnet-4-6 (configurable)
-- Pattern: Structured outputs with explicit JSON schema for caption + visual_prompt
+- **Intake Agent** (Haiku): Intent classification — proceed / ask for photo / ask for clarity (~$0.001/call)
+- **Prompt Engine** (Sonnet): Structured `GenerationPlan` output via tool_use (~$0.04/call)
+- **Caption generation** (Sonnet): 3 caption options with 5 copywriting formulas (Hook-Story-Offer, PAS, Punchy One-Liner, Story-Lesson, List/Value Drop)
+- **Brand profile generation**: AI-assisted from website scraping
 
 ### Kie.ai Nano Banana 2
-- Used for: Image generation from visual prompts
-- Pattern: Parallel async requests (3 images generated simultaneously, ~25s total)
-- Provider abstraction: `ImageGenerationService` wraps the API — swap providers without touching the pipeline
+- Used for: Image generation from visual prompts, video start/end frame generation
+- Pattern: Parallel async requests (3 images simultaneously, ~25s total)
+- Reference images: Up to 14 per scene (10 object fidelity + 4 character consistency)
+
+### Google Veo 3.1
+- Used for: Video clip generation (8s clips from start/end frames)
+- Modes: TEXT_2_VIDEO, FIRST_AND_LAST_FRAMES_2_VIDEO, REFERENCE_2_VIDEO
+- Cost: ~$0.40/clip
+
+### ElevenLabs
+- **TTS**: Scene voiceover generation with gender-aware voice pool rotation
+- **SFX**: Sound effect generation from scene descriptions
+- Voice pool stored in `brand_profiles.voice_pool` JSONB — new voices auto-appended after creation
 
 ### Postiz API
-- Used for: Social media publishing — Facebook, Instagram, LinkedIn, X (Twitter), TikTok, YouTube, Bluesky, Pinterest, Threads
+- Used for: Social media publishing — Facebook, Instagram, LinkedIn, Bluesky (more coming)
 - Pattern: REST API — upload media, create post, attach to social account
 - Auth: API key + org ID in headers
 - Self-hosted at `https://postiz.scribario.com`
@@ -330,29 +355,28 @@ OAuth tokens for social accounts are stored in Supabase Vault (encrypted) and re
 
 ## Infrastructure
 
-```
-┌──────────────────────────────────────────┐
-│           Hostinger VPS                  │
-│           (31.97.13.213)                 │
-│                                          │
-│  ┌────────────────────────────────────┐  │
-│  │  systemd: scribario-bot.service    │  │
-│  │  python -m bot.main                │  │
-│  └────────────────────────────────────┘  │
-│                                          │
-│  ┌────────────────────────────────────┐  │
-│  │  systemd: scribario-worker.service │  │
-│  │  python -m worker.main             │  │
-│  └────────────────────────────────────┘  │
-│                                          │
-│  ┌────────────────────────────────────┐  │
-│  │  Docker: Postiz                    │  │
-│  │  nginx → postiz.scribario.com      │  │
-│  │  Let's Encrypt SSL                 │  │
-│  └────────────────────────────────────┘  │
-└──────────────────────────────────────────┘
-            │              │
-            ▼              ▼
-     Supabase         Telegram API
-     (managed)
-```
+- **VPS:** Hostinger (31.97.13.213)
+  - `systemd: scribario-bot.service` — Python bot (aiogram 3.x)
+  - `systemd: scribario-worker.service` — Python worker (pgmq poller)
+  - `Docker: Postiz` — Social publishing engine (postiz.scribario.com)
+  - `Docker: Redis 7` — FSM storage for bot state (survives restarts)
+  - `nginx + Let's Encrypt` — SSL termination
+- **Supabase** (managed) — Postgres + Storage + pgmq + pg_cron
+- **Domain:** scribario.com → VPS
+
+---
+
+## Cost Per Video
+
+| Component | Cost |
+|-----------|------|
+| Intake Agent (Haiku) | $0.001 |
+| Prompt Engine (Sonnet) | $0.04 |
+| ElevenLabs TTS (4 scenes) | $0.04 |
+| ElevenLabs SFX (4 scenes) | $0.04 |
+| Nano Banana frames (8 @ $0.04) | $0.32 |
+| Veo 3.1 clips (4 @ $0.40) | $1.60 |
+| FFmpeg | Free |
+| **Total** | **~$2.04** |
+
+At $5/video: **$2.96 profit (59% margin)**

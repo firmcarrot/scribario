@@ -20,46 +20,7 @@ Business owners describe what they want to post. Scribario generates three uniqu
 
 ## How It Works
 
-```
-You (Telegram)           Scribario                    The Internet
-─────────────────────────────────────────────────────────────────────
-"Post something about        ┌─────────────────────┐
- our weekend special"   ──►  │  Intent Parsing      │
-                             │  (Claude API)        │
-                             └────────┬────────────┘
-                                      │
-                             ┌────────▼────────────┐
-                             │  Brand Voice Engine  │
-                             │  Few-shot examples   │
-                             │  Brand profile       │
-                             └────────┬────────────┘
-                                      │
-                    ┌─────────────────┼──────────────────┐
-                    ▼                 ▼                   ▼
-            ┌──────────────┐ ┌──────────────┐   ┌──────────────┐
-            │  Caption #1  │ │  Caption #2  │   │  Caption #3  │
-            │  Image #1    │ │  Image #2    │   │  Image #3    │
-            │  (Kie.ai)    │ │  (Kie.ai)    │   │  (Kie.ai)    │
-            └──────┬───────┘ └──────┬───────┘   └──────┬───────┘
-                   └────────────────┼──────────────────┘
-                                    │
-                             ┌──────▼──────┐
-                             │  Preview in  │
-                             │  Telegram    │
-                             └──────┬───────┘
-                                    │
-                          You tap "Approve #2"
-                                    │
-                             ┌──────▼──────┐
-                             │   Postiz     │
-                             │  (self-host) │
-                             └──────┬───────┘
-                                    │
-         ┌──────┬──────┬──────┬──────┬──────┬──────┐
-         ▼      ▼      ▼      ▼      ▼      ▼      ▼
-      Facebook  IG  LinkedIn  X   TikTok Bluesky YouTube
-      ✓ Posted ✓    ✓        ✓    ✓      ✓       ✓
-```
+![Scribario Architecture](docs/scribario-architecture.png)
 
 ---
 
