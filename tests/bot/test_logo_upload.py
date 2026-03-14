@@ -1,0 +1,128 @@
+"""Tests for the /logo command and logo upload flow."""
+
+from __future__ import annotations
+
+from unittest.mock import AsyncMock, MagicMock, patch
+
+import pytest
+
+from bot.handlers.logo import _pending_logo_uploads, router
+
+
+class TestLogoCommand:
+    @pytest.mark.asyncio
+    async def test_logo_command_prompts_for_photo(self) -> None:
+        from bot.handlers.logo import cmd_logo
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 12345
+        msg.answer = AsyncMock()
+
+        with patch("bot.handlers.logo.get_tenant_by_telegram_user",
+                    new_callable=AsyncMock,
+                    return_value={"tenant_id": "t1", "onboarding_status": "complete"}):
+            await cmd_logo(msg)
+
+        msg.answer.assert_called_once()
+        answer_text = msg.answer.call_args[0][0]
+        assert "logo" in answer_text.lower()
+        assert 12345 in _pending_logo_uploads
+
+    @pytest.mark.asyncio
+    async def test_logo_command_rejects_unauthenticated(self) -> None:
+        from bot.handlers.logo import cmd_logo
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 99999
+        msg.answer = AsyncMock()
+
+        with patch("bot.handlers.logo.get_tenant_by_telegram_user",
+                    new_callable=AsyncMock, return_value=None):
+            await cmd_logo(msg)
+
+        msg.answer.assert_called_once()
+        assert 99999 not in _pending_logo_uploads
+
+
+class TestLogoPhotoHandler:
+    @pytest.mark.asyncio
+    async def test_stores_logo_and_updates_db(self) -> None:
+        from bot.handlers.logo import handle_logo_photo
+
+        _pending_logo_uploads[12345] = "t1"
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 12345
+        msg.photo = [MagicMock(), MagicMock(), MagicMock()]
+        msg.photo[-1].file_id = "big_photo_file_id"
+        msg.photo[-1].file_unique_id = "big_photo_unique"
+        msg.answer = AsyncMock()
+
+        # Mock bot.get_file to return a file object with file_path
+        mock_file = MagicMock()
+        mock_file.file_path = "photos/file_123.jpg"
+        msg.bot = MagicMock()
+        msg.bot.get_file = AsyncMock(return_value=mock_file)
+
+        with (
+            patch("bot.handlers.logo.get_settings") as mock_settings,
+            patch("bot.handlers.logo.download_and_store",
+                  new_callable=AsyncMock,
+                  return_value="reference-photos/t1/logo_big_photo_unique.jpg") as mock_store,
+            patch("bot.handlers.logo._update_logo_path",
+                  new_callable=AsyncMock) as mock_update,
+        ):
+            mock_settings.return_value.telegram_bot_token = "test-token"
+            await handle_logo_photo(msg)
+
+        # Verify download_and_store called with correct signature
+        mock_store.assert_called_once_with(
+            download_url="https://api.telegram.org/file/bottest-token/photos/file_123.jpg",
+            tenant_id="t1",
+            file_unique_id="logo_big_photo_unique",
+        )
+        mock_update.assert_called_once_with("t1", "reference-photos/t1/logo_big_photo_unique.jpg")
+        msg.answer.assert_called_once()
+        assert "logo" in msg.answer.call_args[0][0].lower()
+        assert 12345 not in _pending_logo_uploads
+
+    @pytest.mark.asyncio
+    async def test_ignores_photo_without_pending(self) -> None:
+        from bot.handlers.logo import handle_logo_photo
+
+        _pending_logo_uploads.clear()
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 99999
+        msg.photo = [MagicMock()]
+
+        result = await handle_logo_photo(msg)
+
+    @pytest.mark.asyncio
+    async def test_handles_download_error(self) -> None:
+        """Error during download/store should send error message, not crash."""
+        from bot.handlers.logo import handle_logo_photo
+
+        _pending_logo_uploads[77777] = "t2"
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 77777
+        msg.photo = [MagicMock()]
+        msg.photo[-1].file_id = "file_id"
+        msg.photo[-1].file_unique_id = "unique_id"
+        msg.answer = AsyncMock()
+        msg.bot = MagicMock()
+        msg.bot.get_file = AsyncMock(side_effect=RuntimeError("Telegram API down"))
+
+        with patch("bot.handlers.logo.get_settings") as mock_settings:
+            mock_settings.return_value.telegram_bot_token = "test-token"
+            await handle_logo_photo(msg)
+
+        msg.answer.assert_called_once()
+        assert "wrong" in msg.answer.call_args[0][0].lower()
+        assert 77777 not in _pending_logo_uploads

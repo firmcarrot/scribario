@@ -50,7 +50,7 @@ class TestPhotoWithTextIsGenerationRequest:
             photo=["photo_data"],
             caption="put me eating mondo shrimp over a volcano, theme dangerously good",
         )
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
 
         with (
             patch("bot.handlers.photos.get_tenant_by_telegram_user", return_value=membership),
@@ -72,7 +72,7 @@ class TestPhotoWithTextIsGenerationRequest:
             photo=["photo_data"],
             caption="post about our shrimp",
         )
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
         mock_bot = AsyncMock()
         mock_bot.get_file = AsyncMock(return_value=MagicMock(file_path="photos/file.jpg"))
 
@@ -96,7 +96,7 @@ class TestPhotoWithoutTextShowsDisambiguation:
         from bot.handlers.photos import handle_photo_message
 
         msg = _make_message(photo=["photo_data"])
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
 
         with patch("bot.handlers.photos.get_tenant_by_telegram_user", return_value=membership):
             await handle_photo_message(msg, bot=AsyncMock())
@@ -145,7 +145,7 @@ class TestLabelingCallback:
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
 
         with (
             patch("bot.handlers.photos._get_message", return_value=mock_msg),
@@ -179,7 +179,7 @@ class TestLabelingCallback:
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
 
         with (
             patch("bot.handlers.photos._get_message", return_value=mock_msg),
@@ -212,7 +212,7 @@ class TestLabelingCallback:
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
 
         with (
             patch("bot.handlers.photos._get_message", return_value=mock_msg),
@@ -242,7 +242,7 @@ class TestSaveAsReferenceCallback:
         callback.answer = AsyncMock()
         callback.message = mock_msg
 
-        membership = {"tenant_id": "tenant-uuid-123"}
+        membership = {"tenant_id": "tenant-uuid-123", "onboarding_status": "complete"}
         mock_bot = AsyncMock()
         mock_bot.get_file = AsyncMock(return_value=MagicMock(file_path="photos/f.jpg"))
 

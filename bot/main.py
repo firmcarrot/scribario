@@ -11,7 +11,7 @@ from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
 from bot.dialogs.onboarding import dialog as onboarding_dialog
-from bot.handlers import approval, caption_edit, commands, intake, onboarding, photos
+from bot.handlers import approval, caption_edit, commands, intake, logo, long_video, onboarding, photos
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +33,8 @@ def create_dispatcher() -> Dispatcher:
     )
     dp = Dispatcher(storage=storage)
     dp.include_router(commands.router)    # commands first
+    dp.include_router(long_video.router)  # /longvideo command
+    dp.include_router(logo.router)        # /logo command + photo capture
     dp.include_router(caption_edit.router)  # FSM edit state — before approval/intake
     dp.include_router(onboarding.router)
     dp.include_router(onboarding_dialog)

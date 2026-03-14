@@ -130,3 +130,79 @@ async def generate_brand_profile(
         compliance_notes=data.get("compliance_notes"),
         tagline=data.get("tagline"),
     )
+
+
+async def generate_starter_examples(
+    profile: GeneratedBrandProfile | None,
+    business_name: str,
+) -> list[dict]:
+    """Generate 3 starter few-shot examples for a new tenant.
+
+    Uses the brand profile if available; falls back to business-name-only
+    generation when profile is None (e.g., skip-website path).
+
+    Returns list of dicts matching the few_shot_examples table schema:
+    {platform, content_type, caption}.
+    """
+    settings = get_settings()
+    client = anthropic.AsyncAnthropic(api_key=settings.anthropic_api_key)
+
+    if profile:
+        brand_context = (
+            f"Brand: {profile.name}\n"
+            f"Tone: {', '.join(profile.tone_words)}\n"
+            f"Audience: {profile.audience_description}\n"
+            f"Tagline: {profile.tagline or 'none'}"
+        )
+    else:
+        brand_context = f"Brand: {business_name}\nTone: professional, friendly, engaging"
+
+    prompt = f"""You are a social media copywriter. Generate 3 example social media captions
+for this brand. Each should be a different content type.
+
+{brand_context}
+
+Generate a JSON array with exactly 3 objects, each having:
+- "content_type": one of "product_highlight", "community_engagement", "brand_story"
+- "caption": A ready-to-post social media caption (2-4 sentences, include relevant emoji)
+
+Respond with ONLY valid JSON array, no markdown fences or explanation."""
+
+    response = await client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=1000,
+        messages=[{"role": "user", "content": prompt}],
+    )
+
+    raw_text = response.content[0].text.strip()
+
+    if raw_text.startswith("```"):
+        raw_text = raw_text.split("\n", 1)[1]
+        if raw_text.endswith("```"):
+            raw_text = raw_text[:-3]
+        raw_text = raw_text.strip()
+
+    try:
+        examples_data = json.loads(raw_text)
+    except json.JSONDecodeError:
+        logger.error("Claude returned invalid JSON for starter examples", extra={"raw": raw_text[:200]})
+        return []
+
+    if not isinstance(examples_data, list):
+        return []
+
+    # Duplicate each example for facebook and instagram
+    result: list[dict] = []
+    for ex in examples_data[:3]:
+        caption = ex.get("caption", "")
+        content_type = ex.get("content_type", "general")
+        if not caption:
+            continue
+        for platform in ("facebook", "instagram"):
+            result.append({
+                "platform": platform,
+                "content_type": content_type,
+                "caption": caption,
+            })
+
+    return result
