@@ -3,8 +3,9 @@ import { Footer } from "@/components/sections/Footer";
 import { LegalSection as Section } from "@/components/ui/LegalSection";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Scribario",
+  title: "Privacy Policy",
   description: "Scribario Privacy Policy. Learn how we collect, use, and protect your data.",
+  alternates: { canonical: "https://scribario.com/privacy" },
 };
 
 export default function PrivacyPage() {
