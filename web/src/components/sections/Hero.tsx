@@ -227,8 +227,7 @@ export function Hero() {
       {/* ── STICKY PHONE SCROLL ZONE ── */}
       <div
         ref={phoneSectionRef}
-        className="relative"
-        style={{ height: "280vh" }}
+        className="relative md:h-[280vh]"
       >
         {/* Desktop: sticky phone */}
         <div className="hidden md:block sticky top-[5vh] z-20" style={{ perspective: "1000px" }}>
