@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ─── Brand Tokens — Light Theme (overrides old dark theme) ─── */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f5f5f5;
+  --bg-dark: #1A1A2E;
+  --text: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.62);
+  --accent: #FF6B4A;
+  --accent-secondary: #0088CC;
+  --accent-tertiary: #E5553A;
+  --card-bg: #ffffff;
+  --separator: rgba(0, 0, 0, 0.06);
+  --faq-border: rgb(224, 224, 224);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-bg-dark: var(--bg-dark);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-tertiary: var(--accent-tertiary);
+  --color-card-bg: var(--card-bg);
+  --color-separator: var(--separator);
+  --color-faq-border: var(--faq-border);
+  --font-display: "Clash Display", sans-serif;
+  --font-body: "Cabinet Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* ─── Font Faces ─── */
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/CabinetGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/CabinetGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Base ─── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: -0.0475em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* ─── Typing Dots (used by Telegram components) ─── */
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-4px); }
+}
+
+/* ─── Shimmer ─── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ─── Legal Page Styles ─── */
+.legal-section-body ul { list-style: disc; padding-left: 1.5rem; }
+.legal-section-body li { margin-bottom: 0.25rem; }
+.legal-section-body h4 { font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem; color: var(--text); }
+.legal-section-body table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.875rem; }
+.legal-section-body th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--separator); font-weight: 600; color: var(--text); }
+.legal-section-body td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--separator); }
+
+/* ─── Focus Indicators ─── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
