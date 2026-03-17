@@ -32,7 +32,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       { feature: "Scheduling", scribario: "Natural language (\"post Friday 9am\")", competitor: "Calendar drag-and-drop" },
       { feature: "Platforms", scribario: "9 platforms", competitor: "8 platforms" },
       { feature: "Content creation time", scribario: "30 seconds", competitor: "30-60 minutes (separate from Buffer)" },
-      { feature: "Free plan", scribario: "5 posts/month", competitor: "3 channels, 10 posts/channel" },
+      { feature: "Free plan", scribario: "First 5 posts free", competitor: "3 channels, 10 posts/channel" },
       { feature: "Paid plans start at", scribario: "$19/month", competitor: "$6/month/channel" },
     ],
     advantages: [
@@ -148,7 +148,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       { feature: "Publishing", scribario: "Direct to 9 platforms", competitor: "Content Planner (scheduling only)" },
       { feature: "Originality", scribario: "Every post is unique", competitor: "Templates look similar across users" },
       { feature: "Interface", scribario: "Telegram text", competitor: "Drag-and-drop editor" },
-      { feature: "Free plan", scribario: "5 posts/month", competitor: "Limited templates" },
+      { feature: "Free plan", scribario: "First 5 posts free", competitor: "Limited templates" },
       { feature: "Paid plans", scribario: "$19/month", competitor: "$13/month" },
     ],
     advantages: [

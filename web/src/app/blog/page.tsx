@@ -10,9 +10,22 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://scribario.com/blog" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://scribario.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://scribario.com/blog" },
+  ],
+};
+
 export default function BlogPage() {
   return (
     <main id="main-content">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section
         className="px-6 md:px-16"
         style={{ paddingTop: "clamp(10rem, 16vw, 16rem)", paddingBottom: "var(--section-gap)" }}

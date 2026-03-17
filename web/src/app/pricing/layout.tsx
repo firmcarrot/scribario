@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for AI-powered social media automation. Start free, upgrade when you're ready. Plans from $0 to $49/month.",
+    "Simple, transparent pricing for AI-powered social media automation. First 5 posts free, then upgrade when you're ready. Plans from $19 to $49/month.",
   alternates: { canonical: "https://scribario.com/pricing" },
   openGraph: {
     title: "Pricing — Scribario",
@@ -45,6 +45,11 @@ const schemas = [
         "@type": "Question",
         name: "Do I need to install anything?",
         acceptedAnswer: { "@type": "Answer", text: "No. Everything happens inside Telegram. Just open the Scribario bot and start texting. Works on any phone, tablet, or desktop." },
+      },
+      {
+        "@type": "Question",
+        name: "What happens after my 5 free posts?",
+        acceptedAnswer: { "@type": "Answer", text: "After your first 5 posts, you'll be prompted to choose a plan. Your connected platforms and brand voice settings stay saved — just pick a plan to keep posting." },
       },
       {
         "@type": "Question",
