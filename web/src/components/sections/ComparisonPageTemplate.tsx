@@ -71,6 +71,30 @@ export function ComparisonPageTemplate({ comparison }: { comparison: ComparisonP
         >
           {comparison.heroSubtitle}
         </motion.p>
+
+        {/* Intro paragraphs */}
+        {comparison.introparagraphs && (
+          <div className="flex flex-col gap-5" style={{ marginTop: "var(--content-gap)", maxWidth: "65ch" }}>
+            {comparison.introparagraphs.map((p, i) => (
+              <motion.p
+                key={i}
+                className="font-body"
+                style={{
+                  fontSize: "clamp(1rem, 1.15vw, 1.15rem)",
+                  lineHeight: 1.8,
+                  color: "var(--text-secondary)",
+                  letterSpacing: "-0.01em",
+                }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.3 + i * 0.08 }}
+              >
+                {p}
+              </motion.p>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Comparison Table */}
@@ -228,6 +252,46 @@ export function ComparisonPageTemplate({ comparison }: { comparison: ComparisonP
           </div>
         </div>
       </section>
+
+      {/* Bottom Line */}
+      {comparison.bottomLine && (
+        <section className="px-6 md:px-16" style={{ paddingBottom: "var(--section-gap)" }}>
+          <div className="max-w-[var(--max-content)] mx-auto">
+            <motion.h2
+              className="font-display font-bold"
+              style={{
+                fontSize: "clamp(1.75rem, 3vw, 3rem)",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                color: "var(--text)",
+                marginBottom: "var(--item-gap)",
+              }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              The bottom line.
+            </motion.h2>
+            <motion.p
+              className="font-body"
+              style={{
+                fontSize: "clamp(1.1rem, 1.4vw, 1.4rem)",
+                lineHeight: 1.7,
+                color: "var(--text-secondary)",
+                letterSpacing: "-0.01em",
+                maxWidth: "60ch",
+              }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              {comparison.bottomLine}
+            </motion.p>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section
