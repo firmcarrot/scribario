@@ -12,6 +12,7 @@ const linkGroups = [
       { href: "/how-it-works", label: "How It Works" },
       { href: "/pricing", label: "Pricing" },
       { href: "/about", label: "About" },
+      { href: "/blog", label: "Blog" },
       { href: "https://t.me/ScribarioBot", label: "Try the Bot", external: true },
     ],
   },

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return { title: "Post Not Found" };
 
   return {
-    title: `${post.title} | Scribario Blog`,
+    title: post.title,
     description: post.description,
     alternates: { canonical: `https://scribario.com/blog/${post.slug}` },
     openGraph: {

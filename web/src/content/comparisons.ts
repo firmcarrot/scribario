@@ -16,7 +16,7 @@ export const comparisons: Record<string, ComparisonPage> = {
   "vs-buffer": {
     slug: "vs-buffer",
     competitor: "Buffer",
-    metaTitle: "Scribario vs Buffer — Why AI Beats a Scheduling Dashboard | Scribario",
+    metaTitle: "Scribario vs Buffer — Why AI Beats a Scheduling Dashboard",
     metaDescription:
       "Buffer schedules content you've already created. Scribario creates the content AND publishes it — from a single Telegram text. Compare features and pricing.",
     heroHeadline: "Scribario vs",
@@ -74,7 +74,7 @@ export const comparisons: Record<string, ComparisonPage> = {
   "vs-hootsuite": {
     slug: "vs-hootsuite",
     competitor: "Hootsuite",
-    metaTitle: "Scribario vs Hootsuite — AI Content Creation vs Enterprise Dashboard | Scribario",
+    metaTitle: "Scribario vs Hootsuite — AI Content Creation vs Enterprise Dashboard",
     metaDescription:
       "Hootsuite is built for marketing teams with dashboards and analytics. Scribario is built for small businesses who just want to post. Compare the difference.",
     heroHeadline: "Scribario vs",
@@ -131,7 +131,7 @@ export const comparisons: Record<string, ComparisonPage> = {
   "vs-canva": {
     slug: "vs-canva",
     competitor: "Canva",
-    metaTitle: "Scribario vs Canva — AI-Generated Content vs Template Design | Scribario",
+    metaTitle: "Scribario vs Canva — AI-Generated Content vs Template Design",
     metaDescription:
       "Canva gives you templates. Scribario gives you finished posts. Compare AI content creation vs DIY design for social media.",
     heroHeadline: "Scribario vs",
