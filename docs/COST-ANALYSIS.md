@@ -1,6 +1,6 @@
 # Scribario — Cost Analysis & Pricing Reference
 
-**Last updated:** 2026-03-13
+**Last updated:** 2026-03-17
 **Purpose:** Ground truth for all API costs, infrastructure costs, and pricing decisions.
 **Verification status:** Claude API and Kie.ai prices verified against live source pages 2026-03-13. ElevenLabs, Supabase, Hostinger prices from training data (pages didn't render for live verification).
 
@@ -95,11 +95,14 @@
 |---|---|---|
 | Intake Agent | Claude Haiku 4.5 | $0.002 |
 | Prompt Engine | Claude Sonnet 4.6 | $0.04 |
-| Start frame (1K) | Kie.ai Nano Banana 2 | $0.04 |
+| Scene image (1K) | Kie.ai Nano Banana 2 | $0.04 |
+| Video prompt optimization | Claude Haiku 4.5 | $0.02 |
 | Video clip | Veo 3 Fast via Kie.ai | $0.40 |
-| **Total** | | **$0.48** |
+| **Total** | | **~$0.50** |
 
-### Long Video (4 scenes, ~30s)
+### Long Video (4 scenes, ~30s) — DEPRECATED
+
+*Long video generation has been deprecated. Short-form video (5-8s clips) is now the standard video offering.*
 
 | Step | Service | Cost |
 |---|---|---|
@@ -156,9 +159,9 @@ Every generation gives 3 options. User approves 1. The other 2 can be **saved to
 
 | Tier | Image Posts | Short Videos | Long Videos | Total COGS | Margin |
 |---|---|---|---|---|---|
-| **Starter** | 15 x $0.16 = $2.40 | 3 x $0.48 = $1.44 | 0 | **$3.84** | **87%** |
-| **Growth** | 40 x $0.16 = $6.40 | 10 x $0.48 = $4.80 | 2 x $2.18 = $4.36 | **$15.56** | **74%** |
-| **Pro** | 100 x $0.16 = $16.00 | 25 x $0.48 = $12.00 | 5 x $2.18 = $10.90 | **$38.90** | **61%** |
+| **Starter** | 15 x $0.16 = $2.40 | 3 x $0.50 = $1.50 | 0 | **$3.90** | **87%** |
+| **Growth** | 40 x $0.16 = $6.40 | 10 x $0.50 = $5.00 | 2 x $2.18 = $4.36 | **$15.76** | **73%** |
+| **Pro** | 100 x $0.16 = $16.00 | 25 x $0.50 = $12.50 | 5 x $2.18 = $10.90 | **$39.40** | **60%** |
 
 **Realistic margins (40-60% utilization):** Starter ~93%, Growth ~87%, Pro ~80%
 

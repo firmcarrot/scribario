@@ -66,14 +66,17 @@ async def handle_generate_long_video(message: dict) -> None:
             tenant_id=tenant_id,
         )
 
-        # Log total cost
+        # Log summary event for auditing (cost_usd=0 — per-call costs already
+        # auto-logged by ImageGenerationService and VideoGenerationService).
+        # Script gen, TTS, and SFX are logged by the orchestrator directly.
         await log_usage_event(
             tenant_id=tenant_id,
             event_type="long_video_generation",
             provider="multi",
-            cost_usd=pipeline_result.total_cost_usd,
+            cost_usd=0.0,
             metadata={
                 "project_id": project_id,
+                "total_pipeline_cost": pipeline_result.total_cost_usd,
                 "duration_seconds": pipeline_result.duration_seconds,
                 "scene_count": pipeline_result.scene_count,
                 "scenes_completed": pipeline_result.scenes_completed,

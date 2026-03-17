@@ -43,7 +43,9 @@ Making Scribario useful enough that clients don't want to churn.
 - [x] **Brand voice learning** — approved posts auto-added as few_shot_examples; dedup + 20-example cap
 - [x] **Posting confirmation** — Telegram message after every post with actual platform names
 - [x] **Multi-platform targeting** — "post to LinkedIn only" narrows which platforms receive the post
-- [x] **226 tests**, Redis FSM storage, full type checking
+- [x] **Unified short-form video pipeline** — inline video generation with caption selection, deprecated long video in favor of unified pipeline
+- [x] **Instagram Reels support** — vertical video (9:16) for Reels, Stories, TikTok, Shorts
+- [x] **566 tests**, Redis FSM storage, full type checking
 
 Still in Phase 2 (needs external API access or infrastructure):
 - [ ] **Bluesky integration** — AT Protocol OAuth — no review required, pending implementation
@@ -64,7 +66,7 @@ Making Scribario smarter the longer you use it.
 - [ ] **Composition awareness** — Nano Banana composition guidance for consistent visual identity
 - [ ] **Content calendar** — suggest when to post based on historical engagement patterns
 - [ ] **A/B testing** — post two variants, track which performs better
-- [ ] **Instagram Stories and Reels** — short-form video and story formats
+- [x] **Instagram Stories and Reels** — short-form video and story formats *(shipped Phase 2 via unified video pipeline)*
 - [ ] **TikTok integration** — requires platform audit (4-12 week process)
 - [ ] **Analytics dashboard** — web-based view of post performance across platforms
 - [ ] **Competitor insights** — monitor what's working in your category
@@ -121,7 +123,7 @@ Scribario is solving a real, recurring pain: small and medium businesses know th
 **Current traction:**
 - First beta client live, posting to Facebook + Instagram
 - End-to-end working: message → preview → approve → live post in under 45 seconds
-- 226 automated tests, production-grade architecture from day one
+- 566 automated tests, production-grade architecture from day one
 
 **Revenue model:**
 - SaaS subscription tiers (Starter / Growth / Pro) based on post volume

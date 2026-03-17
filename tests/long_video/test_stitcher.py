@@ -172,6 +172,52 @@ class TestBuildAudioMixCommand:
         fc = args[fc_idx + 1]
         assert "volume=0.5" in fc
 
+    def test_sfx_only_no_voiceovers_single_sfx(self) -> None:
+        """SFX-only mode: no voiceovers, single SFX → volume-adjusted copy."""
+        args = build_audio_mix_command(
+            voiceovers=[],
+            sfx=["/tmp/sfx0.mp3"],
+            output_path="/tmp/audio.mp3",
+            sfx_volume=0.8,
+        )
+        assert "/tmp/sfx0.mp3" in args
+        assert "/tmp/audio.mp3" in args
+        fc_idx = args.index("-filter_complex")
+        fc = args[fc_idx + 1]
+        assert "volume=0.8" in fc
+        # Should NOT have amix (no voiceover to mix with)
+        assert "amix" not in fc
+        # Should NOT have concat=n=0
+        assert "concat=n=0" not in fc
+
+    def test_sfx_only_no_voiceovers_multiple_sfx(self) -> None:
+        """SFX-only mode: no voiceovers, multiple SFX → concat at volume."""
+        args = build_audio_mix_command(
+            voiceovers=[],
+            sfx=["/tmp/sfx0.mp3", "/tmp/sfx1.mp3", "/tmp/sfx2.mp3"],
+            output_path="/tmp/audio.mp3",
+            sfx_volume=0.8,
+        )
+        for sfx in ["/tmp/sfx0.mp3", "/tmp/sfx1.mp3", "/tmp/sfx2.mp3"]:
+            assert sfx in args
+        fc_idx = args.index("-filter_complex")
+        fc = args[fc_idx + 1]
+        # Each SFX should be volume-adjusted
+        assert fc.count("volume=0.8") == 3
+        # Should concat all SFX
+        assert "concat=n=3" in fc
+        # Should NOT have amix
+        assert "amix" not in fc
+
+    def test_no_voiceovers_no_sfx_raises(self) -> None:
+        """No audio at all should raise ValueError."""
+        with pytest.raises(ValueError, match="No audio"):
+            build_audio_mix_command(
+                voiceovers=[],
+                sfx=[],
+                output_path="/tmp/audio.mp3",
+            )
+
 
 # ---------------------------------------------------------------------------
 # _run_ffmpeg
@@ -263,6 +309,22 @@ class TestStitch:
                 await stitch(spec)
 
         mock_rmtree.assert_called_once_with("/tmp/scribario-test")
+
+    async def test_sfx_only_skips_audio_mix_uses_sfx_directly(self) -> None:
+        """When voiceovers=[], stitch should build SFX-only audio (no crash)."""
+        spec = _make_spec(scene_voiceovers=[], scene_sfx=["/tmp/sfx0.mp3", "/tmp/sfx1.mp3"])
+
+        with (
+            patch("pipeline.long_video.stitcher._run_ffmpeg", new_callable=AsyncMock) as mock_ff,
+            patch("pipeline.long_video.stitcher._probe_duration", return_value=5.0),
+            patch("pipeline.long_video.stitcher.os.path.getsize", return_value=1_000),
+            patch("pipeline.long_video.stitcher.tempfile.mkdtemp", return_value="/tmp/scribario-test"),
+            patch("pipeline.long_video.stitcher.shutil.rmtree"),
+        ):
+            result = await stitch(spec)
+
+        assert isinstance(result, StitchResult)
+        assert result.output_path.endswith(".mp4")
 
     async def test_output_dir_created(self) -> None:
         spec = _make_spec()

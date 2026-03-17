@@ -2,7 +2,7 @@
 
 ## What This Is
 AI-powered social media content creation + auto-posting via Telegram bot.
-Business owners text → AI generates image + copy → preview → approve → auto-post.
+Business owners text → AI generates image/video + copy → preview → approve → auto-post.
 
 ## Stack
 - **Bot:** Python 3.11+, aiogram 3.x, aiogram_dialog
@@ -12,7 +12,8 @@ Business owners text → AI generates image + copy → preview → approve → a
 - **Database:** Supabase Postgres + pgmq + pg_cron
 - **Posting:** Postiz (self-hosted Docker)
 - **Image Gen:** Kie.ai (Nano Banana 2), Gemini fallback
-- **LLM:** Claude API (captions, brand voice)
+- **Video Gen:** Veo 3.1 Fast via Kie.ai (inline in generate_content job)
+- **LLM:** Claude API (captions, brand voice, video prompts)
 
 ## Directory Structure
 ```
@@ -82,6 +83,16 @@ NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
 - **Idempotency:** Every job has idempotency_key = hash(request_id + job_type)
 - **Provider abstraction:** Thin wrappers around all external APIs (swap without pipeline changes)
 - **Fail loud:** Never return fake data or silently succeed on failure
+- **Inline video gen:** When generate_video=True, video is generated INSIDE generate_content job (not a separate job). Falls back to image-only on Veo failure.
+- **Long video deprecated:** `/longvideo` router and `generate_long_video` handler disconnected. Files still exist but are not wired.
+
+## Video Pipeline (March 2026)
+- Video requests detected by keywords: "video", "reel", "clip", "animate", "motion"
+- Vertical (9:16) for: "reel", "story", "tiktok", "shorts"
+- `content_requests` stores `generate_video` + `video_aspect_ratio`
+- Preview shows: video + 3 caption options with `approve_video:{draft_id}:{option}` buttons
+- "Make Video" button on image previews still works via separate `generate_video` job
+- Regenerate preserves video flag from original request
 
 ## Git
 - Branch: `main`

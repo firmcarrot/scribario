@@ -207,6 +207,8 @@ async def handle_content_request(message: Message) -> None:
         platform_targets=platform_targets,
         due_at=scheduled_time,
         style_override=style_override,
+        generate_video=is_video,
+        video_aspect_ratio=video_aspect_ratio,
     )
     request_id = request["id"]
 

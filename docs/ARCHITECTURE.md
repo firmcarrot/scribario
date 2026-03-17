@@ -14,17 +14,20 @@ The core differentiator is the AI Intelligence Layer:
 
 2. **Prompt Engine** (Claude Sonnet, ~$0.04/call) — Takes user intent + brand profile + reference photos and outputs a complete `GenerationPlan`: content format, scene-by-scene prompts, reference image assignments, 3 caption options with unique copywriting formulas, voice style, and compositing instructions.
 
-### Three Content Pipelines
+### Two Content Pipelines
 
-The engine routes to one of three pipelines based on intent:
+The engine routes to one of two pipelines based on intent:
 
 | Pipeline | Output | Cost |
 |----------|--------|------|
-| **IMAGE POST** | 1-3 static images via Nano Banana 2 | ~$0.12 |
-| **SHORT VIDEO** | Single 8s clip (frame + Veo 3.1) | ~$0.44 |
-| **LONG VIDEO** | 15-60s multi-scene video (TTS + frames + clips + SFX + FFmpeg stitch) | ~$2.00 |
+| **IMAGE POST** | 1-3 static images via Nano Banana 2 | ~$0.16 |
+| **SHORT VIDEO** | Single 8s clip (frame + Veo Fast), generated inline with captions | ~$0.50 |
+
+When `generate_video=True`, video generation runs **inline** inside the same `generate_content` job — the user sees ONE unified preview with the video plus 3 caption options. No separate video job is enqueued.
 
 All pipelines converge on: Preview in Telegram → Approve → Auto-Post via Postiz.
+
+> **Long Video (DEPRECATED):** The multi-scene long video pipeline (`pipeline/long_video/`) still exists in the codebase but is disconnected — the `/longvideo` command router has been removed from `bot/main.py` and the `generate_long_video` worker handler has been removed from `worker/main.py`.
 
 ---
 
@@ -44,7 +47,7 @@ The Telegram interface built with aiogram 3.x and aiogram-dialog.
 | `handlers/onboarding.py` | /start and brand setup flow |
 | `handlers/photos.py` | Reference photo upload handler |
 | `dialogs/onboarding.py` | aiogram-dialog state machine for brand profile setup |
-| `services/telegram.py` | Outbound message builders (preview cards, status messages) |
+| `services/telegram.py` | Outbound message builders (preview cards, status messages, `build_video_preview_keyboard()`) |
 | `services/postiz.py` | Postiz API client |
 | `services/postiz_oauth.py` | OAuth flow for connecting social accounts |
 | `services/storage.py` | Supabase Storage upload helpers |
@@ -80,7 +83,9 @@ The content generation engine. Called by workers, never by the bot directly.
 | `brand_gen.py` | AI-assisted brand profile generation from website scraping |
 | `posting.py` | Postiz posting wrapper |
 
-### Long Video Pipeline (`pipeline/long_video/`)
+### Long Video Pipeline (`pipeline/long_video/`) — DEPRECATED
+
+> **Status: DEPRECATED.** The `/longvideo` command and `generate_long_video` worker handler have been removed. These files remain in the codebase but are not reachable from the bot or worker.
 
 Multi-scene video generation. Orchestrates TTS, frame generation, video clip creation, sound effects, and FFmpeg stitching.
 
@@ -103,10 +108,11 @@ A long-running async process that polls pgmq queues and dispatches job handlers.
 
 | File | Responsibility |
 |---|---|
-| `main.py` | Queue poller — polls both queues, dispatches handlers, handles errors |
-| `jobs/generate_content.py` | Runs the pipeline for a content_request, stores draft, sends preview |
+| `main.py` | Queue poller — polls queues, dispatches handlers, handles errors |
+| `jobs/generate_content.py` | Runs the pipeline for a content_request (including inline video when `generate_video=True`), stores draft, sends preview |
 | `jobs/generate_caption.py` | Caption-only generation |
 | `jobs/generate_image.py` | Image-only generation |
+| `jobs/generate_video.py` | Video generation for existing image drafts ("Make Video" button on image previews) |
 | `jobs/post_content.py` | Calls Postiz to publish an approved draft |
 
 Workers run as a systemd service on the VPS. The polling interval and concurrency are configurable via environment variables.
@@ -150,24 +156,31 @@ This is the complete lifecycle of a single user request:
    pipeline/orchestrator.py:
    ├─► Load brand profile + few-shot examples from DB
    ├─► Call Claude API → generate 3 captions (with visual_prompt per caption)
-   └─► Call Kie.ai in parallel → generate 3 images from visual_prompts
+   ├─► Call Kie.ai in parallel → generate 3 images from visual_prompts
+   └─► If generate_video=True:
+       ├─► Generate video prompt from scene plan
+       ├─► Generate scene image (1 frame via Nano Banana 2)
+       └─► Generate 8s video clip via Veo Fast
 
 5. DRAFT STORED
-   ├─► Upload 3 images to Supabase Storage
+   ├─► Upload images (and video if present) to Supabase Storage
    ├─► Insert into content_drafts (status: "preview_sent")
    └─► Update content_requests (status: "preview_sent")
 
 6. PREVIEW SENT
    worker/jobs/generate_content.py:
-   └─► Call Telegram API → send message with 3 inline keyboards
-       [Approve #1] [Approve #2] [Approve #3] [Reject All] [Regenerate]
+   ├─► IMAGE POST: Send 3 inline keyboards
+   │   [Approve #1] [Approve #2] [Approve #3] [Reject All] [Regenerate]
+   └─► SHORT VIDEO: Send video + 3 caption options via build_video_preview_keyboard()
+       [Caption #1] [Caption #2] [Caption #3] [Reject All] [Regenerate]
 
 7. USER APPROVES
-   User taps "Approve #2"
+   Image post: User taps "Approve #2"
+   Video post: User taps caption option → approve_video:{draft_id}:{option_number}
    └─► bot/handlers/approval.py receives callback_query
 
 8. APPROVAL PROCESSED
-   ├─► Update content_drafts (status: "approved", approved_option: 2)
+   ├─► Update content_drafts (status: "approved", approved_option: N)
    └─► Enqueue job to pgmq "posting" queue
 
 9. POSTING JOB RUNS
@@ -252,6 +265,8 @@ telegram_user_id bigint
 intent text            -- raw user message
 platform_targets text[]
 status text            -- pending → generating → preview_sent → done
+generate_video boolean DEFAULT false  -- when true, video is generated inline with captions
+video_aspect_ratio text               -- e.g. '9:16', '16:9', '1:1' (preserved on regenerate)
 created_at timestamptz
 ```
 
@@ -295,8 +310,7 @@ Scribario uses [pgmq](https://github.com/tembo-io/pgmq) — a Postgres-native me
 
 | Queue | Producer | Consumer | Job Type |
 |---|---|---|---|
-| `content_generation` | `intake.py` | `generate_content.py` | Run image post pipeline, store draft, send preview |
-| `long_video_generation` | `long_video.py` | `generate_long_video.py` | Run long video pipeline (TTS → frames → clips → stitch) |
+| `content_generation` | `intake.py` | `generate_content.py` | Run pipeline (image or inline video), store draft, send preview |
 | `posting` | `approval.py` | `post_content.py` | Post approved draft via Postiz |
 
 **Visibility timeout:** Jobs become visible again after 30s if not explicitly deleted, providing automatic retry on worker crash.
@@ -377,17 +391,18 @@ OAuth tokens for social accounts are stored in Supabase Vault (encrypted) and re
 | Nano Banana 2 images (3 @ $0.04) | $0.12 |
 | **Total** | **~$0.16** |
 
-### Short Video (single 8s clip)
+### Short Video (single 8s clip, inline with captions)
 
 | Component | Cost |
 |-----------|------|
 | Intake Agent (Haiku) | $0.002 |
 | Prompt Engine (Sonnet) | $0.04 |
-| Nano Banana 2 frame (1 @ $0.04) | $0.04 |
-| Veo 3 Fast via Kie.ai | $0.40 |
-| **Total** | **~$0.48** |
+| Video prompt generation | $0.02 |
+| Nano Banana 2 scene image (1 @ $0.04) | $0.04 |
+| Veo Fast via Kie.ai | $0.40 |
+| **Total** | **~$0.50** |
 
-### Long Video (4 scenes, ~30s)
+### Long Video (4 scenes, ~30s) — DEPRECATED
 
 | Component | Cost |
 |-----------|------|

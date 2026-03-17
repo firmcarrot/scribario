@@ -187,22 +187,24 @@ async def run_pipeline(
         tts_by_index = {idx: result for idx, result in tts_results}
 
         # --- 5. Generate frames (parallel) ---
+        # tenant_id passed to service for automatic per-call usage logging
+        from pipeline.image_gen import ImageGenerationService
+
+        frame_image_service = ImageGenerationService(tenant_id=tenant_id)
         await _notify(status_callback, "generating_frames", "Generating scene frames...")
-        frame_assets = await generate_all_frames(surviving_scenes, aspect_ratio=aspect_ratio)
+        frame_assets = await generate_all_frames(
+            surviving_scenes, image_service=frame_image_service, aspect_ratio=aspect_ratio
+        )
         frame_cost = sum(fa.cost_usd for fa in frame_assets)
         running_cost += frame_cost
 
         _check_cost(running_cost, max_cost)
 
-        await log_usage_event(
-            tenant_id=tenant_id,
-            event_type="frame_gen",
-            provider="kie_ai",
-            cost_usd=frame_cost,
-            metadata={"project_id": project_id, "scenes": len(frame_assets)},
-        )
-
         # --- 6. Generate clips + SFX (parallel with each other) ---
+        # tenant_id passed to service for automatic per-call usage logging
+        from pipeline.video_gen import VideoGenerationService
+
+        clip_video_service = VideoGenerationService(tenant_id=tenant_id)
         await _notify(status_callback, "generating_clips", "Generating video clips and SFX...")
 
         video_prompts = [s.visual_description for s in surviving_scenes]
@@ -216,7 +218,10 @@ async def run_pipeline(
         pre_clip_costs = {fa.scene_index: fa.cost_usd for fa in frame_assets}
 
         clip_assets, sfx_results = await asyncio.gather(
-            generate_all_clips(frame_assets, video_prompts, aspect_ratio=aspect_ratio),
+            generate_all_clips(
+                frame_assets, video_prompts,
+                video_service=clip_video_service, aspect_ratio=aspect_ratio,
+            ),
             generate_sfx_batch(sfx_descriptions, output_dir=tmp_dir),
         )
 
@@ -229,14 +234,6 @@ async def run_pipeline(
                 running_cost += sr.cost_usd
 
         _check_cost(running_cost, max_cost)
-
-        await log_usage_event(
-            tenant_id=tenant_id,
-            event_type="clip_gen",
-            provider="kie_ai",
-            cost_usd=sum(ca.cost_usd for ca in clip_assets),
-            metadata={"project_id": project_id, "scenes": len(clip_assets)},
-        )
 
         # --- 7. Filter to scenes with BOTH clip AND voiceover ---
         stitchable: list[tuple[SceneAssets, object, object | None]] = []

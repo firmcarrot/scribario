@@ -44,6 +44,8 @@ async def create_content_request(
     platform_targets: list[str] | None = None,
     due_at: datetime | None = None,
     style_override: str | None = None,
+    generate_video: bool = False,
+    video_aspect_ratio: str | None = None,
 ) -> dict:
     """Create a new content request in the database."""
 
@@ -58,6 +60,10 @@ async def create_content_request(
         data["due_at"] = due_at.isoformat()
     if style_override is not None:
         data["style_override"] = style_override
+    if generate_video:
+        data["generate_video"] = True
+    if video_aspect_ratio is not None:
+        data["video_aspect_ratio"] = video_aspect_ratio
     result = (
         client.table("content_requests")
         .insert(data)
@@ -332,6 +338,105 @@ async def update_draft_caption(draft_id: str, option_idx: int, new_caption: str)
     client.table("content_drafts").update({"caption_variants": updated}).eq(
         "id", draft_id
     ).execute()
+
+
+# --- Content Library functions ---
+
+
+async def save_to_content_library(
+    tenant_id: str,
+    source_draft_id: str,
+    caption: str,
+    media_type: str,
+    image_url: str | None = None,
+    video_url: str | None = None,
+    platform_targets: list[str] | None = None,
+) -> dict:
+    """Save a content option to the library for later reuse."""
+    client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "source_draft_id": source_draft_id,
+        "caption": caption,
+        "media_type": media_type,
+    }
+    if image_url is not None:
+        data["image_url"] = image_url
+    if video_url is not None:
+        data["video_url"] = video_url
+    if platform_targets is not None:
+        data["platform_targets"] = platform_targets
+    result = client.table("content_library").insert(data).execute()
+    return result.data[0]
+
+
+async def get_library_items(
+    tenant_id: str,
+    status: str = "saved",
+    limit: int = 1,
+    offset: int = 0,
+) -> list[dict]:
+    """Get paginated library items for a tenant, newest first."""
+    client = get_supabase_client()
+    result = (
+        client.table("content_library")
+        .select("*")
+        .eq("tenant_id", tenant_id)
+        .eq("status", status)
+        .order("saved_at", desc=True)
+        .limit(limit)
+        .offset(offset)
+        .execute()
+    )
+    return result.data or []
+
+
+async def count_library_items(tenant_id: str, status: str = "saved") -> int:
+    """Count library items for a tenant with given status."""
+    client = get_supabase_client()
+    result = (
+        client.table("content_library")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .eq("status", status)
+        .execute()
+    )
+    return result.count or 0
+
+
+async def update_library_item_status(
+    item_id: str,
+    tenant_id: str,
+    status: str,
+) -> None:
+    """Update a library item's status. Always scoped to tenant_id."""
+    client = get_supabase_client()
+    data: dict = {"status": status}
+    if status == "posted":
+        data["posted_at"] = datetime.now(UTC).isoformat()
+    (
+        client.table("content_library")
+        .update(data)
+        .eq("id", item_id)
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+
+
+async def get_library_item(item_id: str, tenant_id: str) -> dict | None:
+    """Get a single library item, scoped to tenant."""
+    client = get_supabase_client()
+    result = (
+        client.table("content_library")
+        .select("*")
+        .eq("id", item_id)
+        .eq("tenant_id", tenant_id)
+        .limit(1)
+        .execute()
+    )
+    if result.data:
+        return result.data[0]
+    return None
 
 
 async def get_recent_posts(tenant_id: str, limit: int = 10) -> list[dict]:

@@ -55,7 +55,7 @@ async def generate_content(
         ContentDraft with captions and images ready for preview.
     """
     if image_service is None:
-        image_service = ImageGenerationService()
+        image_service = ImageGenerationService(tenant_id=tenant_id)
 
     draft_id = str(uuid.uuid4())
 
