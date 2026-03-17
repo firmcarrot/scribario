@@ -6,10 +6,12 @@ import Image from "next/image";
 
 export function Navbar() {
   const [onDark, setOnDark] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     let darkSections: Element[] = [];
-    let prev = false;
+    let prevDark = false;
+    let prevScrolled = false;
 
     const check = () => {
       let isDark = false;
@@ -17,9 +19,14 @@ export function Navbar() {
         const rect = el.getBoundingClientRect();
         if (rect.top < 50 && rect.bottom > 50) { isDark = true; break; }
       }
-      if (isDark !== prev) {
-        prev = isDark;
+      if (isDark !== prevDark) {
+        prevDark = isDark;
         setOnDark(isDark);
+      }
+      const isScrolled = window.scrollY > 80;
+      if (isScrolled !== prevScrolled) {
+        prevScrolled = isScrolled;
+        setScrolled(isScrolled);
       }
     };
 
@@ -46,13 +53,27 @@ export function Navbar() {
   return (
     <nav
       aria-label="Main navigation"
-      className="fixed top-0 left-0 w-full pointer-events-none"
-      style={{ height: 0, zIndex: 4 }}
+      className="fixed top-0 left-0 w-full transition-all duration-300"
+      style={{
+        zIndex: 9999,
+        backgroundColor: scrolled
+          ? (onDark ? "rgba(10,10,15,0.85)" : "rgba(255,255,255,0.85)")
+          : "transparent",
+        backdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
+        borderBottom: scrolled
+          ? (onDark ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(0,0,0,0.06)")
+          : "1px solid transparent",
+      }}
     >
+      <div
+        className="flex items-center justify-between px-[40px] max-[750px]:px-[6vw]"
+        style={{ height: scrolled ? 64 : 80, transition: "height 0.3s ease" }}
+      >
       {/* Logo */}
       <Link
         href="/"
-        className="pointer-events-auto absolute flex items-center gap-2 transition-colors duration-200 top-[38px] left-[40px] max-[750px]:top-[26px] max-[750px]:left-[6vw]"
+        className="flex items-center gap-2 transition-colors duration-200"
         style={{ minHeight: 44 }}
       >
         <Image
@@ -73,7 +94,7 @@ export function Navbar() {
 
       {/* Nav links — right side */}
       <div
-        className="pointer-events-auto absolute flex items-center top-[38px] right-[40px] max-[750px]:top-[26px] max-[750px]:right-[6vw]"
+        className="flex items-center"
         style={{ gap: "clamp(1.25rem, 2.5vw, 2.5rem)" }}
       >
         {[
@@ -114,6 +135,7 @@ export function Navbar() {
         >
           Try it free →
         </a>
+      </div>
       </div>
     </nav>
   );
