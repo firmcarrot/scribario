@@ -101,7 +101,7 @@ If you're spending more than 30 seconds per post, you're doing it the old way.`,
   },
   {
     slug: "social-media-for-restaurants",
-    title: "Social Media for Restaurants: Post Consistently Without Hiring Anyone",
+    title: "Social Media for Restaurants: Post Without Hiring",
     description:
       "Restaurant owners don't have time for social media. Here's how AI automation turns your phone photos into professional posts — while you cook.",
     date: "2026-03-12",
@@ -271,7 +271,7 @@ The question isn't "agency or AI?" It's "what am I actually paying for, and is t
   },
   {
     slug: "best-social-media-scheduling-tool-2026",
-    title: "The Best Social Media Scheduling Tools in 2026 (Honest Comparison)",
+    title: "Best Social Media Scheduling Tools in 2026",
     description:
       "Buffer, Hootsuite, Later, and Scribario compared — features, pricing, and the one question nobody asks: do you even need a scheduling tool?",
     date: "2026-03-08",
@@ -390,7 +390,7 @@ The best social media tool in 2026 isn't the one with the best calendar. It's th
   },
   {
     slug: "social-media-without-a-dashboard",
-    title: "Social Media Automation Without a Dashboard: Why Chat-First Wins",
+    title: "Social Media Automation Without a Dashboard",
     description:
       "Every social media tool gives you a dashboard. What if you didn't need one? How chat-based automation eliminates the learning curve entirely.",
     date: "2026-03-06",
