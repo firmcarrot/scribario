@@ -8,9 +8,22 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://scribario.com/privacy" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://scribario.com" },
+    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://scribario.com/privacy" },
+  ],
+};
+
 export default function PrivacyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="max-w-3xl mx-auto px-6 py-24 md:py-32">
         <h1
           className="font-display font-bold mb-4"

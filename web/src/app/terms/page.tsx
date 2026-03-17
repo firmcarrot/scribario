@@ -8,9 +8,22 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://scribario.com/terms" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://scribario.com" },
+    { "@type": "ListItem", position: 2, name: "Terms of Service", item: "https://scribario.com/terms" },
+  ],
+};
+
 export default function TermsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <article className="max-w-3xl mx-auto px-6 py-24 md:py-32">
         <h1
           className="font-display font-bold mb-4"

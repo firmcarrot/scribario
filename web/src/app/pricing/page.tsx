@@ -11,7 +11,7 @@ const plans = [
     monthlyPrice: 0,
     annualPrice: 0,
     features: [
-      "5 posts per month",
+      "First 5 posts free — no card required",
       "1 connected platform",
       "AI-generated captions",
       "AI-generated images",
@@ -76,8 +76,8 @@ const faqs = [
     a: "No. Everything happens inside Telegram. Just open the Scribario bot and start texting. Works on any phone, tablet, or desktop.",
   },
   {
-    q: "What happens when I hit my free post limit?",
-    a: "You'll get a friendly nudge to upgrade. Your connected platforms and brand voice settings stay saved — just upgrade to keep posting.",
+    q: "What happens after my 5 free posts?",
+    a: "After your first 5 posts, you'll be prompted to choose a plan. Your connected platforms and brand voice settings stay saved — just pick a plan to keep posting.",
   },
   {
     q: "How is this different from Canva or Buffer?",
