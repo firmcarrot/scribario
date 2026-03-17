@@ -16,6 +16,7 @@ export function EmailCapture({
   variant = "light",
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
+  const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -40,7 +41,7 @@ export function EmailCapture({
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source }),
+        body: JSON.stringify({ email: email.trim(), source, website: honeypot }),
       });
       if (!res.ok) throw new Error("Failed");
       setStatus("success");
@@ -81,15 +82,28 @@ export function EmailCapture({
       </p>
       <form
         onSubmit={handleSubmit}
+        method="post"
         className="flex w-full gap-0 rounded-full overflow-hidden"
         style={{
           backgroundColor: inputBg,
           border: status === "error" ? "1px solid #E5553A" : "1px solid transparent",
         }}
       >
+        {/* Honeypot — invisible to users, bots fill it in */}
+        <input
+          type="text"
+          name="website"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0 }}
+        />
         <input
           ref={inputRef}
           type="email"
+          name="email"
           placeholder="your@email.com"
           value={email}
           onChange={(e) => {
@@ -97,6 +111,8 @@ export function EmailCapture({
             if (status === "error") setStatus("idle");
           }}
           disabled={status === "submitting"}
+          required
+          maxLength={254}
           className={`flex-1 bg-transparent border-none outline-none font-body ${placeholderClass}`}
           style={{
             padding: "14px 20px",
