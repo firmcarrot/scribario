@@ -5,8 +5,10 @@ export interface ComparisonPage {
   metaDescription: string;
   heroHeadline: string;
   heroSubtitle: string;
+  introparagraphs: string[];
   comparisonRows: { feature: string; scribario: string; competitor: string }[];
   advantages: { title: string; description: string }[];
+  bottomLine: string;
   faq: { question: string; answer: string }[];
   ctaCopy: string;
   keywords: string[];
@@ -22,6 +24,11 @@ export const comparisons: Record<string, ComparisonPage> = {
     heroHeadline: "Scribario vs",
     heroSubtitle:
       "Buffer is a great scheduling tool. But you still need to create the content yourself. Scribario creates and publishes — the entire workflow in one text message.",
+    introparagraphs: [
+      "Buffer has been a staple of social media management since 2010. It does one thing well: scheduling posts you've already created. You write the caption, design the image in Canva, upload everything to Buffer, and pick a time. It's a reliable publishing queue.",
+      "The problem is that scheduling is the easiest part of social media. The hard part — coming up with ideas, writing captions that sound like you, creating images that stop the scroll — Buffer doesn't touch. You still need a writer, a designer, and 30-60 minutes per post.",
+      "Scribario replaces the entire workflow. Text what you want to post in Telegram, get three publish-ready options with AI-generated captions and images, approve with one tap, and it's live on up to 9 platforms. The content creation that Buffer assumes you've already done? Scribario does it in 30 seconds.",
+    ],
     comparisonRows: [
       { feature: "Creates captions", scribario: "AI-generated, 3 unique options", competitor: "No — you write them" },
       { feature: "Creates images", scribario: "AI-generated, 4 art styles", competitor: "No — you design them" },
@@ -87,6 +94,7 @@ export const comparisons: Record<string, ComparisonPage> = {
         answer: "Any posts already scheduled will still publish. Your account stays active through the end of your billing period. You can export your content history at any time. Nothing disappears overnight.",
       },
     ],
+    bottomLine: "Buffer is a solid scheduling tool — if you already have content to schedule. If you're a small business owner who doesn't have a copywriter, designer, or social media manager, Buffer solves the wrong problem. Scribario handles the entire pipeline: ideation, caption writing, image creation, and publishing. One text message replaces a four-tool stack.",
     ctaCopy: "Switch to Scribario",
     keywords: ["Buffer alternative", "Scribario vs Buffer", "better than Buffer"],
   },
@@ -100,6 +108,11 @@ export const comparisons: Record<string, ComparisonPage> = {
     heroHeadline: "Scribario vs",
     heroSubtitle:
       "Hootsuite is an enterprise social media command center. If you're a solopreneur who just wants to post, you're paying for a jet when you need a bicycle.",
+    introparagraphs: [
+      "Hootsuite is the biggest name in social media management — and it's built to match. Dashboards with multi-tab navigation, team approval workflows, sentiment analysis, social listening, content calendars with drag-and-drop, and detailed analytics reports. It's a command center for marketing departments with five-figure monthly budgets.",
+      "For a solopreneur or small business owner, Hootsuite is overkill. You don't need team permissions because there's no team. You don't need approval workflows because you're the approver. You don't need social listening because you need to post something — anything — consistently.",
+      "Scribario strips away the enterprise complexity and focuses on the one thing small businesses actually need: creating and publishing good content, fast. No dashboard to learn, no onboarding webinar to sit through. Text what you want in Telegram, approve one of three AI-generated options, and move on with your day.",
+    ],
     comparisonRows: [
       { feature: "Creates content", scribario: "AI captions + images + video", competitor: "No — content management only" },
       { feature: "Interface", scribario: "Telegram text", competitor: "Complex web dashboard" },
@@ -164,6 +177,7 @@ export const comparisons: Record<string, ComparisonPage> = {
         answer: "Correct — Hootsuite is purely a management tool with no content creation. Scribario generates both short-form and long-form video from a text description. Video is a premium add-on at $5 per video, with no editing software or production skills required.",
       },
     ],
+    bottomLine: "Hootsuite is excellent at what it does — managing social media for teams. But if you're a one-person business paying $99/month for features you'll never use, you're burning money on complexity. Scribario costs $19/month, creates the content for you, and the entire interface is a text conversation. For small businesses, simpler isn't a compromise — it's an advantage.",
     ctaCopy: "Try the simpler alternative",
     keywords: ["Hootsuite alternative", "Scribario vs Hootsuite", "cheaper than Hootsuite"],
   },
@@ -177,6 +191,11 @@ export const comparisons: Record<string, ComparisonPage> = {
     heroHeadline: "Scribario vs",
     heroSubtitle:
       "Canva is a design tool. Scribario is a content engine. One gives you a blank canvas. The other gives you three finished posts in 30 seconds.",
+    introparagraphs: [
+      "Canva revolutionized design by making it accessible. Templates for everything, drag-and-drop editing, a massive stock photo library. Over 100 million people use it, and for good reason — it makes decent-looking graphics possible for non-designers.",
+      "But Canva is a design tool, not a social media tool. You still need to choose a template, customize it, write the caption separately, find the right hashtags, resize for each platform, and then figure out how to actually post it. A 'quick' social media post in Canva takes 10-30 minutes.",
+      "Scribario skips the design process entirely. Describe what you want in a text message and the AI generates original captions and images — no templates, no stock photos, no drag-and-drop. The result is unique content that doesn't look like the same Canva template your competitor used yesterday.",
+    ],
     comparisonRows: [
       { feature: "Content creation", scribario: "AI creates everything from text", competitor: "You design from templates" },
       { feature: "Caption writing", scribario: "AI-written, 5 formula types", competitor: "You write them" },
@@ -243,6 +262,7 @@ export const comparisons: Record<string, ComparisonPage> = {
         answer: "No — and it's not trying to. Canva is a general-purpose design tool for presentations, flyers, business cards, and more. Scribario is laser-focused on social media content creation and publishing. If social media is your main Canva use case, Scribario is faster and produces more original results. Keep Canva for everything else.",
       },
     ],
+    bottomLine: "Canva is a fantastic design tool — keep it for presentations, flyers, and business cards. But for daily social media content, you don't need a blank canvas and 30 minutes of design time. You need finished posts in 30 seconds. Scribario creates original captions, generates unique images, and publishes to 9 platforms from a single text message. It's not a design tool — it's the end of needing one for social media.",
     ctaCopy: "Skip the templates",
     keywords: ["Canva alternative for social media", "Scribario vs Canva", "better than Canva for social media"],
   },
