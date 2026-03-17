@@ -52,6 +52,14 @@ export const comparisons: Record<string, ComparisonPage> = {
         title: "One subscription, not four",
         description: "With Buffer, you still need Canva ($13/mo), a stock photo service ($29/mo), and maybe ChatGPT ($20/mo) for captions. With Scribario, everything is included.",
       },
+      {
+        title: "Reference photos make content personal",
+        description: "Upload photos of your products, your space, or your team. Scribario's AI uses them as creative references to generate branded visuals that feature your actual business — not generic stock imagery that Buffer can't help with at all.",
+      },
+      {
+        title: "Video content without a video editor",
+        description: "Buffer has zero video creation capabilities. Scribario generates short-form and long-form video content from the same text prompt. No editing software, no stock footage subscriptions, no production skills required.",
+      },
     ],
     faq: [
       {
@@ -65,6 +73,18 @@ export const comparisons: Record<string, ComparisonPage> = {
       {
         question: "Is Scribario more expensive than Buffer?",
         answer: "Buffer starts at $6/month per channel. For 5 channels, that's $30/month — and you still need to create the content yourself. Scribario Pro is $19/month for unlimited posts across all platforms, content creation included.",
+      },
+      {
+        question: "How does Scribario's brand voice learning compare to Buffer's style guide?",
+        answer: "Buffer lets you write a static style guide that you reference manually while creating content. Scribario's AI actually learns your brand voice from your approved posts — the more you use it, the better it matches your tone, vocabulary, and style without any manual documentation.",
+      },
+      {
+        question: "Can I edit the content Scribario creates before posting?",
+        answer: "Absolutely. Scribario gives you 3 caption options and 4 image styles for every post. You pick what you like, and you can edit any caption directly in the Telegram chat before approving. It's collaborative, not autopilot.",
+      },
+      {
+        question: "What happens to my scheduled posts if I cancel?",
+        answer: "Any posts already scheduled will still publish. Your account stays active through the end of your billing period. You can export your content history at any time. Nothing disappears overnight.",
       },
     ],
     ctaCopy: "Switch to Scribario",
@@ -109,6 +129,14 @@ export const comparisons: Record<string, ComparisonPage> = {
         title: "Mobile-first, not mobile-compatible",
         description: "Hootsuite has a mobile app, but the real workflow happens on desktop. Scribario's entire workflow happens on your phone, in Telegram, wherever you are.",
       },
+      {
+        title: "Your brand voice, learned automatically",
+        description: "Hootsuite's OwlyWriter AI generates generic captions that need heavy editing to sound like you. Scribario learns your brand voice from every approved post — after a few weeks, the AI writes in your tone without being told.",
+      },
+      {
+        title: "No training, no onboarding webinars",
+        description: "Hootsuite recommends certification courses to use their platform effectively. Scribario's onboarding is: open Telegram, text what you want to post, approve. If you can send a text message, you can use Scribario.",
+      },
     ],
     faq: [
       {
@@ -122,6 +150,18 @@ export const comparisons: Record<string, ComparisonPage> = {
       {
         question: "Can Scribario replace Hootsuite for a team?",
         answer: "For small teams (1-3 people), yes — especially on the Business plan with multi-brand support. For enterprise teams with approval workflows and compliance requirements, Hootsuite is purpose-built for that.",
+      },
+      {
+        question: "I'm locked into an annual Hootsuite contract. What should I do?",
+        answer: "Try Scribario's free tier (5 posts) while your Hootsuite contract runs. Compare the quality and time savings side by side. When your Hootsuite renewal comes up, you'll have real data to decide. Most users switch within the first week of trying Scribario.",
+      },
+      {
+        question: "Does Scribario support the same platforms as Hootsuite?",
+        answer: "Scribario supports 9 major platforms including Instagram, Facebook, X/Twitter, LinkedIn, TikTok, Pinterest, YouTube, Threads, and Bluesky. Hootsuite supports a few more niche platforms. For most small businesses, Scribario covers every platform they actually use.",
+      },
+      {
+        question: "Can Scribario create video content? Hootsuite can't.",
+        answer: "Correct — Hootsuite is purely a management tool with no content creation. Scribario generates both short-form and long-form video from a text description. Video is a premium add-on at $5 per video, with no editing software or production skills required.",
       },
     ],
     ctaCopy: "Try the simpler alternative",
@@ -168,6 +208,14 @@ export const comparisons: Record<string, ComparisonPage> = {
         title: "Publishing built in",
         description: "Canva recently added a content planner, but it's basic scheduling. Scribario publishes to 9 platforms with platform-specific formatting, natural language scheduling, and one-tap approval.",
       },
+      {
+        title: "Reference photos beat stock libraries",
+        description: "Canva gives you access to millions of generic stock photos. Scribario lets you upload your own product shots, team photos, or storefront images and generates original visuals around them. Your content looks like your business, not a stock photo catalog.",
+      },
+      {
+        title: "Video from a text message",
+        description: "Canva's video editor still requires you to choose templates, drag clips onto a timeline, and adjust transitions. Scribario generates video content from a single text description — no timeline, no templates, no editing skills.",
+      },
     ],
     faq: [
       {
@@ -181,6 +229,18 @@ export const comparisons: Record<string, ComparisonPage> = {
       {
         question: "What if I like designing my own posts?",
         answer: "If you enjoy the creative process of design, Canva is great for that. Scribario is for people who want the output (published posts) without the process (designing and writing). Different tools for different needs.",
+      },
+      {
+        question: "Does Scribario's AI art look as good as Canva templates?",
+        answer: "Different, not worse. Canva templates are polished but recognizable — millions of people use the same layouts. Scribario's AI generates original visuals every time, in 4 distinct art styles. The output is unique to your brand, which is more valuable than a pretty template your competitor is also using.",
+      },
+      {
+        question: "Can I use my own photos with Scribario?",
+        answer: "Yes. Upload reference photos of your products, team, or location. The AI uses these to generate branded content that features your actual business. Think of it as having a graphic designer who already knows what your business looks like.",
+      },
+      {
+        question: "I use Canva for more than social media. Can Scribario replace it entirely?",
+        answer: "No — and it's not trying to. Canva is a general-purpose design tool for presentations, flyers, business cards, and more. Scribario is laser-focused on social media content creation and publishing. If social media is your main Canva use case, Scribario is faster and produces more original results. Keep Canva for everything else.",
       },
     ],
     ctaCopy: "Skip the templates",

@@ -19,7 +19,7 @@ export interface NichePage {
 export const niches: Record<string, NichePage> = {
   restaurants: {
     slug: "restaurants",
-    metaTitle: "Social Media for Restaurants — AI-Powered Posts via Telegram | Scribario",
+    metaTitle: "Social Media for Restaurants — AI Posts",
     metaDescription:
       "Daily specials, events, seasonal menus — posted in seconds. Scribario's AI creates restaurant social media content from a Telegram text. No designer needed.",
     title: "Restaurants",
@@ -33,6 +33,8 @@ export const niches: Record<string, NichePage> = {
       { stat: "$1,800/mo", statement: "Average cost of a restaurant social media agency" },
       { stat: "6 platforms", statement: "Where your customers look before choosing where to eat" },
       { stat: "0 posts", statement: "What happens when you're slammed on a Friday night and forget to post" },
+      { stat: "77%", statement: "Of diners visit a restaurant's social media before deciding where to eat, according to MGH research" },
+      { stat: "60%", statement: "Of restaurants fail within the first year — most cite marketing as their weakest area after food cost control" },
     ],
     benefits: [
       {
@@ -50,6 +52,14 @@ export const niches: Record<string, NichePage> = {
       {
         title: "Behind-the-scenes content",
         description: "Upload a photo of your chef plating a dish. Scribario turns it into an engaging story post with hashtags that reach local foodies.",
+      },
+      {
+        title: "Consistent posting even during rush hours",
+        description: "Schedule a week of content on Monday morning before the lunch rush hits. Scribario queues posts at optimal times so your feed stays active while you focus on the kitchen.",
+      },
+      {
+        title: "Local SEO boost through social signals",
+        description: "Regular social media activity feeds Google's local ranking algorithm. Restaurants that post daily see up to 25% more Google Maps visibility than those posting weekly.",
       },
     ],
     useCases: [
@@ -77,6 +87,18 @@ export const niches: Record<string, NichePage> = {
         example: "\"Share this 5-star review: 'Best pasta in the city, we come back every week' — Maria T.\"",
         image: "/images/posts/pasta-review.webp",
       },
+      {
+        title: "Catering & Private Events",
+        description: "Promote your catering menu or private dining options to corporate clients and event planners browsing social media.",
+        example: "\"Post about our catering: corporate lunch packages starting at $18/person, 24hr notice, free delivery within 10 miles\"",
+        image: "/images/posts/catering.webp",
+      },
+      {
+        title: "New Menu Item Teasers",
+        description: "Build anticipation for upcoming dishes with teaser posts that get regulars excited and drive opening-week orders.",
+        example: "\"Teaser post: something new dropping Friday — smoked wagyu brisket tacos, limited run, follow us to find out when\"",
+        image: "/images/posts/menu-teaser.webp",
+      },
     ],
     faq: [
       {
@@ -95,6 +117,14 @@ export const niches: Record<string, NichePage> = {
         question: "What about Instagram Stories and Reels?",
         answer: "Scribario creates static posts and short-form video reels. For Instagram Stories, the image content works perfectly — just approve and post.",
       },
+      {
+        question: "Does it handle different cuisines and dietary labels?",
+        answer: "Yes. Scribario understands cuisine-specific terminology and dietary tags like vegan, gluten-free, halal, and kosher. Mention them in your text and the AI includes appropriate labels and hashtags that reach the right audience.",
+      },
+      {
+        question: "Can I post in multiple languages for a diverse neighborhood?",
+        answer: "Yes. Tell Scribario the language — \"post this in Spanish and English\" — and it creates native-quality bilingual content. Ideal for restaurants in multicultural areas where your clientele speaks more than one language.",
+      },
     ],
     ctaCopy: "Start posting for your restaurant",
     keywords: ["social media for restaurants", "restaurant social media marketing", "restaurant content creation"],
@@ -102,7 +132,7 @@ export const niches: Record<string, NichePage> = {
 
   "real-estate": {
     slug: "real-estate",
-    metaTitle: "Social Media for Real Estate Agents — AI Listing Posts | Scribario",
+    metaTitle: "Social Media for Real Estate — AI Posts",
     metaDescription:
       "Listings, open houses, market updates — published across 9 platforms from a Telegram text. AI-generated real estate content that actually sells.",
     title: "Real Estate",
@@ -116,6 +146,8 @@ export const niches: Record<string, NichePage> = {
       { stat: "$2,200/mo", statement: "Average cost of a real estate marketing agency" },
       { stat: "15 min", statement: "Per listing to create a decent social media post manually" },
       { stat: "3 days", statement: "Average delay between listing and first social media post" },
+      { stat: "44%", statement: "Of agents say generating enough content is their top marketing struggle, according to NAR surveys" },
+      { stat: "92%", statement: "Of homebuyers use the internet during their search — agents without a social presence are invisible to them" },
     ],
     benefits: [
       {
@@ -133,6 +165,14 @@ export const niches: Record<string, NichePage> = {
       {
         title: "Just sold / just listed",
         description: "Celebrate wins and build social proof. Text the details and get a professional announcement that shows buyers and sellers you're active and successful.",
+      },
+      {
+        title: "Neighborhood spotlight content",
+        description: "Showcase the lifestyle around your listings — local parks, schools, coffee shops, walkability scores. Buyers purchase neighborhoods, not just houses, and this content builds trust.",
+      },
+      {
+        title: "Drip campaigns for long sales cycles",
+        description: "Real estate sales take months. Schedule a steady stream of market insights, homebuyer tips, and listing highlights that keep you top-of-mind until prospects are ready to act.",
       },
     ],
     useCases: [
@@ -160,6 +200,18 @@ export const niches: Record<string, NichePage> = {
         example: "\"Share this review: 'Sarah made buying our first home feel effortless' — The Johnsons\"",
         image: "/images/posts/re-testimonial.webp",
       },
+      {
+        title: "Price Reduction Alerts",
+        description: "Price drops need immediate visibility. Alert your followers the moment a listing is adjusted to recapture buyers who were on the fence.",
+        example: "\"Price reduced: 456 Maple Dr now $649K, down from $675K — motivated seller, won't last at this price\"",
+        image: "/images/posts/re-pricedrop.webp",
+      },
+      {
+        title: "Homebuyer & Seller Tips",
+        description: "Educational content positions you as a trusted advisor, not just a salesperson. Share mortgage tips, staging advice, and market explainers that earn follows and referrals.",
+        example: "\"Post a tip for first-time buyers: why getting pre-approved before house hunting saves you weeks and heartbreak\"",
+        image: "/images/posts/re-tips.webp",
+      },
     ],
     faq: [
       {
@@ -178,6 +230,14 @@ export const niches: Record<string, NichePage> = {
         question: "Does it work for teams?",
         answer: "Yes, on the Business plan. Each agent can have their own brand voice while sharing the team's visual style and connected platforms.",
       },
+      {
+        question: "Can it handle commercial real estate content?",
+        answer: "Yes. Commercial listings have different audiences and terminology — cap rates, NOI, lease terms. Scribario adapts its language based on the listing type you describe. Just include the commercial details in your text.",
+      },
+      {
+        question: "How does it handle fair housing compliance?",
+        answer: "Scribario's AI is trained to avoid language that violates Fair Housing Act guidelines. It won't generate content referencing protected classes, neighborhood demographics, or discriminatory terms — so your posts stay compliant by default.",
+      },
     ],
     ctaCopy: "Start posting your listings",
     keywords: ["social media for real estate agents", "real estate social media marketing", "real estate content creation"],
@@ -185,7 +245,7 @@ export const niches: Record<string, NichePage> = {
 
   salons: {
     slug: "salons",
-    metaTitle: "Social Media for Salons — AI-Powered Beauty Content | Scribario",
+    metaTitle: "Social Media for Salons — AI Content",
     metaDescription:
       "Before/after transformations, openings, promotions — posted in seconds. Scribario creates salon social media content from a Telegram text.",
     title: "Salons",
@@ -199,6 +259,8 @@ export const niches: Record<string, NichePage> = {
       { stat: "45 min", statement: "Average time to create one good salon post with before/after" },
       { stat: "$1,500/mo", statement: "What most salon marketing agencies charge" },
       { stat: "0 reach", statement: "When your last post was two weeks ago and the algorithm buried you" },
+      { stat: "72%", statement: "Of beauty consumers say they've discovered a new salon or stylist through Instagram or TikTok" },
+      { stat: "5 no-shows", statement: "Average weekly cancellations per salon — empty chairs that social media could fill in minutes" },
     ],
     benefits: [
       {
@@ -216,6 +278,14 @@ export const niches: Record<string, NichePage> = {
       {
         title: "Product recommendations",
         description: "Recommend retail products with educational content that adds value and drives in-salon purchases. \"Post about our new Olaplex treatment, why it works, $35.\"",
+      },
+      {
+        title: "Build a personal brand per stylist",
+        description: "Each stylist can have their own voice and specialty showcased. Clients book people, not salons — let every team member build a following that drives chairs-filled revenue.",
+      },
+      {
+        title: "Trend-driven content that stays relevant",
+        description: "\"Post about the copper hair trend for fall.\" Scribario creates educational trend content that positions your salon as the go-to expert for what's current in beauty.",
       },
     ],
     useCases: [
@@ -243,6 +313,18 @@ export const niches: Record<string, NichePage> = {
         example: "\"Spotlight on Maria, our new colorist — 8 years experience, specializes in vivid fashion colors\"",
         image: "/images/posts/salon-staff.webp",
       },
+      {
+        title: "Client Appreciation & Loyalty Rewards",
+        description: "Reward loyal clients publicly and encourage repeat visits with exclusive social-only offers.",
+        example: "\"Post: Refer a friend this month and both of you get 20% off your next color service — DM us to claim\"",
+        image: "/images/posts/salon-loyalty.webp",
+      },
+      {
+        title: "Wedding & Event Packages",
+        description: "Bridal season drives high-ticket bookings. Promote trial sessions, bridal party packages, and prom specials to capture event-driven revenue.",
+        example: "\"Promote our bridal package: trial session + wedding day styling for bride + 4 bridesmaids, $650, booking now for summer\"",
+        image: "/images/posts/salon-bridal.webp",
+      },
     ],
     faq: [
       {
@@ -261,6 +343,14 @@ export const niches: Record<string, NichePage> = {
         question: "What about Instagram-specific features?",
         answer: "Scribario optimizes for Instagram automatically — right image dimensions, hashtag count (up to 30), and caption length. It also creates content for Reels.",
       },
+      {
+        question: "Can each stylist on my team post separately?",
+        answer: "Yes, on the Business plan. Each stylist gets their own Telegram conversation with their own brand voice and specialty tags, but all posts publish to your salon's shared social accounts. Individual stylists can also connect their personal accounts.",
+      },
+      {
+        question: "Does it understand hair and beauty terminology?",
+        answer: "Yes. Mention techniques like balayage, ombre, curtain bangs, or skin fades and the AI uses them correctly in captions. It also adds relevant beauty hashtags that reach clients searching for specific services.",
+      },
     ],
     ctaCopy: "Start posting for your salon",
     keywords: ["social media for salons", "salon social media marketing", "beauty salon content creation"],
@@ -268,7 +358,7 @@ export const niches: Record<string, NichePage> = {
 
   "small-business": {
     slug: "small-business",
-    metaTitle: "Social Media for Small Business — AI Automation via Telegram | Scribario",
+    metaTitle: "Social Media for Small Business — AI Automation",
     metaDescription:
       "Stop spending hours on social media. Scribario's AI creates and publishes posts for your small business from a simple Telegram text message.",
     title: "Small Business",
