@@ -87,7 +87,7 @@ class TestHandleGenerateVideo:
                 image_urls=None,
             )
             mock_gen_prompt.assert_called_once()
-            assert mock_log.call_count == 2  # prompt gen (inside try) + video gen
+            assert mock_log.call_count == 1  # prompt gen only (video gen logs via service)
             mock_update.assert_called_once_with("draft-1", "https://cdn.kie.ai/video-123.mp4")
             mock_preview.assert_called_once()
 
@@ -283,9 +283,8 @@ class TestHandleGenerateVideo:
                 generation_type="TEXT_2_VIDEO",
                 image_urls=None,
             )
-            # Only video gen usage logged — NOT prompt gen (Claude was never called)
-            assert mock_log.call_count == 1
-            assert mock_log.call_args.kwargs["event_type"] == "video_generation"
+            # No log_usage_event calls — prompt gen failed, video gen logs via service
+            assert mock_log.call_count == 0
 
     @pytest.mark.asyncio
     async def test_brand_profile_loaded_before_prompt_gen(self):

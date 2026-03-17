@@ -9,7 +9,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from bot.config import get_settings
-from bot.db import get_approval_request_for_draft, get_supabase_client, log_usage_event
+from bot.db import get_approval_request_for_draft, get_supabase_client
 from pipeline.image_gen import ImageGenerationService
 
 logger = logging.getLogger(__name__)
@@ -39,17 +39,10 @@ async def handle_regen_image_job(message: dict) -> None:
     )
 
     # 1. Generate the new image — guard against empty prompt
+    # tenant_id passed to service for automatic usage logging
     effective_prompt = visual_prompt or "professional product photo, clean background"
-    image_service = ImageGenerationService()
+    image_service = ImageGenerationService(tenant_id=tenant_id)
     result = await image_service.generate(effective_prompt)
-
-    await log_usage_event(
-        tenant_id=tenant_id,
-        event_type="image_generation",
-        provider=result.provider,
-        cost_usd=result.cost_usd,
-        metadata={"draft_id": draft_id, "option_idx": option_idx, "prompt": visual_prompt[:100]},
-    )
 
     # 2. Load current draft — check status before writing (race guard)
     client = get_supabase_client()

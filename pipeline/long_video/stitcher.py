@@ -62,7 +62,7 @@ def build_xfade_command(
     # Build filter_complex with chained xfade
     filters: list[str] = []
     # Track cumulative offset: each transition eats `transition_duration` from total
-    offset = durations[0] - transition_duration
+    offset = round(durations[0] - transition_duration, 3)
 
     # First xfade: [0:v][1:v]
     filters.append(
@@ -70,15 +70,12 @@ def build_xfade_command(
     )
 
     for i in range(2, len(clips)):
-        prev_label = f"v{i - 2}{i - 1}" if i == 2 else f"v{i - 2}{i - 1}"
-        # Recalculate label names for chaining
-        prev = f"v{''.join(str(x) for x in range(i))}"
         if i == 2:
             prev = "v01"
         else:
             prev = f"xf{i - 1}"
         out_label = f"xf{i}" if i < len(clips) - 1 else "vout"
-        offset += durations[i - 1] - transition_duration
+        offset = round(offset + durations[i - 1] - transition_duration, 3)
         filters.append(
             f"[{prev}][{i}:v]xfade=transition=fade"
             f":duration={transition_duration}:offset={offset}[{out_label}]"
@@ -104,18 +101,46 @@ def build_audio_mix_command(
 ) -> list[str]:
     """Build ffmpeg args to mix voiceover + sfx audio tracks.
 
-    Voiceovers are concatenated as the base layer. SFX are volume-adjusted
-    and mixed in via amix.
+    Supports three modes:
+    1. Voiceovers only (no SFX) — concat voiceovers
+    2. SFX only (no voiceovers) — volume-adjust and concat SFX
+    3. Both — concat voiceovers as base, mix with volume-adjusted SFX via amix
     """
+    if not voiceovers and not sfx:
+        raise ValueError("No audio inputs: both voiceovers and sfx are empty")
+
     args: list[str] = ["-y"]
 
-    # Add all inputs
+    # SFX-only mode: no voiceovers
+    if not voiceovers:
+        for inp in sfx:
+            args.extend(["-i", inp])
+
+        if len(sfx) == 1:
+            # Single SFX: just volume-adjust
+            fc = f"[0:a]volume={sfx_volume}[aout]"
+            args.extend(["-filter_complex", fc, "-map", "[aout]", output_path])
+        else:
+            # Multiple SFX: volume-adjust each, then concat
+            fc_parts: list[str] = []
+            sfx_vol_labels = []
+            for i in range(len(sfx)):
+                label = f"sfx{i}"
+                fc_parts.append(f"[{i}:a]volume={sfx_volume}[{label}]")
+                sfx_vol_labels.append(f"[{label}]")
+            sfx_concat = "".join(sfx_vol_labels)
+            fc_parts.append(f"{sfx_concat}concat=n={len(sfx)}:v=0:a=1[aout]")
+            fc = ";".join(fc_parts)
+            args.extend(["-filter_complex", fc, "-map", "[aout]", output_path])
+        return args
+
+    # Add all inputs (voiceovers first, then SFX)
     all_inputs = voiceovers + sfx
     for inp in all_inputs:
         args.extend(["-i", inp])
 
     if not sfx:
-        # Just concat voiceovers
+        # Voiceovers only
         if len(voiceovers) == 1:
             args.extend(["-c", "copy", output_path])
         else:
@@ -125,7 +150,7 @@ def build_audio_mix_command(
             fc = "".join(fc_parts) + f"concat=n={len(voiceovers)}:v=0:a=1[aout]"
             args.extend(["-filter_complex", fc, "-map", "[aout]", output_path])
     else:
-        # Concat voiceovers, then mix with volume-adjusted SFX
+        # Both voiceovers and SFX
         fc_parts: list[str] = []
         vo_count = len(voiceovers)
         sfx_count = len(sfx)
@@ -217,30 +242,44 @@ async def stitch(spec: StitchSpec) -> StitchResult:
         )
         await _run_ffmpeg(xfade_cmd)
 
-        # 3. Audio mix
+        # 3. Audio mix (skip if no audio inputs at all)
+        has_audio = bool(spec.scene_voiceovers or spec.scene_sfx)
         audio_path = os.path.join(tmp_dir, "audio.mp3")
-        audio_cmd = build_audio_mix_command(
-            spec.scene_voiceovers, spec.scene_sfx, audio_path, spec.sfx_volume,
-        )
-        await _run_ffmpeg(audio_cmd)
+        if has_audio:
+            audio_cmd = build_audio_mix_command(
+                spec.scene_voiceovers, spec.scene_sfx, audio_path, spec.sfx_volume,
+            )
+            await _run_ffmpeg(audio_cmd)
 
         # 4. Mux video + audio → final MP4
         output_dir = os.path.join("/tmp", "scribario", spec.project_id)
         os.makedirs(output_dir, exist_ok=True)
         final_path = os.path.join(output_dir, "final.mp4")
 
-        mux_cmd = [
-            "-y",
-            "-i", xfade_path,
-            "-i", audio_path,
-            "-c:v", "libx264", "-crf", "23",
-            "-pix_fmt", "yuv420p",
-            "-profile:v", "high",
-            "-c:a", "aac", "-b:a", "128k",
-            "-movflags", "+faststart",
-            "-shortest",
-            final_path,
-        ]
+        if has_audio:
+            mux_cmd = [
+                "-y",
+                "-i", xfade_path,
+                "-i", audio_path,
+                "-c:v", "libx264", "-crf", "23",
+                "-pix_fmt", "yuv420p",
+                "-profile:v", "high",
+                "-c:a", "aac", "-b:a", "128k",
+                "-shortest",
+                "-movflags", "+faststart",
+                final_path,
+            ]
+        else:
+            mux_cmd = [
+                "-y",
+                "-i", xfade_path,
+                "-c:v", "libx264", "-crf", "23",
+                "-pix_fmt", "yuv420p",
+                "-profile:v", "high",
+                "-an",
+                "-movflags", "+faststart",
+                final_path,
+            ]
         await _run_ffmpeg(mux_cmd)
 
         duration = await _probe_duration(final_path)

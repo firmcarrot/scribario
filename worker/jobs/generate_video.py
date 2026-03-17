@@ -7,10 +7,9 @@ import logging
 from aiogram import Bot
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
 from bot.config import get_settings
-from bot.db import get_draft, log_usage_event
+from bot.db import create_approval_request, get_draft, log_usage_event, update_draft_status
+from bot.services.telegram import build_video_preview_keyboard
 from pipeline.brand_voice import BrandProfile, load_brand_profile
 from pipeline.video_gen import VideoGenerationService
 from pipeline.video_prompt_gen import VIDEO_PROMPT_COST_USD, generate_video_prompt
@@ -98,25 +97,13 @@ async def handle_generate_video(message: dict) -> None:
         optimized_prompt = prompt
 
     # Generate video with optimized prompt
-    service = VideoGenerationService()
+    # tenant_id passed to service for automatic usage logging
+    service = VideoGenerationService(tenant_id=tenant_id)
     result = await service.generate(
         optimized_prompt,
         aspect_ratio=aspect_ratio,
         generation_type=generation_type,
         image_urls=image_urls if generation_type != "TEXT_2_VIDEO" else None,
-    )
-
-    # Log usage
-    await log_usage_event(
-        tenant_id=tenant_id,
-        event_type="video_generation",
-        provider=result.provider,
-        cost_usd=result.cost_usd,
-        metadata={
-            "draft_id": draft_id,
-            "prompt": prompt[:100],
-            "generation_type": generation_type,
-        },
     )
 
     # Store video URL on the draft
@@ -134,7 +121,8 @@ async def handle_generate_video(message: dict) -> None:
             chat_id=telegram_chat_id,
             draft_id=draft_id,
             video_url=result.url,
-            caption=_get_first_caption(draft),
+            draft=draft,
+            tenant_id=tenant_id,
         )
     else:
         logger.info(
@@ -143,66 +131,79 @@ async def handle_generate_video(message: dict) -> None:
         )
 
 
-def _get_first_caption(draft: dict | None) -> str:
-    """Extract the first caption text from a draft."""
-    if not draft:
-        return ""
-    variants = draft.get("caption_variants") or []
-    if variants:
-        return variants[0].get("text", "")
-    return ""
-
-
-def _build_video_keyboard(draft_id: str) -> InlineKeyboardMarkup:
-    """Build inline keyboard for video approval."""
-    return InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton(
-                    text="Approve Video",
-                    callback_data=f"approve_video:{draft_id}",
-                ),
-                InlineKeyboardButton(
-                    text="Reject Video",
-                    callback_data=f"reject_video:{draft_id}",
-                ),
-            ],
-        ]
-    )
-
-
 async def _send_video_preview(
     chat_id: int,
     draft_id: str,
     video_url: str,
-    caption: str,
+    draft: dict | None,
+    tenant_id: str | None = None,
 ) -> None:
-    """Send video preview to Telegram with approve/reject buttons."""
+    """Send video preview to Telegram with all caption options + approve buttons."""
     settings = get_settings()
     bot = Bot(
         token=settings.telegram_bot_token,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
 
+    sent = None
     try:
-        caption_text = f"<b>Video preview:</b>\n{caption}" if caption else "Video preview"
-        if len(caption_text) > 1020:
-            caption_text = caption_text[:1017] + "..."
-
-        keyboard = _build_video_keyboard(draft_id)
-
+        # Send the video
         await bot.send_video(
             chat_id=chat_id,
             video=video_url,
-            caption=caption_text,
+            caption="<b>Here's your video!</b> Choose a caption below.",
             parse_mode=ParseMode.HTML,
+        )
+
+        # Build caption options text
+        caption_variants = (draft or {}).get("caption_variants") or []
+        num_options = len(caption_variants)
+
+        if caption_variants:
+            lines = []
+            for i, cap in enumerate(caption_variants, 1):
+                cap_text = cap.get("text", "") if isinstance(cap, dict) else str(cap)
+                lines.append(f"<b>Option {i}:</b>\n{cap_text}\n")
+
+            preview_text = "\n".join(lines)
+            preview_text += (
+                "\n<i>Tap Approve to post the video with your chosen caption, "
+                "Reject All to skip, or Regenerate for new options.</i>"
+            )
+
+            if len(preview_text) > 4000:
+                preview_text = preview_text[:3997] + "..."
+        else:
+            preview_text = "<i>No captions available. Tap Approve to post or Reject to skip.</i>"
+            num_options = 1
+
+        keyboard = build_video_preview_keyboard(draft_id, num_options=num_options)
+
+        sent = await bot.send_message(
+            chat_id=chat_id,
+            text=preview_text,
             reply_markup=keyboard,
         )
-        logger.info("Video preview sent", extra={"draft_id": draft_id, "chat_id": chat_id})
     except Exception:
         logger.exception(
             "Failed to send video preview",
             extra={"draft_id": draft_id, "chat_id": chat_id},
         )
-    finally:
-        await bot.session.close()
+
+    if sent:
+        _tenant_id = tenant_id or (draft or {}).get("tenant_id", "")
+        await create_approval_request(
+            draft_id=draft_id,
+            tenant_id=_tenant_id,
+            telegram_message_id=sent.message_id,
+            telegram_chat_id=chat_id,
+        )
+        await update_draft_status(draft_id, "previewing")
+        logger.info("Video preview sent", extra={"draft_id": draft_id, "chat_id": chat_id})
+    else:
+        logger.error(
+            "Video preview send failed — draft stays in generated state",
+            extra={"draft_id": draft_id},
+        )
+
+    await bot.session.close()

@@ -149,6 +149,39 @@ You can include style hints in your message to guide the image generation:
 
 ---
 
+## Creating Video Content
+
+You can create short-form video posts (Reels, Stories, TikToks, Shorts) directly from the bot. Just include a video-related word in your message and Scribario handles the rest.
+
+**Trigger words:** Include "video", "reel", "clip", or "animate" in your request.
+
+**Examples:**
+
+> "Make a video reel about our weekend brunch special"
+
+> "Animate something fun for National Donut Day"
+
+> "Create a short clip showing our new product line"
+
+**Orientation is automatic:**
+
+- Words like "reel", "story", "tiktok", or "shorts" produce **vertical video (9:16)**
+- Other video requests default to landscape
+
+**What you get:**
+
+Scribario generates a video along with 3 caption options — the same approval flow you already know. Tap Approve on the caption you like and the video posts with that caption. Tap Regenerate to get a brand new video and new captions.
+
+**Video from an image preview:**
+
+If you already have an image preview and want to turn it into a video instead, tap the **Make Video** button on any option. The bot will generate a video using that image's direction.
+
+**How long does it take?**
+
+Video generation takes 1-3 minutes (longer than image posts). The bot will let you know it's working.
+
+---
+
 ## Sending Reference Photos
 
 You can send a photo directly to the bot to use as creative direction for your images. The AI will use your photo as a style reference — matching the lighting, color tone, composition, or subject matter.
@@ -161,11 +194,11 @@ Just send the photo before or along with your content request. The bot will conf
 
 **How long does it take to generate content?**
 
-Typically 20-40 seconds. Caption generation and image generation run in parallel, so the total wait is roughly the image generation time (~25 seconds for three images).
+Image posts typically take 20-40 seconds. Caption generation and image generation run in parallel, so the total wait is roughly the image generation time (~25 seconds for three images). Video requests take 1-3 minutes.
 
 **Can I edit the caption before it posts?**
 
-Not currently — you approve the full option as generated. If the copy isn't quite right, use Regenerate to get new options, or reject and send a new request with more specific guidance.
+Yes — tap the ✏️ Edit button on any option to revise the caption. You'll see an updated preview before approving. You can also Regenerate for completely new options, or reject and send a new request with more specific guidance.
 
 **What happens if I reject all three?**
 
@@ -173,7 +206,7 @@ Nothing is posted. You can send a new request at any time.
 
 **Can I schedule posts for later?**
 
-Scheduled posting is coming in Phase 2. Currently, approved posts publish immediately.
+Yes — include a date and time in your request (e.g., "post this Friday at 9am") and Scribario will queue it automatically. You'll get a confirmation with the scheduled time.
 
 **Can I post to multiple platforms at once?**
 
