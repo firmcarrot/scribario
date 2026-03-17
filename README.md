@@ -3,7 +3,7 @@
 **Your AI social media team — in a Telegram bot.**
 
 [![Website](https://img.shields.io/badge/web-scribario.com-FF6B4A)](https://scribario.com)
-[![Tests](https://img.shields.io/badge/tests-226%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-566%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Telegram](https://img.shields.io/badge/bot-%40ScribarioBot-2CA5E0?logo=telegram)](https://t.me/ScribarioBot)
@@ -41,7 +41,8 @@ Business owners describe what they want to post. Scribario generates three uniqu
 - **Fully self-hosted** — your API keys, your data, your infrastructure
 - **Reference photo support** — send a photo as creative direction for the image style
 - **Image-only regeneration** — 🖼️ New Image per option — regenerates the photo, keeps the caption
-- **226 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
+- **Short-form video** — say "make a video reel" and get a video + 3 caption options in one preview
+- **566 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
 
 ---
 
@@ -129,7 +130,7 @@ scribario/
 ├── worker/             # Background job processor (pgmq poller)
 ├── web/                # Marketing website (Next.js 16, Vercel)
 ├── supabase/           # Database migrations and edge functions
-├── tests/              # 226+ automated tests
+├── tests/              # 566+ automated tests
 ├── docs/               # Architecture, setup, user guide, roadmap
 ├── docker-compose.yml  # Local development stack
 └── .env.example        # Environment variable template
@@ -142,7 +143,7 @@ scribario/
 Scribario is in active development with a live beta deployment serving its first client.
 
 - **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, Redis FSM
-- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation (226 tests)
+- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation, unified short-form video pipeline (566 tests). Long video generation has been deprecated in favor of the unified pipeline.
 - **Phase 3:** Planned — analytics, agency dashboard, Meta App Review for public Instagram access
 
 See the full roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)

@@ -20,7 +20,7 @@ from bot.db import (
     update_content_request_status,
     update_draft_status,
 )
-from bot.services.telegram import build_preview_keyboard
+from bot.services.telegram import build_preview_keyboard, build_video_preview_keyboard
 from pipeline.brand_voice import (
     BrandProfile,
     load_brand_profile,
@@ -102,7 +102,8 @@ async def handle_generate_content(message: dict) -> None:
     )
 
     # Step 3: Generate images from plan scenes — ALL IN PARALLEL
-    image_service = ImageGenerationService()
+    # tenant_id passed to service for automatic usage logging
+    image_service = ImageGenerationService(tenant_id=tenant_id)
 
     async def _generate_one(scene: ScenePlan) -> str:
         """Generate one image from a scene's start_frame. Returns URL or empty string."""
@@ -112,13 +113,6 @@ async def handle_generate_content(message: dict) -> None:
             result = await image_service.generate(
                 frame.prompt,
                 reference_image_urls=ref_urls,
-            )
-            await log_usage_event(
-                tenant_id=tenant_id,
-                event_type="image_generation",
-                provider=result.provider,
-                cost_usd=result.cost_usd,
-                metadata={"request_id": request_id, "prompt": frame.prompt[:100]},
             )
             return result.url
         except Exception:
@@ -150,10 +144,12 @@ async def handle_generate_content(message: dict) -> None:
         },
     )
 
-    # If video generation was requested, enqueue the video job
+    # If video generation was requested, generate inline (not a separate job)
+    video_url: str | None = None
     if message.get("generate_video"):
-        from bot.db import enqueue_job
+        from pipeline.video_gen import VideoGenerationService
         from pipeline.video_prompt_gen import VIDEO_PROMPT_COST_USD, generate_video_prompt
+        from worker.jobs.generate_video import update_draft_video_url
 
         video_aspect = message.get("video_aspect_ratio", "16:9")
         first_image_url = images[0] if images and images[0] else None
@@ -180,21 +176,27 @@ async def handle_generate_content(message: dict) -> None:
             )
             video_prompt = plan.scenes[0].start_frame.prompt if plan.scenes else intent
 
-        await enqueue_job(
-            queue_name="content_generation",
-            job_type="generate_video",
-            payload={
-                "draft_id": draft_id,
-                "tenant_id": tenant_id,
-                "prompt": video_prompt,
-                "aspect_ratio": video_aspect,
-                "generation_type": "REFERENCE_2_VIDEO" if first_image_url else "TEXT_2_VIDEO",
-                "image_urls": [first_image_url] if first_image_url else None,
-                "telegram_chat_id": message.get("telegram_chat_id"),
-            },
-            idempotency_key=f"{request_id}:generate_video",
-        )
-        logger.info("Video generation job enqueued", extra={"draft_id": draft_id})
+        try:
+            gen_type = "REFERENCE_2_VIDEO" if first_image_url else "TEXT_2_VIDEO"
+            video_service = VideoGenerationService(tenant_id=tenant_id)
+            video_result = await video_service.generate(
+                video_prompt,
+                aspect_ratio=video_aspect,
+                generation_type=gen_type,
+                image_urls=[first_image_url] if first_image_url else None,
+            )
+            video_url = video_result.url
+            await update_draft_video_url(draft_id, video_url)
+            logger.info(
+                "Inline video generation complete",
+                extra={"draft_id": draft_id, "video_url": video_url},
+            )
+        except Exception:
+            logger.exception(
+                "Inline video generation failed, falling back to image-only preview",
+                extra={"draft_id": draft_id},
+            )
+            video_url = None
 
     # Send preview to Telegram
     telegram_chat_id = message.get("telegram_chat_id")
@@ -206,6 +208,7 @@ async def handle_generate_content(message: dict) -> None:
             captions=plan.captions,
             image_urls=[url for url in images if url],
             platform_targets=platform_targets,
+            video_url=video_url,
         )
     else:
         logger.warning("No telegram_chat_id — can't send preview", extra={"draft_id": draft_id})
@@ -218,8 +221,13 @@ async def _send_preview(
     captions: list[dict],
     image_urls: list[str],
     platform_targets: list[str],
+    video_url: str | None = None,
 ) -> None:
-    """Send caption + image preview to Telegram with approval buttons."""
+    """Send caption + image/video preview to Telegram with approval buttons.
+
+    When video_url is present, sends video first, then caption options with
+    video-specific approval buttons (no image buttons, no "Make Video").
+    """
 
     bot = Bot(
         token=get_settings().telegram_bot_token,
@@ -227,11 +235,41 @@ async def _send_preview(
     )
 
     try:
-        keyboard = build_preview_keyboard(draft_id, num_options=len(captions))
+        if video_url:
+            keyboard = build_video_preview_keyboard(draft_id, num_options=len(captions))
+        else:
+            keyboard = build_preview_keyboard(draft_id, num_options=len(captions))
         sent = None
 
         try:
-            if image_urls:
+            if video_url:
+                # Video preview: send video first, then caption options as text
+                await bot.send_video(
+                    chat_id=chat_id,
+                    video=video_url,
+                    caption="<b>Here's your video!</b> Choose a caption below.",
+                    parse_mode=ParseMode.HTML,
+                )
+
+                lines = []
+                for i, cap in enumerate(captions, 1):
+                    cap_text = cap.get("text", "") if isinstance(cap, dict) else str(cap)
+                    lines.append(f"<b>Option {i}:</b>\n{cap_text}\n")
+
+                preview_text = "\n".join(lines)
+                preview_text += (
+                    f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets) if platform_targets else 'all connected platforms'}\n\n"
+                    "<i>Tap Approve to post the video with your chosen caption, "
+                    "Reject All to skip, or Regenerate for new options.</i>"
+                )
+
+                if len(preview_text) > 4000:
+                    preview_text = preview_text[:3997] + "..."
+
+                sent = await bot.send_message(
+                    chat_id=chat_id, text=preview_text, reply_markup=keyboard
+                )
+            elif image_urls:
                 for i, cap in enumerate(captions):
                     image_url = image_urls[i] if i < len(image_urls) else None
                     cap_text = cap.get("text", "") if isinstance(cap, dict) else str(cap)

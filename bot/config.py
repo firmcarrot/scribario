@@ -47,7 +47,7 @@ class Settings(BaseSettings):
     # Long video pipeline
     long_video_max_cost_usd: float = 10.0
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 
 @lru_cache

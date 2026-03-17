@@ -16,6 +16,7 @@ from bot.db import (
     get_draft,
     get_supabase_client,
     get_tenant_by_telegram_user,
+    save_to_content_library,
     update_draft_status,
 )
 
@@ -24,6 +25,46 @@ logger = logging.getLogger(__name__)
 router = Router(name="approval")
 
 # Callback data format: "approve:{draft_id}" / "reject:{draft_id}" / "regen:{draft_id}"
+
+
+async def _save_unchosen_to_library(
+    draft: dict,
+    chosen_idx: int,
+    platform_targets: list[str] | None,
+) -> None:
+    """Save unchosen caption+media options to the content library.
+
+    Non-critical — errors are logged but never break the approval flow.
+    """
+    try:
+        caption_variants = draft.get("caption_variants") or []
+        image_urls = draft.get("image_urls") or []
+        video_url = draft.get("video_url")
+        tenant_id = draft["tenant_id"]
+        draft_id = draft["id"]
+        media_type = "video" if video_url else "image"
+
+        for i, variant in enumerate(caption_variants):
+            if i == chosen_idx:
+                continue
+
+            caption = variant.get("text", "") if isinstance(variant, dict) else str(variant)
+            img_url = image_urls[i] if i < len(image_urls) else None
+
+            await save_to_content_library(
+                tenant_id=tenant_id,
+                source_draft_id=draft_id,
+                caption=caption,
+                media_type=media_type,
+                image_url=img_url,
+                video_url=video_url,
+                platform_targets=platform_targets,
+            )
+    except Exception:
+        logger.exception(
+            "Failed to save unchosen options to library — non-fatal",
+            extra={"draft_id": draft.get("id")},
+        )
 
 
 async def _validate_draft_access(
@@ -137,6 +178,9 @@ async def handle_approve(callback: CallbackQuery) -> None:
         idempotency_key=f"{draft_id}:post:all",
     )
 
+    # Save unchosen options to content library for free reuse
+    await _save_unchosen_to_library(draft, chosen_idx=option_idx, platform_targets=platform_targets)
+
     await callback.answer("Approved! Posting now...")
     if callback.message:
         await callback.message.edit_reply_markup(reply_markup=None)
@@ -199,11 +243,11 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
         draft_id=draft_id, tenant_id=draft["tenant_id"], action="regenerate"
     )
 
-    # Load the original content request to get the intent
+    # Load the original content request to get the intent + video flags
     client = get_supabase_client()
     req_result = (
         client.table("content_requests")
-        .select("intent, platform_targets")
+        .select("intent, platform_targets, generate_video, video_aspect_ratio")
         .eq("id", draft["request_id"])
         .limit(1)
         .execute()
@@ -211,16 +255,22 @@ async def handle_regenerate(callback: CallbackQuery) -> None:
     original = req_result.data[0] if req_result.data else {}
 
     # Re-enqueue generation for the original request
+    payload: dict = {
+        "request_id": draft["request_id"],
+        "tenant_id": draft["tenant_id"],
+        "intent": original.get("intent", ""),
+        "platform_targets": original.get("platform_targets") or None,
+        "telegram_chat_id": callback.message.chat.id if callback.message else None,
+    }
+    # Preserve video generation flag from original request
+    if original.get("generate_video"):
+        payload["generate_video"] = True
+        payload["video_aspect_ratio"] = original.get("video_aspect_ratio", "16:9")
+
     await enqueue_job(
         queue_name="content_generation",
         job_type="generate_content",
-        payload={
-            "request_id": draft["request_id"],
-            "tenant_id": draft["tenant_id"],
-            "intent": original.get("intent", ""),
-            "platform_targets": original.get("platform_targets") or None,
-            "telegram_chat_id": callback.message.chat.id if callback.message else None,
-        },
+        payload=payload,
         idempotency_key=f"{draft_id}:regenerate",
     )
 
@@ -304,11 +354,17 @@ async def handle_make_video(callback: CallbackQuery) -> None:
 
 @router.callback_query(F.data.startswith("approve_video:"))
 async def handle_approve_video(callback: CallbackQuery) -> None:
-    """Handle video approval — enqueue posting with video."""
+    """Handle video approval — enqueue posting with video + selected caption.
+
+    Callback data format: "approve_video:{draft_id}:{option_number}"
+    """
     if not callback.data:
         return
 
-    draft_id = callback.data.split(":", 1)[1]
+    parts = callback.data.split(":")
+    draft_id = parts[1]
+    # Option number (1-indexed), default to 1 for backwards compat
+    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
 
     draft = await _validate_draft_access(callback, draft_id)
     if not draft:
@@ -326,7 +382,12 @@ async def handle_approve_video(callback: CallbackQuery) -> None:
     # Use the video_url for posting
     video_url = draft.get("video_url", "")
     caption_variants = draft.get("caption_variants", [])
-    caption = caption_variants[0].get("text", "") if caption_variants else ""
+    if option_idx < len(caption_variants):
+        caption = caption_variants[option_idx].get("text", "")
+    elif caption_variants:
+        caption = caption_variants[0].get("text", "")
+    else:
+        caption = ""
 
     # Load platform_targets from originating content_request
     _client = get_supabase_client()
@@ -366,6 +427,9 @@ async def handle_approve_video(callback: CallbackQuery) -> None:
         },
         idempotency_key=f"{draft_id}:post:video",
     )
+
+    # Save unchosen caption options to content library
+    await _save_unchosen_to_library(draft, chosen_idx=option_idx, platform_targets=platform_targets)
 
     await callback.answer("Approved! Posting video now...")
     if callback.message:

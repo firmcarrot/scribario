@@ -70,7 +70,7 @@ class StitchSpec:
 
     project_id: str
     scene_clips: list[str]
-    scene_voiceovers: list[str]
+    scene_voiceovers: list[str] = field(default_factory=list)
     aspect_ratio: str = "16:9"
     transition_duration: float = 0.5
     sfx_volume: float = 0.3

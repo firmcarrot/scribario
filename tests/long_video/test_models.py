@@ -130,6 +130,16 @@ class TestStitchSpec:
         assert spec.transition_duration == 1.0
 
 
+    def test_stitch_spec_voiceovers_optional(self) -> None:
+        """scene_voiceovers should default to [] when not provided."""
+        spec = StitchSpec(
+            project_id="test-id",
+            scene_clips=["clip1.mp4"],
+        )
+        assert spec.scene_voiceovers == []
+        assert spec.scene_sfx == []
+
+
 class TestStitchResult:
     def test_stitch_result(self) -> None:
         result = StitchResult(

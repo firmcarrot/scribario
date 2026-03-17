@@ -44,7 +44,7 @@ class TestHandleRegenImage:
             patch("bot.db.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
-            patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+
             patch(
                 "worker.jobs.regen_image.get_approval_request_for_draft",
                 new_callable=AsyncMock,
@@ -108,7 +108,7 @@ class TestHandleRegenImage:
             patch("bot.db.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
-            patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+
             patch(
                 "worker.jobs.regen_image.get_approval_request_for_draft",
                 new_callable=AsyncMock,
@@ -168,7 +168,7 @@ class TestHandleRegenImage:
             patch("bot.db.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.get_supabase_client", return_value=supabase_mock),
             patch("worker.jobs.regen_image.ImageGenerationService") as mock_svc_class,
-            patch("worker.jobs.regen_image.log_usage_event", new_callable=AsyncMock),
+
             patch("worker.jobs.regen_image.get_approval_request_for_draft", new_callable=AsyncMock),
             patch("worker.jobs.regen_image.Bot", return_value=mock_bot),
             patch("worker.jobs.regen_image.get_settings") as mock_settings,

@@ -200,9 +200,18 @@ class KieAiProvider(ImageProvider):
 
 
 class ImageGenerationService:
-    """Provider-abstracted image generation with automatic fallback."""
+    """Provider-abstracted image generation with automatic fallback.
 
-    def __init__(self, providers: list[ImageProvider] | None = None) -> None:
+    When tenant_id is provided, every successful generation is automatically
+    logged to the usage_events table. This ensures cost tracking is complete
+    regardless of which script or pipeline triggers the generation.
+    """
+
+    def __init__(
+        self,
+        providers: list[ImageProvider] | None = None,
+        tenant_id: str | None = None,
+    ) -> None:
         if providers is None:
             # Default: Kie.ai only for MVP
             providers = []
@@ -210,6 +219,27 @@ class ImageGenerationService:
                 providers.append(KieAiProvider(get_settings().kie_ai_api_key))
 
         self._providers = providers
+        self._tenant_id = tenant_id
+
+    async def _log_usage(self, result: ImageResult, prompt: str) -> None:
+        """Log usage event to Supabase if tenant_id is set."""
+        if self._tenant_id is None:
+            return
+        try:
+            from bot.db import log_usage_event
+
+            await log_usage_event(
+                tenant_id=self._tenant_id,
+                event_type="image_generation",
+                provider=result.provider,
+                cost_usd=result.cost_usd,
+                metadata={
+                    "prompt": prompt[:100],
+                    "task_id": result.metadata.get("task_id", ""),
+                },
+            )
+        except Exception:
+            logger.error("Failed to log image usage event", exc_info=True)
 
     async def generate(
         self,
@@ -229,6 +259,7 @@ class ImageGenerationService:
                     "Image generated",
                     extra={"provider": provider.name, "cost": result.cost_usd},
                 )
+                await self._log_usage(result, prompt)
                 return result
             except Exception as e:
                 logger.warning(
