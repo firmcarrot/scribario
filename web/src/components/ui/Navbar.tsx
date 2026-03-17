@@ -76,20 +76,27 @@ export function Navbar() {
         className="pointer-events-auto absolute flex items-center top-[38px] right-[40px] max-[750px]:top-[26px] max-[750px]:right-[6vw]"
         style={{ gap: "clamp(1.25rem, 2.5vw, 2.5rem)" }}
       >
-        <Link
-          href="/pricing"
-          className="transition-colors duration-200 hover:opacity-70 max-[750px]:text-sm max-[499px]:hidden"
-          style={{
-            color: onDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)",
-            fontWeight: 500,
-            letterSpacing: "-0.0175em",
-            minHeight: 44,
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          Pricing
-        </Link>
+        {[
+          { href: "/features", label: "Features" },
+          { href: "/how-it-works", label: "How It Works" },
+          { href: "/pricing", label: "Pricing" },
+        ].map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="transition-colors duration-200 hover:opacity-70 max-[750px]:text-sm max-[750px]:hidden"
+            style={{
+              color: onDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)",
+              fontWeight: 500,
+              letterSpacing: "-0.0175em",
+              minHeight: 44,
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            {link.label}
+          </Link>
+        ))}
         <a
           href="https://t.me/ScribarioBot"
           target="_blank"

@@ -4,10 +4,11 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { getScrollEngine, R } from "@/lib/scroll-engine";
 import { CountUp } from "@/components/ui/CountUp";
+import Image from "next/image";
 
 const steps = [
-  { num: "01", title: "Text it", desc: "Describe what you want in plain English. No templates, no editors." },
-  { num: "02", title: "AI creates", desc: "3 unique caption + image combos in 30 seconds. Matched to your brand." },
+  { num: "01", title: "Text it", desc: "Describe what you want in plain English. No templates, no editors, no learning curve." },
+  { num: "02", title: "AI creates", desc: "3 unique caption + image combos in 30 seconds. Matched to your brand voice." },
   { num: "03", title: "One tap", desc: "Approve your favorite. Published to every connected platform instantly." },
 ];
 
@@ -23,8 +24,6 @@ export function HowItWorks() {
     const startInset = isMobile ? 16 : 64;
     const startRadius = isMobile ? 24 : 45;
 
-    // Cache element position — use getBoundingClientRect + scrollY for accuracy
-    // (offsetTop is wrong when contain: layout paint shifts offsetParent)
     let cachedCardTop = 0;
     const cachePositions = () => {
       const el = cardRef.current;
@@ -47,7 +46,6 @@ export function HowItWorks() {
       const radius = R.lerp(startRadius, 0, clipProgress);
       clipRef.current.style.clipPath = `inset(0px ${insetX}px round ${radius}px)`;
 
-      // List stagger — direct DOM write
       const listStart = elTop - wh * 0.2;
       const listSpacing = wh * 0.12;
       steps.forEach((_, i) => {
@@ -72,17 +70,17 @@ export function HowItWorks() {
       ref={sectionRef}
       id="how-it-works"
       aria-labelledby="hiw-heading"
-      style={{ marginTop: "clamp(6rem, 17.36vw, 17.36rem)", contain: "layout paint" }}
+      style={{ paddingTop: "var(--section-gap)", contain: "layout paint" }}
     >
-      {/* Massive section heading */}
+      {/* Section heading — Apple-scale */}
       <motion.h2
         id="hiw-heading"
         className="font-display font-bold px-6 md:px-16"
         aria-label="How it works"
         style={{
-          fontSize: "clamp(3rem, 15vw, 15rem)",
-          lineHeight: 1,
-          letterSpacing: "-0.0575em",
+          fontSize: "clamp(2.5rem, 5vw, 5rem)",
+          lineHeight: 1.04,
+          letterSpacing: "-0.03em",
           color: "var(--text)",
         }}
         initial={{ opacity: 0 }}
@@ -90,12 +88,11 @@ export function HowItWorks() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6 }}
       >
-        <span className="block">How it</span>
-        <span className="block">works</span>
+        Three steps. That&apos;s it.
       </motion.h2>
 
       {/* Clip-path card */}
-      <div ref={cardRef} className="relative" style={{ marginTop: "4vw" }}>
+      <div ref={cardRef} className="relative" style={{ marginTop: "clamp(2rem, 4vw, 4rem)" }}>
         <div
           ref={clipRef}
           className="relative overflow-hidden"
@@ -111,8 +108,10 @@ export function HowItWorks() {
               <CountUp
                 end={30}
                 suffix="s"
-                className="font-display font-bold text-[clamp(4rem,8vw,8rem)]"
+                className="font-display font-bold"
                 style={{
+                  fontSize: "clamp(4rem, 8vw, 8rem)",
+                  letterSpacing: "-0.04em",
                   backgroundImage: "linear-gradient(124deg, rgb(255, 107, 74) 11%, rgb(0, 136, 204) 43%, rgb(229, 85, 58) 90%)",
                   backgroundClip: "text",
                   WebkitBackgroundClip: "text",
@@ -120,39 +119,16 @@ export function HowItWorks() {
                 }}
               />
               <p
-                className="mt-2"
+                className="mt-2 font-body"
                 style={{
-                  fontSize: "clamp(1rem, 1.8vw, 1.8rem)",
+                  fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
                   color: "var(--text-secondary)",
-                  letterSpacing: "-0.0475em",
+                  letterSpacing: "-0.01em",
                 }}
               >
                 Average generation time
               </p>
             </div>
-
-            {/* Intro text */}
-            <p
-              style={{
-                fontSize: "clamp(1.25rem, 3.05vw, 3.05rem)",
-                lineHeight: 1.18,
-                letterSpacing: "-0.0475em",
-                color: "rgba(0,0,0,0.82)",
-              }}
-            >
-              Three steps between your idea and a{" "}
-              <span
-                style={{
-                  backgroundImage: "linear-gradient(244deg, rgb(255, 107, 74) 17%, rgb(255, 140, 105) 61%)",
-                  backgroundClip: "text",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                published post
-              </span>
-              .
-            </p>
 
             {/* Steps list */}
             <ul className="mt-12 md:mt-16 flex flex-col gap-8 md:gap-10">
@@ -170,9 +146,10 @@ export function HowItWorks() {
                   <span
                     className="font-mono shrink-0"
                     style={{
-                      fontSize: "clamp(0.75rem, 1.2vw, 1.2rem)",
+                      fontSize: "clamp(0.75rem, 1vw, 1rem)",
                       color: "var(--accent)",
                       marginTop: "0.3em",
+                      letterSpacing: "0.05em",
                     }}
                   >
                     {step.num}
@@ -181,19 +158,19 @@ export function HowItWorks() {
                     <h3
                       className="font-display font-bold"
                       style={{
-                        fontSize: "clamp(1.25rem, 2.4vw, 2.4rem)",
-                        letterSpacing: "-0.0475em",
+                        fontSize: "clamp(1.75rem, 3vw, 3rem)",
+                        letterSpacing: "-0.02em",
                         color: "var(--text)",
                       }}
                     >
                       {step.title}
                     </h3>
                     <p
-                      className="mt-1"
+                      className="mt-1 font-body"
                       style={{
-                        fontSize: "clamp(0.875rem, 1.5vw, 1.5rem)",
+                        fontSize: "clamp(0.95rem, 1.2vw, 1.2rem)",
                         color: "var(--text-secondary)",
-                        letterSpacing: "-0.0475em",
+                        letterSpacing: "-0.01em",
                         lineHeight: 1.5,
                       }}
                     >
@@ -207,27 +184,159 @@ export function HowItWorks() {
         </div>
       </div>
 
-      {/* Section copy — gradient text */}
+      {/* Comparison strip — cinematic image-driven */}
       <div
-        className="px-[clamp(2rem,10.83vw,10.83rem)]"
+        className="px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
         style={{
-          paddingTop: "clamp(4rem, 11.11vw, 11.11rem)",
-          paddingBottom: "clamp(6rem, 17.36vw, 17.36rem)",
+          paddingTop: "var(--content-gap)",
+          paddingBottom: "var(--section-gap)",
+          maxWidth: "var(--max-content)",
+          marginInline: "auto",
         }}
       >
-        <p
+        {/* Old way */}
+        <motion.div
+          className="rounded-2xl overflow-hidden"
           style={{
-            fontSize: "clamp(1.5rem, 5.9vw, 5.9rem)",
-            lineHeight: 1.15,
-            letterSpacing: "-0.0475em",
-            backgroundImage: "linear-gradient(124deg, rgb(255, 107, 74) 11%, rgb(0, 136, 204) 43%, rgb(0, 0, 0) 90%)",
-            backgroundClip: "text",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
+            backgroundColor: "var(--bg-dark)",
+            boxShadow: "0 20px 60px rgba(0,0,0,0.15)",
           }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          One message. Three options. Every platform. That&apos;s the whole workflow.
-        </p>
+          <div className="relative" style={{ aspectRatio: "16/9" }}>
+            <Image
+              src="/images/comparison-old-way.webp"
+              alt="Cluttered desk with multiple screens, sticky notes, and design tools — the old way of managing social media"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ filter: "brightness(0.85)" }}
+            />
+            {/* Gradient overlay at bottom for text legibility */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, transparent 100%)",
+              }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+              <p
+                className="font-mono uppercase"
+                style={{ fontSize: "0.65rem", letterSpacing: "0.12em", color: "rgba(255,255,255,0.45)", marginBottom: "0.5rem" }}
+              >
+                The old way
+              </p>
+              <p
+                className="font-display font-bold"
+                style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.25rem)", letterSpacing: "-0.02em", color: "#fff", lineHeight: 1.15 }}
+              >
+                45 minutes
+              </p>
+            </div>
+          </div>
+          <div className="p-5 md:p-6">
+            <div className="flex flex-col gap-2.5">
+              {["Open Canva", "Write caption", "Find hashtags", "Schedule post", "Resize for each platform"].map((step, i) => (
+                <div key={step} className="flex items-center gap-3">
+                  <span
+                    className="font-mono shrink-0"
+                    style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.25)", width: 16, textAlign: "right" as const }}
+                  >
+                    {i + 1}.
+                  </span>
+                  <span
+                    className="font-body"
+                    style={{
+                      fontSize: "0.95rem",
+                      color: "rgba(255,255,255,0.5)",
+                      letterSpacing: "-0.01em",
+                      textDecoration: "line-through",
+                      textDecorationColor: "rgba(255,255,255,0.2)",
+                    }}
+                  >
+                    {step}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Scribario way */}
+        <motion.div
+          className="rounded-2xl overflow-hidden"
+          style={{
+            backgroundColor: "#fff",
+            boxShadow: "0 20px 60px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04)",
+          }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+        >
+          <div className="relative" style={{ aspectRatio: "16/9" }}>
+            <Image
+              src="/images/comparison-scribario.webp"
+              alt="Clean desk with just a phone showing a single Telegram message and a cup of coffee — the Scribario way"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.05) 50%, transparent 100%)",
+              }}
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+              <p
+                className="font-mono uppercase"
+                style={{ fontSize: "0.65rem", letterSpacing: "0.12em", color: "rgba(255,255,255,0.6)", marginBottom: "0.5rem" }}
+              >
+                Scribario
+              </p>
+              <p
+                className="font-display font-bold"
+                style={{
+                  fontSize: "clamp(1.5rem, 2.5vw, 2.25rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.15,
+                  backgroundImage: "linear-gradient(135deg, rgb(255, 107, 74), rgb(255, 180, 140))",
+                  backgroundClip: "text",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                30 seconds
+              </p>
+            </div>
+          </div>
+          <div className="p-5 md:p-6">
+            <div className="flex items-center gap-3">
+              <span style={{ color: "var(--accent)", fontSize: "1.1rem", fontWeight: 600 }}>→</span>
+              <span
+                className="font-body"
+                style={{ fontSize: "0.95rem", color: "var(--text)", letterSpacing: "-0.01em" }}
+              >
+                Text your idea to Telegram
+              </span>
+            </div>
+            <p
+              className="font-body mt-4"
+              style={{
+                fontSize: "0.85rem",
+                color: "var(--text-secondary)",
+                letterSpacing: "-0.01em",
+                lineHeight: 1.6,
+              }}
+            >
+              One message. Three publish-ready options. Posted everywhere.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

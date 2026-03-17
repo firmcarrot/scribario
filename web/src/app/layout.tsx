@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Scribario — Your social media team in a text",
+    default: "Scribario — AI Social Media Automation via Telegram",
     template: "%s — Scribario",
   },
   description:
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   creator: "Scribario",
   publisher: "Scribario",
   openGraph: {
-    title: "Scribario — Your social media team in a text",
+    title: "Scribario — AI Social Media Automation via Telegram",
     description:
-      "Text what you want. AI creates it. One tap publishes everywhere.",
+      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to 9 platforms in 30 seconds — no tools, no agency.",
     url: "https://scribario.com",
     siteName: "Scribario",
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@scribario",
     creator: "@scribario",
-    title: "Scribario — Your social media team in a text",
+    title: "Scribario — AI Social Media Automation via Telegram",
     description:
-      "Text what you want. AI creates it. One tap publishes everywhere.",
+      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to 9 platforms in 30 seconds — no tools, no agency.",
     images: ["/opengraph-image"],
   },
   robots: {
@@ -90,6 +90,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
         <link
           rel="preload"
           href="/fonts/ClashDisplay-Bold.woff2"

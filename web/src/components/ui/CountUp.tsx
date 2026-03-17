@@ -22,10 +22,12 @@ export function CountUp({
 }: Props) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(end);
+  const animatingRef = useRef(false);
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView || animatingRef.current) return;
+    animatingRef.current = true;
     let rafId: number;
     const startTime = Date.now();
     const tick = () => {
