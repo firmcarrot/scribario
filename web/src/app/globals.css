@@ -1,18 +1,26 @@
 @import "tailwindcss";
 
-/* ─── Brand Tokens — Light Theme (overrides old dark theme) ─── */
+/* ─── Brand Tokens — Apple-Cinematic Light/Dark Theme ─── */
 :root {
   --bg: #ffffff;
-  --bg-alt: #f5f5f5;
-  --bg-dark: #1A1A2E;
+  --bg-alt: #F5F5F7;
+  --bg-dark: #0A0A0F;
   --text: #000000;
-  --text-secondary: rgba(0, 0, 0, 0.62);
+  --text-dark: #1D1D1F;
+  --text-secondary: rgba(0, 0, 0, 0.44);
   --accent: #FF6B4A;
   --accent-secondary: #0088CC;
   --accent-tertiary: #E5553A;
   --card-bg: #ffffff;
   --separator: rgba(0, 0, 0, 0.06);
   --faq-border: rgb(224, 224, 224);
+
+  /* Spacing system */
+  --section-gap: clamp(6rem, 12vw, 12rem);
+  --content-gap: clamp(3rem, 6vw, 6rem);
+  --item-gap: clamp(1.5rem, 3vw, 3rem);
+  --max-content: 1200px;
+  --side-padding: clamp(1.5rem, 8vw, 8rem);
 }
 
 @theme inline {
@@ -20,6 +28,7 @@
   --color-bg-alt: var(--bg-alt);
   --color-bg-dark: var(--bg-dark);
   --color-text: var(--text);
+  --color-text-dark: var(--text-dark);
   --color-text-secondary: var(--text-secondary);
   --color-accent: var(--accent);
   --color-accent-secondary: var(--accent-secondary);
@@ -122,4 +131,8 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  /* Disable parallax and sticky scroll zones */
+  [data-scroll-sticky] { position: relative !important; }
+  [data-scroll-parallax] { transform: none !important; }
 }
