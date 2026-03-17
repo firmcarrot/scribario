@@ -6,6 +6,8 @@ export interface BlogPost {
   author: string;
   keywords: string[];
   readingTime: string;
+  image: string;
+  imageAlt: string;
   body: string;
 }
 
@@ -19,6 +21,8 @@ export const posts: BlogPost[] = [
     author: "Scribario Team",
     keywords: ["how to automate social media posts", "social media automation", "AI social media"],
     readingTime: "5 min read",
+    image: "/images/blog/blog-automate-social-media.webp",
+    imageAlt: "Smartphone on marble desk showing social media feed surrounded by coffee cup and earbuds — flat-lay editorial photography",
     body: `Social media automation has a reputation problem. When most people hear "automated posts," they picture generic, templated content that screams "a robot wrote this."
 
 That reputation is earned. Most automation tools — Buffer, Hootsuite, Later — automate the *scheduling* part, not the *creation* part. You still write the caption. You still design the image. You still resize for each platform. The tool just posts it at a time you picked.
@@ -69,6 +73,8 @@ If you're spending more than 30 seconds per post, you're doing it the old way.`,
     author: "Scribario Team",
     keywords: ["social media for restaurants", "restaurant marketing", "restaurant social media ideas"],
     readingTime: "6 min read",
+    image: "/images/blog/blog-restaurants-social-media.webp",
+    imageAlt: "Overhead view of a beautifully plated restaurant dish next to a smartphone showing an Instagram food post",
     body: `If you own a restaurant, you already know the problem. Your food looks incredible. Your customers love it. But your social media looks like it was last updated three weeks ago.
 
 It's not that you don't care. It's that you're running a kitchen, managing staff, handling suppliers, and putting out fires (sometimes literal ones). Social media falls to the bottom of the list every single day.
@@ -140,6 +146,8 @@ You don't need an agency. You don't need a marketing degree. You need 30 seconds
     author: "Scribario Team",
     keywords: ["social media agency cost", "AI vs agency", "social media management pricing"],
     readingTime: "7 min read",
+    image: "/images/blog/blog-ai-vs-agency.webp",
+    imageAlt: "Split view of a cluttered agency desk with dashboards versus a clean minimal desk with just a phone and espresso",
     body: `Let's talk about the elephant in the room: social media agencies are expensive. The average small business pays $1,500 to $5,000 per month for social media management. For a solopreneur or small team, that's a significant line item — often the single largest marketing expense.
 
 But here's the question nobody asks: what are you actually getting for that money?
@@ -235,6 +243,8 @@ The question isn't "agency or AI?" It's "what am I actually paying for, and is t
     author: "Scribario Team",
     keywords: ["best social media scheduling tool", "social media scheduling tool 2026", "Buffer vs Hootsuite"],
     readingTime: "8 min read",
+    image: "/images/blog/blog-scheduling-tools.webp",
+    imageAlt: "Four smartphones standing on a dark reflective surface showing different social media scheduling app interfaces",
     body: `Every "best social media scheduling tool" article follows the same format: a list of 10 tools with screenshots, feature tables, and pricing breakdowns. They all recommend the same tools. They're all sponsored by one of them.
 
 This isn't that article.
@@ -352,6 +362,8 @@ The best social media tool in 2026 isn't the one with the best calendar. It's th
     author: "Scribario Team",
     keywords: ["social media automation without dashboard", "chat-based social media", "Telegram social media bot"],
     readingTime: "5 min read",
+    image: "/images/blog/blog-no-dashboard.webp",
+    imageAlt: "Hand holding a phone with a chat interface in a cozy cafe with warm bokeh lighting in the background",
     body: `Open Hootsuite. Open Buffer. Open Later. Open Sprout Social. What do they all have in common?
 
 A dashboard.

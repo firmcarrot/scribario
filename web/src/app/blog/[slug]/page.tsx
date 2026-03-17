@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { posts } from "@/content/blog/posts";
 import { Footer } from "@/components/sections/Footer";
 
@@ -129,6 +130,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         >
           {post.description}
         </p>
+
+        {/* Hero image */}
+        {post.image && (
+          <div
+            className="relative rounded-2xl overflow-hidden"
+            style={{ aspectRatio: "16/9", marginBottom: "var(--content-gap)" }}
+          >
+            <Image
+              src={post.image}
+              alt={post.imageAlt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority
+            />
+          </div>
+        )}
 
         <hr style={{ border: "none", borderTop: "1px solid var(--separator)", marginBottom: "var(--content-gap)" }} />
 

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { posts } from "@/content/blog/posts";
 import { Footer } from "@/components/sections/Footer";
 
@@ -93,11 +94,23 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="group flex flex-col gap-4 transition-all duration-200 hover:scale-[1.01]"
               style={{
-                padding: "clamp(1.5rem, 2.5vw, 2.5rem)",
                 borderRadius: 20,
                 border: "1px solid rgba(0,0,0,0.06)",
+                overflow: "hidden",
               }}
             >
+              {post.image && (
+                <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    className="object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              )}
+              <div className="flex flex-col gap-4" style={{ padding: "0 clamp(1.5rem, 2.5vw, 2.5rem) clamp(1.5rem, 2.5vw, 2.5rem)" }}>
               <div className="flex items-center gap-3">
                 <span
                   className="font-mono"
@@ -148,6 +161,7 @@ export default function BlogPage() {
               >
                 {post.description}
               </p>
+              </div>
             </Link>
           ))}
         </div>
