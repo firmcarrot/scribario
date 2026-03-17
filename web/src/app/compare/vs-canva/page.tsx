@@ -6,7 +6,7 @@ import { Footer } from "@/components/sections/Footer";
 const data = comparisons["vs-canva"];
 
 export const metadata: Metadata = {
-  title: data.metaTitle,
+  title: { absolute: data.metaTitle },
   description: data.metaDescription,
   alternates: { canonical: `https://scribario.com/compare/${data.slug}` },
 };

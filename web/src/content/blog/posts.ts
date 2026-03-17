@@ -40,6 +40,18 @@ Real automation means you describe what you want to post — in plain English �
 
 The entire workflow takes 30 seconds. Not 30 minutes of design + writing + scheduling.
 
+## The five caption formulas, explained
+
+Most people hear "AI captions" and think of one-size-fits-all output. That's not how this works. Scribario uses five distinct writing formulas, each designed for a different goal:
+
+- **Hook-Story-Offer** — Opens with an attention-grabbing hook, tells a short relatable story, and closes with a clear call to action. This is your go-to for conversion-focused posts where you want people to click, buy, or sign up.
+- **PAS (Problem-Agitate-Solution)** — Names a pain point your audience feels, twists the knife just enough to create urgency, then presents your product or service as the answer. Works exceptionally well for service businesses and consultants.
+- **Punchy** — Short, direct, scroll-stopping. One to three sentences max. These are the posts that get shared because they say something bold in very few words. Think hot takes, strong opinions, and quotable one-liners.
+- **Story-Lesson** — Tells a brief personal or customer story, then extracts a takeaway the audience can apply. This formula builds trust and authority because it feels human, not promotional.
+- **List/Value Drop** — Delivers a numbered or bulleted list of tips, tools, steps, or insights. High save-rate content because people bookmark it for later. Great for positioning yourself as an expert.
+
+Every time you request a post, the AI picks three of these formulas and generates a complete caption for each. You're never stuck with one style — you always choose the one that fits the moment.
+
 ## The brand voice problem
 
 The biggest fear with AI content is losing your brand voice. If every post sounds like ChatGPT, you've traded one problem (no time to post) for another (generic content that doesn't sound like you).
@@ -47,6 +59,16 @@ The biggest fear with AI content is losing your brand voice. If every post sound
 Scribario solves this with **brand voice learning**. Every post you approve becomes a reference example. The AI studies your approved content — your vocabulary, your tone, your sentence structure — and uses it to generate future posts that sound like you, not like a robot.
 
 After 10-15 approved posts, the difference is dramatic. The AI starts using your specific phrases, matching your level of formality, and even adopting your humor style.
+
+## How brand voice learning actually works
+
+Brand voice isn't a one-time setting you configure during onboarding. It's a living model that improves with every interaction.
+
+Here's what happens under the hood: when you approve a post, the AI stores it as a positive example of "how you sound." When you reject one or ask for edits, that's a signal too — the AI learns what you *don't* sound like. Over time, it builds a profile that captures subtle patterns: whether you use contractions, how often you ask rhetorical questions, whether you prefer em dashes or parentheses, how formal your CTAs are.
+
+The result is that post #50 sounds dramatically more like you than post #5 did. And you never had to fill out a brand voice questionnaire or write a style guide. You just approved and rejected posts — the same thing you'd do with a human copywriter.
+
+This is also why the system gets better for returning users. Someone who's been using Scribario for three months gets noticeably better first drafts than someone who just signed up. The AI has context. It knows your voice.
 
 ## Three options, not one
 
@@ -57,6 +79,19 @@ Instead of generating one caption and hoping you like it, Scribario generates th
 3. **A value-driven list** that provides information and builds authority
 
 You pick the one that feels right. Or you tap Edit and say "make option 2 shorter and add a question hook." The AI revises while keeping your brand voice intact.
+
+## What to look for in a real automation tool
+
+Not every tool that calls itself "AI-powered" actually automates anything meaningful. Before you commit to a platform, run through this checklist:
+
+- **Does it create content, or just schedule it?** If you still have to write captions and design images yourself, it's a scheduling tool — not an automation tool.
+- **Does it learn your voice over time?** A one-size-fits-all AI that writes the same way for every user isn't personalization. Look for systems that adapt to YOUR tone, not just your industry.
+- **Does it generate multiple options?** If you get one output and your only choice is "post it or don't," you have less creative control than you'd have with a freelancer.
+- **Can you edit with natural language?** Saying "make it shorter" or "add a question at the beginning" should work. If editing means rewriting the caption yourself, the tool isn't saving you time.
+- **Does it handle images too?** Caption automation without image automation solves half the problem. You still need visuals for every post.
+- **Does it format per platform?** An Instagram caption and a LinkedIn post are different animals. The tool should know that without being told.
+- **What's the actual time-per-post?** Measure it honestly. If you're still spending 10+ minutes per post after setup, the "automation" isn't automating much.
+- **Is there a learning curve?** The best tool is the one you'll actually use. If it takes two weeks to figure out the dashboard, most people give up before seeing results.
 
 ## The bottom line
 
