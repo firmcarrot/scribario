@@ -91,6 +91,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="preconnect" href="https://t.me" />
+        <link rel="dns-prefetch" href="https://t.me" />
 
         <link
           rel="preload"

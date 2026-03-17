@@ -30,8 +30,31 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://scribario.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://scribario.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://scribario.com/blog/${post.slug}` },
+    ],
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: { "@type": "Organization", name: "Scribario", url: "https://scribario.com" },
+    publisher: { "@type": "Organization", name: "Scribario", url: "https://scribario.com", logo: { "@type": "ImageObject", url: "https://scribario.com/icon-512" } },
+    mainEntityOfPage: `https://scribario.com/blog/${post.slug}`,
+  };
+
   return (
     <main id="main-content">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <article
         className="px-6 md:px-16"
         style={{

@@ -287,7 +287,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.85 }}
           >
             <EmailCapture
-              headline="Get 5 free posts — no signup required"
+              headline="Try your first 5 posts free — no card required"
               buttonText="Send it"
               source="hero"
               variant="dark"
