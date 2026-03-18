@@ -1,0 +1,1046 @@
+
+Let's get started.
+Let's get started.
+ 
+Let's get started.
+[Music]
+[Music]
+ 
+[Music]
+>> Hey, what's up guys? I found this beer
+>> Hey, what's up guys? I found this beer
+ 
+>> Hey, what's up guys? I found this beer
+left over from some campers and I'm
+left over from some campers and I'm
+ 
+left over from some campers and I'm
+totally wasted.
+totally wasted.
+ 
+totally wasted.
+>> No way. This is wild. Collab of the
+>> No way. This is wild. Collab of the
+ 
+>> No way. This is wild. Collab of the
+century. Let's go.
+century. Let's go.
+ 
+century. Let's go.
+>> Everything that you have seen is
+>> Everything that you have seen is
+ 
+>> Everything that you have seen is
+completely AI generated, fully
+completely AI generated, fully
+ 
+completely AI generated, fully
+automated, and the best part, it's free.
+automated, and the best part, it's free.
+ 
+automated, and the best part, it's free.
+So today, let's build an automation
+So today, let's build an automation
+ 
+So today, let's build an automation
+using Google's most powerful video tool,
+using Google's most powerful video tool,
+ 
+using Google's most powerful video tool,
+which is VO3. And we're going to use any
+which is VO3. And we're going to use any
+ 
+which is VO3. And we're going to use any
+as well, an automation tool. And guess
+as well, an automation tool. And guess
+ 
+as well, an automation tool. And guess
+what? We're going to make everything for
+what? We're going to make everything for
+ 
+what? We're going to make everything for
+absolutely free. And hey, if you stick
+absolutely free. And hey, if you stick
+ 
+absolutely free. And hey, if you stick
+around till the end, there's a huge,
+around till the end, there's a huge,
+ 
+around till the end, there's a huge,
+huge surprise waiting for you, and you
+huge surprise waiting for you, and you
+ 
+huge surprise waiting for you, and you
+don't want to miss that.
+don't want to miss that.
+ 
+don't want to miss that.
+[Music]
+[Music]
+ 
+[Music]
+All right, chapter one. We're going to
+All right, chapter one. We're going to
+ 
+All right, chapter one. We're going to
+get access to V3. All right, guys. So,
+get access to V3. All right, guys. So,
+ 
+get access to V3. All right, guys. So,
+here's the deal. We found a Google Cloud
+here's the deal. We found a Google Cloud
+ 
+here's the deal. We found a Google Cloud
+Platform, and it's about to get crazy.
+Platform, and it's about to get crazy.
+ 
+Platform, and it's about to get crazy.
+You can make mind-blowing videos using
+You can make mind-blowing videos using
+ 
+You can make mind-blowing videos using
+Google's V3 model through Google Vertex
+Google's V3 model through Google Vertex
+ 
+Google's V3 model through Google Vertex
+AI Studio. And here's how you get
+AI Studio. And here's how you get
+ 
+AI Studio. And here's how you get
+started. All right. So, the first thing
+started. All right. So, the first thing
+ 
+started. All right. So, the first thing
+you need to do is head over to Google
+you need to do is head over to Google
+ 
+you need to do is head over to Google
+Cloud Console. Create a free account.
+Cloud Console. Create a free account.
+ 
+Cloud Console. Create a free account.
+Yes, it's absolutely free. Yo, and get
+Yes, it's absolutely free. Yo, and get
+ 
+Yes, it's absolutely free. Yo, and get
+this. When you create an account, you
+this. When you create an account, you
+ 
+this. When you create an account, you
+get $300 worth of free credits for 90
+get $300 worth of free credits for 90
+ 
+get $300 worth of free credits for 90
+days. That's more than enough to get
+days. That's more than enough to get
+ 
+days. That's more than enough to get
+crazy with your experiments. All right.
+crazy with your experiments. All right.
+ 
+crazy with your experiments. All right.
+So, once you're in, you can check out
+So, once you're in, you can check out
+ 
+So, once you're in, you can check out
+the sidebar menu. It has all of the
+the sidebar menu. It has all of the
+ 
+the sidebar menu. It has all of the
+Google tools, but for this video, we're
+Google tools, but for this video, we're
+ 
+Google tools, but for this video, we're
+just going to be sticking to Vertex AI.
+just going to be sticking to Vertex AI.
+ 
+just going to be sticking to Vertex AI.
+All right. So, click Vertex AI. From
+All right. So, click Vertex AI. From
+ 
+All right. So, click Vertex AI. From
+here, go to media studio and then
+here, go to media studio and then
+ 
+here, go to media studio and then
+generate video. Boom. Sorted. You're in.
+generate video. Boom. Sorted. You're in.
+ 
+generate video. Boom. Sorted. You're in.
+Now, this is where the magic happens cuz
+Now, this is where the magic happens cuz
+ 
+Now, this is where the magic happens cuz
+now you can select V3 from the models
+now you can select V3 from the models
+ 
+now you can select V3 from the models
+available. Type a prompt and you're good
+available. Type a prompt and you're good
+ 
+available. Type a prompt and you're good
+to go. All right. So, check this out. A
+to go. All right. So, check this out. A
+ 
+to go. All right. So, check this out. A
+cinematic shot of a Yeti vlogging in the
+cinematic shot of a Yeti vlogging in the
+ 
+cinematic shot of a Yeti vlogging in the
+Himalayas.
+Himalayas.
+ 
+Himalayas.
+4K
+4K
+ 
+4K
+dramatic lighting. That's all we're
+dramatic lighting. That's all we're
+ 
+dramatic lighting. That's all we're
+going to do for now. And let's see what
+going to do for now. And let's see what
+ 
+going to do for now. And let's see what
+it chs out.
+it chs out.
+ 
+it chs out.
+>> Welcome back to my vlog. And today we're
+>> Welcome back to my vlog. And today we're
+ 
+>> Welcome back to my vlog. And today we're
+up in the Himalayas.
+
+ 
+
+You know, I'm actually comparing this to
+You know, I'm actually comparing this to
+ 
+You know, I'm actually comparing this to
+the other Yeti videos that I've seen.
+the other Yeti videos that I've seen.
+ 
+the other Yeti videos that I've seen.
+And this one actually looks like the
+And this one actually looks like the
+ 
+And this one actually looks like the
+Yeti. The other ones look like oranguta
+Yeti. The other ones look like oranguta
+ 
+Yeti. The other ones look like oranguta
+tanks and stuff. It's pretty wild,
+tanks and stuff. It's pretty wild,
+ 
+tanks and stuff. It's pretty wild,
+right? But let's be real. Doing this
+right? But let's be real. Doing this
+ 
+right? But let's be real. Doing this
+manually is cool, but sometimes it takes
+manually is cool, but sometimes it takes
+ 
+manually is cool, but sometimes it takes
+too much time. So here's our game plan.
+too much time. So here's our game plan.
+ 
+too much time. So here's our game plan.
+Instead of generating videos one by one,
+Instead of generating videos one by one,
+ 
+Instead of generating videos one by one,
+we're going to automate the entire
+we're going to automate the entire
+ 
+we're going to automate the entire
+process from idea to prompt to final
+process from idea to prompt to final
+ 
+process from idea to prompt to final
+generation and store everything in a
+generation and store everything in a
+ 
+generation and store everything in a
+Google sheet which is the automation.
+Google sheet which is the automation.
+ 
+Google sheet which is the automation.
+For the automation, let's use any free
+For the automation, let's use any free
+ 
+For the automation, let's use any free
+and open source. It works like magic.
+and open source. It works like magic.
+ 
+and open source. It works like magic.
+All you need to do is drag, drop, and
+All you need to do is drag, drop, and
+ 
+All you need to do is drag, drop, and
+connect. All right. So before diving in,
+connect. All right. So before diving in,
+ 
+connect. All right. So before diving in,
+let's break the entire automation
+let's break the entire automation
+ 
+let's break the entire automation
+process into three simple steps. The
+process into three simple steps. The
+ 
+process into three simple steps. The
+first one going to be idea and prompt
+first one going to be idea and prompt
+ 
+first one going to be idea and prompt
+generation. Second is going to be video
+generation. Second is going to be video
+ 
+generation. Second is going to be video
+generation. And the third one is going
+generation. And the third one is going
+ 
+generation. And the third one is going
+to be storing everything. If you're new
+to be storing everything. If you're new
+ 
+to be storing everything. If you're new
+to the channel, then make sure you check
+to the channel, then make sure you check
+ 
+to the channel, then make sure you check
+out this video where we've used N10
+out this video where we've used N10
+ 
+out this video where we've used N10
+before and we've gone into complete
+before and we've gone into complete
+ 
+before and we've gone into complete
+detail. So, if you feel like you're
+detail. So, if you feel like you're
+ 
+detail. So, if you feel like you're
+getting a little lost, please check out
+getting a little lost, please check out
+ 
+getting a little lost, please check out
+this video and then come back to this
+this video and then come back to this
+ 
+this video and then come back to this
+one. So, now we're tackling the first
+one. So, now we're tackling the first
+ 
+one. So, now we're tackling the first
+step, which is idea and prompt
+step, which is idea and prompt
+ 
+step, which is idea and prompt
+generation. All right. So, what we're
+generation. All right. So, what we're
+ 
+generation. All right. So, what we're
+going to do is we're going to start by
+going to do is we're going to start by
+ 
+going to do is we're going to start by
+putting a trigger. Now, you can either
+putting a trigger. Now, you can either
+ 
+putting a trigger. Now, you can either
+set a manual trigger or a schedule
+set a manual trigger or a schedule
+ 
+set a manual trigger or a schedule
+trigger that runs daily or on a custom
+trigger that runs daily or on a custom
+ 
+trigger that runs daily or on a custom
+schedule, whatever you want. We're going
+schedule, whatever you want. We're going
+ 
+schedule, whatever you want. We're going
+to go with a schedule trigger so the
+to go with a schedule trigger so the
+ 
+to go with a schedule trigger so the
+workflow runs on its own again and
+workflow runs on its own again and
+ 
+workflow runs on its own again and
+again. Whenever the trigger fires, we
+again. Whenever the trigger fires, we
+ 
+again. Whenever the trigger fires, we
+need an AI agent to start the process
+need an AI agent to start the process
+ 
+need an AI agent to start the process
+because we need a fresh idea to make the
+because we need a fresh idea to make the
+ 
+because we need a fresh idea to make the
+video. All right. So now we're going to
+video. All right. So now we're going to
+ 
+video. All right. So now we're going to
+set up an agent node with Google Gemini
+set up an agent node with Google Gemini
+ 
+set up an agent node with Google Gemini
+as our AI model and let's name it as
+as our AI model and let's name it as
+ 
+as our AI model and let's name it as
+ideas AI agent. Also going further for
+ideas AI agent. Also going further for
+ 
+ideas AI agent. Also going further for
+every user message, system message or
+every user message, system message or
+ 
+every user message, system message or
+JSON or anything we've already made a
+JSON or anything we've already made a
+ 
+JSON or anything we've already made a
+document right here and we'll keep copy
+document right here and we'll keep copy
+ 
+document right here and we'll keep copy
+pasting whatever we need from there. So
+pasting whatever we need from there. So
+ 
+pasting whatever we need from there. So
+for this what I'm going to do is I'm
+for this what I'm going to do is I'm
+ 
+for this what I'm going to do is I'm
+going to put in give me as many ideas of
+going to put in give me as many ideas of
+ 
+going to put in give me as many ideas of
+a yeti speaking to a camera and doing a
+a yeti speaking to a camera and doing a
+ 
+a yeti speaking to a camera and doing a
+vlog. Okay. So that I've put in the user
+vlog. Okay. So that I've put in the user
+ 
+vlog. Okay. So that I've put in the user
+message area. But you can ask for
+message area. But you can ask for
+ 
+message area. But you can ask for
+anything. You can literally do anything
+anything. You can literally do anything
+ 
+anything. You can literally do anything
+you want. You can ask for a man on the
+you want. You can ask for a man on the
+ 
+you want. You can ask for a man on the
+streets of New York talking to random
+streets of New York talking to random
+ 
+streets of New York talking to random
+people. You can ask for an alien talking
+people. You can ask for an alien talking
+ 
+people. You can ask for an alien talking
+to other aliens in a box pop style. Or
+to other aliens in a box pop style. Or
+ 
+to other aliens in a box pop style. Or
+if you want something controversial then
+if you want something controversial then
+ 
+if you want something controversial then
+you can even do a dude on the beach in
+you can even do a dude on the beach in
+ 
+you can even do a dude on the beach in
+Goa not letting anyone surf. Anything.
+Goa not letting anyone surf. Anything.
+ 
+Goa not letting anyone surf. Anything.
+It's up to you. So let's just do a quick
+It's up to you. So let's just do a quick
+ 
+It's up to you. So let's just do a quick
+recap. We've got the trigger and we've
+recap. We've got the trigger and we've
+ 
+recap. We've got the trigger and we've
+got the agent node. So now what we need
+got the agent node. So now what we need
+ 
+got the agent node. So now what we need
+to do is add a think tool. So this node
+to do is add a think tool. So this node
+ 
+to do is add a think tool. So this node
+invites the AI agent to think before
+invites the AI agent to think before
+ 
+invites the AI agent to think before
+answering. It's especially useful for
+answering. It's especially useful for
+ 
+answering. It's especially useful for
+complex prompts. All right. What this
+complex prompts. All right. What this
+ 
+complex prompts. All right. What this
+basically does is it lets the AI talk to
+basically does is it lets the AI talk to
+ 
+basically does is it lets the AI talk to
+itself first before spitting out a
+itself first before spitting out a
+ 
+itself first before spitting out a
+response. We want these ideas in a
+response. We want these ideas in a
+ 
+response. We want these ideas in a
+structured format. So we'll edit the
+structured format. So we'll edit the
+ 
+structured format. So we'll edit the
+JSON output and pass it accordingly.
+JSON output and pass it accordingly.
+ 
+JSON output and pass it accordingly.
+We'll also quickly update our system
+We'll also quickly update our system
+ 
+We'll also quickly update our system
+message in these to reflect that. So now
+message in these to reflect that. So now
+ 
+message in these to reflect that. So now
+we need to set up our Google sheet for
+we need to set up our Google sheet for
+ 
+we need to set up our Google sheet for
+storing all the information we got from
+storing all the information we got from
+ 
+storing all the information we got from
+the AI agent we just set up. So now
+the AI agent we just set up. So now
+ 
+the AI agent we just set up. So now
+let's go to the Google drive and create
+let's go to the Google drive and create
+ 
+let's go to the Google drive and create
+a sheet named V3 NA10 automation.
+a sheet named V3 NA10 automation.
+ 
+a sheet named V3 NA10 automation.
+We'll update all the columns in the
+We'll update all the columns in the
+ 
+We'll update all the columns in the
+sheet based on the JSON output we expect
+sheet based on the JSON output we expect
+ 
+sheet based on the JSON output we expect
+and connect them all inside of any.
+and connect them all inside of any.
+ 
+and connect them all inside of any.
+So the Google Sheets node in any just
+So the Google Sheets node in any just
+ 
+So the Google Sheets node in any just
+tells it to work on that sheet. We won't
+tells it to work on that sheet. We won't
+ 
+tells it to work on that sheet. We won't
+ask it to create or delete spreadsheets.
+ask it to create or delete spreadsheets.
+ 
+ask it to create or delete spreadsheets.
+We're just going to append and update
+We're just going to append and update
+ 
+We're just going to append and update
+rows in the spreadsheet that we've
+rows in the spreadsheet that we've
+ 
+rows in the spreadsheet that we've
+already created. Okay, so we've already
+already created. Okay, so we've already
+ 
+already created. Okay, so we've already
+linked our credentials to connect with
+linked our credentials to connect with
+ 
+linked our credentials to connect with
+Google.
+Google.
+ 
+Google.
+Now we just need to map out all of the
+Now we just need to map out all of the
+ 
+Now we just need to map out all of the
+columns manually. All right, so just
+columns manually. All right, so just
+ 
+columns manually. All right, so just
+take a look over here. Just follow what
+take a look over here. Just follow what
+ 
+take a look over here. Just follow what
+I'm doing.
+I'm doing.
+ 
+I'm doing.
+Cool. So now we've built the entire idea
+Cool. So now we've built the entire idea
+ 
+Cool. So now we've built the entire idea
+generation pipeline and we're going to
+generation pipeline and we're going to
+ 
+generation pipeline and we're going to
+be storing all the ideas in Google
+be storing all the ideas in Google
+ 
+be storing all the ideas in Google
+Sheets itself. Okay. So let's try to
+Sheets itself. Okay. So let's try to
+ 
+Sheets itself. Okay. So let's try to
+execute it once to check if it works.
+execute it once to check if it works.
+ 
+execute it once to check if it works.
+Sorted. It works. And you can see our
+Sorted. It works. And you can see our
+ 
+Sorted. It works. And you can see our
+first idea right there in the sheet. All
+first idea right there in the sheet. All
+ 
+first idea right there in the sheet. All
+right. So now we want another AI agent
+right. So now we want another AI agent
+ 
+right. So now we want another AI agent
+and this one we're going to name the
+and this one we're going to name the
+ 
+and this one we're going to name the
+prompts AI agent. This one will generate
+prompts AI agent. This one will generate
+ 
+prompts AI agent. This one will generate
+prompts from the ideas that we've given
+prompts from the ideas that we've given
+ 
+prompts from the ideas that we've given
+because we've got the ideas now and we
+because we've got the ideas now and we
+ 
+because we've got the ideas now and we
+need the actual prompts to send to
+need the actual prompts to send to
+ 
+need the actual prompts to send to
+Vertex Studio. Okay, again we're going
+Vertex Studio. Okay, again we're going
+ 
+Vertex Studio. Okay, again we're going
+to go back to our notion sheet where
+to go back to our notion sheet where
+ 
+to go back to our notion sheet where
+I've put all of the user messages and
+I've put all of the user messages and
+ 
+I've put all of the user messages and
+we're going to copy this user message
+we're going to copy this user message
+ 
+we're going to copy this user message
+and paste it here.
+and paste it here.
+ 
+and paste it here.
+So we've already figured out the thing
+So we've already figured out the thing
+ 
+So we've already figured out the thing
+tool and the model that we're going to
+tool and the model that we're going to
+ 
+tool and the model that we're going to
+be using. So we're just going to connect
+be using. So we're just going to connect
+ 
+be using. So we're just going to connect
+them to the prompts AI agent. Now we're
+them to the prompts AI agent. Now we're
+ 
+them to the prompts AI agent. Now we're
+on to step two, which is video
+on to step two, which is video
+ 
+on to step two, which is video
+generation. Now, Google Vortex currently
+generation. Now, Google Vortex currently
+ 
+generation. Now, Google Vortex currently
+has no direct integration with any 10.
+has no direct integration with any 10.
+ 
+has no direct integration with any 10.
+So, we're going to have to manually
+So, we're going to have to manually
+ 
+So, we're going to have to manually
+create an integration using an HTTP
+create an integration using an HTTP
+ 
+create an integration using an HTTP
+request. All right. So, we're going to
+request. All right. So, we're going to
+ 
+request. All right. So, we're going to
+need to gather some values from your
+need to gather some values from your
+ 
+need to gather some values from your
+Google proud project. And in order to do
+Google proud project. And in order to do
+ 
+Google proud project. And in order to do
+that, you'll find this button called get
+that, you'll find this button called get
+ 
+that, you'll find this button called get
+code. So, once you click on the get code
+code. So, once you click on the get code
+ 
+code. So, once you click on the get code
+button, you have access to details like
+button, you have access to details like
+ 
+button, you have access to details like
+your project ID, your location, your
+your project ID, your location, your
+ 
+your project ID, your location, your
+model, and your API endpoint. An
+model, and your API endpoint. An
+ 
+model, and your API endpoint. An
+important point to note over here is
+important point to note over here is
+ 
+important point to note over here is
+you're also going to need your access
+you're also going to need your access
+ 
+you're also going to need your access
+token. So, make sure you open cloud
+token. So, make sure you open cloud
+ 
+token. So, make sure you open cloud
+shell and run this code. And once you
+shell and run this code. And once you
+ 
+shell and run this code. And once you
+run this line, you'll get a huge access
+run this line, you'll get a huge access
+ 
+run this line, you'll get a huge access
+token from the cloud shell and you can
+token from the cloud shell and you can
+ 
+token from the cloud shell and you can
+use it. All right. So now that we've got
+use it. All right. So now that we've got
+ 
+use it. All right. So now that we've got
+all of these details, we're going to
+all of these details, we're going to
+ 
+all of these details, we're going to
+need a wait node to let V3 generate the
+need a wait node to let V3 generate the
+ 
+need a wait node to let V3 generate the
+video before we fetch it. This usually
+video before we fetch it. This usually
+ 
+video before we fetch it. This usually
+takes like less than 60 seconds for VO
+takes like less than 60 seconds for VO
+ 
+takes like less than 60 seconds for VO
+to render the video. So once the video
+to render the video. So once the video
+ 
+to render the video. So once the video
+is done, we need to fetch it. So add
+is done, we need to fetch it. So add
+ 
+is done, we need to fetch it. So add
+another HTTP request node in N8N.
+another HTTP request node in N8N.
+ 
+another HTTP request node in N8N.
+And we're going to use the same
+And we're going to use the same
+ 
+And we're going to use the same
+endpoint, but this time we're going to
+endpoint, but this time we're going to
+ 
+endpoint, but this time we're going to
+be asking, hey Vio, is my Yeti ready?
+be asking, hey Vio, is my Yeti ready?
+ 
+be asking, hey Vio, is my Yeti ready?
+Fair enough.
+Fair enough.
+ 
+Fair enough.
+After you enter that, you're going to
+After you enter that, you're going to
+ 
+After you enter that, you're going to
+get a base 64 encoded video file in the
+get a base 64 encoded video file in the
+ 
+get a base 64 encoded video file in the
+response. So now we're going to decode
+response. So now we're going to decode
+ 
+response. So now we're going to decode
+whatever this B 64 encoded video file
+whatever this B 64 encoded video file
+ 
+whatever this B 64 encoded video file
+is. And to decode it, we're going to
+is. And to decode it, we're going to
+ 
+is. And to decode it, we're going to
+convert it into ampp4 file using N10's
+convert it into ampp4 file using N10's
+ 
+convert it into ampp4 file using N10's
+built-in functions. You've got to pack
+built-in functions. You've got to pack
+ 
+built-in functions. You've got to pack
+extra yak butter for the high passes.
+extra yak butter for the high passes.
+ 
+extra yak butter for the high passes.
+Trust me on this one. Now we're moving
+Trust me on this one. Now we're moving
+ 
+Trust me on this one. Now we're moving
+on to step three. Upload a drive log the
+on to step three. Upload a drive log the
+ 
+on to step three. Upload a drive log the
+sheet. So now let's add the Google Drive
+sheet. So now let's add the Google Drive
+ 
+sheet. So now let's add the Google Drive
+node to upload the MP4 file.
+node to upload the MP4 file.
+ 
+node to upload the MP4 file.
+Let's name the file same as the idea.
+Let's name the file same as the idea.
+ 
+Let's name the file same as the idea.
+Now, finally, we're going to add the
+Now, finally, we're going to add the
+ 
+Now, finally, we're going to add the
+Google sheet note to update our previous
+Google sheet note to update our previous
+ 
+Google sheet note to update our previous
+Google sheet with the sharable drive
+Google sheet with the sharable drive
+ 
+Google sheet with the sharable drive
+link. All right. And you're done with
+link. All right. And you're done with
+ 
+link. All right. And you're done with
+that. You now have a fully logged,
+that. You now have a fully logged,
+ 
+that. You now have a fully logged,
+autogenerated voowered Yeti video
+autogenerated voowered Yeti video
+ 
+autogenerated voowered Yeti video
+pipeline. Insane.
+pipeline. Insane.
+ 
+pipeline. Insane.
+Too long.
+Too long.
+ 
+Too long.
+>> Yeah, a little bit too long.
+>> Yeah, a little bit too long.
+ 
+>> Yeah, a little bit too long.
+>> So, now you have a fully logged video
+>> So, now you have a fully logged video
+ 
+>> So, now you have a fully logged video
+generation model that you can use for
+generation model that you can use for
+ 
+generation model that you can use for
+anything. We've used it for Vieti
+anything. We've used it for Vieti
+ 
+anything. We've used it for Vieti
+specifically, but you can use it for
+specifically, but you can use it for
+ 
+specifically, but you can use it for
+absolutely anything. Create a faceless
+absolutely anything. Create a faceless
+ 
+absolutely anything. Create a faceless
+account, get millions of followers, and
+account, get millions of followers, and
+ 
+account, get millions of followers, and
+get some cash money, bro. The surprise.
+get some cash money, bro. The surprise.
+ 
+get some cash money, bro. The surprise.
+I know a lot of you have been waiting
+I know a lot of you have been waiting
+ 
+I know a lot of you have been waiting
+for it, so here you go. All right, that
+for it, so here you go. All right, that
+ 
+for it, so here you go. All right, that
+was a lot. And you could follow all of
+was a lot. And you could follow all of
+ 
+was a lot. And you could follow all of
+that step by step, or you could also use
+that step by step, or you could also use
+ 
+that step by step, or you could also use
+the surprise. We've linked the exact
+the surprise. We've linked the exact
+ 
+the surprise. We've linked the exact
+anytime and JSON file for the entire
+anytime and JSON file for the entire
+ 
+anytime and JSON file for the entire
+workflow in the description. So, if
+workflow in the description. So, if
+ 
+workflow in the description. So, if
+you're thinking about getting a little
+you're thinking about getting a little
+ 
+you're thinking about getting a little
+creative with your ideas, make sure you
+creative with your ideas, make sure you
+ 
+creative with your ideas, make sure you
+try it out and let us know what you
+try it out and let us know what you
+ 
+try it out and let us know what you
+think. You can literally import it and
+think. You can literally import it and
+ 
+think. You can literally import it and
+have this entire AI video engine running
+have this entire AI video engine running
+ 
+have this entire AI video engine running
+in less than 10 minutes. No repeating
+in less than 10 minutes. No repeating
+ 
+in less than 10 minutes. No repeating
+steps, no copying prompts. Just import,
+steps, no copying prompts. Just import,
+ 
+steps, no copying prompts. Just import,
+connect your credentials and go. All
+connect your credentials and go. All
+ 
+connect your credentials and go. All
+right. So with Jugard Pro Max, we
+right. So with Jugard Pro Max, we
+ 
+right. So with Jugard Pro Max, we
+managed to show you how to use Google V3
+managed to show you how to use Google V3
+ 
+managed to show you how to use Google V3
+in India to generate cinematic AI
+in India to generate cinematic AI
+ 
+in India to generate cinematic AI
+videos. We automated the full pipeline
+videos. We automated the full pipeline
+ 
+videos. We automated the full pipeline
+using any. And we even linked the exact
+using any. And we even linked the exact
+ 
+using any. And we even linked the exact
+JSON setup so you don't have to start
+JSON setup so you don't have to start
+ 
+JSON setup so you don't have to start
+from scratch. And now you can build your
+from scratch. And now you can build your
+ 
+from scratch. And now you can build your
+own idea to video engine in under 10
+own idea to video engine in under 10
+ 
+own idea to video engine in under 10
+minutes. If this helped you, make sure
+minutes. If this helped you, make sure
+ 
+minutes. If this helped you, make sure
+you hit like and subscribe. But more
+you hit like and subscribe. But more
+ 
+you hit like and subscribe. But more
+importantly, drop your wildest video
+importantly, drop your wildest video
+ 
+importantly, drop your wildest video
+channel idea in the comments. Make it
+channel idea in the comments. Make it
+ 
+channel idea in the comments. Make it
+weird. Make it original. Just don't make
+weird. Make it original. Just don't make
+ 
+weird. Make it original. Just don't make
+it boring.

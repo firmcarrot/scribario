@@ -47,6 +47,10 @@ class Settings(BaseSettings):
     # Long video pipeline
     long_video_max_cost_usd: float = 10.0
 
+    # Autopilot hard ceilings
+    autopilot_max_daily_posts: int = 10
+    autopilot_max_monthly_cost_usd: float = 100.0
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 

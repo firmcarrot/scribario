@@ -1,0 +1,934 @@
+
+Timeline prompting in Sora 2 is
+Timeline prompting in Sora 2 is
+ 
+Timeline prompting in Sora 2 is
+absolutely insane. Yet, nobody even know
+absolutely insane. Yet, nobody even know
+ 
+absolutely insane. Yet, nobody even know
+what the hell timeline prompting is. We
+what the hell timeline prompting is. We
+ 
+what the hell timeline prompting is. We
+first had Jason prompting. Now, all of
+first had Jason prompting. Now, all of
+ 
+first had Jason prompting. Now, all of
+the sudden, we're switching to timeline
+the sudden, we're switching to timeline
+ 
+the sudden, we're switching to timeline
+prompting. I understand it's kind of
+prompting. I understand it's kind of
+ 
+prompting. I understand it's kind of
+crazy, but let me explain. Now, with
+crazy, but let me explain. Now, with
+ 
+crazy, but let me explain. Now, with
+this new method of prompting, you can
+this new method of prompting, you can
+ 
+this new method of prompting, you can
+keep consistent scenes easily across
+keep consistent scenes easily across
+ 
+keep consistent scenes easily across
+your video that you generate in Sora 2.
+your video that you generate in Sora 2.
+ 
+your video that you generate in Sora 2.
+And by using this exact method, I
+And by using this exact method, I
+ 
+And by using this exact method, I
+created this video.
+created this video.
+ 
+created this video.
+>> That's the ridge line. If we cut through
+>> That's the ridge line. If we cut through
+ 
+>> That's the ridge line. If we cut through
+here, we can lose them. If they don't
+here, we can lose them. If they don't
+ 
+here, we can lose them. If they don't
+burn the house first packs primed on
+burn the house first packs primed on
+ 
+burn the house first packs primed on
+two.
+two.
+ 
+two.
+Go back door.
+
+ 
+
+>> Copy. Grid 493 over.
+>> Copy. Grid 493 over.
+ 
+>> Copy. Grid 493 over.
+>> You heard that?
+
+ 
+
+hanger's opening. I see it.
+hanger's opening. I see it.
+ 
+hanger's opening. I see it.
+>> Basically, everything you've just seen
+>> Basically, everything you've just seen
+ 
+>> Basically, everything you've just seen
+was generated using Sora 2 on Art List.
+was generated using Sora 2 on Art List.
+ 
+was generated using Sora 2 on Art List.
+They were kind enough to sponsor this
+They were kind enough to sponsor this
+ 
+They were kind enough to sponsor this
+video, so check them out in the
+video, so check them out in the
+ 
+video, so check them out in the
+description down below. Now, with this
+description down below. Now, with this
+ 
+description down below. Now, with this
+new method, you basically become a
+new method, you basically become a
+ 
+new method, you basically become a
+director and you can decide everything
+director and you can decide everything
+ 
+director and you can decide everything
+that's going on in your scene. Shout out
+that's going on in your scene. Shout out
+ 
+that's going on in your scene. Shout out
+to Serio for breaking down this method.
+to Serio for breaking down this method.
+ 
+to Serio for breaking down this method.
+Make sure to check him out in the
+Make sure to check him out in the
+ 
+Make sure to check him out in the
+description down below. Okay, let me
+description down below. Okay, let me
+ 
+description down below. Okay, let me
+start by explaining how you can do this
+start by explaining how you can do this
+ 
+start by explaining how you can do this
+prompting technique. First, I want you
+prompting technique. First, I want you
+ 
+prompting technique. First, I want you
+to go over to Sor 2. I'm using Art List
+to go over to Sor 2. I'm using Art List
+ 
+to go over to Sor 2. I'm using Art List
+for this. So, there are two ways to
+for this. So, there are two ways to
+ 
+for this. So, there are two ways to
+start using timeline prompting. The
+start using timeline prompting. The
+ 
+start using timeline prompting. The
+first one is text to video and the
+first one is text to video and the
+ 
+first one is text to video and the
+second one is image to video. Now with
+second one is image to video. Now with
+ 
+second one is image to video. Now with
+image to video you have a bit more
+image to video you have a bit more
+ 
+image to video you have a bit more
+control because you give it an image
+control because you give it an image
+ 
+control because you give it an image
+input and with that image input the AI
+input and with that image input the AI
+ 
+input and with that image input the AI
+can understand what style you're going
+can understand what style you're going
+ 
+can understand what style you're going
+for, what character, what objects,
+for, what character, what objects,
+ 
+for, what character, what objects,
+everything basically that you want to
+everything basically that you want to
+ 
+everything basically that you want to
+know. Now with text to video, it's a bit
+know. Now with text to video, it's a bit
+ 
+know. Now with text to video, it's a bit
+more a guessing game. So by then
+more a guessing game. So by then
+ 
+more a guessing game. So by then
+describing what you exactly want to have
+describing what you exactly want to have
+ 
+describing what you exactly want to have
+happen in that scene, the AI understands
+happen in that scene, the AI understands
+ 
+happen in that scene, the AI understands
+that it needs to keep that character
+that it needs to keep that character
+ 
+that it needs to keep that character
+consistent. it needs to change that
+consistent. it needs to change that
+ 
+consistent. it needs to change that
+shot. And there's little to no guesswork
+shot. And there's little to no guesswork
+ 
+shot. And there's little to no guesswork
+that needs to be done if you're using
+that needs to be done if you're using
+ 
+that needs to be done if you're using
+the right prompt. So, I want you to
+the right prompt. So, I want you to
+ 
+the right prompt. So, I want you to
+imagine this. I have this image here of
+imagine this. I have this image here of
+ 
+imagine this. I have this image here of
+a knight looking at a map. Now, if I
+a knight looking at a map. Now, if I
+ 
+a knight looking at a map. Now, if I
+were to give this a prompt, what most
+were to give this a prompt, what most
+ 
+were to give this a prompt, what most
+people would do is they would prompt it
+people would do is they would prompt it
+ 
+people would do is they would prompt it
+like this. A knight is looking at the
+like this. A knight is looking at the
+ 
+like this. A knight is looking at the
+map. He puts it away and then he starts
+map. He puts it away and then he starts
+ 
+map. He puts it away and then he starts
+marching forward on the battlefield. The
+marching forward on the battlefield. The
+ 
+marching forward on the battlefield. The
+AI has little to no context. That's all
+AI has little to no context. That's all
+ 
+AI has little to no context. That's all
+you gave it. So, with timeline
+you gave it. So, with timeline
+ 
+you gave it. So, with timeline
+prompting, you're basically giving it a
+prompting, you're basically giving it a
+ 
+prompting, you're basically giving it a
+lot more context by telling it exactly
+lot more context by telling it exactly
+ 
+lot more context by telling it exactly
+what it needs to do at which moment. So,
+what it needs to do at which moment. So,
+ 
+what it needs to do at which moment. So,
+let me break down one of these prompts
+let me break down one of these prompts
+ 
+let me break down one of these prompts
+and show you what it looks like. So, now
+and show you what it looks like. So, now
+ 
+and show you what it looks like. So, now
+you're looking at a timeline prompt. And
+you're looking at a timeline prompt. And
+ 
+you're looking at a timeline prompt. And
+with this prompt, you add a lot more
+with this prompt, you add a lot more
+ 
+with this prompt, you add a lot more
+detail to what you want to have happen
+detail to what you want to have happen
+ 
+detail to what you want to have happen
+to your scene. But basically, it all
+to your scene. But basically, it all
+ 
+to your scene. But basically, it all
+still comes down to what you have inside
+still comes down to what you have inside
+ 
+still comes down to what you have inside
+of your head. And I will help you make
+of your head. And I will help you make
+ 
+of your head. And I will help you make
+your own timeline prompt. No worries
+your own timeline prompt. No worries
+ 
+your own timeline prompt. No worries
+about that. So, let me break it down.
+about that. So, let me break it down.
+ 
+about that. So, let me break it down.
+First, we start off with the style. So
+First, we start off with the style. So
+ 
+First, we start off with the style. So
+for this we're going with a gritty
+for this we're going with a gritty
+ 
+for this we're going with a gritty
+medieval cinematic realism style. Then
+medieval cinematic realism style. Then
+ 
+medieval cinematic realism style. Then
+we're talking about what we want to have
+we're talking about what we want to have
+ 
+we're talking about what we want to have
+happen with the camera. So we're
+happen with the camera. So we're
+ 
+happen with the camera. So we're
+starting off with a 50 mm to 85 mm prime
+starting off with a 50 mm to 85 mm prime
+ 
+starting off with a 50 mm to 85 mm prime
+lens and we want to have a slow dolly
+lens and we want to have a slow dolly
+ 
+lens and we want to have a slow dolly
+that is gently moving across the scene.
+that is gently moving across the scene.
+ 
+that is gently moving across the scene.
+Now for the hook we are talking about
+Now for the hook we are talking about
+ 
+Now for the hook we are talking about
+these time codes. So that's the first
+these time codes. So that's the first
+ 
+these time codes. So that's the first
+three seconds. We're starting with a
+three seconds. We're starting with a
+ 
+three seconds. We're starting with a
+tight profile close-up shot and then a
+tight profile close-up shot and then a
+ 
+tight profile close-up shot and then a
+slow dolly as the wind is hissing and we
+slow dolly as the wind is hissing and we
+ 
+slow dolly as the wind is hissing and we
+have it capturing the metal and chain
+have it capturing the metal and chain
+ 
+have it capturing the metal and chain
+mail shimmer. Then moving on to the next
+mail shimmer. Then moving on to the next
+ 
+mail shimmer. Then moving on to the next
+shot is context. The focus is going on
+shot is context. The focus is going on
+ 
+shot is context. The focus is going on
+the parchment map and the camera is
+the parchment map and the camera is
+ 
+the parchment map and the camera is
+tilting down as the fingers are like
+tilting down as the fingers are like
+ 
+tilting down as the fingers are like
+tracing the route. Now then we have the
+tracing the route. Now then we have the
+ 
+tracing the route. Now then we have the
+climax over the shoulder medium shot.
+climax over the shoulder medium shot.
+ 
+climax over the shoulder medium shot.
+We're we're essentially directing this
+We're we're essentially directing this
+ 
+We're we're essentially directing this
+like this is no more than just giving
+like this is no more than just giving
+ 
+like this is no more than just giving
+more context about exactly what you want
+more context about exactly what you want
+ 
+more context about exactly what you want
+to have happen. So, we're starting off
+to have happen. So, we're starting off
+ 
+to have happen. So, we're starting off
+with the climax and then we switch over
+with the climax and then we switch over
+ 
+with the climax and then we switch over
+to the resolution. Now, if you put this
+to the resolution. Now, if you put this
+ 
+to the resolution. Now, if you put this
+into action, then you get a shot like
+into action, then you get a shot like
+ 
+into action, then you get a shot like
+this. Okay, as you see, we start off
+this. Okay, as you see, we start off
+ 
+this. Okay, as you see, we start off
+with a normal shot. We just see the
+with a normal shot. We just see the
+ 
+with a normal shot. We just see the
+glistering. Then, we have him with his
+glistering. Then, we have him with his
+ 
+glistering. Then, we have him with his
+fingers going over the map, over the
+fingers going over the map, over the
+ 
+fingers going over the map, over the
+shoulder shot right here, and then he's
+shoulder shot right here, and then he's
+ 
+shoulder shot right here, and then he's
+marching into the empty battlefield.
+marching into the empty battlefield.
+ 
+marching into the empty battlefield.
+Honestly, quite insane just from an
+Honestly, quite insane just from an
+ 
+Honestly, quite insane just from an
+image input. Now, that is essentially
+image input. Now, that is essentially
+ 
+image input. Now, that is essentially
+what timeline prompting is. So you're
+what timeline prompting is. So you're
+ 
+what timeline prompting is. So you're
+giving it all the context of what's
+giving it all the context of what's
+ 
+giving it all the context of what's
+happening. JSON prompting similar format
+happening. JSON prompting similar format
+ 
+happening. JSON prompting similar format
+bit more complicated but this could also
+bit more complicated but this could also
+ 
+bit more complicated but this could also
+be done without using a chach. And
+be done without using a chach. And
+ 
+be done without using a chach. And
+speaking of chat I've made a timeline
+speaking of chat I've made a timeline
+ 
+speaking of chat I've made a timeline
+prompter for you. So you can just put in
+prompter for you. So you can just put in
+ 
+prompter for you. So you can just put in
+your image or put in your idea and then
+your image or put in your idea and then
+ 
+your image or put in your idea and then
+it will come up with the prompt because
+it will come up with the prompt because
+ 
+it will come up with the prompt because
+that's the hardest part right you want
+that's the hardest part right you want
+ 
+that's the hardest part right you want
+to describe what's happening on the
+to describe what's happening on the
+ 
+to describe what's happening on the
+scene. But as you saw from my prompt
+scene. But as you saw from my prompt
+ 
+scene. But as you saw from my prompt
+right here it's quite complicated. Like
+right here it's quite complicated. Like
+ 
+right here it's quite complicated. Like
+there are so many words I can't even
+there are so many words I can't even
+ 
+there are so many words I can't even
+pronounce. And with that like cha chip
+pronounce. And with that like cha chip
+ 
+pronounce. And with that like cha chip
+tea will help you with that as long as
+tea will help you with that as long as
+ 
+tea will help you with that as long as
+what you have in your mind comes out
+what you have in your mind comes out
+ 
+what you have in your mind comes out
+good in the prompt. If you have an idea
+good in the prompt. If you have an idea
+ 
+good in the prompt. If you have an idea
+what you want to create but you don't
+what you want to create but you don't
+ 
+what you want to create but you don't
+have an image then you can just simply
+have an image then you can just simply
+ 
+have an image then you can just simply
+switch over to the text to video
+switch over to the text to video
+ 
+switch over to the text to video
+segment. And in here what I did is I
+segment. And in here what I did is I
+ 
+segment. And in here what I did is I
+said I want to create a 12second video
+said I want to create a 12second video
+ 
+said I want to create a 12second video
+of a real life VHS recorder that is
+of a real life VHS recorder that is
+ 
+of a real life VHS recorder that is
+capturing a creepy scene of a guy
+capturing a creepy scene of a guy
+ 
+capturing a creepy scene of a guy
+walking outside and meeting an alien. As
+walking outside and meeting an alien. As
+ 
+walking outside and meeting an alien. As
+the tape glitches the alien is standing
+the tape glitches the alien is standing
+ 
+the tape glitches the alien is standing
+right in front of him. Kind of like a
+right in front of him. Kind of like a
+ 
+right in front of him. Kind of like a
+horror scene if you could say. So then
+horror scene if you could say. So then
+ 
+horror scene if you could say. So then
+it gave me this prompt. So for the
+it gave me this prompt. So for the
+ 
+it gave me this prompt. So for the
+style, we're do a horror style VHS
+style, we're do a horror style VHS
+ 
+style, we're do a horror style VHS
+realism, eerie and analog aesthetic,
+realism, eerie and analog aesthetic,
+ 
+realism, eerie and analog aesthetic,
+camera, static VHS recorder with
+camera, static VHS recorder with
+ 
+camera, static VHS recorder with
+handheld shakiness, zoom glitches,
+handheld shakiness, zoom glitches,
+ 
+handheld shakiness, zoom glitches,
+interlaced flicker, and some tracking
+interlaced flicker, and some tracking
+ 
+interlaced flicker, and some tracking
+errors. The scene, it describes the
+errors. The scene, it describes the
+ 
+errors. The scene, it describes the
+scene for me. Then we have what's
+scene for me. Then we have what's
+ 
+scene for me. Then we have what's
+happening in the beginning. We have a
+happening in the beginning. We have a
+ 
+happening in the beginning. We have a
+close-up of a VHS recorder. Let's say
+close-up of a VHS recorder. Let's say
+ 
+close-up of a VHS recorder. Let's say
+you don't like this. You can just change
+you don't like this. You can just change
+ 
+you don't like this. You can just change
+this manually. You can even ask the GPT
+this manually. You can even ask the GPT
+ 
+this manually. You can even ask the GPT
+to change this for you. Then we're
+to change this for you. Then we're
+ 
+to change this for you. Then we're
+switching over to a handheld view from
+switching over to a handheld view from
+ 
+switching over to a handheld view from
+behind and then we're switching over to
+behind and then we're switching over to
+ 
+behind and then we're switching over to
+a medium shot and then we're ending it
+a medium shot and then we're ending it
+ 
+a medium shot and then we're ending it
+off with the video is heavily distorting
+off with the video is heavily distorting
+ 
+off with the video is heavily distorting
+and all of the sudden there's an alien
+and all of the sudden there's an alien
+ 
+and all of the sudden there's an alien
+in front of the camera. So I put this
+in front of the camera. So I put this
+ 
+in front of the camera. So I put this
+into art list Sora 2 and with that I
+into art list Sora 2 and with that I
+ 
+into art list Sora 2 and with that I
+wanted to also test out what's the
+wanted to also test out what's the
+ 
+wanted to also test out what's the
+difference between Sora 2 and Sora 2
+difference between Sora 2 and Sora 2
+ 
+difference between Sora 2 and Sora 2
+Pro. So I generated two videos for you
+Pro. So I generated two videos for you
+ 
+Pro. So I generated two videos for you
+and this is the first one. This is the
+and this is the first one. This is the
+ 
+and this is the first one. This is the
+standard Sora 2. So let's take a look.
+
+ 
+
+I think it's quite good. If we take a
+I think it's quite good. If we take a
+ 
+I think it's quite good. If we take a
+look at the prompt again, then we can
+look at the prompt again, then we can
+ 
+look at the prompt again, then we can
+see we start off with a close-up of the
+see we start off with a close-up of the
+ 
+see we start off with a close-up of the
+VHS recorder. If we break it down, start
+VHS recorder. If we break it down, start
+ 
+VHS recorder. If we break it down, start
+off with a close-up. Then we have a
+off with a close-up. Then we have a
+ 
+off with a close-up. Then we have a
+handheld view from behind. That is this
+handheld view from behind. That is this
+ 
+handheld view from behind. That is this
+shot right here.
+shot right here.
+ 
+shot right here.
+And then we have a medium shot. So we
+And then we have a medium shot. So we
+ 
+And then we have a medium shot. So we
+have it right here switched to a medium
+have it right here switched to a medium
+ 
+have it right here switched to a medium
+shot. After that we have the videos
+shot. After that we have the videos
+ 
+shot. After that we have the videos
+distorting and the alien appears right
+distorting and the alien appears right
+ 
+distorting and the alien appears right
+in front of the man. I do find that
+in front of the man. I do find that
+ 
+in front of the man. I do find that
+right here like I didn't give an
+right here like I didn't give an
+ 
+right here like I didn't give an
+instructions to switch to this front
+instructions to switch to this front
+ 
+instructions to switch to this front
+view and then we have the alien like the
+view and then we have the alien like the
+ 
+view and then we have the alien like the
+alien looks a bit weird here but I do
+alien looks a bit weird here but I do
+ 
+alien looks a bit weird here but I do
+like the close-up in the end. So that is
+like the close-up in the end. So that is
+ 
+like the close-up in the end. So that is
+generated with Sora 2. A lot cheaper to
+generated with Sora 2. A lot cheaper to
+ 
+generated with Sora 2. A lot cheaper to
+use by the way. Now for Sor 2 Pro, which
+use by the way. Now for Sor 2 Pro, which
+ 
+use by the way. Now for Sor 2 Pro, which
+is honestly the most expensive tool on
+is honestly the most expensive tool on
+ 
+is honestly the most expensive tool on
+the market right now, but it is pretty
+the market right now, but it is pretty
+ 
+the market right now, but it is pretty
+good. We got this result. So, let's take
+good. We got this result. So, let's take
+ 
+good. We got this result. So, let's take
+a look.
+
+ 
+
+Hello.
+
+ 
+
+Oh god,
+Oh god,
+ 
+Oh god,
+I might be glitching a little bit too
+I might be glitching a little bit too
+ 
+I might be glitching a little bit too
+much. But honestly, if I were to
+much. But honestly, if I were to
+ 
+much. But honestly, if I were to
+generate this again and again, I will
+generate this again and again, I will
+ 
+generate this again and again, I will
+get completely different results. So,
+get completely different results. So,
+ 
+get completely different results. So,
+that is the thing with AI. You still
+that is the thing with AI. You still
+ 
+that is the thing with AI. You still
+have some control of the outcome, but
+have some control of the outcome, but
+ 
+have some control of the outcome, but
+you cannot replicate exactly what you
+you cannot replicate exactly what you
+ 
+you cannot replicate exactly what you
+want if you're doing these kind of like
+want if you're doing these kind of like
+ 
+want if you're doing these kind of like
+complex prompts. Now, let me give you
+complex prompts. Now, let me give you
+ 
+complex prompts. Now, let me give you
+another example, but this time we're
+another example, but this time we're
+ 
+another example, but this time we're
+using image to video. So, image to
+using image to video. So, image to
+ 
+using image to video. So, image to
+video, we're just switching over,
+video, we're just switching over,
+ 
+video, we're just switching over,
+switching over to Sora 2. So, now we
+switching over to Sora 2. So, now we
+ 
+switching over to Sora 2. So, now we
+just selected Sora to Pro. Then we have
+just selected Sora to Pro. Then we have
+ 
+just selected Sora to Pro. Then we have
+16x9, 12 seconds, and 1080p. And I have
+16x9, 12 seconds, and 1080p. And I have
+ 
+16x9, 12 seconds, and 1080p. And I have
+this image that I want to share. So,
+this image that I want to share. So,
+ 
+this image that I want to share. So,
+this is this crazy looking dragon that I
+this is this crazy looking dragon that I
+ 
+this is this crazy looking dragon that I
+made inside of Mid Journey. So, what I
+made inside of Mid Journey. So, what I
+ 
+made inside of Mid Journey. So, what I
+can do is I can upload this also to the
+can do is I can upload this also to the
+ 
+can do is I can upload this also to the
+Chetchup T. And now we just got to think
+Chetchup T. And now we just got to think
+ 
+Chetchup T. And now we just got to think
+of what we want to have happen. So, I'm
+of what we want to have happen. So, I'm
+ 
+of what we want to have happen. So, I'm
+just going to say the dragon roars takes
+just going to say the dragon roars takes
+ 
+just going to say the dragon roars takes
+off and starts flying in the sky. He
+off and starts flying in the sky. He
+ 
+off and starts flying in the sky. He
+gets shot down by a fireball and he
+gets shot down by a fireball and he
+ 
+gets shot down by a fireball and he
+drops to the ground. Let's hope, by the
+drops to the ground. Let's hope, by the
+ 
+drops to the ground. Let's hope, by the
+way, that Sora is not like censoring
+way, that Sora is not like censoring
+ 
+way, that Sora is not like censoring
+this because that's the only downside of
+this because that's the only downside of
+ 
+this because that's the only downside of
+Sora. Like, Sam, please, if you're
+Sora. Like, Sam, please, if you're
+ 
+Sora. Like, Sam, please, if you're
+watching this, please just just allow us
+watching this, please just just allow us
+ 
+watching this, please just just allow us
+to do a bit more uncensored stuff on
+to do a bit more uncensored stuff on
+ 
+to do a bit more uncensored stuff on
+Sora. So, now I'm just going to copy
+Sora. So, now I'm just going to copy
+ 
+Sora. So, now I'm just going to copy
+this prompt right here. And now we can
+this prompt right here. And now we can
+ 
+this prompt right here. And now we can
+just put this inside of our prompter.
+just put this inside of our prompter.
+ 
+just put this inside of our prompter.
+And then we click on animate. And let's
+And then we click on animate. And let's
+ 
+And then we click on animate. And let's
+see what we get.
+
+ 
+
+Now, if you want to try this out, I will
+Now, if you want to try this out, I will
+ 
+Now, if you want to try this out, I will
+leave a link to my custom GPT and art
+leave a link to my custom GPT and art
+ 
+leave a link to my custom GPT and art
+list in the description down below, so
+list in the description down below, so
+ 
+list in the description down below, so
+you can have some fun with this timeline
+you can have some fun with this timeline
+ 
+you can have some fun with this timeline
+prompting on Sora 2. If you want to
+prompting on Sora 2. If you want to
+ 
+prompting on Sora 2. If you want to
+learn how to make better and cool
+learn how to make better and cool
+ 
+learn how to make better and cool
+images, then check out the videos that's
+images, then check out the videos that's
+ 
+images, then check out the videos that's
+on the screen right now and I will teach
+on the screen right now and I will teach
+ 
+on the screen right now and I will teach
+you 10 different prompts of how you can
+you 10 different prompts of how you can
+ 
+you 10 different prompts of how you can
+use Nano Banana.

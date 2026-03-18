@@ -195,6 +195,8 @@ async def _handle_photo_with_intent(
     intent: str,
 ) -> None:
     """Photo + intent text → download photo, store as temp ref, enqueue generation."""
+    from bot.handlers.intake import parse_platform_targets
+
     tenant_id = membership["tenant_id"]
     message.photo[-1]
 
@@ -213,11 +215,14 @@ async def _handle_photo_with_intent(
         )
         return
 
+    # Detect platform mentions in caption (None = all connected)
+    platform_targets = parse_platform_targets(intent)
+
     # Create content request with photo reference
     request = await create_content_request(
         tenant_id=tenant_id,
         intent=intent,
-        platform_targets=["instagram", "facebook"],
+        platform_targets=platform_targets,
     )
     request_id = request["id"]
 
@@ -228,7 +233,7 @@ async def _handle_photo_with_intent(
             "request_id": request_id,
             "tenant_id": tenant_id,
             "intent": intent,
-            "platform_targets": ["instagram", "facebook"],
+            "platform_targets": platform_targets,
             "telegram_chat_id": message.chat.id,
             "new_photo_storage_paths": [storage_path],
         },
@@ -318,6 +323,8 @@ async def _handle_album_with_intent(
     intent: str,
 ) -> None:
     """Album + intent → download all photos, store, enqueue generation."""
+    from bot.handlers.intake import parse_platform_targets
+
     tenant_id = membership["tenant_id"]
     message: Message = photos[0]["message"]
 
@@ -342,10 +349,13 @@ async def _handle_album_with_intent(
         await message.answer("I couldn't save your photos. Please try again.")
         return
 
+    # Detect platform mentions in caption (None = all connected)
+    platform_targets = parse_platform_targets(intent)
+
     request = await create_content_request(
         tenant_id=tenant_id,
         intent=intent,
-        platform_targets=["instagram", "facebook"],
+        platform_targets=platform_targets,
     )
     request_id = request["id"]
 
@@ -356,7 +366,7 @@ async def _handle_album_with_intent(
             "request_id": request_id,
             "tenant_id": tenant_id,
             "intent": intent,
-            "platform_targets": ["instagram", "facebook"],
+            "platform_targets": platform_targets,
             "telegram_chat_id": message.chat.id,
             "new_photo_storage_paths": storage_paths,
         },

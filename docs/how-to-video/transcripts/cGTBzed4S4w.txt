@@ -1,0 +1,718 @@
+
+[Music]
+
+ 
+
+I've been writing prompts ever since
+I've been writing prompts ever since
+ 
+I've been writing prompts ever since
+text to video has been around back when
+text to video has been around back when
+ 
+text to video has been around back when
+it looked like this.
+it looked like this.
+ 
+it looked like this.
+So now videos look and sound more like
+So now videos look and sound more like
+ 
+So now videos look and sound more like
+this.
+this.
+ 
+this.
+>> M that is absolutely divine.
+
+ 
+
+>> The freshness of the basil really comes
+>> The freshness of the basil really comes
+ 
+>> The freshness of the basil really comes
+through.
+through.
+ 
+through.
+>> I've been using a technique I assumed
+>> I've been using a technique I assumed
+ 
+>> I've been using a technique I assumed
+everyone used, but based on a poll I
+everyone used, but based on a poll I
+ 
+everyone used, but based on a poll I
+did, what I'm about to show you is
+did, what I'm about to show you is
+ 
+did, what I'm about to show you is
+apparently a well-kept secret. So let's
+apparently a well-kept secret. So let's
+ 
+apparently a well-kept secret. So let's
+make it the worstkept secret. And the
+make it the worstkept secret. And the
+ 
+make it the worstkept secret. And the
+secret is this. I don't actually write
+secret is this. I don't actually write
+ 
+secret is this. I don't actually write
+my prompts. I train a GPT on the
+my prompts. I train a GPT on the
+ 
+my prompts. I train a GPT on the
+official documentation for the model I'm
+official documentation for the model I'm
+ 
+official documentation for the model I'm
+using. Then I give it my idea and let it
+using. Then I give it my idea and let it
+ 
+using. Then I give it my idea and let it
+format the perfect model optimized
+format the perfect model optimized
+ 
+format the perfect model optimized
+prompt for me. Now before you say this
+prompt for me. Now before you say this
+ 
+prompt for me. Now before you say this
+is cheating,
+is cheating,
+ 
+is cheating,
+>> this is cheating.
+>> this is cheating.
+ 
+>> this is cheating.
+>> The art is not your prompt. The art is
+>> The art is not your prompt. The art is
+ 
+>> The art is not your prompt. The art is
+your idea. Art is a perspective or an
+your idea. Art is a perspective or an
+ 
+your idea. Art is a perspective or an
+intention. Prompting is like a
+intention. Prompting is like a
+ 
+intention. Prompting is like a
+translator that turns your idea into
+translator that turns your idea into
+ 
+translator that turns your idea into
+words that the video model understands.
+words that the video model understands.
+ 
+words that the video model understands.
+So, we're going to look at why we should
+So, we're going to look at why we should
+ 
+So, we're going to look at why we should
+do this. But first, let's look at how do
+do this. But first, let's look at how do
+ 
+do this. But first, let's look at how do
+we do this.
+
+ 
+
+The first thing we need is documentation
+The first thing we need is documentation
+ 
+The first thing we need is documentation
+for the model we're using. So, here's
+for the model we're using. So, here's
+ 
+for the model we're using. So, here's
+where you find it in Hyo. Here's Cling.
+where you find it in Hyo. Here's Cling.
+ 
+where you find it in Hyo. Here's Cling.
+Here's Luma Dream Machine.
+Here's Luma Dream Machine.
+ 
+Here's Luma Dream Machine.
+Here's VU.
+
+ 
+
+Here's where you find it in Runway. You
+Here's where you find it in Runway. You
+ 
+Here's where you find it in Runway. You
+actually have to find it in multiple
+actually have to find it in multiple
+ 
+actually have to find it in multiple
+places in Runway.
+places in Runway.
+ 
+places in Runway.
+For VO, you've got to go to the DeepMind
+For VO, you've got to go to the DeepMind
+ 
+For VO, you've got to go to the DeepMind
+site and then click build with Gemini.
+site and then click build with Gemini.
+ 
+site and then click build with Gemini.
+Go to the documentation and then VO
+Go to the documentation and then VO
+ 
+Go to the documentation and then VO
+video generation and then prompt writing
+video generation and then prompt writing
+ 
+video generation and then prompt writing
+basics.
+basics.
+ 
+basics.
+And I usually just pretend like I'm
+And I usually just pretend like I'm
+ 
+And I usually just pretend like I'm
+going to print it and then I save it as
+going to print it and then I save it as
+ 
+going to print it and then I save it as
+a PDF. Uh, but you just need to save it.
+a PDF. Uh, but you just need to save it.
+ 
+a PDF. Uh, but you just need to save it.
+Once you have the documentation for the
+Once you have the documentation for the
+ 
+Once you have the documentation for the
+model, you can either upload it to a
+model, you can either upload it to a
+ 
+model, you can either upload it to a
+chat if you're on a free plan or create
+chat if you're on a free plan or create
+ 
+chat if you're on a free plan or create
+a custom GPT or GEM if you're on a paid
+a custom GPT or GEM if you're on a paid
+ 
+a custom GPT or GEM if you're on a paid
+plan for chat GPT or Gemini.
+
+ 
+
+In chat GPT, you go to GPTs and then
+In chat GPT, you go to GPTs and then
+ 
+In chat GPT, you go to GPTs and then
+create, then upload the file in the
+create, then upload the file in the
+ 
+create, then upload the file in the
+knowledge. Here's the knowledge and one
+knowledge. Here's the knowledge and one
+ 
+knowledge. Here's the knowledge and one
+that I've been using for a while, but I
+that I've been using for a while, but I
+ 
+that I've been using for a while, but I
+also have ones that are specific just to
+also have ones that are specific just to
+ 
+also have ones that are specific just to
+certain models. All right, in Gemini,
+certain models. All right, in Gemini,
+ 
+certain models. All right, in Gemini,
+make sure that this menu is out. Go to
+make sure that this menu is out. Go to
+ 
+make sure that this menu is out. Go to
+explore gems, then click new gem, and
+explore gems, then click new gem, and
+ 
+explore gems, then click new gem, and
+then add the knowledge.
+then add the knowledge.
+ 
+then add the knowledge.
+In the instructions section, I usually
+In the instructions section, I usually
+ 
+In the instructions section, I usually
+just put that this provides optimized
+just put that this provides optimized
+ 
+just put that this provides optimized
+prompts for the user's ideas based on
+prompts for the user's ideas based on
+ 
+prompts for the user's ideas based on
+the documentation. If you're on the free
+the documentation. If you're on the free
+ 
+the documentation. If you're on the free
+version of either of these tools, um,
+version of either of these tools, um,
+ 
+version of either of these tools, um,
+and this includes DeepSeek, you can
+and this includes DeepSeek, you can
+ 
+and this includes DeepSeek, you can
+upload the documentation to the chat
+upload the documentation to the chat
+ 
+upload the documentation to the chat
+window. Just remember that the longer
+window. Just remember that the longer
+ 
+window. Just remember that the longer
+you chat, the more it's going to start
+you chat, the more it's going to start
+ 
+you chat, the more it's going to start
+forgetting about the uploaded document.
+forgetting about the uploaded document.
+ 
+forgetting about the uploaded document.
+So, I'd recommend a new chat for every
+So, I'd recommend a new chat for every
+ 
+So, I'd recommend a new chat for every
+project. Looking at these two clips, I
+project. Looking at these two clips, I
+ 
+project. Looking at these two clips, I
+actually like my original one more
+actually like my original one more
+ 
+actually like my original one more
+because the other one is a little too
+because the other one is a little too
+ 
+because the other one is a little too
+dramatic and over the top. So, rather
+dramatic and over the top. So, rather
+ 
+dramatic and over the top. So, rather
+than trying to rewrite that prompt
+than trying to rewrite that prompt
+ 
+than trying to rewrite that prompt
+myself, I can just say it feels too
+myself, I can just say it feels too
+ 
+myself, I can just say it feels too
+over-the-top drama. I want something
+over-the-top drama. I want something
+ 
+over-the-top drama. I want something
+more cinematic and emotionally subdued.
+more cinematic and emotionally subdued.
+ 
+more cinematic and emotionally subdued.
+Now, just reading this sounds much
+Now, just reading this sounds much
+ 
+Now, just reading this sounds much
+closer to what I had in mind than
+closer to what I had in mind than
+ 
+closer to what I had in mind than
+reading this. And I like that it gives
+reading this. And I like that it gives
+ 
+reading this. And I like that it gives
+you some additional suggestions, too.
+
+ 
+
+Let's try to change what the camera is
+Let's try to change what the camera is
+ 
+Let's try to change what the camera is
+doing just by describing the shot as we
+doing just by describing the shot as we
+ 
+doing just by describing the shot as we
+picture in our mind. So, I want a
+picture in our mind. So, I want a
+ 
+picture in our mind. So, I want a
+closeup of her face and then I want to
+closeup of her face and then I want to
+ 
+closeup of her face and then I want to
+reveal what she's looking at.
+
+ 
+
+And if I don't like that camera
+And if I don't like that camera
+ 
+And if I don't like that camera
+direction, I can say, what if we start
+direction, I can say, what if we start
+ 
+direction, I can say, what if we start
+on her face and pull back and orbit
+on her face and pull back and orbit
+ 
+on her face and pull back and orbit
+around her to see her view?
+
+ 
+
+Let's go back to the fog shrouded pier
+Let's go back to the fog shrouded pier
+ 
+Let's go back to the fog shrouded pier
+prompt, but let's give her a Victorian
+prompt, but let's give her a Victorian
+ 
+prompt, but let's give her a Victorian
+era attire.
+
+ 
+
+For this one, I like it, but it's not
+For this one, I like it, but it's not
+ 
+For this one, I like it, but it's not
+exactly what I'm looking for. I want her
+exactly what I'm looking for. I want her
+ 
+exactly what I'm looking for. I want her
+to look at the ship at the end. I want
+to look at the ship at the end. I want
+ 
+to look at the ship at the end. I want
+it to be a little bit more cinematic.
+it to be a little bit more cinematic.
+ 
+it to be a little bit more cinematic.
+So, I can just go back to the prompt and
+So, I can just go back to the prompt and
+ 
+So, I can just go back to the prompt and
+add that in there.
+
+ 
+
+[Music]
+
+ 
+
+So, now we're going to ask for a lone
+So, now we're going to ask for a lone
+ 
+So, now we're going to ask for a lone
+sailor on the ship looking back at Short
+sailor on the ship looking back at Short
+ 
+sailor on the ship looking back at Short
+where the woman is barely visible.
+
+ 
+
+[Music]
+
+ 
+
+[Music]
+
+ 
+
+I'll show you what I like about the
+I'll show you what I like about the
+ 
+I'll show you what I like about the
+prompt sidekick that I was showing you
+prompt sidekick that I was showing you
+ 
+prompt sidekick that I was showing you
+earlier. So, some of my placeholders are
+earlier. So, some of my placeholders are
+ 
+earlier. So, some of my placeholders are
+like outline the best practices. So I
+like outline the best practices. So I
+ 
+like outline the best practices. So I
+can just click that and it will look at
+can just click that and it will look at
+ 
+can just click that and it will look at
+all of the knowledge I've uploaded and
+all of the knowledge I've uploaded and
+ 
+all of the knowledge I've uploaded and
+it gives you a good list of best
+it gives you a good list of best
+ 
+it gives you a good list of best
+practices. So if I have an idea for a
+practices. So if I have an idea for a
+ 
+practices. So if I have an idea for a
+movie, I can give it this idea and then
+movie, I can give it this idea and then
+ 
+movie, I can give it this idea and then
+say I want model optimized prompts for
+say I want model optimized prompts for
+ 
+say I want model optimized prompts for
+whatever models I want to use. In this
+whatever models I want to use. In this
+ 
+whatever models I want to use. In this
+case, runway, hyo, vu, vo, and cling.
+case, runway, hyo, vu, vo, and cling.
+ 
+case, runway, hyo, vu, vo, and cling.
+And see which model gets closest to what
+And see which model gets closest to what
+ 
+And see which model gets closest to what
+I had in mind. All right, so let's see
+I had in mind. All right, so let's see
+ 
+I had in mind. All right, so let's see
+how this goes.
+how this goes.
+ 
+how this goes.
+[Music]
+
+ 
+
+That was the dumbest movie I ever saw.
+That was the dumbest movie I ever saw.
+ 
+That was the dumbest movie I ever saw.
+>> I liked it.
+>> I liked it.
+ 
+>> I liked it.
+>> You liked it.
+>> You liked it.
+ 
+>> You liked it.
+>> What I like about this is I'm just
+>> What I like about this is I'm just
+ 
+>> What I like about this is I'm just
+coming up with my ideas and I get to
+coming up with my ideas and I get to
+ 
+coming up with my ideas and I get to
+focus on the story I want to tell or the
+focus on the story I want to tell or the
+ 
+focus on the story I want to tell or the
+video I want to make. The big reason I
+video I want to make. The big reason I
+ 
+video I want to make. The big reason I
+like this can be summarized in that meme
+like this can be summarized in that meme
+ 
+like this can be summarized in that meme
+about I don't want AI to make movies. I
+about I don't want AI to make movies. I
+ 
+about I don't want AI to make movies. I
+want AI to wash the dishes so I can make
+want AI to wash the dishes so I can make
+ 
+want AI to wash the dishes so I can make
+movies. Like I said earlier, prompting
+movies. Like I said earlier, prompting
+ 
+movies. Like I said earlier, prompting
+is a translator between your human idea
+is a translator between your human idea
+ 
+is a translator between your human idea
+and the structured language of an LLM.
+and the structured language of an LLM.
+ 
+and the structured language of an LLM.
+If I write a prompt manually, I'm
+If I write a prompt manually, I'm
+ 
+If I write a prompt manually, I'm
+putting a lot of creative energy into
+putting a lot of creative energy into
+ 
+putting a lot of creative energy into
+translating for my translator. I just
+translating for my translator. I just
+ 
+translating for my translator. I just
+want to be an idea machine. And this
+want to be an idea machine. And this
+ 
+want to be an idea machine. And this
+way, when I chat about my ideas, I'm
+way, when I chat about my ideas, I'm
+ 
+way, when I chat about my ideas, I'm
+focused on my creative vision. Not just
+focused on my creative vision. Not just
+ 
+focused on my creative vision. Not just
+what the picture should look like, but
+what the picture should look like, but
+ 
+what the picture should look like, but
+how the person watching it should feel.
+how the person watching it should feel.
+ 
+how the person watching it should feel.
+That conversation forces me to clarify
+That conversation forces me to clarify
+ 
+That conversation forces me to clarify
+my thinking. It's what making art or
+my thinking. It's what making art or
+ 
+my thinking. It's what making art or
+telling stories is all about. And
+telling stories is all about. And
+ 
+telling stories is all about. And
+something I've been saying since one of
+something I've been saying since one of
+ 
+something I've been saying since one of
+my very first videos on this channel,
+my very first videos on this channel,
+ 
+my very first videos on this channel,
+generate and iterate.
+generate and iterate.
+ 
+generate and iterate.
+When you get a bad result, tell your GPT
+When you get a bad result, tell your GPT
+ 
+When you get a bad result, tell your GPT
+what went wrong or even attach a
+what went wrong or even attach a
+ 
+what went wrong or even attach a
+screenshot and give it your perspective
+screenshot and give it your perspective
+ 
+screenshot and give it your perspective
+on what went wrong and what you want to
+on what went wrong and what you want to
+ 
+on what went wrong and what you want to
+see done to make it closer to what your
+see done to make it closer to what your
+ 
+see done to make it closer to what your
+vision is.
+vision is.
+ 
+vision is.
+Remember
+Remember
+ 
+Remember
+like two years ago when people were
+like two years ago when people were
+ 
+like two years ago when people were
+saying the highest paid new job is
+saying the highest paid new job is
+ 
+saying the highest paid new job is
+prompt engineer. I think that convinced
+prompt engineer. I think that convinced
+ 
+prompt engineer. I think that convinced
+a lot of people to think that manually
+a lot of people to think that manually
+ 
+a lot of people to think that manually
+writing prompts was a valuable skill.
+writing prompts was a valuable skill.
+ 
+writing prompts was a valuable skill.
+But the real focus should be on how to
+But the real focus should be on how to
+ 
+But the real focus should be on how to
+express your idea. How can you
+express your idea. How can you
+ 
+express your idea. How can you
+communicate what's in your imagination?
+communicate what's in your imagination?
+ 
+communicate what's in your imagination?
+Being able to articulate what you want
+Being able to articulate what you want
+ 
+Being able to articulate what you want
+to express is the skill you need for the
+to express is the skill you need for the
+ 
+to express is the skill you need for the
+future. So focus on your own creative
+future. So focus on your own creative
+ 
+future. So focus on your own creative
+expression and let AI translate for
+expression and let AI translate for
+ 
+expression and let AI translate for
+another AI. Another way to say that is
+another AI. Another way to say that is
+ 
+another AI. Another way to say that is
+if a computer is going to read it, I
+if a computer is going to read it, I
+ 
+if a computer is going to read it, I
+trust a computer to write it. But if a
+trust a computer to write it. But if a
+ 
+trust a computer to write it. But if a
+human is going to read it, I need a
+human is going to read it, I need a
+ 
+human is going to read it, I need a
+human to write it. You've got a story to
+human to write it. You've got a story to
+ 
+human to write it. You've got a story to
+tell. Leave the prompting to the
+tell. Leave the prompting to the
+ 
+tell. Leave the prompting to the
+machines. My name is Mike. Thanks for
+machines. My name is Mike. Thanks for
+ 
+machines. My name is Mike. Thanks for
+watching this episode of AI Video
+watching this episode of AI Video
+ 
+watching this episode of AI Video
+School.
+School.
+ 
+School.
+>> This is cheating.
+
+ 
+
+cheating.

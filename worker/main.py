@@ -133,6 +133,15 @@ class Worker:
                         "failed_at": "now()",
                         "error_message": error,
                     }).eq("id", queue_id).execute()
+                    logger.critical(
+                        "DEAD LETTER: Job exceeded max retries",
+                        extra={
+                            "queue_id": queue_id,
+                            "retry_count": job["retry_count"],
+                            "max_retries": job["max_retries"],
+                            "error": error[:200],
+                        },
+                    )
         except Exception:
             logger.exception("Failed to mark job failed", extra={"queue_id": queue_id})
 
@@ -195,6 +204,10 @@ async def main() -> None:
     from worker.jobs.post_content import handle_post_content
     from worker.jobs.regen_image import handle_regen_image_job
     from worker.jobs.generate_video import handle_generate_video
+    from worker.jobs.autopilot_dispatch import handle_autopilot_dispatch
+    from worker.jobs.autopilot_generate import handle_autopilot_generate
+    from worker.jobs.autopilot_timeout import handle_autopilot_timeout
+    from worker.jobs.autopilot_digest import handle_autopilot_digest
 
     register_handler("generate_content", handle_generate_content)
     register_handler("generate_caption", handle_generate_caption)
@@ -202,6 +215,10 @@ async def main() -> None:
     register_handler("post_content", handle_post_content)
     register_handler("regen_image", handle_regen_image_job)
     register_handler("generate_video", handle_generate_video)
+    register_handler("autopilot_dispatch", handle_autopilot_dispatch)
+    register_handler("autopilot_generate", handle_autopilot_generate)
+    register_handler("autopilot_timeout", handle_autopilot_timeout)
+    register_handler("autopilot_digest", handle_autopilot_digest)
     # generate_long_video handler removed — long video is deprecated
 
     worker = Worker()

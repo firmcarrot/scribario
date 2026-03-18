@@ -1,0 +1,2035 @@
+1
+00:00:00,400 --> 00:00:03,429
+
+When people watch my documentary, they
+
+2
+00:00:03,429 --> 00:00:03,439
+When people watch my documentary, they
+ 
+
+3
+00:00:03,439 --> 00:00:05,829
+When people watch my documentary, they
+all want to know, "How did you make him
+
+4
+00:00:05,829 --> 00:00:05,839
+all want to know, "How did you make him
+ 
+
+5
+00:00:05,839 --> 00:00:07,749
+all want to know, "How did you make him
+so consistent?"
+
+6
+00:00:07,749 --> 00:00:07,759
+so consistent?"
+ 
+
+7
+00:00:07,759 --> 00:00:09,830
+so consistent?"
+I'm here with the star of my V3
+
+8
+00:00:09,830 --> 00:00:09,840
+I'm here with the star of my V3
+ 
+
+9
+00:00:09,840 --> 00:00:12,070
+I'm here with the star of my V3
+documentary to show you how I generated
+
+10
+00:00:12,070 --> 00:00:12,080
+documentary to show you how I generated
+ 
+
+11
+00:00:12,080 --> 00:00:14,950
+documentary to show you how I generated
+consistent characters in V3.
+
+12
+00:00:14,950 --> 00:00:14,960
+consistent characters in V3.
+ 
+
+13
+00:00:14,960 --> 00:00:16,230
+consistent characters in V3.
+They're going to want to know how you
+
+14
+00:00:16,230 --> 00:00:16,240
+They're going to want to know how you
+ 
+
+15
+00:00:16,240 --> 00:00:19,109
+They're going to want to know how you
+did this part, too. Yeah, you're right.
+
+16
+00:00:19,109 --> 00:00:19,119
+did this part, too. Yeah, you're right.
+ 
+
+17
+00:00:19,119 --> 00:00:22,310
+did this part, too. Yeah, you're right.
+All right. This intro I did in Runway.
+
+18
+00:00:22,310 --> 00:00:22,320
+All right. This intro I did in Runway.
+ 
+
+19
+00:00:22,320 --> 00:00:24,630
+All right. This intro I did in Runway.
+V3 currently doesn't support character
+
+20
+00:00:24,630 --> 00:00:24,640
+V3 currently doesn't support character
+ 
+
+21
+00:00:24,640 --> 00:00:26,790
+V3 currently doesn't support character
+references, which is the easiest way to
+
+22
+00:00:26,790 --> 00:00:26,800
+references, which is the easiest way to
+ 
+
+23
+00:00:26,800 --> 00:00:28,470
+references, which is the easiest way to
+create consistent characters. So, I'm
+
+24
+00:00:28,470 --> 00:00:28,480
+create consistent characters. So, I'm
+ 
+
+25
+00:00:28,480 --> 00:00:29,669
+create consistent characters. So, I'm
+going to show you what I did. And the
+
+26
+00:00:29,669 --> 00:00:29,679
+going to show you what I did. And the
+ 
+
+27
+00:00:29,679 --> 00:00:31,990
+going to show you what I did. And the
+foundation came from my previous video
+
+28
+00:00:31,990 --> 00:00:32,000
+foundation came from my previous video
+ 
+
+29
+00:00:32,000 --> 00:00:34,310
+foundation came from my previous video
+called Wonderful Dream, which I created
+
+30
+00:00:34,310 --> 00:00:34,320
+called Wonderful Dream, which I created
+ 
+
+31
+00:00:34,320 --> 00:00:36,630
+called Wonderful Dream, which I created
+in Whisk. And the character from that
+
+32
+00:00:36,630 --> 00:00:36,640
+in Whisk. And the character from that
+ 
+
+33
+00:00:36,640 --> 00:00:38,790
+in Whisk. And the character from that
+makes a cameo in this movie. All right.
+
+34
+00:00:38,790 --> 00:00:38,800
+makes a cameo in this movie. All right.
+ 
+
+35
+00:00:38,800 --> 00:00:40,869
+makes a cameo in this movie. All right.
+So, this is Whisk, and it's a tool from
+
+36
+00:00:40,869 --> 00:00:40,879
+So, this is Whisk, and it's a tool from
+ 
+
+37
+00:00:40,879 --> 00:00:42,630
+So, this is Whisk, and it's a tool from
+Google that lets you generate images,
+
+38
+00:00:42,630 --> 00:00:42,640
+Google that lets you generate images,
+ 
+
+39
+00:00:42,640 --> 00:00:44,549
+Google that lets you generate images,
+and then you can generate videos from
+
+40
+00:00:44,549 --> 00:00:44,559
+and then you can generate videos from
+ 
+
+41
+00:00:44,559 --> 00:00:47,590
+and then you can generate videos from
+those images. Um, this is what I made
+
+42
+00:00:47,590 --> 00:00:47,600
+those images. Um, this is what I made
+ 
+
+43
+00:00:47,600 --> 00:00:49,910
+those images. Um, this is what I made
+Wonderful Dream in. So, this was the
+
+44
+00:00:49,910 --> 00:00:49,920
+Wonderful Dream in. So, this was the
+ 
+
+45
+00:00:49,920 --> 00:00:53,510
+Wonderful Dream in. So, this was the
+final prompt that I used um to create
+
+46
+00:00:53,510 --> 00:00:53,520
+final prompt that I used um to create
+ 
+
+47
+00:00:53,520 --> 00:00:55,590
+final prompt that I used um to create
+one image of the character. So, I didn't
+
+48
+00:00:55,590 --> 00:00:55,600
+one image of the character. So, I didn't
+ 
+
+49
+00:00:55,600 --> 00:00:57,670
+one image of the character. So, I didn't
+use it as a reference image, but I had
+
+50
+00:00:57,670 --> 00:00:57,680
+use it as a reference image, but I had
+ 
+
+51
+00:00:57,680 --> 00:00:59,990
+use it as a reference image, but I had
+to create an image of that character.
+
+52
+00:00:59,990 --> 00:01:00,000
+to create an image of that character.
+ 
+
+53
+00:01:00,000 --> 00:01:02,470
+to create an image of that character.
+This is what I used. So, if we were
+
+54
+00:01:02,470 --> 00:01:02,480
+This is what I used. So, if we were
+ 
+
+55
+00:01:02,480 --> 00:01:04,789
+This is what I used. So, if we were
+using character reference images, we
+
+56
+00:01:04,789 --> 00:01:04,799
+using character reference images, we
+ 
+
+57
+00:01:04,799 --> 00:01:07,350
+using character reference images, we
+would expect this image to be what the
+
+58
+00:01:07,350 --> 00:01:07,360
+would expect this image to be what the
+ 
+
+59
+00:01:07,360 --> 00:01:09,670
+would expect this image to be what the
+character in the video looks like. But
+
+60
+00:01:09,670 --> 00:01:09,680
+character in the video looks like. But
+ 
+
+61
+00:01:09,680 --> 00:01:11,910
+character in the video looks like. But
+all we're doing really is taking these
+
+62
+00:01:11,910 --> 00:01:11,920
+all we're doing really is taking these
+ 
+
+63
+00:01:11,920 --> 00:01:13,750
+all we're doing really is taking these
+characters and then we're going to go
+
+64
+00:01:13,750 --> 00:01:13,760
+characters and then we're going to go
+ 
+
+65
+00:01:13,760 --> 00:01:16,950
+characters and then we're going to go
+over here to the subject and drag it
+
+66
+00:01:16,950 --> 00:01:16,960
+over here to the subject and drag it
+ 
+
+67
+00:01:16,960 --> 00:01:19,270
+over here to the subject and drag it
+over here. And why are we doing that?
+
+68
+00:01:19,270 --> 00:01:19,280
+over here. And why are we doing that?
+ 
+
+69
+00:01:19,280 --> 00:01:22,310
+over here. And why are we doing that?
+So, it's going to analyze this image and
+
+70
+00:01:22,310 --> 00:01:22,320
+So, it's going to analyze this image and
+ 
+
+71
+00:01:22,320 --> 00:01:24,710
+So, it's going to analyze this image and
+it's going to give us a much more robust
+
+72
+00:01:24,710 --> 00:01:24,720
+it's going to give us a much more robust
+ 
+
+73
+00:01:24,720 --> 00:01:27,910
+it's going to give us a much more robust
+prompt. So, this is what it sees. So,
+
+74
+00:01:27,910 --> 00:01:27,920
+prompt. So, this is what it sees. So,
+ 
+
+75
+00:01:27,920 --> 00:01:31,270
+prompt. So, this is what it sees. So,
+this is kind of how the Google AI
+
+76
+00:01:31,270 --> 00:01:31,280
+this is kind of how the Google AI
+ 
+
+77
+00:01:31,280 --> 00:01:34,310
+this is kind of how the Google AI
+universe sees this image. So, this
+
+78
+00:01:34,310 --> 00:01:34,320
+universe sees this image. So, this
+ 
+
+79
+00:01:34,320 --> 00:01:36,870
+universe sees this image. So, this
+became the basis for my prompt. I took
+
+80
+00:01:36,870 --> 00:01:36,880
+became the basis for my prompt. I took
+ 
+
+81
+00:01:36,880 --> 00:01:39,510
+became the basis for my prompt. I took
+all of it over to Gemini and I attached
+
+82
+00:01:39,510 --> 00:01:39,520
+all of it over to Gemini and I attached
+ 
+
+83
+00:01:39,520 --> 00:01:41,510
+all of it over to Gemini and I attached
+this photo and I said, "Here's a prompt
+
+84
+00:01:41,510 --> 00:01:41,520
+this photo and I said, "Here's a prompt
+ 
+
+85
+00:01:41,520 --> 00:01:43,590
+this photo and I said, "Here's a prompt
+I wrote in Whisk." and I gave it my
+
+86
+00:01:43,590 --> 00:01:43,600
+I wrote in Whisk." and I gave it my
+ 
+
+87
+00:01:43,600 --> 00:01:46,230
+I wrote in Whisk." and I gave it my
+prompt. And then it said, "Here is the
+
+88
+00:01:46,230 --> 00:01:46,240
+prompt. And then it said, "Here is the
+ 
+
+89
+00:01:46,240 --> 00:01:48,389
+prompt. And then it said, "Here is the
+image description I received for this
+
+90
+00:01:48,389 --> 00:01:48,399
+image description I received for this
+ 
+
+91
+00:01:48,399 --> 00:01:50,870
+image description I received for this
+image." And I put that image description
+
+92
+00:01:50,870 --> 00:01:50,880
+image." And I put that image description
+ 
+
+93
+00:01:50,880 --> 00:01:54,149
+image." And I put that image description
+in there. And then I said, "I would like
+
+94
+00:01:54,149 --> 00:01:54,159
+in there. And then I said, "I would like
+ 
+
+95
+00:01:54,159 --> 00:01:56,630
+in there. And then I said, "I would like
+a detailed VO3 description of just the
+
+96
+00:01:56,630 --> 00:01:56,640
+a detailed VO3 description of just the
+ 
+
+97
+00:01:56,640 --> 00:01:58,230
+a detailed VO3 description of just the
+man that I can use in a template for
+
+98
+00:01:58,230 --> 00:01:58,240
+man that I can use in a template for
+ 
+
+99
+00:01:58,240 --> 00:01:59,910
+man that I can use in a template for
+building prompts where I try to place
+
+100
+00:01:59,910 --> 00:01:59,920
+building prompts where I try to place
+ 
+
+101
+00:01:59,920 --> 00:02:02,149
+building prompts where I try to place
+him in a consistent looking way." So
+
+102
+00:02:02,149 --> 00:02:02,159
+him in a consistent looking way." So
+ 
+
+103
+00:02:02,159 --> 00:02:03,910
+him in a consistent looking way." So
+don't worry about the wardrobe. Just
+
+104
+00:02:03,910 --> 00:02:03,920
+don't worry about the wardrobe. Just
+ 
+
+105
+00:02:03,920 --> 00:02:06,870
+don't worry about the wardrobe. Just
+focus on his face. Just to recap, here's
+
+106
+00:02:06,870 --> 00:02:06,880
+focus on his face. Just to recap, here's
+ 
+
+107
+00:02:06,880 --> 00:02:09,589
+focus on his face. Just to recap, here's
+the image. Here's the prompt I gave.
+
+108
+00:02:09,589 --> 00:02:09,599
+the image. Here's the prompt I gave.
+ 
+
+109
+00:02:09,599 --> 00:02:13,030
+the image. Here's the prompt I gave.
+Here's the image description from Whisk
+
+110
+00:02:13,030 --> 00:02:13,040
+Here's the image description from Whisk
+ 
+
+111
+00:02:13,040 --> 00:02:15,270
+Here's the image description from Whisk
+and give me something to use
+
+112
+00:02:15,270 --> 00:02:15,280
+and give me something to use
+ 
+
+113
+00:02:15,280 --> 00:02:17,430
+and give me something to use
+consistently. So, I just asked, "What do
+
+114
+00:02:17,430 --> 00:02:17,440
+consistently. So, I just asked, "What do
+ 
+
+115
+00:02:17,440 --> 00:02:19,110
+consistently. So, I just asked, "What do
+you think his name would be and how
+
+116
+00:02:19,110 --> 00:02:19,120
+you think his name would be and how
+ 
+
+117
+00:02:19,120 --> 00:02:20,630
+you think his name would be and how
+would you write a voice prompt for him
+
+118
+00:02:20,630 --> 00:02:20,640
+would you write a voice prompt for him
+ 
+
+119
+00:02:20,640 --> 00:02:22,790
+would you write a voice prompt for him
+in VO3?" Cuz I want to have a consistent
+
+120
+00:02:22,790 --> 00:02:22,800
+in VO3?" Cuz I want to have a consistent
+ 
+
+121
+00:02:22,800 --> 00:02:24,949
+in VO3?" Cuz I want to have a consistent
+voice all the time. It thinks about it.
+
+122
+00:02:24,949 --> 00:02:24,959
+voice all the time. It thinks about it.
+ 
+
+123
+00:02:24,959 --> 00:02:26,550
+voice all the time. It thinks about it.
+It says Aram. And I was like, "Okay,
+
+124
+00:02:26,550 --> 00:02:26,560
+It says Aram. And I was like, "Okay,
+ 
+
+125
+00:02:26,560 --> 00:02:28,630
+It says Aram. And I was like, "Okay,
+cool." Like, I'm not going to I'm not
+
+126
+00:02:28,630 --> 00:02:28,640
+cool." Like, I'm not going to I'm not
+ 
+
+127
+00:02:28,640 --> 00:02:30,550
+cool." Like, I'm not going to I'm not
+fuss with you. Let's call him Aram. And
+
+128
+00:02:30,550 --> 00:02:30,560
+fuss with you. Let's call him Aram. And
+ 
+
+129
+00:02:30,560 --> 00:02:33,030
+fuss with you. Let's call him Aram. And
+then it gave me some options for his
+
+130
+00:02:33,030 --> 00:02:33,040
+then it gave me some options for his
+ 
+
+131
+00:02:33,040 --> 00:02:35,190
+then it gave me some options for his
+voice. Here's an example of the full
+
+132
+00:02:35,190 --> 00:02:35,200
+voice. Here's an example of the full
+ 
+
+133
+00:02:35,200 --> 00:02:37,190
+voice. Here's an example of the full
+prompt. So it gives you the physical
+
+134
+00:02:37,190 --> 00:02:37,200
+prompt. So it gives you the physical
+ 
+
+135
+00:02:37,200 --> 00:02:39,990
+prompt. So it gives you the physical
+description of him. And then when he
+
+136
+00:02:39,990 --> 00:02:40,000
+description of him. And then when he
+ 
+
+137
+00:02:40,000 --> 00:02:43,589
+description of him. And then when he
+speaks, this is um how he talks. And I
+
+138
+00:02:43,589 --> 00:02:43,599
+speaks, this is um how he talks. And I
+ 
+
+139
+00:02:43,599 --> 00:02:45,270
+speaks, this is um how he talks. And I
+wanted a certain style. So I said,
+
+140
+00:02:45,270 --> 00:02:45,280
+wanted a certain style. So I said,
+ 
+
+141
+00:02:45,280 --> 00:02:48,070
+wanted a certain style. So I said,
+"Please provide a core prompt for Aram,
+
+142
+00:02:48,070 --> 00:02:48,080
+"Please provide a core prompt for Aram,
+ 
+
+143
+00:02:48,080 --> 00:02:50,229
+"Please provide a core prompt for Aram,
+core prompt for Aram's voice, and a core
+
+144
+00:02:50,229 --> 00:02:50,239
+core prompt for Aram's voice, and a core
+ 
+
+145
+00:02:50,239 --> 00:02:52,229
+core prompt for Aram's voice, and a core
+prompt for a cinematic style shot in
+
+146
+00:02:52,229 --> 00:02:52,239
+prompt for a cinematic style shot in
+ 
+
+147
+00:02:52,239 --> 00:02:55,030
+prompt for a cinematic style shot in
+35mm." This is for the visual or
+
+148
+00:02:55,030 --> 00:02:55,040
+35mm." This is for the visual or
+ 
+
+149
+00:02:55,040 --> 00:02:57,190
+35mm." This is for the visual or
+physical description of him. This is
+
+150
+00:02:57,190 --> 00:02:57,200
+physical description of him. This is
+ 
+
+151
+00:02:57,200 --> 00:02:58,790
+physical description of him. This is
+what his voice would sound like.
+
+152
+00:02:58,790 --> 00:02:58,800
+what his voice would sound like.
+ 
+
+153
+00:02:58,800 --> 00:03:01,350
+what his voice would sound like.
+Slightly raspy and grally, tinged with
+
+154
+00:03:01,350 --> 00:03:01,360
+Slightly raspy and grally, tinged with
+ 
+
+155
+00:03:01,360 --> 00:03:03,270
+Slightly raspy and grally, tinged with
+thoughtful curiosity. All right. Now, do
+
+156
+00:03:03,270 --> 00:03:03,280
+thoughtful curiosity. All right. Now, do
+ 
+
+157
+00:03:03,280 --> 00:03:05,589
+thoughtful curiosity. All right. Now, do
+a prompt in a high-end documentary style
+
+158
+00:03:05,589 --> 00:03:05,599
+a prompt in a high-end documentary style
+ 
+
+159
+00:03:05,599 --> 00:03:07,190
+a prompt in a high-end documentary style
+where he says, "I used to wake up and
+
+160
+00:03:07,190 --> 00:03:07,200
+where he says, "I used to wake up and
+ 
+
+161
+00:03:07,200 --> 00:03:08,790
+where he says, "I used to wake up and
+worry about all of the things I needed
+
+162
+00:03:08,790 --> 00:03:08,800
+worry about all of the things I needed
+ 
+
+163
+00:03:08,800 --> 00:03:13,270
+worry about all of the things I needed
+to do that day." And it gave me this.
+
+164
+00:03:13,270 --> 00:03:13,280
+to do that day." And it gave me this.
+ 
+
+165
+00:03:13,280 --> 00:03:16,869
+to do that day." And it gave me this.
+I used to wake up and worry about all of
+
+166
+00:03:16,869 --> 00:03:16,879
+I used to wake up and worry about all of
+ 
+
+167
+00:03:16,879 --> 00:03:19,830
+I used to wake up and worry about all of
+the things I needed to do that day. So,
+
+168
+00:03:19,830 --> 00:03:19,840
+the things I needed to do that day. So,
+ 
+
+169
+00:03:19,840 --> 00:03:21,110
+the things I needed to do that day. So,
+that's kind of it for consistent
+
+170
+00:03:21,110 --> 00:03:21,120
+that's kind of it for consistent
+ 
+
+171
+00:03:21,120 --> 00:03:23,830
+that's kind of it for consistent
+characters. Build a very detailed
+
+172
+00:03:23,830 --> 00:03:23,840
+characters. Build a very detailed
+ 
+
+173
+00:03:23,840 --> 00:03:26,149
+characters. Build a very detailed
+description of the character and use
+
+174
+00:03:26,149 --> 00:03:26,159
+description of the character and use
+ 
+
+175
+00:03:26,159 --> 00:03:28,710
+description of the character and use
+that in all of the prompts. Okay. So,
+
+176
+00:03:28,710 --> 00:03:28,720
+that in all of the prompts. Okay. So,
+ 
+
+177
+00:03:28,720 --> 00:03:31,190
+that in all of the prompts. Okay. So,
+the trick is using the same detailed
+
+178
+00:03:31,190 --> 00:03:31,200
+the trick is using the same detailed
+ 
+
+179
+00:03:31,200 --> 00:03:33,190
+the trick is using the same detailed
+character description in the prompt, but
+
+180
+00:03:33,190 --> 00:03:33,200
+character description in the prompt, but
+ 
+
+181
+00:03:33,200 --> 00:03:36,229
+character description in the prompt, but
+how do you get rid of these subtitles?
+
+182
+00:03:36,229 --> 00:03:36,239
+how do you get rid of these subtitles?
+ 
+
+183
+00:03:36,239 --> 00:03:37,750
+how do you get rid of these subtitles?
+The other big thing that people have a
+
+184
+00:03:37,750 --> 00:03:37,760
+The other big thing that people have a
+ 
+
+185
+00:03:37,760 --> 00:03:39,750
+The other big thing that people have a
+problem with are the captions. So, I
+
+186
+00:03:39,750 --> 00:03:39,760
+problem with are the captions. So, I
+ 
+
+187
+00:03:39,760 --> 00:03:41,830
+problem with are the captions. So, I
+heard on Discord that if you use Gemini
+
+188
+00:03:41,830 --> 00:03:41,840
+heard on Discord that if you use Gemini
+ 
+
+189
+00:03:41,840 --> 00:03:43,589
+heard on Discord that if you use Gemini
+to generate the videos, you don't see
+
+190
+00:03:43,589 --> 00:03:43,599
+to generate the videos, you don't see
+ 
+
+191
+00:03:43,599 --> 00:03:45,350
+to generate the videos, you don't see
+the captions. So, I tried that in the
+
+192
+00:03:45,350 --> 00:03:45,360
+the captions. So, I tried that in the
+ 
+
+193
+00:03:45,360 --> 00:03:46,869
+the captions. So, I tried that in the
+first one. There were no captions and I
+
+194
+00:03:46,869 --> 00:03:46,879
+first one. There were no captions and I
+ 
+
+195
+00:03:46,879 --> 00:03:48,789
+first one. There were no captions and I
+was excited. And then I did it again and
+
+196
+00:03:48,789 --> 00:03:48,799
+was excited. And then I did it again and
+ 
+
+197
+00:03:48,799 --> 00:03:51,350
+was excited. And then I did it again and
+I got captions. So, that didn't work.
+
+198
+00:03:51,350 --> 00:03:51,360
+I got captions. So, that didn't work.
+ 
+
+199
+00:03:51,360 --> 00:03:54,309
+I got captions. So, that didn't work.
+So, I wanted to try an AI way to get rid
+
+200
+00:03:54,309 --> 00:03:54,319
+So, I wanted to try an AI way to get rid
+ 
+
+201
+00:03:54,319 --> 00:03:56,789
+So, I wanted to try an AI way to get rid
+of the captions. So even if VO3
+
+202
+00:03:56,789 --> 00:03:56,799
+of the captions. So even if VO3
+ 
+
+203
+00:03:56,799 --> 00:03:58,949
+of the captions. So even if VO3
+generated it with captions, I can remove
+
+204
+00:03:58,949 --> 00:03:58,959
+generated it with captions, I can remove
+ 
+
+205
+00:03:58,959 --> 00:04:01,030
+generated it with captions, I can remove
+them with AI. So the first one I tried
+
+206
+00:04:01,030 --> 00:04:01,040
+them with AI. So the first one I tried
+ 
+
+207
+00:04:01,040 --> 00:04:03,589
+them with AI. So the first one I tried
+was Runway's inpainting tool. You've got
+
+208
+00:04:03,589 --> 00:04:03,599
+was Runway's inpainting tool. You've got
+ 
+
+209
+00:04:03,599 --> 00:04:05,990
+was Runway's inpainting tool. You've got
+a brush over here. Just go to the
+
+210
+00:04:05,990 --> 00:04:06,000
+a brush over here. Just go to the
+ 
+
+211
+00:04:06,000 --> 00:04:08,470
+a brush over here. Just go to the
+captions and just kind of wipe the brush
+
+212
+00:04:08,470 --> 00:04:08,480
+captions and just kind of wipe the brush
+ 
+
+213
+00:04:08,480 --> 00:04:10,630
+captions and just kind of wipe the brush
+over the captions and then they
+
+214
+00:04:10,630 --> 00:04:10,640
+over the captions and then they
+ 
+
+215
+00:04:10,640 --> 00:04:13,509
+over the captions and then they
+disappear. So you can kind of, in my
+
+216
+00:04:13,509 --> 00:04:13,519
+disappear. So you can kind of, in my
+ 
+
+217
+00:04:13,519 --> 00:04:15,429
+disappear. So you can kind of, in my
+opinion, you can kind of see a little
+
+218
+00:04:15,429 --> 00:04:15,439
+opinion, you can kind of see a little
+ 
+
+219
+00:04:15,439 --> 00:04:17,909
+opinion, you can kind of see a little
+bit when it adjusts there. But it's
+
+220
+00:04:17,909 --> 00:04:17,919
+bit when it adjusts there. But it's
+ 
+
+221
+00:04:17,919 --> 00:04:19,110
+bit when it adjusts there. But it's
+better than nothing. Like if you didn't
+
+222
+00:04:19,110 --> 00:04:19,120
+better than nothing. Like if you didn't
+ 
+
+223
+00:04:19,120 --> 00:04:20,789
+better than nothing. Like if you didn't
+know it was there, you might not notice.
+
+224
+00:04:20,789 --> 00:04:20,799
+know it was there, you might not notice.
+ 
+
+225
+00:04:20,799 --> 00:04:22,550
+know it was there, you might not notice.
+like if you didn't know to look at that
+
+226
+00:04:22,550 --> 00:04:22,560
+like if you didn't know to look at that
+ 
+
+227
+00:04:22,560 --> 00:04:23,830
+like if you didn't know to look at that
+spot, you might not see it because
+
+228
+00:04:23,830 --> 00:04:23,840
+spot, you might not see it because
+ 
+
+229
+00:04:23,840 --> 00:04:25,749
+spot, you might not see it because
+you're watching him talk. So, that was
+
+230
+00:04:25,749 --> 00:04:25,759
+you're watching him talk. So, that was
+ 
+
+231
+00:04:25,759 --> 00:04:27,830
+you're watching him talk. So, that was
+okay. But then I remembered that Cap Cut
+
+232
+00:04:27,830 --> 00:04:27,840
+okay. But then I remembered that Cap Cut
+ 
+
+233
+00:04:27,840 --> 00:04:31,110
+okay. But then I remembered that Cap Cut
+also has something similar. Um, I use
+
+234
+00:04:31,110 --> 00:04:31,120
+also has something similar. Um, I use
+ 
+
+235
+00:04:31,120 --> 00:04:33,670
+also has something similar. Um, I use
+Cap Cut. I think it's a great AI editor.
+
+236
+00:04:33,670 --> 00:04:33,680
+Cap Cut. I think it's a great AI editor.
+ 
+
+237
+00:04:33,680 --> 00:04:35,990
+Cap Cut. I think it's a great AI editor.
+So, in Cap Cut, I just put the video on
+
+238
+00:04:35,990 --> 00:04:36,000
+So, in Cap Cut, I just put the video on
+ 
+
+239
+00:04:36,000 --> 00:04:38,390
+So, in Cap Cut, I just put the video on
+my editing timeline as I'm editing the
+
+240
+00:04:38,390 --> 00:04:38,400
+my editing timeline as I'm editing the
+ 
+
+241
+00:04:38,400 --> 00:04:41,990
+my editing timeline as I'm editing the
+video. I selected it. I went to video
+
+242
+00:04:41,990 --> 00:04:42,000
+video. I selected it. I went to video
+ 
+
+243
+00:04:42,000 --> 00:04:44,070
+video. I selected it. I went to video
+and I scrolled down here to where it
+
+244
+00:04:44,070 --> 00:04:44,080
+and I scrolled down here to where it
+ 
+
+245
+00:04:44,080 --> 00:04:47,350
+and I scrolled down here to where it
+says AI remove. I checked that. It takes
+
+246
+00:04:47,350 --> 00:04:47,360
+says AI remove. I checked that. It takes
+ 
+
+247
+00:04:47,360 --> 00:04:50,070
+says AI remove. I checked that. It takes
+a second to recognize the video. I
+
+248
+00:04:50,070 --> 00:04:50,080
+a second to recognize the video. I
+ 
+
+249
+00:04:50,080 --> 00:04:51,749
+a second to recognize the video. I
+selected one of the brushes. So, I did
+
+250
+00:04:51,749 --> 00:04:51,759
+selected one of the brushes. So, I did
+ 
+
+251
+00:04:51,759 --> 00:04:53,830
+selected one of the brushes. So, I did
+the quick brush, just kind of like moved
+
+252
+00:04:53,830 --> 00:04:53,840
+the quick brush, just kind of like moved
+ 
+
+253
+00:04:53,840 --> 00:04:56,230
+the quick brush, just kind of like moved
+it over and boom, it did that. So, I put
+
+254
+00:04:56,230 --> 00:04:56,240
+it over and boom, it did that. So, I put
+ 
+
+255
+00:04:56,240 --> 00:04:58,310
+it over and boom, it did that. So, I put
+a little like box around it even. Then I
+
+256
+00:04:58,310 --> 00:04:58,320
+a little like box around it even. Then I
+ 
+
+257
+00:04:58,320 --> 00:05:00,950
+a little like box around it even. Then I
+said remove him. And look at that. Like
+
+258
+00:05:00,950 --> 00:05:00,960
+said remove him. And look at that. Like
+ 
+
+259
+00:05:00,960 --> 00:05:03,670
+said remove him. And look at that. Like
+even in the collar, it didn't like
+
+260
+00:05:03,670 --> 00:05:03,680
+even in the collar, it didn't like
+ 
+
+261
+00:05:03,680 --> 00:05:05,590
+even in the collar, it didn't like
+there's all of these lines in the collar
+
+262
+00:05:05,590 --> 00:05:05,600
+there's all of these lines in the collar
+ 
+
+263
+00:05:05,600 --> 00:05:10,070
+there's all of these lines in the collar
+and it it's pretty it's pretty smooth.
+
+264
+00:05:10,070 --> 00:05:10,080
+and it it's pretty it's pretty smooth.
+ 
+
+265
+00:05:10,080 --> 00:05:12,710
+and it it's pretty it's pretty smooth.
+So, I think that the cap cut one worked
+
+266
+00:05:12,710 --> 00:05:12,720
+So, I think that the cap cut one worked
+ 
+
+267
+00:05:12,720 --> 00:05:15,510
+So, I think that the cap cut one worked
+terrific. Okay. And then lastly, one of
+
+268
+00:05:15,510 --> 00:05:15,520
+terrific. Okay. And then lastly, one of
+ 
+
+269
+00:05:15,520 --> 00:05:17,670
+terrific. Okay. And then lastly, one of
+the problems I had with his voice was, I
+
+270
+00:05:17,670 --> 00:05:17,680
+the problems I had with his voice was, I
+ 
+
+271
+00:05:17,680 --> 00:05:19,510
+the problems I had with his voice was, I
+think, because he's described as an
+
+272
+00:05:19,510 --> 00:05:19,520
+think, because he's described as an
+ 
+
+273
+00:05:19,520 --> 00:05:21,670
+think, because he's described as an
+Armenian farmer. It would give him
+
+274
+00:05:21,670 --> 00:05:21,680
+Armenian farmer. It would give him
+ 
+
+275
+00:05:21,680 --> 00:05:24,230
+Armenian farmer. It would give him
+different accents. I had a lot of jobs.
+
+276
+00:05:24,230 --> 00:05:24,240
+different accents. I had a lot of jobs.
+ 
+
+277
+00:05:24,240 --> 00:05:27,110
+different accents. I had a lot of jobs.
+My favorite ones were being a butcher
+
+278
+00:05:27,110 --> 00:05:27,120
+My favorite ones were being a butcher
+ 
+
+279
+00:05:27,120 --> 00:05:29,749
+My favorite ones were being a butcher
+and being a barber. And I really liked
+
+280
+00:05:29,749 --> 00:05:29,759
+and being a barber. And I really liked
+ 
+
+281
+00:05:29,759 --> 00:05:31,749
+and being a barber. And I really liked
+the voices that I created in the
+
+282
+00:05:31,749 --> 00:05:31,759
+the voices that I created in the
+ 
+
+283
+00:05:31,759 --> 00:05:33,670
+the voices that I created in the
+documentary interview styles. So, I
+
+284
+00:05:33,670 --> 00:05:33,680
+documentary interview styles. So, I
+ 
+
+285
+00:05:33,680 --> 00:05:36,469
+documentary interview styles. So, I
+combined a few clips of him in order to
+
+286
+00:05:36,469 --> 00:05:36,479
+combined a few clips of him in order to
+ 
+
+287
+00:05:36,479 --> 00:05:39,590
+combined a few clips of him in order to
+get 10 seconds and exported just the
+
+288
+00:05:39,590 --> 00:05:39,600
+get 10 seconds and exported just the
+ 
+
+289
+00:05:39,600 --> 00:05:42,230
+get 10 seconds and exported just the
+audio. Then, I brought that into 11
+
+290
+00:05:42,230 --> 00:05:42,240
+audio. Then, I brought that into 11
+ 
+
+291
+00:05:42,240 --> 00:05:45,029
+audio. Then, I brought that into 11
+Labs. And 11 Labs will let you clone a
+
+292
+00:05:45,029 --> 00:05:45,039
+Labs. And 11 Labs will let you clone a
+ 
+
+293
+00:05:45,039 --> 00:05:47,350
+Labs. And 11 Labs will let you clone a
+voice with only 10 seconds of audio. I
+
+294
+00:05:47,350 --> 00:05:47,360
+voice with only 10 seconds of audio. I
+ 
+
+295
+00:05:47,360 --> 00:05:49,749
+voice with only 10 seconds of audio. I
+added the clip of him talking and
+
+296
+00:05:49,749 --> 00:05:49,759
+added the clip of him talking and
+ 
+
+297
+00:05:49,759 --> 00:05:52,070
+added the clip of him talking and
+generated a voice is called the Aram. So
+
+298
+00:05:52,070 --> 00:05:52,080
+generated a voice is called the Aram. So
+ 
+
+299
+00:05:52,080 --> 00:05:54,390
+generated a voice is called the Aram. So
+I exported all of the audio where he's
+
+300
+00:05:54,390 --> 00:05:54,400
+I exported all of the audio where he's
+ 
+
+301
+00:05:54,400 --> 00:05:57,590
+I exported all of the audio where he's
+talking and brought that into 11 Labs
+
+302
+00:05:57,590 --> 00:05:57,600
+talking and brought that into 11 Labs
+ 
+
+303
+00:05:57,600 --> 00:06:00,310
+talking and brought that into 11 Labs
+and used their voice changer. And what I
+
+304
+00:06:00,310 --> 00:06:00,320
+and used their voice changer. And what I
+ 
+
+305
+00:06:00,320 --> 00:06:02,150
+and used their voice changer. And what I
+was hoping would happen is that he would
+
+306
+00:06:02,150 --> 00:06:02,160
+was hoping would happen is that he would
+ 
+
+307
+00:06:02,160 --> 00:06:03,990
+was hoping would happen is that he would
+lose his accent and it would sound like
+
+308
+00:06:03,990 --> 00:06:04,000
+lose his accent and it would sound like
+ 
+
+309
+00:06:04,000 --> 00:06:06,629
+lose his accent and it would sound like
+the same character. So that didn't
+
+310
+00:06:06,629 --> 00:06:06,639
+the same character. So that didn't
+ 
+
+311
+00:06:06,639 --> 00:06:09,189
+the same character. So that didn't
+really happen. Some of the videos had an
+
+312
+00:06:09,189 --> 00:06:09,199
+really happen. Some of the videos had an
+ 
+
+313
+00:06:09,199 --> 00:06:12,070
+really happen. Some of the videos had an
+accent to them and so I just typed in
+
+314
+00:06:12,070 --> 00:06:12,080
+accent to them and so I just typed in
+ 
+
+315
+00:06:12,080 --> 00:06:14,070
+accent to them and so I just typed in
+and did like text to speech for those
+
+316
+00:06:14,070 --> 00:06:14,080
+and did like text to speech for those
+ 
+
+317
+00:06:14,080 --> 00:06:15,749
+and did like text to speech for those
+until I found ones that were close
+
+318
+00:06:15,749 --> 00:06:15,759
+until I found ones that were close
+ 
+
+319
+00:06:15,759 --> 00:06:18,230
+until I found ones that were close
+enough to the same timing where I could
+
+320
+00:06:18,230 --> 00:06:18,240
+enough to the same timing where I could
+ 
+
+321
+00:06:18,240 --> 00:06:20,230
+enough to the same timing where I could
+just drop those in. So it's kind of
+
+322
+00:06:20,230 --> 00:06:20,240
+just drop those in. So it's kind of
+ 
+
+323
+00:06:20,240 --> 00:06:21,990
+just drop those in. So it's kind of
+cheating I know in terms of like it's
+
+324
+00:06:21,990 --> 00:06:22,000
+cheating I know in terms of like it's
+ 
+
+325
+00:06:22,000 --> 00:06:25,110
+cheating I know in terms of like it's
+not the same generated audio, but um it
+
+326
+00:06:25,110 --> 00:06:25,120
+not the same generated audio, but um it
+ 
+
+327
+00:06:25,120 --> 00:06:27,110
+not the same generated audio, but um it
+is generated audio and I think that
+
+328
+00:06:27,110 --> 00:06:27,120
+is generated audio and I think that
+ 
+
+329
+00:06:27,120 --> 00:06:29,909
+is generated audio and I think that
+having a consistent voice as well as a
+
+330
+00:06:29,909 --> 00:06:29,919
+having a consistent voice as well as a
+ 
+
+331
+00:06:29,919 --> 00:06:32,150
+having a consistent voice as well as a
+consistent face really helps sell it.
+
+332
+00:06:32,150 --> 00:06:32,160
+consistent face really helps sell it.
+ 
+
+333
+00:06:32,160 --> 00:06:36,550
+consistent face really helps sell it.
+It's not that I dislike reality.
+
+334
+00:06:36,550 --> 00:06:36,560
+It's not that I dislike reality.
+ 
+
+335
+00:06:36,560 --> 00:06:39,749
+It's not that I dislike reality.
+It's just there's more than one reality.
+
+336
+00:06:39,749 --> 00:06:39,759
+It's just there's more than one reality.
+ 
+
+337
+00:06:39,759 --> 00:06:42,629
+It's just there's more than one reality.
+It used to be 100 credits for every
+
+338
+00:06:42,629 --> 00:06:42,639
+It used to be 100 credits for every
+ 
+
+339
+00:06:42,639 --> 00:06:45,590
+It used to be 100 credits for every
+video in V3 and now you can actually do
+
+340
+00:06:45,590 --> 00:06:45,600
+video in V3 and now you can actually do
+ 
+
+341
+00:06:45,600 --> 00:06:47,830
+video in V3 and now you can actually do
+the fast ones. And some of the fast ones
+
+342
+00:06:47,830 --> 00:06:47,840
+the fast ones. And some of the fast ones
+ 
+
+343
+00:06:47,840 --> 00:06:49,590
+the fast ones. And some of the fast ones
+turned out just as good as the pro ones
+
+344
+00:06:49,590 --> 00:06:49,600
+turned out just as good as the pro ones
+ 
+
+345
+00:06:49,600 --> 00:06:51,670
+turned out just as good as the pro ones
+in my opinion. Sometimes too, the fast
+
+346
+00:06:51,670 --> 00:06:51,680
+in my opinion. Sometimes too, the fast
+ 
+
+347
+00:06:51,680 --> 00:06:53,990
+in my opinion. Sometimes too, the fast
+ones gave me like really weird surreal
+
+348
+00:06:53,990 --> 00:06:54,000
+ones gave me like really weird surreal
+ 
+
+349
+00:06:54,000 --> 00:06:55,909
+ones gave me like really weird surreal
+things. Like this one was not what I
+
+350
+00:06:55,909 --> 00:06:55,919
+things. Like this one was not what I
+ 
+
+351
+00:06:55,919 --> 00:06:58,710
+things. Like this one was not what I
+wanted to do, but it was kind of uh very
+
+352
+00:06:58,710 --> 00:06:58,720
+wanted to do, but it was kind of uh very
+ 
+
+353
+00:06:58,720 --> 00:07:00,950
+wanted to do, but it was kind of uh very
+bizarre. feel like this one was done in
+
+354
+00:07:00,950 --> 00:07:00,960
+bizarre. feel like this one was done in
+ 
+
+355
+00:07:00,960 --> 00:07:02,710
+bizarre. feel like this one was done in
+the fast one. This is one of my favorite
+
+356
+00:07:02,710 --> 00:07:02,720
+the fast one. This is one of my favorite
+ 
+
+357
+00:07:02,720 --> 00:07:04,309
+the fast one. This is one of my favorite
+shots in the whole thing. And this was
+
+358
+00:07:04,309 --> 00:07:04,319
+shots in the whole thing. And this was
+ 
+
+359
+00:07:04,319 --> 00:07:07,350
+shots in the whole thing. And this was
+done on the fast mode.
+
+360
+00:07:07,350 --> 00:07:07,360
+done on the fast mode.
+ 
+
+361
+00:07:07,360 --> 00:07:08,629
+done on the fast mode.
+If you're wondering where to change
+
+362
+00:07:08,629 --> 00:07:08,639
+If you're wondering where to change
+ 
+
+363
+00:07:08,639 --> 00:07:10,390
+If you're wondering where to change
+that, you go here to the settings
+
+364
+00:07:10,390 --> 00:07:10,400
+that, you go here to the settings
+ 
+
+365
+00:07:10,400 --> 00:07:13,830
+that, you go here to the settings
+button, and you can choose between
+
+366
+00:07:13,830 --> 00:07:13,840
+button, and you can choose between
+ 
+
+367
+00:07:13,840 --> 00:07:16,790
+button, and you can choose between
+three, V3 fast, which shows you it's 20
+
+368
+00:07:16,790 --> 00:07:16,800
+three, V3 fast, which shows you it's 20
+ 
+
+369
+00:07:16,800 --> 00:07:20,150
+three, V3 fast, which shows you it's 20
+credits, or V3 quality, which is 100.
+
+370
+00:07:20,150 --> 00:07:20,160
+credits, or V3 quality, which is 100.
+ 
+
+371
+00:07:20,160 --> 00:07:21,670
+credits, or V3 quality, which is 100.
+So, I hope this helps you create
+
+372
+00:07:21,670 --> 00:07:21,680
+So, I hope this helps you create
+ 
+
+373
+00:07:21,680 --> 00:07:25,270
+So, I hope this helps you create
+consistent characters in V3. And if you
+
+374
+00:07:25,270 --> 00:07:25,280
+consistent characters in V3. And if you
+ 
+
+375
+00:07:25,280 --> 00:07:26,870
+consistent characters in V3. And if you
+enjoy this kind of thing, please
+
+376
+00:07:26,870 --> 00:07:26,880
+enjoy this kind of thing, please
+ 
+
+377
+00:07:26,880 --> 00:07:29,350
+enjoy this kind of thing, please
+subscribe because I like to make movies
+
+378
+00:07:29,350 --> 00:07:29,360
+subscribe because I like to make movies
+ 
+
+379
+00:07:29,360 --> 00:07:31,749
+subscribe because I like to make movies
+and I like to do tutorials about how I
+
+380
+00:07:31,749 --> 00:07:31,759
+and I like to do tutorials about how I
+ 
+
+381
+00:07:31,759 --> 00:07:33,670
+and I like to do tutorials about how I
+made those movies. All right, before I
+
+382
+00:07:33,670 --> 00:07:33,680
+made those movies. All right, before I
+ 
+
+383
+00:07:33,680 --> 00:07:35,270
+made those movies. All right, before I
+show your blooper reel, do you have any
+
+384
+00:07:35,270 --> 00:07:35,280
+show your blooper reel, do you have any
+ 
+
+385
+00:07:35,280 --> 00:07:37,749
+show your blooper reel, do you have any
+final wisdom? Is this where I'm supposed
+
+386
+00:07:37,749 --> 00:07:37,759
+final wisdom? Is this where I'm supposed
+ 
+
+387
+00:07:37,759 --> 00:07:41,350
+final wisdom? Is this where I'm supposed
+to say smash that subscribe button? I
+
+388
+00:07:41,350 --> 00:07:41,360
+to say smash that subscribe button? I
+ 
+
+389
+00:07:41,360 --> 00:07:43,670
+to say smash that subscribe button? I
+don't think people say that anymore. All
+
+390
+00:07:43,670 --> 00:07:43,680
+don't think people say that anymore. All
+ 
+
+391
+00:07:43,680 --> 00:07:47,510
+don't think people say that anymore. All
+right, let's watch some Bad Generations.
+
+392
+00:07:47,510 --> 00:07:47,520
+right, let's watch some Bad Generations.
+ 
+
+393
+00:07:47,520 --> 00:07:49,110
+right, let's watch some Bad Generations.
+All right, thank you for watching. Um,
+
+394
+00:07:49,110 --> 00:07:49,120
+All right, thank you for watching. Um,
+ 
+
+395
+00:07:49,120 --> 00:07:50,950
+All right, thank you for watching. Um,
+if you're interested in any of the tools
+
+396
+00:07:50,950 --> 00:07:50,960
+if you're interested in any of the tools
+ 
+
+397
+00:07:50,960 --> 00:07:52,629
+if you're interested in any of the tools
+that I use today, please check the
+
+398
+00:07:52,629 --> 00:07:52,639
+that I use today, please check the
+ 
+
+399
+00:07:52,639 --> 00:07:53,990
+that I use today, please check the
+description. and I put links to
+
+400
+00:07:53,990 --> 00:07:54,000
+description. and I put links to
+ 
+
+401
+00:07:54,000 --> 00:07:56,230
+description. and I put links to
+different things in there. All right, go
+
+402
+00:07:56,230 --> 00:07:56,240
+different things in there. All right, go
+ 
+
+403
+00:07:56,240 --> 00:08:07,260
+different things in there. All right, go
+make some consistent characters in VO3.
+
+404
+00:08:07,260 --> 00:08:07,270
+
+ 
+
+405
+00:08:07,270 --> 00:08:24,640
+
+[Music]
+
+406
+00:08:24,640 --> 00:08:24,650
+
+ 
+
+407
+00:08:24,650 --> 00:08:27,930
+
+[Music]
+

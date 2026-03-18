@@ -182,6 +182,67 @@ Video generation takes 1-3 minutes (longer than image posts). The bot will let y
 
 ---
 
+## Autopilot Mode
+
+Autopilot lets the AI generate and post content for you on a schedule — so you can set it and forget it.
+
+### Setting Up Autopilot
+
+Type `/autopilot` and tap **Set Up Autopilot**. You'll choose:
+
+1. **Mode:**
+   - **Smart Queue (recommended)** — Scribario generates content and sends you a preview. If you don't reject within 2 hours, it posts automatically. You can approve early, reject, or edit.
+   - **Full Autopilot** — Scribario generates and posts without waiting. You get a notification after.
+
+2. **Schedule:** Tell it when to post in plain English:
+   - "daily at 10am"
+   - "Mon/Wed/Fri at 10am"
+   - "weekdays at 9am"
+   - "every other day at 3pm"
+
+3. **Platforms:** All connected, or a specific platform.
+
+### How Smart Queue Works
+
+When it's time to post, Scribario generates content and sends you a preview — just like a manual post. The difference: there's a countdown. If you don't reject within 2 hours, it posts automatically.
+
+You'll see a message like:
+
+> 🤖 Autopilot generated a new post:
+>
+> [Image + 3 caption options]
+>
+> ⏰ Auto-posting in 2 hours unless you reject.
+
+You can:
+- **Approve early** — tap Approve on any option
+- **Reject** — tap Reject to cancel this post
+- **Do nothing** — it auto-posts the first option after the timeout
+
+### Safety Features
+
+- **Warmup period:** Your first 5 posts always use Smart Queue, even if you chose Full Autopilot. This gives you a chance to see what the AI generates before trusting it fully.
+- **Daily limit:** Default 3 posts/day (you can change this)
+- **Cost cap:** Default $50/month — Scribario pauses if it hits the cap
+- **Auto-pause:** If something goes wrong 3 times in a row, autopilot pauses and notifies you
+
+### Managing Autopilot
+
+| Command | What it does |
+|---|---|
+| `/autopilot` | Show status, change settings, pause, or turn off |
+| `/pause` | Immediately stop all autopilot activity |
+| `/resume` | Restart autopilot on its schedule |
+
+### Weekly Digest
+
+Every Sunday morning, you'll get a summary:
+- How many posts were created and published
+- How much it cost
+- Any failures
+
+---
+
 ## Sending Reference Photos
 
 You can send a photo directly to the bot to use as creative direction for your images. The AI will use your photo as a style reference — matching the lighting, color tone, composition, or subject matter.
@@ -223,6 +284,10 @@ Yes — type `/brand` to update your brand settings at any time.
 **What if the image isn't quite right?**
 
 Choose Regenerate to get three completely new options. Or include style hints in your request (see above) to guide the image direction.
+
+**Can Scribario post automatically without me approving each time?**
+
+Yes — use `/autopilot` to set up Autopilot Mode. You can choose Smart Queue (preview with auto-post after 2 hours) or Full Autopilot (completely hands-free). See the Autopilot Mode section above.
 
 **Is my content saved?**
 

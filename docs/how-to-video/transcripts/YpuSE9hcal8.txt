@@ -1,0 +1,1770 @@
+
+You can now build entire movies shot by
+You can now build entire movies shot by
+ 
+You can now build entire movies shot by
+shot using my new free workflow. Just
+shot using my new free workflow. Just
+ 
+shot using my new free workflow. Just
+give it reference images of your
+give it reference images of your
+ 
+give it reference images of your
+characters and location, and the
+characters and location, and the
+ 
+characters and location, and the
+workflow automatically creates a virtual
+workflow automatically creates a virtual
+ 
+workflow automatically creates a virtual
+environment where you can direct your
+environment where you can direct your
+ 
+environment where you can direct your
+scenes with simple text prompts. The
+scenes with simple text prompts. The
+ 
+scenes with simple text prompts. The
+workflow will keep the likeness of your
+workflow will keep the likeness of your
+ 
+workflow will keep the likeness of your
+characters without the need of training
+characters without the need of training
+ 
+characters without the need of training
+an additional model like a Laura. And
+an additional model like a Laura. And
+ 
+an additional model like a Laura. And
+any style works, [music] realistic,
+any style works, [music] realistic,
+ 
+any style works, [music] realistic,
+anime, clamation, you name it. You can
+anime, clamation, you name it. You can
+ 
+anime, clamation, you name it. You can
+also use pose references or your own
+also use pose references or your own
+ 
+also use pose references or your own
+storyboard scribbles for more precise
+storyboard scribbles for more precise
+ 
+storyboard scribbles for more precise
+control.
+control.
+ 
+control.
+>> [music]
+>> [music]
+ 
+>> [music]
+>> All of this is based on open source
+>> All of this is based on open source
+ 
+>> All of this is based on open source
+models, so you can run everything on
+models, so you can run everything on
+ 
+models, so you can run everything on
+your own computer for free. So, let's
+your own computer for free. So, let's
+ 
+your own computer for free. So, let's
+start building a movie.
+start building a movie.
+ 
+start building a movie.
+I've drawn dozens of storyboards for my
+I've drawn dozens of storyboards for my
+ 
+I've drawn dozens of storyboards for my
+film projects in the past. And I love
+film projects in the past. And I love
+ 
+film projects in the past. And I love
+this approach to film making because you
+this approach to film making because you
+ 
+this approach to film making because you
+don't just get an idea of your final
+don't just get an idea of your final
+ 
+don't just get an idea of your final
+movie. You start living and exploring
+movie. You start living and exploring
+ 
+movie. You start living and exploring
+this world. But AI models can take this
+this world. But AI models can take this
+ 
+this world. But AI models can take this
+concept even further, allowing you to
+concept even further, allowing you to
+ 
+concept even further, allowing you to
+generate the final shots with lighting,
+generate the final shots with lighting,
+ 
+generate the final shots with lighting,
+framing, and the final characters. This
+framing, and the final characters. This
+ 
+framing, and the final characters. This
+is made possible by the Gwen image edit
+is made possible by the Gwen image edit
+ 
+is made possible by the Gwen image edit
+model. It's one of these new
+model. It's one of these new
+ 
+model. It's one of these new
+instruction-based image models that
+instruction-based image models that
+ 
+instruction-based image models that
+understand concepts in images. So, I can
+understand concepts in images. So, I can
+ 
+understand concepts in images. So, I can
+just say, "Here's a background. Here's
+just say, "Here's a background. Here's
+ 
+just say, "Here's a background. Here's
+my character. Put this character into
+my character. Put this character into
+ 
+my character. Put this character into
+this background and it's done." Since
+this background and it's done." Since
+ 
+this background and it's done." Since
+its release, people have been improving
+its release, people have been improving
+ 
+its release, people have been improving
+this model by training these small extra
+this model by training these small extra
+ 
+this model by training these small extra
+models for it called Loras. Some of them
+models for it called Loras. Some of them
+ 
+models for it called Loras. Some of them
+just improve character consistency, some
+just improve character consistency, some
+ 
+just improve character consistency, some
+improve realism. But my favorite one is
+improve realism. But my favorite one is
+ 
+improve realism. But my favorite one is
+the next scene Laura by Lovis 93. This
+the next scene Laura by Lovis 93. This
+ 
+the next scene Laura by Lovis 93. This
+one allows you to take an image and then
+one allows you to take an image and then
+ 
+one allows you to take an image and then
+just tell the model what the next scene
+just tell the model what the next scene
+ 
+just tell the model what the next scene
+will look like. Built on this
+will look like. Built on this
+ 
+will look like. Built on this
+foundation, I created a workflow for
+foundation, I created a workflow for
+ 
+foundation, I created a workflow for
+CompuI, a free node-based interface for
+CompuI, a free node-based interface for
+ 
+CompuI, a free node-based interface for
+AI models that allows you to plan out
+AI models that allows you to plan out
+ 
+AI models that allows you to plan out
+entire scenes shot by shot. To use it,
+entire scenes shot by shot. To use it,
+ 
+entire scenes shot by shot. To use it,
+first you need to install CompuI, and we
+first you need to install CompuI, and we
+ 
+first you need to install CompuI, and we
+have a free guide for that on our
+have a free guide for that on our
+ 
+have a free guide for that on our
+website. Once it's installed, just
+website. Once it's installed, just
+ 
+website. Once it's installed, just
+download the workflow JSON file and drag
+download the workflow JSON file and drag
+ 
+download the workflow JSON file and drag
+and drop it into the Confui interface.
+and drop it into the Confui interface.
+ 
+and drop it into the Confui interface.
+Now, you might need to install a few
+Now, you might need to install a few
+ 
+Now, you might need to install a few
+missing custom nodes. To do this, simply
+missing custom nodes. To do this, simply
+ 
+missing custom nodes. To do this, simply
+go to the Comfi Manager. Click install
+go to the Comfi Manager. Click install
+ 
+go to the Comfi Manager. Click install
+missing custom nodes. Select all of them
+missing custom nodes. Select all of them
+ 
+missing custom nodes. Select all of them
+and click install. When it's done,
+and click install. When it's done,
+ 
+and click install. When it's done,
+restart Confui and all the nodes should
+restart Confui and all the nodes should
+ 
+restart Confui and all the nodes should
+be here. Now, you need to download the
+be here. Now, you need to download the
+ 
+be here. Now, you need to download the
+actual AI models. And you can find all
+actual AI models. And you can find all
+ 
+actual AI models. And you can find all
+of them in these yellow nodes to the
+of them in these yellow nodes to the
+ 
+of them in these yellow nodes to the
+left of this workflow right here next to
+left of this workflow right here next to
+ 
+left of this workflow right here next to
+the model loader nodes. And you can see
+the model loader nodes. And you can see
+ 
+the model loader nodes. And you can see
+here I'm using a GGUF version of this
+here I'm using a GGUF version of this
+ 
+here I'm using a GGUF version of this
+model. GGF is basically a way to
+model. GGF is basically a way to
+ 
+model. GGF is basically a way to
+compress model size so it can run on
+compress model size so it can run on
+ 
+compress model size so it can run on
+older GPUs that don't have a lot of
+older GPUs that don't have a lot of
+ 
+older GPUs that don't have a lot of
+VRAM. If you follow this link in the
+VRAM. If you follow this link in the
+ 
+VRAM. If you follow this link in the
+workflow, you can see all the different
+workflow, you can see all the different
+ 
+workflow, you can see all the different
+GGF versions. And you should select a
+GGF versions. And you should select a
+ 
+GGF versions. And you should select a
+version that comfortably fits on your
+version that comfortably fits on your
+ 
+version that comfortably fits on your
+GPU's VRAM. I have 24 GB, so I could
+GPU's VRAM. I have 24 GB, so I could
+ 
+GPU's VRAM. I have 24 GB, so I could
+easily run the Q8 version right here.
+easily run the Q8 version right here.
+ 
+easily run the Q8 version right here.
+But to show you more realistic results,
+But to show you more realistic results,
+ 
+But to show you more realistic results,
+for all examples that I've shown, I used
+for all examples that I've shown, I used
+ 
+for all examples that I've shown, I used
+this Q5 version right here that easily
+this Q5 version right here that easily
+ 
+this Q5 version right here that easily
+would fit on a 16 GB VRAM card. So once
+would fit on a 16 GB VRAM card. So once
+ 
+would fit on a 16 GB VRAM card. So once
+you've downloaded the model that you
+you've downloaded the model that you
+ 
+you've downloaded the model that you
+want to use, you just need to go into
+want to use, you just need to go into
+ 
+want to use, you just need to go into
+your confui folder. Comi
+your confui folder. Comi
+ 
+your confui folder. Comi
+models unit and I've created my own GGF
+models unit and I've created my own GGF
+ 
+models unit and I've created my own GGF
+folder right here and put everything
+folder right here and put everything
+ 
+folder right here and put everything
+inside here. Make sure to click R in
+inside here. Make sure to click R in
+ 
+inside here. Make sure to click R in
+comi to refresh the window and select
+comi to refresh the window and select
+ 
+comi to refresh the window and select
+the version that you want to use right
+the version that you want to use right
+ 
+the version that you want to use right
+here. Repeat this process for all the
+here. Repeat this process for all the
+ 
+here. Repeat this process for all the
+other loras and models that I've added
+other loras and models that I've added
+ 
+other loras and models that I've added
+here. When you're done with this, you
+here. When you're done with this, you
+ 
+here. When you're done with this, you
+can start using the workflow. We are
+can start using the workflow. We are
+ 
+can start using the workflow. We are
+working from left to right. So, let's
+working from left to right. So, let's
+ 
+working from left to right. So, let's
+zoom in on the top left right here. Here
+zoom in on the top left right here. Here
+ 
+zoom in on the top left right here. Here
+you can set your final image dimensions.
+you can set your final image dimensions.
+ 
+you can set your final image dimensions.
+And I'm just using HD resolution, which
+And I'm just using HD resolution, which
+ 
+And I'm just using HD resolution, which
+works really great. Next, you can change
+works really great. Next, you can change
+ 
+works really great. Next, you can change
+the steps and the CFG, but you shouldn't
+the steps and the CFG, but you shouldn't
+ 
+the steps and the CFG, but you shouldn't
+change them because we're using this
+change them because we're using this
+ 
+change them because we're using this
+Lura right here, the image lightning
+Lura right here, the image lightning
+ 
+Lura right here, the image lightning
+four step Laura, which will just speed
+four step Laura, which will just speed
+ 
+four step Laura, which will just speed
+up Gwen image edit so it can run on only
+up Gwen image edit so it can run on only
+ 
+up Gwen image edit so it can run on only
+four steps. And then the CFG needs to be
+four steps. And then the CFG needs to be
+ 
+four steps. And then the CFG needs to be
+at one. And then we can create our scene
+at one. And then we can create our scene
+ 
+at one. And then we can create our scene
+name. This will then create a folder
+name. This will then create a folder
+ 
+name. This will then create a folder
+where all the images that we create here
+where all the images that we create here
+ 
+where all the images that we create here
+will be saved out to. I will call mine
+will be saved out to. I will call mine
+ 
+will be saved out to. I will call mine
+restaurant and maybe a version number
+restaurant and maybe a version number
+ 
+restaurant and maybe a version number
+because today I want to create one of
+because today I want to create one of
+ 
+because today I want to create one of
+these scenes that you see constantly in
+these scenes that you see constantly in
+ 
+these scenes that you see constantly in
+film making but that are actually very
+film making but that are actually very
+ 
+film making but that are actually very
+hard to do with AI. Two characters
+hard to do with AI. Two characters
+ 
+hard to do with AI. Two characters
+interacting and talking to each other in
+interacting and talking to each other in
+ 
+interacting and talking to each other in
+one consistent location. And for this we
+one consistent location. And for this we
+ 
+one consistent location. And for this we
+first need to load in our characters.
+first need to load in our characters.
+ 
+first need to load in our characters.
+And I just drag and drop them in. So we
+And I just drag and drop them in. So we
+ 
+And I just drag and drop them in. So we
+have this stylish model kind of woman
+have this stylish model kind of woman
+ 
+have this stylish model kind of woman
+here. And we have this man here with an
+here. And we have this man here with an
+ 
+here. And we have this man here with an
+interesting pattern on his suit or like
+interesting pattern on his suit or like
+ 
+interesting pattern on his suit or like
+his shirt. Here you can upload a third
+his shirt. Here you can upload a third
+ 
+his shirt. Here you can upload a third
+reference. For example, a third
+reference. For example, a third
+ 
+reference. For example, a third
+character. Uh I just loaded in my
+character. Uh I just loaded in my
+ 
+character. Uh I just loaded in my
+environment. Though this is not usually
+environment. Though this is not usually
+ 
+environment. Though this is not usually
+the place to do it. You would do this
+the place to do it. You would do this
+ 
+the place to do it. You would do this
+here. I have this environment group
+here. I have this environment group
+ 
+here. I have this environment group
+right here. So just drag and drop in
+right here. So just drag and drop in
+ 
+right here. So just drag and drop in
+your location here. When you imported
+your location here. When you imported
+ 
+your location here. When you imported
+your references like this, you can go to
+your references like this, you can go to
+ 
+your references like this, you can go to
+the first image generation group. And
+the first image generation group. And
+ 
+the first image generation group. And
+now we need to create a prompt for what
+now we need to create a prompt for what
+ 
+now we need to create a prompt for what
+we want to see. In this case, I created
+we want to see. In this case, I created
+ 
+we want to see. In this case, I created
+a prompt. The characters are at a table
+a prompt. The characters are at a table
+ 
+a prompt. The characters are at a table
+in a restaurant. They are sitting
+in a restaurant. They are sitting
+ 
+in a restaurant. They are sitting
+opposite of each other, a cinematic
+opposite of each other, a cinematic
+ 
+opposite of each other, a cinematic
+movie scene with professional lighting.
+movie scene with professional lighting.
+ 
+movie scene with professional lighting.
+You see, it's a really simple prompt.
+You see, it's a really simple prompt.
+ 
+You see, it's a really simple prompt.
+And now we have to select the up to
+And now we have to select the up to
+ 
+And now we have to select the up to
+three references that we want to use.
+three references that we want to use.
+ 
+three references that we want to use.
+Here in these get image nodes, you can
+Here in these get image nodes, you can
+ 
+Here in these get image nodes, you can
+select the images that you want to use.
+select the images that you want to use.
+ 
+select the images that you want to use.
+The first image is image one. So I
+The first image is image one. So I
+ 
+The first image is image one. So I
+selected image one. We have image number
+selected image one. We have image number
+ 
+selected image one. We have image number
+two. That's him. So I loaded this here.
+two. That's him. So I loaded this here.
+ 
+two. That's him. So I loaded this here.
+And finally down here we have the
+And finally down here we have the
+ 
+And finally down here we have the
+environment. So I also loaded in the
+environment. So I also loaded in the
+ 
+environment. So I also loaded in the
+environment. If you want you can also
+environment. If you want you can also
+ 
+environment. If you want you can also
+put like names in here. Maybe she's
+put like names in here. Maybe she's
+ 
+put like names in here. Maybe she's
+called Tina. I don't know. And then you
+called Tina. I don't know. And then you
+ 
+called Tina. I don't know. And then you
+can also see it changed in this get
+can also see it changed in this get
+ 
+can also see it changed in this get
+image note right here. It's good to keep
+image note right here. It's good to keep
+ 
+image note right here. It's good to keep
+things more organized like this so you
+things more organized like this so you
+ 
+things more organized like this so you
+don't lose track of what you're doing.
+don't lose track of what you're doing.
+ 
+don't lose track of what you're doing.
+But this is really all there is to it.
+But this is really all there is to it.
+ 
+But this is really all there is to it.
+So I just click run and it's done. And
+So I just click run and it's done. And
+ 
+So I just click run and it's done. And
+you can see our two characters are
+you can see our two characters are
+ 
+you can see our two characters are
+sitting at the exact table that we
+sitting at the exact table that we
+ 
+sitting at the exact table that we
+wanted them to. Now let's start actually
+wanted them to. Now let's start actually
+ 
+wanted them to. Now let's start actually
+building the next scenes. So, I just
+building the next scenes. So, I just
+ 
+building the next scenes. So, I just
+activate this next group right here.
+activate this next group right here.
+ 
+activate this next group right here.
+This one uses the next scene, Laura. So,
+This one uses the next scene, Laura. So,
+ 
+This one uses the next scene, Laura. So,
+we can create a prompt like this. Next
+we can create a prompt like this. Next
+ 
+we can create a prompt like this. Next
+scene. The camera is behind the man,
+scene. The camera is behind the man,
+ 
+scene. The camera is behind the man,
+creating an over-the-shoulder shot,
+creating an over-the-shoulder shot,
+ 
+creating an over-the-shoulder shot,
+showing a frontal view of the woman
+showing a frontal view of the woman
+ 
+showing a frontal view of the woman
+smiling. And now, what I'm doing is I'm
+smiling. And now, what I'm doing is I'm
+ 
+smiling. And now, what I'm doing is I'm
+taking the output image. You can see
+taking the output image. You can see
+ 
+taking the output image. You can see
+down here, you can name the output for
+down here, you can name the output for
+ 
+down here, you can name the output for
+each group. This is out one. So, I'm
+each group. This is out one. So, I'm
+ 
+each group. This is out one. So, I'm
+loading in out one right here. And then
+loading in out one right here. And then
+ 
+loading in out one right here. And then
+I'm also using this reference right
+I'm also using this reference right
+ 
+I'm also using this reference right
+here. And you can see this failed
+here. And you can see this failed
+ 
+here. And you can see this failed
+completely. We didn't rotate the camera.
+completely. We didn't rotate the camera.
+ 
+completely. We didn't rotate the camera.
+There's now an additional man. So we
+There's now an additional man. So we
+ 
+There's now an additional man. So we
+need to be a bit more specific in the
+need to be a bit more specific in the
+ 
+need to be a bit more specific in the
+prompt. What really helps is to describe
+prompt. What really helps is to describe
+ 
+prompt. What really helps is to describe
+the image in more detail. And instead of
+the image in more detail. And instead of
+ 
+the image in more detail. And instead of
+prompting how the camera move, it really
+prompting how the camera move, it really
+ 
+prompting how the camera move, it really
+helps to describe where things are in
+helps to describe where things are in
+ 
+helps to describe where things are in
+space. Now half the photos obstructed by
+space. Now half the photos obstructed by
+ 
+space. Now half the photos obstructed by
+the man's back. The large window is to
+the man's back. The large window is to
+ 
+the man's back. The large window is to
+the right. Behind the woman to the left
+the right. Behind the woman to the left
+ 
+the right. Behind the woman to the left
+is a bar. And now we have a composition
+is a bar. And now we have a composition
+ 
+is a bar. And now we have a composition
+that's closer to what I originally
+that's closer to what I originally
+ 
+that's closer to what I originally
+wanted. What you can do now is just
+wanted. What you can do now is just
+ 
+wanted. What you can do now is just
+select this whole group and just copy it
+select this whole group and just copy it
+ 
+select this whole group and just copy it
+to create your next scene. Maybe we want
+to create your next scene. Maybe we want
+ 
+to create your next scene. Maybe we want
+to zoom in on this character's face. So
+to zoom in on this character's face. So
+ 
+to zoom in on this character's face. So
+all I need to do is switch this input
+all I need to do is switch this input
+ 
+all I need to do is switch this input
+here to out two. And we can rename this
+here to out two. And we can rename this
+ 
+here to out two. And we can rename this
+group right here to out three. Face
+group right here to out three. Face
+ 
+group right here to out three. Face
+fills the entire image just to make sure
+fills the entire image just to make sure
+ 
+fills the entire image just to make sure
+that we really want to be really close
+that we really want to be really close
+ 
+that we really want to be really close
+to her. And because now her look changed
+to her. And because now her look changed
+ 
+to her. And because now her look changed
+a little bit. So I'm connecting the
+a little bit. So I'm connecting the
+ 
+a little bit. So I'm connecting the
+original image, image number one here,
+original image, image number one here,
+ 
+original image, image number one here,
+I'm connecting that again to the prompt
+I'm connecting that again to the prompt
+ 
+I'm connecting that again to the prompt
+just to remind it what the woman really
+just to remind it what the woman really
+ 
+just to remind it what the woman really
+looks like. And now you can see it's a
+looks like. And now you can see it's a
+ 
+looks like. And now you can see it's a
+lot closer and the earrings are angular
+lot closer and the earrings are angular
+ 
+lot closer and the earrings are angular
+again. Now before we start building out
+again. Now before we start building out
+ 
+again. Now before we start building out
+the whole movie like this, let me show
+the whole movie like this, let me show
+ 
+the whole movie like this, let me show
+you the other features of this workflow.
+you the other features of this workflow.
+ 
+you the other features of this workflow.
+And you can find these down here. The
+And you can find these down here. The
+ 
+And you can find these down here. The
+first one is the option to use a pose
+first one is the option to use a pose
+ 
+first one is the option to use a pose
+reference. So, let's say, for example,
+reference. So, let's say, for example,
+ 
+reference. So, let's say, for example,
+we like this shot, but we want to make
+we like this shot, but we want to make
+ 
+we like this shot, but we want to make
+her drink from the glass of wine here in
+her drink from the glass of wine here in
+ 
+her drink from the glass of wine here in
+a specific pose. I found a reference
+a specific pose. I found a reference
+ 
+a specific pose. I found a reference
+image for exactly that. So, I can just
+image for exactly that. So, I can just
+ 
+image for exactly that. So, I can just
+import that right here.
+import that right here.
+ 
+import that right here.
+And then I'm going to duplicate this
+And then I'm going to duplicate this
+ 
+And then I'm going to duplicate this
+group. And so, just so we don't lose it,
+group. And so, just so we don't lose it,
+ 
+group. And so, just so we don't lose it,
+I will just copy the group, put it here.
+I will just copy the group, put it here.
+ 
+I will just copy the group, put it here.
+And next, let's name this something like
+And next, let's name this something like
+ 
+And next, let's name this something like
+this. Image pose wine. Come up here. We
+this. Image pose wine. Come up here. We
+ 
+this. Image pose wine. Come up here. We
+want to stay pretty close to this image
+want to stay pretty close to this image
+ 
+want to stay pretty close to this image
+right here. This is out too. So I will
+right here. This is out too. So I will
+ 
+right here. This is out too. So I will
+reference that here. And next I'm going
+reference that here. And next I'm going
+ 
+reference that here. And next I'm going
+to select my wine pose reference and
+to select my wine pose reference and
+ 
+to select my wine pose reference and
+connect that. Now we just need to create
+connect that. Now we just need to create
+ 
+connect that. Now we just need to create
+a simple prompt like this. And now she's
+a simple prompt like this. And now she's
+ 
+a simple prompt like this. And now she's
+drinking from the glass of wine. Pretty
+drinking from the glass of wine. Pretty
+ 
+drinking from the glass of wine. Pretty
+close to the original input pose that we
+close to the original input pose that we
+ 
+close to the original input pose that we
+got from right here. I don't use this
+got from right here. I don't use this
+ 
+got from right here. I don't use this
+pose reference often because prompting
+pose reference often because prompting
+ 
+pose reference often because prompting
+usually is good enough. But if you have
+usually is good enough. But if you have
+ 
+usually is good enough. But if you have
+an exact composition in mind, this is a
+an exact composition in mind, this is a
+ 
+an exact composition in mind, this is a
+good way to reference that. But
+good way to reference that. But
+ 
+good way to reference that. But
+sometimes prompting is not enough. for
+sometimes prompting is not enough. for
+ 
+sometimes prompting is not enough. for
+example, when you want to change the
+example, when you want to change the
+ 
+example, when you want to change the
+camera angle and keep the backgrounds
+camera angle and keep the backgrounds
+ 
+camera angle and keep the backgrounds
+consistent. This can be quite the
+consistent. This can be quite the
+ 
+consistent. This can be quite the
+challenge with Gwen image edit. So my
+challenge with Gwen image edit. So my
+ 
+challenge with Gwen image edit. So my
+idea was to generate a 360° image of the
+idea was to generate a 360° image of the
+ 
+idea was to generate a 360° image of the
+full environment so the model
+full environment so the model
+ 
+full environment so the model
+understands the full geometry of the
+understands the full geometry of the
+ 
+understands the full geometry of the
+scene. I tried creating such an image
+scene. I tried creating such an image
+ 
+scene. I tried creating such an image
+with Gwen image edit but unfortunately
+with Gwen image edit but unfortunately
+ 
+with Gwen image edit but unfortunately
+the results were not too good. So what I
+the results were not too good. So what I
+ 
+the results were not too good. So what I
+did is I created my own data set of 20
+did is I created my own data set of 20
+ 
+did is I created my own data set of 20
+real 360° images and then used them to
+real 360° images and then used them to
+ 
+real 360° images and then used them to
+train my own Gwen image edit. Laura
+train my own Gwen image edit. Laura
+ 
+train my own Gwen image edit. Laura
+showing Gwen image edit. These real 360°
+showing Gwen image edit. These real 360°
+ 
+showing Gwen image edit. These real 360°
+images helped to train the model to
+images helped to train the model to
+ 
+images helped to train the model to
+understand what a real 360° image should
+understand what a real 360° image should
+ 
+understand what a real 360° image should
+look like. If you want to train your own
+look like. If you want to train your own
+ 
+look like. If you want to train your own
+Loras, I will link the exact tutorial
+Loras, I will link the exact tutorial
+ 
+Loras, I will link the exact tutorial
+that I followed below. But all you need
+that I followed below. But all you need
+ 
+that I followed below. But all you need
+to do is just download my Laura and make
+to do is just download my Laura and make
+ 
+to do is just download my Laura and make
+sure in the beginning of the workflow
+sure in the beginning of the workflow
+ 
+sure in the beginning of the workflow
+that you load it in right here. And then
+that you load it in right here. And then
+ 
+that you load it in right here. And then
+you can come down here to this bottom
+you can come down here to this bottom
+ 
+you can come down here to this bottom
+group. And this is where your full
+group. And this is where your full
+ 
+group. And this is where your full
+environment will be created. This will
+environment will be created. This will
+ 
+environment will be created. This will
+take your environment input image and
+take your environment input image and
+ 
+take your environment input image and
+add this gray area around that. This
+add this gray area around that. This
+ 
+add this gray area around that. This
+area will stay exactly the same. And
+area will stay exactly the same. And
+ 
+area will stay exactly the same. And
+then around that when image edit will
+then around that when image edit will
+ 
+then around that when image edit will
+now generate a 360° environment. To tell
+now generate a 360° environment. To tell
+ 
+now generate a 360° environment. To tell
+it what should be added in this gray
+it what should be added in this gray
+ 
+it what should be added in this gray
+area, you need to come here to this
+area, you need to come here to this
+ 
+area, you need to come here to this
+prompt. And all you need to change is
+prompt. And all you need to change is
+ 
+prompt. And all you need to change is
+this part right here. And then it will
+this part right here. And then it will
+ 
+this part right here. And then it will
+create a really cool result like this.
+create a really cool result like this.
+ 
+create a really cool result like this.
+If you do not like that, you can always
+If you do not like that, you can always
+ 
+If you do not like that, you can always
+come down and change the seat or adjust
+come down and change the seat or adjust
+ 
+come down and change the seat or adjust
+the prompt. The problem with this image
+the prompt. The problem with this image
+ 
+the prompt. The problem with this image
+is that it is not seamless. To
+is that it is not seamless. To
+ 
+is that it is not seamless. To
+automatically fix this, I created this
+automatically fix this, I created this
+ 
+automatically fix this, I created this
+setup right here. That will just lay out
+setup right here. That will just lay out
+ 
+setup right here. That will just lay out
+these images so you can see where the
+these images so you can see where the
+ 
+these images so you can see where the
+seam is. Then a white mask will be
+seam is. Then a white mask will be
+ 
+seam is. Then a white mask will be
+added. And using this simple prompt,
+added. And using this simple prompt,
+ 
+added. And using this simple prompt,
+remove the visible seam. the seam will
+remove the visible seam. the seam will
+ 
+remove the visible seam. the seam will
+be removed from the image. We can use
+be removed from the image. We can use
+ 
+be removed from the image. We can use
+this environment in multiple ways to
+this environment in multiple ways to
+ 
+this environment in multiple ways to
+help Gwen image edit. For example, this
+help Gwen image edit. For example, this
+ 
+help Gwen image edit. For example, this
+image right here will be added together
+image right here will be added together
+ 
+image right here will be added together
+with our character references in the
+with our character references in the
+ 
+with our character references in the
+reference sheet group. So, we have our
+reference sheet group. So, we have our
+ 
+reference sheet group. So, we have our
+full environment and we have our two
+full environment and we have our two
+ 
+full environment and we have our two
+characters and you can see I already
+characters and you can see I already
+ 
+characters and you can see I already
+referenced it here for example for this
+referenced it here for example for this
+ 
+referenced it here for example for this
+over- the-sh shoulder shot. And this way
+over- the-sh shoulder shot. And this way
+ 
+over- the-sh shoulder shot. And this way
+when we create a prompt like this where
+when we create a prompt like this where
+ 
+when we create a prompt like this where
+we say the bar should be left and the
+we say the bar should be left and the
+ 
+we say the bar should be left and the
+window should be right. And this way
+window should be right. And this way
+ 
+window should be right. And this way
+Gwen image edit can actually understand
+Gwen image edit can actually understand
+ 
+Gwen image edit can actually understand
+oh he's talking about a window that
+oh he's talking about a window that
+ 
+oh he's talking about a window that
+should be to the right of the character.
+should be to the right of the character.
+ 
+should be to the right of the character.
+To the left should be a bar. So he must
+To the left should be a bar. So he must
+ 
+To the left should be a bar. So he must
+be talking about this area right here.
+be talking about this area right here.
+ 
+be talking about this area right here.
+And this worked really well. You can see
+And this worked really well. You can see
+ 
+And this worked really well. You can see
+it put the window to the right and the
+it put the window to the right and the
+ 
+it put the window to the right and the
+exact bar in the background. This
+exact bar in the background. This
+ 
+exact bar in the background. This
+reference sheet also helps to keep the
+reference sheet also helps to keep the
+ 
+reference sheet also helps to keep the
+characters more consistent because
+characters more consistent because
+ 
+characters more consistent because
+you're constantly reminding when image
+you're constantly reminding when image
+ 
+you're constantly reminding when image
+edit what they should look like. So let
+edit what they should look like. So let
+ 
+edit what they should look like. So let
+me quickly create the full scene and
+me quickly create the full scene and
+ 
+me quickly create the full scene and
+then I'm going to show you how I did it
+then I'm going to show you how I did it
+ 
+then I'm going to show you how I did it
+step by step. Okay, so here's the full
+step by step. Okay, so here's the full
+ 
+step by step. Okay, so here's the full
+scene. Let me quickly walk you through
+scene. Let me quickly walk you through
+ 
+scene. Let me quickly walk you through
+it. So in the beginning here, we created
+it. So in the beginning here, we created
+ 
+it. So in the beginning here, we created
+a simple base image. The characters are
+a simple base image. The characters are
+ 
+a simple base image. The characters are
+on at a table. And for this next scene,
+on at a table. And for this next scene,
+ 
+on at a table. And for this next scene,
+I rotated the camera so it's behind the
+I rotated the camera so it's behind the
+ 
+I rotated the camera so it's behind the
+man looking at the woman sitting in
+man looking at the woman sitting in
+ 
+man looking at the woman sitting in
+front of the bar. And to help it keep
+front of the bar. And to help it keep
+ 
+front of the bar. And to help it keep
+the background even more consistent,
+the background even more consistent,
+ 
+the background even more consistent,
+what I did now is I added this group
+what I did now is I added this group
+ 
+what I did now is I added this group
+down here. This will take the 360°
+down here. This will take the 360°
+ 
+down here. This will take the 360°
+reference image that we created below
+reference image that we created below
+ 
+reference image that we created below
+and it lets you cut out a part of the
+and it lets you cut out a part of the
+ 
+and it lets you cut out a part of the
+image using this mask right here that
+image using this mask right here that
+ 
+image using this mask right here that
+should be in the background. And then I
+should be in the background. And then I
+ 
+should be in the background. And then I
+connected this output right here to this
+connected this output right here to this
+ 
+connected this output right here to this
+group. Like you've seen, it worked
+group. Like you've seen, it worked
+ 
+group. Like you've seen, it worked
+before, but we had the issue that there
+before, but we had the issue that there
+ 
+before, but we had the issue that there
+were chairs um in the background that
+were chairs um in the background that
+ 
+were chairs um in the background that
+were not supposed to be there. And now
+were not supposed to be there. And now
+ 
+were not supposed to be there. And now
+it's just a bit better. For the next
+it's just a bit better. For the next
+ 
+it's just a bit better. For the next
+scene, I did something similar. I wanted
+scene, I did something similar. I wanted
+ 
+scene, I did something similar. I wanted
+to create a close-up of the man. But how
+to create a close-up of the man. But how
+ 
+to create a close-up of the man. But how
+should Gwen image edit know what the
+should Gwen image edit know what the
+ 
+should Gwen image edit know what the
+background should look like? Well, I
+background should look like? Well, I
+ 
+background should look like? Well, I
+just told it. So again, using this
+just told it. So again, using this
+ 
+just told it. So again, using this
+background reference image group, I was
+background reference image group, I was
+ 
+background reference image group, I was
+just able to think about where my
+just able to think about where my
+ 
+just able to think about where my
+characters are. So the man should be
+characters are. So the man should be
+ 
+characters are. So the man should be
+sitting here. So this should be in the
+sitting here. So this should be in the
+ 
+sitting here. So this should be in the
+background, right? So I just cropped out
+background, right? So I just cropped out
+ 
+background, right? So I just cropped out
+this area right here. It doesn't have to
+this area right here. It doesn't have to
+ 
+this area right here. It doesn't have to
+be absolutely perfect. And then when you
+be absolutely perfect. And then when you
+ 
+be absolutely perfect. And then when you
+click run, you can see this part will be
+click run, you can see this part will be
+ 
+click run, you can see this part will be
+cropped out. I just connected that. And
+cropped out. I just connected that. And
+ 
+cropped out. I just connected that. And
+I also referenced the input image of the
+I also referenced the input image of the
+ 
+I also referenced the input image of the
+man, image number two. And this is all
+man, image number two. And this is all
+ 
+man, image number two. And this is all
+what was needed to create this image
+what was needed to create this image
+ 
+what was needed to create this image
+right here. For the next scene, I wanted
+right here. For the next scene, I wanted
+ 
+right here. For the next scene, I wanted
+to create a close-up of the man where he
+to create a close-up of the man where he
+ 
+to create a close-up of the man where he
+presents a ring. And down below here,
+presents a ring. And down below here,
+ 
+presents a ring. And down below here,
+you can see the prompt. Cut to an
+you can see the prompt. Cut to an
+ 
+you can see the prompt. Cut to an
+extreme close-up of the man's hand
+extreme close-up of the man's hand
+ 
+extreme close-up of the man's hand
+presenting a ring. And I referenced the
+presenting a ring. And I referenced the
+ 
+presenting a ring. And I referenced the
+first output image. So this image right
+first output image. So this image right
+ 
+first output image. So this image right
+here. And I also referenced output
+here. And I also referenced output
+ 
+here. And I also referenced output
+three, which is the previous image right
+three, which is the previous image right
+ 
+three, which is the previous image right
+here. And sometimes using the simplest
+here. And sometimes using the simplest
+ 
+here. And sometimes using the simplest
+approach is the best one. For example,
+approach is the best one. For example,
+ 
+approach is the best one. For example,
+for this scene right here, for the kiss
+for this scene right here, for the kiss
+ 
+for this scene right here, for the kiss
+scene, I only referenced the first
+scene, I only referenced the first
+ 
+scene, I only referenced the first
+output image. And then I created this
+output image. And then I created this
+ 
+output image. And then I created this
+simple prompt. And that's all that is
+simple prompt. And that's all that is
+ 
+simple prompt. And that's all that is
+needed to make them kiss. The cool thing
+needed to make them kiss. The cool thing
+ 
+needed to make them kiss. The cool thing
+about building a modular story like this
+about building a modular story like this
+ 
+about building a modular story like this
+is that you can change out the location,
+is that you can change out the location,
+ 
+is that you can change out the location,
+style, or character. So, for example, I
+style, or character. So, for example, I
+ 
+style, or character. So, for example, I
+can just come in here back to the
+can just come in here back to the
+ 
+can just come in here back to the
+beginning and change out the woman, for
+beginning and change out the woman, for
+ 
+beginning and change out the woman, for
+example, and run this whole workflow
+example, and run this whole workflow
+ 
+example, and run this whole workflow
+again. And the workflow will
+again. And the workflow will
+ 
+again. And the workflow will
+automatically replace the woman with the
+automatically replace the woman with the
+ 
+automatically replace the woman with the
+older one from the reference image. Or
+older one from the reference image. Or
+ 
+older one from the reference image. Or
+we could change out the location. So
+we could change out the location. So
+ 
+we could change out the location. So
+maybe instead of having this cozy
+maybe instead of having this cozy
+ 
+maybe instead of having this cozy
+restaurant, we want to have this space
+restaurant, we want to have this space
+ 
+restaurant, we want to have this space
+diner right here. And now these two
+diner right here. And now these two
+ 
+diner right here. And now these two
+characters are sitting in a spaceship.
+characters are sitting in a spaceship.
+ 
+characters are sitting in a spaceship.
+So when you're done, you find all the
+So when you're done, you find all the
+ 
+So when you're done, you find all the
+output images that you created in comui
+output images that you created in comui
+ 
+output images that you created in comui
+output and the name of the folder that
+output and the name of the folder that
+ 
+output and the name of the folder that
+you gave it in the beginning of the
+you gave it in the beginning of the
+ 
+you gave it in the beginning of the
+workflow. So now let's actually make
+workflow. So now let's actually make
+ 
+workflow. So now let's actually make
+them move. You can use any video model
+them move. You can use any video model
+ 
+them move. You can use any video model
+that allows you to give a start frame
+that allows you to give a start frame
+ 
+that allows you to give a start frame
+and then generate the video based on
+and then generate the video based on
+ 
+and then generate the video based on
+that. And I tested cling v3 and some
+that. And I tested cling v3 and some
+ 
+that. And I tested cling v3 and some
+other models. But if you want to do it
+other models. But if you want to do it
+ 
+other models. But if you want to do it
+locally, I recommend using my one 2.2
+locally, I recommend using my one 2.2
+ 
+locally, I recommend using my one 2.2
+imagetovideo workflow. You set this up
+imagetovideo workflow. You set this up
+ 
+imagetovideo workflow. You set this up
+in the exact same way as the previous
+in the exact same way as the previous
+ 
+in the exact same way as the previous
+workflow. Just drag and drop that in.
+workflow. Just drag and drop that in.
+ 
+workflow. Just drag and drop that in.
+Click install missing custom nodes. And
+Click install missing custom nodes. And
+ 
+Click install missing custom nodes. And
+then you need to download these models
+then you need to download these models
+ 
+then you need to download these models
+right here. Once you have everything set
+right here. Once you have everything set
+ 
+right here. Once you have everything set
+up, you can decide if you want to use a
+up, you can decide if you want to use a
+ 
+up, you can decide if you want to use a
+start frame, an end frame, or both to
+start frame, an end frame, or both to
+ 
+start frame, an end frame, or both to
+generate your video. Here, for example,
+generate your video. Here, for example,
+ 
+generate your video. Here, for example,
+I used both. This is my start frame. And
+I used both. This is my start frame. And
+ 
+I used both. This is my start frame. And
+then I wanted these characters to move
+then I wanted these characters to move
+ 
+then I wanted these characters to move
+across the table to kiss each other. So
+across the table to kiss each other. So
+ 
+across the table to kiss each other. So
+I connected this here to the start image
+I connected this here to the start image
+ 
+I connected this here to the start image
+and this to the end image. You can set
+and this to the end image. You can set
+ 
+and this to the end image. You can set
+your resolution right here. This is the
+your resolution right here. This is the
+ 
+your resolution right here. This is the
+maximum one. If you don't have the best
+maximum one. If you don't have the best
+ 
+maximum one. If you don't have the best
+GPU, I would lower that. I would also
+GPU, I would lower that. I would also
+ 
+GPU, I would lower that. I would also
+lower the length. I'm using the maximum
+lower the length. I'm using the maximum
+ 
+lower the length. I'm using the maximum
+of 81 frames. And then all you need to
+of 81 frames. And then all you need to
+ 
+of 81 frames. And then all you need to
+do is create a simple prompt like this
+do is create a simple prompt like this
+ 
+do is create a simple prompt like this
+where you mostly describe the action and
+where you mostly describe the action and
+ 
+where you mostly describe the action and
+the camera movement. Everything else
+the camera movement. Everything else
+ 
+the camera movement. Everything else
+will be extracted from the images. Now,
+will be extracted from the images. Now,
+ 
+will be extracted from the images. Now,
+if I want another variation, I can
+if I want another variation, I can
+ 
+if I want another variation, I can
+always come back here and change the
+always come back here and change the
+ 
+always come back here and change the
+seat or adjust the prompt. But you don't
+seat or adjust the prompt. But you don't
+ 
+seat or adjust the prompt. But you don't
+always have to use an input image and an
+always have to use an input image and an
+ 
+always have to use an input image and an
+end frame. You can also choose just to
+end frame. You can also choose just to
+ 
+end frame. You can also choose just to
+use a start frame or just an end frame.
+use a start frame or just an end frame.
+ 
+use a start frame or just an end frame.
+And that's what I did for this shot
+And that's what I did for this shot
+ 
+And that's what I did for this shot
+right here. I wanted the hand to open,
+right here. I wanted the hand to open,
+ 
+right here. I wanted the hand to open,
+but I only had this image of the open
+but I only had this image of the open
+ 
+but I only had this image of the open
+hand. So, I connected this one to the
+hand. So, I connected this one to the
+ 
+hand. So, I connected this one to the
+end image and then just created a prompt
+end image and then just created a prompt
+ 
+end image and then just created a prompt
+like this. And I think it captured it
+like this. And I think it captured it
+ 
+like this. And I think it captured it
+perfectly. Now, building a movie like
+perfectly. Now, building a movie like
+ 
+perfectly. Now, building a movie like
+this takes a bit of practice, but you'll
+this takes a bit of practice, but you'll
+ 
+this takes a bit of practice, but you'll
+soon get a hang of what kind of prompt
+soon get a hang of what kind of prompt
+ 
+soon get a hang of what kind of prompt
+structures and phrases Gwen Image Edit
+structures and phrases Gwen Image Edit
+ 
+structures and phrases Gwen Image Edit
+likes and understands. To help you out,
+likes and understands. To help you out,
+ 
+likes and understands. To help you out,
+you can also get the example scenes I
+you can also get the example scenes I
+ 
+you can also get the example scenes I
+created for this video if you support us
+created for this video if you support us
+ 
+created for this video if you support us
+on Patreon. You'll also get access to
+on Patreon. You'll also get access to
+ 
+on Patreon. You'll also get access to
+advanced workflows and our amazing
+advanced workflows and our amazing
+ 
+advanced workflows and our amazing
+Discord community. But most importantly,
+Discord community. But most importantly,
+ 
+Discord community. But most importantly,
+you help us keeping these workflows free
+you help us keeping these workflows free
+ 
+you help us keeping these workflows free
+for everyone and not having to rely on
+for everyone and not having to rely on
+ 
+for everyone and not having to rely on
+sponsors in every single video. So,
+sponsors in every single video. So,
+ 
+sponsors in every single video. So,
+thank you a lot for that. So, here are
+thank you a lot for that. So, here are
+ 
+thank you a lot for that. So, here are
+the final results for the demo scenes
+the final results for the demo scenes
+ 
+the final results for the demo scenes
+that I created.
+
+ 
+
+[music]
+
+ 
+
+>> [laughter]
+
+ 
+
+[music]
+
+ 
+
+>> I hope you enjoyed this video and found
+>> I hope you enjoyed this video and found
+ 
+>> I hope you enjoyed this video and found
+this workflow [music] useful. If you
+this workflow [music] useful. If you
+ 
+this workflow [music] useful. If you
+create a movie with it, feel free to tag
+create a movie with it, feel free to tag
+ 
+create a movie with it, feel free to tag
+me in your work or send it to me. I
+me in your work or send it to me. I
+ 
+me in your work or send it to me. I
+always love to see what you come up
+always love to see what you come up
+ 
+always love to see what you come up
+[music] with. Thanks for watching and
+[music] with. Thanks for watching and
+ 
+[music] with. Thanks for watching and
+thank you to our lovely Patreon
+thank you to our lovely Patreon
+ 
+thank you to our lovely Patreon
+supporters for making these videos
+supporters for making these videos
+ 
+supporters for making these videos
+possible. [music] See you next time.
+
+ 
+
+>> [music]

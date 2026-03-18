@@ -34,6 +34,24 @@ from pipeline.prompt_engine.models import RefImageAssignment, ScenePlan
 logger = logging.getLogger(__name__)
 
 
+async def _notify_failure(job_message: dict, text: str) -> None:
+    """Send a failure notification to the user via Telegram."""
+    chat_id = job_message.get("telegram_chat_id")
+    if not chat_id:
+        return
+
+    bot = Bot(
+        token=get_settings().telegram_bot_token,
+        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+    )
+    try:
+        await bot.send_message(chat_id=chat_id, text=text)
+    except Exception:
+        logger.exception("Failed to send failure notification")
+    finally:
+        await bot.session.close()
+
+
 async def handle_generate_content(message: dict) -> None:
     """Generate content for a request using the Prompt Engine.
 
@@ -72,6 +90,26 @@ async def handle_generate_content(message: dict) -> None:
             do_list=[],
             dont_list=[],
         )
+        # Warn user that content will be generic
+        telegram_chat_id = message.get("telegram_chat_id")
+        if telegram_chat_id:
+            bot = Bot(
+                token=get_settings().telegram_bot_token,
+                default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+            )
+            try:
+                await bot.send_message(
+                    chat_id=telegram_chat_id,
+                    text=(
+                        "Heads up: I don't have a brand profile for you yet, "
+                        "so the content will be generic. Run /start to set up "
+                        "your brand voice for better results."
+                    ),
+                )
+            except Exception:
+                logger.warning("Failed to send brand profile warning")
+            finally:
+                await bot.session.close()
 
     if not examples:
         examples = []
@@ -91,6 +129,7 @@ async def handle_generate_content(message: dict) -> None:
     except Exception:
         logger.exception("Prompt engine failed", extra={"request_id": request_id})
         await update_content_request_status(request_id, "failed")
+        await _notify_failure(message, "Something went wrong generating your content. Please try again or rephrase your request.")
         raise
 
     await log_usage_event(
@@ -120,6 +159,14 @@ async def handle_generate_content(message: dict) -> None:
             return ""
 
     images = await asyncio.gather(*[_generate_one(scene) for scene in plan.scenes])
+
+    # Warn if ALL images failed
+    successful_images = [url for url in images if url]
+    if not successful_images and plan.scenes:
+        logger.warning(
+            "All image generations failed",
+            extra={"request_id": request_id, "scene_count": len(plan.scenes)},
+        )
 
     # Step 4: Create draft in database (captions come from plan directly)
     draft = await create_content_draft(
@@ -197,10 +244,39 @@ async def handle_generate_content(message: dict) -> None:
                 extra={"draft_id": draft_id},
             )
             video_url = None
+            # Notify user that video failed but images are still available
+            await _notify_failure(
+                message,
+                "Video generation failed, but I still have image options for you. "
+                "Showing image preview instead.",
+            )
+
+    # --- Autopilot source handling ---
+    is_autopilot = message.get("source") == "autopilot"
+    autopilot_topic_id = message.get("autopilot_topic_id")
+    autopilot_mode = message.get("autopilot_mode")
+    warmup_remaining = message.get("warmup_posts_remaining", 0)
+    auto_approve_at_str = message.get("auto_approve_at")
+
+    if is_autopilot and autopilot_topic_id:
+        from bot.db import get_supabase_client as _get_client
+
+        _cl = _get_client()
+        _cl.table("autopilot_topics").update({
+            "draft_id": draft_id,
+            "status": "previewing",
+        }).eq("id", autopilot_topic_id).execute()
 
     # Send preview to Telegram
     telegram_chat_id = message.get("telegram_chat_id")
     if telegram_chat_id:
+        # For autopilot Smart Queue: build timeout notice for preview footer
+        autopilot_notice: str | None = None
+        if is_autopilot and auto_approve_at_str:
+            timeout_mins = message.get("smart_queue_timeout_minutes", 120)
+            hours = timeout_mins // 60
+            autopilot_notice = f"\n\n⏰ Auto-posting in {hours} hour{'s' if hours != 1 else ''} unless you reject."
+
         await _send_preview(
             chat_id=telegram_chat_id,
             draft_id=draft_id,
@@ -209,7 +285,42 @@ async def handle_generate_content(message: dict) -> None:
             image_urls=[url for url in images if url],
             platform_targets=platform_targets,
             video_url=video_url,
+            autopilot_notice=autopilot_notice,
         )
+
+        # For Full Autopilot (post-warmup): auto-approve immediately
+        if is_autopilot and autopilot_mode == "full_autopilot" and (warmup_remaining or 0) <= 0:
+            from bot.handlers.approval import approve_draft as _approve, approve_video_draft as _approve_video
+            from aiogram import Bot as _Bot
+            from aiogram.client.default import DefaultBotProperties as _Defaults
+            from aiogram.enums import ParseMode as _PM
+
+            try:
+                if video_url:
+                    await _approve_video(draft_id, option_idx=0, tenant_id=tenant_id)
+                else:
+                    await _approve(draft_id, option_idx=0, tenant_id=tenant_id)
+
+                # Send FYI notification
+                _bot = _Bot(
+                    token=get_settings().telegram_bot_token,
+                    default=_Defaults(parse_mode=_PM.HTML),
+                )
+                try:
+                    caption_preview = plan.captions[0].get("text", "")[:100] if plan.captions else ""
+                    await _bot.send_message(
+                        chat_id=telegram_chat_id,
+                        text=f"✅ <b>Autopilot posted:</b>\n{caption_preview}...",
+                    )
+                finally:
+                    await _bot.session.close()
+
+                if autopilot_topic_id:
+                    from bot.db import update_autopilot_topic_status as _update_topic
+                    await _update_topic(autopilot_topic_id, "posted", expected_status="previewing")
+
+            except Exception:
+                logger.exception("Autopilot auto-approve failed", extra={"draft_id": draft_id})
     else:
         logger.warning("No telegram_chat_id — can't send preview", extra={"draft_id": draft_id})
 
@@ -222,6 +333,7 @@ async def _send_preview(
     image_urls: list[str],
     platform_targets: list[str],
     video_url: str | None = None,
+    autopilot_notice: str | None = None,
 ) -> None:
     """Send caption + image/video preview to Telegram with approval buttons.
 
@@ -262,6 +374,8 @@ async def _send_preview(
                     "<i>Tap Approve to post the video with your chosen caption, "
                     "Reject All to skip, or Regenerate for new options.</i>"
                 )
+                if autopilot_notice:
+                    preview_text += autopilot_notice
 
                 if len(preview_text) > 4000:
                     preview_text = preview_text[:3997] + "..."
@@ -274,8 +388,10 @@ async def _send_preview(
                     image_url = image_urls[i] if i < len(image_urls) else None
                     cap_text = cap.get("text", "") if isinstance(cap, dict) else str(cap)
                     caption_text = f"<b>Option {i + 1}:</b>\n{cap_text}"
-                    if len(caption_text) > 1020:
-                        caption_text = caption_text[:1017] + "..."
+                    # Telegram photo captions: 1024 bytes max (UTF-8)
+                    if len(caption_text.encode("utf-8")) > 1024:
+                        from bot.handlers.intake import truncate_telegram_caption
+                        caption_text = truncate_telegram_caption(caption_text)
 
                     if image_url:
                         await bot.send_photo(
@@ -292,6 +408,8 @@ async def _send_preview(
                     "<i>Tap Approve to post the option you like, Reject All to skip, "
                     "or Regenerate for new options.</i>"
                 )
+                if autopilot_notice:
+                    footer += autopilot_notice
                 sent = await bot.send_message(
                     chat_id=chat_id, text=footer, reply_markup=keyboard
                 )
@@ -306,6 +424,8 @@ async def _send_preview(
                     f"\n<b>Posting to:</b> {', '.join(p.title() for p in platform_targets) if platform_targets else 'all connected platforms'}\n\n"
                     "<i>Tap Approve to post, Reject All to skip, or Regenerate for new options.</i>"
                 )
+                if autopilot_notice:
+                    preview_text += autopilot_notice
 
                 if len(preview_text) > 4000:
                     preview_text = preview_text[:3997] + "..."

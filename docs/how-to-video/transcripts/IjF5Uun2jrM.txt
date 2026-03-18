@@ -1,0 +1,642 @@
+
+What if you could turn this into reality
+What if you could turn this into reality
+ 
+What if you could turn this into reality
+just by typing a sentence? Hi, I'm Kevin
+just by typing a sentence? Hi, I'm Kevin
+ 
+just by typing a sentence? Hi, I'm Kevin
+and Google just released V3, an AI video
+and Google just released V3, an AI video
+ 
+and Google just released V3, an AI video
+generator that turns your imagination
+generator that turns your imagination
+ 
+generator that turns your imagination
+into cinematic quality videos using
+into cinematic quality videos using
+ 
+into cinematic quality videos using
+nothing more than a simple prompt. In
+nothing more than a simple prompt. In
+ 
+nothing more than a simple prompt. In
+this video, I'll walk you through
+this video, I'll walk you through
+ 
+this video, I'll walk you through
+exactly how to use V3, how to write
+exactly how to use V3, how to write
+ 
+exactly how to use V3, how to write
+better prompts, and how to get the most
+better prompts, and how to get the most
+ 
+better prompts, and how to get the most
+out of it, even if you're brand new to
+out of it, even if you're brand new to
+ 
+out of it, even if you're brand new to
+AI video tools. Oh, and best of all, you
+AI video tools. Oh, and best of all, you
+ 
+AI video tools. Oh, and best of all, you
+can use it for free for an entire month.
+can use it for free for an entire month.
+ 
+can use it for free for an entire month.
+Let's dive in. So, what is Google V3? V3
+Let's dive in. So, what is Google V3? V3
+ 
+Let's dive in. So, what is Google V3? V3
+is Google's latest AI video generation
+is Google's latest AI video generation
+ 
+is Google's latest AI video generation
+model built by DeepMind and it lets you
+model built by DeepMind and it lets you
+ 
+model built by DeepMind and it lets you
+create cinematic quality videos from
+create cinematic quality videos from
+ 
+create cinematic quality videos from
+just a text prompt. It understands
+just a text prompt. It understands
+ 
+just a text prompt. It understands
+things like camera movement, lighting,
+things like camera movement, lighting,
+ 
+things like camera movement, lighting,
+and composition. So, the results feel
+and composition. So, the results feel
+ 
+and composition. So, the results feel
+polished and natural, far beyond most AI
+polished and natural, far beyond most AI
+ 
+polished and natural, far beyond most AI
+tools. But here's what really sets it
+tools. But here's what really sets it
+ 
+tools. But here's what really sets it
+apart. V3 doesn't just generate video.
+apart. V3 doesn't just generate video.
+ 
+apart. V3 doesn't just generate video.
+It also adds audio automatically. Like
+It also adds audio automatically. Like
+ 
+It also adds audio automatically. Like
+here in this example,
+here in this example,
+ 
+here in this example,
+I'm one with nature now.
+I'm one with nature now.
+ 
+I'm one with nature now.
+Nature would prefer some personal space.
+Nature would prefer some personal space.
+ 
+Nature would prefer some personal space.
+That includes background music, ambient
+That includes background music, ambient
+ 
+That includes background music, ambient
+sound effects, and even voice narration
+sound effects, and even voice narration
+ 
+sound effects, and even voice narration
+if you wanted to speak specific lines of
+if you wanted to speak specific lines of
+ 
+if you wanted to speak specific lines of
+text. And honestly, it looks darn good.
+text. And honestly, it looks darn good.
+ 
+text. And honestly, it looks darn good.
+To use V3, you need a paid plan. The
+To use V3, you need a paid plan. The
+ 
+To use V3, you need a paid plan. The
+good news though, you can try it for
+good news though, you can try it for
+ 
+good news though, you can try it for
+free for the first month, giving you a
+free for the first month, giving you a
+ 
+free for the first month, giving you a
+chance to see everything that V3 is
+chance to see everything that V3 is
+ 
+chance to see everything that V3 is
+capable of. You can explore the
+capable of. You can explore the
+ 
+capable of. You can explore the
+available plans using the link right
+available plans using the link right
+ 
+available plans using the link right
+down below on the screen. Both plans
+down below on the screen. Both plans
+ 
+down below on the screen. Both plans
+include access to V3. In addition to AI
+include access to V3. In addition to AI
+ 
+include access to V3. In addition to AI
+video generation, you also get access to
+video generation, you also get access to
+ 
+video generation, you also get access to
+things like Gemini and Gmail Docs and
+things like Gemini and Gmail Docs and
+ 
+things like Gemini and Gmail Docs and
+more. Plus, you also get 2 TB of storage
+more. Plus, you also get 2 TB of storage
+ 
+more. Plus, you also get 2 TB of storage
+for your Google Photos, Drive, and
+for your Google Photos, Drive, and
+ 
+for your Google Photos, Drive, and
+email. All in all, it's a solid deal and
+email. All in all, it's a solid deal and
+ 
+email. All in all, it's a solid deal and
+pretty much in line with what other
+pretty much in line with what other
+ 
+pretty much in line with what other
+companies are charging for their AI
+companies are charging for their AI
+ 
+companies are charging for their AI
+tools. Once you've signed up for a plan,
+tools. Once you've signed up for a plan,
+ 
+tools. Once you've signed up for a plan,
+head over to the address at the bottom
+head over to the address at the bottom
+ 
+head over to the address at the bottom
+of the screen and then sign in with your
+of the screen and then sign in with your
+ 
+of the screen and then sign in with your
+Google account. This drops us into the
+Google account. This drops us into the
+ 
+Google account. This drops us into the
+Gemini chat interface and at the bottom
+Gemini chat interface and at the bottom
+ 
+Gemini chat interface and at the bottom
+of the screen, you'll see the prompt
+of the screen, you'll see the prompt
+ 
+of the screen, you'll see the prompt
+field along with a few different tools.
+field along with a few different tools.
+ 
+field along with a few different tools.
+Let's click on the one titled video and
+Let's click on the one titled video and
+ 
+Let's click on the one titled video and
+that turns on V3. From there, you could
+that turns on V3. From there, you could
+ 
+that turns on V3. From there, you could
+start typing in your prompt. Let's try
+start typing in your prompt. Let's try
+ 
+start typing in your prompt. Let's try
+one. A cinematic slow motion shot of
+one. A cinematic slow motion shot of
+ 
+one. A cinematic slow motion shot of
+freshly baked chocolate chip cookies
+freshly baked chocolate chip cookies
+ 
+freshly baked chocolate chip cookies
+being pulled out of the oven. Then you
+being pulled out of the oven. Then you
+ 
+being pulled out of the oven. Then you
+could also offer information like where
+could also offer information like where
+ 
+could also offer information like where
+is it here? I want it to be in a cozy
+is it here? I want it to be in a cozy
+ 
+is it here? I want it to be in a cozy
+sunlit kitchen. You could also talk
+sunlit kitchen. You could also talk
+ 
+sunlit kitchen. You could also talk
+about the lighting. I want it to be
+about the lighting. I want it to be
+ 
+about the lighting. I want it to be
+warm, what the focus should look like,
+warm, what the focus should look like,
+ 
+warm, what the focus should look like,
+any atmospheric effects like steam
+any atmospheric effects like steam
+ 
+any atmospheric effects like steam
+rising. And also if you want to include
+rising. And also if you want to include
+ 
+rising. And also if you want to include
+any music. The more details you provide,
+any music. The more details you provide,
+ 
+any music. The more details you provide,
+the closer the resulting video will
+the closer the resulting video will
+ 
+the closer the resulting video will
+match what you had in mind. Once you're
+match what you had in mind. Once you're
+ 
+match what you had in mind. Once you're
+done entering in your prompt in the
+done entering in your prompt in the
+ 
+done entering in your prompt in the
+bottom right, let's submit that. Let's
+bottom right, let's submit that. Let's
+ 
+bottom right, let's submit that. Let's
+now watch how it turned out.
+
+ 
+
+Oh, overall that's really impressive. I
+Oh, overall that's really impressive. I
+ 
+Oh, overall that's really impressive. I
+did notice a few issues. For example,
+did notice a few issues. For example,
+ 
+did notice a few issues. For example,
+for whatever reason, some of the
+for whatever reason, some of the
+ 
+for whatever reason, some of the
+chocolate chips completely melted on top
+chocolate chips completely melted on top
+ 
+chocolate chips completely melted on top
+of the cookie, but overall it matches my
+of the cookie, but overall it matches my
+ 
+of the cookie, but overall it matches my
+prompt really closely. I'm really
+prompt really closely. I'm really
+ 
+prompt really closely. I'm really
+impressed. One cool feature of V3 is
+impressed. One cool feature of V3 is
+ 
+impressed. One cool feature of V3 is
+that it doesn't just generate video. It
+that it doesn't just generate video. It
+ 
+that it doesn't just generate video. It
+can also add narration. If you wanted to
+can also add narration. If you wanted to
+ 
+can also add narration. If you wanted to
+speak specific lines of text, just
+speak specific lines of text, just
+ 
+speak specific lines of text, just
+include that text in quotes as part of
+include that text in quotes as part of
+ 
+include that text in quotes as part of
+your prompt. Right here, I'll type in my
+your prompt. Right here, I'll type in my
+ 
+your prompt. Right here, I'll type in my
+prompt. And at the very end, I call out
+prompt. And at the very end, I call out
+ 
+prompt. And at the very end, I call out
+that this is the narration. And then
+that this is the narration. And then
+ 
+that this is the narration. And then
+here, I have all the text that I wanted
+here, I have all the text that I wanted
+ 
+here, I have all the text that I wanted
+to narrate included in quotes. Once you
+to narrate included in quotes. Once you
+ 
+to narrate included in quotes. Once you
+enter that in as part of your prompt,
+enter that in as part of your prompt,
+ 
+enter that in as part of your prompt,
+let's submit that. Let's preview how
+let's submit that. Let's preview how
+ 
+let's submit that. Let's preview how
+this turned out. History is being made.
+this turned out. History is being made.
+ 
+this turned out. History is being made.
+The Kevin Cookie Company unveils the
+The Kevin Cookie Company unveils the
+ 
+The Kevin Cookie Company unveils the
+world's largest chocolate chip cookie.
+world's largest chocolate chip cookie.
+ 
+world's largest chocolate chip cookie.
+That voice really fits the part. Once
+That voice really fits the part. Once
+ 
+That voice really fits the part. Once
+you're satisfied with the way your video
+you're satisfied with the way your video
+ 
+you're satisfied with the way your video
+turned out, it's really easy to
+turned out, it's really easy to
+ 
+turned out, it's really easy to
+download. Simply hover over your video.
+download. Simply hover over your video.
+ 
+download. Simply hover over your video.
+Then in the top right hand corner,
+Then in the top right hand corner,
+ 
+Then in the top right hand corner,
+you'll see this download icon. Simply
+you'll see this download icon. Simply
+ 
+you'll see this download icon. Simply
+click on that and it'll download an MP4
+click on that and it'll download an MP4
+ 
+click on that and it'll download an MP4
+file onto your computer. And that's it.
+file onto your computer. And that's it.
+ 
+file onto your computer. And that's it.
+You're ready to use your AI generated
+You're ready to use your AI generated
+ 
+You're ready to use your AI generated
+video wherever you want. One really
+video wherever you want. One really
+ 
+video wherever you want. One really
+helpful trick when you're not sure how
+helpful trick when you're not sure how
+ 
+helpful trick when you're not sure how
+to phrase your V3 prompt is to just ask
+to phrase your V3 prompt is to just ask
+ 
+to phrase your V3 prompt is to just ask
+Gemini. Since V3 lives right inside
+Gemini. Since V3 lives right inside
+ 
+Gemini. Since V3 lives right inside
+Gemini, you can use the same chat to
+Gemini, you can use the same chat to
+ 
+Gemini, you can use the same chat to
+help you refine or improve your ideas
+help you refine or improve your ideas
+ 
+help you refine or improve your ideas
+before you generate the video. Now,
+before you generate the video. Now,
+ 
+before you generate the video. Now,
+let's say I want to make a video about
+let's say I want to make a video about
+ 
+let's say I want to make a video about
+the Kevin Cookie Company baking the
+the Kevin Cookie Company baking the
+ 
+the Kevin Cookie Company baking the
+world's largest chocolate chip cookie,
+world's largest chocolate chip cookie,
+ 
+world's largest chocolate chip cookie,
+but I'm not quite sure how to word it to
+but I'm not quite sure how to word it to
+ 
+but I'm not quite sure how to word it to
+get that cinematic storybook vibe. Right
+get that cinematic storybook vibe. Right
+ 
+get that cinematic storybook vibe. Right
+down below, I could simply ask Gemini.
+down below, I could simply ask Gemini.
+ 
+down below, I could simply ask Gemini.
+So, here I can type in, "Can you help me
+So, here I can type in, "Can you help me
+ 
+So, here I can type in, "Can you help me
+write a cinematic video prompt about a
+write a cinematic video prompt about a
+ 
+write a cinematic video prompt about a
+team of bakers making the world's
+team of bakers making the world's
+ 
+team of bakers making the world's
+largest cookie?" Then, let's submit
+largest cookie?" Then, let's submit
+ 
+largest cookie?" Then, let's submit
+that. Right up above, Gemini suggests a
+that. Right up above, Gemini suggests a
+ 
+that. Right up above, Gemini suggests a
+much more descriptive version. It
+much more descriptive version. It
+ 
+much more descriptive version. It
+includes things like the camera angles,
+includes things like the camera angles,
+ 
+includes things like the camera angles,
+the lighting, the background music, even
+the lighting, the background music, even
+ 
+the lighting, the background music, even
+the pacing. Now, here I could take this
+the pacing. Now, here I could take this
+ 
+the pacing. Now, here I could take this
+as it is, and I could paste it into the
+as it is, and I could paste it into the
+ 
+as it is, and I could paste it into the
+prompt field, and then I can make tweaks
+prompt field, and then I can make tweaks
+ 
+prompt field, and then I can make tweaks
+to it to match exactly what I'm looking
+to it to match exactly what I'm looking
+ 
+to it to match exactly what I'm looking
+for. If we scroll down a little bit
+for. If we scroll down a little bit
+ 
+for. If we scroll down a little bit
+more, here I have another option. So, I
+more, here I have another option. So, I
+ 
+more, here I have another option. So, I
+could look through that to see if maybe
+could look through that to see if maybe
+ 
+could look through that to see if maybe
+this is a better fit. And all the way
+this is a better fit. And all the way
+ 
+this is a better fit. And all the way
+down at the bottom, I even have tips on
+down at the bottom, I even have tips on
+ 
+down at the bottom, I even have tips on
+the types of things to include in my
+the types of things to include in my
+ 
+the types of things to include in my
+prompts to get the best results. So, if
+prompts to get the best results. So, if
+ 
+prompts to get the best results. So, if
+you're ever stuck or you just want your
+you're ever stuck or you just want your
+ 
+you're ever stuck or you just want your
+prompt to sound more epic, just let
+prompt to sound more epic, just let
+ 
+prompt to sound more epic, just let
+Gemini do all the heavy lifting. If you
+Gemini do all the heavy lifting. If you
+ 
+Gemini do all the heavy lifting. If you
+ever want to go back and watch a video
+ever want to go back and watch a video
+ 
+ever want to go back and watch a video
+that you generated earlier, it's super
+that you generated earlier, it's super
+ 
+that you generated earlier, it's super
+easy. Just look over on the lefth hand
+easy. Just look over on the lefth hand
+ 
+easy. Just look over on the lefth hand
+side of the Gemini interface under
+side of the Gemini interface under
+ 
+side of the Gemini interface under
+recent. And here you'll see a list of
+recent. And here you'll see a list of
+ 
+recent. And here you'll see a list of
+all of your past chats. Here, I could
+all of your past chats. Here, I could
+ 
+all of your past chats. Here, I could
+click into any one of them and I see the
+click into any one of them and I see the
+ 
+click into any one of them and I see the
+associated video with that chat. And
+associated video with that chat. And
+ 
+associated video with that chat. And
+just like that, we've officially baked
+just like that, we've officially baked
+ 
+just like that, we've officially baked
+the world's largest chocolate chip
+the world's largest chocolate chip
+ 
+the world's largest chocolate chip
+cookie.
+cookie.
+ 
+cookie.
+Or did we? What's real and what's not?
+Or did we? What's real and what's not?
+ 
+Or did we? What's real and what's not?
+Can we even tell anymore? How do you
+Can we even tell anymore? How do you
+ 
+Can we even tell anymore? How do you
+know this video is real? Don't I mean,
+know this video is real? Don't I mean,
+ 
+know this video is real? Don't I mean,
+don't worry. I'm not generated by V3. At
+don't worry. I'm not generated by V3. At
+ 
+don't worry. I'm not generated by V3. At
+least I don't think I am. How can I
+least I don't think I am. How can I
+ 
+least I don't think I am. How can I
+prove it? Oh, this face is way too good
+prove it? Oh, this face is way too good
+ 
+prove it? Oh, this face is way too good
+to be generated by AI. This is the best
+to be generated by AI. This is the best
+ 
+to be generated by AI. This is the best
+cookie I've ever sampled. Flavor,
+cookie I've ever sampled. Flavor,
+ 
+cookie I've ever sampled. Flavor,
+texture, everything is perfect.
+
+ 
+
+Everyone agrees Kevin Cookie Company
+Everyone agrees Kevin Cookie Company
+ 
+Everyone agrees Kevin Cookie Company
+cookies are the best in the world.
+cookies are the best in the world.
+ 
+cookies are the best in the world.
+Thousands are lining up for a taste of
+Thousands are lining up for a taste of
+ 
+Thousands are lining up for a taste of
+cookie greatness.
+cookie greatness.
+ 
+cookie greatness.
+[Applause]

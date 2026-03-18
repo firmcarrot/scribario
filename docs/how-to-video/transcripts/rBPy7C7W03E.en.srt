@@ -1,0 +1,2305 @@
+1
+00:00:00,160 --> 00:00:02,470
+
+Google has shared with us the best way
+
+2
+00:00:02,470 --> 00:00:02,480
+Google has shared with us the best way
+ 
+
+3
+00:00:02,480 --> 00:00:05,590
+Google has shared with us the best way
+to prompt VO 3.1. And in the video
+
+4
+00:00:05,590 --> 00:00:05,600
+to prompt VO 3.1. And in the video
+ 
+
+5
+00:00:05,600 --> 00:00:08,150
+to prompt VO 3.1. And in the video
+today, I'm going to show you how to do
+
+6
+00:00:08,150 --> 00:00:08,160
+today, I'm going to show you how to do
+ 
+
+7
+00:00:08,160 --> 00:00:10,790
+today, I'm going to show you how to do
+this simply so that you can start
+
+8
+00:00:10,790 --> 00:00:10,800
+this simply so that you can start
+ 
+
+9
+00:00:10,800 --> 00:00:13,430
+this simply so that you can start
+creating the very best prompts for your
+
+10
+00:00:13,430 --> 00:00:13,440
+creating the very best prompts for your
+ 
+
+11
+00:00:13,440 --> 00:00:15,430
+creating the very best prompts for your
+videos. In the video, you're going to
+
+12
+00:00:15,430 --> 00:00:15,440
+videos. In the video, you're going to
+ 
+
+13
+00:00:15,440 --> 00:00:18,950
+videos. In the video, you're going to
+learn the fivepart formula for directing
+
+14
+00:00:18,950 --> 00:00:18,960
+learn the fivepart formula for directing
+ 
+
+15
+00:00:18,960 --> 00:00:21,750
+learn the fivepart formula for directing
+the scene. This is cinematography shot
+
+16
+00:00:21,750 --> 00:00:21,760
+the scene. This is cinematography shot
+ 
+
+17
+00:00:21,760 --> 00:00:23,830
+the scene. This is cinematography shot
+composition, which is the camera angle
+
+18
+00:00:23,830 --> 00:00:23,840
+composition, which is the camera angle
+ 
+
+19
+00:00:23,840 --> 00:00:25,910
+composition, which is the camera angle
+and the position, the movement. It's the
+
+20
+00:00:25,910 --> 00:00:25,920
+and the position, the movement. It's the
+ 
+
+21
+00:00:25,920 --> 00:00:28,150
+and the position, the movement. It's the
+subject, which is the main character or
+
+22
+00:00:28,150 --> 00:00:28,160
+subject, which is the main character or
+ 
+
+23
+00:00:28,160 --> 00:00:30,550
+subject, which is the main character or
+focal point in the video. action, which
+
+24
+00:00:30,550 --> 00:00:30,560
+focal point in the video. action, which
+ 
+
+25
+00:00:30,560 --> 00:00:33,030
+focal point in the video. action, which
+is what is the subject doing? How is it
+
+26
+00:00:33,030 --> 00:00:33,040
+is what is the subject doing? How is it
+ 
+
+27
+00:00:33,040 --> 00:00:34,709
+is what is the subject doing? How is it
+moving in the video? Then you've got
+
+28
+00:00:34,709 --> 00:00:34,719
+moving in the video? Then you've got
+ 
+
+29
+00:00:34,719 --> 00:00:37,270
+moving in the video? Then you've got
+context and setting. This is the
+
+30
+00:00:37,270 --> 00:00:37,280
+context and setting. This is the
+ 
+
+31
+00:00:37,280 --> 00:00:39,430
+context and setting. This is the
+environment and the background or the
+
+32
+00:00:39,430 --> 00:00:39,440
+environment and the background or the
+ 
+
+33
+00:00:39,440 --> 00:00:42,389
+environment and the background or the
+time of day. And finally, style and
+
+34
+00:00:42,389 --> 00:00:42,399
+time of day. And finally, style and
+ 
+
+35
+00:00:42,399 --> 00:00:45,670
+time of day. And finally, style and
+ambiance. The overall aesthetic, mood,
+
+36
+00:00:45,670 --> 00:00:45,680
+ambiance. The overall aesthetic, mood,
+ 
+
+37
+00:00:45,680 --> 00:00:48,869
+ambiance. The overall aesthetic, mood,
+lighting or feeling of the scene. So,
+
+38
+00:00:48,869 --> 00:00:48,879
+lighting or feeling of the scene. So,
+ 
+
+39
+00:00:48,879 --> 00:00:51,510
+lighting or feeling of the scene. So,
+before we get into how to do this prompt
+
+40
+00:00:51,510 --> 00:00:51,520
+before we get into how to do this prompt
+ 
+
+41
+00:00:51,520 --> 00:00:53,750
+before we get into how to do this prompt
+formula and create really good prompts
+
+42
+00:00:53,750 --> 00:00:53,760
+formula and create really good prompts
+ 
+
+43
+00:00:53,760 --> 00:00:56,069
+formula and create really good prompts
+with it, let's show you how you can
+
+44
+00:00:56,069 --> 00:00:56,079
+with it, let's show you how you can
+ 
+
+45
+00:00:56,079 --> 00:00:59,510
+with it, let's show you how you can
+access Google V3.1. The first place you
+
+46
+00:00:59,510 --> 00:00:59,520
+access Google V3.1. The first place you
+ 
+
+47
+00:00:59,520 --> 00:01:03,270
+access Google V3.1. The first place you
+can access VO3.1 is in Google Flow and
+
+48
+00:01:03,270 --> 00:01:03,280
+can access VO3.1 is in Google Flow and
+ 
+
+49
+00:01:03,280 --> 00:01:05,189
+can access VO3.1 is in Google Flow and
+you can just type this into Google and
+
+50
+00:01:05,189 --> 00:01:05,199
+you can just type this into Google and
+ 
+
+51
+00:01:05,199 --> 00:01:07,109
+you can just type this into Google and
+it will take you straight here. Now you
+
+52
+00:01:07,109 --> 00:01:07,119
+it will take you straight here. Now you
+ 
+
+53
+00:01:07,119 --> 00:01:09,270
+it will take you straight here. Now you
+will have to sign up to use it but then
+
+54
+00:01:09,270 --> 00:01:09,280
+will have to sign up to use it but then
+ 
+
+55
+00:01:09,280 --> 00:01:12,630
+will have to sign up to use it but then
+you get access to text to video and
+
+56
+00:01:12,630 --> 00:01:12,640
+you get access to text to video and
+ 
+
+57
+00:01:12,640 --> 00:01:16,870
+you get access to text to video and
+frames to video inside Google Flow. So
+
+58
+00:01:16,870 --> 00:01:16,880
+frames to video inside Google Flow. So
+ 
+
+59
+00:01:16,880 --> 00:01:19,510
+frames to video inside Google Flow. So
+the other way that I use VO3.1 is in
+
+60
+00:01:19,510 --> 00:01:19,520
+the other way that I use VO3.1 is in
+ 
+
+61
+00:01:19,520 --> 00:01:21,830
+the other way that I use VO3.1 is in
+Higsfield AI. Now, this is brilliant
+
+62
+00:01:21,830 --> 00:01:21,840
+Higsfield AI. Now, this is brilliant
+ 
+
+63
+00:01:21,840 --> 00:01:25,109
+Higsfield AI. Now, this is brilliant
+because you could get access to Sora 2,
+
+64
+00:01:25,109 --> 00:01:25,119
+because you could get access to Sora 2,
+ 
+
+65
+00:01:25,119 --> 00:01:29,590
+because you could get access to Sora 2,
+Google V3.1, Clean 2.5 Turbo, and a
+
+66
+00:01:29,590 --> 00:01:29,600
+Google V3.1, Clean 2.5 Turbo, and a
+ 
+
+67
+00:01:29,600 --> 00:01:32,630
+Google V3.1, Clean 2.5 Turbo, and a
+whole lot of amazing software. You also
+
+68
+00:01:32,630 --> 00:01:32,640
+whole lot of amazing software. You also
+ 
+
+69
+00:01:32,640 --> 00:01:34,950
+whole lot of amazing software. You also
+have a lot more power inside this. You
+
+70
+00:01:34,950 --> 00:01:34,960
+have a lot more power inside this. You
+ 
+
+71
+00:01:34,960 --> 00:01:37,109
+have a lot more power inside this. You
+can use the frames option, start to end
+
+72
+00:01:37,109 --> 00:01:37,119
+can use the frames option, start to end
+ 
+
+73
+00:01:37,119 --> 00:01:39,590
+can use the frames option, start to end
+frame, the ingredients option to add in
+
+74
+00:01:39,590 --> 00:01:39,600
+frame, the ingredients option to add in
+ 
+
+75
+00:01:39,600 --> 00:01:41,670
+frame, the ingredients option to add in
+your own images, and you've got
+
+76
+00:01:41,670 --> 00:01:41,680
+your own images, and you've got
+ 
+
+77
+00:01:41,680 --> 00:01:43,910
+your own images, and you've got
+prompting and different options to
+
+78
+00:01:43,910 --> 00:01:43,920
+prompting and different options to
+ 
+
+79
+00:01:43,920 --> 00:01:46,550
+prompting and different options to
+change the quality and multi-shot mode.
+
+80
+00:01:46,550 --> 00:01:46,560
+change the quality and multi-shot mode.
+ 
+
+81
+00:01:46,560 --> 00:01:47,910
+change the quality and multi-shot mode.
+It's definitely worth checking this out
+
+82
+00:01:47,910 --> 00:01:47,920
+It's definitely worth checking this out
+ 
+
+83
+00:01:47,920 --> 00:01:50,950
+It's definitely worth checking this out
+if you're going to use VO3.1 a lot
+
+84
+00:01:50,950 --> 00:01:50,960
+if you're going to use VO3.1 a lot
+ 
+
+85
+00:01:50,960 --> 00:01:54,550
+if you're going to use VO3.1 a lot
+moving forward.
+
+86
+00:01:54,550 --> 00:01:54,560
+
+ 
+
+87
+00:01:54,560 --> 00:01:57,830
+
+So, first up, we have cinematography and
+
+88
+00:01:57,830 --> 00:01:57,840
+So, first up, we have cinematography and
+ 
+
+89
+00:01:57,840 --> 00:02:00,709
+So, first up, we have cinematography and
+shot composition. This is the camera
+
+90
+00:02:00,709 --> 00:02:00,719
+shot composition. This is the camera
+ 
+
+91
+00:02:00,719 --> 00:02:03,670
+shot composition. This is the camera
+angle and the position or the movement
+
+92
+00:02:03,670 --> 00:02:03,680
+angle and the position or the movement
+ 
+
+93
+00:02:03,680 --> 00:02:06,950
+angle and the position or the movement
+of the character or the scene. You can
+
+94
+00:02:06,950 --> 00:02:06,960
+of the character or the scene. You can
+ 
+
+95
+00:02:06,960 --> 00:02:08,550
+of the character or the scene. You can
+control this in many different ways,
+
+96
+00:02:08,550 --> 00:02:08,560
+control this in many different ways,
+ 
+
+97
+00:02:08,560 --> 00:02:11,750
+control this in many different ways,
+like a medium shot, a slow zoom, a low
+
+98
+00:02:11,750 --> 00:02:11,760
+like a medium shot, a slow zoom, a low
+ 
+
+99
+00:02:11,760 --> 00:02:14,390
+like a medium shot, a slow zoom, a low
+camera angle, creating different moods
+
+100
+00:02:14,390 --> 00:02:14,400
+camera angle, creating different moods
+ 
+
+101
+00:02:14,400 --> 00:02:17,350
+camera angle, creating different moods
+and feelings in your video. Adding
+
+102
+00:02:17,350 --> 00:02:17,360
+and feelings in your video. Adding
+ 
+
+103
+00:02:17,360 --> 00:02:19,830
+and feelings in your video. Adding
+specific camera angles and movements can
+
+104
+00:02:19,830 --> 00:02:19,840
+specific camera angles and movements can
+ 
+
+105
+00:02:19,840 --> 00:02:23,190
+specific camera angles and movements can
+really make your video dynamic. Next up
+
+106
+00:02:23,190 --> 00:02:23,200
+really make your video dynamic. Next up
+ 
+
+107
+00:02:23,200 --> 00:02:25,350
+really make your video dynamic. Next up
+is the subject. This is the main
+
+108
+00:02:25,350 --> 00:02:25,360
+is the subject. This is the main
+ 
+
+109
+00:02:25,360 --> 00:02:27,910
+is the subject. This is the main
+character or the focal point that you
+
+110
+00:02:27,910 --> 00:02:27,920
+character or the focal point that you
+ 
+
+111
+00:02:27,920 --> 00:02:30,070
+character or the focal point that you
+want to focus on in the video. And it's
+
+112
+00:02:30,070 --> 00:02:30,080
+want to focus on in the video. And it's
+ 
+
+113
+00:02:30,080 --> 00:02:33,270
+want to focus on in the video. And it's
+best to describe this in detail. The
+
+114
+00:02:33,270 --> 00:02:33,280
+best to describe this in detail. The
+ 
+
+115
+00:02:33,280 --> 00:02:35,350
+best to describe this in detail. The
+better you describe the look of your
+
+116
+00:02:35,350 --> 00:02:35,360
+better you describe the look of your
+ 
+
+117
+00:02:35,360 --> 00:02:37,830
+better you describe the look of your
+character and the details you add in,
+
+118
+00:02:37,830 --> 00:02:37,840
+character and the details you add in,
+ 
+
+119
+00:02:37,840 --> 00:02:39,509
+character and the details you add in,
+the better the result you'll get. When
+
+120
+00:02:39,509 --> 00:02:39,519
+the better the result you'll get. When
+ 
+
+121
+00:02:39,519 --> 00:02:41,670
+the better the result you'll get. When
+you've created the main character, you
+
+122
+00:02:41,670 --> 00:02:41,680
+you've created the main character, you
+ 
+
+123
+00:02:41,680 --> 00:02:44,070
+you've created the main character, you
+want to look at action. This is an
+
+124
+00:02:44,070 --> 00:02:44,080
+want to look at action. This is an
+ 
+
+125
+00:02:44,080 --> 00:02:47,030
+want to look at action. This is an
+important step to really show what the
+
+126
+00:02:47,030 --> 00:02:47,040
+important step to really show what the
+ 
+
+127
+00:02:47,040 --> 00:02:49,670
+important step to really show what the
+subject is doing in the video, and you
+
+128
+00:02:49,670 --> 00:02:49,680
+subject is doing in the video, and you
+ 
+
+129
+00:02:49,680 --> 00:02:52,150
+subject is doing in the video, and you
+can control this with this part of the
+
+130
+00:02:52,150 --> 00:02:52,160
+can control this with this part of the
+ 
+
+131
+00:02:52,160 --> 00:02:54,790
+can control this with this part of the
+prompt. A great way to do this is to
+
+132
+00:02:54,790 --> 00:02:54,800
+prompt. A great way to do this is to
+ 
+
+133
+00:02:54,800 --> 00:02:57,270
+prompt. A great way to do this is to
+really describe the way the subject is
+
+134
+00:02:57,270 --> 00:02:57,280
+really describe the way the subject is
+ 
+
+135
+00:02:57,280 --> 00:03:00,470
+really describe the way the subject is
+moving around the scene. Next up, you've
+
+136
+00:03:00,470 --> 00:03:00,480
+moving around the scene. Next up, you've
+ 
+
+137
+00:03:00,480 --> 00:03:03,030
+moving around the scene. Next up, you've
+got context and setting. This is
+
+138
+00:03:03,030 --> 00:03:03,040
+got context and setting. This is
+ 
+
+139
+00:03:03,040 --> 00:03:05,270
+got context and setting. This is
+important because it describes the
+
+140
+00:03:05,270 --> 00:03:05,280
+important because it describes the
+ 
+
+141
+00:03:05,280 --> 00:03:06,949
+important because it describes the
+environment or the world that you're
+
+142
+00:03:06,949 --> 00:03:06,959
+environment or the world that you're
+ 
+
+143
+00:03:06,959 --> 00:03:09,509
+environment or the world that you're
+creating with the video. Also, this is
+
+144
+00:03:09,509 --> 00:03:09,519
+creating with the video. Also, this is
+ 
+
+145
+00:03:09,519 --> 00:03:11,670
+creating with the video. Also, this is
+describing the background, the time of
+
+146
+00:03:11,670 --> 00:03:11,680
+describing the background, the time of
+ 
+
+147
+00:03:11,680 --> 00:03:14,470
+describing the background, the time of
+day, weather, if it's bright or if it's
+
+148
+00:03:14,470 --> 00:03:14,480
+day, weather, if it's bright or if it's
+ 
+
+149
+00:03:14,480 --> 00:03:16,550
+day, weather, if it's bright or if it's
+dark. You could really set the scene
+
+150
+00:03:16,550 --> 00:03:16,560
+dark. You could really set the scene
+ 
+
+151
+00:03:16,560 --> 00:03:18,550
+dark. You could really set the scene
+with this part of the prompt. Finally,
+
+152
+00:03:18,550 --> 00:03:18,560
+with this part of the prompt. Finally,
+ 
+
+153
+00:03:18,560 --> 00:03:21,110
+with this part of the prompt. Finally,
+you've got style and ambience. This is
+
+154
+00:03:21,110 --> 00:03:21,120
+you've got style and ambience. This is
+ 
+
+155
+00:03:21,120 --> 00:03:23,509
+you've got style and ambience. This is
+the overall aesthetic. It really follows
+
+156
+00:03:23,509 --> 00:03:23,519
+the overall aesthetic. It really follows
+ 
+
+157
+00:03:23,519 --> 00:03:25,910
+the overall aesthetic. It really follows
+on nicely from the environment, just
+
+158
+00:03:25,910 --> 00:03:25,920
+on nicely from the environment, just
+ 
+
+159
+00:03:25,920 --> 00:03:27,670
+on nicely from the environment, just
+really digging deeper into the mood and
+
+160
+00:03:27,670 --> 00:03:27,680
+really digging deeper into the mood and
+ 
+
+161
+00:03:27,680 --> 00:03:29,430
+really digging deeper into the mood and
+the lighting. You can describe things
+
+162
+00:03:29,430 --> 00:03:29,440
+the lighting. You can describe things
+ 
+
+163
+00:03:29,440 --> 00:03:31,509
+the lighting. You can describe things
+like the light and how you want it to
+
+164
+00:03:31,509 --> 00:03:31,519
+like the light and how you want it to
+ 
+
+165
+00:03:31,519 --> 00:03:33,589
+like the light and how you want it to
+look. And if you want things to be
+
+166
+00:03:33,589 --> 00:03:33,599
+look. And if you want things to be
+ 
+
+167
+00:03:33,599 --> 00:03:36,070
+look. And if you want things to be
+cinematic, ultra real, or if you want it
+
+168
+00:03:36,070 --> 00:03:36,080
+cinematic, ultra real, or if you want it
+ 
+
+169
+00:03:36,080 --> 00:03:38,390
+cinematic, ultra real, or if you want it
+to be a cartoon, I'm really excited to
+
+170
+00:03:38,390 --> 00:03:38,400
+to be a cartoon, I'm really excited to
+ 
+
+171
+00:03:38,400 --> 00:03:40,390
+to be a cartoon, I'm really excited to
+announce that today's video has been
+
+172
+00:03:40,390 --> 00:03:40,400
+announce that today's video has been
+ 
+
+173
+00:03:40,400 --> 00:03:42,949
+announce that today's video has been
+sponsored by Skillshare. On Skillshare,
+
+174
+00:03:42,949 --> 00:03:42,959
+sponsored by Skillshare. On Skillshare,
+ 
+
+175
+00:03:42,959 --> 00:03:45,190
+sponsored by Skillshare. On Skillshare,
+you have access to thousands of classes
+
+176
+00:03:45,190 --> 00:03:45,200
+you have access to thousands of classes
+ 
+
+177
+00:03:45,200 --> 00:03:47,270
+you have access to thousands of classes
+at all levels. Whether you're an artist,
+
+178
+00:03:47,270 --> 00:03:47,280
+at all levels. Whether you're an artist,
+ 
+
+179
+00:03:47,280 --> 00:03:49,509
+at all levels. Whether you're an artist,
+freelancer, entrepreneur, or just a
+
+180
+00:03:49,509 --> 00:03:49,519
+freelancer, entrepreneur, or just a
+ 
+
+181
+00:03:49,519 --> 00:03:52,309
+freelancer, entrepreneur, or just a
+person trying not to unravel, Skillshare
+
+182
+00:03:52,309 --> 00:03:52,319
+person trying not to unravel, Skillshare
+ 
+
+183
+00:03:52,319 --> 00:03:54,789
+person trying not to unravel, Skillshare
+helps you tap into creativity that fuels
+
+184
+00:03:54,789 --> 00:03:54,799
+helps you tap into creativity that fuels
+ 
+
+185
+00:03:54,799 --> 00:03:58,149
+helps you tap into creativity that fuels
+long-term clarity, balance, growth, and
+
+186
+00:03:58,149 --> 00:03:58,159
+long-term clarity, balance, growth, and
+ 
+
+187
+00:03:58,159 --> 00:04:00,869
+long-term clarity, balance, growth, and
+success. Now, on Skillshare, I became a
+
+188
+00:04:00,869 --> 00:04:00,879
+success. Now, on Skillshare, I became a
+ 
+
+189
+00:04:00,879 --> 00:04:02,710
+success. Now, on Skillshare, I became a
+member because I wanted to learn to
+
+190
+00:04:02,710 --> 00:04:02,720
+member because I wanted to learn to
+ 
+
+191
+00:04:02,720 --> 00:04:05,509
+member because I wanted to learn to
+become more productive and to get a bit
+
+192
+00:04:05,509 --> 00:04:05,519
+become more productive and to get a bit
+ 
+
+193
+00:04:05,519 --> 00:04:08,309
+become more productive and to get a bit
+of a handle on AI. This class here on
+
+194
+00:04:08,309 --> 00:04:08,319
+of a handle on AI. This class here on
+ 
+
+195
+00:04:08,319 --> 00:04:10,869
+of a handle on AI. This class here on
+VO3 in Canva showed me how to make
+
+196
+00:04:10,869 --> 00:04:10,879
+VO3 in Canva showed me how to make
+ 
+
+197
+00:04:10,879 --> 00:04:13,270
+VO3 in Canva showed me how to make
+cinematic AI videos using effective
+
+198
+00:04:13,270 --> 00:04:13,280
+cinematic AI videos using effective
+ 
+
+199
+00:04:13,280 --> 00:04:15,750
+cinematic AI videos using effective
+prompting. I've used the skills provided
+
+200
+00:04:15,750 --> 00:04:15,760
+prompting. I've used the skills provided
+ 
+
+201
+00:04:15,760 --> 00:04:17,189
+prompting. I've used the skills provided
+in this class to gain a good
+
+202
+00:04:17,189 --> 00:04:17,199
+in this class to gain a good
+ 
+
+203
+00:04:17,199 --> 00:04:19,830
+in this class to gain a good
+understanding of how to prompt AI. It
+
+204
+00:04:19,830 --> 00:04:19,840
+understanding of how to prompt AI. It
+ 
+
+205
+00:04:19,840 --> 00:04:22,310
+understanding of how to prompt AI. It
+also changed my mindset on AI, which I
+
+206
+00:04:22,310 --> 00:04:22,320
+also changed my mindset on AI, which I
+ 
+
+207
+00:04:22,320 --> 00:04:24,629
+also changed my mindset on AI, which I
+now feel great about. It's hugely
+
+208
+00:04:24,629 --> 00:04:24,639
+now feel great about. It's hugely
+ 
+
+209
+00:04:24,639 --> 00:04:27,350
+now feel great about. It's hugely
+improved my productivity and also my
+
+210
+00:04:27,350 --> 00:04:27,360
+improved my productivity and also my
+ 
+
+211
+00:04:27,360 --> 00:04:29,909
+improved my productivity and also my
+understanding of AI. Now, the first 500
+
+212
+00:04:29,909 --> 00:04:29,919
+understanding of AI. Now, the first 500
+ 
+
+213
+00:04:29,919 --> 00:04:31,670
+understanding of AI. Now, the first 500
+people that use the link in the
+
+214
+00:04:31,670 --> 00:04:31,680
+people that use the link in the
+ 
+
+215
+00:04:31,680 --> 00:04:34,390
+people that use the link in the
+description or the QR code on the screen
+
+216
+00:04:34,390 --> 00:04:34,400
+description or the QR code on the screen
+ 
+
+217
+00:04:34,400 --> 00:04:37,510
+description or the QR code on the screen
+will get a free month trial. I'm telling
+
+218
+00:04:37,510 --> 00:04:37,520
+will get a free month trial. I'm telling
+ 
+
+219
+00:04:37,520 --> 00:04:39,749
+will get a free month trial. I'm telling
+you guys, using Skillshare is worth it.
+
+220
+00:04:39,749 --> 00:04:39,759
+you guys, using Skillshare is worth it.
+ 
+
+221
+00:04:39,759 --> 00:04:42,070
+you guys, using Skillshare is worth it.
+So, go check it out right now. So, now
+
+222
+00:04:42,070 --> 00:04:42,080
+So, go check it out right now. So, now
+ 
+
+223
+00:04:42,080 --> 00:04:44,870
+So, go check it out right now. So, now
+we've got all of the individual prompt
+
+224
+00:04:44,870 --> 00:04:44,880
+we've got all of the individual prompt
+ 
+
+225
+00:04:44,880 --> 00:04:47,270
+we've got all of the individual prompt
+pieces. We can actually add these
+
+226
+00:04:47,270 --> 00:04:47,280
+pieces. We can actually add these
+ 
+
+227
+00:04:47,280 --> 00:04:50,629
+pieces. We can actually add these
+together to create the perfect prompt to
+
+228
+00:04:50,629 --> 00:04:50,639
+together to create the perfect prompt to
+ 
+
+229
+00:04:50,639 --> 00:04:54,150
+together to create the perfect prompt to
+generate the best video. Let's show you
+
+230
+00:04:54,150 --> 00:04:54,160
+generate the best video. Let's show you
+ 
+
+231
+00:04:54,160 --> 00:04:56,390
+generate the best video. Let's show you
+how to do it. So, here are the prompt
+
+232
+00:04:56,390 --> 00:04:56,400
+how to do it. So, here are the prompt
+ 
+
+233
+00:04:56,400 --> 00:04:58,950
+how to do it. So, here are the prompt
+ingredients added together into this
+
+234
+00:04:58,950 --> 00:04:58,960
+ingredients added together into this
+ 
+
+235
+00:04:58,960 --> 00:05:00,870
+ingredients added together into this
+prompt. A lone grizzled fish in the
+
+236
+00:05:00,870 --> 00:05:00,880
+prompt. A lone grizzled fish in the
+ 
+
+237
+00:05:00,880 --> 00:05:03,990
+prompt. A lone grizzled fish in the
+mid60s in a faded yellow slicker jacket
+
+238
+00:05:03,990 --> 00:05:04,000
+mid60s in a faded yellow slicker jacket
+ 
+
+239
+00:05:04,000 --> 00:05:06,629
+mid60s in a faded yellow slicker jacket
+face weathered and focused deliberately
+
+240
+00:05:06,629 --> 00:05:06,639
+face weathered and focused deliberately
+ 
+
+241
+00:05:06,639 --> 00:05:09,029
+face weathered and focused deliberately
+mends a heavy wet net with his scarred
+
+242
+00:05:09,029 --> 00:05:09,039
+mends a heavy wet net with his scarred
+ 
+
+243
+00:05:09,039 --> 00:05:12,070
+mends a heavy wet net with his scarred
+hands. So, this whole first part here is
+
+244
+00:05:12,070 --> 00:05:12,080
+hands. So, this whole first part here is
+ 
+
+245
+00:05:12,080 --> 00:05:15,510
+hands. So, this whole first part here is
+the subject and the action. So, we're
+
+246
+00:05:15,510 --> 00:05:15,520
+the subject and the action. So, we're
+ 
+
+247
+00:05:15,520 --> 00:05:17,909
+the subject and the action. So, we're
+describing the subject in the scene and
+
+248
+00:05:17,909 --> 00:05:17,919
+describing the subject in the scene and
+ 
+
+249
+00:05:17,919 --> 00:05:20,469
+describing the subject in the scene and
+then the action or what he's doing. Next
+
+250
+00:05:20,469 --> 00:05:20,479
+then the action or what he's doing. Next
+ 
+
+251
+00:05:20,479 --> 00:05:22,950
+then the action or what he's doing. Next
+up, we're moving on to shot with a slow
+
+252
+00:05:22,950 --> 00:05:22,960
+up, we're moving on to shot with a slow
+ 
+
+253
+00:05:22,960 --> 00:05:25,189
+up, we're moving on to shot with a slow
+continuous handheld tracking shot at
+
+254
+00:05:25,189 --> 00:05:25,199
+continuous handheld tracking shot at
+ 
+
+255
+00:05:25,199 --> 00:05:27,510
+continuous handheld tracking shot at
+shoulder level with shallow depth of
+
+256
+00:05:27,510 --> 00:05:27,520
+shoulder level with shallow depth of
+ 
+
+257
+00:05:27,520 --> 00:05:30,150
+shoulder level with shallow depth of
+field on the subject. Now, we're setting
+
+258
+00:05:30,150 --> 00:05:30,160
+field on the subject. Now, we're setting
+ 
+
+259
+00:05:30,160 --> 00:05:32,790
+field on the subject. Now, we're setting
+the composition. We're also describing
+
+260
+00:05:32,790 --> 00:05:32,800
+the composition. We're also describing
+ 
+
+261
+00:05:32,800 --> 00:05:36,070
+the composition. We're also describing
+what camera angle to really display this
+
+262
+00:05:36,070 --> 00:05:36,080
+what camera angle to really display this
+ 
+
+263
+00:05:36,080 --> 00:05:39,270
+what camera angle to really display this
+in. Next up takes place on a fogdrenched
+
+264
+00:05:39,270 --> 00:05:39,280
+in. Next up takes place on a fogdrenched
+ 
+
+265
+00:05:39,280 --> 00:05:42,150
+in. Next up takes place on a fogdrenched
+deck of a rusty troller in the middle of
+
+266
+00:05:42,150 --> 00:05:42,160
+deck of a rusty troller in the middle of
+ 
+
+267
+00:05:42,160 --> 00:05:45,270
+deck of a rusty troller in the middle of
+a choppy pre-dawn sea with sea spray
+
+268
+00:05:45,270 --> 00:05:45,280
+a choppy pre-dawn sea with sea spray
+ 
+
+269
+00:05:45,280 --> 00:05:48,070
+a choppy pre-dawn sea with sea spray
+hitting the lens. So this is the
+
+270
+00:05:48,070 --> 00:05:48,080
+hitting the lens. So this is the
+ 
+
+271
+00:05:48,080 --> 00:05:50,150
+hitting the lens. So this is the
+environment and we're describing the
+
+272
+00:05:50,150 --> 00:05:50,160
+environment and we're describing the
+ 
+
+273
+00:05:50,160 --> 00:05:52,950
+environment and we're describing the
+environment so that we can really paint
+
+274
+00:05:52,950 --> 00:05:52,960
+environment so that we can really paint
+ 
+
+275
+00:05:52,960 --> 00:05:55,830
+environment so that we can really paint
+the picture or in this case create the
+
+276
+00:05:55,830 --> 00:05:55,840
+the picture or in this case create the
+ 
+
+277
+00:05:55,840 --> 00:05:57,990
+the picture or in this case create the
+video. Here we have style. We're
+
+278
+00:05:57,990 --> 00:05:58,000
+video. Here we have style. We're
+ 
+
+279
+00:05:58,000 --> 00:06:00,950
+video. Here we have style. We're
+describing how we want the style of the
+
+280
+00:06:00,950 --> 00:06:00,960
+describing how we want the style of the
+ 
+
+281
+00:06:00,960 --> 00:06:03,830
+describing how we want the style of the
+video to look. So ultra realistic
+
+282
+00:06:03,830 --> 00:06:03,840
+video to look. So ultra realistic
+ 
+
+283
+00:06:03,840 --> 00:06:06,550
+video to look. So ultra realistic
+cinematic portrait. And then let's go on
+
+284
+00:06:06,550 --> 00:06:06,560
+cinematic portrait. And then let's go on
+ 
+
+285
+00:06:06,560 --> 00:06:08,790
+cinematic portrait. And then let's go on
+to really mention the color grade. So
+
+286
+00:06:08,790 --> 00:06:08,800
+to really mention the color grade. So
+ 
+
+287
+00:06:08,800 --> 00:06:11,189
+to really mention the color grade. So
+the color of the scene, moody teal and
+
+288
+00:06:11,189 --> 00:06:11,199
+the color of the scene, moody teal and
+ 
+
+289
+00:06:11,199 --> 00:06:13,510
+the color of the scene, moody teal and
+orange color grade with some harsh rim
+
+290
+00:06:13,510 --> 00:06:13,520
+orange color grade with some harsh rim
+ 
+
+291
+00:06:13,520 --> 00:06:15,510
+orange color grade with some harsh rim
+lighting. So, we've set the whole scene
+
+292
+00:06:15,510 --> 00:06:15,520
+lighting. So, we've set the whole scene
+ 
+
+293
+00:06:15,520 --> 00:06:17,749
+lighting. So, we've set the whole scene
+and we've gone through every part of the
+
+294
+00:06:17,749 --> 00:06:17,759
+and we've gone through every part of the
+ 
+
+295
+00:06:17,759 --> 00:06:20,390
+and we've gone through every part of the
+prompt formula. But one thing we haven't
+
+296
+00:06:20,390 --> 00:06:20,400
+prompt formula. But one thing we haven't
+ 
+
+297
+00:06:20,400 --> 00:06:23,350
+prompt formula. But one thing we haven't
+discussed and this is so important is to
+
+298
+00:06:23,350 --> 00:06:23,360
+discussed and this is so important is to
+ 
+
+299
+00:06:23,360 --> 00:06:25,909
+discussed and this is so important is to
+add in an audio prompt as well. So,
+
+300
+00:06:25,909 --> 00:06:25,919
+add in an audio prompt as well. So,
+ 
+
+301
+00:06:25,919 --> 00:06:28,790
+add in an audio prompt as well. So,
+visually bringing the scene to life is
+
+302
+00:06:28,790 --> 00:06:28,800
+visually bringing the scene to life is
+ 
+
+303
+00:06:28,800 --> 00:06:31,830
+visually bringing the scene to life is
+so important. But if you don't also tap
+
+304
+00:06:31,830 --> 00:06:31,840
+so important. But if you don't also tap
+ 
+
+305
+00:06:31,840 --> 00:06:35,430
+so important. But if you don't also tap
+in to people's hearing so that they can
+
+306
+00:06:35,430 --> 00:06:35,440
+in to people's hearing so that they can
+ 
+
+307
+00:06:35,440 --> 00:06:37,110
+in to people's hearing so that they can
+hear things going on in the scene as
+
+308
+00:06:37,110 --> 00:06:37,120
+hear things going on in the scene as
+ 
+
+309
+00:06:37,120 --> 00:06:39,189
+hear things going on in the scene as
+well, then your video is not going to
+
+310
+00:06:39,189 --> 00:06:39,199
+well, then your video is not going to
+ 
+
+311
+00:06:39,199 --> 00:06:41,670
+well, then your video is not going to
+have nowhere near as much impact. So the
+
+312
+00:06:41,670 --> 00:06:41,680
+have nowhere near as much impact. So the
+ 
+
+313
+00:06:41,680 --> 00:06:45,029
+have nowhere near as much impact. So the
+audio is the creek of the boat, rhythmic
+
+314
+00:06:45,029 --> 00:06:45,039
+audio is the creek of the boat, rhythmic
+ 
+
+315
+00:06:45,039 --> 00:06:47,830
+audio is the creek of the boat, rhythmic
+thud of waves and wet slap of the net.
+
+316
+00:06:47,830 --> 00:06:47,840
+thud of waves and wet slap of the net.
+ 
+
+317
+00:06:47,840 --> 00:06:57,430
+thud of waves and wet slap of the net.
+So let's have a look at the result.
+
+318
+00:06:57,430 --> 00:06:57,440
+
+ 
+
+319
+00:06:57,440 --> 00:06:58,950
+
+Let's try this with a completely
+
+320
+00:06:58,950 --> 00:06:58,960
+Let's try this with a completely
+ 
+
+321
+00:06:58,960 --> 00:07:00,790
+Let's try this with a completely
+different theme though to show you that
+
+322
+00:07:00,790 --> 00:07:00,800
+different theme though to show you that
+ 
+
+323
+00:07:00,800 --> 00:07:03,189
+different theme though to show you that
+this will work across the board. So,
+
+324
+00:07:03,189 --> 00:07:03,199
+this will work across the board. So,
+ 
+
+325
+00:07:03,199 --> 00:07:05,909
+this will work across the board. So,
+this one is a young woman, the 20ies,
+
+326
+00:07:05,909 --> 00:07:05,919
+this one is a young woman, the 20ies,
+ 
+
+327
+00:07:05,919 --> 00:07:08,629
+this one is a young woman, the 20ies,
+with expressive wide eyes and a slight
+
+328
+00:07:08,629 --> 00:07:08,639
+with expressive wide eyes and a slight
+ 
+
+329
+00:07:08,639 --> 00:07:11,830
+with expressive wide eyes and a slight
+confident grin pulls a sleek, futuristic
+
+330
+00:07:11,830 --> 00:07:11,840
+confident grin pulls a sleek, futuristic
+ 
+
+331
+00:07:11,840 --> 00:07:14,390
+confident grin pulls a sleek, futuristic
+augmented reality headset down over her
+
+332
+00:07:14,390 --> 00:07:14,400
+augmented reality headset down over her
+ 
+
+333
+00:07:14,400 --> 00:07:17,589
+augmented reality headset down over her
+eyes with a purposeful practiced motion.
+
+334
+00:07:17,589 --> 00:07:17,599
+eyes with a purposeful practiced motion.
+ 
+
+335
+00:07:17,599 --> 00:07:21,189
+eyes with a purposeful practiced motion.
+This is the subject and this is the
+
+336
+00:07:21,189 --> 00:07:21,199
+This is the subject and this is the
+ 
+
+337
+00:07:21,199 --> 00:07:24,309
+This is the subject and this is the
+action that the subject is doing with
+
+338
+00:07:24,309 --> 00:07:24,319
+action that the subject is doing with
+ 
+
+339
+00:07:24,319 --> 00:07:26,790
+action that the subject is doing with
+the product. Next up, we're looking at
+
+340
+00:07:26,790 --> 00:07:26,800
+the product. Next up, we're looking at
+ 
+
+341
+00:07:26,800 --> 00:07:29,749
+the product. Next up, we're looking at
+the aspect ratio, which is going to be a
+
+342
+00:07:29,749 --> 00:07:29,759
+the aspect ratio, which is going to be a
+ 
+
+343
+00:07:29,759 --> 00:07:32,070
+the aspect ratio, which is going to be a
+medium shot with a fast, shaky, close
+
+344
+00:07:32,070 --> 00:07:32,080
+medium shot with a fast, shaky, close
+ 
+
+345
+00:07:32,080 --> 00:07:35,110
+medium shot with a fast, shaky, close
+quarters dolly in on the subject's face.
+
+346
+00:07:35,110 --> 00:07:35,120
+quarters dolly in on the subject's face.
+ 
+
+347
+00:07:35,120 --> 00:07:38,230
+quarters dolly in on the subject's face.
+So, this is saying what camera motion we
+
+348
+00:07:38,230 --> 00:07:38,240
+So, this is saying what camera motion we
+ 
+
+349
+00:07:38,240 --> 00:07:40,390
+So, this is saying what camera motion we
+want to create when we generate the
+
+350
+00:07:40,390 --> 00:07:40,400
+want to create when we generate the
+ 
+
+351
+00:07:40,400 --> 00:07:44,070
+want to create when we generate the
+video. Then, a bit of context, a busy
+
+352
+00:07:44,070 --> 00:07:44,080
+video. Then, a bit of context, a busy
+ 
+
+353
+00:07:44,080 --> 00:07:46,550
+video. Then, a bit of context, a busy
+colorful calf filled with diffused
+
+354
+00:07:46,550 --> 00:07:46,560
+colorful calf filled with diffused
+ 
+
+355
+00:07:46,560 --> 00:07:49,270
+colorful calf filled with diffused
+natural light and the soft chatter of
+
+356
+00:07:49,270 --> 00:07:49,280
+natural light and the soft chatter of
+ 
+
+357
+00:07:49,280 --> 00:07:51,670
+natural light and the soft chatter of
+other patrons. So, this is saying that
+
+358
+00:07:51,670 --> 00:07:51,680
+other patrons. So, this is saying that
+ 
+
+359
+00:07:51,680 --> 00:07:53,670
+other patrons. So, this is saying that
+the environment needs to be this
+
+360
+00:07:53,670 --> 00:07:53,680
+the environment needs to be this
+ 
+
+361
+00:07:53,680 --> 00:07:57,029
+the environment needs to be this
+colorful calf and we need to add these
+
+362
+00:07:57,029 --> 00:07:57,039
+colorful calf and we need to add these
+ 
+
+363
+00:07:57,039 --> 00:08:00,150
+colorful calf and we need to add these
+people or these patrons into the
+
+364
+00:08:00,150 --> 00:08:00,160
+people or these patrons into the
+ 
+
+365
+00:08:00,160 --> 00:08:02,390
+people or these patrons into the
+background. Finally, we're looking at
+
+366
+00:08:02,390 --> 00:08:02,400
+background. Finally, we're looking at
+ 
+
+367
+00:08:02,400 --> 00:08:04,390
+background. Finally, we're looking at
+style. We want this to be a modern
+
+368
+00:08:04,390 --> 00:08:04,400
+style. We want this to be a modern
+ 
+
+369
+00:08:04,400 --> 00:08:07,670
+style. We want this to be a modern
+social media/tech ad. Shallow depth of
+
+370
+00:08:07,670 --> 00:08:07,680
+social media/tech ad. Shallow depth of
+ 
+
+371
+00:08:07,680 --> 00:08:09,990
+social media/tech ad. Shallow depth of
+field. We're describing the background.
+
+372
+00:08:09,990 --> 00:08:10,000
+field. We're describing the background.
+ 
+
+373
+00:08:10,000 --> 00:08:12,550
+field. We're describing the background.
+Clean, vibrant color grading. So, we've
+
+374
+00:08:12,550 --> 00:08:12,560
+Clean, vibrant color grading. So, we've
+ 
+
+375
+00:08:12,560 --> 00:08:15,909
+Clean, vibrant color grading. So, we've
+now got the color and the real feel of
+
+376
+00:08:15,909 --> 00:08:15,919
+now got the color and the real feel of
+ 
+
+377
+00:08:15,919 --> 00:08:18,070
+now got the color and the real feel of
+the scene. Then, of course, you have
+
+378
+00:08:18,070 --> 00:08:18,080
+the scene. Then, of course, you have
+ 
+
+379
+00:08:18,080 --> 00:08:21,270
+the scene. Then, of course, you have
+audio. We want this clear, crisp ASMR
+
+380
+00:08:21,270 --> 00:08:21,280
+audio. We want this clear, crisp ASMR
+ 
+
+381
+00:08:21,280 --> 00:08:23,830
+audio. We want this clear, crisp ASMR
+light click of the headset immediately
+
+382
+00:08:23,830 --> 00:08:23,840
+light click of the headset immediately
+ 
+
+383
+00:08:23,840 --> 00:08:26,230
+light click of the headset immediately
+followed by an energetic bassheavy
+
+384
+00:08:26,230 --> 00:08:26,240
+followed by an energetic bassheavy
+ 
+
+385
+00:08:26,240 --> 00:08:28,629
+followed by an energetic bassheavy
+electronic beat drop. So I understand
+
+386
+00:08:28,629 --> 00:08:28,639
+electronic beat drop. So I understand
+ 
+
+387
+00:08:28,639 --> 00:08:30,950
+electronic beat drop. So I understand
+that this seems like a lot of things,
+
+388
+00:08:30,950 --> 00:08:30,960
+that this seems like a lot of things,
+ 
+
+389
+00:08:30,960 --> 00:08:33,269
+that this seems like a lot of things,
+but you have to break this down. Each
+
+390
+00:08:33,269 --> 00:08:33,279
+but you have to break this down. Each
+ 
+
+391
+00:08:33,279 --> 00:08:35,909
+but you have to break this down. Each
+prompt piece of the ingredient you need
+
+392
+00:08:35,909 --> 00:08:35,919
+prompt piece of the ingredient you need
+ 
+
+393
+00:08:35,919 --> 00:08:37,990
+prompt piece of the ingredient you need
+to bring together and then you end up
+
+394
+00:08:37,990 --> 00:08:38,000
+to bring together and then you end up
+ 
+
+395
+00:08:38,000 --> 00:08:39,990
+to bring together and then you end up
+with this whole prompt which is going to
+
+396
+00:08:39,990 --> 00:08:40,000
+with this whole prompt which is going to
+ 
+
+397
+00:08:40,000 --> 00:08:47,640
+with this whole prompt which is going to
+work really well for us.
+
+398
+00:08:47,640 --> 00:08:47,650
+
+ 
+
+399
+00:08:47,650 --> 00:08:49,829
+
+[Music]
+
+400
+00:08:49,829 --> 00:08:49,839
+[Music]
+ 
+
+401
+00:08:49,839 --> 00:08:52,070
+[Music]
+So, there might feel like a lot to
+
+402
+00:08:52,070 --> 00:08:52,080
+So, there might feel like a lot to
+ 
+
+403
+00:08:52,080 --> 00:08:54,790
+So, there might feel like a lot to
+remember, but if you stick to these five
+
+404
+00:08:54,790 --> 00:08:54,800
+remember, but if you stick to these five
+ 
+
+405
+00:08:54,800 --> 00:08:58,070
+remember, but if you stick to these five
+ingredients, these five themes in your
+
+406
+00:08:58,070 --> 00:08:58,080
+ingredients, these five themes in your
+ 
+
+407
+00:08:58,080 --> 00:09:00,389
+ingredients, these five themes in your
+prompt, you're going to get good
+
+408
+00:09:00,389 --> 00:09:00,399
+prompt, you're going to get good
+ 
+
+409
+00:09:00,399 --> 00:09:02,790
+prompt, you're going to get good
+results. Now, you'll have to practice
+
+410
+00:09:02,790 --> 00:09:02,800
+results. Now, you'll have to practice
+ 
+
+411
+00:09:02,800 --> 00:09:05,670
+results. Now, you'll have to practice
+though because the more detailed you are
+
+412
+00:09:05,670 --> 00:09:05,680
+though because the more detailed you are
+ 
+
+413
+00:09:05,680 --> 00:09:08,870
+though because the more detailed you are
+with your describing of things, the
+
+414
+00:09:08,870 --> 00:09:08,880
+with your describing of things, the
+ 
+
+415
+00:09:08,880 --> 00:09:11,430
+with your describing of things, the
+better result you're going to get. So,
+
+416
+00:09:11,430 --> 00:09:11,440
+better result you're going to get. So,
+ 
+
+417
+00:09:11,440 --> 00:09:13,910
+better result you're going to get. So,
+don't get discouraged if you start doing
+
+418
+00:09:13,910 --> 00:09:13,920
+don't get discouraged if you start doing
+ 
+
+419
+00:09:13,920 --> 00:09:16,310
+don't get discouraged if you start doing
+this and your results aren't great. Just
+
+420
+00:09:16,310 --> 00:09:16,320
+this and your results aren't great. Just
+ 
+
+421
+00:09:16,320 --> 00:09:18,870
+this and your results aren't great. Just
+try and be specific. Practice using
+
+422
+00:09:18,870 --> 00:09:18,880
+try and be specific. Practice using
+ 
+
+423
+00:09:18,880 --> 00:09:22,070
+try and be specific. Practice using
+details and the more you practice, the
+
+424
+00:09:22,070 --> 00:09:22,080
+details and the more you practice, the
+ 
+
+425
+00:09:22,080 --> 00:09:24,070
+details and the more you practice, the
+better you'll get. I hope you've enjoyed
+
+426
+00:09:24,070 --> 00:09:24,080
+better you'll get. I hope you've enjoyed
+ 
+
+427
+00:09:24,080 --> 00:09:26,150
+better you'll get. I hope you've enjoyed
+the video. In the next video, I'm going
+
+428
+00:09:26,150 --> 00:09:26,160
+the video. In the next video, I'm going
+ 
+
+429
+00:09:26,160 --> 00:09:29,509
+the video. In the next video, I'm going
+to show you how to do start frame to end
+
+430
+00:09:29,509 --> 00:09:29,519
+to show you how to do start frame to end
+ 
+
+431
+00:09:29,519 --> 00:09:31,430
+to show you how to do start frame to end
+frame. And this is a more advanced
+
+432
+00:09:31,430 --> 00:09:31,440
+frame. And this is a more advanced
+ 
+
+433
+00:09:31,440 --> 00:09:33,829
+frame. And this is a more advanced
+technique where you can create whole
+
+434
+00:09:33,829 --> 00:09:33,839
+technique where you can create whole
+ 
+
+435
+00:09:33,839 --> 00:09:36,949
+technique where you can create whole
+stories and link different video clips
+
+436
+00:09:36,949 --> 00:09:36,959
+stories and link different video clips
+ 
+
+437
+00:09:36,959 --> 00:09:40,150
+stories and link different video clips
+together to create short films. This is
+
+438
+00:09:40,150 --> 00:09:40,160
+together to create short films. This is
+ 
+
+439
+00:09:40,160 --> 00:09:42,310
+together to create short films. This is
+a very powerful technique. It's going to
+
+440
+00:09:42,310 --> 00:09:42,320
+a very powerful technique. It's going to
+ 
+
+441
+00:09:42,320 --> 00:09:44,550
+a very powerful technique. It's going to
+be more involved and I'm going to spend
+
+442
+00:09:44,550 --> 00:09:44,560
+be more involved and I'm going to spend
+ 
+
+443
+00:09:44,560 --> 00:09:46,949
+be more involved and I'm going to spend
+a little bit more time in the next video
+
+444
+00:09:46,949 --> 00:09:46,959
+a little bit more time in the next video
+ 
+
+445
+00:09:46,959 --> 00:09:49,190
+a little bit more time in the next video
+showing you how to do it. If that sounds
+
+446
+00:09:49,190 --> 00:09:49,200
+showing you how to do it. If that sounds
+ 
+
+447
+00:09:49,200 --> 00:09:50,630
+showing you how to do it. If that sounds
+like something you'd like to learn to
+
+448
+00:09:50,630 --> 00:09:50,640
+like something you'd like to learn to
+ 
+
+449
+00:09:50,640 --> 00:09:53,590
+like something you'd like to learn to
+do, make sure you hit subscribe. And if
+
+450
+00:09:53,590 --> 00:09:53,600
+do, make sure you hit subscribe. And if
+ 
+
+451
+00:09:53,600 --> 00:09:55,509
+do, make sure you hit subscribe. And if
+you've enjoyed the video, give me a
+
+452
+00:09:55,509 --> 00:09:55,519
+you've enjoyed the video, give me a
+ 
+
+453
+00:09:55,519 --> 00:09:57,910
+you've enjoyed the video, give me a
+like. Any questions you've got, drop
+
+454
+00:09:57,910 --> 00:09:57,920
+like. Any questions you've got, drop
+ 
+
+455
+00:09:57,920 --> 00:09:59,990
+like. Any questions you've got, drop
+them in the comments section. Whatever
+
+456
+00:09:59,990 --> 00:10:00,000
+them in the comments section. Whatever
+ 
+
+457
+00:10:00,000 --> 00:10:01,750
+them in the comments section. Whatever
+you do for the rest of the day, guys,
+
+458
+00:10:01,750 --> 00:10:01,760
+you do for the rest of the day, guys,
+ 
+
+459
+00:10:01,760 --> 00:10:03,829
+you do for the rest of the day, guys,
+make sure it's a good and I'll see you
+
+460
+00:10:03,829 --> 00:10:03,839
+make sure it's a good and I'll see you
+ 
+
+461
+00:10:03,839 --> 00:10:06,800
+make sure it's a good and I'll see you
+in the next video.
+

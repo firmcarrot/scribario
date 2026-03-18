@@ -1,0 +1,2942 @@
+
+Google Veil 3 has completely changed the
+Google Veil 3 has completely changed the
+ 
+Google Veil 3 has completely changed the
+AI filmmaking game with its ability to
+AI filmmaking game with its ability to
+ 
+AI filmmaking game with its ability to
+create cinematic AI videos along with
+create cinematic AI videos along with
+ 
+create cinematic AI videos along with
+realistic sound effects and character
+realistic sound effects and character
+ 
+realistic sound effects and character
+voices all inside one platform. This
+voices all inside one platform. This
+ 
+voices all inside one platform. This
+will be the last time you fail me. I
+will be the last time you fail me. I
+ 
+will be the last time you fail me. I
+know it's frustrating to watch tutorials
+know it's frustrating to watch tutorials
+ 
+know it's frustrating to watch tutorials
+which show clips of highquality videos,
+which show clips of highquality videos,
+ 
+which show clips of highquality videos,
+but when you go and try to create the AI
+but when you go and try to create the AI
+ 
+but when you go and try to create the AI
+videos yourself, you get lower quality
+videos yourself, you get lower quality
+ 
+videos yourself, you get lower quality
+clips like this one that look like
+clips like this one that look like
+ 
+clips like this one that look like
+PowerPoint slides. That's why I made
+PowerPoint slides. That's why I made
+ 
+PowerPoint slides. That's why I made
+this video specifically for people like
+this video specifically for people like
+ 
+this video specifically for people like
+you who want the real advice. Not just a
+you who want the real advice. Not just a
+ 
+you who want the real advice. Not just a
+surface level explanation, but a deep
+surface level explanation, but a deep
+ 
+surface level explanation, but a deep
+dive into practical tips that will
+dive into practical tips that will
+ 
+dive into practical tips that will
+actually help you with your AI films.
+actually help you with your AI films.
+ 
+actually help you with your AI films.
+May the force be with you.
+
+ 
+
+Google Veil 3 is accessed through Flow,
+Google Veil 3 is accessed through Flow,
+ 
+Google Veil 3 is accessed through Flow,
+which is Google's new film making
+which is Google's new film making
+ 
+which is Google's new film making
+platform. So, let's go ahead and launch
+platform. So, let's go ahead and launch
+ 
+platform. So, let's go ahead and launch
+it. Once we're inside, we can see a list
+it. Once we're inside, we can see a list
+ 
+it. Once we're inside, we can see a list
+of our past projects. I'll go ahead and
+of our past projects. I'll go ahead and
+ 
+of our past projects. I'll go ahead and
+create a new project right now. From
+create a new project right now. From
+ 
+create a new project right now. From
+here, we can start creating our AI
+here, we can start creating our AI
+ 
+here, we can start creating our AI
+videos. There's a couple different
+videos. There's a couple different
+ 
+videos. There's a couple different
+options. Text to video, frames to video,
+options. Text to video, frames to video,
+ 
+options. Text to video, frames to video,
+ingredients to video. We're going to
+ingredients to video. We're going to
+ 
+ingredients to video. We're going to
+cover all of them, but let's start with
+cover all of them, but let's start with
+ 
+cover all of them, but let's start with
+text to video where we'll just enter a
+text to video where we'll just enter a
+ 
+text to video where we'll just enter a
+prompt and it'll create a video for us.
+prompt and it'll create a video for us.
+ 
+prompt and it'll create a video for us.
+What's new in Google Veil 3 is the
+What's new in Google Veil 3 is the
+ 
+What's new in Google Veil 3 is the
+ability to directly generate talking
+ability to directly generate talking
+ 
+ability to directly generate talking
+characters. So, I'll create a video of a
+characters. So, I'll create a video of a
+ 
+characters. So, I'll create a video of a
+Jedi from a Star Wars movie. I'm going
+Jedi from a Star Wars movie. I'm going
+ 
+Jedi from a Star Wars movie. I'm going
+to describe the appearance a little bit.
+to describe the appearance a little bit.
+ 
+to describe the appearance a little bit.
+She has green skin, these geometric
+She has green skin, these geometric
+ 
+She has green skin, these geometric
+tattoos across her face. Um, also give
+tattoos across her face. Um, also give
+ 
+tattoos across her face. Um, also give
+her a yellow lightsaber, and we're going
+her a yellow lightsaber, and we're going
+ 
+her a yellow lightsaber, and we're going
+to tell her to talk about how to use the
+to tell her to talk about how to use the
+ 
+to tell her to talk about how to use the
+force inside this AI video. Let's go
+force inside this AI video. Let's go
+ 
+force inside this AI video. Let's go
+ahead and generate
+ahead and generate
+ 
+ahead and generate
+that. When you're generating the video,
+that. When you're generating the video,
+ 
+that. When you're generating the video,
+you need to make sure you've actually
+you need to make sure you've actually
+ 
+you need to make sure you've actually
+selected the newest Google Vo3 model. If
+selected the newest Google Vo3 model. If
+ 
+selected the newest Google Vo3 model. If
+we go to the settings tab right here,
+we go to the settings tab right here,
+ 
+we go to the settings tab right here,
+you can change the number of outputs per
+you can change the number of outputs per
+ 
+you can change the number of outputs per
+prompt. I've set that to one to generate
+prompt. I've set that to one to generate
+ 
+prompt. I've set that to one to generate
+one video at a time. But down here in
+one video at a time. But down here in
+ 
+one video at a time. But down here in
+the quality, make sure you've selected
+the quality, make sure you've selected
+ 
+the quality, make sure you've selected
+the highest quality with experimental
+the highest quality with experimental
+ 
+the highest quality with experimental
+audio. That's the newest Veil 3 model.
+audio. That's the newest Veil 3 model.
+ 
+audio. That's the newest Veil 3 model.
+The fast and quality options default to
+The fast and quality options default to
+ 
+The fast and quality options default to
+the older Veil True model, so you won't
+the older Veil True model, so you won't
+ 
+the older Veil True model, so you won't
+get the best looking videos if you use
+get the best looking videos if you use
+ 
+get the best looking videos if you use
+these. Here's what the video turned out
+these. Here's what the video turned out
+ 
+these. Here's what the video turned out
+to look like. The Force is a subtle
+to look like. The Force is a subtle
+ 
+to look like. The Force is a subtle
+energy. You have to feel it, not just
+energy. You have to feel it, not just
+ 
+energy. You have to feel it, not just
+see it. What's impressive about this is
+see it. What's impressive about this is
+ 
+see it. What's impressive about this is
+that it animates a talking speaking
+that it animates a talking speaking
+ 
+that it animates a talking speaking
+character just from a text prop. And the
+character just from a text prop. And the
+ 
+character just from a text prop. And the
+quality of the lip sync and the emotions
+quality of the lip sync and the emotions
+ 
+quality of the lip sync and the emotions
+in the video are very high. We can also
+in the video are very high. We can also
+ 
+in the video are very high. We can also
+make the AI say specific words from a
+make the AI say specific words from a
+ 
+make the AI say specific words from a
+script if we want. I'm using the same
+script if we want. I'm using the same
+ 
+script if we want. I'm using the same
+prompt of a female Jedi from Star Wars
+prompt of a female Jedi from Star Wars
+ 
+prompt of a female Jedi from Star Wars
+with green skin. I've described her
+with green skin. I've described her
+ 
+with green skin. I've described her
+appearance a little bit closer. So this
+appearance a little bit closer. So this
+ 
+appearance a little bit closer. So this
+time I also told her the specific
+time I also told her the specific
+ 
+time I also told her the specific
+clothing to wear, which is a lightweight
+clothing to wear, which is a lightweight
+ 
+clothing to wear, which is a lightweight
+brown and gold robe. And she's also
+brown and gold robe. And she's also
+ 
+brown and gold robe. And she's also
+meditating inside a quiet swamp
+meditating inside a quiet swamp
+ 
+meditating inside a quiet swamp
+illuminated by bol luminescent plants on
+illuminated by bol luminescent plants on
+ 
+illuminated by bol luminescent plants on
+an alien world. This time I'm
+an alien world. This time I'm
+ 
+an alien world. This time I'm
+specifically prompting for her to say,
+specifically prompting for her to say,
+ 
+specifically prompting for her to say,
+"The force doesn't scream, it hums.
+"The force doesn't scream, it hums.
+ 
+"The force doesn't scream, it hums.
+Listen and you'll know which path is
+Listen and you'll know which path is
+ 
+Listen and you'll know which path is
+open." The force doesn't scream, it
+open." The force doesn't scream, it
+ 
+open." The force doesn't scream, it
+hums. Listen and you'll know which path
+hums. Listen and you'll know which path
+ 
+hums. Listen and you'll know which path
+is open. Look at the way the hand
+is open. Look at the way the hand
+ 
+is open. Look at the way the hand
+motions are joined together with the
+motions are joined together with the
+ 
+motions are joined together with the
+speech and the facial expressions and
+speech and the facial expressions and
+ 
+speech and the facial expressions and
+the wrinkles on the face all go together
+the wrinkles on the face all go together
+ 
+the wrinkles on the face all go together
+very very well. Now I want to go a
+very very well. Now I want to go a
+ 
+very very well. Now I want to go a
+little more in depth on this. How much
+little more in depth on this. How much
+ 
+little more in depth on this. How much
+control do we have over the voices? Can
+control do we have over the voices? Can
+ 
+control do we have over the voices? Can
+we actually change the way the
+we actually change the way the
+ 
+we actually change the way the
+character's voice sound? So I rewrote
+character's voice sound? So I rewrote
+ 
+character's voice sound? So I rewrote
+this prompt. This time I told her to
+this prompt. This time I told her to
+ 
+this prompt. This time I told her to
+have a highpitched and nasal voice which
+have a highpitched and nasal voice which
+ 
+have a highpitched and nasal voice which
+should sound like she kind of has a
+should sound like she kind of has a
+ 
+should sound like she kind of has a
+stuffy nose a little bit. So then if we
+stuffy nose a little bit. So then if we
+ 
+stuffy nose a little bit. So then if we
+generate the
+generate the
+ 
+generate the
+video, here's what that character sounds
+video, here's what that character sounds
+ 
+video, here's what that character sounds
+like. The force doesn't scream, it
+like. The force doesn't scream, it
+ 
+like. The force doesn't scream, it
+hums. Listen and you'll know which path
+hums. Listen and you'll know which path
+ 
+hums. Listen and you'll know which path
+is open. It's a great looking video, but
+is open. It's a great looking video, but
+ 
+is open. It's a great looking video, but
+it didn't actually follow my prompt of
+it didn't actually follow my prompt of
+ 
+it didn't actually follow my prompt of
+giving it a high-pitched and nasal tone
+giving it a high-pitched and nasal tone
+ 
+giving it a high-pitched and nasal tone
+to her voice. The way Google Video3
+to her voice. The way Google Video3
+ 
+to her voice. The way Google Video3
+generates the voices is dependent on the
+generates the voices is dependent on the
+ 
+generates the voices is dependent on the
+way that the characters look. I
+way that the characters look. I
+ 
+way that the characters look. I
+generated a video of a Sith. He's an
+generated a video of a Sith. He's an
+ 
+generated a video of a Sith. He's an
+older weathered man. And if we listen to
+older weathered man. And if we listen to
+ 
+older weathered man. And if we listen to
+his voice, it's going to have a deeper,
+his voice, it's going to have a deeper,
+ 
+his voice, it's going to have a deeper,
+grittier tone to it. Pain is not
+grittier tone to it. Pain is not
+ 
+grittier tone to it. Pain is not
+punishment. It is
+punishment. It is
+ 
+punishment. It is
+revelation. Feel it and you will
+revelation. Feel it and you will
+ 
+revelation. Feel it and you will
+understand me. Depending on the video of
+understand me. Depending on the video of
+ 
+understand me. Depending on the video of
+the character that you're generating,
+the character that you're generating,
+ 
+the character that you're generating,
+Veil 3 will match the voice to the way
+Veil 3 will match the voice to the way
+ 
+Veil 3 will match the voice to the way
+that character looks.
+
+ 
+
+Target acquired. Regret will be brief.
+Target acquired. Regret will be brief.
+ 
+Target acquired. Regret will be brief.
+But unfortunately, there isn't a way to
+But unfortunately, there isn't a way to
+ 
+But unfortunately, there isn't a way to
+actually change the way the character
+actually change the way the character
+ 
+actually change the way the character
+sounds inside the prompt. This might not
+sounds inside the prompt. This might not
+ 
+sounds inside the prompt. This might not
+seem like a huge problem, but sometimes
+seem like a huge problem, but sometimes
+ 
+seem like a huge problem, but sometimes
+it does generate voices that don't match
+it does generate voices that don't match
+ 
+it does generate voices that don't match
+the way the characters look at all.
+the way the characters look at all.
+ 
+the way the characters look at all.
+Luke, I am your father. But sticking
+Luke, I am your father. But sticking
+ 
+Luke, I am your father. But sticking
+with the theme of characters, can we
+with the theme of characters, can we
+ 
+with the theme of characters, can we
+actually generate videos of the same
+actually generate videos of the same
+ 
+actually generate videos of the same
+character inside different scenes? The
+character inside different scenes? The
+ 
+character inside different scenes? The
+answer is yeah, you can get pretty darn
+answer is yeah, you can get pretty darn
+ 
+answer is yeah, you can get pretty darn
+close as long as the description of the
+close as long as the description of the
+ 
+close as long as the description of the
+character's appearance matches closely.
+character's appearance matches closely.
+ 
+character's appearance matches closely.
+I've written down the way her skin
+I've written down the way her skin
+ 
+I've written down the way her skin
+looks, the patterns on her face, also
+looks, the patterns on her face, also
+ 
+looks, the patterns on her face, also
+the clothing that she's wearing. When we
+the clothing that she's wearing. When we
+ 
+the clothing that she's wearing. When we
+go and generate a new video of this
+go and generate a new video of this
+ 
+go and generate a new video of this
+character using text to video, it'll
+character using text to video, it'll
+ 
+character using text to video, it'll
+actually give someone that looks really,
+actually give someone that looks really,
+ 
+actually give someone that looks really,
+really close.
+really close.
+ 
+really close.
+Control is not the absence of fear. It's
+Control is not the absence of fear. It's
+ 
+Control is not the absence of fear. It's
+the choice not to let fear decide. We
+the choice not to let fear decide. We
+ 
+the choice not to let fear decide. We
+can render them inside different scenes
+can render them inside different scenes
+ 
+can render them inside different scenes
+as well. We've spent so long guarding
+as well. We've spent so long guarding
+ 
+as well. We've spent so long guarding
+peace that we forgot how heavy peace can
+peace that we forgot how heavy peace can
+ 
+peace that we forgot how heavy peace can
+be. The more specific we are in the
+be. The more specific we are in the
+ 
+be. The more specific we are in the
+prompt in describing the way the
+prompt in describing the way the
+ 
+prompt in describing the way the
+character looks, the more consistent
+character looks, the more consistent
+ 
+character looks, the more consistent
+they'll look in the videos that we
+they'll look in the videos that we
+ 
+they'll look in the videos that we
+generate. For this prompt of the Sith,
+generate. For this prompt of the Sith,
+ 
+generate. For this prompt of the Sith,
+I'm extremely specific in the way that
+I'm extremely specific in the way that
+ 
+I'm extremely specific in the way that
+he looks. He's tall. He's lean. He has
+he looks. He's tall. He's lean. He has
+ 
+he looks. He's tall. He's lean. He has
+pale white ashy skin and dark veins on
+pale white ashy skin and dark veins on
+ 
+pale white ashy skin and dark veins on
+his gaunt face. I also specify the
+his gaunt face. I also specify the
+ 
+his gaunt face. I also specify the
+hairstyle. He has gray hair tied in a
+hairstyle. He has gray hair tied in a
+ 
+hairstyle. He has gray hair tied in a
+bun, and he wears a raggedy black cloak
+bun, and he wears a raggedy black cloak
+ 
+bun, and he wears a raggedy black cloak
+with sharp edge plating on the
+with sharp edge plating on the
+ 
+with sharp edge plating on the
+shoulders. Here's a bunch of videos I
+shoulders. Here's a bunch of videos I
+ 
+shoulders. Here's a bunch of videos I
+generated of this specific Sith Lord.
+generated of this specific Sith Lord.
+ 
+generated of this specific Sith Lord.
+The main thing you'll notice that is
+The main thing you'll notice that is
+ 
+The main thing you'll notice that is
+kind of different is the shoulder pads
+kind of different is the shoulder pads
+ 
+kind of different is the shoulder pads
+he's wearing. For some of them, they
+he's wearing. For some of them, they
+ 
+he's wearing. For some of them, they
+look like plates. For other ones,
+look like plates. For other ones,
+ 
+look like plates. For other ones,
+there's some sharp needles pointing out,
+there's some sharp needles pointing out,
+ 
+there's some sharp needles pointing out,
+but we could have just removed that part
+but we could have just removed that part
+ 
+but we could have just removed that part
+of the prop that talks about the plating
+of the prop that talks about the plating
+ 
+of the prop that talks about the plating
+on his shoulders. At this point, I'm
+on his shoulders. At this point, I'm
+ 
+on his shoulders. At this point, I'm
+sure you've noticed that Veil 3 also
+sure you've noticed that Veil 3 also
+ 
+sure you've noticed that Veil 3 also
+generates sound effects that go along
+generates sound effects that go along
+ 
+generates sound effects that go along
+with the characters, the lightsabers,
+with the characters, the lightsabers,
+ 
+with the characters, the lightsabers,
+the steps that he's taken as he's
+the steps that he's taken as he's
+ 
+the steps that he's taken as he's
+walking. Although, from what I can tell,
+walking. Although, from what I can tell,
+ 
+walking. Although, from what I can tell,
+you don't actually have that much
+you don't actually have that much
+ 
+you don't actually have that much
+control over what specific sound effects
+control over what specific sound effects
+ 
+control over what specific sound effects
+are generated. The amount of voice
+are generated. The amount of voice
+ 
+are generated. The amount of voice
+control you have is limited to a certain
+control you have is limited to a certain
+ 
+control you have is limited to a certain
+extent. For example, in this prompt of
+extent. For example, in this prompt of
+ 
+extent. For example, in this prompt of
+the Sith, I specifically said that he
+the Sith, I specifically said that he
+ 
+the Sith, I specifically said that he
+reaches out with his hand and yells no.
+reaches out with his hand and yells no.
+ 
+reaches out with his hand and yells no.
+I want him to be kind of screeching out
+I want him to be kind of screeching out
+ 
+I want him to be kind of screeching out
+and screaming with a very exaggerated
+and screaming with a very exaggerated
+ 
+and screaming with a very exaggerated
+facial expression. No. Oh,
+
+ 
+
+okay. So, we do hear him screaming a bit
+okay. So, we do hear him screaming a bit
+ 
+okay. So, we do hear him screaming a bit
+at the end, but the part where he says
+at the end, but the part where he says
+ 
+at the end, but the part where he says
+no happens at the beginning,
+no happens at the beginning,
+ 
+no happens at the beginning,
+and we don't even see his mouth moving
+and we don't even see his mouth moving
+ 
+and we don't even see his mouth moving
+along with that word. So, for super
+along with that word. So, for super
+ 
+along with that word. So, for super
+super expressive voice control, it
+super expressive voice control, it
+ 
+super expressive voice control, it
+doesn't seem like it's quite there just
+doesn't seem like it's quite there just
+ 
+doesn't seem like it's quite there just
+yet, but the video animations do look
+yet, but the video animations do look
+ 
+yet, but the video animations do look
+incredible. If you want to adding the
+incredible. If you want to adding the
+ 
+incredible. If you want to adding the
+sounds later in by yourself, these are
+sounds later in by yourself, these are
+ 
+sounds later in by yourself, these are
+8second videos, by the way. There's a
+8second videos, by the way. There's a
+ 
+8second videos, by the way. There's a
+few different options to download, you
+few different options to download, you
+ 
+few different options to download, you
+can get a GIF, the original size, or
+can get a GIF, the original size, or
+ 
+can get a GIF, the original size, or
+upscale it to high definition. I found
+upscale it to high definition. I found
+ 
+upscale it to high definition. I found
+that the upscaler did seem to get stuck
+that the upscaler did seem to get stuck
+ 
+that the upscaler did seem to get stuck
+a bunch of times, so maybe it's not
+a bunch of times, so maybe it's not
+ 
+a bunch of times, so maybe it's not
+working correctly right now. We can also
+working correctly right now. We can also
+ 
+working correctly right now. We can also
+add in multiple characters into the same
+add in multiple characters into the same
+ 
+add in multiple characters into the same
+scene and have them interact with each
+scene and have them interact with each
+ 
+scene and have them interact with each
+other. In this prompt, I copied in the
+other. In this prompt, I copied in the
+ 
+other. In this prompt, I copied in the
+full description of the female Jedi and
+full description of the female Jedi and
+ 
+full description of the female Jedi and
+I also copied in the full description of
+I also copied in the full description of
+ 
+I also copied in the full description of
+the Sith. And I have them talking to
+the Sith. And I have them talking to
+ 
+the Sith. And I have them talking to
+each other. So, the male Sith says,
+each other. So, the male Sith says,
+ 
+each other. So, the male Sith says,
+"Tell me Jedi, how many died while you
+"Tell me Jedi, how many died while you
+ 
+"Tell me Jedi, how many died while you
+meditated?" And the female Jedi says,
+meditated?" And the female Jedi says,
+ 
+meditated?" And the female Jedi says,
+"And how many screamed while you
+"And how many screamed while you
+ 
+"And how many screamed while you
+searched for meaning in their
+searched for meaning in their
+ 
+searched for meaning in their
+suffering?" You can't specifically tell
+suffering?" You can't specifically tell
+ 
+suffering?" You can't specifically tell
+each character the script that they're
+each character the script that they're
+ 
+each character the script that they're
+going to be saying inside the video.
+going to be saying inside the video.
+ 
+going to be saying inside the video.
+Tell me, Jedi, how many died while you
+Tell me, Jedi, how many died while you
+ 
+Tell me, Jedi, how many died while you
+meditated and how many screamed while
+meditated and how many screamed while
+ 
+meditated and how many screamed while
+you searched for meaning in their
+you searched for meaning in their
+ 
+you searched for meaning in their
+suffering? And using this same
+suffering? And using this same
+ 
+suffering? And using this same
+technique, we can create the two of them
+technique, we can create the two of them
+ 
+technique, we can create the two of them
+interacting together, for example, in a
+interacting together, for example, in a
+ 
+interacting together, for example, in a
+lightsaber battle.
+
+ 
+
+So, this battle isn't exactly as dynamic
+So, this battle isn't exactly as dynamic
+ 
+So, this battle isn't exactly as dynamic
+as a real movie. This video clip does
+as a real movie. This video clip does
+ 
+as a real movie. This video clip does
+start off a little slow. There's not
+start off a little slow. There's not
+ 
+start off a little slow. There's not
+that much motion at the start, but as we
+that much motion at the start, but as we
+ 
+that much motion at the start, but as we
+get later on into the video and they
+get later on into the video and they
+ 
+get later on into the video and they
+start swinging their lightsabers. It's a
+start swinging their lightsabers. It's a
+ 
+start swinging their lightsabers. It's a
+pretty epic looking battle. I mean,
+pretty epic looking battle. I mean,
+ 
+pretty epic looking battle. I mean,
+there's sparks flying everywhere. The
+there's sparks flying everywhere. The
+ 
+there's sparks flying everywhere. The
+sound effects also sound realistic to
+sound effects also sound realistic to
+ 
+sound effects also sound realistic to
+me. So, what about when it comes to
+me. So, what about when it comes to
+ 
+me. So, what about when it comes to
+directing the camera inside the AI
+directing the camera inside the AI
+ 
+directing the camera inside the AI
+videos? You do have quite a bit of
+videos? You do have quite a bit of
+ 
+videos? You do have quite a bit of
+control over how the camera motion
+control over how the camera motion
+ 
+control over how the camera motion
+moves. To start off, let's go with a
+moves. To start off, let's go with a
+ 
+moves. To start off, let's go with a
+shot of a Sith temple. We're going to
+shot of a Sith temple. We're going to
+ 
+shot of a Sith temple. We're going to
+prompt for a slow crane shot behind a
+prompt for a slow crane shot behind a
+ 
+prompt for a slow crane shot behind a
+cloaked figure walking up the steps to
+cloaked figure walking up the steps to
+ 
+cloaked figure walking up the steps to
+an ancient Sith temple in Star Wars. The
+an ancient Sith temple in Star Wars. The
+ 
+an ancient Sith temple in Star Wars. The
+cameras flies above and slowly tilts
+cameras flies above and slowly tilts
+ 
+cameras flies above and slowly tilts
+down to reveal the Sith temple. Red
+down to reveal the Sith temple. Red
+ 
+down to reveal the Sith temple. Red
+lightning inside a thunderstorm.
+
+ 
+
+So, what happened here? That wasn't
+So, what happened here? That wasn't
+ 
+So, what happened here? That wasn't
+exactly the video that I prompted for.
+exactly the video that I prompted for.
+ 
+exactly the video that I prompted for.
+The Sith is actually walking down the
+The Sith is actually walking down the
+ 
+The Sith is actually walking down the
+steps instead of walking up the step
+steps instead of walking up the step
+ 
+steps instead of walking up the step
+like I asked for inside the prompt. Just
+like I asked for inside the prompt. Just
+ 
+like I asked for inside the prompt. Just
+like any other AI image generator or AI
+like any other AI image generator or AI
+ 
+like any other AI image generator or AI
+video, there is some randomness in VO3,
+video, there is some randomness in VO3,
+ 
+video, there is some randomness in VO3,
+which means every time you run the same
+which means every time you run the same
+ 
+which means every time you run the same
+prompt, you won't get the same results.
+prompt, you won't get the same results.
+ 
+prompt, you won't get the same results.
+So, sometimes it's a good idea to run
+So, sometimes it's a good idea to run
+ 
+So, sometimes it's a good idea to run
+the prompt multiple times. Here's
+the prompt multiple times. Here's
+ 
+the prompt multiple times. Here's
+another video generated of me running
+another video generated of me running
+ 
+another video generated of me running
+the exact same prompt again. And this
+the exact same prompt again. And this
+ 
+the exact same prompt again. And this
+time, we'll see him walking up the steps
+time, we'll see him walking up the steps
+ 
+time, we'll see him walking up the steps
+like I asked
+
+ 
+
+for. There's some pretty cool camera
+for. There's some pretty cool camera
+ 
+for. There's some pretty cool camera
+movement effects you can create. Here's
+movement effects you can create. Here's
+ 
+movement effects you can create. Here's
+an example where I asked for the video
+an example where I asked for the video
+ 
+an example where I asked for the video
+to start with a close-up shot on a
+to start with a close-up shot on a
+ 
+to start with a close-up shot on a
+gloved finger hovering over a blaster.
+gloved finger hovering over a blaster.
+ 
+gloved finger hovering over a blaster.
+And then the camera is going to tilt up
+And then the camera is going to tilt up
+ 
+And then the camera is going to tilt up
+and reveal a bounty hunter with a helmet
+and reveal a bounty hunter with a helmet
+ 
+and reveal a bounty hunter with a helmet
+on. This was one of my favorite video
+
+ 
+
+generations. I can't get over how good
+generations. I can't get over how good
+ 
+generations. I can't get over how good
+this looks. In the prompt, I
+this looks. In the prompt, I
+ 
+this looks. In the prompt, I
+specifically told the camera to quickly
+specifically told the camera to quickly
+ 
+specifically told the camera to quickly
+tilt up, and you see the movement
+tilt up, and you see the movement
+ 
+tilt up, and you see the movement
+flashing from the blaster to the helmet
+flashing from the blaster to the helmet
+ 
+flashing from the blaster to the helmet
+of the Dante Hunter. Here's more of an
+of the Dante Hunter. Here's more of an
+ 
+of the Dante Hunter. Here's more of an
+advanced tip. When you prompt for
+advanced tip. When you prompt for
+ 
+advanced tip. When you prompt for
+specific subjects in the video, a lot of
+specific subjects in the video, a lot of
+ 
+specific subjects in the video, a lot of
+the times that can override the camera
+the times that can override the camera
+ 
+the times that can override the camera
+movement and the camera angle that you
+movement and the camera angle that you
+ 
+movement and the camera angle that you
+ask for. For example, I want to generate
+ask for. For example, I want to generate
+ 
+ask for. For example, I want to generate
+an over theshoulder shot of a rebel
+an over theshoulder shot of a rebel
+ 
+an over theshoulder shot of a rebel
+flying inside a spaceship. I want it to
+flying inside a spaceship. I want it to
+ 
+flying inside a spaceship. I want it to
+be looking outside the cockpit window
+be looking outside the cockpit window
+ 
+be looking outside the cockpit window
+where we can see other fighter jets
+where we can see other fighter jets
+ 
+where we can see other fighter jets
+flying by. Here's the overthe-shoulder
+flying by. Here's the overthe-shoulder
+ 
+flying by. Here's the overthe-shoulder
+view that I'm actually looking for. The
+view that I'm actually looking for. The
+ 
+view that I'm actually looking for. The
+camera is placed behind the pilot. We
+camera is placed behind the pilot. We
+ 
+camera is placed behind the pilot. We
+can see his shoulder and the back of his
+can see his shoulder and the back of his
+ 
+can see his shoulder and the back of his
+head, but we're looking outside the
+head, but we're looking outside the
+ 
+head, but we're looking outside the
+window. If I run that prompt inside of
+window. If I run that prompt inside of
+ 
+window. If I run that prompt inside of
+V3, though, you'll see that the video
+V3, though, you'll see that the video
+ 
+V3, though, you'll see that the video
+actually starts with a medium body shot
+actually starts with a medium body shot
+ 
+actually starts with a medium body shot
+showing the pilot's face and body before
+showing the pilot's face and body before
+ 
+showing the pilot's face and body before
+switching to an over-the-shoulder
+
+ 
+
+shot. That's not what I asked for. The
+shot. That's not what I asked for. The
+ 
+shot. That's not what I asked for. The
+reason is because we included the words
+reason is because we included the words
+ 
+reason is because we included the words
+the rebel pilot inside the prompt. And
+the rebel pilot inside the prompt. And
+ 
+the rebel pilot inside the prompt. And
+so Veil 3 wants to show that subject in
+so Veil 3 wants to show that subject in
+ 
+so Veil 3 wants to show that subject in
+the video. However, if I remove that
+the video. However, if I remove that
+ 
+the video. However, if I remove that
+phrase, rebel pilot, and just say over
+phrase, rebel pilot, and just say over
+ 
+phrase, rebel pilot, and just say over
+the shoulder shot inside a cockpit of a
+the shoulder shot inside a cockpit of a
+ 
+the shoulder shot inside a cockpit of a
+spaceship, here's what we get. Because I
+spaceship, here's what we get. Because I
+ 
+spaceship, here's what we get. Because I
+didn't add the subject of rebel fighter
+didn't add the subject of rebel fighter
+ 
+didn't add the subject of rebel fighter
+inside the video, it prioritizes the
+inside the video, it prioritizes the
+ 
+inside the video, it prioritizes the
+camera angle that I'm asking for and
+camera angle that I'm asking for and
+ 
+camera angle that I'm asking for and
+gives me a perfect overthe-shoulder shot
+gives me a perfect overthe-shoulder shot
+ 
+gives me a perfect overthe-shoulder shot
+for the entire video. Here's another
+for the entire video. Here's another
+ 
+for the entire video. Here's another
+clip I generated where I asked her to
+clip I generated where I asked her to
+ 
+clip I generated where I asked her to
+start from the feet of stormtroopers
+start from the feet of stormtroopers
+ 
+start from the feet of stormtroopers
+marching through a town and then pan up
+marching through a town and then pan up
+ 
+marching through a town and then pan up
+to reveal the body and helmets of those
+
+ 
+
+stormtroopers. What are the limitations
+stormtroopers. What are the limitations
+ 
+stormtroopers. What are the limitations
+of what it can do as far as camera
+of what it can do as far as camera
+ 
+of what it can do as far as camera
+motion is concerned? If you try to add
+motion is concerned? If you try to add
+ 
+motion is concerned? If you try to add
+in too much movement, the quality of the
+in too much movement, the quality of the
+ 
+in too much movement, the quality of the
+videos will degrade. In a prompt, if I
+videos will degrade. In a prompt, if I
+ 
+videos will degrade. In a prompt, if I
+ask for it to start with a shot of a
+ask for it to start with a shot of a
+ 
+ask for it to start with a shot of a
+Star Wars droid making some beeping
+Star Wars droid making some beeping
+ 
+Star Wars droid making some beeping
+noises and then pan towards the Jedi
+noises and then pan towards the Jedi
+ 
+noises and then pan towards the Jedi
+character that we described earlier,
+character that we described earlier,
+ 
+character that we described earlier,
+what's going to happen is that there's
+what's going to happen is that there's
+ 
+what's going to happen is that there's
+just too much going on inside this
+just too much going on inside this
+ 
+just too much going on inside this
+prompt for it to animate it properly.
+prompt for it to animate it properly.
+ 
+prompt for it to animate it properly.
+Let's take a look.
+
+ 
+
+I know, I
+I know, I
+ 
+I know, I
+know, quit your whining. While the
+know, quit your whining. While the
+ 
+know, quit your whining. While the
+emotion does look pretty good, the voice
+emotion does look pretty good, the voice
+ 
+emotion does look pretty good, the voice
+gets mixed up. It doesn't read the words
+gets mixed up. It doesn't read the words
+ 
+gets mixed up. It doesn't read the words
+that I asked her to say properly. I
+that I asked her to say properly. I
+ 
+that I asked her to say properly. I
+know. I know. Qui, quit your whining.
+know. I know. Qui, quit your whining.
+ 
+know. I know. Qui, quit your whining.
+Here's another example where I asked for
+Here's another example where I asked for
+ 
+Here's another example where I asked for
+the Sith to reach out with his palm, say
+the Sith to reach out with his palm, say
+ 
+the Sith to reach out with his palm, say
+some words, and then use the force to
+some words, and then use the force to
+ 
+some words, and then use the force to
+send a bounty hunter flying through the
+send a bounty hunter flying through the
+ 
+send a bounty hunter flying through the
+air.
+air.
+ 
+air.
+This will be the last time you fail me.
+
+ 
+
+This video doesn't make any sense at
+This video doesn't make any sense at
+ 
+This video doesn't make any sense at
+all. It looks like the Sith does some
+all. It looks like the Sith does some
+ 
+all. It looks like the Sith does some
+kind of a 360 flip and then the bounty
+kind of a 360 flip and then the bounty
+ 
+kind of a 360 flip and then the bounty
+hunter appears out of nowhere. So, if
+hunter appears out of nowhere. So, if
+ 
+hunter appears out of nowhere. So, if
+you want to create more dynamic scenes
+you want to create more dynamic scenes
+ 
+you want to create more dynamic scenes
+like this, it's better to animate it in
+like this, it's better to animate it in
+ 
+like this, it's better to animate it in
+smaller chunks separately. So, I'll
+smaller chunks separately. So, I'll
+ 
+smaller chunks separately. So, I'll
+create a video of the Sith reaching out
+create a video of the Sith reaching out
+ 
+create a video of the Sith reaching out
+with his palm and then a separate one
+with his palm and then a separate one
+ 
+with his palm and then a separate one
+for the bounty hunter. This will be the
+for the bounty hunter. This will be the
+ 
+for the bounty hunter. This will be the
+last time you fail me.
+
+ 
+
+Think about the exact textures,
+Think about the exact textures,
+ 
+Think about the exact textures,
+patterns, and materials that you want
+patterns, and materials that you want
+ 
+patterns, and materials that you want
+inside your videos. Here's a video I
+inside your videos. Here's a video I
+ 
+inside your videos. Here's a video I
+generated of our Jedi earlier, and she's
+generated of our Jedi earlier, and she's
+ 
+generated of our Jedi earlier, and she's
+riding on top of a speeder. But the
+riding on top of a speeder. But the
+ 
+riding on top of a speeder. But the
+chrome metallic silver look on the
+chrome metallic silver look on the
+ 
+chrome metallic silver look on the
+speeder, it doesn't fit a Star Wars
+speeder, it doesn't fit a Star Wars
+ 
+speeder, it doesn't fit a Star Wars
+movie. So instead, in this prompt, I
+movie. So instead, in this prompt, I
+ 
+movie. So instead, in this prompt, I
+specifically told the AI video generator
+specifically told the AI video generator
+ 
+specifically told the AI video generator
+the textures of the speeder that I want
+the textures of the speeder that I want
+ 
+the textures of the speeder that I want
+should be rusty, made out of old metal
+should be rusty, made out of old metal
+ 
+should be rusty, made out of old metal
+scraps, and have some plants growing on
+scraps, and have some plants growing on
+ 
+scraps, and have some plants growing on
+the side of it. And we get a scene
+the side of it. And we get a scene
+ 
+the side of it. And we get a scene
+that's much more visually aligned
+that's much more visually aligned
+ 
+that's much more visually aligned
+overall. So far we've covered text to
+overall. So far we've covered text to
+ 
+overall. So far we've covered text to
+video, but we can also do frames to
+video, but we can also do frames to
+ 
+video, but we can also do frames to
+video in which case we upload a
+video in which case we upload a
+ 
+video in which case we upload a
+reference image first and then Google
+reference image first and then Google
+ 
+reference image first and then Google
+will create a video for us based on that
+will create a video for us based on that
+ 
+will create a video for us based on that
+reference image. You might be thinking
+reference image. You might be thinking
+ 
+reference image. You might be thinking
+if the text to video is so good, why do
+if the text to video is so good, why do
+ 
+if the text to video is so good, why do
+we still need image to video? The reason
+we still need image to video? The reason
+ 
+we still need image to video? The reason
+is because text to video is limited a
+is because text to video is limited a
+ 
+is because text to video is limited a
+lot of the times in its ability to
+lot of the times in its ability to
+ 
+lot of the times in its ability to
+generate the specific characters or
+generate the specific characters or
+ 
+generate the specific characters or
+scenes you want. For example, this is a
+scenes you want. For example, this is a
+ 
+scenes you want. For example, this is a
+character from Star Wars called Jar Jar
+character from Star Wars called Jar Jar
+ 
+character from Star Wars called Jar Jar
+Binks. If you're not familiar with him,
+Binks. If you're not familiar with him,
+ 
+Binks. If you're not familiar with him,
+he's basically an alien that looks like
+he's basically an alien that looks like
+ 
+he's basically an alien that looks like
+this guy. Kind of a pretty well-known
+this guy. Kind of a pretty well-known
+ 
+this guy. Kind of a pretty well-known
+character. But if I try to generate him
+character. But if I try to generate him
+ 
+character. But if I try to generate him
+inside Google V3 using only the text
+inside Google V3 using only the text
+ 
+inside Google V3 using only the text
+box, it gives me a character that
+box, it gives me a character that
+ 
+box, it gives me a character that
+doesn't look like Jar Jar Binks at all.
+doesn't look like Jar Jar Binks at all.
+ 
+doesn't look like Jar Jar Binks at all.
+Twist in the minds. You are just too
+Twist in the minds. You are just too
+ 
+Twist in the minds. You are just too
+blind to see. And that's where frames to
+blind to see. And that's where frames to
+ 
+blind to see. And that's where frames to
+video comes in. So let's go to frames to
+video comes in. So let's go to frames to
+ 
+video comes in. So let's go to frames to
+video and we'll have an option to upload
+video and we'll have an option to upload
+ 
+video and we'll have an option to upload
+some images. So we can upload our image
+some images. So we can upload our image
+ 
+some images. So we can upload our image
+or generate an image directly inside 3.
+or generate an image directly inside 3.
+ 
+or generate an image directly inside 3.
+So let's generate an image and enter a
+So let's generate an image and enter a
+ 
+So let's generate an image and enter a
+prompt. Jar Binks from Star Wars
+prompt. Jar Binks from Star Wars
+ 
+prompt. Jar Binks from Star Wars
+as a Sith. He's wearing a black cloak
+as a Sith. He's wearing a black cloak
+ 
+as a Sith. He's wearing a black cloak
+and holding a red lightsaber cinematic
+and holding a red lightsaber cinematic
+ 
+and holding a red lightsaber cinematic
+film.
+film.
+ 
+film.
+Then we can run this prompt and create
+Then we can run this prompt and create
+ 
+Then we can run this prompt and create
+the images and it'll generate a
+the images and it'll generate a
+ 
+the images and it'll generate a
+character image that looks much much
+character image that looks much much
+ 
+character image that looks much much
+closer to Jar Jar. We can go ahead and
+closer to Jar Jar. We can go ahead and
+ 
+closer to Jar Jar. We can go ahead and
+use this image to generate a video of
+use this image to generate a video of
+ 
+use this image to generate a video of
+it. And inside the prompt, we can ask
+it. And inside the prompt, we can ask
+ 
+it. And inside the prompt, we can ask
+for anything. For example, the camera
+for anything. For example, the camera
+ 
+for anything. For example, the camera
+zooms zooms in as he waves his
+zooms zooms in as he waves his
+ 
+zooms zooms in as he waves his
+lightsaber.
+lightsaber.
+ 
+lightsaber.
+Let's try and generate that and it'll
+Let's try and generate that and it'll
+ 
+Let's try and generate that and it'll
+create a decent looking video from the
+create a decent looking video from the
+ 
+create a decent looking video from the
+reference image that we uploaded. Now,
+reference image that we uploaded. Now,
+ 
+reference image that we uploaded. Now,
+when it comes to using the image frames
+when it comes to using the image frames
+ 
+when it comes to using the image frames
+to video feature, I don't recommend it
+to video feature, I don't recommend it
+ 
+to video feature, I don't recommend it
+as much as just trying to use text to
+as much as just trying to use text to
+ 
+as much as just trying to use text to
+video. So, let me explain. There are
+video. So, let me explain. There are
+ 
+video. So, let me explain. There are
+some decent features you can get from
+some decent features you can get from
+ 
+some decent features you can get from
+image to video. For example, if we
+image to video. For example, if we
+ 
+image to video. For example, if we
+upload a reference image, let's say
+upload a reference image, let's say
+ 
+upload a reference image, let's say
+we'll put in this photo of a spaceship.
+we'll put in this photo of a spaceship.
+ 
+we'll put in this photo of a spaceship.
+We do have the option of adding in some
+We do have the option of adding in some
+ 
+We do have the option of adding in some
+camera movements, but there's a bunch of
+camera movements, but there's a bunch of
+ 
+camera movements, but there's a bunch of
+options here. You can dialing in on the
+options here. You can dialing in on the
+ 
+options here. You can dialing in on the
+character. You can tilt the camera down.
+character. You can tilt the camera down.
+ 
+character. You can tilt the camera down.
+Um, there's a bunch of them. I'm not
+Um, there's a bunch of them. I'm not
+ 
+Um, there's a bunch of them. I'm not
+sure why they're not all displaying
+sure why they're not all displaying
+ 
+sure why they're not all displaying
+right now properly, but let's go with
+right now properly, but let's go with
+ 
+right now properly, but let's go with
+orbiting left around the subject. and
+orbiting left around the subject. and
+ 
+orbiting left around the subject. and
+let's put in the prompt the camera
+let's put in the prompt the camera
+ 
+let's put in the prompt the camera
+circles around the spaceship. Now, if we
+circles around the spaceship. Now, if we
+ 
+circles around the spaceship. Now, if we
+look inside the settings, you can see
+look inside the settings, you can see
+ 
+look inside the settings, you can see
+that I have selected the Google V3 model
+that I have selected the Google V3 model
+ 
+that I have selected the Google V3 model
+for the video
+for the video
+ 
+for the video
+generation. However, if we try to
+generation. However, if we try to
+ 
+generation. However, if we try to
+actually run this prompt, you'll see
+actually run this prompt, you'll see
+ 
+actually run this prompt, you'll see
+this pop up which says switching you to
+this pop up which says switching you to
+ 
+this pop up which says switching you to
+a compatible model for this feature.
+a compatible model for this feature.
+ 
+a compatible model for this feature.
+This is because a lot of the
+This is because a lot of the
+ 
+This is because a lot of the
+imagetovideo
+imagetovideo
+ 
+imagetovideo
+features only work with the Ve2 model.
+features only work with the Ve2 model.
+ 
+features only work with the Ve2 model.
+For example, adding in the camera
+For example, adding in the camera
+ 
+For example, adding in the camera
+motions, which means you won't be able
+motions, which means you won't be able
+ 
+motions, which means you won't be able
+to use the most advanced video model for
+to use the most advanced video model for
+ 
+to use the most advanced video model for
+this feature. But let's generate it
+this feature. But let's generate it
+ 
+this feature. But let's generate it
+anyways and see what it looks like. The
+anyways and see what it looks like. The
+ 
+anyways and see what it looks like. The
+camera movements do work pretty well.
+camera movements do work pretty well.
+ 
+camera movements do work pretty well.
+The only thing is that, like I said, the
+The only thing is that, like I said, the
+ 
+The only thing is that, like I said, the
+video model isn't going to be the newest
+video model isn't going to be the newest
+ 
+video model isn't going to be the newest
+V3 model. Depending on the scene that
+V3 model. Depending on the scene that
+ 
+V3 model. Depending on the scene that
+you need, I think a lot of these will
+you need, I think a lot of these will
+ 
+you need, I think a lot of these will
+work perfectly fine. The camera
+work perfectly fine. The camera
+ 
+work perfectly fine. The camera
+movements do look pretty smooth and
+movements do look pretty smooth and
+ 
+movements do look pretty smooth and
+follow what you ask
+follow what you ask
+ 
+follow what you ask
+for. But if you want to use camera
+for. But if you want to use camera
+ 
+for. But if you want to use camera
+motions with the new Veil 3 model,
+motions with the new Veil 3 model,
+ 
+motions with the new Veil 3 model,
+you'll need to directly add them into
+you'll need to directly add them into
+ 
+you'll need to directly add them into
+the prompt by yourself. Here's a example
+the prompt by yourself. Here's a example
+ 
+the prompt by yourself. Here's a example
+where I told the camera to pull back
+where I told the camera to pull back
+ 
+where I told the camera to pull back
+while the Jedi walks forward and waves
+while the Jedi walks forward and waves
+ 
+while the Jedi walks forward and waves
+her white lightsaber.
+
+ 
+
+Here's another example where I prompted
+Here's another example where I prompted
+ 
+Here's another example where I prompted
+for the camera to circle around the
+for the camera to circle around the
+ 
+for the camera to circle around the
+subject. You do have a decent amount of
+subject. You do have a decent amount of
+ 
+subject. You do have a decent amount of
+control over the camera motion in just
+control over the camera motion in just
+ 
+control over the camera motion in just
+the prompt itself. Here's one of the
+the prompt itself. Here's one of the
+ 
+the prompt itself. Here's one of the
+camera tilting down while this hunter
+camera tilting down while this hunter
+ 
+camera tilting down while this hunter
+jumps down from the
+jumps down from the
+ 
+jumps down from the
+ledge. Circling back to what I said
+ledge. Circling back to what I said
+ 
+ledge. Circling back to what I said
+previously, I do think the text to video
+previously, I do think the text to video
+ 
+previously, I do think the text to video
+works better than using a reference
+works better than using a reference
+ 
+works better than using a reference
+image inside Veo 2. So, if possible, try
+image inside Veo 2. So, if possible, try
+ 
+image inside Veo 2. So, if possible, try
+to create the videos using just the text
+to create the videos using just the text
+ 
+to create the videos using just the text
+prompt if you can. So, I've got this
+prompt if you can. So, I've got this
+ 
+prompt if you can. So, I've got this
+reference image of the bounty hunter,
+reference image of the bounty hunter,
+ 
+reference image of the bounty hunter,
+and I told him to jump down from the
+and I told him to jump down from the
+ 
+and I told him to jump down from the
+ledge onto the ground. It's kind of a
+ledge onto the ground. It's kind of a
+ 
+ledge onto the ground. It's kind of a
+smaller hop, not exactly a dynamic jump
+smaller hop, not exactly a dynamic jump
+ 
+smaller hop, not exactly a dynamic jump
+from a tall ledge onto the ground. So,
+from a tall ledge onto the ground. So,
+ 
+from a tall ledge onto the ground. So,
+instead, I directly used just a text
+instead, I directly used just a text
+ 
+instead, I directly used just a text
+prompt where I described the visuals of
+prompt where I described the visuals of
+ 
+prompt where I described the visuals of
+the scene. I wanted to start with a
+the scene. I wanted to start with a
+ 
+the scene. I wanted to start with a
+front view of a bounty hunter from Star
+front view of a bounty hunter from Star
+ 
+front view of a bounty hunter from Star
+Wars. He's wearing a rusty helmet and
+Wars. He's wearing a rusty helmet and
+ 
+Wars. He's wearing a rusty helmet and
+rusty armor and the camera tilts down as
+rusty armor and the camera tilts down as
+ 
+rusty armor and the camera tilts down as
+he jumps down from a tall ledge into a
+he jumps down from a tall ledge into a
+ 
+he jumps down from a tall ledge into a
+rock pit and lands on the ground. It
+rock pit and lands on the ground. It
+ 
+rock pit and lands on the ground. It
+should be a bright sunlit rocky
+should be a bright sunlit rocky
+ 
+should be a bright sunlit rocky
+environment with brown rocks and some
+environment with brown rocks and some
+ 
+environment with brown rocks and some
+sand just like the image that I showed
+sand just like the image that I showed
+ 
+sand just like the image that I showed
+earlier. And let's see what the video
+earlier. And let's see what the video
+ 
+earlier. And let's see what the video
+looks
+
+ 
+
+like if we compare it to using a
+like if we compare it to using a
+ 
+like if we compare it to using a
+reference image. The motion is way more
+reference image. The motion is way more
+ 
+reference image. The motion is way more
+dynamic and I think the sound effects in
+dynamic and I think the sound effects in
+ 
+dynamic and I think the sound effects in
+general are better.
+
+ 
+
+Also, here's another limitation. If you
+Also, here's another limitation. If you
+ 
+Also, here's another limitation. If you
+use reference images, you can't actually
+use reference images, you can't actually
+ 
+use reference images, you can't actually
+create the lifelike talking characters.
+create the lifelike talking characters.
+ 
+create the lifelike talking characters.
+So, I started with this reference image
+So, I started with this reference image
+ 
+So, I started with this reference image
+of a woman sitting on a jade throne. And
+of a woman sitting on a jade throne. And
+ 
+of a woman sitting on a jade throne. And
+I prompted for her to stand up, pick up
+I prompted for her to stand up, pick up
+ 
+I prompted for her to stand up, pick up
+a lightsaber, and say the words, "May
+a lightsaber, and say the words, "May
+ 
+a lightsaber, and say the words, "May
+the force be with you." But one problem
+the force be with you." But one problem
+ 
+the force be with you." But one problem
+with using uh image reference is that
+with using uh image reference is that
+ 
+with using uh image reference is that
+when you try to animate a talking
+when you try to animate a talking
+ 
+when you try to animate a talking
+character, it can make the character
+character, it can make the character
+ 
+character, it can make the character
+move their mouth around like they're
+move their mouth around like they're
+ 
+move their mouth around like they're
+talking, but they won't actually say the
+talking, but they won't actually say the
+ 
+talking, but they won't actually say the
+words you want them to. You do see these
+words you want them to. You do see these
+ 
+words you want them to. You do see these
+subtitles on the screen. This is
+subtitles on the screen. This is
+ 
+subtitles on the screen. This is
+something that they need to fix cuz we
+something that they need to fix cuz we
+ 
+something that they need to fix cuz we
+don't need those. However, if you have
+don't need those. However, if you have
+ 
+don't need those. However, if you have
+an image of a character that you really,
+an image of a character that you really,
+ 
+an image of a character that you really,
+really want to use, for example, this
+really want to use, for example, this
+ 
+really want to use, for example, this
+Asian woman sitting on a jade throne, I
+Asian woman sitting on a jade throne, I
+ 
+Asian woman sitting on a jade throne, I
+mean, I think this looks really, really
+mean, I think this looks really, really
+ 
+mean, I think this looks really, really
+amazing. You can generate the video
+amazing. You can generate the video
+ 
+amazing. You can generate the video
+inside VA3 and use a lip sync tool on
+inside VA3 and use a lip sync tool on
+ 
+inside VA3 and use a lip sync tool on
+another platform. Uh so I created this
+another platform. Uh so I created this
+ 
+another platform. Uh so I created this
+video of the female Jedi using the image
+video of the female Jedi using the image
+ 
+video of the female Jedi using the image
+frames to video. She doesn't say
+frames to video. She doesn't say
+ 
+frames to video. She doesn't say
+anything inside here, but we're going to
+anything inside here, but we're going to
+ 
+anything inside here, but we're going to
+go to an AI voice generator. I'm using
+go to an AI voice generator. I'm using
+ 
+go to an AI voice generator. I'm using
+11 Labs here. And we can enter a speech
+11 Labs here. And we can enter a speech
+ 
+11 Labs here. And we can enter a speech
+that we wanted to say. May the force be
+that we wanted to say. May the force be
+ 
+that we wanted to say. May the force be
+with you. There's a bunch of voices you
+with you. There's a bunch of voices you
+ 
+with you. There's a bunch of voices you
+can pick from here. I'm selecting Jen.
+can pick from here. I'm selecting Jen.
+ 
+can pick from here. I'm selecting Jen.
+Then we can generate the AI speech. May
+Then we can generate the AI speech. May
+ 
+Then we can generate the AI speech. May
+the force be with you. We have the voice
+the force be with you. We have the voice
+ 
+the force be with you. We have the voice
+and the video from Google Veil. We can
+and the video from Google Veil. We can
+ 
+and the video from Google Veil. We can
+use a tool like Pix for example which
+use a tool like Pix for example which
+ 
+use a tool like Pix for example which
+does have AI lip sync. Hit this speech
+does have AI lip sync. Hit this speech
+ 
+does have AI lip sync. Hit this speech
+button right here. And inside here I've
+button right here. And inside here I've
+ 
+button right here. And inside here I've
+uploaded the video from Google V3 and
+uploaded the video from Google V3 and
+ 
+uploaded the video from Google V3 and
+also the audio file we just generated
+also the audio file we just generated
+ 
+also the audio file we just generated
+using 11 Labs. And we can create the lip
+using 11 Labs. And we can create the lip
+ 
+using 11 Labs. And we can create the lip
+sync.
+sync.
+ 
+sync.
+This isn't the ideal solution. I'm sure
+This isn't the ideal solution. I'm sure
+ 
+This isn't the ideal solution. I'm sure
+Google at some point will update their
+Google at some point will update their
+ 
+Google at some point will update their
+Veil 3 model to also allow you to create
+Veil 3 model to also allow you to create
+ 
+Veil 3 model to also allow you to create
+talking characters using reference
+talking characters using reference
+ 
+talking characters using reference
+images, but for now, this is kind of
+images, but for now, this is kind of
+ 
+images, but for now, this is kind of
+what you got to do. And this is what our
+what you got to do. And this is what our
+ 
+what you got to do. And this is what our
+lipsync character looks like. May the
+lipsync character looks like. May the
+ 
+lipsync character looks like. May the
+force be with you. Again, let's try to
+force be with you. Again, let's try to
+ 
+force be with you. Again, let's try to
+replicate this scene using just text to
+replicate this scene using just text to
+ 
+replicate this scene using just text to
+video. Here's the prompt I'll use. An
+video. Here's the prompt I'll use. An
+ 
+video. Here's the prompt I'll use. An
+Asian female Jedi from Star Wars. She
+Asian female Jedi from Star Wars. She
+ 
+Asian female Jedi from Star Wars. She
+has two small ram horns on her head and
+has two small ram horns on her head and
+ 
+has two small ram horns on her head and
+is wearing a white sleeveless dress with
+is wearing a white sleeveless dress with
+ 
+is wearing a white sleeveless dress with
+gold ornaments. She sits on a circular
+gold ornaments. She sits on a circular
+ 
+gold ornaments. She sits on a circular
+jade throne in Saturn Asian Palace. She
+jade throne in Saturn Asian Palace. She
+ 
+jade throne in Saturn Asian Palace. She
+stands up, pulls out a green lightsaber.
+stands up, pulls out a green lightsaber.
+ 
+stands up, pulls out a green lightsaber.
+She says, "May the force be with you.
+She says, "May the force be with you.
+ 
+She says, "May the force be with you.
+Star Wars cinematic film." I tried to
+Star Wars cinematic film." I tried to
+ 
+Star Wars cinematic film." I tried to
+describe the image I showed earlier as
+describe the image I showed earlier as
+ 
+describe the image I showed earlier as
+closely as possible. Let's see what the
+closely as possible. Let's see what the
+ 
+closely as possible. Let's see what the
+video looks like.
+
+ 
+
+May the force be with you.
+May the force be with you.
+ 
+May the force be with you.
+All right. So, let's be honest here.
+All right. So, let's be honest here.
+ 
+All right. So, let's be honest here.
+That's not a very visually appealing
+That's not a very visually appealing
+ 
+That's not a very visually appealing
+video. She does stand up and swing the
+video. She does stand up and swing the
+ 
+video. She does stand up and swing the
+lightsaber around and say the words I
+lightsaber around and say the words I
+ 
+lightsaber around and say the words I
+prompted for exactly, but I don't think
+prompted for exactly, but I don't think
+ 
+prompted for exactly, but I don't think
+this is a cinematic looking shot. I
+this is a cinematic looking shot. I
+ 
+this is a cinematic looking shot. I
+mean, the colors, the horns on her head
+mean, the colors, the horns on her head
+ 
+mean, the colors, the horns on her head
+look kind of weird. And the colors just
+look kind of weird. And the colors just
+ 
+look kind of weird. And the colors just
+look really, really bland. So, when it
+look really, really bland. So, when it
+ 
+look really, really bland. So, when it
+comes to writing the text prompts,
+comes to writing the text prompts,
+ 
+comes to writing the text prompts,
+sometimes it'll generate a really great
+sometimes it'll generate a really great
+ 
+sometimes it'll generate a really great
+looking video with a small amount of
+looking video with a small amount of
+ 
+looking video with a small amount of
+effort, but sometimes you need to
+effort, but sometimes you need to
+ 
+effort, but sometimes you need to
+describe the exact cinematic shot that
+describe the exact cinematic shot that
+ 
+describe the exact cinematic shot that
+you want, including the colors and the
+you want, including the colors and the
+ 
+you want, including the colors and the
+environment. So, let's update this
+environment. So, let's update this
+ 
+environment. So, let's update this
+prompt a little bit. This time, I'm
+prompt a little bit. This time, I'm
+ 
+prompt a little bit. This time, I'm
+going to describe the visual look of the
+going to describe the visual look of the
+ 
+going to describe the visual look of the
+shot a bit more. So, again, we're going
+shot a bit more. So, again, we're going
+ 
+shot a bit more. So, again, we're going
+with an Asian female Jedi from Star
+with an Asian female Jedi from Star
+ 
+with an Asian female Jedi from Star
+Wars. She's wearing a white sleeveless
+Wars. She's wearing a white sleeveless
+ 
+Wars. She's wearing a white sleeveless
+dress with gold ornaments. She sits on a
+dress with gold ornaments. She sits on a
+ 
+dress with gold ornaments. She sits on a
+glowing dark jade throne inside a dark
+glowing dark jade throne inside a dark
+ 
+glowing dark jade throne inside a dark
+Asian palace. She stands up and pulls
+Asian palace. She stands up and pulls
+ 
+Asian palace. She stands up and pulls
+out a green lightsaber. Muted dark
+out a green lightsaber. Muted dark
+ 
+out a green lightsaber. Muted dark
+colors, high contrast between the dark
+colors, high contrast between the dark
+ 
+colors, high contrast between the dark
+green jade throne and the darker palace
+green jade throne and the darker palace
+ 
+green jade throne and the darker palace
+with intricate Asian designs and dragon
+with intricate Asian designs and dragon
+ 
+with intricate Asian designs and dragon
+statues behind the Jedi. Now, if we
+statues behind the Jedi. Now, if we
+ 
+statues behind the Jedi. Now, if we
+generate the video, I think we'll get
+generate the video, I think we'll get
+ 
+generate the video, I think we'll get
+something that looks a lot more visually
+something that looks a lot more visually
+ 
+something that looks a lot more visually
+aesthetic and cinematic.
+aesthetic and cinematic.
+ 
+aesthetic and cinematic.
+May the force be with you.
+
+ 
+
+If we compare the two video clips I
+If we compare the two video clips I
+ 
+If we compare the two video clips I
+generated, I mean, the before and after
+generated, I mean, the before and after
+ 
+generated, I mean, the before and after
+is enormous. So, you really need to
+is enormous. So, you really need to
+ 
+is enormous. So, you really need to
+describe the visual aesthetic you're
+describe the visual aesthetic you're
+ 
+describe the visual aesthetic you're
+going for inside the prompt more closely
+going for inside the prompt more closely
+ 
+going for inside the prompt more closely
+to get the best looking
+to get the best looking
+ 
+to get the best looking
+shots. When you're using image frames to
+shots. When you're using image frames to
+ 
+shots. When you're using image frames to
+video, it does also limit your
+video, it does also limit your
+ 
+video, it does also limit your
+creativity quite a bit. I'm starting
+creativity quite a bit. I'm starting
+ 
+creativity quite a bit. I'm starting
+with this image frame of a woman who's
+with this image frame of a woman who's
+ 
+with this image frame of a woman who's
+holding a lightsaber. And in the prompt,
+holding a lightsaber. And in the prompt,
+ 
+holding a lightsaber. And in the prompt,
+I'm saying the camera pans left and
+I'm saying the camera pans left and
+ 
+I'm saying the camera pans left and
+tilts up to reveal a giant AT&T vehicle
+tilts up to reveal a giant AT&T vehicle
+ 
+tilts up to reveal a giant AT&T vehicle
+from Star Wars cinematic film. If we
+from Star Wars cinematic film. If we
+ 
+from Star Wars cinematic film. If we
+generate this, here's what
+
+ 
+
+happens. Okay, so you see that? You see
+happens. Okay, so you see that? You see
+ 
+happens. Okay, so you see that? You see
+how it suddenly switches from the
+how it suddenly switches from the
+ 
+how it suddenly switches from the
+initial image frame to this like weird
+initial image frame to this like weird
+ 
+initial image frame to this like weird
+animation of her and like a black AT&T
+animation of her and like a black AT&T
+ 
+animation of her and like a black AT&T
+in the background. But instead, if we
+in the background. But instead, if we
+ 
+in the background. But instead, if we
+just use the text prompt by itself and
+just use the text prompt by itself and
+ 
+just use the text prompt by itself and
+describe the cinematic shot that we
+describe the cinematic shot that we
+ 
+describe the cinematic shot that we
+want, a close-up shot on a female Jedi
+want, a close-up shot on a female Jedi
+ 
+want, a close-up shot on a female Jedi
+from Star Wars with a white lightsaber
+from Star Wars with a white lightsaber
+ 
+from Star Wars with a white lightsaber
+on a dusty battlefield. The camera pans
+on a dusty battlefield. The camera pans
+ 
+on a dusty battlefield. The camera pans
+left and tilts up to reveal a giant AT&T
+left and tilts up to reveal a giant AT&T
+ 
+left and tilts up to reveal a giant AT&T
+vehicle from Star Wars. Dark orange dust
+vehicle from Star Wars. Dark orange dust
+ 
+vehicle from Star Wars. Dark orange dust
+and color toss. If we generate this
+and color toss. If we generate this
+ 
+and color toss. If we generate this
+without any reference
+
+ 
+
+image, the AT&T robot doesn't look
+image, the AT&T robot doesn't look
+ 
+image, the AT&T robot doesn't look
+exactly like it would inside a Star Wars
+exactly like it would inside a Star Wars
+ 
+exactly like it would inside a Star Wars
+movie, but you can see that the amount
+movie, but you can see that the amount
+ 
+movie, but you can see that the amount
+of creativity that you have and the
+of creativity that you have and the
+ 
+of creativity that you have and the
+control you have over the cinematic
+control you have over the cinematic
+ 
+control you have over the cinematic
+camera movements is way higher when
+camera movements is way higher when
+ 
+camera movements is way higher when
+using just the text prompt.
+using just the text prompt.
+ 
+using just the text prompt.
+There is another feature that I think is
+There is another feature that I think is
+ 
+There is another feature that I think is
+worth mentioning inside VO3 and that is
+worth mentioning inside VO3 and that is
+ 
+worth mentioning inside VO3 and that is
+this ingredients to video feature. Now
+this ingredients to video feature. Now
+ 
+this ingredients to video feature. Now
+what this does is let you combine
+what this does is let you combine
+ 
+what this does is let you combine
+multiple characters or ingredients
+multiple characters or ingredients
+ 
+multiple characters or ingredients
+inside the same scene. So for example,
+inside the same scene. So for example,
+ 
+inside the same scene. So for example,
+if I go to ingredients to video down
+if I go to ingredients to video down
+ 
+if I go to ingredients to video down
+here, I can upload three images inside
+here, I can upload three images inside
+ 
+here, I can upload three images inside
+the video generator. And so I've got a
+the video generator. And so I've got a
+ 
+the video generator. And so I've got a
+couple of different characters. Uh, I
+couple of different characters. Uh, I
+ 
+couple of different characters. Uh, I
+have this this woman with blue skin, got
+have this this woman with blue skin, got
+ 
+have this this woman with blue skin, got
+this guy, uh, a bounty hunter with red
+this guy, uh, a bounty hunter with red
+ 
+this guy, uh, a bounty hunter with red
+skin, and I'm also going to go with this
+skin, and I'm also going to go with this
+ 
+skin, and I'm also going to go with this
+landscape image. And in the prompt, we
+landscape image. And in the prompt, we
+ 
+landscape image. And in the prompt, we
+can go with the woman with blue skin and
+can go with the woman with blue skin and
+ 
+can go with the woman with blue skin and
+the man with red skin walk together on a
+the man with red skin walk together on a
+ 
+the man with red skin walk together on a
+rocky landscape. using this image def
+rocky landscape. using this image def
+ 
+rocky landscape. using this image def
+feature again. Uh it's not going to let
+feature again. Uh it's not going to let
+ 
+feature again. Uh it's not going to let
+you use the newest Veil 3 model and
+you use the newest Veil 3 model and
+ 
+you use the newest Veil 3 model and
+instead it'll force you to use an older
+instead it'll force you to use an older
+ 
+instead it'll force you to use an older
+Veo2 model. The quality isn't going to
+Veo2 model. The quality isn't going to
+ 
+Veo2 model. The quality isn't going to
+be as high. Uh it's also not going to
+be as high. Uh it's also not going to
+ 
+be as high. Uh it's also not going to
+give you the sound effects. This one was
+give you the sound effects. This one was
+ 
+give you the sound effects. This one was
+actually particularly bad. So I just ran
+actually particularly bad. So I just ran
+ 
+actually particularly bad. So I just ran
+this prompt again, except this time at
+this prompt again, except this time at
+ 
+this prompt again, except this time at
+the end I specifically told it to give
+the end I specifically told it to give
+ 
+the end I specifically told it to give
+it muted colors. um and also use the
+it muted colors. um and also use the
+ 
+it muted colors. um and also use the
+words cinematic film and we get
+words cinematic film and we get
+ 
+words cinematic film and we get
+something that's a bit more reasonable.
+something that's a bit more reasonable.
+ 
+something that's a bit more reasonable.
+So, this is a cool way that you can
+So, this is a cool way that you can
+ 
+So, this is a cool way that you can
+create videos with multiple of your own
+create videos with multiple of your own
+ 
+create videos with multiple of your own
+characters inside of them. Now, the
+characters inside of them. Now, the
+ 
+characters inside of them. Now, the
+characters aren't always going to match
+characters aren't always going to match
+ 
+characters aren't always going to match
+your reference images exactly. Um, this
+your reference images exactly. Um, this
+ 
+your reference images exactly. Um, this
+guy with the blue skin doesn't look
+guy with the blue skin doesn't look
+ 
+guy with the blue skin doesn't look
+quite like the reference image that I
+quite like the reference image that I
+ 
+quite like the reference image that I
+used, but I do think this is worth
+used, but I do think this is worth
+ 
+used, but I do think this is worth
+mentioning. Now, there are some more
+mentioning. Now, there are some more
+ 
+mentioning. Now, there are some more
+features inside Google Flow. You can use
+features inside Google Flow. You can use
+ 
+features inside Google Flow. You can use
+add to scene inside of a video. And what
+add to scene inside of a video. And what
+ 
+add to scene inside of a video. And what
+this will do is actually let you extend
+this will do is actually let you extend
+ 
+this will do is actually let you extend
+the video if you want. So, here was a
+the video if you want. So, here was a
+ 
+the video if you want. So, here was a
+clip I generated of the woman uh and the
+clip I generated of the woman uh and the
+ 
+clip I generated of the woman uh and the
+AT&T robot. So, uh we can jump to which
+AT&T robot. So, uh we can jump to which
+ 
+AT&T robot. So, uh we can jump to which
+is supposed to generate a different
+is supposed to generate a different
+ 
+is supposed to generate a different
+angle of the scene. It doesn't actually
+angle of the scene. It doesn't actually
+ 
+angle of the scene. It doesn't actually
+work that well based on what I've seen.
+work that well based on what I've seen.
+ 
+work that well based on what I've seen.
+We can extend the video though. The
+We can extend the video though. The
+ 
+We can extend the video though. The
+camera passed to an army of storm
+camera passed to an army of storm
+ 
+camera passed to an army of storm
+troopers marching. And again, uh this is
+troopers marching. And again, uh this is
+ 
+troopers marching. And again, uh this is
+limited to the Veil 2 quality video.
+limited to the Veil 2 quality video.
+ 
+limited to the Veil 2 quality video.
+Let's see what the extended clip looks
+
+ 
+
+like. And uh the camera does pan to this
+like. And uh the camera does pan to this
+ 
+like. And uh the camera does pan to this
+droid army marching behind. So it's
+droid army marching behind. So it's
+ 
+droid army marching behind. So it's
+okay. The quality will be a little bit
+okay. The quality will be a little bit
+ 
+okay. The quality will be a little bit
+lower in the extended video um because
+lower in the extended video um because
+ 
+lower in the extended video um because
+it's using a lower quality model, but it
+it's using a lower quality model, but it
+ 
+it's using a lower quality model, but it
+works okay for what it
+works okay for what it
+ 
+works okay for what it
+is. Here's a video clip I generated of
+is. Here's a video clip I generated of
+ 
+is. Here's a video clip I generated of
+the female Jedi standing up uh wielding
+the female Jedi standing up uh wielding
+ 
+the female Jedi standing up uh wielding
+a
+a
+ 
+a
+lightsaber. And this time, let's try the
+lightsaber. And this time, let's try the
+ 
+lightsaber. And this time, let's try the
+jump to feature, which which should give
+jump to feature, which which should give
+ 
+jump to feature, which which should give
+me a jump cut to a new video clip of the
+me a jump cut to a new video clip of the
+ 
+me a jump cut to a new video clip of the
+scene from a different camera angle. So,
+scene from a different camera angle. So,
+ 
+scene from a different camera angle. So,
+The
+The
+ 
+The
+Jedi walks down the hallway
+Jedi walks down the hallway
+ 
+Jedi walks down the hallway
+uh with her green lightsaber. And let's
+uh with her green lightsaber. And let's
+ 
+uh with her green lightsaber. And let's
+change this to follow. So we see her
+change this to follow. So we see her
+ 
+change this to follow. So we see her
+from behind. Now let's generate that and
+from behind. Now let's generate that and
+ 
+from behind. Now let's generate that and
+see what
+
+ 
+
+happens. Okay, so this basically just
+happens. Okay, so this basically just
+ 
+happens. Okay, so this basically just
+extended the video. Um, the jump to
+extended the video. Um, the jump to
+ 
+extended the video. Um, the jump to
+feature is kind of hit or miss.
+feature is kind of hit or miss.
+ 
+feature is kind of hit or miss.
+Sometimes it just extends the video. Um,
+Sometimes it just extends the video. Um,
+ 
+Sometimes it just extends the video. Um,
+but I did also try it on this clip of
+but I did also try it on this clip of
+ 
+but I did also try it on this clip of
+the bounty hunter where we pan from his
+the bounty hunter where we pan from his
+ 
+the bounty hunter where we pan from his
+blaster to his helmet and then I used
+blaster to his helmet and then I used
+ 
+blaster to his helmet and then I used
+the jump to feature to generate him
+the jump to feature to generate him
+ 
+the jump to feature to generate him
+walking away from a spaceship. So,
+walking away from a spaceship. So,
+ 
+walking away from a spaceship. So,
+sometimes it does work.
+sometimes it does work.
+ 
+sometimes it does work.
+So, I got this email from someone asking
+So, I got this email from someone asking
+ 
+So, I got this email from someone asking
+me if I could help them create a lawn
+me if I could help them create a lawn
+ 
+me if I could help them create a lawn
+1.5 hour AI movie, and they want to
+1.5 hour AI movie, and they want to
+ 
+1.5 hour AI movie, and they want to
+create something epic, like a Braveheart
+create something epic, like a Braveheart
+ 
+create something epic, like a Braveheart
+type of movie. Now, this sounds pretty
+type of movie. Now, this sounds pretty
+ 
+type of movie. Now, this sounds pretty
+cool. So, here's what I responded with.
+cool. So, here's what I responded with.
+ 
+cool. So, here's what I responded with.
+Oh, wow. For a 1.5 hour film, that's
+Oh, wow. For a 1.5 hour film, that's
+ 
+Oh, wow. For a 1.5 hour film, that's
+something you need a team for. I
+something you need a team for. I
+ 
+something you need a team for. I
+specialize in creating AI videos, but
+specialize in creating AI videos, but
+ 
+specialize in creating AI videos, but
+you need sound design, maybe voice
+you need sound design, maybe voice
+ 
+you need sound design, maybe voice
+actors, cinematographers, video editors.
+actors, cinematographers, video editors.
+ 
+actors, cinematographers, video editors.
+While AI is very powerful for high
+While AI is very powerful for high
+ 
+While AI is very powerful for high
+quality work, you still definitely need
+quality work, you still definitely need
+ 
+quality work, you still definitely need
+people with traditional film making
+people with traditional film making
+ 
+people with traditional film making
+experience. I actually wrote a longer
+experience. I actually wrote a longer
+ 
+experience. I actually wrote a longer
+email with more details trying to
+email with more details trying to
+ 
+email with more details trying to
+explain that you don't want to
+explain that you don't want to
+ 
+explain that you don't want to
+overestimate what AI can do. And you're
+overestimate what AI can do. And you're
+ 
+overestimate what AI can do. And you're
+going to love this. Here's the oneliner
+going to love this. Here's the oneliner
+ 
+going to love this. Here's the oneliner
+response I got. Hi, Veil 3 has all that.
+response I got. Hi, Veil 3 has all that.
+ 
+response I got. Hi, Veil 3 has all that.
+Thank you. So, I was a little irritated
+Thank you. So, I was a little irritated
+ 
+Thank you. So, I was a little irritated
+when I first read this because I don't
+when I first read this because I don't
+ 
+when I first read this because I don't
+think this person has experience, you
+think this person has experience, you
+ 
+think this person has experience, you
+know, working with AI and film. But, it
+know, working with AI and film. But, it
+ 
+know, working with AI and film. But, it
+got me thinking and I want to know what
+got me thinking and I want to know what
+ 
+got me thinking and I want to know what
+you think. Do you agree or do you
+you think. Do you agree or do you
+ 
+you think. Do you agree or do you
+disagree with me? Do you think that we
+disagree with me? Do you think that we
+ 
+disagree with me? Do you think that we
+could create a full Star Wars type of
+could create a full Star Wars type of
+ 
+could create a full Star Wars type of
+movie using the capabilities that VO3
+movie using the capabilities that VO3
+ 
+movie using the capabilities that VO3
+has? Let me know. I'm really curious to
+has? Let me know. I'm really curious to
+ 
+has? Let me know. I'm really curious to
+know what you think. As far as the cost
+know what you think. As far as the cost
+ 
+know what you think. As far as the cost
+goes, it is expensive. It's like 125 a
+goes, it is expensive. It's like 125 a
+ 
+goes, it is expensive. It's like 125 a
+month and then after 3 months that's
+month and then after 3 months that's
+ 
+month and then after 3 months that's
+going to go up to 250. Now, whether the
+going to go up to 250. Now, whether the
+ 
+going to go up to 250. Now, whether the
+cost is worth it, that's up to you. What
+cost is worth it, that's up to you. What
+ 
+cost is worth it, that's up to you. What
+do I think? I think nice things cost
+do I think? I think nice things cost
+ 
+do I think? I think nice things cost
+money and you pay for the quality that
+money and you pay for the quality that
+ 
+money and you pay for the quality that
+you get. Now, there's tons of other
+you get. Now, there's tons of other
+ 
+you get. Now, there's tons of other
+awesome AI video generators out there
+awesome AI video generators out there
+ 
+awesome AI video generators out there
+with awesome features like lip sync,
+with awesome features like lip sync,
+ 
+with awesome features like lip sync,
+making longer video clips, things like
+making longer video clips, things like
+ 
+making longer video clips, things like
+that. I did a complete breakdown between
+that. I did a complete breakdown between
+ 
+that. I did a complete breakdown between
+the other best AI video generators that
+the other best AI video generators that
+ 
+the other best AI video generators that
+I've seen and created a same animation
+I've seen and created a same animation
+ 
+I've seen and created a same animation
+using each of them to see which one is
+using each of them to see which one is
+ 
+using each of them to see which one is
+the best. If you want to see that video,
+the best. If you want to see that video,
+ 
+the best. If you want to see that video,
+go watch this tutorial right here.

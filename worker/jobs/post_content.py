@@ -141,6 +141,24 @@ async def handle_post_content(message: dict) -> None:
                 .execute()
             )
             if not dup_check.data:
+                # Extract formula from the draft's caption_variants
+                _formula = None
+                try:
+                    _draft_result = _learn_client.table("content_drafts").select(
+                        "caption_variants"
+                    ).eq("id", draft_id).limit(1).execute()
+                    if _draft_result.data:
+                        _variants = (
+                            _draft_result.data[0].get("caption_variants") or []
+                        )
+                        # Find the variant matching the posted caption
+                        for _v in _variants:
+                            if isinstance(_v, dict) and _v.get("text") == caption:
+                                _formula = _v.get("formula")
+                                break
+                except Exception:
+                    pass  # formula is nice-to-have
+
                 _learn_client.table("few_shot_examples").insert(
                     {
                         "tenant_id": tenant_id,
@@ -148,6 +166,8 @@ async def handle_post_content(message: dict) -> None:
                         "platform": succeeded[0],
                         "content_type": "organic",
                         "engagement_score": 1.0,
+                        "formula": _formula,
+                        "draft_id": draft_id,
                     }
                 ).execute()
 

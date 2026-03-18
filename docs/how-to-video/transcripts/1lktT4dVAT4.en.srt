@@ -1,0 +1,7355 @@
+1
+00:00:00,480 --> 00:00:03,510
+
+Google Veil 3 has completely changed the
+
+2
+00:00:03,510 --> 00:00:03,520
+Google Veil 3 has completely changed the
+ 
+
+3
+00:00:03,520 --> 00:00:06,230
+Google Veil 3 has completely changed the
+AI filmmaking game with its ability to
+
+4
+00:00:06,230 --> 00:00:06,240
+AI filmmaking game with its ability to
+ 
+
+5
+00:00:06,240 --> 00:00:09,110
+AI filmmaking game with its ability to
+create cinematic AI videos along with
+
+6
+00:00:09,110 --> 00:00:09,120
+create cinematic AI videos along with
+ 
+
+7
+00:00:09,120 --> 00:00:10,870
+create cinematic AI videos along with
+realistic sound effects and character
+
+8
+00:00:10,870 --> 00:00:10,880
+realistic sound effects and character
+ 
+
+9
+00:00:10,880 --> 00:00:13,749
+realistic sound effects and character
+voices all inside one platform. This
+
+10
+00:00:13,749 --> 00:00:13,759
+voices all inside one platform. This
+ 
+
+11
+00:00:13,759 --> 00:00:16,550
+voices all inside one platform. This
+will be the last time you fail me. I
+
+12
+00:00:16,550 --> 00:00:16,560
+will be the last time you fail me. I
+ 
+
+13
+00:00:16,560 --> 00:00:18,790
+will be the last time you fail me. I
+know it's frustrating to watch tutorials
+
+14
+00:00:18,790 --> 00:00:18,800
+know it's frustrating to watch tutorials
+ 
+
+15
+00:00:18,800 --> 00:00:21,429
+know it's frustrating to watch tutorials
+which show clips of highquality videos,
+
+16
+00:00:21,429 --> 00:00:21,439
+which show clips of highquality videos,
+ 
+
+17
+00:00:21,439 --> 00:00:23,670
+which show clips of highquality videos,
+but when you go and try to create the AI
+
+18
+00:00:23,670 --> 00:00:23,680
+but when you go and try to create the AI
+ 
+
+19
+00:00:23,680 --> 00:00:26,230
+but when you go and try to create the AI
+videos yourself, you get lower quality
+
+20
+00:00:26,230 --> 00:00:26,240
+videos yourself, you get lower quality
+ 
+
+21
+00:00:26,240 --> 00:00:27,830
+videos yourself, you get lower quality
+clips like this one that look like
+
+22
+00:00:27,830 --> 00:00:27,840
+clips like this one that look like
+ 
+
+23
+00:00:27,840 --> 00:00:29,589
+clips like this one that look like
+PowerPoint slides. That's why I made
+
+24
+00:00:29,589 --> 00:00:29,599
+PowerPoint slides. That's why I made
+ 
+
+25
+00:00:29,599 --> 00:00:31,830
+PowerPoint slides. That's why I made
+this video specifically for people like
+
+26
+00:00:31,830 --> 00:00:31,840
+this video specifically for people like
+ 
+
+27
+00:00:31,840 --> 00:00:34,709
+this video specifically for people like
+you who want the real advice. Not just a
+
+28
+00:00:34,709 --> 00:00:34,719
+you who want the real advice. Not just a
+ 
+
+29
+00:00:34,719 --> 00:00:36,950
+you who want the real advice. Not just a
+surface level explanation, but a deep
+
+30
+00:00:36,950 --> 00:00:36,960
+surface level explanation, but a deep
+ 
+
+31
+00:00:36,960 --> 00:00:39,270
+surface level explanation, but a deep
+dive into practical tips that will
+
+32
+00:00:39,270 --> 00:00:39,280
+dive into practical tips that will
+ 
+
+33
+00:00:39,280 --> 00:00:41,910
+dive into practical tips that will
+actually help you with your AI films.
+
+34
+00:00:41,910 --> 00:00:41,920
+actually help you with your AI films.
+ 
+
+35
+00:00:41,920 --> 00:00:46,549
+actually help you with your AI films.
+May the force be with you.
+
+36
+00:00:46,549 --> 00:00:46,559
+
+ 
+
+37
+00:00:46,559 --> 00:00:49,110
+
+Google Veil 3 is accessed through Flow,
+
+38
+00:00:49,110 --> 00:00:49,120
+Google Veil 3 is accessed through Flow,
+ 
+
+39
+00:00:49,120 --> 00:00:51,630
+Google Veil 3 is accessed through Flow,
+which is Google's new film making
+
+40
+00:00:51,630 --> 00:00:51,640
+which is Google's new film making
+ 
+
+41
+00:00:51,640 --> 00:00:53,910
+which is Google's new film making
+platform. So, let's go ahead and launch
+
+42
+00:00:53,910 --> 00:00:53,920
+platform. So, let's go ahead and launch
+ 
+
+43
+00:00:53,920 --> 00:00:56,310
+platform. So, let's go ahead and launch
+it. Once we're inside, we can see a list
+
+44
+00:00:56,310 --> 00:00:56,320
+it. Once we're inside, we can see a list
+ 
+
+45
+00:00:56,320 --> 00:00:58,869
+it. Once we're inside, we can see a list
+of our past projects. I'll go ahead and
+
+46
+00:00:58,869 --> 00:00:58,879
+of our past projects. I'll go ahead and
+ 
+
+47
+00:00:58,879 --> 00:01:01,270
+of our past projects. I'll go ahead and
+create a new project right now. From
+
+48
+00:01:01,270 --> 00:01:01,280
+create a new project right now. From
+ 
+
+49
+00:01:01,280 --> 00:01:03,469
+create a new project right now. From
+here, we can start creating our AI
+
+50
+00:01:03,469 --> 00:01:03,479
+here, we can start creating our AI
+ 
+
+51
+00:01:03,479 --> 00:01:05,350
+here, we can start creating our AI
+videos. There's a couple different
+
+52
+00:01:05,350 --> 00:01:05,360
+videos. There's a couple different
+ 
+
+53
+00:01:05,360 --> 00:01:07,510
+videos. There's a couple different
+options. Text to video, frames to video,
+
+54
+00:01:07,510 --> 00:01:07,520
+options. Text to video, frames to video,
+ 
+
+55
+00:01:07,520 --> 00:01:09,030
+options. Text to video, frames to video,
+ingredients to video. We're going to
+
+56
+00:01:09,030 --> 00:01:09,040
+ingredients to video. We're going to
+ 
+
+57
+00:01:09,040 --> 00:01:10,710
+ingredients to video. We're going to
+cover all of them, but let's start with
+
+58
+00:01:10,710 --> 00:01:10,720
+cover all of them, but let's start with
+ 
+
+59
+00:01:10,720 --> 00:01:13,750
+cover all of them, but let's start with
+text to video where we'll just enter a
+
+60
+00:01:13,750 --> 00:01:13,760
+text to video where we'll just enter a
+ 
+
+61
+00:01:13,760 --> 00:01:16,230
+text to video where we'll just enter a
+prompt and it'll create a video for us.
+
+62
+00:01:16,230 --> 00:01:16,240
+prompt and it'll create a video for us.
+ 
+
+63
+00:01:16,240 --> 00:01:18,149
+prompt and it'll create a video for us.
+What's new in Google Veil 3 is the
+
+64
+00:01:18,149 --> 00:01:18,159
+What's new in Google Veil 3 is the
+ 
+
+65
+00:01:18,159 --> 00:01:20,590
+What's new in Google Veil 3 is the
+ability to directly generate talking
+
+66
+00:01:20,590 --> 00:01:20,600
+ability to directly generate talking
+ 
+
+67
+00:01:20,600 --> 00:01:23,510
+ability to directly generate talking
+characters. So, I'll create a video of a
+
+68
+00:01:23,510 --> 00:01:23,520
+characters. So, I'll create a video of a
+ 
+
+69
+00:01:23,520 --> 00:01:26,870
+characters. So, I'll create a video of a
+Jedi from a Star Wars movie. I'm going
+
+70
+00:01:26,870 --> 00:01:26,880
+Jedi from a Star Wars movie. I'm going
+ 
+
+71
+00:01:26,880 --> 00:01:28,469
+Jedi from a Star Wars movie. I'm going
+to describe the appearance a little bit.
+
+72
+00:01:28,469 --> 00:01:28,479
+to describe the appearance a little bit.
+ 
+
+73
+00:01:28,479 --> 00:01:30,870
+to describe the appearance a little bit.
+She has green skin, these geometric
+
+74
+00:01:30,870 --> 00:01:30,880
+She has green skin, these geometric
+ 
+
+75
+00:01:30,880 --> 00:01:33,749
+She has green skin, these geometric
+tattoos across her face. Um, also give
+
+76
+00:01:33,749 --> 00:01:33,759
+tattoos across her face. Um, also give
+ 
+
+77
+00:01:33,759 --> 00:01:36,550
+tattoos across her face. Um, also give
+her a yellow lightsaber, and we're going
+
+78
+00:01:36,550 --> 00:01:36,560
+her a yellow lightsaber, and we're going
+ 
+
+79
+00:01:36,560 --> 00:01:39,749
+her a yellow lightsaber, and we're going
+to tell her to talk about how to use the
+
+80
+00:01:39,749 --> 00:01:39,759
+to tell her to talk about how to use the
+ 
+
+81
+00:01:39,759 --> 00:01:42,390
+to tell her to talk about how to use the
+force inside this AI video. Let's go
+
+82
+00:01:42,390 --> 00:01:42,400
+force inside this AI video. Let's go
+ 
+
+83
+00:01:42,400 --> 00:01:44,510
+force inside this AI video. Let's go
+ahead and generate
+
+84
+00:01:44,510 --> 00:01:44,520
+ahead and generate
+ 
+
+85
+00:01:44,520 --> 00:01:46,870
+ahead and generate
+that. When you're generating the video,
+
+86
+00:01:46,870 --> 00:01:46,880
+that. When you're generating the video,
+ 
+
+87
+00:01:46,880 --> 00:01:48,230
+that. When you're generating the video,
+you need to make sure you've actually
+
+88
+00:01:48,230 --> 00:01:48,240
+you need to make sure you've actually
+ 
+
+89
+00:01:48,240 --> 00:01:51,749
+you need to make sure you've actually
+selected the newest Google Vo3 model. If
+
+90
+00:01:51,749 --> 00:01:51,759
+selected the newest Google Vo3 model. If
+ 
+
+91
+00:01:51,759 --> 00:01:54,310
+selected the newest Google Vo3 model. If
+we go to the settings tab right here,
+
+92
+00:01:54,310 --> 00:01:54,320
+we go to the settings tab right here,
+ 
+
+93
+00:01:54,320 --> 00:01:56,310
+we go to the settings tab right here,
+you can change the number of outputs per
+
+94
+00:01:56,310 --> 00:01:56,320
+you can change the number of outputs per
+ 
+
+95
+00:01:56,320 --> 00:01:57,990
+you can change the number of outputs per
+prompt. I've set that to one to generate
+
+96
+00:01:57,990 --> 00:01:58,000
+prompt. I've set that to one to generate
+ 
+
+97
+00:01:58,000 --> 00:02:00,310
+prompt. I've set that to one to generate
+one video at a time. But down here in
+
+98
+00:02:00,310 --> 00:02:00,320
+one video at a time. But down here in
+ 
+
+99
+00:02:00,320 --> 00:02:02,789
+one video at a time. But down here in
+the quality, make sure you've selected
+
+100
+00:02:02,789 --> 00:02:02,799
+the quality, make sure you've selected
+ 
+
+101
+00:02:02,799 --> 00:02:05,030
+the quality, make sure you've selected
+the highest quality with experimental
+
+102
+00:02:05,030 --> 00:02:05,040
+the highest quality with experimental
+ 
+
+103
+00:02:05,040 --> 00:02:07,670
+the highest quality with experimental
+audio. That's the newest Veil 3 model.
+
+104
+00:02:07,670 --> 00:02:07,680
+audio. That's the newest Veil 3 model.
+ 
+
+105
+00:02:07,680 --> 00:02:10,229
+audio. That's the newest Veil 3 model.
+The fast and quality options default to
+
+106
+00:02:10,229 --> 00:02:10,239
+The fast and quality options default to
+ 
+
+107
+00:02:10,239 --> 00:02:12,470
+The fast and quality options default to
+the older Veil True model, so you won't
+
+108
+00:02:12,470 --> 00:02:12,480
+the older Veil True model, so you won't
+ 
+
+109
+00:02:12,480 --> 00:02:14,430
+the older Veil True model, so you won't
+get the best looking videos if you use
+
+110
+00:02:14,430 --> 00:02:14,440
+get the best looking videos if you use
+ 
+
+111
+00:02:14,440 --> 00:02:16,869
+get the best looking videos if you use
+these. Here's what the video turned out
+
+112
+00:02:16,869 --> 00:02:16,879
+these. Here's what the video turned out
+ 
+
+113
+00:02:16,879 --> 00:02:18,790
+these. Here's what the video turned out
+to look like. The Force is a subtle
+
+114
+00:02:18,790 --> 00:02:18,800
+to look like. The Force is a subtle
+ 
+
+115
+00:02:18,800 --> 00:02:20,790
+to look like. The Force is a subtle
+energy. You have to feel it, not just
+
+116
+00:02:20,790 --> 00:02:20,800
+energy. You have to feel it, not just
+ 
+
+117
+00:02:20,800 --> 00:02:23,270
+energy. You have to feel it, not just
+see it. What's impressive about this is
+
+118
+00:02:23,270 --> 00:02:23,280
+see it. What's impressive about this is
+ 
+
+119
+00:02:23,280 --> 00:02:25,309
+see it. What's impressive about this is
+that it animates a talking speaking
+
+120
+00:02:25,309 --> 00:02:25,319
+that it animates a talking speaking
+ 
+
+121
+00:02:25,319 --> 00:02:28,710
+that it animates a talking speaking
+character just from a text prop. And the
+
+122
+00:02:28,710 --> 00:02:28,720
+character just from a text prop. And the
+ 
+
+123
+00:02:28,720 --> 00:02:31,510
+character just from a text prop. And the
+quality of the lip sync and the emotions
+
+124
+00:02:31,510 --> 00:02:31,520
+quality of the lip sync and the emotions
+ 
+
+125
+00:02:31,520 --> 00:02:33,910
+quality of the lip sync and the emotions
+in the video are very high. We can also
+
+126
+00:02:33,910 --> 00:02:33,920
+in the video are very high. We can also
+ 
+
+127
+00:02:33,920 --> 00:02:36,229
+in the video are very high. We can also
+make the AI say specific words from a
+
+128
+00:02:36,229 --> 00:02:36,239
+make the AI say specific words from a
+ 
+
+129
+00:02:36,239 --> 00:02:38,070
+make the AI say specific words from a
+script if we want. I'm using the same
+
+130
+00:02:38,070 --> 00:02:38,080
+script if we want. I'm using the same
+ 
+
+131
+00:02:38,080 --> 00:02:39,990
+script if we want. I'm using the same
+prompt of a female Jedi from Star Wars
+
+132
+00:02:39,990 --> 00:02:40,000
+prompt of a female Jedi from Star Wars
+ 
+
+133
+00:02:40,000 --> 00:02:42,390
+prompt of a female Jedi from Star Wars
+with green skin. I've described her
+
+134
+00:02:42,390 --> 00:02:42,400
+with green skin. I've described her
+ 
+
+135
+00:02:42,400 --> 00:02:44,869
+with green skin. I've described her
+appearance a little bit closer. So this
+
+136
+00:02:44,869 --> 00:02:44,879
+appearance a little bit closer. So this
+ 
+
+137
+00:02:44,879 --> 00:02:46,550
+appearance a little bit closer. So this
+time I also told her the specific
+
+138
+00:02:46,550 --> 00:02:46,560
+time I also told her the specific
+ 
+
+139
+00:02:46,560 --> 00:02:48,550
+time I also told her the specific
+clothing to wear, which is a lightweight
+
+140
+00:02:48,550 --> 00:02:48,560
+clothing to wear, which is a lightweight
+ 
+
+141
+00:02:48,560 --> 00:02:50,790
+clothing to wear, which is a lightweight
+brown and gold robe. And she's also
+
+142
+00:02:50,790 --> 00:02:50,800
+brown and gold robe. And she's also
+ 
+
+143
+00:02:50,800 --> 00:02:53,990
+brown and gold robe. And she's also
+meditating inside a quiet swamp
+
+144
+00:02:53,990 --> 00:02:54,000
+meditating inside a quiet swamp
+ 
+
+145
+00:02:54,000 --> 00:02:56,390
+meditating inside a quiet swamp
+illuminated by bol luminescent plants on
+
+146
+00:02:56,390 --> 00:02:56,400
+illuminated by bol luminescent plants on
+ 
+
+147
+00:02:56,400 --> 00:02:58,630
+illuminated by bol luminescent plants on
+an alien world. This time I'm
+
+148
+00:02:58,630 --> 00:02:58,640
+an alien world. This time I'm
+ 
+
+149
+00:02:58,640 --> 00:03:00,949
+an alien world. This time I'm
+specifically prompting for her to say,
+
+150
+00:03:00,949 --> 00:03:00,959
+specifically prompting for her to say,
+ 
+
+151
+00:03:00,959 --> 00:03:03,270
+specifically prompting for her to say,
+"The force doesn't scream, it hums.
+
+152
+00:03:03,270 --> 00:03:03,280
+"The force doesn't scream, it hums.
+ 
+
+153
+00:03:03,280 --> 00:03:05,190
+"The force doesn't scream, it hums.
+Listen and you'll know which path is
+
+154
+00:03:05,190 --> 00:03:05,200
+Listen and you'll know which path is
+ 
+
+155
+00:03:05,200 --> 00:03:09,390
+Listen and you'll know which path is
+open." The force doesn't scream, it
+
+156
+00:03:09,390 --> 00:03:09,400
+open." The force doesn't scream, it
+ 
+
+157
+00:03:09,400 --> 00:03:12,390
+open." The force doesn't scream, it
+hums. Listen and you'll know which path
+
+158
+00:03:12,390 --> 00:03:12,400
+hums. Listen and you'll know which path
+ 
+
+159
+00:03:12,400 --> 00:03:14,869
+hums. Listen and you'll know which path
+is open. Look at the way the hand
+
+160
+00:03:14,869 --> 00:03:14,879
+is open. Look at the way the hand
+ 
+
+161
+00:03:14,879 --> 00:03:16,790
+is open. Look at the way the hand
+motions are joined together with the
+
+162
+00:03:16,790 --> 00:03:16,800
+motions are joined together with the
+ 
+
+163
+00:03:16,800 --> 00:03:18,949
+motions are joined together with the
+speech and the facial expressions and
+
+164
+00:03:18,949 --> 00:03:18,959
+speech and the facial expressions and
+ 
+
+165
+00:03:18,959 --> 00:03:21,190
+speech and the facial expressions and
+the wrinkles on the face all go together
+
+166
+00:03:21,190 --> 00:03:21,200
+the wrinkles on the face all go together
+ 
+
+167
+00:03:21,200 --> 00:03:23,750
+the wrinkles on the face all go together
+very very well. Now I want to go a
+
+168
+00:03:23,750 --> 00:03:23,760
+very very well. Now I want to go a
+ 
+
+169
+00:03:23,760 --> 00:03:25,589
+very very well. Now I want to go a
+little more in depth on this. How much
+
+170
+00:03:25,589 --> 00:03:25,599
+little more in depth on this. How much
+ 
+
+171
+00:03:25,599 --> 00:03:27,509
+little more in depth on this. How much
+control do we have over the voices? Can
+
+172
+00:03:27,509 --> 00:03:27,519
+control do we have over the voices? Can
+ 
+
+173
+00:03:27,519 --> 00:03:29,589
+control do we have over the voices? Can
+we actually change the way the
+
+174
+00:03:29,589 --> 00:03:29,599
+we actually change the way the
+ 
+
+175
+00:03:29,599 --> 00:03:32,630
+we actually change the way the
+character's voice sound? So I rewrote
+
+176
+00:03:32,630 --> 00:03:32,640
+character's voice sound? So I rewrote
+ 
+
+177
+00:03:32,640 --> 00:03:35,509
+character's voice sound? So I rewrote
+this prompt. This time I told her to
+
+178
+00:03:35,509 --> 00:03:35,519
+this prompt. This time I told her to
+ 
+
+179
+00:03:35,519 --> 00:03:39,589
+this prompt. This time I told her to
+have a highpitched and nasal voice which
+
+180
+00:03:39,589 --> 00:03:39,599
+have a highpitched and nasal voice which
+ 
+
+181
+00:03:39,599 --> 00:03:41,110
+have a highpitched and nasal voice which
+should sound like she kind of has a
+
+182
+00:03:41,110 --> 00:03:41,120
+should sound like she kind of has a
+ 
+
+183
+00:03:41,120 --> 00:03:43,990
+should sound like she kind of has a
+stuffy nose a little bit. So then if we
+
+184
+00:03:43,990 --> 00:03:44,000
+stuffy nose a little bit. So then if we
+ 
+
+185
+00:03:44,000 --> 00:03:45,390
+stuffy nose a little bit. So then if we
+generate the
+
+186
+00:03:45,390 --> 00:03:45,400
+generate the
+ 
+
+187
+00:03:45,400 --> 00:03:47,830
+generate the
+video, here's what that character sounds
+
+188
+00:03:47,830 --> 00:03:47,840
+video, here's what that character sounds
+ 
+
+189
+00:03:47,840 --> 00:03:52,110
+video, here's what that character sounds
+like. The force doesn't scream, it
+
+190
+00:03:52,110 --> 00:03:52,120
+like. The force doesn't scream, it
+ 
+
+191
+00:03:52,120 --> 00:03:55,270
+like. The force doesn't scream, it
+hums. Listen and you'll know which path
+
+192
+00:03:55,270 --> 00:03:55,280
+hums. Listen and you'll know which path
+ 
+
+193
+00:03:55,280 --> 00:03:58,390
+hums. Listen and you'll know which path
+is open. It's a great looking video, but
+
+194
+00:03:58,390 --> 00:03:58,400
+is open. It's a great looking video, but
+ 
+
+195
+00:03:58,400 --> 00:04:00,550
+is open. It's a great looking video, but
+it didn't actually follow my prompt of
+
+196
+00:04:00,550 --> 00:04:00,560
+it didn't actually follow my prompt of
+ 
+
+197
+00:04:00,560 --> 00:04:02,789
+it didn't actually follow my prompt of
+giving it a high-pitched and nasal tone
+
+198
+00:04:02,789 --> 00:04:02,799
+giving it a high-pitched and nasal tone
+ 
+
+199
+00:04:02,799 --> 00:04:05,509
+giving it a high-pitched and nasal tone
+to her voice. The way Google Video3
+
+200
+00:04:05,509 --> 00:04:05,519
+to her voice. The way Google Video3
+ 
+
+201
+00:04:05,519 --> 00:04:08,070
+to her voice. The way Google Video3
+generates the voices is dependent on the
+
+202
+00:04:08,070 --> 00:04:08,080
+generates the voices is dependent on the
+ 
+
+203
+00:04:08,080 --> 00:04:10,390
+generates the voices is dependent on the
+way that the characters look. I
+
+204
+00:04:10,390 --> 00:04:10,400
+way that the characters look. I
+ 
+
+205
+00:04:10,400 --> 00:04:12,550
+way that the characters look. I
+generated a video of a Sith. He's an
+
+206
+00:04:12,550 --> 00:04:12,560
+generated a video of a Sith. He's an
+ 
+
+207
+00:04:12,560 --> 00:04:15,110
+generated a video of a Sith. He's an
+older weathered man. And if we listen to
+
+208
+00:04:15,110 --> 00:04:15,120
+older weathered man. And if we listen to
+ 
+
+209
+00:04:15,120 --> 00:04:16,949
+older weathered man. And if we listen to
+his voice, it's going to have a deeper,
+
+210
+00:04:16,949 --> 00:04:16,959
+his voice, it's going to have a deeper,
+ 
+
+211
+00:04:16,959 --> 00:04:20,110
+his voice, it's going to have a deeper,
+grittier tone to it. Pain is not
+
+212
+00:04:20,110 --> 00:04:20,120
+grittier tone to it. Pain is not
+ 
+
+213
+00:04:20,120 --> 00:04:22,189
+grittier tone to it. Pain is not
+punishment. It is
+
+214
+00:04:22,189 --> 00:04:22,199
+punishment. It is
+ 
+
+215
+00:04:22,199 --> 00:04:24,950
+punishment. It is
+revelation. Feel it and you will
+
+216
+00:04:24,950 --> 00:04:24,960
+revelation. Feel it and you will
+ 
+
+217
+00:04:24,960 --> 00:04:28,070
+revelation. Feel it and you will
+understand me. Depending on the video of
+
+218
+00:04:28,070 --> 00:04:28,080
+understand me. Depending on the video of
+ 
+
+219
+00:04:28,080 --> 00:04:30,550
+understand me. Depending on the video of
+the character that you're generating,
+
+220
+00:04:30,550 --> 00:04:30,560
+the character that you're generating,
+ 
+
+221
+00:04:30,560 --> 00:04:33,030
+the character that you're generating,
+Veil 3 will match the voice to the way
+
+222
+00:04:33,030 --> 00:04:33,040
+Veil 3 will match the voice to the way
+ 
+
+223
+00:04:33,040 --> 00:04:36,950
+Veil 3 will match the voice to the way
+that character looks.
+
+224
+00:04:36,950 --> 00:04:36,960
+
+ 
+
+225
+00:04:36,960 --> 00:04:42,150
+
+Target acquired. Regret will be brief.
+
+226
+00:04:42,150 --> 00:04:42,160
+Target acquired. Regret will be brief.
+ 
+
+227
+00:04:42,160 --> 00:04:44,790
+Target acquired. Regret will be brief.
+But unfortunately, there isn't a way to
+
+228
+00:04:44,790 --> 00:04:44,800
+But unfortunately, there isn't a way to
+ 
+
+229
+00:04:44,800 --> 00:04:46,870
+But unfortunately, there isn't a way to
+actually change the way the character
+
+230
+00:04:46,870 --> 00:04:46,880
+actually change the way the character
+ 
+
+231
+00:04:46,880 --> 00:04:48,629
+actually change the way the character
+sounds inside the prompt. This might not
+
+232
+00:04:48,629 --> 00:04:48,639
+sounds inside the prompt. This might not
+ 
+
+233
+00:04:48,639 --> 00:04:50,550
+sounds inside the prompt. This might not
+seem like a huge problem, but sometimes
+
+234
+00:04:50,550 --> 00:04:50,560
+seem like a huge problem, but sometimes
+ 
+
+235
+00:04:50,560 --> 00:04:52,629
+seem like a huge problem, but sometimes
+it does generate voices that don't match
+
+236
+00:04:52,629 --> 00:04:52,639
+it does generate voices that don't match
+ 
+
+237
+00:04:52,639 --> 00:04:56,909
+it does generate voices that don't match
+the way the characters look at all.
+
+238
+00:04:56,909 --> 00:04:56,919
+the way the characters look at all.
+ 
+
+239
+00:04:56,919 --> 00:05:00,629
+the way the characters look at all.
+Luke, I am your father. But sticking
+
+240
+00:05:00,629 --> 00:05:00,639
+Luke, I am your father. But sticking
+ 
+
+241
+00:05:00,639 --> 00:05:02,790
+Luke, I am your father. But sticking
+with the theme of characters, can we
+
+242
+00:05:02,790 --> 00:05:02,800
+with the theme of characters, can we
+ 
+
+243
+00:05:02,800 --> 00:05:04,550
+with the theme of characters, can we
+actually generate videos of the same
+
+244
+00:05:04,550 --> 00:05:04,560
+actually generate videos of the same
+ 
+
+245
+00:05:04,560 --> 00:05:06,550
+actually generate videos of the same
+character inside different scenes? The
+
+246
+00:05:06,550 --> 00:05:06,560
+character inside different scenes? The
+ 
+
+247
+00:05:06,560 --> 00:05:09,029
+character inside different scenes? The
+answer is yeah, you can get pretty darn
+
+248
+00:05:09,029 --> 00:05:09,039
+answer is yeah, you can get pretty darn
+ 
+
+249
+00:05:09,039 --> 00:05:11,590
+answer is yeah, you can get pretty darn
+close as long as the description of the
+
+250
+00:05:11,590 --> 00:05:11,600
+close as long as the description of the
+ 
+
+251
+00:05:11,600 --> 00:05:13,749
+close as long as the description of the
+character's appearance matches closely.
+
+252
+00:05:13,749 --> 00:05:13,759
+character's appearance matches closely.
+ 
+
+253
+00:05:13,759 --> 00:05:15,510
+character's appearance matches closely.
+I've written down the way her skin
+
+254
+00:05:15,510 --> 00:05:15,520
+I've written down the way her skin
+ 
+
+255
+00:05:15,520 --> 00:05:18,390
+I've written down the way her skin
+looks, the patterns on her face, also
+
+256
+00:05:18,390 --> 00:05:18,400
+looks, the patterns on her face, also
+ 
+
+257
+00:05:18,400 --> 00:05:20,390
+looks, the patterns on her face, also
+the clothing that she's wearing. When we
+
+258
+00:05:20,390 --> 00:05:20,400
+the clothing that she's wearing. When we
+ 
+
+259
+00:05:20,400 --> 00:05:22,310
+the clothing that she's wearing. When we
+go and generate a new video of this
+
+260
+00:05:22,310 --> 00:05:22,320
+go and generate a new video of this
+ 
+
+261
+00:05:22,320 --> 00:05:24,150
+go and generate a new video of this
+character using text to video, it'll
+
+262
+00:05:24,150 --> 00:05:24,160
+character using text to video, it'll
+ 
+
+263
+00:05:24,160 --> 00:05:26,070
+character using text to video, it'll
+actually give someone that looks really,
+
+264
+00:05:26,070 --> 00:05:26,080
+actually give someone that looks really,
+ 
+
+265
+00:05:26,080 --> 00:05:28,870
+actually give someone that looks really,
+really close.
+
+266
+00:05:28,870 --> 00:05:28,880
+really close.
+ 
+
+267
+00:05:28,880 --> 00:05:32,070
+really close.
+Control is not the absence of fear. It's
+
+268
+00:05:32,070 --> 00:05:32,080
+Control is not the absence of fear. It's
+ 
+
+269
+00:05:32,080 --> 00:05:35,350
+Control is not the absence of fear. It's
+the choice not to let fear decide. We
+
+270
+00:05:35,350 --> 00:05:35,360
+the choice not to let fear decide. We
+ 
+
+271
+00:05:35,360 --> 00:05:36,870
+the choice not to let fear decide. We
+can render them inside different scenes
+
+272
+00:05:36,870 --> 00:05:36,880
+can render them inside different scenes
+ 
+
+273
+00:05:36,880 --> 00:05:39,909
+can render them inside different scenes
+as well. We've spent so long guarding
+
+274
+00:05:39,909 --> 00:05:39,919
+as well. We've spent so long guarding
+ 
+
+275
+00:05:39,919 --> 00:05:42,070
+as well. We've spent so long guarding
+peace that we forgot how heavy peace can
+
+276
+00:05:42,070 --> 00:05:42,080
+peace that we forgot how heavy peace can
+ 
+
+277
+00:05:42,080 --> 00:05:45,189
+peace that we forgot how heavy peace can
+be. The more specific we are in the
+
+278
+00:05:45,189 --> 00:05:45,199
+be. The more specific we are in the
+ 
+
+279
+00:05:45,199 --> 00:05:46,870
+be. The more specific we are in the
+prompt in describing the way the
+
+280
+00:05:46,870 --> 00:05:46,880
+prompt in describing the way the
+ 
+
+281
+00:05:46,880 --> 00:05:48,870
+prompt in describing the way the
+character looks, the more consistent
+
+282
+00:05:48,870 --> 00:05:48,880
+character looks, the more consistent
+ 
+
+283
+00:05:48,880 --> 00:05:50,550
+character looks, the more consistent
+they'll look in the videos that we
+
+284
+00:05:50,550 --> 00:05:50,560
+they'll look in the videos that we
+ 
+
+285
+00:05:50,560 --> 00:05:52,629
+they'll look in the videos that we
+generate. For this prompt of the Sith,
+
+286
+00:05:52,629 --> 00:05:52,639
+generate. For this prompt of the Sith,
+ 
+
+287
+00:05:52,639 --> 00:05:54,390
+generate. For this prompt of the Sith,
+I'm extremely specific in the way that
+
+288
+00:05:54,390 --> 00:05:54,400
+I'm extremely specific in the way that
+ 
+
+289
+00:05:54,400 --> 00:05:57,430
+I'm extremely specific in the way that
+he looks. He's tall. He's lean. He has
+
+290
+00:05:57,430 --> 00:05:57,440
+he looks. He's tall. He's lean. He has
+ 
+
+291
+00:05:57,440 --> 00:05:59,749
+he looks. He's tall. He's lean. He has
+pale white ashy skin and dark veins on
+
+292
+00:05:59,749 --> 00:05:59,759
+pale white ashy skin and dark veins on
+ 
+
+293
+00:05:59,759 --> 00:06:02,469
+pale white ashy skin and dark veins on
+his gaunt face. I also specify the
+
+294
+00:06:02,469 --> 00:06:02,479
+his gaunt face. I also specify the
+ 
+
+295
+00:06:02,479 --> 00:06:04,790
+his gaunt face. I also specify the
+hairstyle. He has gray hair tied in a
+
+296
+00:06:04,790 --> 00:06:04,800
+hairstyle. He has gray hair tied in a
+ 
+
+297
+00:06:04,800 --> 00:06:07,270
+hairstyle. He has gray hair tied in a
+bun, and he wears a raggedy black cloak
+
+298
+00:06:07,270 --> 00:06:07,280
+bun, and he wears a raggedy black cloak
+ 
+
+299
+00:06:07,280 --> 00:06:08,790
+bun, and he wears a raggedy black cloak
+with sharp edge plating on the
+
+300
+00:06:08,790 --> 00:06:08,800
+with sharp edge plating on the
+ 
+
+301
+00:06:08,800 --> 00:06:11,029
+with sharp edge plating on the
+shoulders. Here's a bunch of videos I
+
+302
+00:06:11,029 --> 00:06:11,039
+shoulders. Here's a bunch of videos I
+ 
+
+303
+00:06:11,039 --> 00:06:13,749
+shoulders. Here's a bunch of videos I
+generated of this specific Sith Lord.
+
+304
+00:06:13,749 --> 00:06:13,759
+generated of this specific Sith Lord.
+ 
+
+305
+00:06:13,759 --> 00:06:15,830
+generated of this specific Sith Lord.
+The main thing you'll notice that is
+
+306
+00:06:15,830 --> 00:06:15,840
+The main thing you'll notice that is
+ 
+
+307
+00:06:15,840 --> 00:06:17,909
+The main thing you'll notice that is
+kind of different is the shoulder pads
+
+308
+00:06:17,909 --> 00:06:17,919
+kind of different is the shoulder pads
+ 
+
+309
+00:06:17,919 --> 00:06:19,350
+kind of different is the shoulder pads
+he's wearing. For some of them, they
+
+310
+00:06:19,350 --> 00:06:19,360
+he's wearing. For some of them, they
+ 
+
+311
+00:06:19,360 --> 00:06:20,790
+he's wearing. For some of them, they
+look like plates. For other ones,
+
+312
+00:06:20,790 --> 00:06:20,800
+look like plates. For other ones,
+ 
+
+313
+00:06:20,800 --> 00:06:22,790
+look like plates. For other ones,
+there's some sharp needles pointing out,
+
+314
+00:06:22,790 --> 00:06:22,800
+there's some sharp needles pointing out,
+ 
+
+315
+00:06:22,800 --> 00:06:24,469
+there's some sharp needles pointing out,
+but we could have just removed that part
+
+316
+00:06:24,469 --> 00:06:24,479
+but we could have just removed that part
+ 
+
+317
+00:06:24,479 --> 00:06:26,469
+but we could have just removed that part
+of the prop that talks about the plating
+
+318
+00:06:26,469 --> 00:06:26,479
+of the prop that talks about the plating
+ 
+
+319
+00:06:26,479 --> 00:06:28,870
+of the prop that talks about the plating
+on his shoulders. At this point, I'm
+
+320
+00:06:28,870 --> 00:06:28,880
+on his shoulders. At this point, I'm
+ 
+
+321
+00:06:28,880 --> 00:06:31,110
+on his shoulders. At this point, I'm
+sure you've noticed that Veil 3 also
+
+322
+00:06:31,110 --> 00:06:31,120
+sure you've noticed that Veil 3 also
+ 
+
+323
+00:06:31,120 --> 00:06:33,029
+sure you've noticed that Veil 3 also
+generates sound effects that go along
+
+324
+00:06:33,029 --> 00:06:33,039
+generates sound effects that go along
+ 
+
+325
+00:06:33,039 --> 00:06:35,350
+generates sound effects that go along
+with the characters, the lightsabers,
+
+326
+00:06:35,350 --> 00:06:35,360
+with the characters, the lightsabers,
+ 
+
+327
+00:06:35,360 --> 00:06:37,230
+with the characters, the lightsabers,
+the steps that he's taken as he's
+
+328
+00:06:37,230 --> 00:06:37,240
+the steps that he's taken as he's
+ 
+
+329
+00:06:37,240 --> 00:06:39,510
+the steps that he's taken as he's
+walking. Although, from what I can tell,
+
+330
+00:06:39,510 --> 00:06:39,520
+walking. Although, from what I can tell,
+ 
+
+331
+00:06:39,520 --> 00:06:41,270
+walking. Although, from what I can tell,
+you don't actually have that much
+
+332
+00:06:41,270 --> 00:06:41,280
+you don't actually have that much
+ 
+
+333
+00:06:41,280 --> 00:06:43,749
+you don't actually have that much
+control over what specific sound effects
+
+334
+00:06:43,749 --> 00:06:43,759
+control over what specific sound effects
+ 
+
+335
+00:06:43,759 --> 00:06:46,150
+control over what specific sound effects
+are generated. The amount of voice
+
+336
+00:06:46,150 --> 00:06:46,160
+are generated. The amount of voice
+ 
+
+337
+00:06:46,160 --> 00:06:48,790
+are generated. The amount of voice
+control you have is limited to a certain
+
+338
+00:06:48,790 --> 00:06:48,800
+control you have is limited to a certain
+ 
+
+339
+00:06:48,800 --> 00:06:51,110
+control you have is limited to a certain
+extent. For example, in this prompt of
+
+340
+00:06:51,110 --> 00:06:51,120
+extent. For example, in this prompt of
+ 
+
+341
+00:06:51,120 --> 00:06:53,590
+extent. For example, in this prompt of
+the Sith, I specifically said that he
+
+342
+00:06:53,590 --> 00:06:53,600
+the Sith, I specifically said that he
+ 
+
+343
+00:06:53,600 --> 00:06:56,150
+the Sith, I specifically said that he
+reaches out with his hand and yells no.
+
+344
+00:06:56,150 --> 00:06:56,160
+reaches out with his hand and yells no.
+ 
+
+345
+00:06:56,160 --> 00:06:57,909
+reaches out with his hand and yells no.
+I want him to be kind of screeching out
+
+346
+00:06:57,909 --> 00:06:57,919
+I want him to be kind of screeching out
+ 
+
+347
+00:06:57,919 --> 00:07:00,070
+I want him to be kind of screeching out
+and screaming with a very exaggerated
+
+348
+00:07:00,070 --> 00:07:00,080
+and screaming with a very exaggerated
+ 
+
+349
+00:07:00,080 --> 00:07:09,430
+and screaming with a very exaggerated
+facial expression. No. Oh,
+
+350
+00:07:09,430 --> 00:07:09,440
+
+ 
+
+351
+00:07:09,440 --> 00:07:12,070
+
+okay. So, we do hear him screaming a bit
+
+352
+00:07:12,070 --> 00:07:12,080
+okay. So, we do hear him screaming a bit
+ 
+
+353
+00:07:12,080 --> 00:07:14,589
+okay. So, we do hear him screaming a bit
+at the end, but the part where he says
+
+354
+00:07:14,589 --> 00:07:14,599
+at the end, but the part where he says
+ 
+
+355
+00:07:14,599 --> 00:07:17,990
+at the end, but the part where he says
+no happens at the beginning,
+
+356
+00:07:17,990 --> 00:07:18,000
+no happens at the beginning,
+ 
+
+357
+00:07:18,000 --> 00:07:21,270
+no happens at the beginning,
+and we don't even see his mouth moving
+
+358
+00:07:21,270 --> 00:07:21,280
+and we don't even see his mouth moving
+ 
+
+359
+00:07:21,280 --> 00:07:24,070
+and we don't even see his mouth moving
+along with that word. So, for super
+
+360
+00:07:24,070 --> 00:07:24,080
+along with that word. So, for super
+ 
+
+361
+00:07:24,080 --> 00:07:26,390
+along with that word. So, for super
+super expressive voice control, it
+
+362
+00:07:26,390 --> 00:07:26,400
+super expressive voice control, it
+ 
+
+363
+00:07:26,400 --> 00:07:28,469
+super expressive voice control, it
+doesn't seem like it's quite there just
+
+364
+00:07:28,469 --> 00:07:28,479
+doesn't seem like it's quite there just
+ 
+
+365
+00:07:28,479 --> 00:07:31,189
+doesn't seem like it's quite there just
+yet, but the video animations do look
+
+366
+00:07:31,189 --> 00:07:31,199
+yet, but the video animations do look
+ 
+
+367
+00:07:31,199 --> 00:07:33,029
+yet, but the video animations do look
+incredible. If you want to adding the
+
+368
+00:07:33,029 --> 00:07:33,039
+incredible. If you want to adding the
+ 
+
+369
+00:07:33,039 --> 00:07:35,990
+incredible. If you want to adding the
+sounds later in by yourself, these are
+
+370
+00:07:35,990 --> 00:07:36,000
+sounds later in by yourself, these are
+ 
+
+371
+00:07:36,000 --> 00:07:37,909
+sounds later in by yourself, these are
+8second videos, by the way. There's a
+
+372
+00:07:37,909 --> 00:07:37,919
+8second videos, by the way. There's a
+ 
+
+373
+00:07:37,919 --> 00:07:40,230
+8second videos, by the way. There's a
+few different options to download, you
+
+374
+00:07:40,230 --> 00:07:40,240
+few different options to download, you
+ 
+
+375
+00:07:40,240 --> 00:07:42,150
+few different options to download, you
+can get a GIF, the original size, or
+
+376
+00:07:42,150 --> 00:07:42,160
+can get a GIF, the original size, or
+ 
+
+377
+00:07:42,160 --> 00:07:44,390
+can get a GIF, the original size, or
+upscale it to high definition. I found
+
+378
+00:07:44,390 --> 00:07:44,400
+upscale it to high definition. I found
+ 
+
+379
+00:07:44,400 --> 00:07:46,469
+upscale it to high definition. I found
+that the upscaler did seem to get stuck
+
+380
+00:07:46,469 --> 00:07:46,479
+that the upscaler did seem to get stuck
+ 
+
+381
+00:07:46,479 --> 00:07:48,150
+that the upscaler did seem to get stuck
+a bunch of times, so maybe it's not
+
+382
+00:07:48,150 --> 00:07:48,160
+a bunch of times, so maybe it's not
+ 
+
+383
+00:07:48,160 --> 00:07:50,790
+a bunch of times, so maybe it's not
+working correctly right now. We can also
+
+384
+00:07:50,790 --> 00:07:50,800
+working correctly right now. We can also
+ 
+
+385
+00:07:50,800 --> 00:07:53,110
+working correctly right now. We can also
+add in multiple characters into the same
+
+386
+00:07:53,110 --> 00:07:53,120
+add in multiple characters into the same
+ 
+
+387
+00:07:53,120 --> 00:07:54,869
+add in multiple characters into the same
+scene and have them interact with each
+
+388
+00:07:54,869 --> 00:07:54,879
+scene and have them interact with each
+ 
+
+389
+00:07:54,879 --> 00:07:57,350
+scene and have them interact with each
+other. In this prompt, I copied in the
+
+390
+00:07:57,350 --> 00:07:57,360
+other. In this prompt, I copied in the
+ 
+
+391
+00:07:57,360 --> 00:08:00,150
+other. In this prompt, I copied in the
+full description of the female Jedi and
+
+392
+00:08:00,150 --> 00:08:00,160
+full description of the female Jedi and
+ 
+
+393
+00:08:00,160 --> 00:08:02,869
+full description of the female Jedi and
+I also copied in the full description of
+
+394
+00:08:02,869 --> 00:08:02,879
+I also copied in the full description of
+ 
+
+395
+00:08:02,879 --> 00:08:05,510
+I also copied in the full description of
+the Sith. And I have them talking to
+
+396
+00:08:05,510 --> 00:08:05,520
+the Sith. And I have them talking to
+ 
+
+397
+00:08:05,520 --> 00:08:08,230
+the Sith. And I have them talking to
+each other. So, the male Sith says,
+
+398
+00:08:08,230 --> 00:08:08,240
+each other. So, the male Sith says,
+ 
+
+399
+00:08:08,240 --> 00:08:10,070
+each other. So, the male Sith says,
+"Tell me Jedi, how many died while you
+
+400
+00:08:10,070 --> 00:08:10,080
+"Tell me Jedi, how many died while you
+ 
+
+401
+00:08:10,080 --> 00:08:12,070
+"Tell me Jedi, how many died while you
+meditated?" And the female Jedi says,
+
+402
+00:08:12,070 --> 00:08:12,080
+meditated?" And the female Jedi says,
+ 
+
+403
+00:08:12,080 --> 00:08:13,589
+meditated?" And the female Jedi says,
+"And how many screamed while you
+
+404
+00:08:13,589 --> 00:08:13,599
+"And how many screamed while you
+ 
+
+405
+00:08:13,599 --> 00:08:14,869
+"And how many screamed while you
+searched for meaning in their
+
+406
+00:08:14,869 --> 00:08:14,879
+searched for meaning in their
+ 
+
+407
+00:08:14,879 --> 00:08:17,670
+searched for meaning in their
+suffering?" You can't specifically tell
+
+408
+00:08:17,670 --> 00:08:17,680
+suffering?" You can't specifically tell
+ 
+
+409
+00:08:17,680 --> 00:08:19,990
+suffering?" You can't specifically tell
+each character the script that they're
+
+410
+00:08:19,990 --> 00:08:20,000
+each character the script that they're
+ 
+
+411
+00:08:20,000 --> 00:08:22,070
+each character the script that they're
+going to be saying inside the video.
+
+412
+00:08:22,070 --> 00:08:22,080
+going to be saying inside the video.
+ 
+
+413
+00:08:22,080 --> 00:08:25,029
+going to be saying inside the video.
+Tell me, Jedi, how many died while you
+
+414
+00:08:25,029 --> 00:08:25,039
+Tell me, Jedi, how many died while you
+ 
+
+415
+00:08:25,039 --> 00:08:27,430
+Tell me, Jedi, how many died while you
+meditated and how many screamed while
+
+416
+00:08:27,430 --> 00:08:27,440
+meditated and how many screamed while
+ 
+
+417
+00:08:27,440 --> 00:08:28,790
+meditated and how many screamed while
+you searched for meaning in their
+
+418
+00:08:28,790 --> 00:08:28,800
+you searched for meaning in their
+ 
+
+419
+00:08:28,800 --> 00:08:31,350
+you searched for meaning in their
+suffering? And using this same
+
+420
+00:08:31,350 --> 00:08:31,360
+suffering? And using this same
+ 
+
+421
+00:08:31,360 --> 00:08:33,190
+suffering? And using this same
+technique, we can create the two of them
+
+422
+00:08:33,190 --> 00:08:33,200
+technique, we can create the two of them
+ 
+
+423
+00:08:33,200 --> 00:08:35,509
+technique, we can create the two of them
+interacting together, for example, in a
+
+424
+00:08:35,509 --> 00:08:35,519
+interacting together, for example, in a
+ 
+
+425
+00:08:35,519 --> 00:08:44,949
+interacting together, for example, in a
+lightsaber battle.
+
+426
+00:08:44,949 --> 00:08:44,959
+
+ 
+
+427
+00:08:44,959 --> 00:08:47,509
+
+So, this battle isn't exactly as dynamic
+
+428
+00:08:47,509 --> 00:08:47,519
+So, this battle isn't exactly as dynamic
+ 
+
+429
+00:08:47,519 --> 00:08:50,310
+So, this battle isn't exactly as dynamic
+as a real movie. This video clip does
+
+430
+00:08:50,310 --> 00:08:50,320
+as a real movie. This video clip does
+ 
+
+431
+00:08:50,320 --> 00:08:52,150
+as a real movie. This video clip does
+start off a little slow. There's not
+
+432
+00:08:52,150 --> 00:08:52,160
+start off a little slow. There's not
+ 
+
+433
+00:08:52,160 --> 00:08:54,470
+start off a little slow. There's not
+that much motion at the start, but as we
+
+434
+00:08:54,470 --> 00:08:54,480
+that much motion at the start, but as we
+ 
+
+435
+00:08:54,480 --> 00:08:56,150
+that much motion at the start, but as we
+get later on into the video and they
+
+436
+00:08:56,150 --> 00:08:56,160
+get later on into the video and they
+ 
+
+437
+00:08:56,160 --> 00:08:58,150
+get later on into the video and they
+start swinging their lightsabers. It's a
+
+438
+00:08:58,150 --> 00:08:58,160
+start swinging their lightsabers. It's a
+ 
+
+439
+00:08:58,160 --> 00:08:59,590
+start swinging their lightsabers. It's a
+pretty epic looking battle. I mean,
+
+440
+00:08:59,590 --> 00:08:59,600
+pretty epic looking battle. I mean,
+ 
+
+441
+00:08:59,600 --> 00:09:01,350
+pretty epic looking battle. I mean,
+there's sparks flying everywhere. The
+
+442
+00:09:01,350 --> 00:09:01,360
+there's sparks flying everywhere. The
+ 
+
+443
+00:09:01,360 --> 00:09:04,030
+there's sparks flying everywhere. The
+sound effects also sound realistic to
+
+444
+00:09:04,030 --> 00:09:04,040
+sound effects also sound realistic to
+ 
+
+445
+00:09:04,040 --> 00:09:06,470
+sound effects also sound realistic to
+me. So, what about when it comes to
+
+446
+00:09:06,470 --> 00:09:06,480
+me. So, what about when it comes to
+ 
+
+447
+00:09:06,480 --> 00:09:08,550
+me. So, what about when it comes to
+directing the camera inside the AI
+
+448
+00:09:08,550 --> 00:09:08,560
+directing the camera inside the AI
+ 
+
+449
+00:09:08,560 --> 00:09:11,190
+directing the camera inside the AI
+videos? You do have quite a bit of
+
+450
+00:09:11,190 --> 00:09:11,200
+videos? You do have quite a bit of
+ 
+
+451
+00:09:11,200 --> 00:09:13,389
+videos? You do have quite a bit of
+control over how the camera motion
+
+452
+00:09:13,389 --> 00:09:13,399
+control over how the camera motion
+ 
+
+453
+00:09:13,399 --> 00:09:16,310
+control over how the camera motion
+moves. To start off, let's go with a
+
+454
+00:09:16,310 --> 00:09:16,320
+moves. To start off, let's go with a
+ 
+
+455
+00:09:16,320 --> 00:09:18,310
+moves. To start off, let's go with a
+shot of a Sith temple. We're going to
+
+456
+00:09:18,310 --> 00:09:18,320
+shot of a Sith temple. We're going to
+ 
+
+457
+00:09:18,320 --> 00:09:20,550
+shot of a Sith temple. We're going to
+prompt for a slow crane shot behind a
+
+458
+00:09:20,550 --> 00:09:20,560
+prompt for a slow crane shot behind a
+ 
+
+459
+00:09:20,560 --> 00:09:22,710
+prompt for a slow crane shot behind a
+cloaked figure walking up the steps to
+
+460
+00:09:22,710 --> 00:09:22,720
+cloaked figure walking up the steps to
+ 
+
+461
+00:09:22,720 --> 00:09:25,350
+cloaked figure walking up the steps to
+an ancient Sith temple in Star Wars. The
+
+462
+00:09:25,350 --> 00:09:25,360
+an ancient Sith temple in Star Wars. The
+ 
+
+463
+00:09:25,360 --> 00:09:27,910
+an ancient Sith temple in Star Wars. The
+cameras flies above and slowly tilts
+
+464
+00:09:27,910 --> 00:09:27,920
+cameras flies above and slowly tilts
+ 
+
+465
+00:09:27,920 --> 00:09:30,790
+cameras flies above and slowly tilts
+down to reveal the Sith temple. Red
+
+466
+00:09:30,790 --> 00:09:30,800
+down to reveal the Sith temple. Red
+ 
+
+467
+00:09:30,800 --> 00:09:41,269
+down to reveal the Sith temple. Red
+lightning inside a thunderstorm.
+
+468
+00:09:41,269 --> 00:09:41,279
+
+ 
+
+469
+00:09:41,279 --> 00:09:43,190
+
+So, what happened here? That wasn't
+
+470
+00:09:43,190 --> 00:09:43,200
+So, what happened here? That wasn't
+ 
+
+471
+00:09:43,200 --> 00:09:45,910
+So, what happened here? That wasn't
+exactly the video that I prompted for.
+
+472
+00:09:45,910 --> 00:09:45,920
+exactly the video that I prompted for.
+ 
+
+473
+00:09:45,920 --> 00:09:48,389
+exactly the video that I prompted for.
+The Sith is actually walking down the
+
+474
+00:09:48,389 --> 00:09:48,399
+The Sith is actually walking down the
+ 
+
+475
+00:09:48,399 --> 00:09:50,870
+The Sith is actually walking down the
+steps instead of walking up the step
+
+476
+00:09:50,870 --> 00:09:50,880
+steps instead of walking up the step
+ 
+
+477
+00:09:50,880 --> 00:09:53,350
+steps instead of walking up the step
+like I asked for inside the prompt. Just
+
+478
+00:09:53,350 --> 00:09:53,360
+like I asked for inside the prompt. Just
+ 
+
+479
+00:09:53,360 --> 00:09:55,750
+like I asked for inside the prompt. Just
+like any other AI image generator or AI
+
+480
+00:09:55,750 --> 00:09:55,760
+like any other AI image generator or AI
+ 
+
+481
+00:09:55,760 --> 00:09:58,550
+like any other AI image generator or AI
+video, there is some randomness in VO3,
+
+482
+00:09:58,550 --> 00:09:58,560
+video, there is some randomness in VO3,
+ 
+
+483
+00:09:58,560 --> 00:10:00,310
+video, there is some randomness in VO3,
+which means every time you run the same
+
+484
+00:10:00,310 --> 00:10:00,320
+which means every time you run the same
+ 
+
+485
+00:10:00,320 --> 00:10:02,470
+which means every time you run the same
+prompt, you won't get the same results.
+
+486
+00:10:02,470 --> 00:10:02,480
+prompt, you won't get the same results.
+ 
+
+487
+00:10:02,480 --> 00:10:04,310
+prompt, you won't get the same results.
+So, sometimes it's a good idea to run
+
+488
+00:10:04,310 --> 00:10:04,320
+So, sometimes it's a good idea to run
+ 
+
+489
+00:10:04,320 --> 00:10:06,389
+So, sometimes it's a good idea to run
+the prompt multiple times. Here's
+
+490
+00:10:06,389 --> 00:10:06,399
+the prompt multiple times. Here's
+ 
+
+491
+00:10:06,399 --> 00:10:08,310
+the prompt multiple times. Here's
+another video generated of me running
+
+492
+00:10:08,310 --> 00:10:08,320
+another video generated of me running
+ 
+
+493
+00:10:08,320 --> 00:10:11,110
+another video generated of me running
+the exact same prompt again. And this
+
+494
+00:10:11,110 --> 00:10:11,120
+the exact same prompt again. And this
+ 
+
+495
+00:10:11,120 --> 00:10:13,030
+the exact same prompt again. And this
+time, we'll see him walking up the steps
+
+496
+00:10:13,030 --> 00:10:13,040
+time, we'll see him walking up the steps
+ 
+
+497
+00:10:13,040 --> 00:10:17,550
+time, we'll see him walking up the steps
+like I asked
+
+498
+00:10:17,550 --> 00:10:17,560
+
+ 
+
+499
+00:10:17,560 --> 00:10:19,829
+
+for. There's some pretty cool camera
+
+500
+00:10:19,829 --> 00:10:19,839
+for. There's some pretty cool camera
+ 
+
+501
+00:10:19,839 --> 00:10:22,150
+for. There's some pretty cool camera
+movement effects you can create. Here's
+
+502
+00:10:22,150 --> 00:10:22,160
+movement effects you can create. Here's
+ 
+
+503
+00:10:22,160 --> 00:10:24,389
+movement effects you can create. Here's
+an example where I asked for the video
+
+504
+00:10:24,389 --> 00:10:24,399
+an example where I asked for the video
+ 
+
+505
+00:10:24,399 --> 00:10:26,710
+an example where I asked for the video
+to start with a close-up shot on a
+
+506
+00:10:26,710 --> 00:10:26,720
+to start with a close-up shot on a
+ 
+
+507
+00:10:26,720 --> 00:10:29,190
+to start with a close-up shot on a
+gloved finger hovering over a blaster.
+
+508
+00:10:29,190 --> 00:10:29,200
+gloved finger hovering over a blaster.
+ 
+
+509
+00:10:29,200 --> 00:10:30,949
+gloved finger hovering over a blaster.
+And then the camera is going to tilt up
+
+510
+00:10:30,949 --> 00:10:30,959
+And then the camera is going to tilt up
+ 
+
+511
+00:10:30,959 --> 00:10:33,509
+And then the camera is going to tilt up
+and reveal a bounty hunter with a helmet
+
+512
+00:10:33,509 --> 00:10:33,519
+and reveal a bounty hunter with a helmet
+ 
+
+513
+00:10:33,519 --> 00:10:40,110
+and reveal a bounty hunter with a helmet
+on. This was one of my favorite video
+
+514
+00:10:40,110 --> 00:10:40,120
+
+ 
+
+515
+00:10:40,120 --> 00:10:42,470
+
+generations. I can't get over how good
+
+516
+00:10:42,470 --> 00:10:42,480
+generations. I can't get over how good
+ 
+
+517
+00:10:42,480 --> 00:10:44,230
+generations. I can't get over how good
+this looks. In the prompt, I
+
+518
+00:10:44,230 --> 00:10:44,240
+this looks. In the prompt, I
+ 
+
+519
+00:10:44,240 --> 00:10:46,230
+this looks. In the prompt, I
+specifically told the camera to quickly
+
+520
+00:10:46,230 --> 00:10:46,240
+specifically told the camera to quickly
+ 
+
+521
+00:10:46,240 --> 00:10:48,069
+specifically told the camera to quickly
+tilt up, and you see the movement
+
+522
+00:10:48,069 --> 00:10:48,079
+tilt up, and you see the movement
+ 
+
+523
+00:10:48,079 --> 00:10:50,470
+tilt up, and you see the movement
+flashing from the blaster to the helmet
+
+524
+00:10:50,470 --> 00:10:50,480
+flashing from the blaster to the helmet
+ 
+
+525
+00:10:50,480 --> 00:10:52,710
+flashing from the blaster to the helmet
+of the Dante Hunter. Here's more of an
+
+526
+00:10:52,710 --> 00:10:52,720
+of the Dante Hunter. Here's more of an
+ 
+
+527
+00:10:52,720 --> 00:10:55,509
+of the Dante Hunter. Here's more of an
+advanced tip. When you prompt for
+
+528
+00:10:55,509 --> 00:10:55,519
+advanced tip. When you prompt for
+ 
+
+529
+00:10:55,519 --> 00:10:58,230
+advanced tip. When you prompt for
+specific subjects in the video, a lot of
+
+530
+00:10:58,230 --> 00:10:58,240
+specific subjects in the video, a lot of
+ 
+
+531
+00:10:58,240 --> 00:11:00,230
+specific subjects in the video, a lot of
+the times that can override the camera
+
+532
+00:11:00,230 --> 00:11:00,240
+the times that can override the camera
+ 
+
+533
+00:11:00,240 --> 00:11:02,230
+the times that can override the camera
+movement and the camera angle that you
+
+534
+00:11:02,230 --> 00:11:02,240
+movement and the camera angle that you
+ 
+
+535
+00:11:02,240 --> 00:11:04,790
+movement and the camera angle that you
+ask for. For example, I want to generate
+
+536
+00:11:04,790 --> 00:11:04,800
+ask for. For example, I want to generate
+ 
+
+537
+00:11:04,800 --> 00:11:09,030
+ask for. For example, I want to generate
+an over theshoulder shot of a rebel
+
+538
+00:11:09,030 --> 00:11:09,040
+an over theshoulder shot of a rebel
+ 
+
+539
+00:11:09,040 --> 00:11:11,910
+an over theshoulder shot of a rebel
+flying inside a spaceship. I want it to
+
+540
+00:11:11,910 --> 00:11:11,920
+flying inside a spaceship. I want it to
+ 
+
+541
+00:11:11,920 --> 00:11:13,829
+flying inside a spaceship. I want it to
+be looking outside the cockpit window
+
+542
+00:11:13,829 --> 00:11:13,839
+be looking outside the cockpit window
+ 
+
+543
+00:11:13,839 --> 00:11:16,150
+be looking outside the cockpit window
+where we can see other fighter jets
+
+544
+00:11:16,150 --> 00:11:16,160
+where we can see other fighter jets
+ 
+
+545
+00:11:16,160 --> 00:11:18,949
+where we can see other fighter jets
+flying by. Here's the overthe-shoulder
+
+546
+00:11:18,949 --> 00:11:18,959
+flying by. Here's the overthe-shoulder
+ 
+
+547
+00:11:18,959 --> 00:11:21,030
+flying by. Here's the overthe-shoulder
+view that I'm actually looking for. The
+
+548
+00:11:21,030 --> 00:11:21,040
+view that I'm actually looking for. The
+ 
+
+549
+00:11:21,040 --> 00:11:23,430
+view that I'm actually looking for. The
+camera is placed behind the pilot. We
+
+550
+00:11:23,430 --> 00:11:23,440
+camera is placed behind the pilot. We
+ 
+
+551
+00:11:23,440 --> 00:11:25,030
+camera is placed behind the pilot. We
+can see his shoulder and the back of his
+
+552
+00:11:25,030 --> 00:11:25,040
+can see his shoulder and the back of his
+ 
+
+553
+00:11:25,040 --> 00:11:26,470
+can see his shoulder and the back of his
+head, but we're looking outside the
+
+554
+00:11:26,470 --> 00:11:26,480
+head, but we're looking outside the
+ 
+
+555
+00:11:26,480 --> 00:11:28,550
+head, but we're looking outside the
+window. If I run that prompt inside of
+
+556
+00:11:28,550 --> 00:11:28,560
+window. If I run that prompt inside of
+ 
+
+557
+00:11:28,560 --> 00:11:30,230
+window. If I run that prompt inside of
+V3, though, you'll see that the video
+
+558
+00:11:30,230 --> 00:11:30,240
+V3, though, you'll see that the video
+ 
+
+559
+00:11:30,240 --> 00:11:32,790
+V3, though, you'll see that the video
+actually starts with a medium body shot
+
+560
+00:11:32,790 --> 00:11:32,800
+actually starts with a medium body shot
+ 
+
+561
+00:11:32,800 --> 00:11:35,350
+actually starts with a medium body shot
+showing the pilot's face and body before
+
+562
+00:11:35,350 --> 00:11:35,360
+showing the pilot's face and body before
+ 
+
+563
+00:11:35,360 --> 00:11:42,350
+showing the pilot's face and body before
+switching to an over-the-shoulder
+
+564
+00:11:42,350 --> 00:11:42,360
+
+ 
+
+565
+00:11:42,360 --> 00:11:45,110
+
+shot. That's not what I asked for. The
+
+566
+00:11:45,110 --> 00:11:45,120
+shot. That's not what I asked for. The
+ 
+
+567
+00:11:45,120 --> 00:11:47,430
+shot. That's not what I asked for. The
+reason is because we included the words
+
+568
+00:11:47,430 --> 00:11:47,440
+reason is because we included the words
+ 
+
+569
+00:11:47,440 --> 00:11:50,389
+reason is because we included the words
+the rebel pilot inside the prompt. And
+
+570
+00:11:50,389 --> 00:11:50,399
+the rebel pilot inside the prompt. And
+ 
+
+571
+00:11:50,399 --> 00:11:53,910
+the rebel pilot inside the prompt. And
+so Veil 3 wants to show that subject in
+
+572
+00:11:53,910 --> 00:11:53,920
+so Veil 3 wants to show that subject in
+ 
+
+573
+00:11:53,920 --> 00:11:57,350
+so Veil 3 wants to show that subject in
+the video. However, if I remove that
+
+574
+00:11:57,350 --> 00:11:57,360
+the video. However, if I remove that
+ 
+
+575
+00:11:57,360 --> 00:12:00,389
+the video. However, if I remove that
+phrase, rebel pilot, and just say over
+
+576
+00:12:00,389 --> 00:12:00,399
+phrase, rebel pilot, and just say over
+ 
+
+577
+00:12:00,399 --> 00:12:03,069
+phrase, rebel pilot, and just say over
+the shoulder shot inside a cockpit of a
+
+578
+00:12:03,069 --> 00:12:03,079
+the shoulder shot inside a cockpit of a
+ 
+
+579
+00:12:03,079 --> 00:12:05,910
+the shoulder shot inside a cockpit of a
+spaceship, here's what we get. Because I
+
+580
+00:12:05,910 --> 00:12:05,920
+spaceship, here's what we get. Because I
+ 
+
+581
+00:12:05,920 --> 00:12:08,069
+spaceship, here's what we get. Because I
+didn't add the subject of rebel fighter
+
+582
+00:12:08,069 --> 00:12:08,079
+didn't add the subject of rebel fighter
+ 
+
+583
+00:12:08,079 --> 00:12:10,310
+didn't add the subject of rebel fighter
+inside the video, it prioritizes the
+
+584
+00:12:10,310 --> 00:12:10,320
+inside the video, it prioritizes the
+ 
+
+585
+00:12:10,320 --> 00:12:12,550
+inside the video, it prioritizes the
+camera angle that I'm asking for and
+
+586
+00:12:12,550 --> 00:12:12,560
+camera angle that I'm asking for and
+ 
+
+587
+00:12:12,560 --> 00:12:14,790
+camera angle that I'm asking for and
+gives me a perfect overthe-shoulder shot
+
+588
+00:12:14,790 --> 00:12:14,800
+gives me a perfect overthe-shoulder shot
+ 
+
+589
+00:12:14,800 --> 00:12:17,670
+gives me a perfect overthe-shoulder shot
+for the entire video. Here's another
+
+590
+00:12:17,670 --> 00:12:17,680
+for the entire video. Here's another
+ 
+
+591
+00:12:17,680 --> 00:12:19,590
+for the entire video. Here's another
+clip I generated where I asked her to
+
+592
+00:12:19,590 --> 00:12:19,600
+clip I generated where I asked her to
+ 
+
+593
+00:12:19,600 --> 00:12:22,550
+clip I generated where I asked her to
+start from the feet of stormtroopers
+
+594
+00:12:22,550 --> 00:12:22,560
+start from the feet of stormtroopers
+ 
+
+595
+00:12:22,560 --> 00:12:24,790
+start from the feet of stormtroopers
+marching through a town and then pan up
+
+596
+00:12:24,790 --> 00:12:24,800
+marching through a town and then pan up
+ 
+
+597
+00:12:24,800 --> 00:12:32,110
+marching through a town and then pan up
+to reveal the body and helmets of those
+
+598
+00:12:32,110 --> 00:12:32,120
+
+ 
+
+599
+00:12:32,120 --> 00:12:34,310
+
+stormtroopers. What are the limitations
+
+600
+00:12:34,310 --> 00:12:34,320
+stormtroopers. What are the limitations
+ 
+
+601
+00:12:34,320 --> 00:12:36,069
+stormtroopers. What are the limitations
+of what it can do as far as camera
+
+602
+00:12:36,069 --> 00:12:36,079
+of what it can do as far as camera
+ 
+
+603
+00:12:36,079 --> 00:12:38,870
+of what it can do as far as camera
+motion is concerned? If you try to add
+
+604
+00:12:38,870 --> 00:12:38,880
+motion is concerned? If you try to add
+ 
+
+605
+00:12:38,880 --> 00:12:41,750
+motion is concerned? If you try to add
+in too much movement, the quality of the
+
+606
+00:12:41,750 --> 00:12:41,760
+in too much movement, the quality of the
+ 
+
+607
+00:12:41,760 --> 00:12:44,069
+in too much movement, the quality of the
+videos will degrade. In a prompt, if I
+
+608
+00:12:44,069 --> 00:12:44,079
+videos will degrade. In a prompt, if I
+ 
+
+609
+00:12:44,079 --> 00:12:46,389
+videos will degrade. In a prompt, if I
+ask for it to start with a shot of a
+
+610
+00:12:46,389 --> 00:12:46,399
+ask for it to start with a shot of a
+ 
+
+611
+00:12:46,399 --> 00:12:48,230
+ask for it to start with a shot of a
+Star Wars droid making some beeping
+
+612
+00:12:48,230 --> 00:12:48,240
+Star Wars droid making some beeping
+ 
+
+613
+00:12:48,240 --> 00:12:50,629
+Star Wars droid making some beeping
+noises and then pan towards the Jedi
+
+614
+00:12:50,629 --> 00:12:50,639
+noises and then pan towards the Jedi
+ 
+
+615
+00:12:50,639 --> 00:12:53,670
+noises and then pan towards the Jedi
+character that we described earlier,
+
+616
+00:12:53,670 --> 00:12:53,680
+character that we described earlier,
+ 
+
+617
+00:12:53,680 --> 00:12:54,949
+character that we described earlier,
+what's going to happen is that there's
+
+618
+00:12:54,949 --> 00:12:54,959
+what's going to happen is that there's
+ 
+
+619
+00:12:54,959 --> 00:12:56,790
+what's going to happen is that there's
+just too much going on inside this
+
+620
+00:12:56,790 --> 00:12:56,800
+just too much going on inside this
+ 
+
+621
+00:12:56,800 --> 00:12:59,110
+just too much going on inside this
+prompt for it to animate it properly.
+
+622
+00:12:59,110 --> 00:12:59,120
+prompt for it to animate it properly.
+ 
+
+623
+00:12:59,120 --> 00:13:04,069
+prompt for it to animate it properly.
+Let's take a look.
+
+624
+00:13:04,069 --> 00:13:04,079
+
+ 
+
+625
+00:13:04,079 --> 00:13:05,949
+
+I know, I
+
+626
+00:13:05,949 --> 00:13:05,959
+I know, I
+ 
+
+627
+00:13:05,959 --> 00:13:08,949
+I know, I
+know, quit your whining. While the
+
+628
+00:13:08,949 --> 00:13:08,959
+know, quit your whining. While the
+ 
+
+629
+00:13:08,959 --> 00:13:11,430
+know, quit your whining. While the
+emotion does look pretty good, the voice
+
+630
+00:13:11,430 --> 00:13:11,440
+emotion does look pretty good, the voice
+ 
+
+631
+00:13:11,440 --> 00:13:13,190
+emotion does look pretty good, the voice
+gets mixed up. It doesn't read the words
+
+632
+00:13:13,190 --> 00:13:13,200
+gets mixed up. It doesn't read the words
+ 
+
+633
+00:13:13,200 --> 00:13:15,670
+gets mixed up. It doesn't read the words
+that I asked her to say properly. I
+
+634
+00:13:15,670 --> 00:13:15,680
+that I asked her to say properly. I
+ 
+
+635
+00:13:15,680 --> 00:13:19,829
+that I asked her to say properly. I
+know. I know. Qui, quit your whining.
+
+636
+00:13:19,829 --> 00:13:19,839
+know. I know. Qui, quit your whining.
+ 
+
+637
+00:13:19,839 --> 00:13:21,829
+know. I know. Qui, quit your whining.
+Here's another example where I asked for
+
+638
+00:13:21,829 --> 00:13:21,839
+Here's another example where I asked for
+ 
+
+639
+00:13:21,839 --> 00:13:24,550
+Here's another example where I asked for
+the Sith to reach out with his palm, say
+
+640
+00:13:24,550 --> 00:13:24,560
+the Sith to reach out with his palm, say
+ 
+
+641
+00:13:24,560 --> 00:13:26,550
+the Sith to reach out with his palm, say
+some words, and then use the force to
+
+642
+00:13:26,550 --> 00:13:26,560
+some words, and then use the force to
+ 
+
+643
+00:13:26,560 --> 00:13:28,629
+some words, and then use the force to
+send a bounty hunter flying through the
+
+644
+00:13:28,629 --> 00:13:28,639
+send a bounty hunter flying through the
+ 
+
+645
+00:13:28,639 --> 00:13:31,590
+send a bounty hunter flying through the
+air.
+
+646
+00:13:31,590 --> 00:13:31,600
+air.
+ 
+
+647
+00:13:31,600 --> 00:13:37,190
+air.
+This will be the last time you fail me.
+
+648
+00:13:37,190 --> 00:13:37,200
+
+ 
+
+649
+00:13:37,200 --> 00:13:38,790
+
+This video doesn't make any sense at
+
+650
+00:13:38,790 --> 00:13:38,800
+This video doesn't make any sense at
+ 
+
+651
+00:13:38,800 --> 00:13:41,030
+This video doesn't make any sense at
+all. It looks like the Sith does some
+
+652
+00:13:41,030 --> 00:13:41,040
+all. It looks like the Sith does some
+ 
+
+653
+00:13:41,040 --> 00:13:44,790
+all. It looks like the Sith does some
+kind of a 360 flip and then the bounty
+
+654
+00:13:44,790 --> 00:13:44,800
+kind of a 360 flip and then the bounty
+ 
+
+655
+00:13:44,800 --> 00:13:47,030
+kind of a 360 flip and then the bounty
+hunter appears out of nowhere. So, if
+
+656
+00:13:47,030 --> 00:13:47,040
+hunter appears out of nowhere. So, if
+ 
+
+657
+00:13:47,040 --> 00:13:49,350
+hunter appears out of nowhere. So, if
+you want to create more dynamic scenes
+
+658
+00:13:49,350 --> 00:13:49,360
+you want to create more dynamic scenes
+ 
+
+659
+00:13:49,360 --> 00:13:51,670
+you want to create more dynamic scenes
+like this, it's better to animate it in
+
+660
+00:13:51,670 --> 00:13:51,680
+like this, it's better to animate it in
+ 
+
+661
+00:13:51,680 --> 00:13:54,389
+like this, it's better to animate it in
+smaller chunks separately. So, I'll
+
+662
+00:13:54,389 --> 00:13:54,399
+smaller chunks separately. So, I'll
+ 
+
+663
+00:13:54,399 --> 00:13:56,150
+smaller chunks separately. So, I'll
+create a video of the Sith reaching out
+
+664
+00:13:56,150 --> 00:13:56,160
+create a video of the Sith reaching out
+ 
+
+665
+00:13:56,160 --> 00:13:57,750
+create a video of the Sith reaching out
+with his palm and then a separate one
+
+666
+00:13:57,750 --> 00:13:57,760
+with his palm and then a separate one
+ 
+
+667
+00:13:57,760 --> 00:14:00,790
+with his palm and then a separate one
+for the bounty hunter. This will be the
+
+668
+00:14:00,790 --> 00:14:00,800
+for the bounty hunter. This will be the
+ 
+
+669
+00:14:00,800 --> 00:14:06,150
+for the bounty hunter. This will be the
+last time you fail me.
+
+670
+00:14:06,150 --> 00:14:06,160
+
+ 
+
+671
+00:14:06,160 --> 00:14:07,590
+
+Think about the exact textures,
+
+672
+00:14:07,590 --> 00:14:07,600
+Think about the exact textures,
+ 
+
+673
+00:14:07,600 --> 00:14:09,350
+Think about the exact textures,
+patterns, and materials that you want
+
+674
+00:14:09,350 --> 00:14:09,360
+patterns, and materials that you want
+ 
+
+675
+00:14:09,360 --> 00:14:11,350
+patterns, and materials that you want
+inside your videos. Here's a video I
+
+676
+00:14:11,350 --> 00:14:11,360
+inside your videos. Here's a video I
+ 
+
+677
+00:14:11,360 --> 00:14:13,829
+inside your videos. Here's a video I
+generated of our Jedi earlier, and she's
+
+678
+00:14:13,829 --> 00:14:13,839
+generated of our Jedi earlier, and she's
+ 
+
+679
+00:14:13,839 --> 00:14:17,269
+generated of our Jedi earlier, and she's
+riding on top of a speeder. But the
+
+680
+00:14:17,269 --> 00:14:17,279
+riding on top of a speeder. But the
+ 
+
+681
+00:14:17,279 --> 00:14:19,269
+riding on top of a speeder. But the
+chrome metallic silver look on the
+
+682
+00:14:19,269 --> 00:14:19,279
+chrome metallic silver look on the
+ 
+
+683
+00:14:19,279 --> 00:14:21,590
+chrome metallic silver look on the
+speeder, it doesn't fit a Star Wars
+
+684
+00:14:21,590 --> 00:14:21,600
+speeder, it doesn't fit a Star Wars
+ 
+
+685
+00:14:21,600 --> 00:14:24,310
+speeder, it doesn't fit a Star Wars
+movie. So instead, in this prompt, I
+
+686
+00:14:24,310 --> 00:14:24,320
+movie. So instead, in this prompt, I
+ 
+
+687
+00:14:24,320 --> 00:14:27,829
+movie. So instead, in this prompt, I
+specifically told the AI video generator
+
+688
+00:14:27,829 --> 00:14:27,839
+specifically told the AI video generator
+ 
+
+689
+00:14:27,839 --> 00:14:30,629
+specifically told the AI video generator
+the textures of the speeder that I want
+
+690
+00:14:30,629 --> 00:14:30,639
+the textures of the speeder that I want
+ 
+
+691
+00:14:30,639 --> 00:14:33,350
+the textures of the speeder that I want
+should be rusty, made out of old metal
+
+692
+00:14:33,350 --> 00:14:33,360
+should be rusty, made out of old metal
+ 
+
+693
+00:14:33,360 --> 00:14:36,870
+should be rusty, made out of old metal
+scraps, and have some plants growing on
+
+694
+00:14:36,870 --> 00:14:36,880
+scraps, and have some plants growing on
+ 
+
+695
+00:14:36,880 --> 00:14:38,629
+scraps, and have some plants growing on
+the side of it. And we get a scene
+
+696
+00:14:38,629 --> 00:14:38,639
+the side of it. And we get a scene
+ 
+
+697
+00:14:38,639 --> 00:14:40,389
+the side of it. And we get a scene
+that's much more visually aligned
+
+698
+00:14:40,389 --> 00:14:40,399
+that's much more visually aligned
+ 
+
+699
+00:14:40,399 --> 00:14:43,509
+that's much more visually aligned
+overall. So far we've covered text to
+
+700
+00:14:43,509 --> 00:14:43,519
+overall. So far we've covered text to
+ 
+
+701
+00:14:43,519 --> 00:14:45,509
+overall. So far we've covered text to
+video, but we can also do frames to
+
+702
+00:14:45,509 --> 00:14:45,519
+video, but we can also do frames to
+ 
+
+703
+00:14:45,519 --> 00:14:47,509
+video, but we can also do frames to
+video in which case we upload a
+
+704
+00:14:47,509 --> 00:14:47,519
+video in which case we upload a
+ 
+
+705
+00:14:47,519 --> 00:14:49,750
+video in which case we upload a
+reference image first and then Google
+
+706
+00:14:49,750 --> 00:14:49,760
+reference image first and then Google
+ 
+
+707
+00:14:49,760 --> 00:14:51,670
+reference image first and then Google
+will create a video for us based on that
+
+708
+00:14:51,670 --> 00:14:51,680
+will create a video for us based on that
+ 
+
+709
+00:14:51,680 --> 00:14:53,670
+will create a video for us based on that
+reference image. You might be thinking
+
+710
+00:14:53,670 --> 00:14:53,680
+reference image. You might be thinking
+ 
+
+711
+00:14:53,680 --> 00:14:56,550
+reference image. You might be thinking
+if the text to video is so good, why do
+
+712
+00:14:56,550 --> 00:14:56,560
+if the text to video is so good, why do
+ 
+
+713
+00:14:56,560 --> 00:14:59,269
+if the text to video is so good, why do
+we still need image to video? The reason
+
+714
+00:14:59,269 --> 00:14:59,279
+we still need image to video? The reason
+ 
+
+715
+00:14:59,279 --> 00:15:02,069
+we still need image to video? The reason
+is because text to video is limited a
+
+716
+00:15:02,069 --> 00:15:02,079
+is because text to video is limited a
+ 
+
+717
+00:15:02,079 --> 00:15:04,310
+is because text to video is limited a
+lot of the times in its ability to
+
+718
+00:15:04,310 --> 00:15:04,320
+lot of the times in its ability to
+ 
+
+719
+00:15:04,320 --> 00:15:06,069
+lot of the times in its ability to
+generate the specific characters or
+
+720
+00:15:06,069 --> 00:15:06,079
+generate the specific characters or
+ 
+
+721
+00:15:06,079 --> 00:15:08,550
+generate the specific characters or
+scenes you want. For example, this is a
+
+722
+00:15:08,550 --> 00:15:08,560
+scenes you want. For example, this is a
+ 
+
+723
+00:15:08,560 --> 00:15:10,470
+scenes you want. For example, this is a
+character from Star Wars called Jar Jar
+
+724
+00:15:10,470 --> 00:15:10,480
+character from Star Wars called Jar Jar
+ 
+
+725
+00:15:10,480 --> 00:15:13,350
+character from Star Wars called Jar Jar
+Binks. If you're not familiar with him,
+
+726
+00:15:13,350 --> 00:15:13,360
+Binks. If you're not familiar with him,
+ 
+
+727
+00:15:13,360 --> 00:15:15,590
+Binks. If you're not familiar with him,
+he's basically an alien that looks like
+
+728
+00:15:15,590 --> 00:15:15,600
+he's basically an alien that looks like
+ 
+
+729
+00:15:15,600 --> 00:15:17,590
+he's basically an alien that looks like
+this guy. Kind of a pretty well-known
+
+730
+00:15:17,590 --> 00:15:17,600
+this guy. Kind of a pretty well-known
+ 
+
+731
+00:15:17,600 --> 00:15:19,910
+this guy. Kind of a pretty well-known
+character. But if I try to generate him
+
+732
+00:15:19,910 --> 00:15:19,920
+character. But if I try to generate him
+ 
+
+733
+00:15:19,920 --> 00:15:23,670
+character. But if I try to generate him
+inside Google V3 using only the text
+
+734
+00:15:23,670 --> 00:15:23,680
+inside Google V3 using only the text
+ 
+
+735
+00:15:23,680 --> 00:15:25,670
+inside Google V3 using only the text
+box, it gives me a character that
+
+736
+00:15:25,670 --> 00:15:25,680
+box, it gives me a character that
+ 
+
+737
+00:15:25,680 --> 00:15:27,990
+box, it gives me a character that
+doesn't look like Jar Jar Binks at all.
+
+738
+00:15:27,990 --> 00:15:28,000
+doesn't look like Jar Jar Binks at all.
+ 
+
+739
+00:15:28,000 --> 00:15:30,710
+doesn't look like Jar Jar Binks at all.
+Twist in the minds. You are just too
+
+740
+00:15:30,710 --> 00:15:30,720
+Twist in the minds. You are just too
+ 
+
+741
+00:15:30,720 --> 00:15:33,750
+Twist in the minds. You are just too
+blind to see. And that's where frames to
+
+742
+00:15:33,750 --> 00:15:33,760
+blind to see. And that's where frames to
+ 
+
+743
+00:15:33,760 --> 00:15:37,870
+blind to see. And that's where frames to
+video comes in. So let's go to frames to
+
+744
+00:15:37,870 --> 00:15:37,880
+video comes in. So let's go to frames to
+ 
+
+745
+00:15:37,880 --> 00:15:40,790
+video comes in. So let's go to frames to
+video and we'll have an option to upload
+
+746
+00:15:40,790 --> 00:15:40,800
+video and we'll have an option to upload
+ 
+
+747
+00:15:40,800 --> 00:15:43,430
+video and we'll have an option to upload
+some images. So we can upload our image
+
+748
+00:15:43,430 --> 00:15:43,440
+some images. So we can upload our image
+ 
+
+749
+00:15:43,440 --> 00:15:46,949
+some images. So we can upload our image
+or generate an image directly inside 3.
+
+750
+00:15:46,949 --> 00:15:46,959
+or generate an image directly inside 3.
+ 
+
+751
+00:15:46,959 --> 00:15:48,790
+or generate an image directly inside 3.
+So let's generate an image and enter a
+
+752
+00:15:48,790 --> 00:15:48,800
+So let's generate an image and enter a
+ 
+
+753
+00:15:48,800 --> 00:15:53,310
+So let's generate an image and enter a
+prompt. Jar Binks from Star Wars
+
+754
+00:15:53,310 --> 00:15:53,320
+prompt. Jar Binks from Star Wars
+ 
+
+755
+00:15:53,320 --> 00:15:58,470
+prompt. Jar Binks from Star Wars
+as a Sith. He's wearing a black cloak
+
+756
+00:15:58,470 --> 00:15:58,480
+as a Sith. He's wearing a black cloak
+ 
+
+757
+00:15:58,480 --> 00:16:02,870
+as a Sith. He's wearing a black cloak
+and holding a red lightsaber cinematic
+
+758
+00:16:02,870 --> 00:16:02,880
+and holding a red lightsaber cinematic
+ 
+
+759
+00:16:02,880 --> 00:16:04,389
+and holding a red lightsaber cinematic
+film.
+
+760
+00:16:04,389 --> 00:16:04,399
+film.
+ 
+
+761
+00:16:04,399 --> 00:16:07,430
+film.
+Then we can run this prompt and create
+
+762
+00:16:07,430 --> 00:16:07,440
+Then we can run this prompt and create
+ 
+
+763
+00:16:07,440 --> 00:16:09,350
+Then we can run this prompt and create
+the images and it'll generate a
+
+764
+00:16:09,350 --> 00:16:09,360
+the images and it'll generate a
+ 
+
+765
+00:16:09,360 --> 00:16:11,670
+the images and it'll generate a
+character image that looks much much
+
+766
+00:16:11,670 --> 00:16:11,680
+character image that looks much much
+ 
+
+767
+00:16:11,680 --> 00:16:14,470
+character image that looks much much
+closer to Jar Jar. We can go ahead and
+
+768
+00:16:14,470 --> 00:16:14,480
+closer to Jar Jar. We can go ahead and
+ 
+
+769
+00:16:14,480 --> 00:16:17,629
+closer to Jar Jar. We can go ahead and
+use this image to generate a video of
+
+770
+00:16:17,629 --> 00:16:17,639
+use this image to generate a video of
+ 
+
+771
+00:16:17,639 --> 00:16:20,470
+use this image to generate a video of
+it. And inside the prompt, we can ask
+
+772
+00:16:20,470 --> 00:16:20,480
+it. And inside the prompt, we can ask
+ 
+
+773
+00:16:20,480 --> 00:16:23,870
+it. And inside the prompt, we can ask
+for anything. For example, the camera
+
+774
+00:16:23,870 --> 00:16:23,880
+for anything. For example, the camera
+ 
+
+775
+00:16:23,880 --> 00:16:28,310
+for anything. For example, the camera
+zooms zooms in as he waves his
+
+776
+00:16:28,310 --> 00:16:28,320
+zooms zooms in as he waves his
+ 
+
+777
+00:16:28,320 --> 00:16:30,310
+zooms zooms in as he waves his
+lightsaber.
+
+778
+00:16:30,310 --> 00:16:30,320
+lightsaber.
+ 
+
+779
+00:16:30,320 --> 00:16:33,189
+lightsaber.
+Let's try and generate that and it'll
+
+780
+00:16:33,189 --> 00:16:33,199
+Let's try and generate that and it'll
+ 
+
+781
+00:16:33,199 --> 00:16:35,269
+Let's try and generate that and it'll
+create a decent looking video from the
+
+782
+00:16:35,269 --> 00:16:35,279
+create a decent looking video from the
+ 
+
+783
+00:16:35,279 --> 00:16:37,829
+create a decent looking video from the
+reference image that we uploaded. Now,
+
+784
+00:16:37,829 --> 00:16:37,839
+reference image that we uploaded. Now,
+ 
+
+785
+00:16:37,839 --> 00:16:40,069
+reference image that we uploaded. Now,
+when it comes to using the image frames
+
+786
+00:16:40,069 --> 00:16:40,079
+when it comes to using the image frames
+ 
+
+787
+00:16:40,079 --> 00:16:43,189
+when it comes to using the image frames
+to video feature, I don't recommend it
+
+788
+00:16:43,189 --> 00:16:43,199
+to video feature, I don't recommend it
+ 
+
+789
+00:16:43,199 --> 00:16:45,990
+to video feature, I don't recommend it
+as much as just trying to use text to
+
+790
+00:16:45,990 --> 00:16:46,000
+as much as just trying to use text to
+ 
+
+791
+00:16:46,000 --> 00:16:48,870
+as much as just trying to use text to
+video. So, let me explain. There are
+
+792
+00:16:48,870 --> 00:16:48,880
+video. So, let me explain. There are
+ 
+
+793
+00:16:48,880 --> 00:16:50,949
+video. So, let me explain. There are
+some decent features you can get from
+
+794
+00:16:50,949 --> 00:16:50,959
+some decent features you can get from
+ 
+
+795
+00:16:50,959 --> 00:16:54,069
+some decent features you can get from
+image to video. For example, if we
+
+796
+00:16:54,069 --> 00:16:54,079
+image to video. For example, if we
+ 
+
+797
+00:16:54,079 --> 00:16:57,509
+image to video. For example, if we
+upload a reference image, let's say
+
+798
+00:16:57,509 --> 00:16:57,519
+upload a reference image, let's say
+ 
+
+799
+00:16:57,519 --> 00:17:00,629
+upload a reference image, let's say
+we'll put in this photo of a spaceship.
+
+800
+00:17:00,629 --> 00:17:00,639
+we'll put in this photo of a spaceship.
+ 
+
+801
+00:17:00,639 --> 00:17:03,590
+we'll put in this photo of a spaceship.
+We do have the option of adding in some
+
+802
+00:17:03,590 --> 00:17:03,600
+We do have the option of adding in some
+ 
+
+803
+00:17:03,600 --> 00:17:06,069
+We do have the option of adding in some
+camera movements, but there's a bunch of
+
+804
+00:17:06,069 --> 00:17:06,079
+camera movements, but there's a bunch of
+ 
+
+805
+00:17:06,079 --> 00:17:09,069
+camera movements, but there's a bunch of
+options here. You can dialing in on the
+
+806
+00:17:09,069 --> 00:17:09,079
+options here. You can dialing in on the
+ 
+
+807
+00:17:09,079 --> 00:17:12,069
+options here. You can dialing in on the
+character. You can tilt the camera down.
+
+808
+00:17:12,069 --> 00:17:12,079
+character. You can tilt the camera down.
+ 
+
+809
+00:17:12,079 --> 00:17:13,429
+character. You can tilt the camera down.
+Um, there's a bunch of them. I'm not
+
+810
+00:17:13,429 --> 00:17:13,439
+Um, there's a bunch of them. I'm not
+ 
+
+811
+00:17:13,439 --> 00:17:15,189
+Um, there's a bunch of them. I'm not
+sure why they're not all displaying
+
+812
+00:17:15,189 --> 00:17:15,199
+sure why they're not all displaying
+ 
+
+813
+00:17:15,199 --> 00:17:18,069
+sure why they're not all displaying
+right now properly, but let's go with
+
+814
+00:17:18,069 --> 00:17:18,079
+right now properly, but let's go with
+ 
+
+815
+00:17:18,079 --> 00:17:21,429
+right now properly, but let's go with
+orbiting left around the subject. and
+
+816
+00:17:21,429 --> 00:17:21,439
+orbiting left around the subject. and
+ 
+
+817
+00:17:21,439 --> 00:17:23,029
+orbiting left around the subject. and
+let's put in the prompt the camera
+
+818
+00:17:23,029 --> 00:17:23,039
+let's put in the prompt the camera
+ 
+
+819
+00:17:23,039 --> 00:17:25,590
+let's put in the prompt the camera
+circles around the spaceship. Now, if we
+
+820
+00:17:25,590 --> 00:17:25,600
+circles around the spaceship. Now, if we
+ 
+
+821
+00:17:25,600 --> 00:17:27,029
+circles around the spaceship. Now, if we
+look inside the settings, you can see
+
+822
+00:17:27,029 --> 00:17:27,039
+look inside the settings, you can see
+ 
+
+823
+00:17:27,039 --> 00:17:31,870
+look inside the settings, you can see
+that I have selected the Google V3 model
+
+824
+00:17:31,870 --> 00:17:31,880
+that I have selected the Google V3 model
+ 
+
+825
+00:17:31,880 --> 00:17:34,190
+that I have selected the Google V3 model
+for the video
+
+826
+00:17:34,190 --> 00:17:34,200
+for the video
+ 
+
+827
+00:17:34,200 --> 00:17:37,830
+for the video
+generation. However, if we try to
+
+828
+00:17:37,830 --> 00:17:37,840
+generation. However, if we try to
+ 
+
+829
+00:17:37,840 --> 00:17:41,350
+generation. However, if we try to
+actually run this prompt, you'll see
+
+830
+00:17:41,350 --> 00:17:41,360
+actually run this prompt, you'll see
+ 
+
+831
+00:17:41,360 --> 00:17:43,590
+actually run this prompt, you'll see
+this pop up which says switching you to
+
+832
+00:17:43,590 --> 00:17:43,600
+this pop up which says switching you to
+ 
+
+833
+00:17:43,600 --> 00:17:46,390
+this pop up which says switching you to
+a compatible model for this feature.
+
+834
+00:17:46,390 --> 00:17:46,400
+a compatible model for this feature.
+ 
+
+835
+00:17:46,400 --> 00:17:48,630
+a compatible model for this feature.
+This is because a lot of the
+
+836
+00:17:48,630 --> 00:17:48,640
+This is because a lot of the
+ 
+
+837
+00:17:48,640 --> 00:17:50,029
+This is because a lot of the
+imagetovideo
+
+838
+00:17:50,029 --> 00:17:50,039
+imagetovideo
+ 
+
+839
+00:17:50,039 --> 00:17:53,750
+imagetovideo
+features only work with the Ve2 model.
+
+840
+00:17:53,750 --> 00:17:53,760
+features only work with the Ve2 model.
+ 
+
+841
+00:17:53,760 --> 00:17:55,590
+features only work with the Ve2 model.
+For example, adding in the camera
+
+842
+00:17:55,590 --> 00:17:55,600
+For example, adding in the camera
+ 
+
+843
+00:17:55,600 --> 00:17:57,590
+For example, adding in the camera
+motions, which means you won't be able
+
+844
+00:17:57,590 --> 00:17:57,600
+motions, which means you won't be able
+ 
+
+845
+00:17:57,600 --> 00:18:00,549
+motions, which means you won't be able
+to use the most advanced video model for
+
+846
+00:18:00,549 --> 00:18:00,559
+to use the most advanced video model for
+ 
+
+847
+00:18:00,559 --> 00:18:02,870
+to use the most advanced video model for
+this feature. But let's generate it
+
+848
+00:18:02,870 --> 00:18:02,880
+this feature. But let's generate it
+ 
+
+849
+00:18:02,880 --> 00:18:04,950
+this feature. But let's generate it
+anyways and see what it looks like. The
+
+850
+00:18:04,950 --> 00:18:04,960
+anyways and see what it looks like. The
+ 
+
+851
+00:18:04,960 --> 00:18:07,750
+anyways and see what it looks like. The
+camera movements do work pretty well.
+
+852
+00:18:07,750 --> 00:18:07,760
+camera movements do work pretty well.
+ 
+
+853
+00:18:07,760 --> 00:18:10,390
+camera movements do work pretty well.
+The only thing is that, like I said, the
+
+854
+00:18:10,390 --> 00:18:10,400
+The only thing is that, like I said, the
+ 
+
+855
+00:18:10,400 --> 00:18:12,630
+The only thing is that, like I said, the
+video model isn't going to be the newest
+
+856
+00:18:12,630 --> 00:18:12,640
+video model isn't going to be the newest
+ 
+
+857
+00:18:12,640 --> 00:18:14,710
+video model isn't going to be the newest
+V3 model. Depending on the scene that
+
+858
+00:18:14,710 --> 00:18:14,720
+V3 model. Depending on the scene that
+ 
+
+859
+00:18:14,720 --> 00:18:16,230
+V3 model. Depending on the scene that
+you need, I think a lot of these will
+
+860
+00:18:16,230 --> 00:18:16,240
+you need, I think a lot of these will
+ 
+
+861
+00:18:16,240 --> 00:18:18,070
+you need, I think a lot of these will
+work perfectly fine. The camera
+
+862
+00:18:18,070 --> 00:18:18,080
+work perfectly fine. The camera
+ 
+
+863
+00:18:18,080 --> 00:18:20,310
+work perfectly fine. The camera
+movements do look pretty smooth and
+
+864
+00:18:20,310 --> 00:18:20,320
+movements do look pretty smooth and
+ 
+
+865
+00:18:20,320 --> 00:18:21,870
+movements do look pretty smooth and
+follow what you ask
+
+866
+00:18:21,870 --> 00:18:21,880
+follow what you ask
+ 
+
+867
+00:18:21,880 --> 00:18:24,230
+follow what you ask
+for. But if you want to use camera
+
+868
+00:18:24,230 --> 00:18:24,240
+for. But if you want to use camera
+ 
+
+869
+00:18:24,240 --> 00:18:27,029
+for. But if you want to use camera
+motions with the new Veil 3 model,
+
+870
+00:18:27,029 --> 00:18:27,039
+motions with the new Veil 3 model,
+ 
+
+871
+00:18:27,039 --> 00:18:28,549
+motions with the new Veil 3 model,
+you'll need to directly add them into
+
+872
+00:18:28,549 --> 00:18:28,559
+you'll need to directly add them into
+ 
+
+873
+00:18:28,559 --> 00:18:30,950
+you'll need to directly add them into
+the prompt by yourself. Here's a example
+
+874
+00:18:30,950 --> 00:18:30,960
+the prompt by yourself. Here's a example
+ 
+
+875
+00:18:30,960 --> 00:18:33,350
+the prompt by yourself. Here's a example
+where I told the camera to pull back
+
+876
+00:18:33,350 --> 00:18:33,360
+where I told the camera to pull back
+ 
+
+877
+00:18:33,360 --> 00:18:35,510
+where I told the camera to pull back
+while the Jedi walks forward and waves
+
+878
+00:18:35,510 --> 00:18:35,520
+while the Jedi walks forward and waves
+ 
+
+879
+00:18:35,520 --> 00:18:39,190
+while the Jedi walks forward and waves
+her white lightsaber.
+
+880
+00:18:39,190 --> 00:18:39,200
+
+ 
+
+881
+00:18:39,200 --> 00:18:41,430
+
+Here's another example where I prompted
+
+882
+00:18:41,430 --> 00:18:41,440
+Here's another example where I prompted
+ 
+
+883
+00:18:41,440 --> 00:18:43,990
+Here's another example where I prompted
+for the camera to circle around the
+
+884
+00:18:43,990 --> 00:18:44,000
+for the camera to circle around the
+ 
+
+885
+00:18:44,000 --> 00:18:46,470
+for the camera to circle around the
+subject. You do have a decent amount of
+
+886
+00:18:46,470 --> 00:18:46,480
+subject. You do have a decent amount of
+ 
+
+887
+00:18:46,480 --> 00:18:48,470
+subject. You do have a decent amount of
+control over the camera motion in just
+
+888
+00:18:48,470 --> 00:18:48,480
+control over the camera motion in just
+ 
+
+889
+00:18:48,480 --> 00:18:51,029
+control over the camera motion in just
+the prompt itself. Here's one of the
+
+890
+00:18:51,029 --> 00:18:51,039
+the prompt itself. Here's one of the
+ 
+
+891
+00:18:51,039 --> 00:18:53,990
+the prompt itself. Here's one of the
+camera tilting down while this hunter
+
+892
+00:18:53,990 --> 00:18:54,000
+camera tilting down while this hunter
+ 
+
+893
+00:18:54,000 --> 00:18:56,190
+camera tilting down while this hunter
+jumps down from the
+
+894
+00:18:56,190 --> 00:18:56,200
+jumps down from the
+ 
+
+895
+00:18:56,200 --> 00:18:58,549
+jumps down from the
+ledge. Circling back to what I said
+
+896
+00:18:58,549 --> 00:18:58,559
+ledge. Circling back to what I said
+ 
+
+897
+00:18:58,559 --> 00:19:01,350
+ledge. Circling back to what I said
+previously, I do think the text to video
+
+898
+00:19:01,350 --> 00:19:01,360
+previously, I do think the text to video
+ 
+
+899
+00:19:01,360 --> 00:19:03,029
+previously, I do think the text to video
+works better than using a reference
+
+900
+00:19:03,029 --> 00:19:03,039
+works better than using a reference
+ 
+
+901
+00:19:03,039 --> 00:19:06,870
+works better than using a reference
+image inside Veo 2. So, if possible, try
+
+902
+00:19:06,870 --> 00:19:06,880
+image inside Veo 2. So, if possible, try
+ 
+
+903
+00:19:06,880 --> 00:19:09,750
+image inside Veo 2. So, if possible, try
+to create the videos using just the text
+
+904
+00:19:09,750 --> 00:19:09,760
+to create the videos using just the text
+ 
+
+905
+00:19:09,760 --> 00:19:13,110
+to create the videos using just the text
+prompt if you can. So, I've got this
+
+906
+00:19:13,110 --> 00:19:13,120
+prompt if you can. So, I've got this
+ 
+
+907
+00:19:13,120 --> 00:19:14,870
+prompt if you can. So, I've got this
+reference image of the bounty hunter,
+
+908
+00:19:14,870 --> 00:19:14,880
+reference image of the bounty hunter,
+ 
+
+909
+00:19:14,880 --> 00:19:17,110
+reference image of the bounty hunter,
+and I told him to jump down from the
+
+910
+00:19:17,110 --> 00:19:17,120
+and I told him to jump down from the
+ 
+
+911
+00:19:17,120 --> 00:19:19,190
+and I told him to jump down from the
+ledge onto the ground. It's kind of a
+
+912
+00:19:19,190 --> 00:19:19,200
+ledge onto the ground. It's kind of a
+ 
+
+913
+00:19:19,200 --> 00:19:22,470
+ledge onto the ground. It's kind of a
+smaller hop, not exactly a dynamic jump
+
+914
+00:19:22,470 --> 00:19:22,480
+smaller hop, not exactly a dynamic jump
+ 
+
+915
+00:19:22,480 --> 00:19:24,870
+smaller hop, not exactly a dynamic jump
+from a tall ledge onto the ground. So,
+
+916
+00:19:24,870 --> 00:19:24,880
+from a tall ledge onto the ground. So,
+ 
+
+917
+00:19:24,880 --> 00:19:27,909
+from a tall ledge onto the ground. So,
+instead, I directly used just a text
+
+918
+00:19:27,909 --> 00:19:27,919
+instead, I directly used just a text
+ 
+
+919
+00:19:27,919 --> 00:19:30,310
+instead, I directly used just a text
+prompt where I described the visuals of
+
+920
+00:19:30,310 --> 00:19:30,320
+prompt where I described the visuals of
+ 
+
+921
+00:19:30,320 --> 00:19:32,310
+prompt where I described the visuals of
+the scene. I wanted to start with a
+
+922
+00:19:32,310 --> 00:19:32,320
+the scene. I wanted to start with a
+ 
+
+923
+00:19:32,320 --> 00:19:34,070
+the scene. I wanted to start with a
+front view of a bounty hunter from Star
+
+924
+00:19:34,070 --> 00:19:34,080
+front view of a bounty hunter from Star
+ 
+
+925
+00:19:34,080 --> 00:19:35,909
+front view of a bounty hunter from Star
+Wars. He's wearing a rusty helmet and
+
+926
+00:19:35,909 --> 00:19:35,919
+Wars. He's wearing a rusty helmet and
+ 
+
+927
+00:19:35,919 --> 00:19:38,230
+Wars. He's wearing a rusty helmet and
+rusty armor and the camera tilts down as
+
+928
+00:19:38,230 --> 00:19:38,240
+rusty armor and the camera tilts down as
+ 
+
+929
+00:19:38,240 --> 00:19:40,230
+rusty armor and the camera tilts down as
+he jumps down from a tall ledge into a
+
+930
+00:19:40,230 --> 00:19:40,240
+he jumps down from a tall ledge into a
+ 
+
+931
+00:19:40,240 --> 00:19:42,390
+he jumps down from a tall ledge into a
+rock pit and lands on the ground. It
+
+932
+00:19:42,390 --> 00:19:42,400
+rock pit and lands on the ground. It
+ 
+
+933
+00:19:42,400 --> 00:19:44,150
+rock pit and lands on the ground. It
+should be a bright sunlit rocky
+
+934
+00:19:44,150 --> 00:19:44,160
+should be a bright sunlit rocky
+ 
+
+935
+00:19:44,160 --> 00:19:46,150
+should be a bright sunlit rocky
+environment with brown rocks and some
+
+936
+00:19:46,150 --> 00:19:46,160
+environment with brown rocks and some
+ 
+
+937
+00:19:46,160 --> 00:19:48,630
+environment with brown rocks and some
+sand just like the image that I showed
+
+938
+00:19:48,630 --> 00:19:48,640
+sand just like the image that I showed
+ 
+
+939
+00:19:48,640 --> 00:19:50,710
+sand just like the image that I showed
+earlier. And let's see what the video
+
+940
+00:19:50,710 --> 00:19:50,720
+earlier. And let's see what the video
+ 
+
+941
+00:19:50,720 --> 00:19:58,430
+earlier. And let's see what the video
+looks
+
+942
+00:19:58,430 --> 00:19:58,440
+
+ 
+
+943
+00:19:58,440 --> 00:20:01,270
+
+like if we compare it to using a
+
+944
+00:20:01,270 --> 00:20:01,280
+like if we compare it to using a
+ 
+
+945
+00:20:01,280 --> 00:20:03,990
+like if we compare it to using a
+reference image. The motion is way more
+
+946
+00:20:03,990 --> 00:20:04,000
+reference image. The motion is way more
+ 
+
+947
+00:20:04,000 --> 00:20:06,230
+reference image. The motion is way more
+dynamic and I think the sound effects in
+
+948
+00:20:06,230 --> 00:20:06,240
+dynamic and I think the sound effects in
+ 
+
+949
+00:20:06,240 --> 00:20:10,430
+dynamic and I think the sound effects in
+general are better.
+
+950
+00:20:10,430 --> 00:20:10,440
+
+ 
+
+951
+00:20:10,440 --> 00:20:13,350
+
+Also, here's another limitation. If you
+
+952
+00:20:13,350 --> 00:20:13,360
+Also, here's another limitation. If you
+ 
+
+953
+00:20:13,360 --> 00:20:16,070
+Also, here's another limitation. If you
+use reference images, you can't actually
+
+954
+00:20:16,070 --> 00:20:16,080
+use reference images, you can't actually
+ 
+
+955
+00:20:16,080 --> 00:20:19,110
+use reference images, you can't actually
+create the lifelike talking characters.
+
+956
+00:20:19,110 --> 00:20:19,120
+create the lifelike talking characters.
+ 
+
+957
+00:20:19,120 --> 00:20:21,110
+create the lifelike talking characters.
+So, I started with this reference image
+
+958
+00:20:21,110 --> 00:20:21,120
+So, I started with this reference image
+ 
+
+959
+00:20:21,120 --> 00:20:24,549
+So, I started with this reference image
+of a woman sitting on a jade throne. And
+
+960
+00:20:24,549 --> 00:20:24,559
+of a woman sitting on a jade throne. And
+ 
+
+961
+00:20:24,559 --> 00:20:27,190
+of a woman sitting on a jade throne. And
+I prompted for her to stand up, pick up
+
+962
+00:20:27,190 --> 00:20:27,200
+I prompted for her to stand up, pick up
+ 
+
+963
+00:20:27,200 --> 00:20:29,270
+I prompted for her to stand up, pick up
+a lightsaber, and say the words, "May
+
+964
+00:20:29,270 --> 00:20:29,280
+a lightsaber, and say the words, "May
+ 
+
+965
+00:20:29,280 --> 00:20:31,830
+a lightsaber, and say the words, "May
+the force be with you." But one problem
+
+966
+00:20:31,830 --> 00:20:31,840
+the force be with you." But one problem
+ 
+
+967
+00:20:31,840 --> 00:20:34,149
+the force be with you." But one problem
+with using uh image reference is that
+
+968
+00:20:34,149 --> 00:20:34,159
+with using uh image reference is that
+ 
+
+969
+00:20:34,159 --> 00:20:35,590
+with using uh image reference is that
+when you try to animate a talking
+
+970
+00:20:35,590 --> 00:20:35,600
+when you try to animate a talking
+ 
+
+971
+00:20:35,600 --> 00:20:37,830
+when you try to animate a talking
+character, it can make the character
+
+972
+00:20:37,830 --> 00:20:37,840
+character, it can make the character
+ 
+
+973
+00:20:37,840 --> 00:20:39,510
+character, it can make the character
+move their mouth around like they're
+
+974
+00:20:39,510 --> 00:20:39,520
+move their mouth around like they're
+ 
+
+975
+00:20:39,520 --> 00:20:42,070
+move their mouth around like they're
+talking, but they won't actually say the
+
+976
+00:20:42,070 --> 00:20:42,080
+talking, but they won't actually say the
+ 
+
+977
+00:20:42,080 --> 00:20:44,390
+talking, but they won't actually say the
+words you want them to. You do see these
+
+978
+00:20:44,390 --> 00:20:44,400
+words you want them to. You do see these
+ 
+
+979
+00:20:44,400 --> 00:20:46,230
+words you want them to. You do see these
+subtitles on the screen. This is
+
+980
+00:20:46,230 --> 00:20:46,240
+subtitles on the screen. This is
+ 
+
+981
+00:20:46,240 --> 00:20:47,909
+subtitles on the screen. This is
+something that they need to fix cuz we
+
+982
+00:20:47,909 --> 00:20:47,919
+something that they need to fix cuz we
+ 
+
+983
+00:20:47,919 --> 00:20:49,750
+something that they need to fix cuz we
+don't need those. However, if you have
+
+984
+00:20:49,750 --> 00:20:49,760
+don't need those. However, if you have
+ 
+
+985
+00:20:49,760 --> 00:20:51,750
+don't need those. However, if you have
+an image of a character that you really,
+
+986
+00:20:51,750 --> 00:20:51,760
+an image of a character that you really,
+ 
+
+987
+00:20:51,760 --> 00:20:53,909
+an image of a character that you really,
+really want to use, for example, this
+
+988
+00:20:53,909 --> 00:20:53,919
+really want to use, for example, this
+ 
+
+989
+00:20:53,919 --> 00:20:56,230
+really want to use, for example, this
+Asian woman sitting on a jade throne, I
+
+990
+00:20:56,230 --> 00:20:56,240
+Asian woman sitting on a jade throne, I
+ 
+
+991
+00:20:56,240 --> 00:20:57,669
+Asian woman sitting on a jade throne, I
+mean, I think this looks really, really
+
+992
+00:20:57,669 --> 00:20:57,679
+mean, I think this looks really, really
+ 
+
+993
+00:20:57,679 --> 00:20:59,590
+mean, I think this looks really, really
+amazing. You can generate the video
+
+994
+00:20:59,590 --> 00:20:59,600
+amazing. You can generate the video
+ 
+
+995
+00:20:59,600 --> 00:21:02,789
+amazing. You can generate the video
+inside VA3 and use a lip sync tool on
+
+996
+00:21:02,789 --> 00:21:02,799
+inside VA3 and use a lip sync tool on
+ 
+
+997
+00:21:02,799 --> 00:21:05,590
+inside VA3 and use a lip sync tool on
+another platform. Uh so I created this
+
+998
+00:21:05,590 --> 00:21:05,600
+another platform. Uh so I created this
+ 
+
+999
+00:21:05,600 --> 00:21:08,310
+another platform. Uh so I created this
+video of the female Jedi using the image
+
+1000
+00:21:08,310 --> 00:21:08,320
+video of the female Jedi using the image
+ 
+
+1001
+00:21:08,320 --> 00:21:10,149
+video of the female Jedi using the image
+frames to video. She doesn't say
+
+1002
+00:21:10,149 --> 00:21:10,159
+frames to video. She doesn't say
+ 
+
+1003
+00:21:10,159 --> 00:21:12,230
+frames to video. She doesn't say
+anything inside here, but we're going to
+
+1004
+00:21:12,230 --> 00:21:12,240
+anything inside here, but we're going to
+ 
+
+1005
+00:21:12,240 --> 00:21:15,510
+anything inside here, but we're going to
+go to an AI voice generator. I'm using
+
+1006
+00:21:15,510 --> 00:21:15,520
+go to an AI voice generator. I'm using
+ 
+
+1007
+00:21:15,520 --> 00:21:19,270
+go to an AI voice generator. I'm using
+11 Labs here. And we can enter a speech
+
+1008
+00:21:19,270 --> 00:21:19,280
+11 Labs here. And we can enter a speech
+ 
+
+1009
+00:21:19,280 --> 00:21:21,990
+11 Labs here. And we can enter a speech
+that we wanted to say. May the force be
+
+1010
+00:21:21,990 --> 00:21:22,000
+that we wanted to say. May the force be
+ 
+
+1011
+00:21:22,000 --> 00:21:23,909
+that we wanted to say. May the force be
+with you. There's a bunch of voices you
+
+1012
+00:21:23,909 --> 00:21:23,919
+with you. There's a bunch of voices you
+ 
+
+1013
+00:21:23,919 --> 00:21:26,230
+with you. There's a bunch of voices you
+can pick from here. I'm selecting Jen.
+
+1014
+00:21:26,230 --> 00:21:26,240
+can pick from here. I'm selecting Jen.
+ 
+
+1015
+00:21:26,240 --> 00:21:29,350
+can pick from here. I'm selecting Jen.
+Then we can generate the AI speech. May
+
+1016
+00:21:29,350 --> 00:21:29,360
+Then we can generate the AI speech. May
+ 
+
+1017
+00:21:29,360 --> 00:21:32,470
+Then we can generate the AI speech. May
+the force be with you. We have the voice
+
+1018
+00:21:32,470 --> 00:21:32,480
+the force be with you. We have the voice
+ 
+
+1019
+00:21:32,480 --> 00:21:35,110
+the force be with you. We have the voice
+and the video from Google Veil. We can
+
+1020
+00:21:35,110 --> 00:21:35,120
+and the video from Google Veil. We can
+ 
+
+1021
+00:21:35,120 --> 00:21:37,990
+and the video from Google Veil. We can
+use a tool like Pix for example which
+
+1022
+00:21:37,990 --> 00:21:38,000
+use a tool like Pix for example which
+ 
+
+1023
+00:21:38,000 --> 00:21:41,750
+use a tool like Pix for example which
+does have AI lip sync. Hit this speech
+
+1024
+00:21:41,750 --> 00:21:41,760
+does have AI lip sync. Hit this speech
+ 
+
+1025
+00:21:41,760 --> 00:21:44,549
+does have AI lip sync. Hit this speech
+button right here. And inside here I've
+
+1026
+00:21:44,549 --> 00:21:44,559
+button right here. And inside here I've
+ 
+
+1027
+00:21:44,559 --> 00:21:47,590
+button right here. And inside here I've
+uploaded the video from Google V3 and
+
+1028
+00:21:47,590 --> 00:21:47,600
+uploaded the video from Google V3 and
+ 
+
+1029
+00:21:47,600 --> 00:21:49,669
+uploaded the video from Google V3 and
+also the audio file we just generated
+
+1030
+00:21:49,669 --> 00:21:49,679
+also the audio file we just generated
+ 
+
+1031
+00:21:49,679 --> 00:21:53,750
+also the audio file we just generated
+using 11 Labs. And we can create the lip
+
+1032
+00:21:53,750 --> 00:21:53,760
+using 11 Labs. And we can create the lip
+ 
+
+1033
+00:21:53,760 --> 00:21:55,190
+using 11 Labs. And we can create the lip
+sync.
+
+1034
+00:21:55,190 --> 00:21:55,200
+sync.
+ 
+
+1035
+00:21:55,200 --> 00:21:57,190
+sync.
+This isn't the ideal solution. I'm sure
+
+1036
+00:21:57,190 --> 00:21:57,200
+This isn't the ideal solution. I'm sure
+ 
+
+1037
+00:21:57,200 --> 00:21:58,789
+This isn't the ideal solution. I'm sure
+Google at some point will update their
+
+1038
+00:21:58,789 --> 00:21:58,799
+Google at some point will update their
+ 
+
+1039
+00:21:58,799 --> 00:22:01,909
+Google at some point will update their
+Veil 3 model to also allow you to create
+
+1040
+00:22:01,909 --> 00:22:01,919
+Veil 3 model to also allow you to create
+ 
+
+1041
+00:22:01,919 --> 00:22:03,669
+Veil 3 model to also allow you to create
+talking characters using reference
+
+1042
+00:22:03,669 --> 00:22:03,679
+talking characters using reference
+ 
+
+1043
+00:22:03,679 --> 00:22:05,990
+talking characters using reference
+images, but for now, this is kind of
+
+1044
+00:22:05,990 --> 00:22:06,000
+images, but for now, this is kind of
+ 
+
+1045
+00:22:06,000 --> 00:22:07,909
+images, but for now, this is kind of
+what you got to do. And this is what our
+
+1046
+00:22:07,909 --> 00:22:07,919
+what you got to do. And this is what our
+ 
+
+1047
+00:22:07,919 --> 00:22:10,789
+what you got to do. And this is what our
+lipsync character looks like. May the
+
+1048
+00:22:10,789 --> 00:22:10,799
+lipsync character looks like. May the
+ 
+
+1049
+00:22:10,799 --> 00:22:13,669
+lipsync character looks like. May the
+force be with you. Again, let's try to
+
+1050
+00:22:13,669 --> 00:22:13,679
+force be with you. Again, let's try to
+ 
+
+1051
+00:22:13,679 --> 00:22:16,789
+force be with you. Again, let's try to
+replicate this scene using just text to
+
+1052
+00:22:16,789 --> 00:22:16,799
+replicate this scene using just text to
+ 
+
+1053
+00:22:16,799 --> 00:22:19,110
+replicate this scene using just text to
+video. Here's the prompt I'll use. An
+
+1054
+00:22:19,110 --> 00:22:19,120
+video. Here's the prompt I'll use. An
+ 
+
+1055
+00:22:19,120 --> 00:22:21,830
+video. Here's the prompt I'll use. An
+Asian female Jedi from Star Wars. She
+
+1056
+00:22:21,830 --> 00:22:21,840
+Asian female Jedi from Star Wars. She
+ 
+
+1057
+00:22:21,840 --> 00:22:24,070
+Asian female Jedi from Star Wars. She
+has two small ram horns on her head and
+
+1058
+00:22:24,070 --> 00:22:24,080
+has two small ram horns on her head and
+ 
+
+1059
+00:22:24,080 --> 00:22:25,830
+has two small ram horns on her head and
+is wearing a white sleeveless dress with
+
+1060
+00:22:25,830 --> 00:22:25,840
+is wearing a white sleeveless dress with
+ 
+
+1061
+00:22:25,840 --> 00:22:28,149
+is wearing a white sleeveless dress with
+gold ornaments. She sits on a circular
+
+1062
+00:22:28,149 --> 00:22:28,159
+gold ornaments. She sits on a circular
+ 
+
+1063
+00:22:28,159 --> 00:22:30,549
+gold ornaments. She sits on a circular
+jade throne in Saturn Asian Palace. She
+
+1064
+00:22:30,549 --> 00:22:30,559
+jade throne in Saturn Asian Palace. She
+ 
+
+1065
+00:22:30,559 --> 00:22:32,390
+jade throne in Saturn Asian Palace. She
+stands up, pulls out a green lightsaber.
+
+1066
+00:22:32,390 --> 00:22:32,400
+stands up, pulls out a green lightsaber.
+ 
+
+1067
+00:22:32,400 --> 00:22:34,549
+stands up, pulls out a green lightsaber.
+She says, "May the force be with you.
+
+1068
+00:22:34,549 --> 00:22:34,559
+She says, "May the force be with you.
+ 
+
+1069
+00:22:34,559 --> 00:22:36,950
+She says, "May the force be with you.
+Star Wars cinematic film." I tried to
+
+1070
+00:22:36,950 --> 00:22:36,960
+Star Wars cinematic film." I tried to
+ 
+
+1071
+00:22:36,960 --> 00:22:38,710
+Star Wars cinematic film." I tried to
+describe the image I showed earlier as
+
+1072
+00:22:38,710 --> 00:22:38,720
+describe the image I showed earlier as
+ 
+
+1073
+00:22:38,720 --> 00:22:40,710
+describe the image I showed earlier as
+closely as possible. Let's see what the
+
+1074
+00:22:40,710 --> 00:22:40,720
+closely as possible. Let's see what the
+ 
+
+1075
+00:22:40,720 --> 00:22:46,870
+closely as possible. Let's see what the
+video looks like.
+
+1076
+00:22:46,870 --> 00:22:46,880
+
+ 
+
+1077
+00:22:46,880 --> 00:22:49,990
+
+May the force be with you.
+
+1078
+00:22:49,990 --> 00:22:50,000
+May the force be with you.
+ 
+
+1079
+00:22:50,000 --> 00:22:51,990
+May the force be with you.
+All right. So, let's be honest here.
+
+1080
+00:22:51,990 --> 00:22:52,000
+All right. So, let's be honest here.
+ 
+
+1081
+00:22:52,000 --> 00:22:53,990
+All right. So, let's be honest here.
+That's not a very visually appealing
+
+1082
+00:22:53,990 --> 00:22:54,000
+That's not a very visually appealing
+ 
+
+1083
+00:22:54,000 --> 00:22:56,390
+That's not a very visually appealing
+video. She does stand up and swing the
+
+1084
+00:22:56,390 --> 00:22:56,400
+video. She does stand up and swing the
+ 
+
+1085
+00:22:56,400 --> 00:22:58,149
+video. She does stand up and swing the
+lightsaber around and say the words I
+
+1086
+00:22:58,149 --> 00:22:58,159
+lightsaber around and say the words I
+ 
+
+1087
+00:22:58,159 --> 00:23:01,029
+lightsaber around and say the words I
+prompted for exactly, but I don't think
+
+1088
+00:23:01,029 --> 00:23:01,039
+prompted for exactly, but I don't think
+ 
+
+1089
+00:23:01,039 --> 00:23:03,029
+prompted for exactly, but I don't think
+this is a cinematic looking shot. I
+
+1090
+00:23:03,029 --> 00:23:03,039
+this is a cinematic looking shot. I
+ 
+
+1091
+00:23:03,039 --> 00:23:04,950
+this is a cinematic looking shot. I
+mean, the colors, the horns on her head
+
+1092
+00:23:04,950 --> 00:23:04,960
+mean, the colors, the horns on her head
+ 
+
+1093
+00:23:04,960 --> 00:23:08,149
+mean, the colors, the horns on her head
+look kind of weird. And the colors just
+
+1094
+00:23:08,149 --> 00:23:08,159
+look kind of weird. And the colors just
+ 
+
+1095
+00:23:08,159 --> 00:23:10,950
+look kind of weird. And the colors just
+look really, really bland. So, when it
+
+1096
+00:23:10,950 --> 00:23:10,960
+look really, really bland. So, when it
+ 
+
+1097
+00:23:10,960 --> 00:23:12,630
+look really, really bland. So, when it
+comes to writing the text prompts,
+
+1098
+00:23:12,630 --> 00:23:12,640
+comes to writing the text prompts,
+ 
+
+1099
+00:23:12,640 --> 00:23:14,549
+comes to writing the text prompts,
+sometimes it'll generate a really great
+
+1100
+00:23:14,549 --> 00:23:14,559
+sometimes it'll generate a really great
+ 
+
+1101
+00:23:14,559 --> 00:23:16,390
+sometimes it'll generate a really great
+looking video with a small amount of
+
+1102
+00:23:16,390 --> 00:23:16,400
+looking video with a small amount of
+ 
+
+1103
+00:23:16,400 --> 00:23:18,470
+looking video with a small amount of
+effort, but sometimes you need to
+
+1104
+00:23:18,470 --> 00:23:18,480
+effort, but sometimes you need to
+ 
+
+1105
+00:23:18,480 --> 00:23:21,110
+effort, but sometimes you need to
+describe the exact cinematic shot that
+
+1106
+00:23:21,110 --> 00:23:21,120
+describe the exact cinematic shot that
+ 
+
+1107
+00:23:21,120 --> 00:23:23,630
+describe the exact cinematic shot that
+you want, including the colors and the
+
+1108
+00:23:23,630 --> 00:23:23,640
+you want, including the colors and the
+ 
+
+1109
+00:23:23,640 --> 00:23:25,909
+you want, including the colors and the
+environment. So, let's update this
+
+1110
+00:23:25,909 --> 00:23:25,919
+environment. So, let's update this
+ 
+
+1111
+00:23:25,919 --> 00:23:27,990
+environment. So, let's update this
+prompt a little bit. This time, I'm
+
+1112
+00:23:27,990 --> 00:23:28,000
+prompt a little bit. This time, I'm
+ 
+
+1113
+00:23:28,000 --> 00:23:29,990
+prompt a little bit. This time, I'm
+going to describe the visual look of the
+
+1114
+00:23:29,990 --> 00:23:30,000
+going to describe the visual look of the
+ 
+
+1115
+00:23:30,000 --> 00:23:32,470
+going to describe the visual look of the
+shot a bit more. So, again, we're going
+
+1116
+00:23:32,470 --> 00:23:32,480
+shot a bit more. So, again, we're going
+ 
+
+1117
+00:23:32,480 --> 00:23:34,230
+shot a bit more. So, again, we're going
+with an Asian female Jedi from Star
+
+1118
+00:23:34,230 --> 00:23:34,240
+with an Asian female Jedi from Star
+ 
+
+1119
+00:23:34,240 --> 00:23:35,830
+with an Asian female Jedi from Star
+Wars. She's wearing a white sleeveless
+
+1120
+00:23:35,830 --> 00:23:35,840
+Wars. She's wearing a white sleeveless
+ 
+
+1121
+00:23:35,840 --> 00:23:38,870
+Wars. She's wearing a white sleeveless
+dress with gold ornaments. She sits on a
+
+1122
+00:23:38,870 --> 00:23:38,880
+dress with gold ornaments. She sits on a
+ 
+
+1123
+00:23:38,880 --> 00:23:41,669
+dress with gold ornaments. She sits on a
+glowing dark jade throne inside a dark
+
+1124
+00:23:41,669 --> 00:23:41,679
+glowing dark jade throne inside a dark
+ 
+
+1125
+00:23:41,679 --> 00:23:43,909
+glowing dark jade throne inside a dark
+Asian palace. She stands up and pulls
+
+1126
+00:23:43,909 --> 00:23:43,919
+Asian palace. She stands up and pulls
+ 
+
+1127
+00:23:43,919 --> 00:23:46,549
+Asian palace. She stands up and pulls
+out a green lightsaber. Muted dark
+
+1128
+00:23:46,549 --> 00:23:46,559
+out a green lightsaber. Muted dark
+ 
+
+1129
+00:23:46,559 --> 00:23:49,190
+out a green lightsaber. Muted dark
+colors, high contrast between the dark
+
+1130
+00:23:49,190 --> 00:23:49,200
+colors, high contrast between the dark
+ 
+
+1131
+00:23:49,200 --> 00:23:51,430
+colors, high contrast between the dark
+green jade throne and the darker palace
+
+1132
+00:23:51,430 --> 00:23:51,440
+green jade throne and the darker palace
+ 
+
+1133
+00:23:51,440 --> 00:23:53,510
+green jade throne and the darker palace
+with intricate Asian designs and dragon
+
+1134
+00:23:53,510 --> 00:23:53,520
+with intricate Asian designs and dragon
+ 
+
+1135
+00:23:53,520 --> 00:23:56,470
+with intricate Asian designs and dragon
+statues behind the Jedi. Now, if we
+
+1136
+00:23:56,470 --> 00:23:56,480
+statues behind the Jedi. Now, if we
+ 
+
+1137
+00:23:56,480 --> 00:23:57,990
+statues behind the Jedi. Now, if we
+generate the video, I think we'll get
+
+1138
+00:23:57,990 --> 00:23:58,000
+generate the video, I think we'll get
+ 
+
+1139
+00:23:58,000 --> 00:23:59,909
+generate the video, I think we'll get
+something that looks a lot more visually
+
+1140
+00:23:59,909 --> 00:23:59,919
+something that looks a lot more visually
+ 
+
+1141
+00:23:59,919 --> 00:24:02,630
+something that looks a lot more visually
+aesthetic and cinematic.
+
+1142
+00:24:02,630 --> 00:24:02,640
+aesthetic and cinematic.
+ 
+
+1143
+00:24:02,640 --> 00:24:09,990
+aesthetic and cinematic.
+May the force be with you.
+
+1144
+00:24:09,990 --> 00:24:10,000
+
+ 
+
+1145
+00:24:10,000 --> 00:24:12,710
+
+If we compare the two video clips I
+
+1146
+00:24:12,710 --> 00:24:12,720
+If we compare the two video clips I
+ 
+
+1147
+00:24:12,720 --> 00:24:15,029
+If we compare the two video clips I
+generated, I mean, the before and after
+
+1148
+00:24:15,029 --> 00:24:15,039
+generated, I mean, the before and after
+ 
+
+1149
+00:24:15,039 --> 00:24:17,750
+generated, I mean, the before and after
+is enormous. So, you really need to
+
+1150
+00:24:17,750 --> 00:24:17,760
+is enormous. So, you really need to
+ 
+
+1151
+00:24:17,760 --> 00:24:19,269
+is enormous. So, you really need to
+describe the visual aesthetic you're
+
+1152
+00:24:19,269 --> 00:24:19,279
+describe the visual aesthetic you're
+ 
+
+1153
+00:24:19,279 --> 00:24:21,830
+describe the visual aesthetic you're
+going for inside the prompt more closely
+
+1154
+00:24:21,830 --> 00:24:21,840
+going for inside the prompt more closely
+ 
+
+1155
+00:24:21,840 --> 00:24:23,710
+going for inside the prompt more closely
+to get the best looking
+
+1156
+00:24:23,710 --> 00:24:23,720
+to get the best looking
+ 
+
+1157
+00:24:23,720 --> 00:24:26,470
+to get the best looking
+shots. When you're using image frames to
+
+1158
+00:24:26,470 --> 00:24:26,480
+shots. When you're using image frames to
+ 
+
+1159
+00:24:26,480 --> 00:24:28,390
+shots. When you're using image frames to
+video, it does also limit your
+
+1160
+00:24:28,390 --> 00:24:28,400
+video, it does also limit your
+ 
+
+1161
+00:24:28,400 --> 00:24:30,630
+video, it does also limit your
+creativity quite a bit. I'm starting
+
+1162
+00:24:30,630 --> 00:24:30,640
+creativity quite a bit. I'm starting
+ 
+
+1163
+00:24:30,640 --> 00:24:32,630
+creativity quite a bit. I'm starting
+with this image frame of a woman who's
+
+1164
+00:24:32,630 --> 00:24:32,640
+with this image frame of a woman who's
+ 
+
+1165
+00:24:32,640 --> 00:24:34,630
+with this image frame of a woman who's
+holding a lightsaber. And in the prompt,
+
+1166
+00:24:34,630 --> 00:24:34,640
+holding a lightsaber. And in the prompt,
+ 
+
+1167
+00:24:34,640 --> 00:24:36,549
+holding a lightsaber. And in the prompt,
+I'm saying the camera pans left and
+
+1168
+00:24:36,549 --> 00:24:36,559
+I'm saying the camera pans left and
+ 
+
+1169
+00:24:36,559 --> 00:24:39,909
+I'm saying the camera pans left and
+tilts up to reveal a giant AT&T vehicle
+
+1170
+00:24:39,909 --> 00:24:39,919
+tilts up to reveal a giant AT&T vehicle
+ 
+
+1171
+00:24:39,919 --> 00:24:42,710
+tilts up to reveal a giant AT&T vehicle
+from Star Wars cinematic film. If we
+
+1172
+00:24:42,710 --> 00:24:42,720
+from Star Wars cinematic film. If we
+ 
+
+1173
+00:24:42,720 --> 00:24:47,070
+from Star Wars cinematic film. If we
+generate this, here's what
+
+1174
+00:24:47,070 --> 00:24:47,080
+
+ 
+
+1175
+00:24:47,080 --> 00:24:49,430
+
+happens. Okay, so you see that? You see
+
+1176
+00:24:49,430 --> 00:24:49,440
+happens. Okay, so you see that? You see
+ 
+
+1177
+00:24:49,440 --> 00:24:51,269
+happens. Okay, so you see that? You see
+how it suddenly switches from the
+
+1178
+00:24:51,269 --> 00:24:51,279
+how it suddenly switches from the
+ 
+
+1179
+00:24:51,279 --> 00:24:54,950
+how it suddenly switches from the
+initial image frame to this like weird
+
+1180
+00:24:54,950 --> 00:24:54,960
+initial image frame to this like weird
+ 
+
+1181
+00:24:54,960 --> 00:24:57,830
+initial image frame to this like weird
+animation of her and like a black AT&T
+
+1182
+00:24:57,830 --> 00:24:57,840
+animation of her and like a black AT&T
+ 
+
+1183
+00:24:57,840 --> 00:24:59,669
+animation of her and like a black AT&T
+in the background. But instead, if we
+
+1184
+00:24:59,669 --> 00:24:59,679
+in the background. But instead, if we
+ 
+
+1185
+00:24:59,679 --> 00:25:02,230
+in the background. But instead, if we
+just use the text prompt by itself and
+
+1186
+00:25:02,230 --> 00:25:02,240
+just use the text prompt by itself and
+ 
+
+1187
+00:25:02,240 --> 00:25:04,070
+just use the text prompt by itself and
+describe the cinematic shot that we
+
+1188
+00:25:04,070 --> 00:25:04,080
+describe the cinematic shot that we
+ 
+
+1189
+00:25:04,080 --> 00:25:06,549
+describe the cinematic shot that we
+want, a close-up shot on a female Jedi
+
+1190
+00:25:06,549 --> 00:25:06,559
+want, a close-up shot on a female Jedi
+ 
+
+1191
+00:25:06,559 --> 00:25:08,390
+want, a close-up shot on a female Jedi
+from Star Wars with a white lightsaber
+
+1192
+00:25:08,390 --> 00:25:08,400
+from Star Wars with a white lightsaber
+ 
+
+1193
+00:25:08,400 --> 00:25:10,870
+from Star Wars with a white lightsaber
+on a dusty battlefield. The camera pans
+
+1194
+00:25:10,870 --> 00:25:10,880
+on a dusty battlefield. The camera pans
+ 
+
+1195
+00:25:10,880 --> 00:25:13,110
+on a dusty battlefield. The camera pans
+left and tilts up to reveal a giant AT&T
+
+1196
+00:25:13,110 --> 00:25:13,120
+left and tilts up to reveal a giant AT&T
+ 
+
+1197
+00:25:13,120 --> 00:25:15,909
+left and tilts up to reveal a giant AT&T
+vehicle from Star Wars. Dark orange dust
+
+1198
+00:25:15,909 --> 00:25:15,919
+vehicle from Star Wars. Dark orange dust
+ 
+
+1199
+00:25:15,919 --> 00:25:18,789
+vehicle from Star Wars. Dark orange dust
+and color toss. If we generate this
+
+1200
+00:25:18,789 --> 00:25:18,799
+and color toss. If we generate this
+ 
+
+1201
+00:25:18,799 --> 00:25:24,750
+and color toss. If we generate this
+without any reference
+
+1202
+00:25:24,750 --> 00:25:24,760
+
+ 
+
+1203
+00:25:24,760 --> 00:25:27,990
+
+image, the AT&T robot doesn't look
+
+1204
+00:25:27,990 --> 00:25:28,000
+image, the AT&T robot doesn't look
+ 
+
+1205
+00:25:28,000 --> 00:25:30,149
+image, the AT&T robot doesn't look
+exactly like it would inside a Star Wars
+
+1206
+00:25:30,149 --> 00:25:30,159
+exactly like it would inside a Star Wars
+ 
+
+1207
+00:25:30,159 --> 00:25:33,110
+exactly like it would inside a Star Wars
+movie, but you can see that the amount
+
+1208
+00:25:33,110 --> 00:25:33,120
+movie, but you can see that the amount
+ 
+
+1209
+00:25:33,120 --> 00:25:35,110
+movie, but you can see that the amount
+of creativity that you have and the
+
+1210
+00:25:35,110 --> 00:25:35,120
+of creativity that you have and the
+ 
+
+1211
+00:25:35,120 --> 00:25:36,870
+of creativity that you have and the
+control you have over the cinematic
+
+1212
+00:25:36,870 --> 00:25:36,880
+control you have over the cinematic
+ 
+
+1213
+00:25:36,880 --> 00:25:39,350
+control you have over the cinematic
+camera movements is way higher when
+
+1214
+00:25:39,350 --> 00:25:39,360
+camera movements is way higher when
+ 
+
+1215
+00:25:39,360 --> 00:25:41,830
+camera movements is way higher when
+using just the text prompt.
+
+1216
+00:25:41,830 --> 00:25:41,840
+using just the text prompt.
+ 
+
+1217
+00:25:41,840 --> 00:25:44,230
+using just the text prompt.
+There is another feature that I think is
+
+1218
+00:25:44,230 --> 00:25:44,240
+There is another feature that I think is
+ 
+
+1219
+00:25:44,240 --> 00:25:47,750
+There is another feature that I think is
+worth mentioning inside VO3 and that is
+
+1220
+00:25:47,750 --> 00:25:47,760
+worth mentioning inside VO3 and that is
+ 
+
+1221
+00:25:47,760 --> 00:25:51,350
+worth mentioning inside VO3 and that is
+this ingredients to video feature. Now
+
+1222
+00:25:51,350 --> 00:25:51,360
+this ingredients to video feature. Now
+ 
+
+1223
+00:25:51,360 --> 00:25:54,230
+this ingredients to video feature. Now
+what this does is let you combine
+
+1224
+00:25:54,230 --> 00:25:54,240
+what this does is let you combine
+ 
+
+1225
+00:25:54,240 --> 00:25:57,029
+what this does is let you combine
+multiple characters or ingredients
+
+1226
+00:25:57,029 --> 00:25:57,039
+multiple characters or ingredients
+ 
+
+1227
+00:25:57,039 --> 00:25:59,830
+multiple characters or ingredients
+inside the same scene. So for example,
+
+1228
+00:25:59,830 --> 00:25:59,840
+inside the same scene. So for example,
+ 
+
+1229
+00:25:59,840 --> 00:26:02,549
+inside the same scene. So for example,
+if I go to ingredients to video down
+
+1230
+00:26:02,549 --> 00:26:02,559
+if I go to ingredients to video down
+ 
+
+1231
+00:26:02,559 --> 00:26:05,110
+if I go to ingredients to video down
+here, I can upload three images inside
+
+1232
+00:26:05,110 --> 00:26:05,120
+here, I can upload three images inside
+ 
+
+1233
+00:26:05,120 --> 00:26:07,510
+here, I can upload three images inside
+the video generator. And so I've got a
+
+1234
+00:26:07,510 --> 00:26:07,520
+the video generator. And so I've got a
+ 
+
+1235
+00:26:07,520 --> 00:26:09,110
+the video generator. And so I've got a
+couple of different characters. Uh, I
+
+1236
+00:26:09,110 --> 00:26:09,120
+couple of different characters. Uh, I
+ 
+
+1237
+00:26:09,120 --> 00:26:12,630
+couple of different characters. Uh, I
+have this this woman with blue skin, got
+
+1238
+00:26:12,630 --> 00:26:12,640
+have this this woman with blue skin, got
+ 
+
+1239
+00:26:12,640 --> 00:26:15,310
+have this this woman with blue skin, got
+this guy, uh, a bounty hunter with red
+
+1240
+00:26:15,310 --> 00:26:15,320
+this guy, uh, a bounty hunter with red
+ 
+
+1241
+00:26:15,320 --> 00:26:19,990
+this guy, uh, a bounty hunter with red
+skin, and I'm also going to go with this
+
+1242
+00:26:19,990 --> 00:26:20,000
+skin, and I'm also going to go with this
+ 
+
+1243
+00:26:20,000 --> 00:26:22,630
+skin, and I'm also going to go with this
+landscape image. And in the prompt, we
+
+1244
+00:26:22,630 --> 00:26:22,640
+landscape image. And in the prompt, we
+ 
+
+1245
+00:26:22,640 --> 00:26:25,269
+landscape image. And in the prompt, we
+can go with the woman with blue skin and
+
+1246
+00:26:25,269 --> 00:26:25,279
+can go with the woman with blue skin and
+ 
+
+1247
+00:26:25,279 --> 00:26:27,430
+can go with the woman with blue skin and
+the man with red skin walk together on a
+
+1248
+00:26:27,430 --> 00:26:27,440
+the man with red skin walk together on a
+ 
+
+1249
+00:26:27,440 --> 00:26:29,990
+the man with red skin walk together on a
+rocky landscape. using this image def
+
+1250
+00:26:29,990 --> 00:26:30,000
+rocky landscape. using this image def
+ 
+
+1251
+00:26:30,000 --> 00:26:32,950
+rocky landscape. using this image def
+feature again. Uh it's not going to let
+
+1252
+00:26:32,950 --> 00:26:32,960
+feature again. Uh it's not going to let
+ 
+
+1253
+00:26:32,960 --> 00:26:36,789
+feature again. Uh it's not going to let
+you use the newest Veil 3 model and
+
+1254
+00:26:36,789 --> 00:26:36,799
+you use the newest Veil 3 model and
+ 
+
+1255
+00:26:36,799 --> 00:26:40,149
+you use the newest Veil 3 model and
+instead it'll force you to use an older
+
+1256
+00:26:40,149 --> 00:26:40,159
+instead it'll force you to use an older
+ 
+
+1257
+00:26:40,159 --> 00:26:43,750
+instead it'll force you to use an older
+Veo2 model. The quality isn't going to
+
+1258
+00:26:43,750 --> 00:26:43,760
+Veo2 model. The quality isn't going to
+ 
+
+1259
+00:26:43,760 --> 00:26:45,909
+Veo2 model. The quality isn't going to
+be as high. Uh it's also not going to
+
+1260
+00:26:45,909 --> 00:26:45,919
+be as high. Uh it's also not going to
+ 
+
+1261
+00:26:45,919 --> 00:26:48,710
+be as high. Uh it's also not going to
+give you the sound effects. This one was
+
+1262
+00:26:48,710 --> 00:26:48,720
+give you the sound effects. This one was
+ 
+
+1263
+00:26:48,720 --> 00:26:52,549
+give you the sound effects. This one was
+actually particularly bad. So I just ran
+
+1264
+00:26:52,549 --> 00:26:52,559
+actually particularly bad. So I just ran
+ 
+
+1265
+00:26:52,559 --> 00:26:54,630
+actually particularly bad. So I just ran
+this prompt again, except this time at
+
+1266
+00:26:54,630 --> 00:26:54,640
+this prompt again, except this time at
+ 
+
+1267
+00:26:54,640 --> 00:26:56,630
+this prompt again, except this time at
+the end I specifically told it to give
+
+1268
+00:26:56,630 --> 00:26:56,640
+the end I specifically told it to give
+ 
+
+1269
+00:26:56,640 --> 00:26:59,510
+the end I specifically told it to give
+it muted colors. um and also use the
+
+1270
+00:26:59,510 --> 00:26:59,520
+it muted colors. um and also use the
+ 
+
+1271
+00:26:59,520 --> 00:27:02,470
+it muted colors. um and also use the
+words cinematic film and we get
+
+1272
+00:27:02,470 --> 00:27:02,480
+words cinematic film and we get
+ 
+
+1273
+00:27:02,480 --> 00:27:05,669
+words cinematic film and we get
+something that's a bit more reasonable.
+
+1274
+00:27:05,669 --> 00:27:05,679
+something that's a bit more reasonable.
+ 
+
+1275
+00:27:05,679 --> 00:27:07,190
+something that's a bit more reasonable.
+So, this is a cool way that you can
+
+1276
+00:27:07,190 --> 00:27:07,200
+So, this is a cool way that you can
+ 
+
+1277
+00:27:07,200 --> 00:27:09,190
+So, this is a cool way that you can
+create videos with multiple of your own
+
+1278
+00:27:09,190 --> 00:27:09,200
+create videos with multiple of your own
+ 
+
+1279
+00:27:09,200 --> 00:27:11,269
+create videos with multiple of your own
+characters inside of them. Now, the
+
+1280
+00:27:11,269 --> 00:27:11,279
+characters inside of them. Now, the
+ 
+
+1281
+00:27:11,279 --> 00:27:13,830
+characters inside of them. Now, the
+characters aren't always going to match
+
+1282
+00:27:13,830 --> 00:27:13,840
+characters aren't always going to match
+ 
+
+1283
+00:27:13,840 --> 00:27:17,990
+characters aren't always going to match
+your reference images exactly. Um, this
+
+1284
+00:27:17,990 --> 00:27:18,000
+your reference images exactly. Um, this
+ 
+
+1285
+00:27:18,000 --> 00:27:20,310
+your reference images exactly. Um, this
+guy with the blue skin doesn't look
+
+1286
+00:27:20,310 --> 00:27:20,320
+guy with the blue skin doesn't look
+ 
+
+1287
+00:27:20,320 --> 00:27:22,990
+guy with the blue skin doesn't look
+quite like the reference image that I
+
+1288
+00:27:22,990 --> 00:27:23,000
+quite like the reference image that I
+ 
+
+1289
+00:27:23,000 --> 00:27:25,750
+quite like the reference image that I
+used, but I do think this is worth
+
+1290
+00:27:25,750 --> 00:27:25,760
+used, but I do think this is worth
+ 
+
+1291
+00:27:25,760 --> 00:27:27,830
+used, but I do think this is worth
+mentioning. Now, there are some more
+
+1292
+00:27:27,830 --> 00:27:27,840
+mentioning. Now, there are some more
+ 
+
+1293
+00:27:27,840 --> 00:27:30,950
+mentioning. Now, there are some more
+features inside Google Flow. You can use
+
+1294
+00:27:30,950 --> 00:27:30,960
+features inside Google Flow. You can use
+ 
+
+1295
+00:27:30,960 --> 00:27:34,789
+features inside Google Flow. You can use
+add to scene inside of a video. And what
+
+1296
+00:27:34,789 --> 00:27:34,799
+add to scene inside of a video. And what
+ 
+
+1297
+00:27:34,799 --> 00:27:37,510
+add to scene inside of a video. And what
+this will do is actually let you extend
+
+1298
+00:27:37,510 --> 00:27:37,520
+this will do is actually let you extend
+ 
+
+1299
+00:27:37,520 --> 00:27:40,870
+this will do is actually let you extend
+the video if you want. So, here was a
+
+1300
+00:27:40,870 --> 00:27:40,880
+the video if you want. So, here was a
+ 
+
+1301
+00:27:40,880 --> 00:27:44,909
+the video if you want. So, here was a
+clip I generated of the woman uh and the
+
+1302
+00:27:44,909 --> 00:27:44,919
+clip I generated of the woman uh and the
+ 
+
+1303
+00:27:44,919 --> 00:27:49,669
+clip I generated of the woman uh and the
+AT&T robot. So, uh we can jump to which
+
+1304
+00:27:49,669 --> 00:27:49,679
+AT&T robot. So, uh we can jump to which
+ 
+
+1305
+00:27:49,679 --> 00:27:51,590
+AT&T robot. So, uh we can jump to which
+is supposed to generate a different
+
+1306
+00:27:51,590 --> 00:27:51,600
+is supposed to generate a different
+ 
+
+1307
+00:27:51,600 --> 00:27:53,350
+is supposed to generate a different
+angle of the scene. It doesn't actually
+
+1308
+00:27:53,350 --> 00:27:53,360
+angle of the scene. It doesn't actually
+ 
+
+1309
+00:27:53,360 --> 00:27:55,110
+angle of the scene. It doesn't actually
+work that well based on what I've seen.
+
+1310
+00:27:55,110 --> 00:27:55,120
+work that well based on what I've seen.
+ 
+
+1311
+00:27:55,120 --> 00:27:57,590
+work that well based on what I've seen.
+We can extend the video though. The
+
+1312
+00:27:57,590 --> 00:27:57,600
+We can extend the video though. The
+ 
+
+1313
+00:27:57,600 --> 00:28:00,350
+We can extend the video though. The
+camera passed to an army of storm
+
+1314
+00:28:00,350 --> 00:28:00,360
+camera passed to an army of storm
+ 
+
+1315
+00:28:00,360 --> 00:28:04,630
+camera passed to an army of storm
+troopers marching. And again, uh this is
+
+1316
+00:28:04,630 --> 00:28:04,640
+troopers marching. And again, uh this is
+ 
+
+1317
+00:28:04,640 --> 00:28:08,549
+troopers marching. And again, uh this is
+limited to the Veil 2 quality video.
+
+1318
+00:28:08,549 --> 00:28:08,559
+limited to the Veil 2 quality video.
+ 
+
+1319
+00:28:08,559 --> 00:28:13,789
+limited to the Veil 2 quality video.
+Let's see what the extended clip looks
+
+1320
+00:28:13,789 --> 00:28:13,799
+
+ 
+
+1321
+00:28:13,799 --> 00:28:16,870
+
+like. And uh the camera does pan to this
+
+1322
+00:28:16,870 --> 00:28:16,880
+like. And uh the camera does pan to this
+ 
+
+1323
+00:28:16,880 --> 00:28:20,789
+like. And uh the camera does pan to this
+droid army marching behind. So it's
+
+1324
+00:28:20,789 --> 00:28:20,799
+droid army marching behind. So it's
+ 
+
+1325
+00:28:20,799 --> 00:28:23,269
+droid army marching behind. So it's
+okay. The quality will be a little bit
+
+1326
+00:28:23,269 --> 00:28:23,279
+okay. The quality will be a little bit
+ 
+
+1327
+00:28:23,279 --> 00:28:26,950
+okay. The quality will be a little bit
+lower in the extended video um because
+
+1328
+00:28:26,950 --> 00:28:26,960
+lower in the extended video um because
+ 
+
+1329
+00:28:26,960 --> 00:28:30,789
+lower in the extended video um because
+it's using a lower quality model, but it
+
+1330
+00:28:30,789 --> 00:28:30,799
+it's using a lower quality model, but it
+ 
+
+1331
+00:28:30,799 --> 00:28:32,590
+it's using a lower quality model, but it
+works okay for what it
+
+1332
+00:28:32,590 --> 00:28:32,600
+works okay for what it
+ 
+
+1333
+00:28:32,600 --> 00:28:35,350
+works okay for what it
+is. Here's a video clip I generated of
+
+1334
+00:28:35,350 --> 00:28:35,360
+is. Here's a video clip I generated of
+ 
+
+1335
+00:28:35,360 --> 00:28:38,549
+is. Here's a video clip I generated of
+the female Jedi standing up uh wielding
+
+1336
+00:28:38,549 --> 00:28:38,559
+the female Jedi standing up uh wielding
+ 
+
+1337
+00:28:38,559 --> 00:28:39,389
+the female Jedi standing up uh wielding
+a
+
+1338
+00:28:39,389 --> 00:28:39,399
+a
+ 
+
+1339
+00:28:39,399 --> 00:28:42,149
+a
+lightsaber. And this time, let's try the
+
+1340
+00:28:42,149 --> 00:28:42,159
+lightsaber. And this time, let's try the
+ 
+
+1341
+00:28:42,159 --> 00:28:45,190
+lightsaber. And this time, let's try the
+jump to feature, which which should give
+
+1342
+00:28:45,190 --> 00:28:45,200
+jump to feature, which which should give
+ 
+
+1343
+00:28:45,200 --> 00:28:47,990
+jump to feature, which which should give
+me a jump cut to a new video clip of the
+
+1344
+00:28:47,990 --> 00:28:48,000
+me a jump cut to a new video clip of the
+ 
+
+1345
+00:28:48,000 --> 00:28:51,110
+me a jump cut to a new video clip of the
+scene from a different camera angle. So,
+
+1346
+00:28:51,110 --> 00:28:51,120
+scene from a different camera angle. So,
+ 
+
+1347
+00:28:51,120 --> 00:28:52,750
+scene from a different camera angle. So,
+The
+
+1348
+00:28:52,750 --> 00:28:52,760
+The
+ 
+
+1349
+00:28:52,760 --> 00:28:57,510
+The
+Jedi walks down the hallway
+
+1350
+00:28:57,510 --> 00:28:57,520
+Jedi walks down the hallway
+ 
+
+1351
+00:28:57,520 --> 00:29:01,029
+Jedi walks down the hallway
+uh with her green lightsaber. And let's
+
+1352
+00:29:01,029 --> 00:29:01,039
+uh with her green lightsaber. And let's
+ 
+
+1353
+00:29:01,039 --> 00:29:04,710
+uh with her green lightsaber. And let's
+change this to follow. So we see her
+
+1354
+00:29:04,710 --> 00:29:04,720
+change this to follow. So we see her
+ 
+
+1355
+00:29:04,720 --> 00:29:07,350
+change this to follow. So we see her
+from behind. Now let's generate that and
+
+1356
+00:29:07,350 --> 00:29:07,360
+from behind. Now let's generate that and
+ 
+
+1357
+00:29:07,360 --> 00:29:13,710
+from behind. Now let's generate that and
+see what
+
+1358
+00:29:13,710 --> 00:29:13,720
+
+ 
+
+1359
+00:29:13,720 --> 00:29:16,950
+
+happens. Okay, so this basically just
+
+1360
+00:29:16,950 --> 00:29:16,960
+happens. Okay, so this basically just
+ 
+
+1361
+00:29:16,960 --> 00:29:19,510
+happens. Okay, so this basically just
+extended the video. Um, the jump to
+
+1362
+00:29:19,510 --> 00:29:19,520
+extended the video. Um, the jump to
+ 
+
+1363
+00:29:19,520 --> 00:29:21,990
+extended the video. Um, the jump to
+feature is kind of hit or miss.
+
+1364
+00:29:21,990 --> 00:29:22,000
+feature is kind of hit or miss.
+ 
+
+1365
+00:29:22,000 --> 00:29:25,750
+feature is kind of hit or miss.
+Sometimes it just extends the video. Um,
+
+1366
+00:29:25,750 --> 00:29:25,760
+Sometimes it just extends the video. Um,
+ 
+
+1367
+00:29:25,760 --> 00:29:28,230
+Sometimes it just extends the video. Um,
+but I did also try it on this clip of
+
+1368
+00:29:28,230 --> 00:29:28,240
+but I did also try it on this clip of
+ 
+
+1369
+00:29:28,240 --> 00:29:31,590
+but I did also try it on this clip of
+the bounty hunter where we pan from his
+
+1370
+00:29:31,590 --> 00:29:31,600
+the bounty hunter where we pan from his
+ 
+
+1371
+00:29:31,600 --> 00:29:33,510
+the bounty hunter where we pan from his
+blaster to his helmet and then I used
+
+1372
+00:29:33,510 --> 00:29:33,520
+blaster to his helmet and then I used
+ 
+
+1373
+00:29:33,520 --> 00:29:35,750
+blaster to his helmet and then I used
+the jump to feature to generate him
+
+1374
+00:29:35,750 --> 00:29:35,760
+the jump to feature to generate him
+ 
+
+1375
+00:29:35,760 --> 00:29:37,590
+the jump to feature to generate him
+walking away from a spaceship. So,
+
+1376
+00:29:37,590 --> 00:29:37,600
+walking away from a spaceship. So,
+ 
+
+1377
+00:29:37,600 --> 00:29:40,070
+walking away from a spaceship. So,
+sometimes it does work.
+
+1378
+00:29:40,070 --> 00:29:40,080
+sometimes it does work.
+ 
+
+1379
+00:29:40,080 --> 00:29:42,070
+sometimes it does work.
+So, I got this email from someone asking
+
+1380
+00:29:42,070 --> 00:29:42,080
+So, I got this email from someone asking
+ 
+
+1381
+00:29:42,080 --> 00:29:44,310
+So, I got this email from someone asking
+me if I could help them create a lawn
+
+1382
+00:29:44,310 --> 00:29:44,320
+me if I could help them create a lawn
+ 
+
+1383
+00:29:44,320 --> 00:29:47,669
+me if I could help them create a lawn
+1.5 hour AI movie, and they want to
+
+1384
+00:29:47,669 --> 00:29:47,679
+1.5 hour AI movie, and they want to
+ 
+
+1385
+00:29:47,679 --> 00:29:49,990
+1.5 hour AI movie, and they want to
+create something epic, like a Braveheart
+
+1386
+00:29:49,990 --> 00:29:50,000
+create something epic, like a Braveheart
+ 
+
+1387
+00:29:50,000 --> 00:29:52,389
+create something epic, like a Braveheart
+type of movie. Now, this sounds pretty
+
+1388
+00:29:52,389 --> 00:29:52,399
+type of movie. Now, this sounds pretty
+ 
+
+1389
+00:29:52,399 --> 00:29:55,110
+type of movie. Now, this sounds pretty
+cool. So, here's what I responded with.
+
+1390
+00:29:55,110 --> 00:29:55,120
+cool. So, here's what I responded with.
+ 
+
+1391
+00:29:55,120 --> 00:29:57,830
+cool. So, here's what I responded with.
+Oh, wow. For a 1.5 hour film, that's
+
+1392
+00:29:57,830 --> 00:29:57,840
+Oh, wow. For a 1.5 hour film, that's
+ 
+
+1393
+00:29:57,840 --> 00:29:59,590
+Oh, wow. For a 1.5 hour film, that's
+something you need a team for. I
+
+1394
+00:29:59,590 --> 00:29:59,600
+something you need a team for. I
+ 
+
+1395
+00:29:59,600 --> 00:30:01,909
+something you need a team for. I
+specialize in creating AI videos, but
+
+1396
+00:30:01,909 --> 00:30:01,919
+specialize in creating AI videos, but
+ 
+
+1397
+00:30:01,919 --> 00:30:03,909
+specialize in creating AI videos, but
+you need sound design, maybe voice
+
+1398
+00:30:03,909 --> 00:30:03,919
+you need sound design, maybe voice
+ 
+
+1399
+00:30:03,919 --> 00:30:06,710
+you need sound design, maybe voice
+actors, cinematographers, video editors.
+
+1400
+00:30:06,710 --> 00:30:06,720
+actors, cinematographers, video editors.
+ 
+
+1401
+00:30:06,720 --> 00:30:08,789
+actors, cinematographers, video editors.
+While AI is very powerful for high
+
+1402
+00:30:08,789 --> 00:30:08,799
+While AI is very powerful for high
+ 
+
+1403
+00:30:08,799 --> 00:30:11,029
+While AI is very powerful for high
+quality work, you still definitely need
+
+1404
+00:30:11,029 --> 00:30:11,039
+quality work, you still definitely need
+ 
+
+1405
+00:30:11,039 --> 00:30:12,830
+quality work, you still definitely need
+people with traditional film making
+
+1406
+00:30:12,830 --> 00:30:12,840
+people with traditional film making
+ 
+
+1407
+00:30:12,840 --> 00:30:15,350
+people with traditional film making
+experience. I actually wrote a longer
+
+1408
+00:30:15,350 --> 00:30:15,360
+experience. I actually wrote a longer
+ 
+
+1409
+00:30:15,360 --> 00:30:17,110
+experience. I actually wrote a longer
+email with more details trying to
+
+1410
+00:30:17,110 --> 00:30:17,120
+email with more details trying to
+ 
+
+1411
+00:30:17,120 --> 00:30:18,710
+email with more details trying to
+explain that you don't want to
+
+1412
+00:30:18,710 --> 00:30:18,720
+explain that you don't want to
+ 
+
+1413
+00:30:18,720 --> 00:30:21,430
+explain that you don't want to
+overestimate what AI can do. And you're
+
+1414
+00:30:21,430 --> 00:30:21,440
+overestimate what AI can do. And you're
+ 
+
+1415
+00:30:21,440 --> 00:30:23,669
+overestimate what AI can do. And you're
+going to love this. Here's the oneliner
+
+1416
+00:30:23,669 --> 00:30:23,679
+going to love this. Here's the oneliner
+ 
+
+1417
+00:30:23,679 --> 00:30:26,710
+going to love this. Here's the oneliner
+response I got. Hi, Veil 3 has all that.
+
+1418
+00:30:26,710 --> 00:30:26,720
+response I got. Hi, Veil 3 has all that.
+ 
+
+1419
+00:30:26,720 --> 00:30:29,669
+response I got. Hi, Veil 3 has all that.
+Thank you. So, I was a little irritated
+
+1420
+00:30:29,669 --> 00:30:29,679
+Thank you. So, I was a little irritated
+ 
+
+1421
+00:30:29,679 --> 00:30:31,190
+Thank you. So, I was a little irritated
+when I first read this because I don't
+
+1422
+00:30:31,190 --> 00:30:31,200
+when I first read this because I don't
+ 
+
+1423
+00:30:31,200 --> 00:30:33,350
+when I first read this because I don't
+think this person has experience, you
+
+1424
+00:30:33,350 --> 00:30:33,360
+think this person has experience, you
+ 
+
+1425
+00:30:33,360 --> 00:30:35,510
+think this person has experience, you
+know, working with AI and film. But, it
+
+1426
+00:30:35,510 --> 00:30:35,520
+know, working with AI and film. But, it
+ 
+
+1427
+00:30:35,520 --> 00:30:37,190
+know, working with AI and film. But, it
+got me thinking and I want to know what
+
+1428
+00:30:37,190 --> 00:30:37,200
+got me thinking and I want to know what
+ 
+
+1429
+00:30:37,200 --> 00:30:39,190
+got me thinking and I want to know what
+you think. Do you agree or do you
+
+1430
+00:30:39,190 --> 00:30:39,200
+you think. Do you agree or do you
+ 
+
+1431
+00:30:39,200 --> 00:30:41,909
+you think. Do you agree or do you
+disagree with me? Do you think that we
+
+1432
+00:30:41,909 --> 00:30:41,919
+disagree with me? Do you think that we
+ 
+
+1433
+00:30:41,919 --> 00:30:44,310
+disagree with me? Do you think that we
+could create a full Star Wars type of
+
+1434
+00:30:44,310 --> 00:30:44,320
+could create a full Star Wars type of
+ 
+
+1435
+00:30:44,320 --> 00:30:47,110
+could create a full Star Wars type of
+movie using the capabilities that VO3
+
+1436
+00:30:47,110 --> 00:30:47,120
+movie using the capabilities that VO3
+ 
+
+1437
+00:30:47,120 --> 00:30:49,190
+movie using the capabilities that VO3
+has? Let me know. I'm really curious to
+
+1438
+00:30:49,190 --> 00:30:49,200
+has? Let me know. I'm really curious to
+ 
+
+1439
+00:30:49,200 --> 00:30:51,029
+has? Let me know. I'm really curious to
+know what you think. As far as the cost
+
+1440
+00:30:51,029 --> 00:30:51,039
+know what you think. As far as the cost
+ 
+
+1441
+00:30:51,039 --> 00:30:54,389
+know what you think. As far as the cost
+goes, it is expensive. It's like 125 a
+
+1442
+00:30:54,389 --> 00:30:54,399
+goes, it is expensive. It's like 125 a
+ 
+
+1443
+00:30:54,399 --> 00:30:55,909
+goes, it is expensive. It's like 125 a
+month and then after 3 months that's
+
+1444
+00:30:55,909 --> 00:30:55,919
+month and then after 3 months that's
+ 
+
+1445
+00:30:55,919 --> 00:30:58,470
+month and then after 3 months that's
+going to go up to 250. Now, whether the
+
+1446
+00:30:58,470 --> 00:30:58,480
+going to go up to 250. Now, whether the
+ 
+
+1447
+00:30:58,480 --> 00:31:00,789
+going to go up to 250. Now, whether the
+cost is worth it, that's up to you. What
+
+1448
+00:31:00,789 --> 00:31:00,799
+cost is worth it, that's up to you. What
+ 
+
+1449
+00:31:00,799 --> 00:31:02,710
+cost is worth it, that's up to you. What
+do I think? I think nice things cost
+
+1450
+00:31:02,710 --> 00:31:02,720
+do I think? I think nice things cost
+ 
+
+1451
+00:31:02,720 --> 00:31:04,710
+do I think? I think nice things cost
+money and you pay for the quality that
+
+1452
+00:31:04,710 --> 00:31:04,720
+money and you pay for the quality that
+ 
+
+1453
+00:31:04,720 --> 00:31:06,630
+money and you pay for the quality that
+you get. Now, there's tons of other
+
+1454
+00:31:06,630 --> 00:31:06,640
+you get. Now, there's tons of other
+ 
+
+1455
+00:31:06,640 --> 00:31:08,630
+you get. Now, there's tons of other
+awesome AI video generators out there
+
+1456
+00:31:08,630 --> 00:31:08,640
+awesome AI video generators out there
+ 
+
+1457
+00:31:08,640 --> 00:31:10,549
+awesome AI video generators out there
+with awesome features like lip sync,
+
+1458
+00:31:10,549 --> 00:31:10,559
+with awesome features like lip sync,
+ 
+
+1459
+00:31:10,559 --> 00:31:12,389
+with awesome features like lip sync,
+making longer video clips, things like
+
+1460
+00:31:12,389 --> 00:31:12,399
+making longer video clips, things like
+ 
+
+1461
+00:31:12,399 --> 00:31:15,190
+making longer video clips, things like
+that. I did a complete breakdown between
+
+1462
+00:31:15,190 --> 00:31:15,200
+that. I did a complete breakdown between
+ 
+
+1463
+00:31:15,200 --> 00:31:17,430
+that. I did a complete breakdown between
+the other best AI video generators that
+
+1464
+00:31:17,430 --> 00:31:17,440
+the other best AI video generators that
+ 
+
+1465
+00:31:17,440 --> 00:31:19,990
+the other best AI video generators that
+I've seen and created a same animation
+
+1466
+00:31:19,990 --> 00:31:20,000
+I've seen and created a same animation
+ 
+
+1467
+00:31:20,000 --> 00:31:21,830
+I've seen and created a same animation
+using each of them to see which one is
+
+1468
+00:31:21,830 --> 00:31:21,840
+using each of them to see which one is
+ 
+
+1469
+00:31:21,840 --> 00:31:23,830
+using each of them to see which one is
+the best. If you want to see that video,
+
+1470
+00:31:23,830 --> 00:31:23,840
+the best. If you want to see that video,
+ 
+
+1471
+00:31:23,840 --> 00:31:28,240
+the best. If you want to see that video,
+go watch this tutorial right here.
+

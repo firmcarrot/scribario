@@ -1,0 +1,2690 @@
+
+Google VO just had one of the biggest
+Google VO just had one of the biggest
+ 
+Google VO just had one of the biggest
+launches they've had so far. They went
+launches they've had so far. They went
+ 
+launches they've had so far. They went
+from V3 to V3.1.
+
+ 
+
+Wow. On the surface, when I saw this
+Wow. On the surface, when I saw this
+ 
+Wow. On the surface, when I saw this
+headline, I thought to myself, well,
+headline, I thought to myself, well,
+ 
+headline, I thought to myself, well,
+that can't be that interesting. But
+that can't be that interesting. But
+ 
+that can't be that interesting. But
+after digging into it, Google's actually
+after digging into it, Google's actually
+ 
+after digging into it, Google's actually
+made some pretty significant updates to
+made some pretty significant updates to
+ 
+made some pretty significant updates to
+their video generation model. So, in
+their video generation model. So, in
+ 
+their video generation model. So, in
+this video, I want to walk you through
+this video, I want to walk you through
+ 
+this video, I want to walk you through
+all the changes, what this means for
+all the changes, what this means for
+ 
+all the changes, what this means for
+Google and the future of VO, and demo
+Google and the future of VO, and demo
+ 
+Google and the future of VO, and demo
+every update for you. and we'll also
+every update for you. and we'll also
+ 
+every update for you. and we'll also
+take a peek at how it compares to Sora
+take a peek at how it compares to Sora
+ 
+take a peek at how it compares to Sora
+2. It's going to be a fun one. So, let's
+2. It's going to be a fun one. So, let's
+ 
+2. It's going to be a fun one. So, let's
+dive in. If you're not familiar with
+dive in. If you're not familiar with
+ 
+dive in. If you're not familiar with
+Google's VO, it was really the first
+Google's VO, it was really the first
+ 
+Google's VO, it was really the first
+video model that generated both pretty
+video model that generated both pretty
+ 
+video model that generated both pretty
+dang realistic looking videos and audio
+dang realistic looking videos and audio
+ 
+dang realistic looking videos and audio
+at the same time. So, you can generate
+at the same time. So, you can generate
+ 
+at the same time. So, you can generate
+videos that have dialogue and background
+videos that have dialogue and background
+ 
+videos that have dialogue and background
+music and things like that just from
+music and things like that just from
+ 
+music and things like that just from
+your initial text prompt. With these
+your initial text prompt. With these
+ 
+your initial text prompt. With these
+video tools, you can access them from
+video tools, you can access them from
+ 
+video tools, you can access them from
+inside of Google's Flow platform, which
+inside of Google's Flow platform, which
+ 
+inside of Google's Flow platform, which
+is sort of a little bit more of an
+is sort of a little bit more of an
+ 
+is sort of a little bit more of an
+advanced video editor that Google put
+advanced video editor that Google put
+ 
+advanced video editor that Google put
+out. You can generate videos directly
+out. You can generate videos directly
+ 
+out. You can generate videos directly
+inside of Gemini. You go to
+inside of Gemini. You go to
+ 
+inside of Gemini. You go to
+gemini.google.com
+gemini.google.com
+ 
+gemini.google.com
+and click on create video and you can
+and click on create video and you can
+ 
+and click on create video and you can
+generate videos here. And it's baked
+generate videos here. And it's baked
+ 
+generate videos here. And it's baked
+into a ton of third-party apps where you
+into a ton of third-party apps where you
+ 
+into a ton of third-party apps where you
+can generate directly from those apps.
+can generate directly from those apps.
+ 
+can generate directly from those apps.
+For instance, you could use it directly
+For instance, you could use it directly
+ 
+For instance, you could use it directly
+inside of Leonardo. And from what I can
+inside of Leonardo. And from what I can
+ 
+inside of Leonardo. And from what I can
+tell, I've done some digging. Leonardo
+tell, I've done some digging. Leonardo
+ 
+tell, I've done some digging. Leonardo
+is probably still the least expensive
+is probably still the least expensive
+ 
+is probably still the least expensive
+place to actually generate with VO. Now,
+place to actually generate with VO. Now,
+ 
+place to actually generate with VO. Now,
+I am an adviser for Leonardo and I do
+I am an adviser for Leonardo and I do
+ 
+I am an adviser for Leonardo and I do
+have some equity in the company. So,
+have some equity in the company. So,
+ 
+have some equity in the company. So,
+yes, I have a little bit of bias, but it
+yes, I have a little bit of bias, but it
+ 
+yes, I have a little bit of bias, but it
+still stands that I believe it is the
+still stands that I believe it is the
+ 
+still stands that I believe it is the
+cheapest place to generate with VO. So,
+cheapest place to generate with VO. So,
+ 
+cheapest place to generate with VO. So,
+here's the updates we got with VO 3.1.
+here's the updates we got with VO 3.1.
+ 
+here's the updates we got with VO 3.1.
+They've got a new ingredients to video
+They've got a new ingredients to video
+ 
+They've got a new ingredients to video
+feature where you can use multiple
+feature where you can use multiple
+ 
+feature where you can use multiple
+reference images to control the
+reference images to control the
+ 
+reference images to control the
+characters, objects, and style. So, for
+characters, objects, and style. So, for
+ 
+characters, objects, and style. So, for
+example, taking three images like this,
+example, taking three images like this,
+ 
+example, taking three images like this,
+we've got an environment, some clothing,
+we've got an environment, some clothing,
+ 
+we've got an environment, some clothing,
+and a woman's face. And it generates
+and a woman's face. And it generates
+ 
+and a woman's face. And it generates
+this video with all of those elements in
+this video with all of those elements in
+ 
+this video with all of those elements in
+it. Another example, this motorcyclist
+it. Another example, this motorcyclist
+ 
+it. Another example, this motorcyclist
+out on the dunes, and this like I don't
+out on the dunes, and this like I don't
+ 
+out on the dunes, and this like I don't
+know what this is, some sort of like
+know what this is, some sort of like
+ 
+know what this is, some sort of like
+gemstone or something. When combined
+gemstone or something. When combined
+ 
+gemstone or something. When combined
+gives us something that looks like this.
+gives us something that looks like this.
+ 
+gives us something that looks like this.
+They also added frames to video, which
+They also added frames to video, which
+ 
+They also added frames to video, which
+is basically first and last frame. You
+is basically first and last frame. You
+ 
+is basically first and last frame. You
+can give it the first frame with an
+can give it the first frame with an
+ 
+can give it the first frame with an
+image and the last frame with an image,
+image and the last frame with an image,
+ 
+image and the last frame with an image,
+and it tries to animate between those
+and it tries to animate between those
+ 
+and it tries to animate between those
+two frames. So, for example, they gave
+two frames. So, for example, they gave
+ 
+two frames. So, for example, they gave
+it this frame of a barn and this frame
+it this frame of a barn and this frame
+ 
+it this frame of a barn and this frame
+of somebody riding a horse and it
+of somebody riding a horse and it
+ 
+of somebody riding a horse and it
+created this animation where it goes
+created this animation where it goes
+ 
+created this animation where it goes
+through the barn and then finishes on
+through the barn and then finishes on
+ 
+through the barn and then finishes on
+the other side with the person riding
+the other side with the person riding
+ 
+the other side with the person riding
+the horse. They've made it easier to
+the horse. They've made it easier to
+ 
+the horse. They've made it easier to
+extend your videos so you can create
+extend your videos so you can create
+ 
+extend your videos so you can create
+longer videos. It says even lasting for
+longer videos. It says even lasting for
+ 
+longer videos. It says even lasting for
+a minute or more. So, it basically takes
+a minute or more. So, it basically takes
+ 
+a minute or more. So, it basically takes
+the last frame of every video and uses
+the last frame of every video and uses
+ 
+the last frame of every video and uses
+that as the starting frame of the next
+that as the starting frame of the next
+ 
+that as the starting frame of the next
+video and then stitches them together
+video and then stitches them together
+ 
+video and then stitches them together
+for you. Now, you've been able to do
+for you. Now, you've been able to do
+ 
+for you. Now, you've been able to do
+that in Flow already, but it seems like
+that in Flow already, but it seems like
+ 
+that in Flow already, but it seems like
+now you can do it outside of Flow. I
+now you can do it outside of Flow. I
+ 
+now you can do it outside of Flow. I
+think. And they're also giving us more
+think. And they're also giving us more
+ 
+think. And they're also giving us more
+control over editing the video that it
+control over editing the video that it
+ 
+control over editing the video that it
+output for us. So, for example, you can
+output for us. So, for example, you can
+ 
+output for us. So, for example, you can
+add new elements to any scene. And
+add new elements to any scene. And
+ 
+add new elements to any scene. And
+pretty soon, you'll be able to remove
+pretty soon, you'll be able to remove
+ 
+pretty soon, you'll be able to remove
+unwanted objects or characters. So, the
+unwanted objects or characters. So, the
+ 
+unwanted objects or characters. So, the
+removing things from a video isn't
+removing things from a video isn't
+ 
+removing things from a video isn't
+available yet, but you can add things
+available yet, but you can add things
+ 
+available yet, but you can add things
+into a video after it's been generated.
+into a video after it's been generated.
+ 
+into a video after it's been generated.
+So, here's an example where they have
+So, here's an example where they have
+ 
+So, here's an example where they have
+this like snowy scene here that's in a
+this like snowy scene here that's in a
+ 
+this like snowy scene here that's in a
+video, and then they added this man
+video, and then they added this man
+ 
+video, and then they added this man
+walking through the snowy scene. They
+walking through the snowy scene. They
+ 
+walking through the snowy scene. They
+have this astronaut and they removed
+have this astronaut and they removed
+ 
+have this astronaut and they removed
+this giant Death Star looking thing that
+this giant Death Star looking thing that
+ 
+this giant Death Star looking thing that
+was there. Now that we know what the
+was there. Now that we know what the
+ 
+was there. Now that we know what the
+VO3.1 update is, let's go try it and
+VO3.1 update is, let's go try it and
+ 
+VO3.1 update is, let's go try it and
+maybe do some head-to-head comparisons
+maybe do some head-to-head comparisons
+ 
+maybe do some head-to-head comparisons
+against Sora 2. See which one does it
+against Sora 2. See which one does it
+ 
+against Sora 2. See which one does it
+better. We'll start by playing around
+better. We'll start by playing around
+ 
+better. We'll start by playing around
+with it inside of Flow. You can use Flow
+with it inside of Flow. You can use Flow
+ 
+with it inside of Flow. You can use Flow
+by going to labs.google/fx/tools/flow.
+
+ 
+
+Vo 3.1 is available in over 150
+Vo 3.1 is available in over 150
+ 
+Vo 3.1 is available in over 150
+countries right now, but you do need to
+countries right now, but you do need to
+ 
+countries right now, but you do need to
+be on one of Google's paid plans. So,
+be on one of Google's paid plans. So,
+ 
+be on one of Google's paid plans. So,
+either their $20 a month plan or their
+either their $20 a month plan or their
+ 
+either their $20 a month plan or their
+$250 a month plan. But if you just want
+$250 a month plan. But if you just want
+ 
+$250 a month plan. But if you just want
+to play around with it, you can get like
+to play around with it, you can get like
+ 
+to play around with it, you can get like
+a 30-day free trial. And again, probably
+a 30-day free trial. And again, probably
+ 
+a 30-day free trial. And again, probably
+the least expensive way to use it if you
+the least expensive way to use it if you
+ 
+the least expensive way to use it if you
+are going to pay might be Leonardo.
+are going to pay might be Leonardo.
+ 
+are going to pay might be Leonardo.
+Just, you know, take my advice with a
+Just, you know, take my advice with a
+ 
+Just, you know, take my advice with a
+grain of salt there. But let's go ahead
+grain of salt there. But let's go ahead
+ 
+grain of salt there. But let's go ahead
+and dive in and test it in Flow cuz it
+and dive in and test it in Flow cuz it
+ 
+and dive in and test it in Flow cuz it
+did look like all of the features that
+did look like all of the features that
+ 
+did look like all of the features that
+were mentioned on their announcement are
+were mentioned on their announcement are
+ 
+were mentioned on their announcement are
+available inside of Flow here. So, let's
+available inside of Flow here. So, let's
+ 
+available inside of Flow here. So, let's
+go ahead and create a new project. And
+go ahead and create a new project. And
+ 
+go ahead and create a new project. And
+we can see on this drop down here inside
+we can see on this drop down here inside
+ 
+we can see on this drop down here inside
+this new project, we have text to video
+this new project, we have text to video
+ 
+this new project, we have text to video
+which was always there, frames to video,
+which was always there, frames to video,
+ 
+which was always there, frames to video,
+and ingredients to video. Frames to
+and ingredients to video. Frames to
+ 
+and ingredients to video. Frames to
+video is the start to end frame.
+video is the start to end frame.
+ 
+video is the start to end frame.
+Ingredients to video is where you can
+Ingredients to video is where you can
+ 
+Ingredients to video is where you can
+give it three images and it will combine
+give it three images and it will combine
+ 
+give it three images and it will combine
+all of those elements into a video. If
+all of those elements into a video. If
+ 
+all of those elements into a video. If
+you've ever used Google's whisk, it's
+you've ever used Google's whisk, it's
+ 
+you've ever used Google's whisk, it's
+like the video version of that. We also
+like the video version of that. We also
+ 
+like the video version of that. We also
+have two V3 models. We've got 3.1 fast,
+have two V3 models. We've got 3.1 fast,
+ 
+have two V3 models. We've got 3.1 fast,
+which will generate faster but probably
+which will generate faster but probably
+ 
+which will generate faster but probably
+be slightly lower quality. And then we
+be slightly lower quality. And then we
+ 
+be slightly lower quality. And then we
+have VO3.1 quality, which will take a
+have VO3.1 quality, which will take a
+ 
+have VO3.1 quality, which will take a
+little bit longer to generate, but
+little bit longer to generate, but
+ 
+little bit longer to generate, but
+ideally be higher quality. You can have
+ideally be higher quality. You can have
+ 
+ideally be higher quality. You can have
+it output one to four videos per prompt.
+it output one to four videos per prompt.
+ 
+it output one to four videos per prompt.
+And you can choose between landscape and
+And you can choose between landscape and
+ 
+And you can choose between landscape and
+portrait. Let's start by doing an
+portrait. Let's start by doing an
+ 
+portrait. Let's start by doing an
+ingredients to video where we can add
+ingredients to video where we can add
+ 
+ingredients to video where we can add
+three different images here. Let's add
+three different images here. Let's add
+ 
+three different images here. Let's add
+this image of myself here. I'll just go
+this image of myself here. I'll just go
+ 
+this image of myself here. I'll just go
+ahead and crop it up here. That's fine.
+ahead and crop it up here. That's fine.
+ 
+ahead and crop it up here. That's fine.
+I'll upload this image of a moose hat
+I'll upload this image of a moose hat
+ 
+I'll upload this image of a moose hat
+that I found. I don't like that it
+that I found. I don't like that it
+ 
+that I found. I don't like that it
+forces you to crop it in the exact same
+forces you to crop it in the exact same
+ 
+forces you to crop it in the exact same
+way. That's kind of annoying. It's going
+way. That's kind of annoying. It's going
+ 
+way. That's kind of annoying. It's going
+to lose the ear flaps. That's
+to lose the ear flaps. That's
+ 
+to lose the ear flaps. That's
+unfortunate. But let's go ahead and just
+unfortunate. But let's go ahead and just
+ 
+unfortunate. But let's go ahead and just
+see what happens. So, we'll go ahead and
+see what happens. So, we'll go ahead and
+ 
+see what happens. So, we'll go ahead and
+crop that. And then let's add this candy
+crop that. And then let's add this candy
+ 
+crop that. And then let's add this candy
+world AI generated image here just for
+world AI generated image here just for
+ 
+world AI generated image here just for
+fun randomness. Hey, it's the right
+fun randomness. Hey, it's the right
+ 
+fun randomness. Hey, it's the right
+aspect ratio. All right. And then we'll
+aspect ratio. All right. And then we'll
+ 
+aspect ratio. All right. And then we'll
+give it the prompt, "A man with a moose
+give it the prompt, "A man with a moose
+ 
+give it the prompt, "A man with a moose
+hat walks through a colorful Candy Land
+hat walks through a colorful Candy Land
+ 
+hat walks through a colorful Candy Land
+world." You know what? Let's not walk
+world." You know what? Let's not walk
+ 
+world." You know what? Let's not walk
+through it. Let's dance through it. If
+through it. Let's dance through it. If
+ 
+through it. Let's dance through it. If
+you're wearing a moose hat in a
+you're wearing a moose hat in a
+ 
+you're wearing a moose hat in a
+Candyland world, you're going to be
+Candyland world, you're going to be
+ 
+Candyland world, you're going to be
+dancing. All right, let's go ahead and
+dancing. All right, let's go ahead and
+ 
+dancing. All right, let's go ahead and
+see what it gives us. Let's generate it
+see what it gives us. Let's generate it
+ 
+see what it gives us. Let's generate it
+on fast first, and then we'll generate
+on fast first, and then we'll generate
+ 
+on fast first, and then we'll generate
+it one more time at quality and see the
+it one more time at quality and see the
+ 
+it one more time at quality and see the
+difference. Now, this is one I can't
+difference. Now, this is one I can't
+ 
+difference. Now, this is one I can't
+quite compare to Sora yet because Sora
+quite compare to Sora yet because Sora
+ 
+quite compare to Sora yet because Sora
+doesn't have the feature to give it
+doesn't have the feature to give it
+ 
+doesn't have the feature to give it
+three ingredient images. So, there's no
+three ingredient images. So, there's no
+ 
+three ingredient images. So, there's no
+real comparison here yet. Now, I was
+real comparison here yet. Now, I was
+ 
+real comparison here yet. Now, I was
+going to do the exact same prompt using
+going to do the exact same prompt using
+ 
+going to do the exact same prompt using
+VO3.1 quality with the ingredients to
+VO3.1 quality with the ingredients to
+ 
+VO3.1 quality with the ingredients to
+video, but as soon as I hit submit, it
+video, but as soon as I hit submit, it
+ 
+video, but as soon as I hit submit, it
+says this feature isn't supported on
+says this feature isn't supported on
+ 
+says this feature isn't supported on
+VO3.1 quality. So, apparently, if you
+VO3.1 quality. So, apparently, if you
+ 
+VO3.1 quality. So, apparently, if you
+want to use this ingredients to video
+want to use this ingredients to video
+ 
+want to use this ingredients to video
+feature where you can upload three
+feature where you can upload three
+ 
+feature where you can upload three
+images and incorporate them into your
+images and incorporate them into your
+ 
+images and incorporate them into your
+video, you got to be using VO 3.1 fast
+video, you got to be using VO 3.1 fast
+ 
+video, you got to be using VO 3.1 fast
+to make that work. So, just a quick note
+to make that work. So, just a quick note
+ 
+to make that work. So, just a quick note
+there. Can't even compare it to quality.
+there. Can't even compare it to quality.
+ 
+there. Can't even compare it to quality.
+not available yet, but let's take a look
+not available yet, but let's take a look
+ 
+not available yet, but let's take a look
+at what we got. Here's our first video.
+
+ 
+
+Here's the second video it generated.
+
+ 
+
+Here's another one.
+Here's another one.
+ 
+Here's another one.
+[Music]
+
+ 
+
+It changed my pants color and I don't
+It changed my pants color and I don't
+ 
+It changed my pants color and I don't
+know why. Also, it's interesting how on
+know why. Also, it's interesting how on
+ 
+know why. Also, it's interesting how on
+this video the moose hat just kind of
+this video the moose hat just kind of
+ 
+this video the moose hat just kind of
+changes a couple seconds into it. And
+changes a couple seconds into it. And
+ 
+changes a couple seconds into it. And
+then here's the final one that it
+then here's the final one that it
+ 
+then here's the final one that it
+generated.
+
+ 
+
+>> I love it. I love it so much. This is
+>> I love it. I love it so much. This is
+ 
+>> I love it. I love it so much. This is
+what I love AI for. like just silly
+what I love AI for. like just silly
+ 
+what I love AI for. like just silly
+randomness that I mean, you're going to
+randomness that I mean, you're going to
+ 
+randomness that I mean, you're going to
+see it because I'm making this video,
+see it because I'm making this video,
+ 
+see it because I'm making this video,
+but if I didn't make YouTube videos, I
+but if I didn't make YouTube videos, I
+ 
+but if I didn't make YouTube videos, I
+would just make stuff for my own
+would just make stuff for my own
+ 
+would just make stuff for my own
+entertainment and probably just never
+entertainment and probably just never
+ 
+entertainment and probably just never
+share it. But let's go ahead and pick
+share it. But let's go ahead and pick
+ 
+share it. But let's go ahead and pick
+one of these videos as a starting video.
+one of these videos as a starting video.
+ 
+one of these videos as a starting video.
+I think the one where I'm singing in
+I think the one where I'm singing in
+ 
+I think the one where I'm singing in
+another language or maybe gibberish
+another language or maybe gibberish
+ 
+another language or maybe gibberish
+language. I don't know what language
+language. I don't know what language
+ 
+language. I don't know what language
+that was. But let's go ahead and click
+that was. But let's go ahead and click
+ 
+that was. But let's go ahead and click
+add to scene because I want to now
+add to scene because I want to now
+ 
+add to scene because I want to now
+extend the video. So, we'll go ahead and
+extend the video. So, we'll go ahead and
+ 
+extend the video. So, we'll go ahead and
+click on our little plus. We'll click
+click on our little plus. We'll click
+ 
+click on our little plus. We'll click
+extend. And then it says what should
+extend. And then it says what should
+ 
+extend. And then it says what should
+happen next. Let's go ahead and do the
+happen next. Let's go ahead and do the
+ 
+happen next. Let's go ahead and do the
+man does a backflip and then gives a
+man does a backflip and then gives a
+ 
+man does a backflip and then gives a
+double thumbs up to the camera. And now
+double thumbs up to the camera. And now
+ 
+double thumbs up to the camera. And now
+here's our full 15 second video.
+
+ 
+
+[Music]
+
+ 
+
+Got the thumbs up right. Physics issues
+Got the thumbs up right. Physics issues
+ 
+Got the thumbs up right. Physics issues
+with that back flip there. It did give
+with that back flip there. It did give
+ 
+with that back flip there. It did give
+us some variations though. So here's
+us some variations though. So here's
+ 
+us some variations though. So here's
+another variation.
+another variation.
+ 
+another variation.
+Still couldn't make it all the way
+Still couldn't make it all the way
+ 
+Still couldn't make it all the way
+around. Here's another variation.
+around. Here's another variation.
+ 
+around. Here's another variation.
+And
+And
+ 
+And
+I
+I
+ 
+I
+don't know what kind of flip that was.
+don't know what kind of flip that was.
+ 
+don't know what kind of flip that was.
+That was a really interesting flip right
+That was a really interesting flip right
+ 
+That was a really interesting flip right
+there.
+there.
+ 
+there.
+And then we got uh this one
+And then we got uh this one
+ 
+And then we got uh this one
+side flip. I mean, this got some physics
+side flip. I mean, this got some physics
+ 
+side flip. I mean, this got some physics
+issues clearly. Now, I know this isn't
+issues clearly. Now, I know this isn't
+ 
+issues clearly. Now, I know this isn't
+an applesto apples comparison, but I
+an applesto apples comparison, but I
+ 
+an applesto apples comparison, but I
+jumped over to Sora 2 and basically told
+jumped over to Sora 2 and basically told
+ 
+jumped over to Sora 2 and basically told
+it to just give me a video of me doing a
+it to just give me a video of me doing a
+ 
+it to just give me a video of me doing a
+backflip and then giving two thumbs up
+backflip and then giving two thumbs up
+ 
+backflip and then giving two thumbs up
+to the camera. And this is what Sora 2
+to the camera. And this is what Sora 2
+ 
+to the camera. And this is what Sora 2
+generated. I don't have the moose hat or
+generated. I don't have the moose hat or
+ 
+generated. I don't have the moose hat or
+Candyland or dancing or any of that
+Candyland or dancing or any of that
+ 
+Candyland or dancing or any of that
+stuff, but it's definitely a bit better
+stuff, but it's definitely a bit better
+ 
+stuff, but it's definitely a bit better
+at the physics. Check it out.
+at the physics. Check it out.
+ 
+at the physics. Check it out.
+All right, here we go.
+
+ 
+
+So, as you can see, it figured out how
+So, as you can see, it figured out how
+ 
+So, as you can see, it figured out how
+to do the backflip a little bit better
+to do the backflip a little bit better
+ 
+to do the backflip a little bit better
+than Vio did. Most AI coding tools feel
+than Vio did. Most AI coding tools feel
+ 
+than Vio did. Most AI coding tools feel
+like they have to be babysat, and I
+like they have to be babysat, and I
+ 
+like they have to be babysat, and I
+already have two kids. But Warp is a
+already have two kids. But Warp is a
+ 
+already have two kids. But Warp is a
+fully grown, rentpaying adult with a
+fully grown, rentpaying adult with a
+ 
+fully grown, rentpaying adult with a
+six-f figureure salary. It doesn't just
+six-f figureure salary. It doesn't just
+ 
+six-f figureure salary. It doesn't just
+spit out code that needs fixing later.
+spit out code that needs fixing later.
+ 
+spit out code that needs fixing later.
+It actually understands your whole
+It actually understands your whole
+ 
+It actually understands your whole
+project, keeps track of changes, and
+project, keeps track of changes, and
+ 
+project, keeps track of changes, and
+intelligently works with you. Let me
+intelligently works with you. Let me
+ 
+intelligently works with you. Let me
+explain how. Instead of guessing what's
+explain how. Instead of guessing what's
+ 
+explain how. Instead of guessing what's
+wrong with your code, Warp can actually
+wrong with your code, Warp can actually
+ 
+wrong with your code, Warp can actually
+index your entire repo in real time.
+index your entire repo in real time.
+ 
+index your entire repo in real time.
+That means when you ask it to fix a bug,
+That means when you ask it to fix a bug,
+ 
+That means when you ask it to fix a bug,
+it doesn't just patch one file, it
+it doesn't just patch one file, it
+ 
+it doesn't just patch one file, it
+understands how everything connects
+understands how everything connects
+ 
+understands how everything connects
+across multiple repos and updates them
+across multiple repos and updates them
+ 
+across multiple repos and updates them
+in sync. And every change shows up in
+in sync. And every change shows up in
+ 
+in sync. And every change shows up in
+Warp's dedicated review panel. So, if
+Warp's dedicated review panel. So, if
+ 
+Warp's dedicated review panel. So, if
+there's a problem, you know exactly what
+there's a problem, you know exactly what
+ 
+there's a problem, you know exactly what
+it is and can work it out like adults.
+it is and can work it out like adults.
+ 
+it is and can work it out like adults.
+It lets you skim through the diffs, edit
+It lets you skim through the diffs, edit
+ 
+It lets you skim through the diffs, edit
+them in line, or just tell Warp in plain
+them in line, or just tell Warp in plain
+ 
+them in line, or just tell Warp in plain
+English how to tweak it. make this more
+English how to tweak it. make this more
+ 
+English how to tweak it. make this more
+efficient or use a different library.
+efficient or use a different library.
+ 
+efficient or use a different library.
+You can also run multiple AI agents at
+You can also run multiple AI agents at
+ 
+You can also run multiple AI agents at
+once. One debugging, another updating
+once. One debugging, another updating
+ 
+once. One debugging, another updating
+tests, another handling deployment
+tests, another handling deployment
+ 
+tests, another handling deployment
+steps, and you can manage them all in a
+steps, and you can manage them all in a
+ 
+steps, and you can manage them all in a
+single clean dashboard. And this UX
+single clean dashboard. And this UX
+ 
+single clean dashboard. And this UX
+really sells it. Autocomplete, syntax
+really sells it. Autocomplete, syntax
+ 
+really sells it. Autocomplete, syntax
+highlighting, voice input, even choosing
+highlighting, voice input, even choosing
+ 
+highlighting, voice input, even choosing
+your favorite LLMs. Warp picks the
+your favorite LLMs. Warp picks the
+ 
+your favorite LLMs. Warp picks the
+smartest defaults out of the box, but it
+smartest defaults out of the box, but it
+ 
+smartest defaults out of the box, but it
+does let you customize everything to
+does let you customize everything to
+ 
+does let you customize everything to
+your liking. find out why Warp is the
+your liking. find out why Warp is the
+ 
+your liking. find out why Warp is the
+top ranked coding agent and not just
+top ranked coding agent and not just
+ 
+top ranked coding agent and not just
+another Claude Code style chatbot in the
+another Claude Code style chatbot in the
+ 
+another Claude Code style chatbot in the
+terminal. So, thank you so much to Warp
+terminal. So, thank you so much to Warp
+ 
+terminal. So, thank you so much to Warp
+for sponsoring this portion of today's
+for sponsoring this portion of today's
+ 
+for sponsoring this portion of today's
+video. Now, let's get back to it. All
+video. Now, let's get back to it. All
+ 
+video. Now, let's get back to it. All
+right, so now let's try frames to video.
+right, so now let's try frames to video.
+ 
+right, so now let's try frames to video.
+I'm going to do something real simple to
+I'm going to do something real simple to
+ 
+I'm going to do something real simple to
+start that it should have no issues
+start that it should have no issues
+ 
+start that it should have no issues
+with. I'm going to give it an image of
+with. I'm going to give it an image of
+ 
+with. I'm going to give it an image of
+me standing up and I'm going to give it
+me standing up and I'm going to give it
+ 
+me standing up and I'm going to give it
+an image of me sitting down and I'm
+an image of me sitting down and I'm
+ 
+an image of me sitting down and I'm
+going to say the man sits down. And this
+going to say the man sits down. And this
+ 
+going to say the man sits down. And this
+time we are going to use V3 quality
+time we are going to use V3 quality
+ 
+time we are going to use V3 quality
+because it does let us do frame to frame
+because it does let us do frame to frame
+ 
+because it does let us do frame to frame
+with the quality model. And here's the
+with the quality model. And here's the
+ 
+with the quality model. And here's the
+generation we got out of it.
+
+ 
+
+I mean it pretty perfectly and
+I mean it pretty perfectly and
+ 
+I mean it pretty perfectly and
+accurately animated me from standing to
+accurately animated me from standing to
+ 
+accurately animated me from standing to
+sitting. So thumbs up on that one. I
+sitting. So thumbs up on that one. I
+ 
+sitting. So thumbs up on that one. I
+want to show you the best way to do your
+want to show you the best way to do your
+ 
+want to show you the best way to do your
+job. And that starts with knowing how to
+job. And that starts with knowing how to
+ 
+job. And that starts with knowing how to
+delegate.
+delegate.
+ 
+delegate.
+>> I have no idea why it chose that audio
+>> I have no idea why it chose that audio
+ 
+>> I have no idea why it chose that audio
+for that portion of the video, but
+for that portion of the video, but
+ 
+for that portion of the video, but
+whatever.
+
+ 
+
+Some weird sound effects on that one.
+Some weird sound effects on that one.
+ 
+Some weird sound effects on that one.
+And here's our final generation.
+And here's our final generation.
+ 
+And here's our final generation.
+>> Hi, I'm Jeff and welcome to the studio.
+>> Hi, I'm Jeff and welcome to the studio.
+ 
+>> Hi, I'm Jeff and welcome to the studio.
+>> Hey Jeff, good to meet you. All right.
+>> Hey Jeff, good to meet you. All right.
+ 
+>> Hey Jeff, good to meet you. All right.
+Another thing I always like to try, and
+Another thing I always like to try, and
+ 
+Another thing I always like to try, and
+I haven't really got one of these AI
+I haven't really got one of these AI
+ 
+I haven't really got one of these AI
+models to do a great job at it yet, is
+models to do a great job at it yet, is
+ 
+models to do a great job at it yet, is
+that like anamorphs animation where a
+that like anamorphs animation where a
+ 
+that like anamorphs animation where a
+human morphs into an animal. So, let's
+human morphs into an animal. So, let's
+ 
+human morphs into an animal. So, let's
+try that next. I'm going to clear my
+try that next. I'm going to clear my
+ 
+try that next. I'm going to clear my
+frames here. I'm going to upload this
+frames here. I'm going to upload this
+ 
+frames here. I'm going to upload this
+image of me sort of sitting low to the
+image of me sort of sitting low to the
+ 
+image of me sort of sitting low to the
+ground. I feel like that should be an
+ground. I feel like that should be an
+ 
+ground. I feel like that should be an
+easier transition into an animal, but
+easier transition into an animal, but
+ 
+easier transition into an animal, but
+we'll find out. Switch it to landscape
+we'll find out. Switch it to landscape
+ 
+we'll find out. Switch it to landscape
+here. And then for our other image, I
+here. And then for our other image, I
+ 
+here. And then for our other image, I
+just generated an image of a wolf inside
+just generated an image of a wolf inside
+ 
+just generated an image of a wolf inside
+of Leonardo, and I told it to put it on
+of Leonardo, and I told it to put it on
+ 
+of Leonardo, and I told it to put it on
+a white background. So ideally, it's not
+a white background. So ideally, it's not
+ 
+a white background. So ideally, it's not
+like completely changing environments.
+like completely changing environments.
+ 
+like completely changing environments.
+So we'll go ahead and use this. I'm
+So we'll go ahead and use this. I'm
+ 
+So we'll go ahead and use this. I'm
+actually going to crop in on it a little
+actually going to crop in on it a little
+ 
+actually going to crop in on it a little
+bit. We don't need all that extra white
+bit. We don't need all that extra white
+ 
+bit. We don't need all that extra white
+space. Cool. For the prompt, I'm going
+space. Cool. For the prompt, I'm going
+ 
+space. Cool. For the prompt, I'm going
+to type the man morphs into a wolf. See
+to type the man morphs into a wolf. See
+ 
+to type the man morphs into a wolf. See
+what we get. Okay, so the first time I
+what we get. Okay, so the first time I
+ 
+what we get. Okay, so the first time I
+generated, I actually forgot to switch
+generated, I actually forgot to switch
+ 
+generated, I actually forgot to switch
+this setting to landscape. Now I cropped
+this setting to landscape. Now I cropped
+ 
+this setting to landscape. Now I cropped
+it in landscape, but when I did my
+it in landscape, but when I did my
+ 
+it in landscape, but when I did my
+generation, I forgot to change the
+generation, I forgot to change the
+ 
+generation, I forgot to change the
+aspect ratio to landscape. And it
+aspect ratio to landscape. And it
+ 
+aspect ratio to landscape. And it
+generated these with the image starting
+generated these with the image starting
+ 
+generated these with the image starting
+at the top. I was going to skip over
+at the top. I was going to skip over
+ 
+at the top. I was going to skip over
+them and just show you the the finished
+them and just show you the the finished
+ 
+them and just show you the the finished
+ones that were in landscape mode, but
+ones that were in landscape mode, but
+ 
+ones that were in landscape mode, but
+these were pretty epic, so I wanted to
+these were pretty epic, so I wanted to
+ 
+these were pretty epic, so I wanted to
+share them as well. So, here's the first
+share them as well. So, here's the first
+ 
+share them as well. So, here's the first
+one in the vertical mode. Ao,
+
+ 
+
+[Music]
+[Music]
+ 
+[Music]
+I mean, other than the fact that it
+I mean, other than the fact that it
+ 
+I mean, other than the fact that it
+starts out at the top, animates, and
+starts out at the top, animates, and
+ 
+starts out at the top, animates, and
+then the final frame is again like
+then the final frame is again like
+ 
+then the final frame is again like
+another uh landscape video, all of that
+another uh landscape video, all of that
+ 
+another uh landscape video, all of that
+stuff in the middle was pretty epic. All
+stuff in the middle was pretty epic. All
+ 
+stuff in the middle was pretty epic. All
+right, here's here's the second one.
+right, here's here's the second one.
+ 
+right, here's here's the second one.
+>> Oh, what's happening to me?
+>> Oh, what's happening to me?
+ 
+>> Oh, what's happening to me?
+[Music]
+[Music]
+ 
+[Music]
+>> Not quite as good. There was just sort
+>> Not quite as good. There was just sort
+ 
+>> Not quite as good. There was just sort
+of like jumps instead of the morph.
+
+ 
+
+[Music]
+[Music]
+ 
+[Music]
+Oh, wow. I'm a wolf.
+Oh, wow. I'm a wolf.
+ 
+Oh, wow. I'm a wolf.
+I mean, like, come on. That was amazing.
+I mean, like, come on. That was amazing.
+ 
+I mean, like, come on. That was amazing.
+Oh, wow. I'm a wolf. All right, and
+Oh, wow. I'm a wolf. All right, and
+ 
+Oh, wow. I'm a wolf. All right, and
+here's the last one. I feel a change
+here's the last one. I feel a change
+ 
+here's the last one. I feel a change
+coming on.
+
+ 
+
+>> I couldn't not show those to you. All
+>> I couldn't not show those to you. All
+ 
+>> I couldn't not show those to you. All
+right, but here's the final versions
+right, but here's the final versions
+ 
+right, but here's the final versions
+that are in the proper aspect ratio.
+that are in the proper aspect ratio.
+ 
+that are in the proper aspect ratio.
+>> I think I feel a change coming on.
+
+ 
+
+>> It skipped a few steps in the morph.
+
+ 
+
+>> Yes.
+
+ 
+
+I hate how it just sort of skips some
+I hate how it just sort of skips some
+ 
+I hate how it just sort of skips some
+steps, right? Like you've got it's doing
+steps, right? Like you've got it's doing
+ 
+steps, right? Like you've got it's doing
+so well right here. Like, oh yeah, the
+so well right here. Like, oh yeah, the
+ 
+so well right here. Like, oh yeah, the
+shirt coming off, all that. Perfect.
+shirt coming off, all that. Perfect.
+ 
+shirt coming off, all that. Perfect.
+Perfect. And then it just sort of fades
+Perfect. And then it just sort of fades
+ 
+Perfect. And then it just sort of fades
+to the wolf. That's disappointing.
+to the wolf. That's disappointing.
+ 
+to the wolf. That's disappointing.
+>> Oh, I don't feel so good.
+
+ 
+
+That one's a little bit better. My
+That one's a little bit better. My
+ 
+That one's a little bit better. My
+favorite part right here is when I've
+favorite part right here is when I've
+ 
+favorite part right here is when I've
+got the wolf body, but still the human
+got the wolf body, but still the human
+ 
+got the wolf body, but still the human
+legs. And then as I come through here,
+legs. And then as I come through here,
+ 
+legs. And then as I come through here,
+then it sort of morphs into wolf legs.
+then it sort of morphs into wolf legs.
+ 
+then it sort of morphs into wolf legs.
+But like this moment right here is
+But like this moment right here is
+ 
+But like this moment right here is
+pretty amazing. And then here's the last
+pretty amazing. And then here's the last
+ 
+pretty amazing. And then here's the last
+one.
+one.
+ 
+one.
+>> I can feel it coming.
+
+ 
+
+>> And it does so frustrating when it does
+>> And it does so frustrating when it does
+ 
+>> And it does so frustrating when it does
+that, right? It's like this is so epic
+that, right? It's like this is so epic
+ 
+that, right? It's like this is so epic
+through here. This whole portion is
+through here. This whole portion is
+ 
+through here. This whole portion is
+exactly what I was hoping to get out of
+exactly what I was hoping to get out of
+ 
+exactly what I was hoping to get out of
+this and then it just jumps to that.
+this and then it just jumps to that.
+ 
+this and then it just jumps to that.
+Like it's just a straight up jump cut to
+Like it's just a straight up jump cut to
+ 
+Like it's just a straight up jump cut to
+the image of the wolf, which sucks. But
+the image of the wolf, which sucks. But
+ 
+the image of the wolf, which sucks. But
+we're getting closer and it's still a
+we're getting closer and it's still a
+ 
+we're getting closer and it's still a
+blast to see what it tries to do. Now, I
+blast to see what it tries to do. Now, I
+ 
+blast to see what it tries to do. Now, I
+want to test some of the editing
+want to test some of the editing
+ 
+want to test some of the editing
+features. Now, we know we can't remove
+features. Now, we know we can't remove
+ 
+features. Now, we know we can't remove
+objects yet, but they did say we can add
+objects yet, but they did say we can add
+ 
+objects yet, but they did say we can add
+objects. So, let's generate a video and
+objects. So, let's generate a video and
+ 
+objects. So, let's generate a video and
+then with the video that it generates,
+then with the video that it generates,
+ 
+then with the video that it generates,
+see if we can add objects into that
+see if we can add objects into that
+ 
+see if we can add objects into that
+video. So, we'll start with a Jedi
+video. So, we'll start with a Jedi
+ 
+video. So, we'll start with a Jedi
+swinging a lightsaber. This will be kind
+swinging a lightsaber. This will be kind
+ 
+swinging a lightsaber. This will be kind
+of two tests in one. Let's see if it'll
+of two tests in one. Let's see if it'll
+ 
+of two tests in one. Let's see if it'll
+generate trademarked IP like a Jedi. And
+generate trademarked IP like a Jedi. And
+ 
+generate trademarked IP like a Jedi. And
+then if it does, then we'll try to edit
+then if it does, then we'll try to edit
+ 
+then if it does, then we'll try to edit
+it. If it doesn't, we'll try something
+it. If it doesn't, we'll try something
+ 
+it. If it doesn't, we'll try something
+else. All right. So, we've got our four
+else. All right. So, we've got our four
+ 
+else. All right. So, we've got our four
+Jedi videos here. Here's number one.
+
+ 
+
+I have no idea why there's like liquid
+I have no idea why there's like liquid
+ 
+I have no idea why there's like liquid
+coming off the lightsaber. This is one
+coming off the lightsaber. This is one
+ 
+coming off the lightsaber. This is one
+of those areas where I wish I had the
+of those areas where I wish I had the
+ 
+of those areas where I wish I had the
+ability to remove objects. The thing
+ability to remove objects. The thing
+ 
+ability to remove objects. The thing
+they haven't rolled out yet, cuz for
+they haven't rolled out yet, cuz for
+ 
+they haven't rolled out yet, cuz for
+whatever reason, it gave this planet
+whatever reason, it gave this planet
+ 
+whatever reason, it gave this planet
+like two suns. All right, here's the
+like two suns. All right, here's the
+ 
+like two suns. All right, here's the
+next one.
+
+ 
+
+And then we got this.
+
+ 
+
+I mean, they're kind of they're all kind
+I mean, they're kind of they're all kind
+ 
+I mean, they're kind of they're all kind
+of underwhelming, honestly.
+
+ 
+
+Just for comparison, here's what Sora
+Just for comparison, here's what Sora
+ 
+Just for comparison, here's what Sora
+generated. Like, notice the fact that
+generated. Like, notice the fact that
+ 
+generated. Like, notice the fact that
+this actually looks like a Jedi from the
+this actually looks like a Jedi from the
+ 
+this actually looks like a Jedi from the
+Star Wars universe. This looks like an
+Star Wars universe. This looks like an
+ 
+Star Wars universe. This looks like an
+alien planet. And then take notice of
+alien planet. And then take notice of
+ 
+alien planet. And then take notice of
+the sounds.
+the sounds.
+ 
+the sounds.
+[Music]
+[Music]
+ 
+[Music]
+>> Breathe. Let the blade move with you.
+>> Breathe. Let the blade move with you.
+ 
+>> Breathe. Let the blade move with you.
+Balance always.
+Balance always.
+ 
+Balance always.
+>> I mean, much better. Other than the fact
+>> I mean, much better. Other than the fact
+ 
+>> I mean, much better. Other than the fact
+that it looks like she's breaking her
+that it looks like she's breaking her
+ 
+that it looks like she's breaking her
+wrist to try to hold the lightsaber.
+wrist to try to hold the lightsaber.
+ 
+wrist to try to hold the lightsaber.
+It's a lot closer to what I would have
+It's a lot closer to what I would have
+ 
+It's a lot closer to what I would have
+expected. But that wasn't really the
+expected. But that wasn't really the
+ 
+expected. But that wasn't really the
+test I wanted to do. So, let's go back
+test I wanted to do. So, let's go back
+ 
+test I wanted to do. So, let's go back
+here and let's try to edit one of these
+here and let's try to edit one of these
+ 
+here and let's try to edit one of these
+videos. If I click on this little pen
+videos. If I click on this little pen
+ 
+videos. If I click on this little pen
+icon, I can edit this video. This is a
+icon, I can edit this video. This is a
+ 
+icon, I can edit this video. This is a
+new feature in VO3.1. So, let's go ahead
+new feature in VO3.1. So, let's go ahead
+ 
+new feature in VO3.1. So, let's go ahead
+and click edit. And now it says describe
+and click edit. And now it says describe
+ 
+and click edit. And now it says describe
+what you'd like to add. And you can even
+what you'd like to add. And you can even
+ 
+what you'd like to add. And you can even
+click and drag above to specify a
+click and drag above to specify a
+ 
+click and drag above to specify a
+location. So, I can go like this and put
+location. So, I can go like this and put
+ 
+location. So, I can go like this and put
+like an alien spaceship hovers in the
+like an alien spaceship hovers in the
+ 
+like an alien spaceship hovers in the
+background. And theoretically, we should
+background. And theoretically, we should
+ 
+background. And theoretically, we should
+get pretty much the exact video with
+get pretty much the exact video with
+ 
+get pretty much the exact video with
+just the little section that we edited
+just the little section that we edited
+ 
+just the little section that we edited
+changed. So, here's our output. We can
+changed. So, here's our output. We can
+ 
+changed. So, here's our output. We can
+look at the two screenshots of the first
+look at the two screenshots of the first
+ 
+look at the two screenshots of the first
+frame and it looks pretty much the same
+frame and it looks pretty much the same
+ 
+frame and it looks pretty much the same
+except for we've got a spaceship
+except for we've got a spaceship
+ 
+except for we've got a spaceship
+hovering here. Let's take a peek at how
+hovering here. Let's take a peek at how
+ 
+hovering here. Let's take a peek at how
+the video came out.
+
+ 
+
+One thing to note is that the spaceship
+One thing to note is that the spaceship
+ 
+One thing to note is that the spaceship
+feels like just a static image in the
+feels like just a static image in the
+ 
+feels like just a static image in the
+background. There's like no animation or
+background. There's like no animation or
+ 
+background. There's like no animation or
+sort of hover really filling. It just
+sort of hover really filling. It just
+ 
+sort of hover really filling. It just
+feels like it's an image in the
+feels like it's an image in the
+ 
+feels like it's an image in the
+background. I don't know if all edits
+background. I don't know if all edits
+ 
+background. I don't know if all edits
+are going to be like that. Let's do one
+are going to be like that. Let's do one
+ 
+are going to be like that. Let's do one
+without actually setting where the
+without actually setting where the
+ 
+without actually setting where the
+person's going to be or where the edit
+person's going to be or where the edit
+ 
+person's going to be or where the edit
+is going to happen. So, let's edit this
+is going to happen. So, let's edit this
+ 
+is going to happen. So, let's edit this
+shot here. And we'll say a man in a
+shot here. And we'll say a man in a
+ 
+shot here. And we'll say a man in a
+black cape wearing a black mask walks
+black cape wearing a black mask walks
+ 
+black cape wearing a black mask walks
+through the door behind her. And I'm not
+through the door behind her. And I'm not
+ 
+through the door behind her. And I'm not
+going to actually specify where the door
+going to actually specify where the door
+ 
+going to actually specify where the door
+is. Let's hope the AI can figure it out.
+is. Let's hope the AI can figure it out.
+ 
+is. Let's hope the AI can figure it out.
+And here's our result.
+
+ 
+
+So, I mean, that worked. The new person
+So, I mean, that worked. The new person
+ 
+So, I mean, that worked. The new person
+that walked in from the background was
+that walked in from the background was
+ 
+that walked in from the background was
+actually animated. It wasn't just like a
+actually animated. It wasn't just like a
+ 
+actually animated. It wasn't just like a
+still image in the background like our
+still image in the background like our
+ 
+still image in the background like our
+first attempt. So, good to know. I also
+first attempt. So, good to know. I also
+ 
+first attempt. So, good to know. I also
+want to see if I can actually change an
+want to see if I can actually change an
+ 
+want to see if I can actually change an
+object. I don't know if it just adds
+object. I don't know if it just adds
+ 
+object. I don't know if it just adds
+things into the scene. Like, what if I
+things into the scene. Like, what if I
+ 
+things into the scene. Like, what if I
+told it to make the lightsaber like a
+told it to make the lightsaber like a
+ 
+told it to make the lightsaber like a
+broom or something? Let's edit this one
+broom or something? Let's edit this one
+ 
+broom or something? Let's edit this one
+here. And I will, I guess, highlight
+here. And I will, I guess, highlight
+ 
+here. And I will, I guess, highlight
+this whole thing. It would be nice if I
+this whole thing. It would be nice if I
+ 
+this whole thing. It would be nice if I
+didn't have to highlight in a giant
+didn't have to highlight in a giant
+ 
+didn't have to highlight in a giant
+rectangle. I could sort of more spot
+rectangle. I could sort of more spot
+ 
+rectangle. I could sort of more spot
+check it, but whatever. Let's say make
+check it, but whatever. Let's say make
+ 
+check it, but whatever. Let's say make
+the lightsaber. I don't want to do a
+the lightsaber. I don't want to do a
+ 
+the lightsaber. I don't want to do a
+broom. Let's do a hockey stick. Let's
+broom. Let's do a hockey stick. Let's
+ 
+broom. Let's do a hockey stick. Let's
+see how it works with that. And well,
+see how it works with that. And well,
+ 
+see how it works with that. And well,
+that seemed to actually do nothing.
+that seemed to actually do nothing.
+ 
+that seemed to actually do nothing.
+Nothing changed about this video.
+
+ 
+
+Our Tom Brady uh Jedi here was supposed
+Our Tom Brady uh Jedi here was supposed
+ 
+Our Tom Brady uh Jedi here was supposed
+to be holding a hockey stick, but it's
+to be holding a hockey stick, but it's
+ 
+to be holding a hockey stick, but it's
+still a lightsaber. So, it doesn't look
+still a lightsaber. So, it doesn't look
+ 
+still a lightsaber. So, it doesn't look
+like we could change elements in videos
+like we could change elements in videos
+ 
+like we could change elements in videos
+yet. We can't actually remove elements
+yet. We can't actually remove elements
+ 
+yet. We can't actually remove elements
+from videos if we don't want like two
+from videos if we don't want like two
+ 
+from videos if we don't want like two
+suns in the background, but you can add
+suns in the background, but you can add
+ 
+suns in the background, but you can add
+some extra little things like a person
+some extra little things like a person
+ 
+some extra little things like a person
+walking into the room or a UFO just sort
+walking into the room or a UFO just sort
+ 
+walking into the room or a UFO just sort
+of floating with zero motion in the
+of floating with zero motion in the
+ 
+of floating with zero motion in the
+background. Just before we wrap this up,
+background. Just before we wrap this up,
+ 
+background. Just before we wrap this up,
+I want to test it with a few other
+I want to test it with a few other
+ 
+I want to test it with a few other
+styles cuz you've only sort of done more
+styles cuz you've only sort of done more
+ 
+styles cuz you've only sort of done more
+like realistic stuff. Let's give it like
+like realistic stuff. Let's give it like
+ 
+like realistic stuff. Let's give it like
+an anime thing. And let's also test it
+an anime thing. And let's also test it
+ 
+an anime thing. And let's also test it
+with something a little bit more
+with something a little bit more
+ 
+with something a little bit more
+obviously uh trademark infringing. So,
+obviously uh trademark infringing. So,
+ 
+obviously uh trademark infringing. So,
+let's see what happens if we do Mickey
+let's see what happens if we do Mickey
+ 
+let's see what happens if we do Mickey
+Mouse high-fives Super Mario. Let's see
+Mouse high-fives Super Mario. Let's see
+ 
+Mouse high-fives Super Mario. Let's see
+if it'll generate that for us. Let's
+if it'll generate that for us. Let's
+ 
+if it'll generate that for us. Let's
+also do an anime cartoon featuring
+also do an anime cartoon featuring
+ 
+also do an anime cartoon featuring
+Batman and Spongebob. Let's see what it
+Batman and Spongebob. Let's see what it
+ 
+Batman and Spongebob. Let's see what it
+looks like with anime. And once again,
+looks like with anime. And once again,
+ 
+looks like with anime. And once again,
+see if we can sneak some trademarks in
+see if we can sneak some trademarks in
+ 
+see if we can sneak some trademarks in
+there. All right, here's what VO
+there. All right, here's what VO
+ 
+there. All right, here's what VO
+generated. And this was actually a
+generated. And this was actually a
+ 
+generated. And this was actually a
+pretty shocking result. I did not
+pretty shocking result. I did not
+ 
+pretty shocking result. I did not
+actually think it would allow us to
+actually think it would allow us to
+ 
+actually think it would allow us to
+generate these, but here's our
+generate these, but here's our
+ 
+generate these, but here's our
+generations.
+
+ 
+
+That was a weird high five. Woohoo!
+
+ 
+
+Hot dog.
+
+ 
+
+[Music]
+[Music]
+ 
+[Music]
+And here's the last generation. Woohoo.
+And here's the last generation. Woohoo.
+ 
+And here's the last generation. Woohoo.
+[Music]
+[Music]
+ 
+[Music]
+[Applause]
+[Applause]
+ 
+[Applause]
+So yeah, it'll definitely generate
+So yeah, it'll definitely generate
+ 
+So yeah, it'll definitely generate
+Mickey Mouse and Mario, which is
+Mickey Mouse and Mario, which is
+ 
+Mickey Mouse and Mario, which is
+shocking to me. I really did not think
+shocking to me. I really did not think
+ 
+shocking to me. I really did not think
+it would generate these characters. I
+it would generate these characters. I
+ 
+it would generate these characters. I
+thought it would say, "No, this not
+thought it would say, "No, this not
+ 
+thought it would say, "No, this not
+okay." And say with Batman and
+okay." And say with Batman and
+ 
+okay." And say with Batman and
+Spongebob, it clearly had no issues
+Spongebob, it clearly had no issues
+ 
+Spongebob, it clearly had no issues
+generating these. Let's see what they
+generating these. Let's see what they
+ 
+generating these. Let's see what they
+look like.
+
+ 
+
+That's pretty cool.
+
+ 
+
+And here's our final one.
+
+ 
+
+Honestly, when it comes to this like
+Honestly, when it comes to this like
+ 
+Honestly, when it comes to this like
+anime cartoony style, I think it did a
+anime cartoony style, I think it did a
+ 
+anime cartoony style, I think it did a
+pretty good job. I mean, it doesn't look
+pretty good job. I mean, it doesn't look
+ 
+pretty good job. I mean, it doesn't look
+like anime to me, actually. It just
+like anime to me, actually. It just
+ 
+like anime to me, actually. It just
+looks like a regular cartoon. I'm not
+looks like a regular cartoon. I'm not
+ 
+looks like a regular cartoon. I'm not
+getting the sort of Japanese anime vibes
+getting the sort of Japanese anime vibes
+ 
+getting the sort of Japanese anime vibes
+from it, but I actually think it looks
+from it, but I actually think it looks
+ 
+from it, but I actually think it looks
+pretty good. Like, I I like the
+pretty good. Like, I I like the
+ 
+pretty good. Like, I I like the
+aesthetics of these little cartoon
+aesthetics of these little cartoon
+ 
+aesthetics of these little cartoon
+animations here. And one of the things
+animations here. And one of the things
+ 
+animations here. And one of the things
+that I was really sort of shocked by was
+that I was really sort of shocked by was
+ 
+that I was really sort of shocked by was
+I put these same exact prompts over into
+I put these same exact prompts over into
+ 
+I put these same exact prompts over into
+Sora. And to my surprise, Sora refused
+Sora. And to my surprise, Sora refused
+ 
+Sora. And to my surprise, Sora refused
+to make them all. For whatever reason,
+to make them all. For whatever reason,
+ 
+to make them all. For whatever reason,
+it generated a Jedi swinging a
+it generated a Jedi swinging a
+ 
+it generated a Jedi swinging a
+lightsaber once. When I try to generate
+lightsaber once. When I try to generate
+ 
+lightsaber once. When I try to generate
+the same prompt again, it apparently
+the same prompt again, it apparently
+ 
+the same prompt again, it apparently
+violates the guard rails. And Mickey
+violates the guard rails. And Mickey
+ 
+violates the guard rails. And Mickey
+Mouse High Five Super Mario violates the
+Mouse High Five Super Mario violates the
+ 
+Mouse High Five Super Mario violates the
+guard rails. Anime cartoon featuring
+guard rails. Anime cartoon featuring
+ 
+guard rails. Anime cartoon featuring
+Batman and Spongebob violates the
+Batman and Spongebob violates the
+ 
+Batman and Spongebob violates the
+guardrails, which is surprising because
+guardrails, which is surprising because
+ 
+guardrails, which is surprising because
+Sora on day one was letting me generate
+Sora on day one was letting me generate
+ 
+Sora on day one was letting me generate
+anything I want. So, they've obviously
+anything I want. So, they've obviously
+ 
+anything I want. So, they've obviously
+like cranked up the guard rail so you
+like cranked up the guard rail so you
+ 
+like cranked up the guard rail so you
+can't do as much with it. If you look at
+can't do as much with it. If you look at
+ 
+can't do as much with it. If you look at
+my own original creation feed here on
+my own original creation feed here on
+ 
+my own original creation feed here on
+Sora, I managed to generate a Rick and
+Sora, I managed to generate a Rick and
+ 
+Sora, I managed to generate a Rick and
+Morty video, a Super Mario video,
+Morty video, a Super Mario video,
+ 
+Morty video, a Super Mario video,
+another Rick and Morty, a video with
+another Rick and Morty, a video with
+ 
+another Rick and Morty, a video with
+Padres's branding. It was kind of
+Padres's branding. It was kind of
+ 
+Padres's branding. It was kind of
+letting me get away with whatever I
+letting me get away with whatever I
+ 
+letting me get away with whatever I
+wanted, but now surprisingly VO is a
+wanted, but now surprisingly VO is a
+ 
+wanted, but now surprisingly VO is a
+little more uncensored. I don't know if
+little more uncensored. I don't know if
+ 
+little more uncensored. I don't know if
+that's going to last. It seems like
+that's going to last. It seems like
+ 
+that's going to last. It seems like
+usually they open these things up and
+usually they open these things up and
+ 
+usually they open these things up and
+sort of ask for forgiveness over
+sort of ask for forgiveness over
+ 
+sort of ask for forgiveness over
+permission and they sort of add more
+permission and they sort of add more
+ 
+permission and they sort of add more
+guardrails as it gets more adoption and
+guardrails as it gets more adoption and
+ 
+guardrails as it gets more adoption and
+there's more heat on them. But
+there's more heat on them. But
+ 
+there's more heat on them. But
+interesting that VIO will actually
+interesting that VIO will actually
+ 
+interesting that VIO will actually
+generate this stuff and Sora will refuse
+generate this stuff and Sora will refuse
+ 
+generate this stuff and Sora will refuse
+to. So I guess my final thoughts on all
+to. So I guess my final thoughts on all
+ 
+to. So I guess my final thoughts on all
+of this are if I'm looking at the two
+of this are if I'm looking at the two
+ 
+of this are if I'm looking at the two
+video models side by side, I actually
+video models side by side, I actually
+ 
+video models side by side, I actually
+think Sora is a little bit more
+think Sora is a little bit more
+ 
+think Sora is a little bit more
+impressive out of the gate. I think it
+impressive out of the gate. I think it
+ 
+impressive out of the gate. I think it
+makes more realistic videos. I think
+makes more realistic videos. I think
+ 
+makes more realistic videos. I think
+it's better at generating people. I
+it's better at generating people. I
+ 
+it's better at generating people. I
+think it's better at physics. Things
+think it's better at physics. Things
+ 
+think it's better at physics. Things
+like the back flips we were looking at.
+like the back flips we were looking at.
+ 
+like the back flips we were looking at.
+The initial oneshotted prompt makes a
+The initial oneshotted prompt makes a
+ 
+The initial oneshotted prompt makes a
+better video. With VO3.1, I feel like I
+better video. With VO3.1, I feel like I
+ 
+better video. With VO3.1, I feel like I
+can give it a prompt. And I'm not always
+can give it a prompt. And I'm not always
+ 
+can give it a prompt. And I'm not always
+super happy with it, and I either need
+super happy with it, and I either need
+ 
+super happy with it, and I either need
+to completely reprompt it or now we can
+to completely reprompt it or now we can
+ 
+to completely reprompt it or now we can
+edit it until we get what we want.
+edit it until we get what we want.
+ 
+edit it until we get what we want.
+Meaning that we can sort of iterate
+Meaning that we can sort of iterate
+ 
+Meaning that we can sort of iterate
+through it and get to what we want
+through it and get to what we want
+ 
+through it and get to what we want
+eventually through all these little
+eventually through all these little
+ 
+eventually through all these little
+edits. I just wish the initial video
+edits. I just wish the initial video
+ 
+edits. I just wish the initial video
+that it started with was a little bit
+that it started with was a little bit
+ 
+that it started with was a little bit
+better, like a better starting point to
+better, like a better starting point to
+ 
+better, like a better starting point to
+edit from. Also again surprising Sora is
+edit from. Also again surprising Sora is
+ 
+edit from. Also again surprising Sora is
+now refusing to generate a lot of the
+now refusing to generate a lot of the
+ 
+now refusing to generate a lot of the
+trademark IP when on day one it was
+trademark IP when on day one it was
+ 
+trademark IP when on day one it was
+letting us generate whatever we want
+letting us generate whatever we want
+ 
+letting us generate whatever we want
+while VO3.1 coming from Google I was
+while VO3.1 coming from Google I was
+ 
+while VO3.1 coming from Google I was
+highly expecting it to censor the heck
+highly expecting it to censor the heck
+ 
+highly expecting it to censor the heck
+out of these and it's kind of letting me
+out of these and it's kind of letting me
+ 
+out of these and it's kind of letting me
+generate whatever I want when it comes
+generate whatever I want when it comes
+ 
+generate whatever I want when it comes
+to like trademark IP again. Is that
+to like trademark IP again. Is that
+ 
+to like trademark IP again. Is that
+going to last? Probably not. As more of
+going to last? Probably not. As more of
+ 
+going to last? Probably not. As more of
+these companies sort of come in and uh
+these companies sort of come in and uh
+ 
+these companies sort of come in and uh
+get mad that people aren't able to
+get mad that people aren't able to
+ 
+get mad that people aren't able to
+generate this stuff. I'm sure Google's
+generate this stuff. I'm sure Google's
+ 
+generate this stuff. I'm sure Google's
+going to crank up those guardrails and
+going to crank up those guardrails and
+ 
+going to crank up those guardrails and
+make it so you can't generate this
+make it so you can't generate this
+ 
+make it so you can't generate this
+stuff, unfortunately. But, um, right now
+stuff, unfortunately. But, um, right now
+ 
+stuff, unfortunately. But, um, right now
+they're both pretty good. I guess it
+they're both pretty good. I guess it
+ 
+they're both pretty good. I guess it
+just depends on what you're trying to do
+just depends on what you're trying to do
+ 
+just depends on what you're trying to do
+with them. If you're trying to get
+with them. If you're trying to get
+ 
+with them. If you're trying to get
+cartoons and fanfiction type stuff, you
+cartoons and fanfiction type stuff, you
+ 
+cartoons and fanfiction type stuff, you
+might be better off with VO right now.
+might be better off with VO right now.
+ 
+might be better off with VO right now.
+If you want to get realistic people or
+If you want to get realistic people or
+ 
+If you want to get realistic people or
+videos of you or videos of you with
+videos of you or videos of you with
+ 
+videos of you or videos of you with
+friends, things like that, Sora is
+friends, things like that, Sora is
+ 
+friends, things like that, Sora is
+definitely the way to go right now. So,
+definitely the way to go right now. So,
+ 
+definitely the way to go right now. So,
+they both kind of have pros and cons
+they both kind of have pros and cons
+ 
+they both kind of have pros and cons
+right now. Um, if I had to give an edge
+right now. Um, if I had to give an edge
+ 
+right now. Um, if I had to give an edge
+to one of them, I'd say I'm still
+to one of them, I'd say I'm still
+ 
+to one of them, I'd say I'm still
+slightly more impressed by Sora. But I
+slightly more impressed by Sora. But I
+ 
+slightly more impressed by Sora. But I
+am getting more and more impressed with
+am getting more and more impressed with
+ 
+am getting more and more impressed with
+VO and the additional functionality
+VO and the additional functionality
+ 
+VO and the additional functionality
+they're giving us and the additional
+they're giving us and the additional
+ 
+they're giving us and the additional
+abilities to edit these videos. We're
+abilities to edit these videos. We're
+ 
+abilities to edit these videos. We're
+only going to see more and more
+only going to see more and more
+ 
+only going to see more and more
+customizability and more steerability of
+customizability and more steerability of
+ 
+customizability and more steerability of
+these videos. And um, you know, it's
+these videos. And um, you know, it's
+ 
+these videos. And um, you know, it's
+only a matter of time before Sora does
+only a matter of time before Sora does
+ 
+only a matter of time before Sora does
+it, too. This stuff's getting really
+it, too. This stuff's getting really
+ 
+it, too. This stuff's getting really
+good. But when we look at what we were
+good. But when we look at what we were
+ 
+good. But when we look at what we were
+getting like three years ago, like the
+getting like three years ago, like the
+ 
+getting like three years ago, like the
+Will Smith spaghetti videos and the
+Will Smith spaghetti videos and the
+ 
+Will Smith spaghetti videos and the
+videos where you had to kind of squint
+videos where you had to kind of squint
+ 
+videos where you had to kind of squint
+to even tell what was happening in the
+to even tell what was happening in the
+ 
+to even tell what was happening in the
+video, we have come so freaking far in
+video, we have come so freaking far in
+ 
+video, we have come so freaking far in
+such a short amount of time. Like the
+such a short amount of time. Like the
+ 
+such a short amount of time. Like the
+fact that we could generate stuff that
+fact that we could generate stuff that
+ 
+fact that we could generate stuff that
+looks like this now and we weren't
+looks like this now and we weren't
+ 
+looks like this now and we weren't
+getting anywhere near this kind of
+getting anywhere near this kind of
+ 
+getting anywhere near this kind of
+quality a year ago, it's it's
+quality a year ago, it's it's
+ 
+quality a year ago, it's it's
+impressive. This is this is a feat. Like
+impressive. This is this is a feat. Like
+ 
+impressive. This is this is a feat. Like
+this is really really cool that we can
+this is really really cool that we can
+ 
+this is really really cool that we can
+do this kind of stuff now. and I don't
+do this kind of stuff now. and I don't
+ 
+do this kind of stuff now. and I don't
+want to take it for granted. I'm I'm
+want to take it for granted. I'm I'm
+ 
+want to take it for granted. I'm I'm
+actually blown away. But if I'm
+actually blown away. But if I'm
+ 
+actually blown away. But if I'm
+comparing the two side by side, I'm
+comparing the two side by side, I'm
+ 
+comparing the two side by side, I'm
+still a little bit more impressed with
+still a little bit more impressed with
+ 
+still a little bit more impressed with
+Sora. Anyway, I just wanted to play
+Sora. Anyway, I just wanted to play
+ 
+Sora. Anyway, I just wanted to play
+around with Vio 3.1, find out what it is
+around with Vio 3.1, find out what it is
+ 
+around with Vio 3.1, find out what it is
+all about, put it through its motions,
+all about, put it through its motions,
+ 
+all about, put it through its motions,
+and show it off to you, let you know
+and show it off to you, let you know
+ 
+and show it off to you, let you know
+what additional new features and things
+what additional new features and things
+ 
+what additional new features and things
+you can do with it. So, hopefully you
+you can do with it. So, hopefully you
+ 
+you can do with it. So, hopefully you
+found this helpful. If you like stuff
+found this helpful. If you like stuff
+ 
+found this helpful. If you like stuff
+like this, this video a little thumbs
+like this, this video a little thumbs
+ 
+like this, this video a little thumbs
+upy, and consider subscribing to this
+upy, and consider subscribing to this
+ 
+upy, and consider subscribing to this
+channel for more AI news, tutorials, and
+channel for more AI news, tutorials, and
+ 
+channel for more AI news, tutorials, and
+breakdowns to stay looped in on
+breakdowns to stay looped in on
+ 
+breakdowns to stay looped in on
+everything that's happening with the AI
+everything that's happening with the AI
+ 
+everything that's happening with the AI
+world. That's my goal is to keep you
+world. That's my goal is to keep you
+ 
+world. That's my goal is to keep you
+looped in and if you subscribe, I
+looped in and if you subscribe, I
+ 
+looped in and if you subscribe, I
+promise you'll be more looped in. Again,
+promise you'll be more looped in. Again,
+ 
+promise you'll be more looped in. Again,
+thank you for tuning in. Really, really
+thank you for tuning in. Really, really
+ 
+thank you for tuning in. Really, really
+appreciate you. Hopefully, I'll see you
+appreciate you. Hopefully, I'll see you
+ 
+appreciate you. Hopefully, I'll see you
+in the next one. Bye-bye.
+in the next one. Bye-bye.
+ 
+in the next one. Bye-bye.
+[Music]
+
+ 
+
+Thank you so much for nerding out with
+Thank you so much for nerding out with
+ 
+Thank you so much for nerding out with
+me today. If you like videos like this,
+me today. If you like videos like this,
+ 
+me today. If you like videos like this,
+make sure to give it a thumbs up and
+make sure to give it a thumbs up and
+ 
+make sure to give it a thumbs up and
+subscribe to this channel. I'll make
+subscribe to this channel. I'll make
+ 
+subscribe to this channel. I'll make
+sure more videos like this show up in
+sure more videos like this show up in
+ 
+sure more videos like this show up in
+your YouTube feed. And if you haven't
+your YouTube feed. And if you haven't
+ 
+your YouTube feed. And if you haven't
+already, check out futuretools.io where
+already, check out futuretools.io where
+ 
+already, check out futuretools.io where
+I share all the coolest AI tools and all
+I share all the coolest AI tools and all
+ 
+I share all the coolest AI tools and all
+the latest AI news. And there's an
+the latest AI news. And there's an
+ 
+the latest AI news. And there's an
+awesome free newsletter. Thanks again.
+awesome free newsletter. Thanks again.
+ 
+awesome free newsletter. Thanks again.
+Really appreciate you. See you in the
+Really appreciate you. See you in the
+ 
+Really appreciate you. See you in the
+next one.

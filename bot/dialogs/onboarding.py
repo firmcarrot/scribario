@@ -63,11 +63,13 @@ async def _ensure_tenant(
         return tenant_id
 
     business_name = manager.dialog_data.get("business_name", "Brand")
+    tz = manager.dialog_data.get("timezone", "UTC")
     slug = _make_slug(business_name)
     tenant = await create_tenant(
         name=business_name,
         slug=slug,
         website_url=website_url,
+        timezone=tz,
     )
     tenant_id = tenant["id"]
 
@@ -132,6 +134,121 @@ async def on_business_name_input(
         return
 
     manager.dialog_data["business_name"] = name
+    await manager.switch_to(OnboardingSG.timezone)
+
+
+# Common timezone presets for quick selection
+_TIMEZONE_PRESETS: dict[str, str] = {
+    "eastern": "America/New_York",
+    "et": "America/New_York",
+    "est": "America/New_York",
+    "edt": "America/New_York",
+    "central": "America/Chicago",
+    "ct": "America/Chicago",
+    "cst": "America/Chicago",
+    "cdt": "America/Chicago",
+    "mountain": "America/Denver",
+    "mt": "America/Denver",
+    "mst": "America/Denver",
+    "mdt": "America/Denver",
+    "pacific": "America/Los_Angeles",
+    "pt": "America/Los_Angeles",
+    "pst": "America/Los_Angeles",
+    "pdt": "America/Los_Angeles",
+    "hawaii": "Pacific/Honolulu",
+    "hst": "Pacific/Honolulu",
+    "alaska": "America/Anchorage",
+    "akst": "America/Anchorage",
+    "uk": "Europe/London",
+    "gmt": "Europe/London",
+    "bst": "Europe/London",
+    "cet": "Europe/Berlin",
+    "berlin": "Europe/Berlin",
+    "paris": "Europe/Paris",
+    "tokyo": "Asia/Tokyo",
+    "jst": "Asia/Tokyo",
+    "sydney": "Australia/Sydney",
+    "aest": "Australia/Sydney",
+    "ist": "Asia/Kolkata",
+    "india": "Asia/Kolkata",
+}
+
+
+def _resolve_timezone(text: str) -> str | None:
+    """Resolve user input to an IANA timezone string, or None if invalid."""
+    from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+
+    cleaned = text.strip().lower()
+
+    # Check presets first
+    if cleaned in _TIMEZONE_PRESETS:
+        return _TIMEZONE_PRESETS[cleaned]
+
+    # Try as raw IANA timezone (e.g. "America/New_York")
+    try:
+        ZoneInfo(text.strip())
+        return text.strip()
+    except (ZoneInfoNotFoundError, KeyError):
+        pass
+
+    return None
+
+
+async def on_timezone_input(
+    message: Message, widget: MessageInput, manager: DialogManager
+) -> None:
+    """User typed their timezone."""
+    raw = (message.text or "").strip()
+    if not raw:
+        await message.answer("Please enter your timezone (e.g., Eastern, Pacific, UTC).")
+        return
+
+    tz = _resolve_timezone(raw)
+    if not tz:
+        await message.answer(
+            "I didn't recognize that timezone. Try one of these:\n"
+            "  Eastern, Central, Mountain, Pacific\n"
+            "  UTC, GMT, UK, CET, Tokyo, Sydney, India\n"
+            "  Or an IANA name like America/New_York"
+        )
+        return
+
+    manager.dialog_data["timezone"] = tz
+    await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_timezone_eastern(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    manager.dialog_data["timezone"] = "America/New_York"
+    await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_timezone_central(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    manager.dialog_data["timezone"] = "America/Chicago"
+    await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_timezone_mountain(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    manager.dialog_data["timezone"] = "America/Denver"
+    await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_timezone_pacific(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    manager.dialog_data["timezone"] = "America/Los_Angeles"
+    await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_timezone_utc(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    manager.dialog_data["timezone"] = "UTC"
     await manager.switch_to(OnboardingSG.website_url)
 
 
@@ -184,7 +301,7 @@ async def on_skip_website(
             )
         return
 
-    await manager.switch_to(OnboardingSG.complete)
+    await manager.switch_to(OnboardingSG.tour)
 
 
 async def on_website_url_input(
@@ -323,7 +440,7 @@ async def on_website_url_input(
         except Exception:
             logger.exception("Fallback tenant creation also failed")
 
-        await manager.switch_to(OnboardingSG.complete)
+        await manager.switch_to(OnboardingSG.tour)
 
 
 async def on_approve_profile(
@@ -361,7 +478,7 @@ async def on_approve_profile(
         _background_tasks.add(task)
         task.add_done_callback(_background_tasks.discard)
 
-    await manager.switch_to(OnboardingSG.complete)
+    await manager.switch_to(OnboardingSG.tour)
 
 
 async def on_reject_profile(
@@ -369,6 +486,13 @@ async def on_reject_profile(
 ) -> None:
     """User wants to redo — go back to website URL step."""
     await manager.switch_to(OnboardingSG.website_url)
+
+
+async def on_tour_continue(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    """User tapped 'Got it!' on the tour — move to final complete screen."""
+    await manager.switch_to(OnboardingSG.complete)
 
 
 async def on_connect_platforms(
@@ -434,6 +558,20 @@ dialog = Dialog(
     ),
     Window(
         Const(
+            "<b>What's your timezone?</b>\n\n"
+            "This helps me schedule posts at the right time for you.\n"
+            "Tap a button below or type yours (e.g., Tokyo, UTC, India)."
+        ),
+        Button(Const("Eastern (ET)"), id="tz_eastern", on_click=on_timezone_eastern),
+        Button(Const("Central (CT)"), id="tz_central", on_click=on_timezone_central),
+        Button(Const("Mountain (MT)"), id="tz_mountain", on_click=on_timezone_mountain),
+        Button(Const("Pacific (PT)"), id="tz_pacific", on_click=on_timezone_pacific),
+        Button(Const("UTC"), id="tz_utc", on_click=on_timezone_utc),
+        MessageInput(on_timezone_input),
+        state=OnboardingSG.timezone,
+    ),
+    Window(
+        Const(
             "<b>What's your website URL?</b>\n\n"
             "I'll scrape it to learn about your brand, products, and voice.\n\n"
             "Type it below (e.g., mondoshrimp.com) or tap Skip if you "
@@ -468,6 +606,32 @@ dialog = Dialog(
         Button(Const("Try Again"), id="reject_profile", on_click=on_reject_profile),
         state=OnboardingSG.profile_review,
         getter=get_profile_review_data,
+    ),
+    Window(
+        Const(
+            "<b>Quick Tour</b>\n\n"
+            "Here's what you can do:\n\n"
+            "<b>Create a post</b> — just type what you want:\n"
+            '<i>"Post about our weekend special"</i>\n\n'
+            "<b>Schedule it</b> — include a time:\n"
+            '<i>"Post this Friday at 3pm"</i>\n\n'
+            "<b>Pick a style</b> — add a keyword:\n"
+            '<i>"Make it cinematic"</i>\n'
+            "Options: photorealistic, cinematic, cartoon, watercolor\n\n"
+            "<b>Target a platform</b>:\n"
+            '<i>"Post to Instagram only"</i>\n\n'
+            "<b>Make a video</b>:\n"
+            '<i>"Make a video reel about our new menu"</i>\n\n'
+            "<b>Send a photo</b> for creative direction — "
+            "I'll match the style.\n\n"
+            "<b>Commands:</b>\n"
+            "/autopilot — set up automatic posting\n"
+            "/history — see your last 10 posts\n"
+            "/timezone — view or change your timezone\n"
+            "/help — full feature guide anytime"
+        ),
+        Button(Const("Got it!"), id="tour_continue", on_click=on_tour_continue),
+        state=OnboardingSG.tour,
     ),
     Window(
         Format(

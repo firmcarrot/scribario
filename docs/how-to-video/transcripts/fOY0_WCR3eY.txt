@@ -1,0 +1,1830 @@
+
+So, Cloth Code can now make videos. You
+So, Cloth Code can now make videos. You
+ 
+So, Cloth Code can now make videos. You
+tell it what you want in plain English,
+tell it what you want in plain English,
+ 
+tell it what you want in plain English,
+and it creates professional animations
+and it creates professional animations
+ 
+and it creates professional animations
+from scratch. It's insane. For example,
+from scratch. It's insane. For example,
+ 
+from scratch. It's insane. For example,
+this entire video you're watching right
+this entire video you're watching right
+ 
+this entire video you're watching right
+now was made just by typing into close
+now was made just by typing into close
+ 
+now was made just by typing into close
+code. No animations, no touching UI,
+code. No animations, no touching UI,
+ 
+code. No animations, no touching UI,
+plain English. Now, you might be
+plain English. Now, you might be
+ 
+plain English. Now, you might be
+thinking, "But David, how is this even
+thinking, "But David, how is this even
+ 
+thinking, "But David, how is this even
+possible?" Well, all of this is powered
+possible?" Well, all of this is powered
+ 
+possible?" Well, all of this is powered
+by Remotion, which lets us create videos
+by Remotion, which lets us create videos
+ 
+by Remotion, which lets us create videos
+programmatically. But now, Remotion has
+programmatically. But now, Remotion has
+ 
+programmatically. But now, Remotion has
+released their own agent skills, which
+released their own agent skills, which
+ 
+released their own agent skills, which
+means that Cloud Code, Open Code, and
+means that Cloud Code, Open Code, and
+ 
+means that Cloud Code, Open Code, and
+other AI agents can finally use it. So,
+other AI agents can finally use it. So,
+ 
+other AI agents can finally use it. So,
+in this video, we'll go over what
+in this video, we'll go over what
+ 
+in this video, we'll go over what
+Remotion is, how to set up these new
+Remotion is, how to set up these new
+ 
+Remotion is, how to set up these new
+agent skills, and how to actually use it
+agent skills, and how to actually use it
+ 
+agent skills, and how to actually use it
+for your own AI marketing to grow your
+for your own AI marketing to grow your
+ 
+for your own AI marketing to grow your
+business. So, make sure to watch until
+business. So, make sure to watch until
+ 
+business. So, make sure to watch until
+the end. Here's another example of what
+the end. Here's another example of what
+ 
+the end. Here's another example of what
+this Remotion skill can do. Now,
+this Remotion skill can do. Now,
+ 
+this Remotion skill can do. Now,
+everything except for the design of the
+everything except for the design of the
+ 
+everything except for the design of the
+characters was generated and stitched
+characters was generated and stitched
+ 
+characters was generated and stitched
+together with cloth code. So, this
+together with cloth code. So, this
+ 
+together with cloth code. So, this
+entire video you're watching was created
+entire video you're watching was created
+ 
+entire video you're watching was created
+with cloth code. someone typing English
+with cloth code. someone typing English
+ 
+with cloth code. someone typing English
+and clothes code designing a video of
+and clothes code designing a video of
+ 
+and clothes code designing a video of
+this video game. Crazy. Here's another
+this video game. Crazy. Here's another
+ 
+this video game. Crazy. Here's another
+example that was made with Remotion,
+example that was made with Remotion,
+ 
+example that was made with Remotion,
+Clothe code and anti-gravity. Now,
+Clothe code and anti-gravity. Now,
+ 
+Clothe code and anti-gravity. Now,
+personally, I'm not a animator or a
+personally, I'm not a animator or a
+ 
+personally, I'm not a animator or a
+designer and doing something like this
+designer and doing something like this
+ 
+designer and doing something like this
+would take me many, many hours because I
+would take me many, many hours because I
+ 
+would take me many, many hours because I
+would first have to learn these
+would first have to learn these
+ 
+would first have to learn these
+softwares. But now, you can just type to
+softwares. But now, you can just type to
+ 
+softwares. But now, you can just type to
+close code and close code will build it
+close code and close code will build it
+ 
+close code and close code will build it
+for you. So, not only can you use AI to
+for you. So, not only can you use AI to
+ 
+for you. So, not only can you use AI to
+build your product, now you can use AI
+build your product, now you can use AI
+ 
+build your product, now you can use AI
+to market it as well. It has never been
+to market it as well. It has never been
+ 
+to market it as well. It has never been
+a better time to start your own
+a better time to start your own
+ 
+a better time to start your own
+business. Okay. So, what is remote?
+business. Okay. So, what is remote?
+ 
+business. Okay. So, what is remote?
+What's the thing that makes all of this
+What's the thing that makes all of this
+ 
+What's the thing that makes all of this
+possible? Well, Remotion is a framework
+possible? Well, Remotion is a framework
+ 
+possible? Well, Remotion is a framework
+for creating videos programmatically
+for creating videos programmatically
+ 
+for creating videos programmatically
+using Rust. And the code looks something
+using Rust. And the code looks something
+ 
+using Rust. And the code looks something
+like this. You can think of it as a
+like this. You can think of it as a
+ 
+like this. You can think of it as a
+website that gets recorded frame by
+website that gets recorded frame by
+ 
+website that gets recorded frame by
+frame into a video file. So you get the
+frame into a video file. So you get the
+ 
+frame into a video file. So you get the
+data either from APIs, databases or user
+data either from APIs, databases or user
+ 
+data either from APIs, databases or user
+input. And then each of the render that
+input. And then each of the render that
+ 
+input. And then each of the render that
+motion makes produces a unique video
+motion makes produces a unique video
+ 
+motion makes produces a unique video
+automatically. Now the reason why AI
+automatically. Now the reason why AI
+ 
+automatically. Now the reason why AI
+agents love it is that they are great at
+agents love it is that they are great at
+ 
+agents love it is that they are great at
+writing code. So whether it's cloud
+writing code. So whether it's cloud
+ 
+writing code. So whether it's cloud
+code, open code or any other coding
+code, open code or any other coding
+ 
+code, open code or any other coding
+agent, they already excel at writing
+agent, they already excel at writing
+ 
+agent, they already excel at writing
+code. However, these same agents are
+code. However, these same agents are
+ 
+code. However, these same agents are
+terrible at using complex graphical user
+terrible at using complex graphical user
+ 
+terrible at using complex graphical user
+interfaces like After Effects, Premiere
+interfaces like After Effects, Premiere
+ 
+interfaces like After Effects, Premiere
+Pro or any other app designed for
+Pro or any other app designed for
+ 
+Pro or any other app designed for
+humans. Remotion fixes this. It turns
+humans. Remotion fixes this. It turns
+ 
+humans. Remotion fixes this. It turns
+video creation and animations into React
+video creation and animations into React
+ 
+video creation and animations into React
+components. So all the agents have to do
+components. So all the agents have to do
+ 
+components. So all the agents have to do
+is write a few React components and the
+is write a few React components and the
+ 
+is write a few React components and the
+result is a beautiful looking video or
+result is a beautiful looking video or
+ 
+result is a beautiful looking video or
+animation. So any of you that are
+animation. So any of you that are
+ 
+animation. So any of you that are
+building your own app or you have your
+building your own app or you have your
+ 
+building your own app or you have your
+own business, here is how you could use
+own business, here is how you could use
+ 
+own business, here is how you could use
+remotion to create product videos. So
+remotion to create product videos. So
+ 
+remotion to create product videos. So
+this is another one built just with
+this is another one built just with
+ 
+this is another one built just with
+cloud code and just with a motion. Look
+cloud code and just with a motion. Look
+ 
+cloud code and just with a motion. Look
+at this professional looking animation
+at this professional looking animation
+ 
+at this professional looking animation
+of email looks like Gmail highlighting
+of email looks like Gmail highlighting
+ 
+of email looks like Gmail highlighting
+moving cursor text. You would have to
+moving cursor text. You would have to
+ 
+moving cursor text. You would have to
+pay thousands of dollars to an animator
+pay thousands of dollars to an animator
+ 
+pay thousands of dollars to an animator
+or designer to do this. Now it's just a
+or designer to do this. Now it's just a
+ 
+or designer to do this. Now it's just a
+few prompts to glot code with the motion
+few prompts to glot code with the motion
+ 
+few prompts to glot code with the motion
+skill. And of course I'm going to show
+skill. And of course I'm going to show
+ 
+skill. And of course I'm going to show
+you how to set it up later in the video,
+you how to set it up later in the video,
+ 
+you how to set it up later in the video,
+but I just want to show you how
+but I just want to show you how
+ 
+but I just want to show you how
+impressive this really is. Here's one
+impressive this really is. Here's one
+ 
+impressive this really is. Here's one
+more example. Now, obviously, this guy
+more example. Now, obviously, this guy
+ 
+more example. Now, obviously, this guy
+gave it these assets, right? So, if you
+gave it these assets, right? So, if you
+ 
+gave it these assets, right? So, if you
+have great quality images or assets, it
+have great quality images or assets, it
+ 
+have great quality images or assets, it
+will do even better. But the animation
+will do even better. But the animation
+ 
+will do even better. But the animation
+cycling between them was built by
+cycling between them was built by
+ 
+cycling between them was built by
+Remotion. By the way, this agent skill
+Remotion. By the way, this agent skill
+ 
+Remotion. By the way, this agent skill
+came out literally less than 24 hours
+came out literally less than 24 hours
+ 
+came out literally less than 24 hours
+ago. So, if you want to stay on the
+ago. So, if you want to stay on the
+ 
+ago. So, if you want to stay on the
+cutting edge of AI, make sure to
+cutting edge of AI, make sure to
+ 
+cutting edge of AI, make sure to
+subscribe. It takes 2 seconds and it
+subscribe. It takes 2 seconds and it
+ 
+subscribe. It takes 2 seconds and it
+helps out a lot. Thank you. Now, let's
+helps out a lot. Thank you. Now, let's
+ 
+helps out a lot. Thank you. Now, let's
+look at how Remotion works under the
+look at how Remotion works under the
+ 
+look at how Remotion works under the
+hood. The first thing you have to
+hood. The first thing you have to
+ 
+hood. The first thing you have to
+understand is the sequence components.
+understand is the sequence components.
+ 
+understand is the sequence components.
+And these place elements in time, just
+And these place elements in time, just
+ 
+And these place elements in time, just
+like in any video editing tool, you have
+like in any video editing tool, you have
+ 
+like in any video editing tool, you have
+a something like a timeline. And each of
+a something like a timeline. And each of
+ 
+a something like a timeline. And each of
+these are sequence components. Now, when
+these are sequence components. Now, when
+ 
+these are sequence components. Now, when
+you start your development server with
+you start your development server with
+ 
+you start your development server with
+npm rundev, you get a local host player,
+npm rundev, you get a local host player,
+ 
+npm rundev, you get a local host player,
+something like this, where you can scrap
+something like this, where you can scrap
+ 
+something like this, where you can scrap
+through your video in real time and
+through your video in real time and
+ 
+through your video in real time and
+actually see what the different sections
+actually see what the different sections
+ 
+actually see what the different sections
+look like. And when you're ready and
+look like. And when you're ready and
+ 
+look like. And when you're ready and
+when you want to actually render it,
+when you want to actually render it,
+ 
+when you want to actually render it,
+each of the frames gets screenshotted
+each of the frames gets screenshotted
+ 
+each of the frames gets screenshotted
+and stitched into an MP4 through FFmpeg.
+and stitched into an MP4 through FFmpeg.
+ 
+and stitched into an MP4 through FFmpeg.
+Now, let's talk about agent skills
+Now, let's talk about agent skills
+ 
+Now, let's talk about agent skills
+because this is a relatively new concept
+because this is a relatively new concept
+ 
+because this is a relatively new concept
+that most people don't understand. Agent
+that most people don't understand. Agent
+ 
+that most people don't understand. Agent
+skills are instruction files that teach
+skills are instruction files that teach
+ 
+skills are instruction files that teach
+AI coding agents like close code and
+AI coding agents like close code and
+ 
+AI coding agents like close code and
+open code how to work with specific
+open code how to work with specific
+ 
+open code how to work with specific
+tools. Now, the beauty of agent skills
+tools. Now, the beauty of agent skills
+ 
+tools. Now, the beauty of agent skills
+is that they use what's called
+is that they use what's called
+ 
+is that they use what's called
+progressive disclosure. You don't just
+progressive disclosure. You don't just
+ 
+progressive disclosure. You don't just
+dump a bunch of tokens, a bunch of
+dump a bunch of tokens, a bunch of
+ 
+dump a bunch of tokens, a bunch of
+prompts into context window. That would
+prompts into context window. That would
+ 
+prompts into context window. That would
+be wasteful. Instead, cloth only loads
+be wasteful. Instead, cloth only loads
+ 
+be wasteful. Instead, cloth only loads
+the skills full instructions when your
+the skills full instructions when your
+ 
+the skills full instructions when your
+task matches its description. So, if
+task matches its description. So, if
+ 
+task matches its description. So, if
+your task is about coding, it's not
+your task is about coding, it's not
+ 
+your task is about coding, it's not
+going to load the skills about video
+going to load the skills about video
+ 
+going to load the skills about video
+editing. But if your prompt does mention
+editing. But if your prompt does mention
+ 
+editing. But if your prompt does mention
+video editing, it will load the skills
+video editing, it will load the skills
+ 
+video editing, it will load the skills
+about video editing. This progressive
+about video editing. This progressive
+ 
+about video editing. This progressive
+disclosure principle always keeps the
+disclosure principle always keeps the
+ 
+disclosure principle always keeps the
+context lean. Now skills are an open
+context lean. Now skills are an open
+ 
+context lean. Now skills are an open
+standard meaning it's something like
+standard meaning it's something like
+ 
+standard meaning it's something like
+MCPS something that's becoming like the
+MCPS something that's becoming like the
+ 
+MCPS something that's becoming like the
+agents.mmd file right something that
+agents.mmd file right something that
+ 
+agents.mmd file right something that
+more and more companies and agents are
+more and more companies and agents are
+ 
+more and more companies and agents are
+adopting across the whole AI ecosystem
+adopting across the whole AI ecosystem
+ 
+adopting across the whole AI ecosystem
+so today skills work across cloth code
+so today skills work across cloth code
+ 
+so today skills work across cloth code
+agent zero open code and many other
+agent zero open code and many other
+ 
+agent zero open code and many other
+agents so the big news here is that
+agents so the big news here is that
+ 
+agents so the big news here is that
+remotion created their own agent skill
+remotion created their own agent skill
+ 
+remotion created their own agent skill
+that you can just plug and play into
+that you can just plug and play into
+ 
+that you can just plug and play into
+these agents and have them creating
+these agents and have them creating
+ 
+these agents and have them creating
+professional animations right away. Now,
+professional animations right away. Now,
+ 
+professional animations right away. Now,
+this emotion skill contains all of the
+this emotion skill contains all of the
+ 
+this emotion skill contains all of the
+API patterns for emotion, the different
+API patterns for emotion, the different
+ 
+API patterns for emotion, the different
+component conventions and best practices
+component conventions and best practices
+ 
+component conventions and best practices
+for writing animations. So, when you ask
+for writing animations. So, when you ask
+ 
+for writing animations. So, when you ask
+CL to create a video, it reads these
+CL to create a video, it reads these
+ 
+CL to create a video, it reads these
+instructions and generates proper
+instructions and generates proper
+ 
+instructions and generates proper
+emotion code. The skill also bundles
+emotion code. The skill also bundles
+ 
+emotion code. The skill also bundles
+reference docs for specific topics like
+reference docs for specific topics like
+ 
+reference docs for specific topics like
+3D audio captions. So, Claude only loads
+3D audio captions. So, Claude only loads
+ 
+3D audio captions. So, Claude only loads
+whatever it needs for that task. And
+whatever it needs for that task. And
+ 
+whatever it needs for that task. And
+since Remotion is very easy to use
+since Remotion is very easy to use
+ 
+since Remotion is very easy to use
+because you just type to cloth code and
+because you just type to cloth code and
+ 
+because you just type to cloth code and
+cloth code runs the code, people are
+cloth code runs the code, people are
+ 
+cloth code runs the code, people are
+creating impressive animations on their
+creating impressive animations on their
+ 
+creating impressive animations on their
+first try, which you're watching right
+first try, which you're watching right
+ 
+first try, which you're watching right
+now. This was made with just a couple of
+now. This was made with just a couple of
+ 
+now. This was made with just a couple of
+prompts on the very first try. Now,
+prompts on the very first try. Now,
+ 
+prompts on the very first try. Now,
+there are some clear best practices that
+there are some clear best practices that
+ 
+there are some clear best practices that
+will decide whether you get mediocre
+will decide whether you get mediocre
+ 
+will decide whether you get mediocre
+results with this skill or whether you
+results with this skill or whether you
+ 
+results with this skill or whether you
+get great animations from the motion.
+get great animations from the motion.
+ 
+get great animations from the motion.
+First off, always start with a clear
+First off, always start with a clear
+ 
+First off, always start with a clear
+storyboard. You need to describe each
+storyboard. You need to describe each
+ 
+storyboard. You need to describe each
+scene before prompting cloth. Also, the
+scene before prompting cloth. Also, the
+ 
+scene before prompting cloth. Also, the
+best results require an iterative
+best results require an iterative
+ 
+best results require an iterative
+approach instead of trying to oneshot
+approach instead of trying to oneshot
+ 
+approach instead of trying to oneshot
+everything. Start with small prompts,
+everything. Start with small prompts,
+ 
+everything. Start with small prompts,
+see the result, adjust the prompt, so on
+see the result, adjust the prompt, so on
+ 
+see the result, adjust the prompt, so on
+and so forth. Usually, the best motion
+and so forth. Usually, the best motion
+ 
+and so forth. Usually, the best motion
+animations I've seen required five to 10
+animations I've seen required five to 10
+ 
+animations I've seen required five to 10
+prompts at least. And pro tip, make sure
+prompts at least. And pro tip, make sure
+ 
+prompts at least. And pro tip, make sure
+to keep your compositions modular. So,
+to keep your compositions modular. So,
+ 
+to keep your compositions modular. So,
+build reusable components for intros,
+build reusable components for intros,
+ 
+build reusable components for intros,
+transitions, outros. Don't try to put
+transitions, outros. Don't try to put
+ 
+transitions, outros. Don't try to put
+everything into a single component. And
+everything into a single component. And
+ 
+everything into a single component. And
+as I said earlier, give it high quality
+as I said earlier, give it high quality
+ 
+as I said earlier, give it high quality
+assets. Right? If you're building a
+assets. Right? If you're building a
+ 
+assets. Right? If you're building a
+video game, give it the sprites. If
+video game, give it the sprites. If
+ 
+video game, give it the sprites. If
+you're designing a product, give it high
+you're designing a product, give it high
+ 
+you're designing a product, give it high
+quality product photos. The better
+quality product photos. The better
+ 
+quality product photos. The better
+assets you provide, the better the
+assets you provide, the better the
+ 
+assets you provide, the better the
+outcome will be. And now, let me show
+outcome will be. And now, let me show
+ 
+outcome will be. And now, let me show
+you how to actually set this up. First
+you how to actually set this up. First
+ 
+you how to actually set this up. First
+thing we have to do is go to remote.dev.
+thing we have to do is go to remote.dev.
+ 
+thing we have to do is go to remote.dev.
+So, make sure to click on this u npx
+So, make sure to click on this u npx
+ 
+So, make sure to click on this u npx
+create command. It will copy it into
+create command. It will copy it into
+ 
+create command. It will copy it into
+your clipboard. Then open a terminal and
+your clipboard. Then open a terminal and
+ 
+your clipboard. Then open a terminal and
+we need to cd into a folder where we
+we need to cd into a folder where we
+ 
+we need to cd into a folder where we
+want to build this. So, let's do cd
+want to build this. So, let's do cd
+ 
+want to build this. So, let's do cd
+documents get ls cd into David Andre.
+documents get ls cd into David Andre.
+ 
+documents get ls cd into David Andre.
+Boom. All right. I'm going to paste the
+Boom. All right. I'm going to paste the
+ 
+Boom. All right. I'm going to paste the
+terminal command in this folder. Choose
+terminal command in this folder. Choose
+ 
+terminal command in this folder. Choose
+a blank template. Boom. Add tailwind.
+a blank template. Boom. Add tailwind.
+ 
+a blank template. Boom. Add tailwind.
+Yes. Add agent skills. Yes, for sure.
+Yes. Add agent skills. Yes, for sure.
+ 
+Yes. Add agent skills. Yes, for sure.
+And there we go. Open a cursor. Yes.
+And there we go. Open a cursor. Yes.
+ 
+And there we go. Open a cursor. Yes.
+There we go. Here's our project with a
+There we go. Here's our project with a
+ 
+There we go. Here's our project with a
+full remote setup. Let me close some of
+full remote setup. Let me close some of
+ 
+full remote setup. Let me close some of
+these sidebars that always pop up. So,
+these sidebars that always pop up. So,
+ 
+these sidebars that always pop up. So,
+you can see we have everything on the
+you can see we have everything on the
+ 
+you can see we have everything on the
+right that we need for a blank motion
+right that we need for a blank motion
+ 
+right that we need for a blank motion
+project. And what remains is installing
+project. And what remains is installing
+ 
+project. And what remains is installing
+the skill. Now, this is the skills.sh
+the skill. Now, this is the skills.sh
+ 
+the skill. Now, this is the skills.sh
+page developed by Versel. I'm going to
+page developed by Versel. I'm going to
+ 
+page developed by Versel. I'm going to
+link this below the video, but again,
+link this below the video, but again,
+ 
+link this below the video, but again,
+you just need to click this to copy the
+you just need to click this to copy the
+ 
+you just need to click this to copy the
+terminal command. Go back to the
+terminal command. Go back to the
+ 
+terminal command. Go back to the
+terminal. Type in clear and paste it in.
+terminal. Type in clear and paste it in.
+ 
+terminal. Type in clear and paste it in.
+Yes, we want to install this package.
+Yes, we want to install this package.
+ 
+Yes, we want to install this package.
+There we go. We have the skills. Select
+There we go. We have the skills. Select
+ 
+There we go. We have the skills. Select
+agents. We're going to use cloth code.
+agents. We're going to use cloth code.
+ 
+agents. We're going to use cloth code.
+And here you can select whether you want
+And here you can select whether you want
+ 
+And here you can select whether you want
+to install Remotion for just this
+to install Remotion for just this
+ 
+to install Remotion for just this
+project or globally. It's up to you.
+project or globally. It's up to you.
+ 
+project or globally. It's up to you.
+Installation method. Let's do Sim. And
+Installation method. Let's do Sim. And
+ 
+Installation method. Let's do Sim. And
+let's proceed with installation. Done.
+let's proceed with installation. Done.
+ 
+let's proceed with installation. Done.
+And that's it. The setup is very simple.
+And that's it. The setup is very simple.
+ 
+And that's it. The setup is very simple.
+Again, if you're afraid of using the
+Again, if you're afraid of using the
+ 
+Again, if you're afraid of using the
+terminal, why? Like, you just copy paste
+terminal, why? Like, you just copy paste
+ 
+terminal, why? Like, you just copy paste
+a few commands and it asks you in plain
+a few commands and it asks you in plain
+ 
+a few commands and it asks you in plain
+English. Don't be afraid of the
+English. Don't be afraid of the
+ 
+English. Don't be afraid of the
+terminal. It's a limiting belief. In
+terminal. It's a limiting belief. In
+ 
+terminal. It's a limiting belief. In
+2026, you must be using the terminal to
+2026, you must be using the terminal to
+ 
+2026, you must be using the terminal to
+be on the cutting edge of AI. Next up,
+be on the cutting edge of AI. Next up,
+ 
+be on the cutting edge of AI. Next up,
+let's go back into our IDE. And then
+let's go back into our IDE. And then
+ 
+let's go back into our IDE. And then
+let's open a terminal in this same
+let's open a terminal in this same
+ 
+let's open a terminal in this same
+folder. Type in cloth to launch CL code.
+folder. Type in cloth to launch CL code.
+ 
+folder. Type in cloth to launch CL code.
+Give it permissions for this folder. Go.
+Give it permissions for this folder. Go.
+ 
+Give it permissions for this folder. Go.
+Let me move it here. Let's do SLSkill to
+Let me move it here. Let's do SLSkill to
+ 
+Let me move it here. Let's do SLSkill to
+see if we have available skills. And
+see if we have available skills. And
+ 
+see if we have available skills. And
+there we go. Project skills. Yes,
+there we go. Project skills. Yes,
+ 
+there we go. Project skills. Yes,
+promotion best practices. Amazing. Let's
+promotion best practices. Amazing. Let's
+ 
+promotion best practices. Amazing. Let's
+click escape. So now it means that the
+click escape. So now it means that the
+ 
+click escape. So now it means that the
+skill has been successfully installed
+skill has been successfully installed
+ 
+skill has been successfully installed
+and cloud code knows about it. Now again
+and cloud code knows about it. Now again
+ 
+and cloud code knows about it. Now again
+I would recommend you to create a
+I would recommend you to create a
+ 
+I would recommend you to create a
+separate folder a clear directory for
+separate folder a clear directory for
+ 
+separate folder a clear directory for
+this. So that's what I did right here.
+this. So that's what I did right here.
+ 
+this. So that's what I did right here.
+You know I created a motion folder with
+You know I created a motion folder with
+ 
+You know I created a motion folder with
+this project folder and everything is
+this project folder and everything is
+ 
+this project folder and everything is
+happening in here so I'm not messing the
+happening in here so I'm not messing the
+ 
+happening in here so I'm not messing the
+files all across my computer. I'm going
+files all across my computer. I'm going
+ 
+files all across my computer. I'm going
+to run it in this folder and I'm going
+to run it in this folder and I'm going
+ 
+to run it in this folder and I'm going
+to let cloth code cook right here. This
+to let cloth code cook right here. This
+ 
+to let cloth code cook right here. This
+is a great practice when working with
+is a great practice when working with
+ 
+is a great practice when working with
+any coding agents. Now when using
+any coding agents. Now when using
+ 
+any coding agents. Now when using
+remotion skill through cloth code, you
+remotion skill through cloth code, you
+ 
+remotion skill through cloth code, you
+have to remember that animations are
+have to remember that animations are
+ 
+have to remember that animations are
+created by simple prompts. So make sure
+created by simple prompts. So make sure
+ 
+created by simple prompts. So make sure
+to use a very detailed prompt and ask
+to use a very detailed prompt and ask
+ 
+to use a very detailed prompt and ask
+cloth to use the remotion skill. So I
+cloth to use the remotion skill. So I
+ 
+cloth to use the remotion skill. So I
+just pasted it as well so that I give
+just pasted it as well so that I give
+ 
+just pasted it as well so that I give
+Claude context on what you're doing. The
+Claude context on what you're doing. The
+ 
+Claude context on what you're doing. The
+next thing I would recommend you to do
+next thing I would recommend you to do
+ 
+next thing I would recommend you to do
+is to ask CL to create a separate
+is to ask CL to create a separate
+ 
+is to ask CL to create a separate
+subdirectory for each animation to keep
+subdirectory for each animation to keep
+ 
+subdirectory for each animation to keep
+things organized. So basically you'll
+things organized. So basically you'll
+ 
+things organized. So basically you'll
+have like one root folder like this and
+have like one root folder like this and
+ 
+have like one root folder like this and
+this shouldn't have any animations right
+this shouldn't have any animations right
+ 
+this shouldn't have any animations right
+here because you'll have multiple
+here because you'll have multiple
+ 
+here because you'll have multiple
+subfolders for each of the animations.
+subfolders for each of the animations.
+ 
+subfolders for each of the animations.
+All right. So clo understands it and now
+All right. So clo understands it and now
+ 
+All right. So clo understands it and now
+it has all the context. So we can start
+it has all the context. So we can start
+ 
+it has all the context. So we can start
+building our first animation. So let's
+building our first animation. So let's
+ 
+building our first animation. So let's
+create a new folder and I'm going to
+create a new folder and I'm going to
+ 
+create a new folder and I'm going to
+name it prompts and I'm going to create
+name it prompts and I'm going to create
+ 
+name it prompts and I'm going to create
+a new file in there named prompt01.md.
+a new file in there named prompt01.md.
+ 
+a new file in there named prompt01.md.
+And this is going to be our first
+And this is going to be our first
+ 
+And this is going to be our first
+prompt. As you can see it's very
+prompt. As you can see it's very
+ 
+prompt. As you can see it's very
+detailed and that's because I want a
+detailed and that's because I want a
+ 
+detailed and that's because I want a
+great result for this animation. So,
+great result for this animation. So,
+ 
+great result for this animation. So,
+it's going to be a visual animation in
+it's going to be a visual animation in
+ 
+it's going to be a visual animation in
+the style of free blue, one brown. If
+the style of free blue, one brown. If
+ 
+the style of free blue, one brown. If
+you don't know this channel, you're
+you don't know this channel, you're
+ 
+you don't know this channel, you're
+greatly missing out. This is one of the
+greatly missing out. This is one of the
+ 
+greatly missing out. This is one of the
+best YouTube channels when it comes to
+best YouTube channels when it comes to
+ 
+best YouTube channels when it comes to
+math education, also some videos on AI,
+math education, also some videos on AI,
+ 
+math education, also some videos on AI,
+LLM, how does Bitcoin work. Really great
+LLM, how does Bitcoin work. Really great
+ 
+LLM, how does Bitcoin work. Really great
+channel, and it's known for having
+channel, and it's known for having
+ 
+channel, and it's known for having
+beautiful animations. So, we're going to
+beautiful animations. So, we're going to
+ 
+beautiful animations. So, we're going to
+use Remotion to try to replicate his
+use Remotion to try to replicate his
+ 
+use Remotion to try to replicate his
+style. Now, this is a very detailed,
+style. Now, this is a very detailed,
+ 
+style. Now, this is a very detailed,
+obviously written with AI as well, but
+obviously written with AI as well, but
+ 
+obviously written with AI as well, but
+very detailed uh description of what we
+very detailed uh description of what we
+ 
+very detailed uh description of what we
+want to build. So, you should be as
+want to build. So, you should be as
+ 
+want to build. So, you should be as
+detailed as possible when using remote.
+detailed as possible when using remote.
+ 
+detailed as possible when using remote.
+Actually, we can probably delete several
+Actually, we can probably delete several
+ 
+Actually, we can probably delete several
+of these. All right, just cleaned up a
+of these. All right, just cleaned up a
+ 
+of these. All right, just cleaned up a
+bit. I'm going to interrupt this. Okay,
+bit. I'm going to interrupt this. Okay,
+ 
+bit. I'm going to interrupt this. Okay,
+I'm going to tell it to stop regressing,
+I'm going to tell it to stop regressing,
+ 
+I'm going to tell it to stop regressing,
+read prompt 01, and actually build it
+read prompt 01, and actually build it
+ 
+read prompt 01, and actually build it
+using the remote skills you have. Boom.
+using the remote skills you have. Boom.
+ 
+using the remote skills you have. Boom.
+Enter. As you can see, the prompt is 400
+Enter. As you can see, the prompt is 400
+ 
+Enter. As you can see, the prompt is 400
+lines. Very detailed prompt. And now,
+lines. Very detailed prompt. And now,
+ 
+lines. Very detailed prompt. And now,
+let's watch Claude do the magic. So, now
+let's watch Claude do the magic. So, now
+ 
+let's watch Claude do the magic. So, now
+uh it's asking to use the skill. So, I'm
+uh it's asking to use the skill. So, I'm
+ 
+uh it's asking to use the skill. So, I'm
+going to select yes. And don't ask again
+going to select yes. And don't ask again
+ 
+going to select yes. And don't ask again
+because uh I don't need to accept this
+because uh I don't need to accept this
+ 
+because uh I don't need to accept this
+skill every single time. As you can see,
+skill every single time. As you can see,
+ 
+skill every single time. As you can see,
+it's loading specific things. Animations
+it's loading specific things. Animations
+ 
+it's loading specific things. Animations
+MD, timing.md, and sequencer MD. So it's
+MD, timing.md, and sequencer MD. So it's
+ 
+MD, timing.md, and sequencer MD. So it's
+not loading everything from the skill,
+not loading everything from the skill,
+ 
+not loading everything from the skill,
+only the parts it needs. And this is the
+only the parts it needs. And this is the
+ 
+only the parts it needs. And this is the
+progressive disclosure, right? This is
+progressive disclosure, right? This is
+ 
+progressive disclosure, right? This is
+this is what's keeping the context
+this is what's keeping the context
+ 
+this is what's keeping the context
+engineering optimal. So now it's
+engineering optimal. So now it's
+ 
+engineering optimal. So now it's
+creating all subdirectory right here.
+creating all subdirectory right here.
+ 
+creating all subdirectory right here.
+Pythagorean. So there it goes. Clothe
+Pythagorean. So there it goes. Clothe
+ 
+Pythagorean. So there it goes. Clothe
+code is running the react code for
+code is running the react code for
+ 
+code is running the react code for
+remote. So this is uh like 77 lines of
+remote. So this is uh like 77 lines of
+ 
+remote. So this is uh like 77 lines of
+code. is 81. It's doing different
+code. is 81. It's doing different
+ 
+code. is 81. It's doing different
+components. So, very nice. One for the
+components. So, very nice. One for the
+ 
+components. So, very nice. One for the
+animated line, one for triangle, one for
+animated line, one for triangle, one for
+ 
+animated line, one for triangle, one for
+square. So, it's creating reusable
+square. So, it's creating reusable
+ 
+square. So, it's creating reusable
+components. That way, we can reuse them.
+components. That way, we can reuse them.
+ 
+components. That way, we can reuse them.
+It's in the word opening index. It's
+It's in the word opening index. It's
+ 
+It's in the word opening index. It's
+creating a lot of files. So, I'm
+creating a lot of files. So, I'm
+ 
+creating a lot of files. So, I'm
+interested in this animation. All right,
+interested in this animation. All right,
+ 
+interested in this animation. All right,
+let's do npm rundef.
+let's do npm rundef.
+ 
+let's do npm rundef.
+See what this looks like. This is the
+See what this looks like. This is the
+ 
+See what this looks like. This is the
+motion UI.
+motion UI.
+ 
+motion UI.
+So far, we don't have anything, but this
+So far, we don't have anything, but this
+ 
+So far, we don't have anything, but this
+is what it will look like. It's similar
+is what it will look like. It's similar
+ 
+is what it will look like. It's similar
+to any video editing tool as you can
+to any video editing tool as you can
+ 
+to any video editing tool as you can
+see. Let's go to the main cloth code.
+see. Let's go to the main cloth code.
+ 
+see. Let's go to the main cloth code.
+Still cooking up the animation. 17,000
+Still cooking up the animation. 17,000
+ 
+Still cooking up the animation. 17,000
+tokens going for 4 minutes. So the best
+tokens going for 4 minutes. So the best
+ 
+tokens going for 4 minutes. So the best
+animations take some time. This is not
+animations take some time. This is not
+ 
+animations take some time. This is not
+like a single thing that you're going to
+like a single thing that you're going to
+ 
+like a single thing that you're going to
+get like in 1 second because keep in
+get like in 1 second because keep in
+ 
+get like in 1 second because keep in
+mind cloud code has to write hundreds of
+mind cloud code has to write hundreds of
+ 
+mind cloud code has to write hundreds of
+lines of code for these different React
+lines of code for these different React
+ 
+lines of code for these different React
+components because remote works on
+components because remote works on
+ 
+components because remote works on
+React. Oh, there we go. Okay, so the
+React. Oh, there we go. Okay, so the
+ 
+React. Oh, there we go. Okay, so the
+main cloud code finally updated root.tsx
+main cloud code finally updated root.tsx
+ 
+main cloud code finally updated root.tsx
+tsx by registering these different
+tsx by registering these different
+ 
+tsx by registering these different
+components. I like this new cloud code
+components. I like this new cloud code
+ 
+components. I like this new cloud code
+UI. It's very clean. Oh, never mind.
+UI. It's very clean. Oh, never mind.
+ 
+UI. It's very clean. Oh, never mind.
+That's crazy. [laughter]
+That's crazy. [laughter]
+ 
+That's crazy. [laughter]
+I I complement the new design and it
+I I complement the new design and it
+ 
+I I complement the new design and it
+breaks completely. Anyways, uh it's
+breaks completely. Anyways, uh it's
+ 
+breaks completely. Anyways, uh it's
+removing the unused variables now. So,
+removing the unused variables now. So,
+ 
+removing the unused variables now. So,
+hopefully we won't get any other llinter
+hopefully we won't get any other llinter
+ 
+hopefully we won't get any other llinter
+errors. 10 minutes, guys. 10 minutes for
+errors. 10 minutes, guys. 10 minutes for
+ 
+errors. 10 minutes, guys. 10 minutes for
+this animation. It's pretty insane. Few
+this animation. It's pretty insane. Few
+ 
+this animation. It's pretty insane. Few
+like cloth core few months ago would
+like cloth core few months ago would
+ 
+like cloth core few months ago would
+never run for 10 minutes. So, Enthropic
+never run for 10 minutes. So, Enthropic
+ 
+never run for 10 minutes. So, Enthropic
+is making it less lazy. There is a
+is making it less lazy. There is a
+ 
+is making it less lazy. There is a
+complete. Okay, let's see. All right,
+complete. Okay, let's see. All right,
+ 
+complete. Okay, let's see. All right,
+there we go. There we go.
+there we go. There we go.
+ 
+there we go. There we go.
+The Pyan proofs animation is complete.
+The Pyan proofs animation is complete.
+ 
+The Pyan proofs animation is complete.
+Here's what was created. Project
+Here's what was created. Project
+ 
+Here's what was created. Project
+structure, main orchestrator,
+structure, main orchestrator,
+ 
+structure, main orchestrator,
+self-drawing lines, triangle intro.
+self-drawing lines, triangle intro.
+ 
+self-drawing lines, triangle intro.
+Okay, let's see. ID by figure and proofs
+Okay, let's see. ID by figure and proofs
+ 
+Okay, let's see. ID by figure and proofs
+duration 2,400 frames, 40 seconds at 60
+duration 2,400 frames, 40 seconds at 60
+ 
+duration 2,400 frames, 40 seconds at 60
+fps. To preview, run npm rundef and
+fps. To preview, run npm rundef and
+ 
+fps. To preview, run npm rundef and
+select py proofs composition in the
+select py proofs composition in the
+ 
+select py proofs composition in the
+motion studio. So, let's do that. Let's
+motion studio. So, let's do that. Let's
+ 
+motion studio. So, let's do that. Let's
+kill this. Boom. NPM rundev. On the
+kill this. Boom. NPM rundev. On the
+ 
+kill this. Boom. NPM rundev. On the
+left, we have the compositions. Let's
+left, we have the compositions. Let's
+ 
+left, we have the compositions. Let's
+select pyan proofs. And as you can see,
+select pyan proofs. And as you can see,
+ 
+select pyan proofs. And as you can see,
+we have a timeline with multiple
+we have a timeline with multiple
+ 
+we have a timeline with multiple
+different sequences. So, let's run it.
+different sequences. So, let's run it.
+ 
+different sequences. So, let's run it.
+This is pretty nice. Okay, guys. This is
+This is pretty nice. Okay, guys. This is
+ 
+This is pretty nice. Okay, guys. This is
+this is wild. Let me make this bigger.
+this is wild. Let me make this bigger.
+ 
+this is wild. Let me make this bigger.
+This is actually crazy. Written by cloth
+This is actually crazy. Written by cloth
+ 
+This is actually crazy. Written by cloth
+code. Imagine having to do this by
+code. Imagine having to do this by
+ 
+code. Imagine having to do this by
+yourself.
+
+ 
+
+Doing this manually would take forever.
+
+ 
+
+single prompt in plain English.
+single prompt in plain English.
+ 
+single prompt in plain English.
+Okay, some of these are wrong order
+Okay, some of these are wrong order
+ 
+Okay, some of these are wrong order
+obviously but again one prompt
+
+ 
+
+this is wild. Okay, this is mis a little
+this is wild. Okay, this is mis a little
+ 
+this is wild. Okay, this is mis a little
+misaligned but hey nothing you can't fix
+misaligned but hey nothing you can't fix
+ 
+misaligned but hey nothing you can't fix
+in future prompts and again all of this
+in future prompts and again all of this
+ 
+in future prompts and again all of this
+is code so all of this is programmatic
+is code so all of this is programmatic
+ 
+is code so all of this is programmatic
+okay so let me give you one more example
+okay so let me give you one more example
+ 
+okay so let me give you one more example
+this time with some assets so I'm going
+this time with some assets so I'm going
+ 
+this time with some assets so I'm going
+to create a new prompt new file prompt
+to create a new prompt new file prompt
+ 
+to create a new prompt new file prompt
+O2 boom paste it in a little shorter
+O2 boom paste it in a little shorter
+ 
+O2 boom paste it in a little shorter
+almost 200 this is going to be a
+almost 200 this is going to be a
+ 
+almost 200 this is going to be a
+advertisement for cloth code so I have
+advertisement for cloth code so I have
+ 
+advertisement for cloth code so I have
+this u image right here cloth startp is
+this u image right here cloth startp is
+ 
+this u image right here cloth startp is
+just a you a screenshot of the cloud
+just a you a screenshot of the cloud
+ 
+just a you a screenshot of the cloud
+code UI. So I'm going to say read prompt
+code UI. So I'm going to say read prompt
+ 
+code UI. So I'm going to say read prompt
+O2
+O2
+ 
+O2
+and using cloud
+and using cloud
+ 
+and using cloud
+startup create the animation in
+startup create the animation in
+ 
+startup create the animation in
+remotion. The fewer lines of code, the
+remotion. The fewer lines of code, the
+ 
+remotion. The fewer lines of code, the
+better. Don't want it to be running for
+better. Don't want it to be running for
+ 
+better. Don't want it to be running for
+12 minutes again. Let's see if it
+12 minutes again. Let's see if it
+ 
+12 minutes again. Let's see if it
+remembers the subfolder directory
+remembers the subfolder directory
+ 
+remembers the subfolder directory
+because that's what we instructed it to
+because that's what we instructed it to
+ 
+because that's what we instructed it to
+create subfolders for each. So it moved
+create subfolders for each. So it moved
+ 
+create subfolders for each. So it moved
+the PNG file into public. Okay, because
+the PNG file into public. Okay, because
+ 
+the PNG file into public. Okay, because
+uh I guess that's where assets go. And
+uh I guess that's where assets go. And
+ 
+uh I guess that's where assets go. And
+now it created the cloth ad subfolder
+now it created the cloth ad subfolder
+ 
+now it created the cloth ad subfolder
+which is empty for now. It's going to
+which is empty for now. It's going to
+ 
+which is empty for now. It's going to
+create the whole folder structure for a
+create the whole folder structure for a
+ 
+create the whole folder structure for a
+motion composition. So again inside of
+motion composition. So again inside of
+ 
+motion composition. So again inside of
+the browser you can have different
+the browser you can have different
+ 
+the browser you can have different
+compositions, right? This is the default
+compositions, right? This is the default
+ 
+compositions, right? This is the default
+one and this is the pyan proof one. Can
+one and this is the pyan proof one. Can
+ 
+one and this is the pyan proof one. Can
+split it up to 4x and on the sequence
+split it up to 4x and on the sequence
+ 
+split it up to 4x and on the sequence
+below you can like disable different
+below you can like disable different
+ 
+below you can like disable different
+parts, right? So maybe you don't want
+parts, right? So maybe you don't want
+ 
+parts, right? So maybe you don't want
+this one. You can hide it. It's a it's a
+this one. You can hide it. It's a it's a
+ 
+this one. You can hide it. It's a it's a
+proper video editor. like it's not as
+proper video editor. like it's not as
+ 
+proper video editor. like it's not as
+advanced as Premiere obviously, but uh
+advanced as Premiere obviously, but uh
+ 
+advanced as Premiere obviously, but uh
+it's solid. It's solid and everything is
+it's solid. It's solid and everything is
+ 
+it's solid. It's solid and everything is
+programmatic. Everything is react code
+programmatic. Everything is react code
+ 
+programmatic. Everything is react code
+and you can see your assets right here.
+and you can see your assets right here.
+ 
+and you can see your assets right here.
+So obviously we have the clo startup
+So obviously we have the clo startup
+ 
+So obviously we have the clo startup
+file and now we have the clo add. So we
+file and now we have the clo add. So we
+ 
+file and now we have the clo add. So we
+can see it's being built in real time.
+can see it's being built in real time.
+ 
+can see it's being built in real time.
+Clothe ad is here.
+Clothe ad is here.
+ 
+Clothe ad is here.
+Okay, let's zoom out to fit.
+Okay, let's zoom out to fit.
+ 
+Okay, let's zoom out to fit.
+Look at this. Is it finished yet? Okay,
+Look at this. Is it finished yet? Okay,
+ 
+Look at this. Is it finished yet? Okay,
+this one's faster. Okay, 2 minutes
+this one's faster. Okay, 2 minutes
+ 
+this one's faster. Okay, 2 minutes
+composition code add duration 17
+composition code add duration 17
+ 
+composition code add duration 17
+seconds. Cursor moves to do terminal
+seconds. Cursor moves to do terminal
+ 
+seconds. Cursor moves to do terminal
+icon click. Let's look at this. Let's
+icon click. Let's look at this. Let's
+ 
+icon click. Let's look at this. Let's
+play it in 1x from the beginning. So, we
+play it in 1x from the beginning. So, we
+ 
+play it in 1x from the beginning. So, we
+have a desktop view here. Make it a bit
+have a desktop view here. Make it a bit
+ 
+have a desktop view here. Make it a bit
+bigger. So, the term go icon clicks.
+bigger. So, the term go icon clicks.
+ 
+bigger. So, the term go icon clicks.
+Okay, it didn't click on the terminal.
+Okay, it didn't click on the terminal.
+ 
+Okay, it didn't click on the terminal.
+It clicked on the browser, but it opens
+It clicked on the browser, but it opens
+ 
+It clicked on the browser, but it opens
+the terminal. It types in cd subscribe
+the terminal. It types in cd subscribe
+ 
+the terminal. It types in cd subscribe
+to the channel. Very nice. Look at this
+to the channel. Very nice. Look at this
+ 
+to the channel. Very nice. Look at this
+guys. This is crazy. This is all code.
+guys. This is crazy. This is all code.
+ 
+guys. This is crazy. This is all code.
+This is all animated. Let me replay
+This is all animated. Let me replay
+ 
+This is all animated. Let me replay
+this.
+this.
+ 
+this.
+Like doing this manually if you're not
+Like doing this manually if you're not
+ 
+Like doing this manually if you're not
+an animator would take a lot of time.
+an animator would take a lot of time.
+ 
+an animator would take a lot of time.
+It's a advertisement for cloud code in a
+It's a advertisement for cloud code in a
+ 
+It's a advertisement for cloud code in a
+single prompt less than 2 minutes.
+single prompt less than 2 minutes.
+ 
+single prompt less than 2 minutes.
+Obviously, this one was a lot faster
+Obviously, this one was a lot faster
+ 
+Obviously, this one was a lot faster
+than the previous one and it has less
+than the previous one and it has less
+ 
+than the previous one and it has less
+detail, but you can follow it up. You
+detail, but you can follow it up. You
+ 
+detail, but you can follow it up. You
+can say like change the background
+can say like change the background
+ 
+can say like change the background
+gradient to be cloud orange color
+gradient to be cloud orange color
+ 
+gradient to be cloud orange color
+instead. Boom. And let's watch it change
+instead. Boom. And let's watch it change
+ 
+instead. Boom. And let's watch it change
+in real time.
+in real time.
+ 
+in real time.
+There we go. Change the clothes code.
+There we go. Change the clothes code.
+ 
+There we go. Change the clothes code.
+Already much better. Already feels way
+Already much better. Already feels way
+ 
+Already much better. Already feels way
+more like cloth code.
+more like cloth code.
+ 
+more like cloth code.
+You literally animating by typing plain
+You literally animating by typing plain
+ 
+You literally animating by typing plain
+English. If you're not using cloth code
+English. If you're not using cloth code
+ 
+English. If you're not using cloth code
+in 2026, you are falling behind. In
+in 2026, you are falling behind. In
+ 
+in 2026, you are falling behind. In
+2026, you really cannot afford to fall
+2026, you really cannot afford to fall
+ 
+2026, you really cannot afford to fall
+behind. Now, if you want to take things
+behind. Now, if you want to take things
+ 
+behind. Now, if you want to take things
+to the next level and actually start an
+to the next level and actually start an
+ 
+to the next level and actually start an
+AI business this year, I made a full
+AI business this year, I made a full
+ 
+AI business this year, I made a full
+video on just on that. It's going to be
+video on just on that. It's going to be
+ 
+video on just on that. It's going to be
+right here on the screen. So go wash it
+right here on the screen. So go wash it
+ 
+right here on the screen. So go wash it
+out.

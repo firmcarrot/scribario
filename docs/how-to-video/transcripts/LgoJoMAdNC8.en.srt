@@ -1,0 +1,3535 @@
+1
+00:00:00,080 --> 00:00:02,230
+
+Google VO 3.1 just dropped and it
+
+2
+00:00:02,230 --> 00:00:02,240
+Google VO 3.1 just dropped and it
+ 
+
+3
+00:00:02,240 --> 00:00:04,070
+Google VO 3.1 just dropped and it
+completely crushes Soore 2 because it's
+
+4
+00:00:04,070 --> 00:00:04,080
+completely crushes Soore 2 because it's
+ 
+
+5
+00:00:04,080 --> 00:00:05,990
+completely crushes Soore 2 because it's
+not just higher quality. It also has a
+
+6
+00:00:05,990 --> 00:00:06,000
+not just higher quality. It also has a
+ 
+
+7
+00:00:06,000 --> 00:00:07,349
+not just higher quality. It also has a
+much better understanding of your
+
+8
+00:00:07,349 --> 00:00:07,359
+much better understanding of your
+ 
+
+9
+00:00:07,359 --> 00:00:09,190
+much better understanding of your
+prompts and generates results much
+
+10
+00:00:09,190 --> 00:00:09,200
+prompts and generates results much
+ 
+
+11
+00:00:09,200 --> 00:00:11,030
+prompts and generates results much
+faster. But the biggest change is that
+
+12
+00:00:11,030 --> 00:00:11,040
+faster. But the biggest change is that
+ 
+
+13
+00:00:11,040 --> 00:00:12,790
+faster. But the biggest change is that
+you can now control your start and end
+
+14
+00:00:12,790 --> 00:00:12,800
+you can now control your start and end
+ 
+
+15
+00:00:12,800 --> 00:00:14,470
+you can now control your start and end
+frames which means you can generate
+
+16
+00:00:14,470 --> 00:00:14,480
+frames which means you can generate
+ 
+
+17
+00:00:14,480 --> 00:00:16,390
+frames which means you can generate
+results that look just like this. So
+
+18
+00:00:16,390 --> 00:00:16,400
+results that look just like this. So
+ 
+
+19
+00:00:16,400 --> 00:00:18,070
+results that look just like this. So
+I've been testing it over the past few
+
+20
+00:00:18,070 --> 00:00:18,080
+I've been testing it over the past few
+ 
+
+21
+00:00:18,080 --> 00:00:19,990
+I've been testing it over the past few
+days and in this video I'm going to
+
+22
+00:00:19,990 --> 00:00:20,000
+days and in this video I'm going to
+ 
+
+23
+00:00:20,000 --> 00:00:21,990
+days and in this video I'm going to
+break down everything you need to know
+
+24
+00:00:21,990 --> 00:00:22,000
+break down everything you need to know
+ 
+
+25
+00:00:22,000 --> 00:00:24,630
+break down everything you need to know
+about VO3.1. How it works, what's new,
+
+26
+00:00:24,630 --> 00:00:24,640
+about VO3.1. How it works, what's new,
+ 
+
+27
+00:00:24,640 --> 00:00:26,310
+about VO3.1. How it works, what's new,
+and how you can use it to its full
+
+28
+00:00:26,310 --> 00:00:26,320
+and how you can use it to its full
+ 
+
+29
+00:00:26,320 --> 00:00:28,870
+and how you can use it to its full
+potential inside one secret tool. Well,
+
+30
+00:00:28,870 --> 00:00:28,880
+potential inside one secret tool. Well,
+ 
+
+31
+00:00:28,880 --> 00:00:30,470
+potential inside one secret tool. Well,
+the first thing is just much richer and
+
+32
+00:00:30,470 --> 00:00:30,480
+the first thing is just much richer and
+ 
+
+33
+00:00:30,480 --> 00:00:32,229
+the first thing is just much richer and
+better audio overall. You'll notice that
+
+34
+00:00:32,229 --> 00:00:32,239
+better audio overall. You'll notice that
+ 
+
+35
+00:00:32,239 --> 00:00:33,910
+better audio overall. You'll notice that
+the sound you get now is a lot more
+
+36
+00:00:33,910 --> 00:00:33,920
+the sound you get now is a lot more
+ 
+
+37
+00:00:33,920 --> 00:00:35,750
+the sound you get now is a lot more
+detailed and just feels higher quality
+
+38
+00:00:35,750 --> 00:00:35,760
+detailed and just feels higher quality
+ 
+
+39
+00:00:35,760 --> 00:00:37,350
+detailed and just feels higher quality
+in general. The second thing is kind of
+
+40
+00:00:37,350 --> 00:00:37,360
+in general. The second thing is kind of
+ 
+
+41
+00:00:37,360 --> 00:00:39,030
+in general. The second thing is kind of
+just overall improvements across the
+
+42
+00:00:39,030 --> 00:00:39,040
+just overall improvements across the
+ 
+
+43
+00:00:39,040 --> 00:00:40,709
+just overall improvements across the
+board. The prompt adherence got way
+
+44
+00:00:40,709 --> 00:00:40,719
+board. The prompt adherence got way
+ 
+
+45
+00:00:40,719 --> 00:00:43,110
+board. The prompt adherence got way
+better, which basically means VO 3.1
+
+46
+00:00:43,110 --> 00:00:43,120
+better, which basically means VO 3.1
+ 
+
+47
+00:00:43,120 --> 00:00:44,470
+better, which basically means VO 3.1
+follows what you write a lot more
+
+48
+00:00:44,470 --> 00:00:44,480
+follows what you write a lot more
+ 
+
+49
+00:00:44,480 --> 00:00:46,310
+follows what you write a lot more
+accurately now. The video quality itself
+
+50
+00:00:46,310 --> 00:00:46,320
+accurately now. The video quality itself
+ 
+
+51
+00:00:46,320 --> 00:00:48,389
+accurately now. The video quality itself
+has also improved. So, the textures,
+
+52
+00:00:48,389 --> 00:00:48,399
+has also improved. So, the textures,
+ 
+
+53
+00:00:48,399 --> 00:00:50,229
+has also improved. So, the textures,
+lighting, and everything just look way
+
+54
+00:00:50,229 --> 00:00:50,239
+lighting, and everything just look way
+ 
+
+55
+00:00:50,239 --> 00:00:51,830
+lighting, and everything just look way
+more lifelike. The motion feels
+
+56
+00:00:51,830 --> 00:00:51,840
+more lifelike. The motion feels
+ 
+
+57
+00:00:51,840 --> 00:00:53,750
+more lifelike. The motion feels
+smoother, too, so the videos you get out
+
+58
+00:00:53,750 --> 00:00:53,760
+smoother, too, so the videos you get out
+ 
+
+59
+00:00:53,760 --> 00:00:55,670
+smoother, too, so the videos you get out
+of it just look more natural overall.
+
+60
+00:00:55,670 --> 00:00:55,680
+of it just look more natural overall.
+ 
+
+61
+00:00:55,680 --> 00:00:57,110
+of it just look more natural overall.
+They've also made some really nice
+
+62
+00:00:57,110 --> 00:00:57,120
+They've also made some really nice
+ 
+
+63
+00:00:57,120 --> 00:00:59,430
+They've also made some really nice
+upgrades to the imagetovideo feature. It
+
+64
+00:00:59,430 --> 00:00:59,440
+upgrades to the imagetovideo feature. It
+ 
+
+65
+00:00:59,440 --> 00:01:01,189
+upgrades to the imagetovideo feature. It
+works a lot better now and supports the
+
+66
+00:01:01,189 --> 00:01:01,199
+works a lot better now and supports the
+ 
+
+67
+00:01:01,199 --> 00:01:02,950
+works a lot better now and supports the
+new start and end frame feature, which
+
+68
+00:01:02,950 --> 00:01:02,960
+new start and end frame feature, which
+ 
+
+69
+00:01:02,960 --> 00:01:04,789
+new start and end frame feature, which
+is a big one that basically lets you
+
+70
+00:01:04,789 --> 00:01:04,799
+is a big one that basically lets you
+ 
+
+71
+00:01:04,799 --> 00:01:06,950
+is a big one that basically lets you
+decide exactly how your video begins and
+
+72
+00:01:06,950 --> 00:01:06,960
+decide exactly how your video begins and
+ 
+
+73
+00:01:06,960 --> 00:01:09,190
+decide exactly how your video begins and
+ends no matter how long it is. So, you
+
+74
+00:01:09,190 --> 00:01:09,200
+ends no matter how long it is. So, you
+ 
+
+75
+00:01:09,200 --> 00:01:11,350
+ends no matter how long it is. So, you
+get full control over the final result
+
+76
+00:01:11,350 --> 00:01:11,360
+get full control over the final result
+ 
+
+77
+00:01:11,360 --> 00:01:13,270
+get full control over the final result
+instead of just letting the AI decide it
+
+78
+00:01:13,270 --> 00:01:13,280
+instead of just letting the AI decide it
+ 
+
+79
+00:01:13,280 --> 00:01:14,870
+instead of just letting the AI decide it
+for you. There's also this new thing
+
+80
+00:01:14,870 --> 00:01:14,880
+for you. There's also this new thing
+ 
+
+81
+00:01:14,880 --> 00:01:16,390
+for you. There's also this new thing
+called frames, which is actually pretty
+
+82
+00:01:16,390 --> 00:01:16,400
+called frames, which is actually pretty
+ 
+
+83
+00:01:16,400 --> 00:01:18,230
+called frames, which is actually pretty
+cool. It lets you upload up to three
+
+84
+00:01:18,230 --> 00:01:18,240
+cool. It lets you upload up to three
+ 
+
+85
+00:01:18,240 --> 00:01:20,070
+cool. It lets you upload up to three
+different images and then Google VO
+
+86
+00:01:20,070 --> 00:01:20,080
+different images and then Google VO
+ 
+
+87
+00:01:20,080 --> 00:01:22,230
+different images and then Google VO
+builds out a full video using those. So,
+
+88
+00:01:22,230 --> 00:01:22,240
+builds out a full video using those. So,
+ 
+
+89
+00:01:22,240 --> 00:01:24,230
+builds out a full video using those. So,
+you can basically control the look, the
+
+90
+00:01:24,230 --> 00:01:24,240
+you can basically control the look, the
+ 
+
+91
+00:01:24,240 --> 00:01:26,469
+you can basically control the look, the
+pacing, and the story just by picking a
+
+92
+00:01:26,469 --> 00:01:26,479
+pacing, and the story just by picking a
+ 
+
+93
+00:01:26,479 --> 00:01:28,149
+pacing, and the story just by picking a
+few reference frames. Now, the tool
+
+94
+00:01:28,149 --> 00:01:28,159
+few reference frames. Now, the tool
+ 
+
+95
+00:01:28,159 --> 00:01:29,830
+few reference frames. Now, the tool
+we're going to be using to access Google
+
+96
+00:01:29,830 --> 00:01:29,840
+we're going to be using to access Google
+ 
+
+97
+00:01:29,840 --> 00:01:32,710
+we're going to be using to access Google
+VO 3.1 is actually called Open Art. And
+
+98
+00:01:32,710 --> 00:01:32,720
+VO 3.1 is actually called Open Art. And
+ 
+
+99
+00:01:32,720 --> 00:01:34,390
+VO 3.1 is actually called Open Art. And
+the reason I like using Open Art is
+
+100
+00:01:34,390 --> 00:01:34,400
+the reason I like using Open Art is
+ 
+
+101
+00:01:34,400 --> 00:01:36,069
+the reason I like using Open Art is
+because it lets you access all of these
+
+102
+00:01:36,069 --> 00:01:36,079
+because it lets you access all of these
+ 
+
+103
+00:01:36,079 --> 00:01:37,910
+because it lets you access all of these
+new AI models basically as soon as
+
+104
+00:01:37,910 --> 00:01:37,920
+new AI models basically as soon as
+ 
+
+105
+00:01:37,920 --> 00:01:39,590
+new AI models basically as soon as
+they're released. Plus, it's all in one
+
+106
+00:01:39,590 --> 00:01:39,600
+they're released. Plus, it's all in one
+ 
+
+107
+00:01:39,600 --> 00:01:41,590
+they're released. Plus, it's all in one
+place. You can create your images, your
+
+108
+00:01:41,590 --> 00:01:41,600
+place. You can create your images, your
+ 
+
+109
+00:01:41,600 --> 00:01:43,749
+place. You can create your images, your
+audio, and your videos without having to
+
+110
+00:01:43,749 --> 00:01:43,759
+audio, and your videos without having to
+ 
+
+111
+00:01:43,759 --> 00:01:45,830
+audio, and your videos without having to
+switch between different apps or tabs.
+
+112
+00:01:45,830 --> 00:01:45,840
+switch between different apps or tabs.
+ 
+
+113
+00:01:45,840 --> 00:01:47,270
+switch between different apps or tabs.
+You can even make your starting and
+
+114
+00:01:47,270 --> 00:01:47,280
+You can even make your starting and
+ 
+
+115
+00:01:47,280 --> 00:01:49,510
+You can even make your starting and
+ending frames right inside the same tool
+
+116
+00:01:49,510 --> 00:01:49,520
+ending frames right inside the same tool
+ 
+
+117
+00:01:49,520 --> 00:01:51,350
+ending frames right inside the same tool
+and then turn them into a full video
+
+118
+00:01:51,350 --> 00:01:51,360
+and then turn them into a full video
+ 
+
+119
+00:01:51,360 --> 00:01:53,270
+and then turn them into a full video
+with just a couple of clicks. So, for
+
+120
+00:01:53,270 --> 00:01:53,280
+with just a couple of clicks. So, for
+ 
+
+121
+00:01:53,280 --> 00:01:55,030
+with just a couple of clicks. So, for
+our first video, I just wanted to show
+
+122
+00:01:55,030 --> 00:01:55,040
+our first video, I just wanted to show
+ 
+
+123
+00:01:55,040 --> 00:01:56,550
+our first video, I just wanted to show
+you the difference between the two
+
+124
+00:01:56,550 --> 00:01:56,560
+you the difference between the two
+ 
+
+125
+00:01:56,560 --> 00:01:59,749
+you the difference between the two
+versions, VO 3.0 and VO 3.1 to access
+
+126
+00:01:59,749 --> 00:01:59,759
+versions, VO 3.0 and VO 3.1 to access
+ 
+
+127
+00:01:59,759 --> 00:02:01,429
+versions, VO 3.0 and VO 3.1 to access
+Google VO. I'm just going to click on
+
+128
+00:02:01,429 --> 00:02:01,439
+Google VO. I'm just going to click on
+ 
+
+129
+00:02:01,439 --> 00:02:03,429
+Google VO. I'm just going to click on
+the video section right here, then go to
+
+130
+00:02:03,429 --> 00:02:03,439
+the video section right here, then go to
+ 
+
+131
+00:02:03,439 --> 00:02:05,429
+the video section right here, then go to
+text settings so I can start from a text
+
+132
+00:02:05,429 --> 00:02:05,439
+text settings so I can start from a text
+ 
+
+133
+00:02:05,439 --> 00:02:07,350
+text settings so I can start from a text
+prompt, and then I'll paste my prompt in
+
+134
+00:02:07,350 --> 00:02:07,360
+prompt, and then I'll paste my prompt in
+ 
+
+135
+00:02:07,360 --> 00:02:09,430
+prompt, and then I'll paste my prompt in
+here. All right, so for the prompt, I'm
+
+136
+00:02:09,430 --> 00:02:09,440
+here. All right, so for the prompt, I'm
+ 
+
+137
+00:02:09,440 --> 00:02:11,670
+here. All right, so for the prompt, I'm
+going with this. A weathered sea captain
+
+138
+00:02:11,670 --> 00:02:11,680
+going with this. A weathered sea captain
+ 
+
+139
+00:02:11,680 --> 00:02:13,750
+going with this. A weathered sea captain
+with a thick gray beard and blue knitted
+
+140
+00:02:13,750 --> 00:02:13,760
+with a thick gray beard and blue knitted
+ 
+
+141
+00:02:13,760 --> 00:02:16,309
+with a thick gray beard and blue knitted
+hat stands at a ship's railing gesturing
+
+142
+00:02:16,309 --> 00:02:16,319
+hat stands at a ship's railing gesturing
+ 
+
+143
+00:02:16,319 --> 00:02:18,390
+hat stands at a ship's railing gesturing
+towards stormy ocean waves. Cinematic
+
+144
+00:02:18,390 --> 00:02:18,400
+towards stormy ocean waves. Cinematic
+ 
+
+145
+00:02:18,400 --> 00:02:20,229
+towards stormy ocean waves. Cinematic
+close-up with slow dollian on his
+
+146
+00:02:20,229 --> 00:02:20,239
+close-up with slow dollian on his
+ 
+
+147
+00:02:20,239 --> 00:02:21,910
+close-up with slow dollian on his
+weathered face. Golden hour lighting
+
+148
+00:02:21,910 --> 00:02:21,920
+weathered face. Golden hour lighting
+ 
+
+149
+00:02:21,920 --> 00:02:23,990
+weathered face. Golden hour lighting
+with dramatic shadows. He says, "The
+
+150
+00:02:23,990 --> 00:02:24,000
+with dramatic shadows. He says, "The
+ 
+
+151
+00:02:24,000 --> 00:02:26,229
+with dramatic shadows. He says, "The
+ocean teaches you respect one wave at a
+
+152
+00:02:26,229 --> 00:02:26,239
+ocean teaches you respect one wave at a
+ 
+
+153
+00:02:26,239 --> 00:02:29,030
+ocean teaches you respect one wave at a
+time. Audio ocean waves crashing wind.
+
+154
+00:02:29,030 --> 00:02:29,040
+time. Audio ocean waves crashing wind.
+ 
+
+155
+00:02:29,040 --> 00:02:31,190
+time. Audio ocean waves crashing wind.
+No background music. Color palette. Deep
+
+156
+00:02:31,190 --> 00:02:31,200
+No background music. Color palette. Deep
+ 
+
+157
+00:02:31,200 --> 00:02:33,509
+No background music. Color palette. Deep
+blues, warm amber, weathered browns, no
+
+158
+00:02:33,509 --> 00:02:33,519
+blues, warm amber, weathered browns, no
+ 
+
+159
+00:02:33,519 --> 00:02:35,509
+blues, warm amber, weathered browns, no
+subtitles. Now I'm going to start by
+
+160
+00:02:35,509 --> 00:02:35,519
+subtitles. Now I'm going to start by
+ 
+
+161
+00:02:35,519 --> 00:02:37,270
+subtitles. Now I'm going to start by
+selecting the old version first. I'll
+
+162
+00:02:37,270 --> 00:02:37,280
+selecting the old version first. I'll
+ 
+
+163
+00:02:37,280 --> 00:02:38,790
+selecting the old version first. I'll
+set the resolution to the highest
+
+164
+00:02:38,790 --> 00:02:38,800
+set the resolution to the highest
+ 
+
+165
+00:02:38,800 --> 00:02:41,190
+set the resolution to the highest
+possible. keep video motion on normal
+
+166
+00:02:41,190 --> 00:02:41,200
+possible. keep video motion on normal
+ 
+
+167
+00:02:41,200 --> 00:02:43,030
+possible. keep video motion on normal
+and then click generate. Once that's
+
+168
+00:02:43,030 --> 00:02:43,040
+and then click generate. Once that's
+ 
+
+169
+00:02:43,040 --> 00:02:44,949
+and then click generate. Once that's
+running, I'm switching over to version
+
+170
+00:02:44,949 --> 00:02:44,959
+running, I'm switching over to version
+ 
+
+171
+00:02:44,959 --> 00:02:47,350
+running, I'm switching over to version
+3.1. And as you can see, Open Art
+
+172
+00:02:47,350 --> 00:02:47,360
+3.1. And as you can see, Open Art
+ 
+
+173
+00:02:47,360 --> 00:02:49,430
+3.1. And as you can see, Open Art
+actually saves my prompt automatically,
+
+174
+00:02:49,430 --> 00:02:49,440
+actually saves my prompt automatically,
+ 
+
+175
+00:02:49,440 --> 00:02:50,949
+actually saves my prompt automatically,
+which means I don't need to re-enter
+
+176
+00:02:50,949 --> 00:02:50,959
+which means I don't need to re-enter
+ 
+
+177
+00:02:50,959 --> 00:02:52,710
+which means I don't need to re-enter
+anything. I'll just change the aspect
+
+178
+00:02:52,710 --> 00:02:52,720
+anything. I'll just change the aspect
+ 
+
+179
+00:02:52,720 --> 00:02:55,350
+anything. I'll just change the aspect
+ratio to 16 to9. Make sure all the
+
+180
+00:02:55,350 --> 00:02:55,360
+ratio to 16 to9. Make sure all the
+ 
+
+181
+00:02:55,360 --> 00:02:57,270
+ratio to 16 to9. Make sure all the
+settings are the same as before and then
+
+182
+00:02:57,270 --> 00:02:57,280
+settings are the same as before and then
+ 
+
+183
+00:02:57,280 --> 00:02:58,710
+settings are the same as before and then
+hit create. I'll wait for both
+
+184
+00:02:58,710 --> 00:02:58,720
+hit create. I'll wait for both
+ 
+
+185
+00:02:58,720 --> 00:03:00,710
+hit create. I'll wait for both
+generations to finish. And let's take a
+
+186
+00:03:00,710 --> 00:03:00,720
+generations to finish. And let's take a
+ 
+
+187
+00:03:00,720 --> 00:03:01,990
+generations to finish. And let's take a
+look at the results.
+
+188
+00:03:01,990 --> 00:03:02,000
+look at the results.
+ 
+
+189
+00:03:02,000 --> 00:03:05,750
+look at the results.
+>> The ocean teaches you respect one wave
+
+190
+00:03:05,750 --> 00:03:05,760
+>> The ocean teaches you respect one wave
+ 
+
+191
+00:03:05,760 --> 00:03:10,070
+>> The ocean teaches you respect one wave
+at a time.
+
+192
+00:03:10,070 --> 00:03:10,080
+
+ 
+
+193
+00:03:10,080 --> 00:03:13,190
+
+The ocean teaches you respect
+
+194
+00:03:13,190 --> 00:03:13,200
+The ocean teaches you respect
+ 
+
+195
+00:03:13,200 --> 00:03:17,830
+The ocean teaches you respect
+one wave at a time.
+
+196
+00:03:17,830 --> 00:03:17,840
+one wave at a time.
+ 
+
+197
+00:03:17,840 --> 00:03:20,070
+one wave at a time.
+As you can hear, not only is the audio
+
+198
+00:03:20,070 --> 00:03:20,080
+As you can hear, not only is the audio
+ 
+
+199
+00:03:20,080 --> 00:03:21,990
+As you can hear, not only is the audio
+quality noticeably better, but the
+
+200
+00:03:21,990 --> 00:03:22,000
+quality noticeably better, but the
+ 
+
+201
+00:03:22,000 --> 00:03:24,229
+quality noticeably better, but the
+overall visual quality is too. In Google
+
+202
+00:03:24,229 --> 00:03:24,239
+overall visual quality is too. In Google
+ 
+
+203
+00:03:24,239 --> 00:03:26,630
+overall visual quality is too. In Google
+VO 3.1, the face looks way more
+
+204
+00:03:26,630 --> 00:03:26,640
+VO 3.1, the face looks way more
+ 
+
+205
+00:03:26,640 --> 00:03:28,550
+VO 3.1, the face looks way more
+realistic. It doesn't have that slightly
+
+206
+00:03:28,550 --> 00:03:28,560
+realistic. It doesn't have that slightly
+ 
+
+207
+00:03:28,560 --> 00:03:30,949
+realistic. It doesn't have that slightly
+plastic AI generated look anymore. The
+
+208
+00:03:30,949 --> 00:03:30,959
+plastic AI generated look anymore. The
+ 
+
+209
+00:03:30,959 --> 00:03:32,869
+plastic AI generated look anymore. The
+textures on his clothing, the detail in
+
+210
+00:03:32,869 --> 00:03:32,879
+textures on his clothing, the detail in
+ 
+
+211
+00:03:32,879 --> 00:03:34,789
+textures on his clothing, the detail in
+his beard and skin, even the lighting,
+
+212
+00:03:34,789 --> 00:03:34,799
+his beard and skin, even the lighting,
+ 
+
+213
+00:03:34,799 --> 00:03:37,030
+his beard and skin, even the lighting,
+it all feels more natural and realistic.
+
+214
+00:03:37,030 --> 00:03:37,040
+it all feels more natural and realistic.
+ 
+
+215
+00:03:37,040 --> 00:03:38,789
+it all feels more natural and realistic.
+And honestly, I think his voice in the
+
+216
+00:03:38,789 --> 00:03:38,799
+And honestly, I think his voice in the
+ 
+
+217
+00:03:38,799 --> 00:03:40,869
+And honestly, I think his voice in the
+newer model also fits his look way
+
+218
+00:03:40,869 --> 00:03:40,879
+newer model also fits his look way
+ 
+
+219
+00:03:40,879 --> 00:03:42,550
+newer model also fits his look way
+better. It just looks more believable
+
+220
+00:03:42,550 --> 00:03:42,560
+better. It just looks more believable
+ 
+
+221
+00:03:42,560 --> 00:03:43,910
+better. It just looks more believable
+overall. Now that we've seen that
+
+222
+00:03:43,910 --> 00:03:43,920
+overall. Now that we've seen that
+ 
+
+223
+00:03:43,920 --> 00:03:45,670
+overall. Now that we've seen that
+comparison, let's go ahead and generate
+
+224
+00:03:45,670 --> 00:03:45,680
+comparison, let's go ahead and generate
+ 
+
+225
+00:03:45,680 --> 00:03:48,229
+comparison, let's go ahead and generate
+some more videos using Google VO 3.1.
+
+226
+00:03:48,229 --> 00:03:48,239
+some more videos using Google VO 3.1.
+ 
+
+227
+00:03:48,239 --> 00:03:50,070
+some more videos using Google VO 3.1.
+The first thing I'll do is hop over to
+
+228
+00:03:50,070 --> 00:03:50,080
+The first thing I'll do is hop over to
+ 
+
+229
+00:03:50,080 --> 00:03:51,830
+The first thing I'll do is hop over to
+the elements button. And here we're
+
+230
+00:03:51,830 --> 00:03:51,840
+the elements button. And here we're
+ 
+
+231
+00:03:51,840 --> 00:03:53,750
+the elements button. And here we're
+going to test out the new feature that
+
+232
+00:03:53,750 --> 00:03:53,760
+going to test out the new feature that
+ 
+
+233
+00:03:53,760 --> 00:03:55,670
+going to test out the new feature that
+lets you drop in up to three different
+
+234
+00:03:55,670 --> 00:03:55,680
+lets you drop in up to three different
+ 
+
+235
+00:03:55,680 --> 00:03:57,990
+lets you drop in up to three different
+images and then generate a full video
+
+236
+00:03:57,990 --> 00:03:58,000
+images and then generate a full video
+ 
+
+237
+00:03:58,000 --> 00:04:00,149
+images and then generate a full video
+using all of them. So, first off, we
+
+238
+00:04:00,149 --> 00:04:00,159
+using all of them. So, first off, we
+ 
+
+239
+00:04:00,159 --> 00:04:01,910
+using all of them. So, first off, we
+need to get some images. For that, I'm
+
+240
+00:04:01,910 --> 00:04:01,920
+need to get some images. For that, I'm
+ 
+
+241
+00:04:01,920 --> 00:04:03,830
+need to get some images. For that, I'm
+going to use the image generator inside
+
+242
+00:04:03,830 --> 00:04:03,840
+going to use the image generator inside
+ 
+
+243
+00:04:03,840 --> 00:04:05,830
+going to use the image generator inside
+Open Art. I'll switch over to the image
+
+244
+00:04:05,830 --> 00:04:05,840
+Open Art. I'll switch over to the image
+ 
+
+245
+00:04:05,840 --> 00:04:07,830
+Open Art. I'll switch over to the image
+section. And for this first one, I'll
+
+246
+00:04:07,830 --> 00:04:07,840
+section. And for this first one, I'll
+ 
+
+247
+00:04:07,840 --> 00:04:09,750
+section. And for this first one, I'll
+select the Open Art photorealistic
+
+248
+00:04:09,750 --> 00:04:09,760
+select the Open Art photorealistic
+ 
+
+249
+00:04:09,760 --> 00:04:11,750
+select the Open Art photorealistic
+model. For the image of our person, I'll
+
+250
+00:04:11,750 --> 00:04:11,760
+model. For the image of our person, I'll
+ 
+
+251
+00:04:11,760 --> 00:04:14,309
+model. For the image of our person, I'll
+type in woman in her 20s and then click
+
+252
+00:04:14,309 --> 00:04:14,319
+type in woman in her 20s and then click
+ 
+
+253
+00:04:14,319 --> 00:04:16,550
+type in woman in her 20s and then click
+create. As you can see, we instantly get
+
+254
+00:04:16,550 --> 00:04:16,560
+create. As you can see, we instantly get
+ 
+
+255
+00:04:16,560 --> 00:04:18,949
+create. As you can see, we instantly get
+a really nice realistic looking result.
+
+256
+00:04:18,949 --> 00:04:18,959
+a really nice realistic looking result.
+ 
+
+257
+00:04:18,959 --> 00:04:20,629
+a really nice realistic looking result.
+Next, I'm going to switch the model to
+
+258
+00:04:20,629 --> 00:04:20,639
+Next, I'm going to switch the model to
+ 
+
+259
+00:04:20,639 --> 00:04:23,030
+Next, I'm going to switch the model to
+Cadream 4. For this one, I want an image
+
+260
+00:04:23,030 --> 00:04:23,040
+Cadream 4. For this one, I want an image
+ 
+
+261
+00:04:23,040 --> 00:04:25,430
+Cadream 4. For this one, I want an image
+of a statue. So, I'll write a huge
+
+262
+00:04:25,430 --> 00:04:25,440
+of a statue. So, I'll write a huge
+ 
+
+263
+00:04:25,440 --> 00:04:27,670
+of a statue. So, I'll write a huge
+marble statue. Then, I'll click create.
+
+264
+00:04:27,670 --> 00:04:27,680
+marble statue. Then, I'll click create.
+ 
+
+265
+00:04:27,680 --> 00:04:29,590
+marble statue. Then, I'll click create.
+And as you can see, we get a really nice
+
+266
+00:04:29,590 --> 00:04:29,600
+And as you can see, we get a really nice
+ 
+
+267
+00:04:29,600 --> 00:04:31,350
+And as you can see, we get a really nice
+looking statue image that fits
+
+268
+00:04:31,350 --> 00:04:31,360
+looking statue image that fits
+ 
+
+269
+00:04:31,360 --> 00:04:33,590
+looking statue image that fits
+perfectly. For this scene, I'll type in
+
+270
+00:04:33,590 --> 00:04:33,600
+perfectly. For this scene, I'll type in
+ 
+
+271
+00:04:33,600 --> 00:04:35,749
+perfectly. For this scene, I'll type in
+a quiet park at sunset and then click
+
+272
+00:04:35,749 --> 00:04:35,759
+a quiet park at sunset and then click
+ 
+
+273
+00:04:35,759 --> 00:04:38,150
+a quiet park at sunset and then click
+create. As you can see, the result looks
+
+274
+00:04:38,150 --> 00:04:38,160
+create. As you can see, the result looks
+ 
+
+275
+00:04:38,160 --> 00:04:40,230
+create. As you can see, the result looks
+beautiful. The sky glows in warm shades
+
+276
+00:04:40,230 --> 00:04:40,240
+beautiful. The sky glows in warm shades
+ 
+
+277
+00:04:40,240 --> 00:04:42,390
+beautiful. The sky glows in warm shades
+of orange and pink, casting soft light
+
+278
+00:04:42,390 --> 00:04:42,400
+of orange and pink, casting soft light
+ 
+
+279
+00:04:42,400 --> 00:04:44,390
+of orange and pink, casting soft light
+across the park. Now, I'm just going to
+
+280
+00:04:44,390 --> 00:04:44,400
+across the park. Now, I'm just going to
+ 
+
+281
+00:04:44,400 --> 00:04:46,390
+across the park. Now, I'm just going to
+download all of these images, then head
+
+282
+00:04:46,390 --> 00:04:46,400
+download all of these images, then head
+ 
+
+283
+00:04:46,400 --> 00:04:48,230
+download all of these images, then head
+back over to the video section, click
+
+284
+00:04:48,230 --> 00:04:48,240
+back over to the video section, click
+ 
+
+285
+00:04:48,240 --> 00:04:50,150
+back over to the video section, click
+elements again, and upload all of my
+
+286
+00:04:50,150 --> 00:04:50,160
+elements again, and upload all of my
+ 
+
+287
+00:04:50,160 --> 00:04:51,990
+elements again, and upload all of my
+images there. For the prompt, I'll
+
+288
+00:04:51,990 --> 00:04:52,000
+images there. For the prompt, I'll
+ 
+
+289
+00:04:52,000 --> 00:04:54,390
+images there. For the prompt, I'll
+write, "A marble statue stands in a
+
+290
+00:04:54,390 --> 00:04:54,400
+write, "A marble statue stands in a
+ 
+
+291
+00:04:54,400 --> 00:04:56,629
+write, "A marble statue stands in a
+quiet park at sunset. A woman looks up
+
+292
+00:04:56,629 --> 00:04:56,639
+quiet park at sunset. A woman looks up
+ 
+
+293
+00:04:56,639 --> 00:04:58,550
+quiet park at sunset. A woman looks up
+at it, talking about how people once
+
+294
+00:04:58,550 --> 00:04:58,560
+at it, talking about how people once
+ 
+
+295
+00:04:58,560 --> 00:05:00,550
+at it, talking about how people once
+tried to capture feelings in stone, and
+
+296
+00:05:00,550 --> 00:05:00,560
+tried to capture feelings in stone, and
+ 
+
+297
+00:05:00,560 --> 00:05:01,990
+tried to capture feelings in stone, and
+somehow they did." Then I'll click
+
+298
+00:05:01,990 --> 00:05:02,000
+somehow they did." Then I'll click
+ 
+
+299
+00:05:02,000 --> 00:05:03,670
+somehow they did." Then I'll click
+generate and let's take a look at what
+
+300
+00:05:03,670 --> 00:05:03,680
+generate and let's take a look at what
+ 
+
+301
+00:05:03,680 --> 00:05:05,749
+generate and let's take a look at what
+we get.
+
+302
+00:05:05,749 --> 00:05:05,759
+we get.
+ 
+
+303
+00:05:05,759 --> 00:05:08,870
+we get.
+>> They tried to capture feelings in stone
+
+304
+00:05:08,870 --> 00:05:08,880
+>> They tried to capture feelings in stone
+ 
+
+305
+00:05:08,880 --> 00:05:11,749
+>> They tried to capture feelings in stone
+and somehow they did.
+
+306
+00:05:11,749 --> 00:05:11,759
+and somehow they did.
+ 
+
+307
+00:05:11,759 --> 00:05:13,670
+and somehow they did.
+>> As you can see, the result looks
+
+308
+00:05:13,670 --> 00:05:13,680
+>> As you can see, the result looks
+ 
+
+309
+00:05:13,680 --> 00:05:15,909
+>> As you can see, the result looks
+amazing. It flawlessly uses both
+
+310
+00:05:15,909 --> 00:05:15,919
+amazing. It flawlessly uses both
+ 
+
+311
+00:05:15,919 --> 00:05:17,670
+amazing. It flawlessly uses both
+reference images. The woman looks
+
+312
+00:05:17,670 --> 00:05:17,680
+reference images. The woman looks
+ 
+
+313
+00:05:17,680 --> 00:05:19,430
+reference images. The woman looks
+exactly like the one we just generated.
+
+314
+00:05:19,430 --> 00:05:19,440
+exactly like the one we just generated.
+ 
+
+315
+00:05:19,440 --> 00:05:21,510
+exactly like the one we just generated.
+And the statue looks super realistic.
+
+316
+00:05:21,510 --> 00:05:21,520
+And the statue looks super realistic.
+ 
+
+317
+00:05:21,520 --> 00:05:23,350
+And the statue looks super realistic.
+The whole video feels natural, like an
+
+318
+00:05:23,350 --> 00:05:23,360
+The whole video feels natural, like an
+ 
+
+319
+00:05:23,360 --> 00:05:25,110
+The whole video feels natural, like an
+actual shot of someone filming their
+
+320
+00:05:25,110 --> 00:05:25,120
+actual shot of someone filming their
+ 
+
+321
+00:05:25,120 --> 00:05:27,590
+actual shot of someone filming their
+family member talking about a statue. I
+
+322
+00:05:27,590 --> 00:05:27,600
+family member talking about a statue. I
+ 
+
+323
+00:05:27,600 --> 00:05:29,110
+family member talking about a statue. I
+also really like how it picked up the
+
+324
+00:05:29,110 --> 00:05:29,120
+also really like how it picked up the
+ 
+
+325
+00:05:29,120 --> 00:05:31,110
+also really like how it picked up the
+sound of nature in the background. the
+
+326
+00:05:31,110 --> 00:05:31,120
+sound of nature in the background. the
+ 
+
+327
+00:05:31,120 --> 00:05:33,430
+sound of nature in the background. the
+wind, the ambient noise, all of it just
+
+328
+00:05:33,430 --> 00:05:33,440
+wind, the ambient noise, all of it just
+ 
+
+329
+00:05:33,440 --> 00:05:35,510
+wind, the ambient noise, all of it just
+adds to the realism. It genuinely feels
+
+330
+00:05:35,510 --> 00:05:35,520
+adds to the realism. It genuinely feels
+ 
+
+331
+00:05:35,520 --> 00:05:37,350
+adds to the realism. It genuinely feels
+like a real moment, which is kind of
+
+332
+00:05:37,350 --> 00:05:37,360
+like a real moment, which is kind of
+ 
+
+333
+00:05:37,360 --> 00:05:39,029
+like a real moment, which is kind of
+crazy considering it's fully AI
+
+334
+00:05:39,029 --> 00:05:39,039
+crazy considering it's fully AI
+ 
+
+335
+00:05:39,039 --> 00:05:41,029
+crazy considering it's fully AI
+generated. And now, let's test out the
+
+336
+00:05:41,029 --> 00:05:41,039
+generated. And now, let's test out the
+ 
+
+337
+00:05:41,039 --> 00:05:42,710
+generated. And now, let's test out the
+starting frame feature. This one's
+
+338
+00:05:42,710 --> 00:05:42,720
+starting frame feature. This one's
+ 
+
+339
+00:05:42,720 --> 00:05:44,070
+starting frame feature. This one's
+actually really good for a bunch of
+
+340
+00:05:44,070 --> 00:05:44,080
+actually really good for a bunch of
+ 
+
+341
+00:05:44,080 --> 00:05:45,909
+actually really good for a bunch of
+different things, especially for product
+
+342
+00:05:45,909 --> 00:05:45,919
+different things, especially for product
+ 
+
+343
+00:05:45,919 --> 00:05:47,350
+different things, especially for product
+images, which we'll get into a bit
+
+344
+00:05:47,350 --> 00:05:47,360
+images, which we'll get into a bit
+ 
+
+345
+00:05:47,360 --> 00:05:49,110
+images, which we'll get into a bit
+later. But first, I want to show you how
+
+346
+00:05:49,110 --> 00:05:49,120
+later. But first, I want to show you how
+ 
+
+347
+00:05:49,120 --> 00:05:51,110
+later. But first, I want to show you how
+you can make generations where you can
+
+348
+00:05:51,110 --> 00:05:51,120
+you can make generations where you can
+ 
+
+349
+00:05:51,120 --> 00:05:53,270
+you can make generations where you can
+set up people to look like brand logos.
+
+350
+00:05:53,270 --> 00:05:53,280
+set up people to look like brand logos.
+ 
+
+351
+00:05:53,280 --> 00:05:54,870
+set up people to look like brand logos.
+So, for this one, I just wanted to
+
+352
+00:05:54,870 --> 00:05:54,880
+So, for this one, I just wanted to
+ 
+
+353
+00:05:54,880 --> 00:05:56,870
+So, for this one, I just wanted to
+animate an infinity logo. I'll go into
+
+354
+00:05:56,870 --> 00:05:56,880
+animate an infinity logo. I'll go into
+ 
+
+355
+00:05:56,880 --> 00:05:59,029
+animate an infinity logo. I'll go into
+the image section. Write my prompt here.
+
+356
+00:05:59,029 --> 00:05:59,039
+the image section. Write my prompt here.
+ 
+
+357
+00:05:59,039 --> 00:06:01,350
+the image section. Write my prompt here.
+Aerial nighttime photograph of a giant
+
+358
+00:06:01,350 --> 00:06:01,360
+Aerial nighttime photograph of a giant
+ 
+
+359
+00:06:01,360 --> 00:06:03,749
+Aerial nighttime photograph of a giant
+glowing open art infinity logo formed by
+
+360
+00:06:03,749 --> 00:06:03,759
+glowing open art infinity logo formed by
+ 
+
+361
+00:06:03,759 --> 00:06:05,749
+glowing open art infinity logo formed by
+thousands of artists standing together
+
+362
+00:06:05,749 --> 00:06:05,759
+thousands of artists standing together
+ 
+
+363
+00:06:05,759 --> 00:06:07,990
+thousands of artists standing together
+in a vast city square surrounded by
+
+364
+00:06:07,990 --> 00:06:08,000
+in a vast city square surrounded by
+ 
+
+365
+00:06:08,000 --> 00:06:10,070
+in a vast city square surrounded by
+modern architecture and digital art
+
+366
+00:06:10,070 --> 00:06:10,080
+modern architecture and digital art
+ 
+
+367
+00:06:10,080 --> 00:06:12,309
+modern architecture and digital art
+projections. Each person holds a glowing
+
+368
+00:06:12,309 --> 00:06:12,319
+projections. Each person holds a glowing
+ 
+
+369
+00:06:12,319 --> 00:06:14,710
+projections. Each person holds a glowing
+tablet or holographic frame showing
+
+370
+00:06:14,710 --> 00:06:14,720
+tablet or holographic frame showing
+ 
+
+371
+00:06:14,720 --> 00:06:17,029
+tablet or holographic frame showing
+different AI generated artworks creating
+
+372
+00:06:17,029 --> 00:06:17,039
+different AI generated artworks creating
+ 
+
+373
+00:06:17,039 --> 00:06:19,670
+different AI generated artworks creating
+waves of color, neon blues, purples, and
+
+374
+00:06:19,670 --> 00:06:19,680
+waves of color, neon blues, purples, and
+ 
+
+375
+00:06:19,680 --> 00:06:21,830
+waves of color, neon blues, purples, and
+soft golds that merge into the infinity
+
+376
+00:06:21,830 --> 00:06:21,840
+soft golds that merge into the infinity
+ 
+
+377
+00:06:21,840 --> 00:06:24,070
+soft golds that merge into the infinity
+symbol. The logo radiates shifting
+
+378
+00:06:24,070 --> 00:06:24,080
+symbol. The logo radiates shifting
+ 
+
+379
+00:06:24,080 --> 00:06:25,830
+symbol. The logo radiates shifting
+gradients of light symbolizing
+
+380
+00:06:25,830 --> 00:06:25,840
+gradients of light symbolizing
+ 
+
+381
+00:06:25,840 --> 00:06:27,670
+gradients of light symbolizing
+creativity without limits. Drone
+
+382
+00:06:27,670 --> 00:06:27,680
+creativity without limits. Drone
+ 
+
+383
+00:06:27,680 --> 00:06:29,909
+creativity without limits. Drone
+captured from directly above. Cinematic
+
+384
+00:06:29,909 --> 00:06:29,919
+captured from directly above. Cinematic
+ 
+
+385
+00:06:29,919 --> 00:06:32,390
+captured from directly above. Cinematic
+contrast, ultradetailed 4K quality,
+
+386
+00:06:32,390 --> 00:06:32,400
+contrast, ultradetailed 4K quality,
+ 
+
+387
+00:06:32,400 --> 00:06:34,629
+contrast, ultradetailed 4K quality,
+atmospheric haze, luminous reflections
+
+388
+00:06:34,629 --> 00:06:34,639
+atmospheric haze, luminous reflections
+ 
+
+389
+00:06:34,639 --> 00:06:37,189
+atmospheric haze, luminous reflections
+on the pavement, futuristic yet human.
+
+390
+00:06:37,189 --> 00:06:37,199
+on the pavement, futuristic yet human.
+ 
+
+391
+00:06:37,199 --> 00:06:39,110
+on the pavement, futuristic yet human.
+And then click generate. As you can see,
+
+392
+00:06:39,110 --> 00:06:39,120
+And then click generate. As you can see,
+ 
+
+393
+00:06:39,120 --> 00:06:41,029
+And then click generate. As you can see,
+it gives us a really cool looking image.
+
+394
+00:06:41,029 --> 00:06:41,039
+it gives us a really cool looking image.
+ 
+
+395
+00:06:41,039 --> 00:06:42,390
+it gives us a really cool looking image.
+You can actually see people holding
+
+396
+00:06:42,390 --> 00:06:42,400
+You can actually see people holding
+ 
+
+397
+00:06:42,400 --> 00:06:44,150
+You can actually see people holding
+posters. There's this glowing light
+
+398
+00:06:44,150 --> 00:06:44,160
+posters. There's this glowing light
+ 
+
+399
+00:06:44,160 --> 00:06:45,909
+posters. There's this glowing light
+around the logo, and it just looks
+
+400
+00:06:45,909 --> 00:06:45,919
+around the logo, and it just looks
+ 
+
+401
+00:06:45,919 --> 00:06:47,749
+around the logo, and it just looks
+awesome. Now I'm going to go back to
+
+402
+00:06:47,749 --> 00:06:47,759
+awesome. Now I'm going to go back to
+ 
+
+403
+00:06:47,759 --> 00:06:49,830
+awesome. Now I'm going to go back to
+video, import this image as my starting
+
+404
+00:06:49,830 --> 00:06:49,840
+video, import this image as my starting
+ 
+
+405
+00:06:49,840 --> 00:06:52,309
+video, import this image as my starting
+frame into the image section right here.
+
+406
+00:06:52,309 --> 00:06:52,319
+frame into the image section right here.
+ 
+
+407
+00:06:52,319 --> 00:06:54,710
+frame into the image section right here.
+Make sure I have version 3.1 selected.
+
+408
+00:06:54,710 --> 00:06:54,720
+Make sure I have version 3.1 selected.
+ 
+
+409
+00:06:54,720 --> 00:06:56,870
+Make sure I have version 3.1 selected.
+Up the resolution, set video motion to
+
+410
+00:06:56,870 --> 00:06:56,880
+Up the resolution, set video motion to
+ 
+
+411
+00:06:56,880 --> 00:06:58,230
+Up the resolution, set video motion to
+normal. And then I'll just use this
+
+412
+00:06:58,230 --> 00:06:58,240
+normal. And then I'll just use this
+ 
+
+413
+00:06:58,240 --> 00:07:00,150
+normal. And then I'll just use this
+prompt right here. The people forming
+
+414
+00:07:00,150 --> 00:07:00,160
+prompt right here. The people forming
+ 
+
+415
+00:07:00,160 --> 00:07:02,469
+prompt right here. The people forming
+the infinity symbol begin to move in
+
+416
+00:07:02,469 --> 00:07:02,479
+the infinity symbol begin to move in
+ 
+
+417
+00:07:02,479 --> 00:07:04,790
+the infinity symbol begin to move in
+synchronized waves. In one loop, they
+
+418
+00:07:04,790 --> 00:07:04,800
+synchronized waves. In one loop, they
+ 
+
+419
+00:07:04,800 --> 00:07:06,950
+synchronized waves. In one loop, they
+perform slow coordinated sit-ups,
+
+420
+00:07:06,950 --> 00:07:06,960
+perform slow coordinated sit-ups,
+ 
+
+421
+00:07:06,960 --> 00:07:08,950
+perform slow coordinated sit-ups,
+creating a ripple effect of motion that
+
+422
+00:07:08,950 --> 00:07:08,960
+creating a ripple effect of motion that
+ 
+
+423
+00:07:08,960 --> 00:07:10,550
+creating a ripple effect of motion that
+flows through the curve. In the other
+
+424
+00:07:10,550 --> 00:07:10,560
+flows through the curve. In the other
+ 
+
+425
+00:07:10,560 --> 00:07:12,790
+flows through the curve. In the other
+loop, people rise and jump lightly in
+
+426
+00:07:12,790 --> 00:07:12,800
+loop, people rise and jump lightly in
+ 
+
+427
+00:07:12,800 --> 00:07:14,790
+loop, people rise and jump lightly in
+rhythm. Their glowing tablets pulsing
+
+428
+00:07:14,790 --> 00:07:14,800
+rhythm. Their glowing tablets pulsing
+ 
+
+429
+00:07:14,800 --> 00:07:16,469
+rhythm. Their glowing tablets pulsing
+brighter with each movement. The light
+
+430
+00:07:16,469 --> 00:07:16,479
+brighter with each movement. The light
+ 
+
+431
+00:07:16,479 --> 00:07:18,469
+brighter with each movement. The light
+from their screens travels across the
+
+432
+00:07:18,469 --> 00:07:18,479
+from their screens travels across the
+ 
+
+433
+00:07:18,479 --> 00:07:20,550
+from their screens travels across the
+logo like energy passing through a
+
+434
+00:07:20,550 --> 00:07:20,560
+logo like energy passing through a
+ 
+
+435
+00:07:20,560 --> 00:07:23,189
+logo like energy passing through a
+circuit. Smooth, seamless, and perfectly
+
+436
+00:07:23,189 --> 00:07:23,199
+circuit. Smooth, seamless, and perfectly
+ 
+
+437
+00:07:23,199 --> 00:07:24,870
+circuit. Smooth, seamless, and perfectly
+timed. As the rhythm builds, the two
+
+438
+00:07:24,870 --> 00:07:24,880
+timed. As the rhythm builds, the two
+ 
+
+439
+00:07:24,880 --> 00:07:26,950
+timed. As the rhythm builds, the two
+sides of the infinity alternate between
+
+440
+00:07:26,950 --> 00:07:26,960
+sides of the infinity alternate between
+ 
+
+441
+00:07:26,960 --> 00:07:28,870
+sides of the infinity alternate between
+waves of motion and stillness,
+
+442
+00:07:28,870 --> 00:07:28,880
+waves of motion and stillness,
+ 
+
+443
+00:07:28,880 --> 00:07:31,029
+waves of motion and stillness,
+symbolizing constant creative flow. Once
+
+444
+00:07:31,029 --> 00:07:31,039
+symbolizing constant creative flow. Once
+ 
+
+445
+00:07:31,039 --> 00:07:32,710
+symbolizing constant creative flow. Once
+it's done, you can see it gives us a
+
+446
+00:07:32,710 --> 00:07:32,720
+it's done, you can see it gives us a
+ 
+
+447
+00:07:32,720 --> 00:07:34,710
+it's done, you can see it gives us a
+really, really nice looking result. The
+
+448
+00:07:34,710 --> 00:07:34,720
+really, really nice looking result. The
+ 
+
+449
+00:07:34,720 --> 00:07:36,309
+really, really nice looking result. The
+people are moving, but they still stay
+
+450
+00:07:36,309 --> 00:07:36,319
+people are moving, but they still stay
+ 
+
+451
+00:07:36,319 --> 00:07:38,150
+people are moving, but they still stay
+aligned with the original image. And
+
+452
+00:07:38,150 --> 00:07:38,160
+aligned with the original image. And
+ 
+
+453
+00:07:38,160 --> 00:07:39,990
+aligned with the original image. And
+honestly, this is something brands could
+
+454
+00:07:39,990 --> 00:07:40,000
+honestly, this is something brands could
+ 
+
+455
+00:07:40,000 --> 00:07:42,070
+honestly, this is something brands could
+easily use in their commercials to
+
+456
+00:07:42,070 --> 00:07:42,080
+easily use in their commercials to
+ 
+
+457
+00:07:42,080 --> 00:07:43,670
+easily use in their commercials to
+highlight their logos in a super
+
+458
+00:07:43,670 --> 00:07:43,680
+highlight their logos in a super
+ 
+
+459
+00:07:43,680 --> 00:07:45,510
+highlight their logos in a super
+creative way. But now, let's move into
+
+460
+00:07:45,510 --> 00:07:45,520
+creative way. But now, let's move into
+ 
+
+461
+00:07:45,520 --> 00:07:47,510
+creative way. But now, let's move into
+some brand promo videos because this is
+
+462
+00:07:47,510 --> 00:07:47,520
+some brand promo videos because this is
+ 
+
+463
+00:07:47,520 --> 00:07:49,430
+some brand promo videos because this is
+where the tool really gets good,
+
+464
+00:07:49,430 --> 00:07:49,440
+where the tool really gets good,
+ 
+
+465
+00:07:49,440 --> 00:07:51,110
+where the tool really gets good,
+especially now that you can basically
+
+466
+00:07:51,110 --> 00:07:51,120
+especially now that you can basically
+ 
+
+467
+00:07:51,120 --> 00:07:53,270
+especially now that you can basically
+create videos of any length you want.
+
+468
+00:07:53,270 --> 00:07:53,280
+create videos of any length you want.
+ 
+
+469
+00:07:53,280 --> 00:07:54,950
+create videos of any length you want.
+All right, so the first thing you want
+
+470
+00:07:54,950 --> 00:07:54,960
+All right, so the first thing you want
+ 
+
+471
+00:07:54,960 --> 00:07:56,629
+All right, so the first thing you want
+to do is, of course, start off by
+
+472
+00:07:56,629 --> 00:07:56,639
+to do is, of course, start off by
+ 
+
+473
+00:07:56,639 --> 00:07:58,230
+to do is, of course, start off by
+finding a product. For this one, I'm
+
+474
+00:07:58,230 --> 00:07:58,240
+finding a product. For this one, I'm
+ 
+
+475
+00:07:58,240 --> 00:07:59,749
+finding a product. For this one, I'm
+actually going to use this image of the
+
+476
+00:07:59,749 --> 00:07:59,759
+actually going to use this image of the
+ 
+
+477
+00:07:59,759 --> 00:08:01,830
+actually going to use this image of the
+AirPods Max on this headphone stand.
+
+478
+00:08:01,830 --> 00:08:01,840
+AirPods Max on this headphone stand.
+ 
+
+479
+00:08:01,840 --> 00:08:03,510
+AirPods Max on this headphone stand.
+Now, we need to create our secondary
+
+480
+00:08:03,510 --> 00:08:03,520
+Now, we need to create our secondary
+ 
+
+481
+00:08:03,520 --> 00:08:05,350
+Now, we need to create our secondary
+image, which we'll be using as our end
+
+482
+00:08:05,350 --> 00:08:05,360
+image, which we'll be using as our end
+ 
+
+483
+00:08:05,360 --> 00:08:07,510
+image, which we'll be using as our end
+frame. I want the ad to have the camera
+
+484
+00:08:07,510 --> 00:08:07,520
+frame. I want the ad to have the camera
+ 
+
+485
+00:08:07,520 --> 00:08:09,270
+frame. I want the ad to have the camera
+slowly moving around the product and
+
+486
+00:08:09,270 --> 00:08:09,280
+slowly moving around the product and
+ 
+
+487
+00:08:09,280 --> 00:08:10,790
+slowly moving around the product and
+then the product kind of transitions
+
+488
+00:08:10,790 --> 00:08:10,800
+then the product kind of transitions
+ 
+
+489
+00:08:10,800 --> 00:08:12,950
+then the product kind of transitions
+into a different environment by the end.
+
+490
+00:08:12,950 --> 00:08:12,960
+into a different environment by the end.
+ 
+
+491
+00:08:12,960 --> 00:08:14,710
+into a different environment by the end.
+So, I'm going to import my first image
+
+492
+00:08:14,710 --> 00:08:14,720
+So, I'm going to import my first image
+ 
+
+493
+00:08:14,720 --> 00:08:16,710
+So, I'm going to import my first image
+into the image section right here. Then,
+
+494
+00:08:16,710 --> 00:08:16,720
+into the image section right here. Then,
+ 
+
+495
+00:08:16,720 --> 00:08:18,550
+into the image section right here. Then,
+I'll use Nano Banana to switch things up
+
+496
+00:08:18,550 --> 00:08:18,560
+I'll use Nano Banana to switch things up
+ 
+
+497
+00:08:18,560 --> 00:08:20,550
+I'll use Nano Banana to switch things up
+a bit by writing, change the product
+
+498
+00:08:20,550 --> 00:08:20,560
+a bit by writing, change the product
+ 
+
+499
+00:08:20,560 --> 00:08:22,710
+a bit by writing, change the product
+environment to a solid black background,
+
+500
+00:08:22,710 --> 00:08:22,720
+environment to a solid black background,
+ 
+
+501
+00:08:22,720 --> 00:08:24,869
+environment to a solid black background,
+and turn the headphones around. As you
+
+502
+00:08:24,869 --> 00:08:24,879
+and turn the headphones around. As you
+ 
+
+503
+00:08:24,879 --> 00:08:26,950
+and turn the headphones around. As you
+can see, the image we get back looks
+
+504
+00:08:26,950 --> 00:08:26,960
+can see, the image we get back looks
+ 
+
+505
+00:08:26,960 --> 00:08:29,029
+can see, the image we get back looks
+perfect for what I had in mind. So, now
+
+506
+00:08:29,029 --> 00:08:29,039
+perfect for what I had in mind. So, now
+ 
+
+507
+00:08:29,039 --> 00:08:30,629
+perfect for what I had in mind. So, now
+I'll head back over to the video
+
+508
+00:08:30,629 --> 00:08:30,639
+I'll head back over to the video
+ 
+
+509
+00:08:30,639 --> 00:08:33,750
+I'll head back over to the video
+section. Select Google VO 3.1 and import
+
+510
+00:08:33,750 --> 00:08:33,760
+section. Select Google VO 3.1 and import
+ 
+
+511
+00:08:33,760 --> 00:08:36,230
+section. Select Google VO 3.1 and import
+both my starting frame and my end frame.
+
+512
+00:08:36,230 --> 00:08:36,240
+both my starting frame and my end frame.
+ 
+
+513
+00:08:36,240 --> 00:08:37,909
+both my starting frame and my end frame.
+Finally, I'll use this prompt right
+
+514
+00:08:37,909 --> 00:08:37,919
+Finally, I'll use this prompt right
+ 
+
+515
+00:08:37,919 --> 00:08:40,070
+Finally, I'll use this prompt right
+here. A premium silver white overear
+
+516
+00:08:40,070 --> 00:08:40,080
+here. A premium silver white overear
+ 
+
+517
+00:08:40,080 --> 00:08:42,550
+here. A premium silver white overear
+headphone set with mesh cushion ear cups
+
+518
+00:08:42,550 --> 00:08:42,560
+headphone set with mesh cushion ear cups
+ 
+
+519
+00:08:42,560 --> 00:08:44,790
+headphone set with mesh cushion ear cups
+and polished aluminum finish perched on
+
+520
+00:08:44,790 --> 00:08:44,800
+and polished aluminum finish perched on
+ 
+
+521
+00:08:44,800 --> 00:08:46,630
+and polished aluminum finish perched on
+a minimalist white stand in a bright
+
+522
+00:08:46,630 --> 00:08:46,640
+a minimalist white stand in a bright
+ 
+
+523
+00:08:46,640 --> 00:08:49,110
+a minimalist white stand in a bright
+white studio. At 2 seconds, the camera
+
+524
+00:08:49,110 --> 00:08:49,120
+white studio. At 2 seconds, the camera
+ 
+
+525
+00:08:49,120 --> 00:08:51,590
+white studio. At 2 seconds, the camera
+begins with a wide shot and slowly zooms
+
+526
+00:08:51,590 --> 00:08:51,600
+begins with a wide shot and slowly zooms
+ 
+
+527
+00:08:51,600 --> 00:08:53,829
+begins with a wide shot and slowly zooms
+in toward the headphone, emphasizing the
+
+528
+00:08:53,829 --> 00:08:53,839
+in toward the headphone, emphasizing the
+ 
+
+529
+00:08:53,839 --> 00:08:55,670
+in toward the headphone, emphasizing the
+texture of the ear cushions and metal
+
+530
+00:08:55,670 --> 00:08:55,680
+texture of the ear cushions and metal
+ 
+
+531
+00:08:55,680 --> 00:08:57,910
+texture of the ear cushions and metal
+sheen under soft studio lighting. At
+
+532
+00:08:57,910 --> 00:08:57,920
+sheen under soft studio lighting. At
+ 
+
+533
+00:08:57,920 --> 00:09:00,230
+sheen under soft studio lighting. At
+around 3 seconds, the camera transitions
+
+534
+00:09:00,230 --> 00:09:00,240
+around 3 seconds, the camera transitions
+ 
+
+535
+00:09:00,240 --> 00:09:03,509
+around 3 seconds, the camera transitions
+into a fast, fluid 180°ree orbit around
+
+536
+00:09:03,509 --> 00:09:03,519
+into a fast, fluid 180°ree orbit around
+ 
+
+537
+00:09:03,519 --> 00:09:05,910
+into a fast, fluid 180°ree orbit around
+the headphone. Motion blur subtle,
+
+538
+00:09:05,910 --> 00:09:05,920
+the headphone. Motion blur subtle,
+ 
+
+539
+00:09:05,920 --> 00:09:07,829
+the headphone. Motion blur subtle,
+capturing reflections as the stand and
+
+540
+00:09:07,829 --> 00:09:07,839
+capturing reflections as the stand and
+ 
+
+541
+00:09:07,839 --> 00:09:10,150
+capturing reflections as the stand and
+background begin to fade. Finally, the
+
+542
+00:09:10,150 --> 00:09:10,160
+background begin to fade. Finally, the
+ 
+
+543
+00:09:10,160 --> 00:09:12,790
+background begin to fade. Finally, the
+camera pulls back, zooms out gracefully,
+
+544
+00:09:12,790 --> 00:09:12,800
+camera pulls back, zooms out gracefully,
+ 
+
+545
+00:09:12,800 --> 00:09:14,470
+camera pulls back, zooms out gracefully,
+revealing the full silhouette of the
+
+546
+00:09:14,470 --> 00:09:14,480
+revealing the full silhouette of the
+ 
+
+547
+00:09:14,480 --> 00:09:16,550
+revealing the full silhouette of the
+floating headphone in the center of the
+
+548
+00:09:16,550 --> 00:09:16,560
+floating headphone in the center of the
+ 
+
+549
+00:09:16,560 --> 00:09:18,710
+floating headphone in the center of the
+black background. style, ultra
+
+550
+00:09:18,710 --> 00:09:18,720
+black background. style, ultra
+ 
+
+551
+00:09:18,720 --> 00:09:21,030
+black background. style, ultra
+minimalist, Apple commercial aesthetic,
+
+552
+00:09:21,030 --> 00:09:21,040
+minimalist, Apple commercial aesthetic,
+ 
+
+553
+00:09:21,040 --> 00:09:23,110
+minimalist, Apple commercial aesthetic,
+shallow depth of field, high-end product
+
+554
+00:09:23,110 --> 00:09:23,120
+shallow depth of field, high-end product
+ 
+
+555
+00:09:23,120 --> 00:09:25,509
+shallow depth of field, high-end product
+cinematography, clean reflections, no
+
+556
+00:09:25,509 --> 00:09:25,519
+cinematography, clean reflections, no
+ 
+
+557
+00:09:25,519 --> 00:09:28,070
+cinematography, clean reflections, no
+subtitles, subtle ambient hum, plus
+
+558
+00:09:28,070 --> 00:09:28,080
+subtitles, subtle ambient hum, plus
+ 
+
+559
+00:09:28,080 --> 00:09:29,829
+subtitles, subtle ambient hum, plus
+light whoosh sounds. Now, what's
+
+560
+00:09:29,829 --> 00:09:29,839
+light whoosh sounds. Now, what's
+ 
+
+561
+00:09:29,839 --> 00:09:31,750
+light whoosh sounds. Now, what's
+different about this one is that you can
+
+562
+00:09:31,750 --> 00:09:31,760
+different about this one is that you can
+ 
+
+563
+00:09:31,760 --> 00:09:33,910
+different about this one is that you can
+actually give it specific descriptions
+
+564
+00:09:33,910 --> 00:09:33,920
+actually give it specific descriptions
+ 
+
+565
+00:09:33,920 --> 00:09:35,829
+actually give it specific descriptions
+for each part of the video, and it will
+
+566
+00:09:35,829 --> 00:09:35,839
+for each part of the video, and it will
+ 
+
+567
+00:09:35,839 --> 00:09:37,670
+for each part of the video, and it will
+basically tailor the animation to that.
+
+568
+00:09:37,670 --> 00:09:37,680
+basically tailor the animation to that.
+ 
+
+569
+00:09:37,680 --> 00:09:39,430
+basically tailor the animation to that.
+It's not perfect yet, but it's really,
+
+570
+00:09:39,430 --> 00:09:39,440
+It's not perfect yet, but it's really,
+ 
+
+571
+00:09:39,440 --> 00:09:41,030
+It's not perfect yet, but it's really,
+really good at understanding those
+
+572
+00:09:41,030 --> 00:09:41,040
+really good at understanding those
+ 
+
+573
+00:09:41,040 --> 00:09:42,550
+really good at understanding those
+transitions, and that's exactly what
+
+574
+00:09:42,550 --> 00:09:42,560
+transitions, and that's exactly what
+ 
+
+575
+00:09:42,560 --> 00:09:43,910
+transitions, and that's exactly what
+we'll use here. Now, I'll click
+
+576
+00:09:43,910 --> 00:09:43,920
+we'll use here. Now, I'll click
+ 
+
+577
+00:09:43,920 --> 00:09:45,590
+we'll use here. Now, I'll click
+generate, and let's take a look at our
+
+578
+00:09:45,590 --> 00:09:45,600
+generate, and let's take a look at our
+ 
+
+579
+00:09:45,600 --> 00:09:47,509
+generate, and let's take a look at our
+result. As you can see, it came out
+
+580
+00:09:47,509 --> 00:09:47,519
+result. As you can see, it came out
+ 
+
+581
+00:09:47,519 --> 00:09:49,269
+result. As you can see, it came out
+looking really cool. I'd say this is a
+
+582
+00:09:49,269 --> 00:09:49,279
+looking really cool. I'd say this is a
+ 
+
+583
+00:09:49,279 --> 00:09:50,870
+looking really cool. I'd say this is a
+great result. The product stays
+
+584
+00:09:50,870 --> 00:09:50,880
+great result. The product stays
+ 
+
+585
+00:09:50,880 --> 00:09:52,389
+great result. The product stays
+completely consistent throughout the
+
+586
+00:09:52,389 --> 00:09:52,399
+completely consistent throughout the
+ 
+
+587
+00:09:52,399 --> 00:09:54,310
+completely consistent throughout the
+whole video, and the overall look is
+
+588
+00:09:54,310 --> 00:09:54,320
+whole video, and the overall look is
+ 
+
+589
+00:09:54,320 --> 00:09:55,990
+whole video, and the overall look is
+super clean. But you can actually take
+
+590
+00:09:55,990 --> 00:09:56,000
+super clean. But you can actually take
+ 
+
+591
+00:09:56,000 --> 00:09:58,070
+super clean. But you can actually take
+this a step further while still keeping
+
+592
+00:09:58,070 --> 00:09:58,080
+this a step further while still keeping
+ 
+
+593
+00:09:58,080 --> 00:10:00,230
+this a step further while still keeping
+that same level of consistency. Here's
+
+594
+00:10:00,230 --> 00:10:00,240
+that same level of consistency. Here's
+ 
+
+595
+00:10:00,240 --> 00:10:01,990
+that same level of consistency. Here's
+how you do it. You'd click the switch
+
+596
+00:10:01,990 --> 00:10:02,000
+how you do it. You'd click the switch
+ 
+
+597
+00:10:02,000 --> 00:10:04,230
+how you do it. You'd click the switch
+button to swap your frames, making your
+
+598
+00:10:04,230 --> 00:10:04,240
+button to swap your frames, making your
+ 
+
+599
+00:10:04,240 --> 00:10:06,470
+button to swap your frames, making your
+end frame the new starting frame. Then
+
+600
+00:10:06,470 --> 00:10:06,480
+end frame the new starting frame. Then
+ 
+
+601
+00:10:06,480 --> 00:10:08,230
+end frame the new starting frame. Then
+you can import a new image for the new
+
+602
+00:10:08,230 --> 00:10:08,240
+you can import a new image for the new
+ 
+
+603
+00:10:08,240 --> 00:10:10,310
+you can import a new image for the new
+end frame. In my case, I made a new
+
+604
+00:10:10,310 --> 00:10:10,320
+end frame. In my case, I made a new
+ 
+
+605
+00:10:10,320 --> 00:10:12,630
+end frame. In my case, I made a new
+picture of the AirPods floating in space
+
+606
+00:10:12,630 --> 00:10:12,640
+picture of the AirPods floating in space
+ 
+
+607
+00:10:12,640 --> 00:10:14,389
+picture of the AirPods floating in space
+with Earth behind them because I wanted
+
+608
+00:10:14,389 --> 00:10:14,399
+with Earth behind them because I wanted
+ 
+
+609
+00:10:14,399 --> 00:10:15,990
+with Earth behind them because I wanted
+the product to kind of fly out into
+
+610
+00:10:15,990 --> 00:10:16,000
+the product to kind of fly out into
+ 
+
+611
+00:10:16,000 --> 00:10:17,750
+the product to kind of fly out into
+space at the end, which gives it that
+
+612
+00:10:17,750 --> 00:10:17,760
+space at the end, which gives it that
+ 
+
+613
+00:10:17,760 --> 00:10:20,069
+space at the end, which gives it that
+smooth futuristic vibe that fits the
+
+614
+00:10:20,069 --> 00:10:20,079
+smooth futuristic vibe that fits the
+ 
+
+615
+00:10:20,079 --> 00:10:21,750
+smooth futuristic vibe that fits the
+design of the headphones really well.
+
+616
+00:10:21,750 --> 00:10:21,760
+design of the headphones really well.
+ 
+
+617
+00:10:21,760 --> 00:10:23,829
+design of the headphones really well.
+So, for the new prompt, I'll paste this.
+
+618
+00:10:23,829 --> 00:10:23,839
+So, for the new prompt, I'll paste this.
+ 
+
+619
+00:10:23,839 --> 00:10:26,389
+So, for the new prompt, I'll paste this.
+A premium silver white overear headphone
+
+620
+00:10:26,389 --> 00:10:26,399
+A premium silver white overear headphone
+ 
+
+621
+00:10:26,399 --> 00:10:28,790
+A premium silver white overear headphone
+set with soft mesh ear cups and polished
+
+622
+00:10:28,790 --> 00:10:28,800
+set with soft mesh ear cups and polished
+ 
+
+623
+00:10:28,800 --> 00:10:30,710
+set with soft mesh ear cups and polished
+aluminum finish suspended on a
+
+624
+00:10:30,710 --> 00:10:30,720
+aluminum finish suspended on a
+ 
+
+625
+00:10:30,720 --> 00:10:32,949
+aluminum finish suspended on a
+minimalist white stand in a bright white
+
+626
+00:10:32,949 --> 00:10:32,959
+minimalist white stand in a bright white
+ 
+
+627
+00:10:32,959 --> 00:10:35,670
+minimalist white stand in a bright white
+studio. At two seconds, wide shot,
+
+628
+00:10:35,670 --> 00:10:35,680
+studio. At two seconds, wide shot,
+ 
+
+629
+00:10:35,680 --> 00:10:37,750
+studio. At two seconds, wide shot,
+camera slowly dollies in and zooms
+
+630
+00:10:37,750 --> 00:10:37,760
+camera slowly dollies in and zooms
+ 
+
+631
+00:10:37,760 --> 00:10:39,350
+camera slowly dollies in and zooms
+toward the headphones, bringing the
+
+632
+00:10:39,350 --> 00:10:39,360
+toward the headphones, bringing the
+ 
+
+633
+00:10:39,360 --> 00:10:41,030
+toward the headphones, bringing the
+texture of the mesh and metal
+
+634
+00:10:41,030 --> 00:10:41,040
+texture of the mesh and metal
+ 
+
+635
+00:10:41,040 --> 00:10:43,269
+texture of the mesh and metal
+reflections into focus. At 3 seconds,
+
+636
+00:10:43,269 --> 00:10:43,279
+reflections into focus. At 3 seconds,
+ 
+
+637
+00:10:43,279 --> 00:10:46,550
+reflections into focus. At 3 seconds,
+the camera begins a fast 180° orbit
+
+638
+00:10:46,550 --> 00:10:46,560
+the camera begins a fast 180° orbit
+ 
+
+639
+00:10:46,560 --> 00:10:48,550
+the camera begins a fast 180° orbit
+around the headphones. Motion blur
+
+640
+00:10:48,550 --> 00:10:48,560
+around the headphones. Motion blur
+ 
+
+641
+00:10:48,560 --> 00:10:50,790
+around the headphones. Motion blur
+subtle, capturing the polished surface.
+
+642
+00:10:50,790 --> 00:10:50,800
+subtle, capturing the polished surface.
+ 
+
+643
+00:10:50,800 --> 00:10:52,870
+subtle, capturing the polished surface.
+Background remains white. Finally, the
+
+644
+00:10:52,870 --> 00:10:52,880
+Background remains white. Finally, the
+ 
+
+645
+00:10:52,880 --> 00:10:54,949
+Background remains white. Finally, the
+camera pulls back, zoom out to reveal
+
+646
+00:10:54,949 --> 00:10:54,959
+camera pulls back, zoom out to reveal
+ 
+
+647
+00:10:54,959 --> 00:10:56,949
+camera pulls back, zoom out to reveal
+the headphones hovering above a slowly
+
+648
+00:10:56,949 --> 00:10:56,959
+the headphones hovering above a slowly
+ 
+
+649
+00:10:56,959 --> 00:10:59,430
+the headphones hovering above a slowly
+rotating Earth. Rimlit against space.
+
+650
+00:10:59,430 --> 00:10:59,440
+rotating Earth. Rimlit against space.
+ 
+
+651
+00:10:59,440 --> 00:11:02,949
+rotating Earth. Rimlit against space.
+resolution ultra crisp 1080p 16-9
+
+652
+00:11:02,949 --> 00:11:02,959
+resolution ultra crisp 1080p 16-9
+ 
+
+653
+00:11:02,959 --> 00:11:04,710
+resolution ultra crisp 1080p 16-9
+cinematic style. Make sure all the
+
+654
+00:11:04,710 --> 00:11:04,720
+cinematic style. Make sure all the
+ 
+
+655
+00:11:04,720 --> 00:11:06,470
+cinematic style. Make sure all the
+settings are maxed out and then click
+
+656
+00:11:06,470 --> 00:11:06,480
+settings are maxed out and then click
+ 
+
+657
+00:11:06,480 --> 00:11:08,550
+settings are maxed out and then click
+generate again. And as you can see, the
+
+658
+00:11:08,550 --> 00:11:08,560
+generate again. And as you can see, the
+ 
+
+659
+00:11:08,560 --> 00:11:10,550
+generate again. And as you can see, the
+result came out looking amazing. But
+
+660
+00:11:10,550 --> 00:11:10,560
+result came out looking amazing. But
+ 
+
+661
+00:11:10,560 --> 00:11:12,069
+result came out looking amazing. But
+what's really cool here and what I want
+
+662
+00:11:12,069 --> 00:11:12,079
+what's really cool here and what I want
+ 
+
+663
+00:11:12,079 --> 00:11:13,910
+what's really cool here and what I want
+you to notice is that the transition
+
+664
+00:11:13,910 --> 00:11:13,920
+you to notice is that the transition
+ 
+
+665
+00:11:13,920 --> 00:11:15,670
+you to notice is that the transition
+between both of these videos is
+
+666
+00:11:15,670 --> 00:11:15,680
+between both of these videos is
+ 
+
+667
+00:11:15,680 --> 00:11:17,670
+between both of these videos is
+basically seamless. That's the key part.
+
+668
+00:11:17,670 --> 00:11:17,680
+basically seamless. That's the key part.
+ 
+
+669
+00:11:17,680 --> 00:11:19,110
+basically seamless. That's the key part.
+This is what allows you to create
+
+670
+00:11:19,110 --> 00:11:19,120
+This is what allows you to create
+ 
+
+671
+00:11:19,120 --> 00:11:21,430
+This is what allows you to create
+consistent videos, basically unlimited
+
+672
+00:11:21,430 --> 00:11:21,440
+consistent videos, basically unlimited
+ 
+
+673
+00:11:21,440 --> 00:11:23,350
+consistent videos, basically unlimited
+in length, while keeping everything
+
+674
+00:11:23,350 --> 00:11:23,360
+in length, while keeping everything
+ 
+
+675
+00:11:23,360 --> 00:11:25,509
+in length, while keeping everything
+perfectly aligned from one generation to
+
+676
+00:11:25,509 --> 00:11:25,519
+perfectly aligned from one generation to
+ 
+
+677
+00:11:25,519 --> 00:11:27,509
+perfectly aligned from one generation to
+the next. So now you know exactly how to
+
+678
+00:11:27,509 --> 00:11:27,519
+the next. So now you know exactly how to
+ 
+
+679
+00:11:27,519 --> 00:11:30,230
+the next. So now you know exactly how to
+use Google VO 3.1, how to generate your
+
+680
+00:11:30,230 --> 00:11:30,240
+use Google VO 3.1, how to generate your
+ 
+
+681
+00:11:30,240 --> 00:11:32,470
+use Google VO 3.1, how to generate your
+videos, and even build full ads straight
+
+682
+00:11:32,470 --> 00:11:32,480
+videos, and even build full ads straight
+ 
+
+683
+00:11:32,480 --> 00:11:34,150
+videos, and even build full ads straight
+from your images. And what makes all of
+
+684
+00:11:34,150 --> 00:11:34,160
+from your images. And what makes all of
+ 
+
+685
+00:11:34,160 --> 00:11:36,150
+from your images. And what makes all of
+this so nice is that you can do it all
+
+686
+00:11:36,150 --> 00:11:36,160
+this so nice is that you can do it all
+ 
+
+687
+00:11:36,160 --> 00:11:37,990
+this so nice is that you can do it all
+inside Open Art. You can create your
+
+688
+00:11:37,990 --> 00:11:38,000
+inside Open Art. You can create your
+ 
+
+689
+00:11:38,000 --> 00:11:40,069
+inside Open Art. You can create your
+images, fine-tune your prompts, and then
+
+690
+00:11:40,069 --> 00:11:40,079
+images, fine-tune your prompts, and then
+ 
+
+691
+00:11:40,079 --> 00:11:42,790
+images, fine-tune your prompts, and then
+take them directly into VO 3.1 without
+
+692
+00:11:42,790 --> 00:11:42,800
+take them directly into VO 3.1 without
+ 
+
+693
+00:11:42,800 --> 00:11:44,389
+take them directly into VO 3.1 without
+ever leaving the platform. It's
+
+694
+00:11:44,389 --> 00:11:44,399
+ever leaving the platform. It's
+ 
+
+695
+00:11:44,399 --> 00:11:46,949
+ever leaving the platform. It's
+literally everything, image, audio, and
+
+696
+00:11:46,949 --> 00:11:46,959
+literally everything, image, audio, and
+ 
+
+697
+00:11:46,959 --> 00:11:49,110
+literally everything, image, audio, and
+video all in one place. So, if you want
+
+698
+00:11:49,110 --> 00:11:49,120
+video all in one place. So, if you want
+ 
+
+699
+00:11:49,120 --> 00:11:50,870
+video all in one place. So, if you want
+to start creating professionallooking
+
+700
+00:11:50,870 --> 00:11:50,880
+to start creating professionallooking
+ 
+
+701
+00:11:50,880 --> 00:11:53,990
+to start creating professionallooking
+videos with Google VO 3.1 yourself, go
+
+702
+00:11:53,990 --> 00:11:54,000
+videos with Google VO 3.1 yourself, go
+ 
+
+703
+00:11:54,000 --> 00:11:56,150
+videos with Google VO 3.1 yourself, go
+sign up for Open Art using the link down
+
+704
+00:11:56,150 --> 00:11:56,160
+sign up for Open Art using the link down
+ 
+
+705
+00:11:56,160 --> 00:11:57,910
+sign up for Open Art using the link down
+in the description below. I'll see you
+
+706
+00:11:57,910 --> 00:11:57,920
+in the description below. I'll see you
+ 
+
+707
+00:11:57,920 --> 00:12:01,279
+in the description below. I'll see you
+guys in the next one.
+

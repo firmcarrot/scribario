@@ -28,7 +28,7 @@ async def get_tenant_by_telegram_user(telegram_user_id: int) -> dict | None:
     client = get_supabase_client()
     result = (
         client.table("tenant_members")
-        .select("tenant_id, role, onboarding_status, tenants(id, name, slug)")
+        .select("tenant_id, role, onboarding_status, tenants(id, name, slug, timezone)")
         .eq("telegram_user_id", telegram_user_id)
         .limit(1)
         .execute()
@@ -169,6 +169,11 @@ async def create_feedback_event(
     action: str,
     reason_tags: list[str] | None = None,
     edited_caption: str | None = None,
+    chosen_option_idx: int | None = None,
+    chosen_formula: str | None = None,
+    original_caption: str | None = None,
+    edit_instruction: str | None = None,
+    all_options: list[dict] | None = None,
 ) -> dict:
     """Record a feedback event (approve, reject, edit, regenerate)."""
     client = get_supabase_client()
@@ -179,8 +184,18 @@ async def create_feedback_event(
     }
     if reason_tags:
         data["reason_tags"] = reason_tags
-    if edited_caption:
+    if edited_caption is not None:
         data["edited_caption"] = edited_caption
+    if chosen_option_idx is not None:
+        data["chosen_option_idx"] = chosen_option_idx
+    if chosen_formula is not None:
+        data["chosen_formula"] = chosen_formula
+    if original_caption is not None:
+        data["original_caption"] = original_caption
+    if edit_instruction is not None:
+        data["edit_instruction"] = edit_instruction
+    if all_options is not None:
+        data["all_options"] = all_options
 
     result = client.table("feedback_events").insert(data).execute()
     return result.data[0]
@@ -240,10 +255,11 @@ async def create_tenant(
     name: str,
     slug: str,
     website_url: str | None = None,
+    timezone: str = "UTC",
 ) -> dict:
     """Create a new tenant. Returns the created tenant row."""
     client = get_supabase_client()
-    data: dict = {"name": name, "slug": slug}
+    data: dict = {"name": name, "slug": slug, "timezone": timezone}
     if website_url:
         data["website_url"] = website_url
     result = client.table("tenants").insert(data).execute()
@@ -867,3 +883,324 @@ async def get_tenant_daily_video_cost(tenant_id: str) -> float:
         .execute()
     )
     return sum(row.get("cost_usd", 0.0) for row in (result.data or []))
+
+
+# --- Autopilot functions ---
+
+
+async def get_autopilot_config(tenant_id: str) -> dict | None:
+    """Get autopilot configuration for a tenant."""
+    client = get_supabase_client()
+    result = (
+        client.table("autopilot_configs")
+        .select("*")
+        .eq("tenant_id", tenant_id)
+        .limit(1)
+        .execute()
+    )
+    if result.data:
+        return result.data[0]
+    return None
+
+
+async def upsert_autopilot_config(tenant_id: str, **kwargs: object) -> dict:
+    """Insert or update autopilot config for a tenant."""
+    client = get_supabase_client()
+    data: dict = {"tenant_id": tenant_id, **kwargs}
+    data["updated_at"] = datetime.now(UTC).isoformat()
+    result = (
+        client.table("autopilot_configs")
+        .upsert(data, on_conflict="tenant_id")
+        .execute()
+    )
+    return result.data[0]
+
+
+async def pause_autopilot(tenant_id: str) -> None:
+    """Pause autopilot for a tenant by setting paused_at."""
+    client = get_supabase_client()
+    (
+        client.table("autopilot_configs")
+        .update({
+            "paused_at": datetime.now(UTC).isoformat(),
+            "updated_at": datetime.now(UTC).isoformat(),
+        })
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+
+
+async def resume_autopilot(tenant_id: str) -> None:
+    """Resume autopilot: clear paused_at and reset consecutive_failures."""
+    client = get_supabase_client()
+    (
+        client.table("autopilot_configs")
+        .update({
+            "paused_at": None,
+            "consecutive_failures": 0,
+            "updated_at": datetime.now(UTC).isoformat(),
+        })
+        .eq("tenant_id", tenant_id)
+        .execute()
+    )
+
+
+async def create_autopilot_topic(
+    tenant_id: str,
+    topic: str,
+    category: str = "promotional",
+    source: str = "ai_generated",
+    scheduled_for: datetime | None = None,
+    auto_approve_at: datetime | None = None,
+) -> dict:
+    """Create an autopilot topic record."""
+    client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "topic": topic,
+        "category": category,
+        "source": source,
+        "status": "queued",
+    }
+    if scheduled_for is not None:
+        data["scheduled_for"] = scheduled_for.isoformat()
+    if auto_approve_at is not None:
+        data["auto_approve_at"] = auto_approve_at.isoformat()
+    result = client.table("autopilot_topics").insert(data).execute()
+    return result.data[0]
+
+
+async def update_autopilot_topic_status(
+    topic_id: str,
+    new_status: str,
+    expected_status: str | None = None,
+    **kwargs: object,
+) -> bool:
+    """Atomically update topic status. Returns True if update succeeded.
+
+    When expected_status is provided, only updates if current status matches
+    (DA CRIT-2: atomic conditional update to prevent race conditions).
+    """
+    client = get_supabase_client()
+    data: dict = {
+        "status": new_status,
+        "updated_at": datetime.now(UTC).isoformat(),
+        **kwargs,
+    }
+    query = (
+        client.table("autopilot_topics")
+        .update(data)
+        .eq("id", topic_id)
+    )
+    if expected_status is not None:
+        query = query.eq("status", expected_status)
+    result = query.execute()
+    return bool(result.data)
+
+
+async def get_due_autopilot_tenants() -> list[dict]:
+    """Get autopilot configs where next_run_at <= now() and not paused/off."""
+    client = get_supabase_client()
+    result = (
+        client.table("autopilot_configs")
+        .select("*")
+        .neq("mode", "off")
+        .is_("paused_at", "null")
+        .lte("next_run_at", datetime.now(UTC).isoformat())
+        .execute()
+    )
+    return result.data or []
+
+
+async def get_expired_smart_queue_topics() -> list[dict]:
+    """Get topics in 'previewing' state whose auto_approve_at has passed."""
+    client = get_supabase_client()
+    result = (
+        client.table("autopilot_topics")
+        .select("*")
+        .eq("status", "previewing")
+        .lte("auto_approve_at", datetime.now(UTC).isoformat())
+        .execute()
+    )
+    return result.data or []
+
+
+async def count_tenant_posts_today(tenant_id: str) -> int:
+    """Count autopilot posts created today for a tenant."""
+    from datetime import timedelta
+
+    client = get_supabase_client()
+    today_start = datetime.now(UTC).replace(
+        hour=0, minute=0, second=0, microsecond=0,
+    ).isoformat()
+    tomorrow_start = (
+        datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+        + timedelta(days=1)
+    ).isoformat()
+    result = (
+        client.table("autopilot_topics")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .in_("status", ["posted", "previewing", "generating"])
+        .gte("created_at", today_start)
+        .lt("created_at", tomorrow_start)
+        .execute()
+    )
+    return result.count or 0
+
+
+async def count_tenant_posts_this_week(tenant_id: str) -> int:
+    """Count autopilot posts created this week (Mon-Sun) for a tenant."""
+    from datetime import timedelta
+
+    client = get_supabase_client()
+    now = datetime.now(UTC)
+    # Monday = 0 in weekday()
+    week_start = (now - timedelta(days=now.weekday())).replace(
+        hour=0, minute=0, second=0, microsecond=0,
+    ).isoformat()
+    result = (
+        client.table("autopilot_topics")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .in_("status", ["posted", "previewing", "generating"])
+        .gte("created_at", week_start)
+        .execute()
+    )
+    return result.count or 0
+
+
+async def get_tenant_monthly_cost(tenant_id: str) -> float:
+    """Get total usage cost for a tenant this calendar month."""
+    client = get_supabase_client()
+    month_start = datetime.now(UTC).replace(
+        day=1, hour=0, minute=0, second=0, microsecond=0,
+    ).isoformat()
+    result = (
+        client.table("usage_events")
+        .select("cost_usd")
+        .eq("tenant_id", tenant_id)
+        .gte("created_at", month_start)
+        .execute()
+    )
+    return sum(row.get("cost_usd", 0.0) for row in (result.data or []))
+
+
+async def create_autopilot_run(
+    tenant_id: str,
+    topics_generated: int = 0,
+    posts_created: int = 0,
+    posts_failed: int = 0,
+    cost_usd: float = 0.0,
+    error_message: str | None = None,
+) -> dict:
+    """Create an autopilot run record."""
+    client = get_supabase_client()
+    data: dict = {
+        "tenant_id": tenant_id,
+        "topics_generated": topics_generated,
+        "posts_created": posts_created,
+        "posts_failed": posts_failed,
+        "cost_usd": cost_usd,
+    }
+    if error_message is not None:
+        data["error_message"] = error_message
+    result = client.table("autopilot_runs").insert(data).execute()
+    return result.data[0]
+
+
+async def update_autopilot_run(run_id: str, **kwargs: object) -> None:
+    """Update an autopilot run record."""
+    client = get_supabase_client()
+    data = dict(kwargs)
+    if "completed_at" not in data:
+        data["completed_at"] = datetime.now(UTC).isoformat()
+    client.table("autopilot_runs").update(data).eq("id", run_id).execute()
+
+
+async def get_autopilot_weekly_summary(tenant_id: str) -> dict:
+    """Get weekly autopilot summary for a tenant (last 7 days)."""
+    from datetime import timedelta
+
+    client = get_supabase_client()
+    week_ago = (datetime.now(UTC) - timedelta(days=7)).isoformat()
+
+    topics_result = (
+        client.table("autopilot_topics")
+        .select("status", count="exact")
+        .eq("tenant_id", tenant_id)
+        .gte("created_at", week_ago)
+        .execute()
+    )
+    total = topics_result.count or 0
+
+    posted_result = (
+        client.table("autopilot_topics")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .eq("status", "posted")
+        .gte("created_at", week_ago)
+        .execute()
+    )
+    posted = posted_result.count or 0
+
+    rejected_result = (
+        client.table("autopilot_topics")
+        .select("id", count="exact")
+        .eq("tenant_id", tenant_id)
+        .eq("status", "rejected")
+        .gte("created_at", week_ago)
+        .execute()
+    )
+    rejected = rejected_result.count or 0
+
+    runs_result = (
+        client.table("autopilot_runs")
+        .select("cost_usd")
+        .eq("tenant_id", tenant_id)
+        .gte("triggered_at", week_ago)
+        .execute()
+    )
+    cost = sum(r.get("cost_usd", 0.0) for r in (runs_result.data or []))
+
+    return {
+        "total_topics": total,
+        "posted": posted,
+        "rejected": rejected,
+        "failed": total - posted - rejected,
+        "cost_usd": round(cost, 2),
+    }
+
+
+async def advance_next_run_at(tenant_id: str) -> None:
+    """Calculate and set the next run time from cron schedule + timezone.
+
+    Uses croniter to compute the next occurrence from now.
+    """
+    config = await get_autopilot_config(tenant_id)
+    if not config or not config.get("schedule_cron"):
+        return
+
+    try:
+        from croniter import croniter
+
+        now = datetime.now(UTC)
+        cron = croniter(config["schedule_cron"], now)
+        next_run = cron.get_next(datetime)
+
+        client = get_supabase_client()
+        (
+            client.table("autopilot_configs")
+            .update({
+                "next_run_at": next_run.isoformat(),
+                "updated_at": datetime.now(UTC).isoformat(),
+            })
+            .eq("tenant_id", tenant_id)
+            .execute()
+        )
+    except Exception:
+        import logging
+        logging.getLogger(__name__).exception(
+            "Failed to advance next_run_at",
+            extra={"tenant_id": tenant_id},
+        )

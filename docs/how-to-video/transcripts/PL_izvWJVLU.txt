@@ -1,0 +1,1066 @@
+
+It seems like everyone online is hyping
+It seems like everyone online is hyping
+ 
+It seems like everyone online is hyping
+up Google V3 right now. But the truth is
+up Google V3 right now. But the truth is
+ 
+up Google V3 right now. But the truth is
+that almost everyone I've seen using it
+that almost everyone I've seen using it
+ 
+that almost everyone I've seen using it
+is doing it completely wrong. They're
+is doing it completely wrong. They're
+ 
+is doing it completely wrong. They're
+wasting credits, getting mediocre
+wasting credits, getting mediocre
+ 
+wasting credits, getting mediocre
+results, and leaving insane potential on
+results, and leaving insane potential on
+ 
+results, and leaving insane potential on
+the table. That's why I've spent the
+the table. That's why I've spent the
+ 
+the table. That's why I've spent the
+past month pushing V3 way past what most
+past month pushing V3 way past what most
+ 
+past month pushing V3 way past what most
+people think is possible. And along the
+people think is possible. And along the
+ 
+people think is possible. And along the
+way, I discovered the best way to use it
+way, I discovered the best way to use it
+ 
+way, I discovered the best way to use it
+without wasting credits while still
+without wasting credits while still
+ 
+without wasting credits while still
+unlocking its full video potential. So,
+unlocking its full video potential. So,
+ 
+unlocking its full video potential. So,
+if you've been frustrated that your
+if you've been frustrated that your
+ 
+if you've been frustrated that your
+videos never look like the ones you see
+videos never look like the ones you see
+ 
+videos never look like the ones you see
+online, or a VO3 just feels too
+online, or a VO3 just feels too
+ 
+online, or a VO3 just feels too
+expensive because your credits vanish
+expensive because your credits vanish
+ 
+expensive because your credits vanish
+too fast, today I'm going to show you
+too fast, today I'm going to show you
+ 
+too fast, today I'm going to show you
+the exact blueprint I used to go from
+the exact blueprint I used to go from
+ 
+the exact blueprint I used to go from
+burning hundreds of credits to
+burning hundreds of credits to
+ 
+burning hundreds of credits to
+generating insanely highquality results
+generating insanely highquality results
+ 
+generating insanely highquality results
+in minutes. Now, the tool I'm going to
+in minutes. Now, the tool I'm going to
+ 
+in minutes. Now, the tool I'm going to
+be using to access Google V3 is called
+be using to access Google V3 is called
+ 
+be using to access Google V3 is called
+Open Art. Although it is a bit more
+Open Art. Although it is a bit more
+ 
+Open Art. Although it is a bit more
+expensive to use VO through Open Art, it
+expensive to use VO through Open Art, it
+ 
+expensive to use VO through Open Art, it
+adds so much extra functionality to your
+adds so much extra functionality to your
+ 
+adds so much extra functionality to your
+AI workflow that at this point it makes
+AI workflow that at this point it makes
+ 
+AI workflow that at this point it makes
+up for it. So once you sign up to open
+up for it. So once you sign up to open
+ 
+up for it. So once you sign up to open
+art, you'll get met with this homepage
+art, you'll get met with this homepage
+ 
+art, you'll get met with this homepage
+window. And to access Google V3, you
+window. And to access Google V3, you
+ 
+window. And to access Google V3, you
+need to click on the left side here
+need to click on the left side here
+ 
+need to click on the left side here
+where it says video. That takes you now
+where it says video. That takes you now
+ 
+where it says video. That takes you now
+to the AI video workflow. Then in the
+to the AI video workflow. Then in the
+ 
+to the AI video workflow. Then in the
+top left, you want to select text, which
+top left, you want to select text, which
+ 
+top left, you want to select text, which
+is for text to video generation. And in
+is for text to video generation. And in
+ 
+is for text to video generation. And in
+the select model field, as you can see
+the select model field, as you can see
+ 
+the select model field, as you can see
+right now, there are tons of models that
+right now, there are tons of models that
+ 
+right now, there are tons of models that
+Open Art offers. But what we want to do
+Open Art offers. But what we want to do
+ 
+Open Art offers. But what we want to do
+is select Google V3 as our model. Now,
+is select Google V3 as our model. Now,
+ 
+is select Google V3 as our model. Now,
+this allows us to enter our prompt. And
+this allows us to enter our prompt. And
+ 
+this allows us to enter our prompt. And
+this brings me to one of the most
+this brings me to one of the most
+ 
+this brings me to one of the most
+important part that you need to
+important part that you need to
+ 
+important part that you need to
+understand in order to use V3 in the
+understand in order to use V3 in the
+ 
+understand in order to use V3 in the
+most efficient way and that is how to
+most efficient way and that is how to
+ 
+most efficient way and that is how to
+correctly prompt in V3. So Google V3 is
+correctly prompt in V3. So Google V3 is
+ 
+correctly prompt in V3. So Google V3 is
+a very sophisticated model which means
+a very sophisticated model which means
+ 
+a very sophisticated model which means
+that normal prompts the kind you might
+that normal prompts the kind you might
+ 
+that normal prompts the kind you might
+type into chat GPT where you just
+type into chat GPT where you just
+ 
+type into chat GPT where you just
+quickly ask for something will not give
+quickly ask for something will not give
+ 
+quickly ask for something will not give
+you good results. To really understand
+you good results. To really understand
+ 
+you good results. To really understand
+how much depth you can and honestly
+how much depth you can and honestly
+ 
+how much depth you can and honestly
+should be adding into your prompts, let
+should be adding into your prompts, let
+ 
+should be adding into your prompts, let
+me walk you through what I call the 10
+me walk you through what I call the 10
+ 
+me walk you through what I call the 10
+components that you should almost always
+components that you should almost always
+ 
+components that you should almost always
+include. So, whenever you start off your
+include. So, whenever you start off your
+ 
+include. So, whenever you start off your
+prompt, you generally want to start with
+prompt, you generally want to start with
+ 
+prompt, you generally want to start with
+a scene. That could be something like a
+a scene. That could be something like a
+ 
+a scene. That could be something like a
+weathered sea captain delivers a line on
+weathered sea captain delivers a line on
+ 
+weathered sea captain delivers a line on
+deck as the sun sets or it could be an
+deck as the sun sets or it could be an
+ 
+deck as the sun sets or it could be an
+instruction for something like a man on
+instruction for something like a man on
+ 
+instruction for something like a man on
+the street interview or a POV shot.
+the street interview or a POV shot.
+ 
+the street interview or a POV shot.
+Next, you should follow with the
+Next, you should follow with the
+ 
+Next, you should follow with the
+subject. So, who is the actual person?
+subject. So, who is the actual person?
+ 
+subject. So, who is the actual person?
+What do they look like? For example, a
+What do they look like? For example, a
+ 
+What do they look like? For example, a
+sea captain with a thick gray beard.
+sea captain with a thick gray beard.
+ 
+sea captain with a thick gray beard.
+After that, you always want to include
+After that, you always want to include
+ 
+After that, you always want to include
+background information. So, what is
+background information. So, what is
+ 
+background information. So, what is
+actually happening in the background? Is
+actually happening in the background? Is
+ 
+actually happening in the background? Is
+it a busy New York street out at sea? Or
+it a busy New York street out at sea? Or
+ 
+it a busy New York street out at sea? Or
+maybe it's inside a dungeon? Then you
+maybe it's inside a dungeon? Then you
+ 
+maybe it's inside a dungeon? Then you
+want to mention the action you want your
+want to mention the action you want your
+ 
+want to mention the action you want your
+subject to take. For example, he gazes
+subject to take. For example, he gazes
+ 
+subject to take. For example, he gazes
+towards the horizon or he jumps in front
+towards the horizon or he jumps in front
+ 
+towards the horizon or he jumps in front
+of another person. After that, you want
+of another person. After that, you want
+ 
+of another person. After that, you want
+to specify the style of the video. Is it
+to specify the style of the video. Is it
+ 
+to specify the style of the video. Is it
+a horror cinematic shot which will add
+a horror cinematic shot which will add
+ 
+a horror cinematic shot which will add
+more dark colors and intensity to the
+more dark colors and intensity to the
+ 
+more dark colors and intensity to the
+scene or is it a comedy cinematic shot
+scene or is it a comedy cinematic shot
+ 
+scene or is it a comedy cinematic shot
+which will do the opposite and actually
+which will do the opposite and actually
+ 
+which will do the opposite and actually
+make the video lighter and more playful?
+make the video lighter and more playful?
+ 
+make the video lighter and more playful?
+This is where you set the overall mood
+This is where you set the overall mood
+ 
+This is where you set the overall mood
+of your video. Next comes the camera
+of your video. Next comes the camera
+ 
+of your video. Next comes the camera
+settings, then the composition. And
+settings, then the composition. And
+ 
+settings, then the composition. And
+after that, you should describe the
+after that, you should describe the
+ 
+after that, you should describe the
+lighting and the mood. For example, you
+lighting and the mood. For example, you
+ 
+lighting and the mood. For example, you
+could say golden hour with warm tones or
+could say golden hour with warm tones or
+ 
+could say golden hour with warm tones or
+cold blue tones with heavy shadows. Now,
+cold blue tones with heavy shadows. Now,
+ 
+cold blue tones with heavy shadows. Now,
+this is what really sets the atmosphere
+this is what really sets the atmosphere
+ 
+this is what really sets the atmosphere
+of your video. Then you want to add the
+of your video. Then you want to add the
+ 
+of your video. Then you want to add the
+audio. This could be a spoken line of
+audio. This could be a spoken line of
+ 
+audio. This could be a spoken line of
+dialogue, the sound of ocean waves, or
+dialogue, the sound of ocean waves, or
+ 
+dialogue, the sound of ocean waves, or
+even just background music. And at the
+even just background music. And at the
+ 
+even just background music. And at the
+very end, you can choose to finish with
+very end, you can choose to finish with
+ 
+very end, you can choose to finish with
+a specific color palette if you want to
+a specific color palette if you want to
+ 
+a specific color palette if you want to
+go even deeper. So, for example, colder
+go even deeper. So, for example, colder
+ 
+go even deeper. So, for example, colder
+tones that give you that sort of
+tones that give you that sort of
+ 
+tones that give you that sort of
+interstellar movie look or warmer tones
+interstellar movie look or warmer tones
+ 
+interstellar movie look or warmer tones
+that bring more warmth and vibrance to
+that bring more warmth and vibrance to
+ 
+that bring more warmth and vibrance to
+your scene. And then don't forget
+your scene. And then don't forget
+ 
+your scene. And then don't forget
+negative instructions. That's something
+negative instructions. That's something
+ 
+negative instructions. That's something
+a lot of people overlook, but it's
+a lot of people overlook, but it's
+ 
+a lot of people overlook, but it's
+really important to include because it
+really important to include because it
+ 
+really important to include because it
+tells the model what not to generate.
+tells the model what not to generate.
+ 
+tells the model what not to generate.
+That way, you don't get random or
+That way, you don't get random or
+ 
+That way, you don't get random or
+unwanted things showing up in your
+unwanted things showing up in your
+ 
+unwanted things showing up in your
+video. I know this seems like a lot, but
+video. I know this seems like a lot, but
+ 
+video. I know this seems like a lot, but
+this is such an important step if you
+this is such an important step if you
+ 
+this is such an important step if you
+want to make your workflow with V3 much
+want to make your workflow with V3 much
+ 
+want to make your workflow with V3 much
+more efficient. And to make sure you
+more efficient. And to make sure you
+ 
+more efficient. And to make sure you
+still get the benefits of writing very
+still get the benefits of writing very
+ 
+still get the benefits of writing very
+detailed prompts without spending hours
+detailed prompts without spending hours
+ 
+detailed prompts without spending hours
+doing it manually, I've made a short AI
+doing it manually, I've made a short AI
+ 
+doing it manually, I've made a short AI
+template that you can use. You just
+template that you can use. You just
+ 
+template that you can use. You just
+paste it into ChatGpt and in the bracket
+paste it into ChatGpt and in the bracket
+ 
+paste it into ChatGpt and in the bracket
+section, you simply describe your idea.
+section, you simply describe your idea.
+ 
+section, you simply describe your idea.
+So, I'm going to open a new ChatGpt
+So, I'm going to open a new ChatGpt
+ 
+So, I'm going to open a new ChatGpt
+chat. paste it in and inside the bracket
+chat. paste it in and inside the bracket
+ 
+chat. paste it in and inside the bracket
+I'll just write my simple idea. For
+I'll just write my simple idea. For
+ 
+I'll just write my simple idea. For
+example, a street interview with a
+example, a street interview with a
+ 
+example, a street interview with a
+chimp. That's a very vague idea. But
+chimp. That's a very vague idea. But
+ 
+chimp. That's a very vague idea. But
+when I send it off to chat GPT, you can
+when I send it off to chat GPT, you can
+ 
+when I send it off to chat GPT, you can
+see the AI expands it into a much
+see the AI expands it into a much
+ 
+see the AI expands it into a much
+longer, much more specific prompt. All I
+longer, much more specific prompt. All I
+ 
+longer, much more specific prompt. All I
+have to do is take this expanded prompt,
+have to do is take this expanded prompt,
+ 
+have to do is take this expanded prompt,
+go back to Open Art, and paste it into
+go back to Open Art, and paste it into
+ 
+go back to Open Art, and paste it into
+the prompt window. Now, what you can
+the prompt window. Now, what you can
+ 
+the prompt window. Now, what you can
+also do is turn on the enhance feature.
+also do is turn on the enhance feature.
+ 
+also do is turn on the enhance feature.
+This automatically enhances your prompt
+This automatically enhances your prompt
+ 
+This automatically enhances your prompt
+even further. You don't always need this
+even further. You don't always need this
+ 
+even further. You don't always need this
+when you've already written a very
+when you've already written a very
+ 
+when you've already written a very
+detailed prompt, but it can be really
+detailed prompt, but it can be really
+ 
+detailed prompt, but it can be really
+useful if you just want something quick
+useful if you just want something quick
+ 
+useful if you just want something quick
+or if you're working with simpler AI
+or if you're working with simpler AI
+ 
+or if you're working with simpler AI
+models. Then in the settings, you'll see
+models. Then in the settings, you'll see
+ 
+models. Then in the settings, you'll see
+a few options. You can toggle the audio
+a few options. You can toggle the audio
+ 
+a few options. You can toggle the audio
+on or off. You can select the
+on or off. You can select the
+ 
+on or off. You can select the
+resolution. I usually go with the
+resolution. I usually go with the
+ 
+resolution. I usually go with the
+highest resolution possible for the best
+highest resolution possible for the best
+ 
+highest resolution possible for the best
+results. And then you'll see the mode
+results. And then you'll see the mode
+ 
+results. And then you'll see the mode
+selector, which is actually a pretty
+selector, which is actually a pretty
+ 
+selector, which is actually a pretty
+interesting option. Here you can choose
+interesting option. Here you can choose
+ 
+interesting option. Here you can choose
+between fast mode and normal mode. What
+between fast mode and normal mode. What
+ 
+between fast mode and normal mode. What
+fast mode really is is basically a
+fast mode really is is basically a
+ 
+fast mode really is is basically a
+cheaper and a more cramped version of
+cheaper and a more cramped version of
+ 
+cheaper and a more cramped version of
+the normal mode. So, you're still
+the normal mode. So, you're still
+ 
+the normal mode. So, you're still
+getting a version of Google V3, but it's
+getting a version of Google V3, but it's
+ 
+getting a version of Google V3, but it's
+stripped down a bit. It is still as
+stripped down a bit. It is still as
+ 
+stripped down a bit. It is still as
+good, if not even slightly better in
+good, if not even slightly better in
+ 
+good, if not even slightly better in
+terms of quality compared to other AI
+terms of quality compared to other AI
+ 
+terms of quality compared to other AI
+video generators. But where it really
+video generators. But where it really
+ 
+video generators. But where it really
+starts to look a little bland is in the
+starts to look a little bland is in the
+ 
+starts to look a little bland is in the
+movements. They become slower, more
+movements. They become slower, more
+ 
+movements. They become slower, more
+blunt, and just not as natural. And
+blunt, and just not as natural. And
+ 
+blunt, and just not as natural. And
+honestly, I don't really recommend using
+honestly, I don't really recommend using
+ 
+honestly, I don't really recommend using
+fast mode because if you're already
+fast mode because if you're already
+ 
+fast mode because if you're already
+using Google V3 through Open Art, you're
+using Google V3 through Open Art, you're
+ 
+using Google V3 through Open Art, you're
+just better off selecting another model
+just better off selecting another model
+ 
+just better off selecting another model
+altogether, like clinging. So, for me
+altogether, like clinging. So, for me
+ 
+altogether, like clinging. So, for me
+personally, I almost always stick with
+personally, I almost always stick with
+ 
+personally, I almost always stick with
+normal mode. Now that we've set
+normal mode. Now that we've set
+ 
+normal mode. Now that we've set
+everything up, let's go ahead and
+everything up, let's go ahead and
+ 
+everything up, let's go ahead and
+generate a video and take a look at the
+generate a video and take a look at the
+ 
+generate a video and take a look at the
+results.
+results.
+ 
+results.
+>> So, what brings you to the city today?
+>> So, what brings you to the city today?
+ 
+>> So, what brings you to the city today?
+>> Honestly, just wanted to see what all
+>> Honestly, just wanted to see what all
+ 
+>> Honestly, just wanted to see what all
+the hype was about.
+the hype was about.
+ 
+the hype was about.
+>> And how's it going so far?
+>> And how's it going so far?
+ 
+>> And how's it going so far?
+>> Busy, loud, but I kind of like it.
+>> Busy, loud, but I kind of like it.
+ 
+>> Busy, loud, but I kind of like it.
+>> And as you can see, it came out looking
+>> And as you can see, it came out looking
+ 
+>> And as you can see, it came out looking
+very realistic considering it's a chimp
+very realistic considering it's a chimp
+ 
+very realistic considering it's a chimp
+answering a human's questions. Now, the
+answering a human's questions. Now, the
+ 
+answering a human's questions. Now, the
+only problem I have with this video is
+only problem I have with this video is
+ 
+only problem I have with this video is
+the resolution. It's only in 1080p, and
+the resolution. It's only in 1080p, and
+ 
+the resolution. It's only in 1080p, and
+that really makes the quality almost
+that really makes the quality almost
+ 
+that really makes the quality almost
+unusable if you want to use it in a
+unusable if you want to use it in a
+ 
+unusable if you want to use it in a
+higher production video or anywhere else
+higher production video or anywhere else
+ 
+higher production video or anywhere else
+where you need a higher scale. But this
+where you need a higher scale. But this
+ 
+where you need a higher scale. But this
+problem is totally solvable. Let me show
+problem is totally solvable. Let me show
+ 
+problem is totally solvable. Let me show
+you how. With the video open, look at
+you how. With the video open, look at
+ 
+you how. With the video open, look at
+the bottom right corner. Here you can
+the bottom right corner. Here you can
+ 
+the bottom right corner. Here you can
+select the upscaling feature by clicking
+select the upscaling feature by clicking
+ 
+select the upscaling feature by clicking
+on video upscale. That opens a new
+on video upscale. That opens a new
+ 
+on video upscale. That opens a new
+window with your video already selected.
+window with your video already selected.
+ 
+window with your video already selected.
+Now in the resolution menu, you just
+Now in the resolution menu, you just
+ 
+Now in the resolution menu, you just
+pick the resolution you want it to
+pick the resolution you want it to
+ 
+pick the resolution you want it to
+upscale to. I'm going with 4K here. And
+upscale to. I'm going with 4K here. And
+ 
+upscale to. I'm going with 4K here. And
+not only that, but you can also choose
+not only that, but you can also choose
+ 
+not only that, but you can also choose
+the FPS you want the video upscaled to.
+the FPS you want the video upscaled to.
+ 
+the FPS you want the video upscaled to.
+I'm selecting the highest option here as
+I'm selecting the highest option here as
+ 
+I'm selecting the highest option here as
+well. Then I hit enhance video. And
+well. Then I hit enhance video. And
+ 
+well. Then I hit enhance video. And
+let's compare.
+let's compare.
+ 
+let's compare.
+>> So, what brings you to the city today?
+>> So, what brings you to the city today?
+ 
+>> So, what brings you to the city today?
+>> Honestly, just wanted to see what all
+>> Honestly, just wanted to see what all
+ 
+>> Honestly, just wanted to see what all
+the hype was about
+the hype was about
+ 
+the hype was about
+>> and how's it going. So far,
+>> and how's it going. So far,
+ 
+>> and how's it going. So far,
+>> busy, loud, but I kind of like it.
+>> busy, loud, but I kind of like it.
+ 
+>> busy, loud, but I kind of like it.
+>> And as you can see, looking at these two
+>> And as you can see, looking at these two
+ 
+>> And as you can see, looking at these two
+shots side by side, the difference is
+shots side by side, the difference is
+ 
+shots side by side, the difference is
+massive, especially if you're working on
+massive, especially if you're working on
+ 
+massive, especially if you're working on
+a higher production project, the
+a higher production project, the
+ 
+a higher production project, the
+upscaling really gives you the extra
+upscaling really gives you the extra
+ 
+upscaling really gives you the extra
+clarity and detail you need. All right,
+clarity and detail you need. All right,
+ 
+clarity and detail you need. All right,
+now let's take a look at image to video
+now let's take a look at image to video
+ 
+now let's take a look at image to video
+with Google V3. So, to access image to
+with Google V3. So, to access image to
+ 
+with Google V3. So, to access image to
+video, you just click at the top where
+video, you just click at the top where
+ 
+video, you just click at the top where
+it says image and then select the
+it says image and then select the
+ 
+it says image and then select the
+correct model. Here in the interface,
+correct model. Here in the interface,
+ 
+correct model. Here in the interface,
+I'm going to drop in this image of a
+I'm going to drop in this image of a
+ 
+I'm going to drop in this image of a
+samurai that I have right here. And now
+samurai that I have right here. And now
+ 
+samurai that I have right here. And now
+we have the option to add our prompt.
+we have the option to add our prompt.
+ 
+we have the option to add our prompt.
+For this, I'm going to use the same
+For this, I'm going to use the same
+ 
+For this, I'm going to use the same
+template that I showed you earlier. The
+template that I showed you earlier. The
+ 
+template that I showed you earlier. The
+only difference is that at the
+only difference is that at the
+ 
+only difference is that at the
+beginning, I'll tell Chat GBT that it
+beginning, I'll tell Chat GBT that it
+ 
+beginning, I'll tell Chat GBT that it
+should use this image as the starting
+should use this image as the starting
+ 
+should use this image as the starting
+frame. So, I insert the image and then I
+frame. So, I insert the image and then I
+ 
+frame. So, I insert the image and then I
+continue building the rest of the prompt
+continue building the rest of the prompt
+ 
+continue building the rest of the prompt
+exactly the same way I would for text to
+exactly the same way I would for text to
+ 
+exactly the same way I would for text to
+video. Now, generally, image to video
+video. Now, generally, image to video
+ 
+video. Now, generally, image to video
+works very similar to text to video. But
+works very similar to text to video. But
+ 
+works very similar to text to video. But
+one thing you need to keep in mind is
+one thing you need to keep in mind is
+ 
+one thing you need to keep in mind is
+that you should always try to start with
+that you should always try to start with
+ 
+that you should always try to start with
+the highest quality image possible.
+the highest quality image possible.
+ 
+the highest quality image possible.
+Because since the AI is building the
+Because since the AI is building the
+ 
+Because since the AI is building the
+video based on your image, the final
+video based on your image, the final
+ 
+video based on your image, the final
+quality of your video will depend
+quality of your video will depend
+ 
+quality of your video will depend
+heavily on the quality of the image you
+heavily on the quality of the image you
+ 
+heavily on the quality of the image you
+upload. So if you're starting with a
+upload. So if you're starting with a
+ 
+upload. So if you're starting with a
+lowquality image, the output will almost
+lowquality image, the output will almost
+ 
+lowquality image, the output will almost
+always look a little worse than you
+always look a little worse than you
+ 
+always look a little worse than you
+expect. That's why it's best to find
+expect. That's why it's best to find
+ 
+expect. That's why it's best to find
+something highquality before you start.
+something highquality before you start.
+ 
+something highquality before you start.
+Besides this, the settings are pretty
+Besides this, the settings are pretty
+ 
+Besides this, the settings are pretty
+much the same. And here again, I don't
+much the same. And here again, I don't
+ 
+much the same. And here again, I don't
+really recommend using fast mode. With
+really recommend using fast mode. With
+ 
+really recommend using fast mode. With
+Google V3, it won't generate the video
+Google V3, it won't generate the video
+ 
+Google V3, it won't generate the video
+significantly faster. And the only thing
+significantly faster. And the only thing
+ 
+significantly faster. And the only thing
+you really get back is a worst-l looking
+you really get back is a worst-l looking
+ 
+you really get back is a worst-l looking
+video that isn't even much cheaper than
+video that isn't even much cheaper than
+ 
+video that isn't even much cheaper than
+normal mode. So, let's just go ahead and
+normal mode. So, let's just go ahead and
+ 
+normal mode. So, let's just go ahead and
+generate the video.
+
+ 
+
+And as you can see, it came out looking
+And as you can see, it came out looking
+ 
+And as you can see, it came out looking
+very good. There's not really much I
+very good. There's not really much I
+ 
+very good. There's not really much I
+could point out as a problem here. Maybe
+could point out as a problem here. Maybe
+ 
+could point out as a problem here. Maybe
+the close-up looks a little bit weird,
+the close-up looks a little bit weird,
+ 
+the close-up looks a little bit weird,
+but besides that, the video matches the
+but besides that, the video matches the
+ 
+but besides that, the video matches the
+photo perfectly. It keeps the same style
+photo perfectly. It keeps the same style
+ 
+photo perfectly. It keeps the same style
+of the image that I uploaded. And
+of the image that I uploaded. And
+ 
+of the image that I uploaded. And
+overall, it just looks really good. So
+overall, it just looks really good. So
+ 
+overall, it just looks really good. So
+now you know exactly how to stop wasting
+now you know exactly how to stop wasting
+ 
+now you know exactly how to stop wasting
+credits and unlock the full power of
+credits and unlock the full power of
+ 
+credits and unlock the full power of
+Google V3 and you can go ahead and start
+Google V3 and you can go ahead and start
+ 
+Google V3 and you can go ahead and start
+creating insanely highquality videos
+creating insanely highquality videos
+ 
+creating insanely highquality videos
+with it today. And with Open Art, you
+with it today. And with Open Art, you
+ 
+with it today. And with Open Art, you
+get way more than just VO access. You
+get way more than just VO access. You
+ 
+get way more than just VO access. You
+get all the extra features bundled into
+get all the extra features bundled into
+ 
+get all the extra features bundled into
+one simple workflow, making it
+one simple workflow, making it
+ 
+one simple workflow, making it
+ridiculously easy to create, manage, and
+ridiculously easy to create, manage, and
+ 
+ridiculously easy to create, manage, and
+scale your videos. And what keeps me
+scale your videos. And what keeps me
+ 
+scale your videos. And what keeps me
+coming back is how they're always first
+coming back is how they're always first
+ 
+coming back is how they're always first
+to integrate the newest AI models.
+to integrate the newest AI models.
+ 
+to integrate the newest AI models.
+Whenever a breakthrough model like V3 or
+Whenever a breakthrough model like V3 or
+ 
+Whenever a breakthrough model like V3 or
+the latest version of Cling Drops, Open
+the latest version of Cling Drops, Open
+ 
+the latest version of Cling Drops, Open
+Art usually has it available within
+Art usually has it available within
+ 
+Art usually has it available within
+days. So, if you're ready to start
+days. So, if you're ready to start
+ 
+days. So, if you're ready to start
+creating videos just like the ones I
+creating videos just like the ones I
+ 
+creating videos just like the ones I
+show you today, click the link below and
+show you today, click the link below and
+ 
+show you today, click the link below and
+sign up for Open Art.

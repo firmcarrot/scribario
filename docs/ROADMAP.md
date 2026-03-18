@@ -45,7 +45,9 @@ Making Scribario useful enough that clients don't want to churn.
 - [x] **Multi-platform targeting** — "post to LinkedIn only" narrows which platforms receive the post
 - [x] **Unified short-form video pipeline** — inline video generation with caption selection, deprecated long video in favor of unified pipeline
 - [x] **Instagram Reels support** — vertical video (9:16) for Reels, Stories, TikTok, Shorts
-- [x] **566 tests**, Redis FSM storage, full type checking
+- [x] **Content Library** — unchosen options auto-saved for free reuse
+- [x] **Autopilot Mode** — AI generates and posts on a schedule. Two modes: Smart Queue (2hr preview + auto-post) and Full Autopilot (zero touch). Single dispatcher pattern, Claude Haiku topic engine + moderation, preset-only schedule parser, atomic conditional updates, auto-pause after 3 failures, warmup period (first 5 = Smart Queue), daily/weekly/monthly guardrails, weekly digest.
+- [x] **647 tests**, Redis FSM storage, full type checking
 
 Still in Phase 2 (needs external API access or infrastructure):
 - [ ] **Bluesky integration** — AT Protocol OAuth — no review required, pending implementation
@@ -55,16 +57,20 @@ Still in Phase 2 (needs external API access or infrastructure):
 
 ---
 
-## Phase 3 — Intelligence Layer 📋 Planned
+## Phase 3 — Intelligence Layer 🚧 In Progress
 
-*Target: Q3-Q4 2026*
+*Started March 2026 — Target: Q3-Q4 2026*
 
 Making Scribario smarter the longer you use it.
 
 - [x] **Brand voice learning** — automatically improve brand profiles from approved content *(shipped Phase 2)*
-- [ ] **Performance feedback loop** — connect analytics data to influence future generation
+- [x] **Performance feedback loop** — structural diff + preference accumulation from approvals, edits, and engagement
+- [x] **Invisible learning engine** — structural diffs, edit analysis (Haiku), preference signals, confidence thresholds
+- [x] **Learned preferences in prompts** — Layer 11: hard rules from edits, soft nudges from approvals, formula performance stats
+- [x] **Wildcard enforcement** — 1 of 3 options always breaks from learned patterns
+- [x] **Smarter few-shot selection** — recency decay with floor, formula diversity (max 2 per formula)
 - [ ] **Composition awareness** — Nano Banana composition guidance for consistent visual identity
-- [ ] **Content calendar** — suggest when to post based on historical engagement patterns
+- [x] **Content calendar** — Autopilot Mode generates content on configurable schedules *(shipped Phase 2)*
 - [ ] **A/B testing** — post two variants, track which performs better
 - [x] **Instagram Stories and Reels** — short-form video and story formats *(shipped Phase 2 via unified video pipeline)*
 - [ ] **TikTok integration** — requires platform audit (4-12 week process)

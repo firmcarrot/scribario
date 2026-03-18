@@ -245,6 +245,64 @@ def _parse_composite(data: dict | None) -> CompositeInstruction:
     )
 
 
+async def _build_formula_performance_block(tenant_id: str) -> tuple[str, list[str] | None]:
+    """Build formula performance prompt block and wildcard formula assignments.
+
+    Returns:
+        (prompt_block, formula_assignments) where formula_assignments is
+        [formula1, formula2, wildcard_formula] or None if insufficient data.
+    """
+    try:
+        from pipeline.learning.formula_tracker import get_formula_stats
+        import random
+
+        stats = await get_formula_stats(tenant_id)
+        if not stats:
+            return "", None
+
+        # Sort by engagement (if available) then approval rate
+        def sort_key(fs):  # noqa: ANN001, ANN202
+            eng = fs.avg_engagement if fs.avg_engagement is not None else 0.0
+            return (eng, fs.approval_rate)
+
+        sorted_stats = sorted(stats.values(), key=sort_key, reverse=True)
+
+        # Build prompt block
+        parts = ["## Formula Performance (from your history):"]
+        for i, fs in enumerate(sorted_stats, 1):
+            eng_str = f"{fs.avg_engagement}/10" if fs.avg_engagement else "n/a"
+            parts.append(
+                f"{i}. {fs.formula} — {eng_str} audience engagement, "
+                f"{fs.approval_rate:.0%} approval ({fs.sample_size} posts)"
+            )
+
+        # Wildcard enforcement (Phase 5C / DA fix I5): pre-assign formulas
+        all_formulas = [
+            "hook_story_offer", "problem_agitate_solution",
+            "punchy_one_liner", "story_lesson", "list_value_drop",
+        ]
+        top_formulas = [fs.formula for fs in sorted_stats[:2]]
+
+        if len(top_formulas) >= 2:
+            wildcard_pool = [f for f in all_formulas if f not in top_formulas]
+            wildcard = random.choice(wildcard_pool) if wildcard_pool else all_formulas[-1]
+            assignments = [top_formulas[0], top_formulas[1], wildcard]
+
+            parts.append("\nGenerate the 3 captions as follows:")
+            parts.append(f"- Option 1: Use {top_formulas[0]}")
+            parts.append(f"- Option 2: Use {top_formulas[1]}")
+            parts.append(
+                f"- Option 3: WILDCARD — use {wildcard} "
+                "(break from the usual pattern)"
+            )
+            return "\n".join(parts), assignments
+
+        return "\n".join(parts), None
+    except Exception:
+        logger.exception("Failed to build formula performance block")
+        return "", None
+
+
 async def generate_plan(
     intent: str,
     profile: BrandProfile,
@@ -268,14 +326,37 @@ async def generate_plan(
         ValueError: If Claude's response fails parsing or validation.
         anthropic.APIError: If the API call fails.
     """
-    system_prompt = build_system_prompt(profile, examples, assets)
-    platforms_str = ", ".join(platform_targets) if platform_targets else "all connected platforms"
+    # Phase 3: Load learned preferences for Layer 11
+    from pipeline.brand_voice import load_edit_lessons, load_learned_preferences
 
-    user_message = (
-        f"Create content for: {intent}\n"
-        f"Target platforms: {platforms_str}\n\n"
-        f"Call the create_generation_plan tool with the complete plan."
+    learned_preferences = await load_learned_preferences(profile.tenant_id)
+    edit_lessons = await load_edit_lessons(profile.tenant_id)
+    formula_block, formula_assignments = await _build_formula_performance_block(
+        profile.tenant_id
     )
+
+    system_prompt = build_system_prompt(
+        profile, examples, assets,
+        learned_preferences=learned_preferences,
+        edit_lessons=edit_lessons,
+        formula_performance=formula_block,
+    )
+    platforms_str = (
+        ", ".join(platform_targets) if platform_targets
+        else "all connected platforms"
+    )
+
+    user_message = f"Create content for: {intent}\nTarget platforms: {platforms_str}\n\n"
+
+    # Wildcard enforcement: pre-assign formulas in user message (DA fix I5)
+    if formula_assignments and len(formula_assignments) == 3:
+        user_message += (
+            f"Caption 1 MUST use {formula_assignments[0]}. "
+            f"Caption 2 MUST use {formula_assignments[1]}. "
+            f"Caption 3 MUST use {formula_assignments[2]}.\n\n"
+        )
+
+    user_message += "Call the create_generation_plan tool with the complete plan."
 
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
 

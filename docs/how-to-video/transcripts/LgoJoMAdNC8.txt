@@ -1,0 +1,1414 @@
+
+Google VO 3.1 just dropped and it
+Google VO 3.1 just dropped and it
+ 
+Google VO 3.1 just dropped and it
+completely crushes Soore 2 because it's
+completely crushes Soore 2 because it's
+ 
+completely crushes Soore 2 because it's
+not just higher quality. It also has a
+not just higher quality. It also has a
+ 
+not just higher quality. It also has a
+much better understanding of your
+much better understanding of your
+ 
+much better understanding of your
+prompts and generates results much
+prompts and generates results much
+ 
+prompts and generates results much
+faster. But the biggest change is that
+faster. But the biggest change is that
+ 
+faster. But the biggest change is that
+you can now control your start and end
+you can now control your start and end
+ 
+you can now control your start and end
+frames which means you can generate
+frames which means you can generate
+ 
+frames which means you can generate
+results that look just like this. So
+results that look just like this. So
+ 
+results that look just like this. So
+I've been testing it over the past few
+I've been testing it over the past few
+ 
+I've been testing it over the past few
+days and in this video I'm going to
+days and in this video I'm going to
+ 
+days and in this video I'm going to
+break down everything you need to know
+break down everything you need to know
+ 
+break down everything you need to know
+about VO3.1. How it works, what's new,
+about VO3.1. How it works, what's new,
+ 
+about VO3.1. How it works, what's new,
+and how you can use it to its full
+and how you can use it to its full
+ 
+and how you can use it to its full
+potential inside one secret tool. Well,
+potential inside one secret tool. Well,
+ 
+potential inside one secret tool. Well,
+the first thing is just much richer and
+the first thing is just much richer and
+ 
+the first thing is just much richer and
+better audio overall. You'll notice that
+better audio overall. You'll notice that
+ 
+better audio overall. You'll notice that
+the sound you get now is a lot more
+the sound you get now is a lot more
+ 
+the sound you get now is a lot more
+detailed and just feels higher quality
+detailed and just feels higher quality
+ 
+detailed and just feels higher quality
+in general. The second thing is kind of
+in general. The second thing is kind of
+ 
+in general. The second thing is kind of
+just overall improvements across the
+just overall improvements across the
+ 
+just overall improvements across the
+board. The prompt adherence got way
+board. The prompt adherence got way
+ 
+board. The prompt adherence got way
+better, which basically means VO 3.1
+better, which basically means VO 3.1
+ 
+better, which basically means VO 3.1
+follows what you write a lot more
+follows what you write a lot more
+ 
+follows what you write a lot more
+accurately now. The video quality itself
+accurately now. The video quality itself
+ 
+accurately now. The video quality itself
+has also improved. So, the textures,
+has also improved. So, the textures,
+ 
+has also improved. So, the textures,
+lighting, and everything just look way
+lighting, and everything just look way
+ 
+lighting, and everything just look way
+more lifelike. The motion feels
+more lifelike. The motion feels
+ 
+more lifelike. The motion feels
+smoother, too, so the videos you get out
+smoother, too, so the videos you get out
+ 
+smoother, too, so the videos you get out
+of it just look more natural overall.
+of it just look more natural overall.
+ 
+of it just look more natural overall.
+They've also made some really nice
+They've also made some really nice
+ 
+They've also made some really nice
+upgrades to the imagetovideo feature. It
+upgrades to the imagetovideo feature. It
+ 
+upgrades to the imagetovideo feature. It
+works a lot better now and supports the
+works a lot better now and supports the
+ 
+works a lot better now and supports the
+new start and end frame feature, which
+new start and end frame feature, which
+ 
+new start and end frame feature, which
+is a big one that basically lets you
+is a big one that basically lets you
+ 
+is a big one that basically lets you
+decide exactly how your video begins and
+decide exactly how your video begins and
+ 
+decide exactly how your video begins and
+ends no matter how long it is. So, you
+ends no matter how long it is. So, you
+ 
+ends no matter how long it is. So, you
+get full control over the final result
+get full control over the final result
+ 
+get full control over the final result
+instead of just letting the AI decide it
+instead of just letting the AI decide it
+ 
+instead of just letting the AI decide it
+for you. There's also this new thing
+for you. There's also this new thing
+ 
+for you. There's also this new thing
+called frames, which is actually pretty
+called frames, which is actually pretty
+ 
+called frames, which is actually pretty
+cool. It lets you upload up to three
+cool. It lets you upload up to three
+ 
+cool. It lets you upload up to three
+different images and then Google VO
+different images and then Google VO
+ 
+different images and then Google VO
+builds out a full video using those. So,
+builds out a full video using those. So,
+ 
+builds out a full video using those. So,
+you can basically control the look, the
+you can basically control the look, the
+ 
+you can basically control the look, the
+pacing, and the story just by picking a
+pacing, and the story just by picking a
+ 
+pacing, and the story just by picking a
+few reference frames. Now, the tool
+few reference frames. Now, the tool
+ 
+few reference frames. Now, the tool
+we're going to be using to access Google
+we're going to be using to access Google
+ 
+we're going to be using to access Google
+VO 3.1 is actually called Open Art. And
+VO 3.1 is actually called Open Art. And
+ 
+VO 3.1 is actually called Open Art. And
+the reason I like using Open Art is
+the reason I like using Open Art is
+ 
+the reason I like using Open Art is
+because it lets you access all of these
+because it lets you access all of these
+ 
+because it lets you access all of these
+new AI models basically as soon as
+new AI models basically as soon as
+ 
+new AI models basically as soon as
+they're released. Plus, it's all in one
+they're released. Plus, it's all in one
+ 
+they're released. Plus, it's all in one
+place. You can create your images, your
+place. You can create your images, your
+ 
+place. You can create your images, your
+audio, and your videos without having to
+audio, and your videos without having to
+ 
+audio, and your videos without having to
+switch between different apps or tabs.
+switch between different apps or tabs.
+ 
+switch between different apps or tabs.
+You can even make your starting and
+You can even make your starting and
+ 
+You can even make your starting and
+ending frames right inside the same tool
+ending frames right inside the same tool
+ 
+ending frames right inside the same tool
+and then turn them into a full video
+and then turn them into a full video
+ 
+and then turn them into a full video
+with just a couple of clicks. So, for
+with just a couple of clicks. So, for
+ 
+with just a couple of clicks. So, for
+our first video, I just wanted to show
+our first video, I just wanted to show
+ 
+our first video, I just wanted to show
+you the difference between the two
+you the difference between the two
+ 
+you the difference between the two
+versions, VO 3.0 and VO 3.1 to access
+versions, VO 3.0 and VO 3.1 to access
+ 
+versions, VO 3.0 and VO 3.1 to access
+Google VO. I'm just going to click on
+Google VO. I'm just going to click on
+ 
+Google VO. I'm just going to click on
+the video section right here, then go to
+the video section right here, then go to
+ 
+the video section right here, then go to
+text settings so I can start from a text
+text settings so I can start from a text
+ 
+text settings so I can start from a text
+prompt, and then I'll paste my prompt in
+prompt, and then I'll paste my prompt in
+ 
+prompt, and then I'll paste my prompt in
+here. All right, so for the prompt, I'm
+here. All right, so for the prompt, I'm
+ 
+here. All right, so for the prompt, I'm
+going with this. A weathered sea captain
+going with this. A weathered sea captain
+ 
+going with this. A weathered sea captain
+with a thick gray beard and blue knitted
+with a thick gray beard and blue knitted
+ 
+with a thick gray beard and blue knitted
+hat stands at a ship's railing gesturing
+hat stands at a ship's railing gesturing
+ 
+hat stands at a ship's railing gesturing
+towards stormy ocean waves. Cinematic
+towards stormy ocean waves. Cinematic
+ 
+towards stormy ocean waves. Cinematic
+close-up with slow dollian on his
+close-up with slow dollian on his
+ 
+close-up with slow dollian on his
+weathered face. Golden hour lighting
+weathered face. Golden hour lighting
+ 
+weathered face. Golden hour lighting
+with dramatic shadows. He says, "The
+with dramatic shadows. He says, "The
+ 
+with dramatic shadows. He says, "The
+ocean teaches you respect one wave at a
+ocean teaches you respect one wave at a
+ 
+ocean teaches you respect one wave at a
+time. Audio ocean waves crashing wind.
+time. Audio ocean waves crashing wind.
+ 
+time. Audio ocean waves crashing wind.
+No background music. Color palette. Deep
+No background music. Color palette. Deep
+ 
+No background music. Color palette. Deep
+blues, warm amber, weathered browns, no
+blues, warm amber, weathered browns, no
+ 
+blues, warm amber, weathered browns, no
+subtitles. Now I'm going to start by
+subtitles. Now I'm going to start by
+ 
+subtitles. Now I'm going to start by
+selecting the old version first. I'll
+selecting the old version first. I'll
+ 
+selecting the old version first. I'll
+set the resolution to the highest
+set the resolution to the highest
+ 
+set the resolution to the highest
+possible. keep video motion on normal
+possible. keep video motion on normal
+ 
+possible. keep video motion on normal
+and then click generate. Once that's
+and then click generate. Once that's
+ 
+and then click generate. Once that's
+running, I'm switching over to version
+running, I'm switching over to version
+ 
+running, I'm switching over to version
+3.1. And as you can see, Open Art
+3.1. And as you can see, Open Art
+ 
+3.1. And as you can see, Open Art
+actually saves my prompt automatically,
+actually saves my prompt automatically,
+ 
+actually saves my prompt automatically,
+which means I don't need to re-enter
+which means I don't need to re-enter
+ 
+which means I don't need to re-enter
+anything. I'll just change the aspect
+anything. I'll just change the aspect
+ 
+anything. I'll just change the aspect
+ratio to 16 to9. Make sure all the
+ratio to 16 to9. Make sure all the
+ 
+ratio to 16 to9. Make sure all the
+settings are the same as before and then
+settings are the same as before and then
+ 
+settings are the same as before and then
+hit create. I'll wait for both
+hit create. I'll wait for both
+ 
+hit create. I'll wait for both
+generations to finish. And let's take a
+generations to finish. And let's take a
+ 
+generations to finish. And let's take a
+look at the results.
+look at the results.
+ 
+look at the results.
+>> The ocean teaches you respect one wave
+>> The ocean teaches you respect one wave
+ 
+>> The ocean teaches you respect one wave
+at a time.
+
+ 
+
+The ocean teaches you respect
+The ocean teaches you respect
+ 
+The ocean teaches you respect
+one wave at a time.
+one wave at a time.
+ 
+one wave at a time.
+As you can hear, not only is the audio
+As you can hear, not only is the audio
+ 
+As you can hear, not only is the audio
+quality noticeably better, but the
+quality noticeably better, but the
+ 
+quality noticeably better, but the
+overall visual quality is too. In Google
+overall visual quality is too. In Google
+ 
+overall visual quality is too. In Google
+VO 3.1, the face looks way more
+VO 3.1, the face looks way more
+ 
+VO 3.1, the face looks way more
+realistic. It doesn't have that slightly
+realistic. It doesn't have that slightly
+ 
+realistic. It doesn't have that slightly
+plastic AI generated look anymore. The
+plastic AI generated look anymore. The
+ 
+plastic AI generated look anymore. The
+textures on his clothing, the detail in
+textures on his clothing, the detail in
+ 
+textures on his clothing, the detail in
+his beard and skin, even the lighting,
+his beard and skin, even the lighting,
+ 
+his beard and skin, even the lighting,
+it all feels more natural and realistic.
+it all feels more natural and realistic.
+ 
+it all feels more natural and realistic.
+And honestly, I think his voice in the
+And honestly, I think his voice in the
+ 
+And honestly, I think his voice in the
+newer model also fits his look way
+newer model also fits his look way
+ 
+newer model also fits his look way
+better. It just looks more believable
+better. It just looks more believable
+ 
+better. It just looks more believable
+overall. Now that we've seen that
+overall. Now that we've seen that
+ 
+overall. Now that we've seen that
+comparison, let's go ahead and generate
+comparison, let's go ahead and generate
+ 
+comparison, let's go ahead and generate
+some more videos using Google VO 3.1.
+some more videos using Google VO 3.1.
+ 
+some more videos using Google VO 3.1.
+The first thing I'll do is hop over to
+The first thing I'll do is hop over to
+ 
+The first thing I'll do is hop over to
+the elements button. And here we're
+the elements button. And here we're
+ 
+the elements button. And here we're
+going to test out the new feature that
+going to test out the new feature that
+ 
+going to test out the new feature that
+lets you drop in up to three different
+lets you drop in up to three different
+ 
+lets you drop in up to three different
+images and then generate a full video
+images and then generate a full video
+ 
+images and then generate a full video
+using all of them. So, first off, we
+using all of them. So, first off, we
+ 
+using all of them. So, first off, we
+need to get some images. For that, I'm
+need to get some images. For that, I'm
+ 
+need to get some images. For that, I'm
+going to use the image generator inside
+going to use the image generator inside
+ 
+going to use the image generator inside
+Open Art. I'll switch over to the image
+Open Art. I'll switch over to the image
+ 
+Open Art. I'll switch over to the image
+section. And for this first one, I'll
+section. And for this first one, I'll
+ 
+section. And for this first one, I'll
+select the Open Art photorealistic
+select the Open Art photorealistic
+ 
+select the Open Art photorealistic
+model. For the image of our person, I'll
+model. For the image of our person, I'll
+ 
+model. For the image of our person, I'll
+type in woman in her 20s and then click
+type in woman in her 20s and then click
+ 
+type in woman in her 20s and then click
+create. As you can see, we instantly get
+create. As you can see, we instantly get
+ 
+create. As you can see, we instantly get
+a really nice realistic looking result.
+a really nice realistic looking result.
+ 
+a really nice realistic looking result.
+Next, I'm going to switch the model to
+Next, I'm going to switch the model to
+ 
+Next, I'm going to switch the model to
+Cadream 4. For this one, I want an image
+Cadream 4. For this one, I want an image
+ 
+Cadream 4. For this one, I want an image
+of a statue. So, I'll write a huge
+of a statue. So, I'll write a huge
+ 
+of a statue. So, I'll write a huge
+marble statue. Then, I'll click create.
+marble statue. Then, I'll click create.
+ 
+marble statue. Then, I'll click create.
+And as you can see, we get a really nice
+And as you can see, we get a really nice
+ 
+And as you can see, we get a really nice
+looking statue image that fits
+looking statue image that fits
+ 
+looking statue image that fits
+perfectly. For this scene, I'll type in
+perfectly. For this scene, I'll type in
+ 
+perfectly. For this scene, I'll type in
+a quiet park at sunset and then click
+a quiet park at sunset and then click
+ 
+a quiet park at sunset and then click
+create. As you can see, the result looks
+create. As you can see, the result looks
+ 
+create. As you can see, the result looks
+beautiful. The sky glows in warm shades
+beautiful. The sky glows in warm shades
+ 
+beautiful. The sky glows in warm shades
+of orange and pink, casting soft light
+of orange and pink, casting soft light
+ 
+of orange and pink, casting soft light
+across the park. Now, I'm just going to
+across the park. Now, I'm just going to
+ 
+across the park. Now, I'm just going to
+download all of these images, then head
+download all of these images, then head
+ 
+download all of these images, then head
+back over to the video section, click
+back over to the video section, click
+ 
+back over to the video section, click
+elements again, and upload all of my
+elements again, and upload all of my
+ 
+elements again, and upload all of my
+images there. For the prompt, I'll
+images there. For the prompt, I'll
+ 
+images there. For the prompt, I'll
+write, "A marble statue stands in a
+write, "A marble statue stands in a
+ 
+write, "A marble statue stands in a
+quiet park at sunset. A woman looks up
+quiet park at sunset. A woman looks up
+ 
+quiet park at sunset. A woman looks up
+at it, talking about how people once
+at it, talking about how people once
+ 
+at it, talking about how people once
+tried to capture feelings in stone, and
+tried to capture feelings in stone, and
+ 
+tried to capture feelings in stone, and
+somehow they did." Then I'll click
+somehow they did." Then I'll click
+ 
+somehow they did." Then I'll click
+generate and let's take a look at what
+generate and let's take a look at what
+ 
+generate and let's take a look at what
+we get.
+we get.
+ 
+we get.
+>> They tried to capture feelings in stone
+>> They tried to capture feelings in stone
+ 
+>> They tried to capture feelings in stone
+and somehow they did.
+and somehow they did.
+ 
+and somehow they did.
+>> As you can see, the result looks
+>> As you can see, the result looks
+ 
+>> As you can see, the result looks
+amazing. It flawlessly uses both
+amazing. It flawlessly uses both
+ 
+amazing. It flawlessly uses both
+reference images. The woman looks
+reference images. The woman looks
+ 
+reference images. The woman looks
+exactly like the one we just generated.
+exactly like the one we just generated.
+ 
+exactly like the one we just generated.
+And the statue looks super realistic.
+And the statue looks super realistic.
+ 
+And the statue looks super realistic.
+The whole video feels natural, like an
+The whole video feels natural, like an
+ 
+The whole video feels natural, like an
+actual shot of someone filming their
+actual shot of someone filming their
+ 
+actual shot of someone filming their
+family member talking about a statue. I
+family member talking about a statue. I
+ 
+family member talking about a statue. I
+also really like how it picked up the
+also really like how it picked up the
+ 
+also really like how it picked up the
+sound of nature in the background. the
+sound of nature in the background. the
+ 
+sound of nature in the background. the
+wind, the ambient noise, all of it just
+wind, the ambient noise, all of it just
+ 
+wind, the ambient noise, all of it just
+adds to the realism. It genuinely feels
+adds to the realism. It genuinely feels
+ 
+adds to the realism. It genuinely feels
+like a real moment, which is kind of
+like a real moment, which is kind of
+ 
+like a real moment, which is kind of
+crazy considering it's fully AI
+crazy considering it's fully AI
+ 
+crazy considering it's fully AI
+generated. And now, let's test out the
+generated. And now, let's test out the
+ 
+generated. And now, let's test out the
+starting frame feature. This one's
+starting frame feature. This one's
+ 
+starting frame feature. This one's
+actually really good for a bunch of
+actually really good for a bunch of
+ 
+actually really good for a bunch of
+different things, especially for product
+different things, especially for product
+ 
+different things, especially for product
+images, which we'll get into a bit
+images, which we'll get into a bit
+ 
+images, which we'll get into a bit
+later. But first, I want to show you how
+later. But first, I want to show you how
+ 
+later. But first, I want to show you how
+you can make generations where you can
+you can make generations where you can
+ 
+you can make generations where you can
+set up people to look like brand logos.
+set up people to look like brand logos.
+ 
+set up people to look like brand logos.
+So, for this one, I just wanted to
+So, for this one, I just wanted to
+ 
+So, for this one, I just wanted to
+animate an infinity logo. I'll go into
+animate an infinity logo. I'll go into
+ 
+animate an infinity logo. I'll go into
+the image section. Write my prompt here.
+the image section. Write my prompt here.
+ 
+the image section. Write my prompt here.
+Aerial nighttime photograph of a giant
+Aerial nighttime photograph of a giant
+ 
+Aerial nighttime photograph of a giant
+glowing open art infinity logo formed by
+glowing open art infinity logo formed by
+ 
+glowing open art infinity logo formed by
+thousands of artists standing together
+thousands of artists standing together
+ 
+thousands of artists standing together
+in a vast city square surrounded by
+in a vast city square surrounded by
+ 
+in a vast city square surrounded by
+modern architecture and digital art
+modern architecture and digital art
+ 
+modern architecture and digital art
+projections. Each person holds a glowing
+projections. Each person holds a glowing
+ 
+projections. Each person holds a glowing
+tablet or holographic frame showing
+tablet or holographic frame showing
+ 
+tablet or holographic frame showing
+different AI generated artworks creating
+different AI generated artworks creating
+ 
+different AI generated artworks creating
+waves of color, neon blues, purples, and
+waves of color, neon blues, purples, and
+ 
+waves of color, neon blues, purples, and
+soft golds that merge into the infinity
+soft golds that merge into the infinity
+ 
+soft golds that merge into the infinity
+symbol. The logo radiates shifting
+symbol. The logo radiates shifting
+ 
+symbol. The logo radiates shifting
+gradients of light symbolizing
+gradients of light symbolizing
+ 
+gradients of light symbolizing
+creativity without limits. Drone
+creativity without limits. Drone
+ 
+creativity without limits. Drone
+captured from directly above. Cinematic
+captured from directly above. Cinematic
+ 
+captured from directly above. Cinematic
+contrast, ultradetailed 4K quality,
+contrast, ultradetailed 4K quality,
+ 
+contrast, ultradetailed 4K quality,
+atmospheric haze, luminous reflections
+atmospheric haze, luminous reflections
+ 
+atmospheric haze, luminous reflections
+on the pavement, futuristic yet human.
+on the pavement, futuristic yet human.
+ 
+on the pavement, futuristic yet human.
+And then click generate. As you can see,
+And then click generate. As you can see,
+ 
+And then click generate. As you can see,
+it gives us a really cool looking image.
+it gives us a really cool looking image.
+ 
+it gives us a really cool looking image.
+You can actually see people holding
+You can actually see people holding
+ 
+You can actually see people holding
+posters. There's this glowing light
+posters. There's this glowing light
+ 
+posters. There's this glowing light
+around the logo, and it just looks
+around the logo, and it just looks
+ 
+around the logo, and it just looks
+awesome. Now I'm going to go back to
+awesome. Now I'm going to go back to
+ 
+awesome. Now I'm going to go back to
+video, import this image as my starting
+video, import this image as my starting
+ 
+video, import this image as my starting
+frame into the image section right here.
+frame into the image section right here.
+ 
+frame into the image section right here.
+Make sure I have version 3.1 selected.
+Make sure I have version 3.1 selected.
+ 
+Make sure I have version 3.1 selected.
+Up the resolution, set video motion to
+Up the resolution, set video motion to
+ 
+Up the resolution, set video motion to
+normal. And then I'll just use this
+normal. And then I'll just use this
+ 
+normal. And then I'll just use this
+prompt right here. The people forming
+prompt right here. The people forming
+ 
+prompt right here. The people forming
+the infinity symbol begin to move in
+the infinity symbol begin to move in
+ 
+the infinity symbol begin to move in
+synchronized waves. In one loop, they
+synchronized waves. In one loop, they
+ 
+synchronized waves. In one loop, they
+perform slow coordinated sit-ups,
+perform slow coordinated sit-ups,
+ 
+perform slow coordinated sit-ups,
+creating a ripple effect of motion that
+creating a ripple effect of motion that
+ 
+creating a ripple effect of motion that
+flows through the curve. In the other
+flows through the curve. In the other
+ 
+flows through the curve. In the other
+loop, people rise and jump lightly in
+loop, people rise and jump lightly in
+ 
+loop, people rise and jump lightly in
+rhythm. Their glowing tablets pulsing
+rhythm. Their glowing tablets pulsing
+ 
+rhythm. Their glowing tablets pulsing
+brighter with each movement. The light
+brighter with each movement. The light
+ 
+brighter with each movement. The light
+from their screens travels across the
+from their screens travels across the
+ 
+from their screens travels across the
+logo like energy passing through a
+logo like energy passing through a
+ 
+logo like energy passing through a
+circuit. Smooth, seamless, and perfectly
+circuit. Smooth, seamless, and perfectly
+ 
+circuit. Smooth, seamless, and perfectly
+timed. As the rhythm builds, the two
+timed. As the rhythm builds, the two
+ 
+timed. As the rhythm builds, the two
+sides of the infinity alternate between
+sides of the infinity alternate between
+ 
+sides of the infinity alternate between
+waves of motion and stillness,
+waves of motion and stillness,
+ 
+waves of motion and stillness,
+symbolizing constant creative flow. Once
+symbolizing constant creative flow. Once
+ 
+symbolizing constant creative flow. Once
+it's done, you can see it gives us a
+it's done, you can see it gives us a
+ 
+it's done, you can see it gives us a
+really, really nice looking result. The
+really, really nice looking result. The
+ 
+really, really nice looking result. The
+people are moving, but they still stay
+people are moving, but they still stay
+ 
+people are moving, but they still stay
+aligned with the original image. And
+aligned with the original image. And
+ 
+aligned with the original image. And
+honestly, this is something brands could
+honestly, this is something brands could
+ 
+honestly, this is something brands could
+easily use in their commercials to
+easily use in their commercials to
+ 
+easily use in their commercials to
+highlight their logos in a super
+highlight their logos in a super
+ 
+highlight their logos in a super
+creative way. But now, let's move into
+creative way. But now, let's move into
+ 
+creative way. But now, let's move into
+some brand promo videos because this is
+some brand promo videos because this is
+ 
+some brand promo videos because this is
+where the tool really gets good,
+where the tool really gets good,
+ 
+where the tool really gets good,
+especially now that you can basically
+especially now that you can basically
+ 
+especially now that you can basically
+create videos of any length you want.
+create videos of any length you want.
+ 
+create videos of any length you want.
+All right, so the first thing you want
+All right, so the first thing you want
+ 
+All right, so the first thing you want
+to do is, of course, start off by
+to do is, of course, start off by
+ 
+to do is, of course, start off by
+finding a product. For this one, I'm
+finding a product. For this one, I'm
+ 
+finding a product. For this one, I'm
+actually going to use this image of the
+actually going to use this image of the
+ 
+actually going to use this image of the
+AirPods Max on this headphone stand.
+AirPods Max on this headphone stand.
+ 
+AirPods Max on this headphone stand.
+Now, we need to create our secondary
+Now, we need to create our secondary
+ 
+Now, we need to create our secondary
+image, which we'll be using as our end
+image, which we'll be using as our end
+ 
+image, which we'll be using as our end
+frame. I want the ad to have the camera
+frame. I want the ad to have the camera
+ 
+frame. I want the ad to have the camera
+slowly moving around the product and
+slowly moving around the product and
+ 
+slowly moving around the product and
+then the product kind of transitions
+then the product kind of transitions
+ 
+then the product kind of transitions
+into a different environment by the end.
+into a different environment by the end.
+ 
+into a different environment by the end.
+So, I'm going to import my first image
+So, I'm going to import my first image
+ 
+So, I'm going to import my first image
+into the image section right here. Then,
+into the image section right here. Then,
+ 
+into the image section right here. Then,
+I'll use Nano Banana to switch things up
+I'll use Nano Banana to switch things up
+ 
+I'll use Nano Banana to switch things up
+a bit by writing, change the product
+a bit by writing, change the product
+ 
+a bit by writing, change the product
+environment to a solid black background,
+environment to a solid black background,
+ 
+environment to a solid black background,
+and turn the headphones around. As you
+and turn the headphones around. As you
+ 
+and turn the headphones around. As you
+can see, the image we get back looks
+can see, the image we get back looks
+ 
+can see, the image we get back looks
+perfect for what I had in mind. So, now
+perfect for what I had in mind. So, now
+ 
+perfect for what I had in mind. So, now
+I'll head back over to the video
+I'll head back over to the video
+ 
+I'll head back over to the video
+section. Select Google VO 3.1 and import
+section. Select Google VO 3.1 and import
+ 
+section. Select Google VO 3.1 and import
+both my starting frame and my end frame.
+both my starting frame and my end frame.
+ 
+both my starting frame and my end frame.
+Finally, I'll use this prompt right
+Finally, I'll use this prompt right
+ 
+Finally, I'll use this prompt right
+here. A premium silver white overear
+here. A premium silver white overear
+ 
+here. A premium silver white overear
+headphone set with mesh cushion ear cups
+headphone set with mesh cushion ear cups
+ 
+headphone set with mesh cushion ear cups
+and polished aluminum finish perched on
+and polished aluminum finish perched on
+ 
+and polished aluminum finish perched on
+a minimalist white stand in a bright
+a minimalist white stand in a bright
+ 
+a minimalist white stand in a bright
+white studio. At 2 seconds, the camera
+white studio. At 2 seconds, the camera
+ 
+white studio. At 2 seconds, the camera
+begins with a wide shot and slowly zooms
+begins with a wide shot and slowly zooms
+ 
+begins with a wide shot and slowly zooms
+in toward the headphone, emphasizing the
+in toward the headphone, emphasizing the
+ 
+in toward the headphone, emphasizing the
+texture of the ear cushions and metal
+texture of the ear cushions and metal
+ 
+texture of the ear cushions and metal
+sheen under soft studio lighting. At
+sheen under soft studio lighting. At
+ 
+sheen under soft studio lighting. At
+around 3 seconds, the camera transitions
+around 3 seconds, the camera transitions
+ 
+around 3 seconds, the camera transitions
+into a fast, fluid 180°ree orbit around
+into a fast, fluid 180°ree orbit around
+ 
+into a fast, fluid 180°ree orbit around
+the headphone. Motion blur subtle,
+the headphone. Motion blur subtle,
+ 
+the headphone. Motion blur subtle,
+capturing reflections as the stand and
+capturing reflections as the stand and
+ 
+capturing reflections as the stand and
+background begin to fade. Finally, the
+background begin to fade. Finally, the
+ 
+background begin to fade. Finally, the
+camera pulls back, zooms out gracefully,
+camera pulls back, zooms out gracefully,
+ 
+camera pulls back, zooms out gracefully,
+revealing the full silhouette of the
+revealing the full silhouette of the
+ 
+revealing the full silhouette of the
+floating headphone in the center of the
+floating headphone in the center of the
+ 
+floating headphone in the center of the
+black background. style, ultra
+black background. style, ultra
+ 
+black background. style, ultra
+minimalist, Apple commercial aesthetic,
+minimalist, Apple commercial aesthetic,
+ 
+minimalist, Apple commercial aesthetic,
+shallow depth of field, high-end product
+shallow depth of field, high-end product
+ 
+shallow depth of field, high-end product
+cinematography, clean reflections, no
+cinematography, clean reflections, no
+ 
+cinematography, clean reflections, no
+subtitles, subtle ambient hum, plus
+subtitles, subtle ambient hum, plus
+ 
+subtitles, subtle ambient hum, plus
+light whoosh sounds. Now, what's
+light whoosh sounds. Now, what's
+ 
+light whoosh sounds. Now, what's
+different about this one is that you can
+different about this one is that you can
+ 
+different about this one is that you can
+actually give it specific descriptions
+actually give it specific descriptions
+ 
+actually give it specific descriptions
+for each part of the video, and it will
+for each part of the video, and it will
+ 
+for each part of the video, and it will
+basically tailor the animation to that.
+basically tailor the animation to that.
+ 
+basically tailor the animation to that.
+It's not perfect yet, but it's really,
+It's not perfect yet, but it's really,
+ 
+It's not perfect yet, but it's really,
+really good at understanding those
+really good at understanding those
+ 
+really good at understanding those
+transitions, and that's exactly what
+transitions, and that's exactly what
+ 
+transitions, and that's exactly what
+we'll use here. Now, I'll click
+we'll use here. Now, I'll click
+ 
+we'll use here. Now, I'll click
+generate, and let's take a look at our
+generate, and let's take a look at our
+ 
+generate, and let's take a look at our
+result. As you can see, it came out
+result. As you can see, it came out
+ 
+result. As you can see, it came out
+looking really cool. I'd say this is a
+looking really cool. I'd say this is a
+ 
+looking really cool. I'd say this is a
+great result. The product stays
+great result. The product stays
+ 
+great result. The product stays
+completely consistent throughout the
+completely consistent throughout the
+ 
+completely consistent throughout the
+whole video, and the overall look is
+whole video, and the overall look is
+ 
+whole video, and the overall look is
+super clean. But you can actually take
+super clean. But you can actually take
+ 
+super clean. But you can actually take
+this a step further while still keeping
+this a step further while still keeping
+ 
+this a step further while still keeping
+that same level of consistency. Here's
+that same level of consistency. Here's
+ 
+that same level of consistency. Here's
+how you do it. You'd click the switch
+how you do it. You'd click the switch
+ 
+how you do it. You'd click the switch
+button to swap your frames, making your
+button to swap your frames, making your
+ 
+button to swap your frames, making your
+end frame the new starting frame. Then
+end frame the new starting frame. Then
+ 
+end frame the new starting frame. Then
+you can import a new image for the new
+you can import a new image for the new
+ 
+you can import a new image for the new
+end frame. In my case, I made a new
+end frame. In my case, I made a new
+ 
+end frame. In my case, I made a new
+picture of the AirPods floating in space
+picture of the AirPods floating in space
+ 
+picture of the AirPods floating in space
+with Earth behind them because I wanted
+with Earth behind them because I wanted
+ 
+with Earth behind them because I wanted
+the product to kind of fly out into
+the product to kind of fly out into
+ 
+the product to kind of fly out into
+space at the end, which gives it that
+space at the end, which gives it that
+ 
+space at the end, which gives it that
+smooth futuristic vibe that fits the
+smooth futuristic vibe that fits the
+ 
+smooth futuristic vibe that fits the
+design of the headphones really well.
+design of the headphones really well.
+ 
+design of the headphones really well.
+So, for the new prompt, I'll paste this.
+So, for the new prompt, I'll paste this.
+ 
+So, for the new prompt, I'll paste this.
+A premium silver white overear headphone
+A premium silver white overear headphone
+ 
+A premium silver white overear headphone
+set with soft mesh ear cups and polished
+set with soft mesh ear cups and polished
+ 
+set with soft mesh ear cups and polished
+aluminum finish suspended on a
+aluminum finish suspended on a
+ 
+aluminum finish suspended on a
+minimalist white stand in a bright white
+minimalist white stand in a bright white
+ 
+minimalist white stand in a bright white
+studio. At two seconds, wide shot,
+studio. At two seconds, wide shot,
+ 
+studio. At two seconds, wide shot,
+camera slowly dollies in and zooms
+camera slowly dollies in and zooms
+ 
+camera slowly dollies in and zooms
+toward the headphones, bringing the
+toward the headphones, bringing the
+ 
+toward the headphones, bringing the
+texture of the mesh and metal
+texture of the mesh and metal
+ 
+texture of the mesh and metal
+reflections into focus. At 3 seconds,
+reflections into focus. At 3 seconds,
+ 
+reflections into focus. At 3 seconds,
+the camera begins a fast 180° orbit
+the camera begins a fast 180° orbit
+ 
+the camera begins a fast 180° orbit
+around the headphones. Motion blur
+around the headphones. Motion blur
+ 
+around the headphones. Motion blur
+subtle, capturing the polished surface.
+subtle, capturing the polished surface.
+ 
+subtle, capturing the polished surface.
+Background remains white. Finally, the
+Background remains white. Finally, the
+ 
+Background remains white. Finally, the
+camera pulls back, zoom out to reveal
+camera pulls back, zoom out to reveal
+ 
+camera pulls back, zoom out to reveal
+the headphones hovering above a slowly
+the headphones hovering above a slowly
+ 
+the headphones hovering above a slowly
+rotating Earth. Rimlit against space.
+rotating Earth. Rimlit against space.
+ 
+rotating Earth. Rimlit against space.
+resolution ultra crisp 1080p 16-9
+resolution ultra crisp 1080p 16-9
+ 
+resolution ultra crisp 1080p 16-9
+cinematic style. Make sure all the
+cinematic style. Make sure all the
+ 
+cinematic style. Make sure all the
+settings are maxed out and then click
+settings are maxed out and then click
+ 
+settings are maxed out and then click
+generate again. And as you can see, the
+generate again. And as you can see, the
+ 
+generate again. And as you can see, the
+result came out looking amazing. But
+result came out looking amazing. But
+ 
+result came out looking amazing. But
+what's really cool here and what I want
+what's really cool here and what I want
+ 
+what's really cool here and what I want
+you to notice is that the transition
+you to notice is that the transition
+ 
+you to notice is that the transition
+between both of these videos is
+between both of these videos is
+ 
+between both of these videos is
+basically seamless. That's the key part.
+basically seamless. That's the key part.
+ 
+basically seamless. That's the key part.
+This is what allows you to create
+This is what allows you to create
+ 
+This is what allows you to create
+consistent videos, basically unlimited
+consistent videos, basically unlimited
+ 
+consistent videos, basically unlimited
+in length, while keeping everything
+in length, while keeping everything
+ 
+in length, while keeping everything
+perfectly aligned from one generation to
+perfectly aligned from one generation to
+ 
+perfectly aligned from one generation to
+the next. So now you know exactly how to
+the next. So now you know exactly how to
+ 
+the next. So now you know exactly how to
+use Google VO 3.1, how to generate your
+use Google VO 3.1, how to generate your
+ 
+use Google VO 3.1, how to generate your
+videos, and even build full ads straight
+videos, and even build full ads straight
+ 
+videos, and even build full ads straight
+from your images. And what makes all of
+from your images. And what makes all of
+ 
+from your images. And what makes all of
+this so nice is that you can do it all
+this so nice is that you can do it all
+ 
+this so nice is that you can do it all
+inside Open Art. You can create your
+inside Open Art. You can create your
+ 
+inside Open Art. You can create your
+images, fine-tune your prompts, and then
+images, fine-tune your prompts, and then
+ 
+images, fine-tune your prompts, and then
+take them directly into VO 3.1 without
+take them directly into VO 3.1 without
+ 
+take them directly into VO 3.1 without
+ever leaving the platform. It's
+ever leaving the platform. It's
+ 
+ever leaving the platform. It's
+literally everything, image, audio, and
+literally everything, image, audio, and
+ 
+literally everything, image, audio, and
+video all in one place. So, if you want
+video all in one place. So, if you want
+ 
+video all in one place. So, if you want
+to start creating professionallooking
+to start creating professionallooking
+ 
+to start creating professionallooking
+videos with Google VO 3.1 yourself, go
+videos with Google VO 3.1 yourself, go
+ 
+videos with Google VO 3.1 yourself, go
+sign up for Open Art using the link down
+sign up for Open Art using the link down
+ 
+sign up for Open Art using the link down
+in the description below. I'll see you
+in the description below. I'll see you
+ 
+in the description below. I'll see you
+guys in the next one.
