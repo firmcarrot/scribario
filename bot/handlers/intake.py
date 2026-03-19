@@ -20,35 +20,9 @@ logger = logging.getLogger(__name__)
 
 router = Router(name="intake")
 
-# --- Rate limiting ---
-# In-memory rate limiter: user_id → list of timestamps
-# Capped at 10k users to prevent unbounded growth. Oldest entries evicted on overflow.
-_rate_limiter: dict[int, list[float]] = {}
-_RATE_LIMITER_MAX_USERS = 10_000
+# --- Rate limiting (Redis-backed) ---
 RATE_LIMIT_WINDOW = 60  # seconds
 RATE_LIMIT_MAX = 5  # max requests per window
-
-
-def _check_rate_limit(user_id: int) -> bool:
-    """Return True if user is within rate limit, False if exceeded."""
-    now = datetime.now(timezone.utc).timestamp()
-    if user_id not in _rate_limiter:
-        # Evict oldest users if at capacity
-        if len(_rate_limiter) >= _RATE_LIMITER_MAX_USERS:
-            oldest_key = next(iter(_rate_limiter))
-            del _rate_limiter[oldest_key]
-        _rate_limiter[user_id] = []
-
-    # Evict entries outside the window
-    _rate_limiter[user_id] = [
-        t for t in _rate_limiter[user_id] if now - t < RATE_LIMIT_WINDOW
-    ]
-
-    if len(_rate_limiter[user_id]) >= RATE_LIMIT_MAX:
-        return False
-
-    _rate_limiter[user_id].append(now)
-    return True
 
 
 def truncate_telegram_caption(text: str, max_bytes: int = 1024) -> str:
@@ -253,8 +227,10 @@ async def handle_content_request(message: Message) -> None:
 
     raw_intent = message.text.strip()
 
-    # Rate limit check
-    if not _check_rate_limit(user.id):
+    # Rate limit check (Redis-backed)
+    from bot.services.rate_limiter import is_rate_limited
+
+    if await is_rate_limited(user.id, RATE_LIMIT_WINDOW, RATE_LIMIT_MAX):
         await message.answer(
             "You're sending requests too quickly. "
             "Please wait a minute before trying again."
@@ -282,6 +258,14 @@ async def handle_content_request(message: Message) -> None:
     tenant_data = membership.get("tenants") or {}
     tenant_timezone: str | None = tenant_data.get("timezone") if isinstance(tenant_data, dict) else None
 
+    # --- Budget enforcement (BEFORE any AI calls) ---
+    from bot.services.budget import check_can_generate
+
+    allowed, reason = await check_can_generate(tenant_id)
+    if not allowed:
+        await message.answer(reason)
+        return
+
     # --- Intake Agent: check if we need clarification before generating ---
     try:
         intake_result = await check_intake(raw_intent, tenant_id)
@@ -301,6 +285,15 @@ async def handle_content_request(message: Message) -> None:
     # --- Feature 5: Video detection ---
     is_video = detect_video_request(raw_intent)
     video_aspect_ratio = parse_video_aspect_ratio(raw_intent) if is_video else None
+
+    # --- Video budget check ---
+    if is_video:
+        from bot.services.budget import check_can_generate_video
+
+        vid_allowed, vid_reason = await check_can_generate_video(tenant_id)
+        if not vid_allowed:
+            await message.answer(vid_reason)
+            return
 
     logger.info(
         "Content request received",
@@ -356,6 +349,11 @@ async def handle_content_request(message: Message) -> None:
         idempotency_key=f"{request_id}:generate_content",
         scheduled_for=scheduled_time,
     )
+
+    # Increment post counters (trial + monthly)
+    from bot.services.budget import increment_post_count
+
+    await increment_post_count(tenant_id)
 
     photo_note = " I'll use your photo as a reference." if pending_photo else ""
     schedule_note = (

@@ -11,7 +11,7 @@ from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
 from bot.dialogs.onboarding import dialog as onboarding_dialog
-from bot.handlers import approval, autopilot, caption_edit, commands, intake, library, logo, onboarding, photos
+from bot.handlers import approval, autopilot, billing, caption_edit, commands, intake, library, logo, onboarding, photos
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +33,7 @@ def create_dispatcher() -> Dispatcher:
     )
     dp = Dispatcher(storage=storage)
     dp.include_router(commands.router)    # commands first
+    dp.include_router(billing.router)    # /subscribe, /billing, /upgrade — before intake
     dp.include_router(autopilot.router)   # /autopilot, /pause, /resume — before intake
     # long_video router removed — short-form video is now inline in generate_content
     dp.include_router(logo.router)        # /logo command + photo capture

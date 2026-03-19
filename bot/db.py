@@ -207,16 +207,29 @@ async def log_usage_event(
     provider: str,
     cost_usd: float,
     metadata: dict | None = None,
+    request_id: str | None = None,
+    input_tokens: int | None = None,
+    output_tokens: int | None = None,
+    model: str | None = None,
 ) -> None:
     """Log a usage event for cost tracking."""
     client = get_supabase_client()
-    client.table("usage_events").insert({
+    row: dict = {
         "tenant_id": tenant_id,
         "event_type": event_type,
         "provider": provider,
         "cost_usd": cost_usd,
         "metadata": metadata or {},
-    }).execute()
+    }
+    if request_id is not None:
+        row["request_id"] = request_id
+    if input_tokens is not None:
+        row["input_tokens"] = input_tokens
+    if output_tokens is not None:
+        row["output_tokens"] = output_tokens
+    if model is not None:
+        row["model"] = model
+    client.table("usage_events").insert(row).execute()
 
 
 async def enqueue_job(

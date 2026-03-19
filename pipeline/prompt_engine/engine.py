@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+from dataclasses import dataclass
 
 import anthropic
 
@@ -24,7 +25,16 @@ from pipeline.prompt_engine.system_prompt import build_system_prompt
 
 logger = logging.getLogger(__name__)
 
-ENGINE_COST_USD = 0.04  # Approximate per-call cost for Sonnet
+ENGINE_COST_USD = 0.04  # Approximate per-call cost for Sonnet (fallback if usage unavailable)
+
+
+@dataclass
+class PlanResult:
+    """Generation plan with API usage metadata for cost tracking."""
+    plan: GenerationPlan
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    model: str | None = None
 
 # The tool definition that forces Claude to return structured output.
 _TOOL_SCHEMA = {
@@ -360,8 +370,9 @@ async def generate_plan(
 
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
 
+    model = "claude-sonnet-4-20250514"
     response = await client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model=model,
         max_tokens=4000,
         system=system_prompt,
         messages=[{"role": "user", "content": user_message}],
@@ -371,6 +382,10 @@ async def generate_plan(
 
     plan = _parse_tool_response(response)
 
+    # Extract token usage for cost tracking
+    input_tokens = getattr(response.usage, "input_tokens", None)
+    output_tokens = getattr(response.usage, "output_tokens", None)
+
     logger.info(
         "Generation plan created",
         extra={
@@ -379,7 +394,14 @@ async def generate_plan(
             "scenes": len(plan.scenes),
             "captions": len(plan.captions),
             "intent": intent[:80],
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
         },
     )
 
-    return plan
+    return PlanResult(
+        plan=plan,
+        input_tokens=input_tokens,
+        output_tokens=output_tokens,
+        model=model,
+    )

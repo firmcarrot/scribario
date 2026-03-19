@@ -42,6 +42,16 @@ class CaptionResult:
     visual_prompt: str
 
 
+@dataclass
+class CaptionResponse:
+    """Caption results with API usage metadata."""
+
+    results: list[CaptionResult]
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    model: str | None = None
+
+
 async def generate_captions(
     intent: str,
     profile: BrandProfile,
@@ -75,14 +85,19 @@ async def generate_captions(
     )
 
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
+    model = "claude-sonnet-4-20250514"
 
     try:
         response = await client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model=model,
             max_tokens=1500,
             system=CAPTION_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_message}],
         )
+
+        # Extract token usage
+        input_tokens = getattr(response.usage, "input_tokens", None)
+        output_tokens = getattr(response.usage, "output_tokens", None)
 
         # Extract text content
         text_content = ""
@@ -113,9 +128,15 @@ async def generate_captions(
 
         logger.info(
             "Captions generated",
-            extra={"count": len(results), "intent": intent[:50]},
+            extra={"count": len(results), "intent": intent[:50],
+                   "input_tokens": input_tokens, "output_tokens": output_tokens},
         )
-        return results
+        return CaptionResponse(
+            results=results,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            model=model,
+        )
 
     except (json.JSONDecodeError, KeyError) as e:
         logger.error("Failed to parse caption response", extra={"error": str(e)})

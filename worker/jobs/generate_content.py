@@ -28,7 +28,7 @@ from pipeline.brand_voice import (
 )
 from pipeline.image_gen import ImageGenerationService
 from pipeline.prompt_engine.asset_resolver import resolve_assets
-from pipeline.prompt_engine.engine import ENGINE_COST_USD, generate_plan
+from pipeline.prompt_engine.engine import ENGINE_COST_USD, PlanResult, generate_plan
 from pipeline.prompt_engine.models import RefImageAssignment, ScenePlan
 
 logger = logging.getLogger(__name__)
@@ -119,25 +119,37 @@ async def handle_generate_content(message: dict) -> None:
 
     # Step 2: Generate plan via Prompt Engine (replaces generate_captions)
     try:
-        plan = await generate_plan(
+        plan_result: PlanResult = await generate_plan(
             intent=intent,
             profile=profile,
             examples=examples,
             assets=assets,
             platform_targets=platform_targets,
         )
+        plan = plan_result.plan
     except Exception:
         logger.exception("Prompt engine failed", extra={"request_id": request_id})
         await update_content_request_status(request_id, "failed")
         await _notify_failure(message, "Something went wrong generating your content. Please try again or rephrase your request.")
         raise
 
+    # Calculate actual cost from token usage if available, else use flat estimate
+    if plan_result.input_tokens and plan_result.output_tokens:
+        # Sonnet pricing: $3/M input, $15/M output
+        engine_cost = (plan_result.input_tokens * 3.0 / 1_000_000) + (plan_result.output_tokens * 15.0 / 1_000_000)
+    else:
+        engine_cost = ENGINE_COST_USD
+
     await log_usage_event(
         tenant_id=tenant_id,
         event_type="prompt_engine",
         provider="anthropic",
-        cost_usd=ENGINE_COST_USD,
+        cost_usd=engine_cost,
         metadata={"request_id": request_id, "format": plan.content_format, "scenes": len(plan.scenes)},
+        request_id=request_id,
+        input_tokens=plan_result.input_tokens,
+        output_tokens=plan_result.output_tokens,
+        model=plan_result.model,
     )
 
     # Step 3: Generate images from plan scenes — ALL IN PARALLEL

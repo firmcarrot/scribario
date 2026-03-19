@@ -52,7 +52,7 @@ async def _ensure_tenant(
     Takes a telegram_user param (works with both message.from_user and
     callback.from_user).
     """
-    from bot.db import create_tenant, create_tenant_member
+    from bot.db import create_tenant, create_tenant_member, get_supabase_client
 
     tenant_id = manager.dialog_data.get("tenant_id")
     if tenant_id:
@@ -61,6 +61,22 @@ async def _ensure_tenant(
             from bot.db import update_tenant_website_url
             await update_tenant_website_url(tenant_id, website_url)
         return tenant_id
+
+    # Anti-abuse: check if this telegram_user_id already used a free trial
+    try:
+        client = get_supabase_client()
+        existing = client.table("tenant_members").select(
+            "tenant_id, tenants!inner(trial_posts_used)"
+        ).eq("telegram_user_id", telegram_user.id).execute()
+        if existing.data:
+            for row in existing.data:
+                tenant_info = row.get("tenants", {})
+                if isinstance(tenant_info, dict) and (tenant_info.get("trial_posts_used") or 0) > 0:
+                    raise ValueError("TRIAL_ALREADY_USED")
+    except ValueError:
+        raise
+    except Exception:
+        logger.warning("Anti-abuse check failed, proceeding", exc_info=True)
 
     business_name = manager.dialog_data.get("business_name", "Brand")
     tz = manager.dialog_data.get("timezone", "UTC")
@@ -292,6 +308,16 @@ async def on_skip_website(
         _background_tasks.add(task)
         task.add_done_callback(_background_tasks.discard)
 
+    except ValueError as e:
+        if str(e) == "TRIAL_ALREADY_USED":
+            if callback.message and isinstance(callback.message, Message):
+                await callback.message.answer(
+                    "It looks like you've already used a free trial. "
+                    "Use /subscribe to pick a plan."
+                )
+            await manager.done()
+            return
+        raise
     except Exception:
         logger.exception("Skip-website onboarding failed")
         if callback.message and isinstance(callback.message, Message):
@@ -491,8 +517,30 @@ async def on_reject_profile(
 async def on_tour_continue(
     callback: CallbackQuery, button: Button, manager: DialogManager
 ) -> None:
-    """User tapped 'Got it!' on the tour — move to final complete screen."""
-    await manager.switch_to(OnboardingSG.complete)
+    """User tapped 'Got it!' on the tour — close dialog and send completion message + platform buttons."""
+    from bot.handlers.onboarding import send_platform_buttons
+
+    profile_name = manager.dialog_data.get("profile_name", "your brand")
+    chat_id = callback.message.chat.id if callback.message else None
+    bot = callback.bot
+
+    await manager.done()
+
+    if chat_id and bot:
+        await bot.send_message(
+            chat_id,
+            f"<b>You're all set!</b>\n\n"
+            f"Your brand profile for <b>{profile_name}</b> is ready.\n\n"
+            f"<b>Next step:</b> Connect at least one social platform so your "
+            f"approved posts have somewhere to go.\n\n"
+            f"After connecting, just send me a message anytime about what you "
+            f"want to post, like:\n"
+            f'<i>"Post about our weekend special"</i>\n\n'
+            f"I'll generate images and captions, show you a preview, "
+            f"and post when you approve.",
+            parse_mode="HTML",
+        )
+        await send_platform_buttons(bot, chat_id)
 
 
 async def on_connect_platforms(
