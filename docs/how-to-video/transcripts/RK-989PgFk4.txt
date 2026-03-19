@@ -1,0 +1,814 @@
+
+When people watch my documentary, they
+When people watch my documentary, they
+ 
+When people watch my documentary, they
+all want to know, "How did you make him
+all want to know, "How did you make him
+ 
+all want to know, "How did you make him
+so consistent?"
+so consistent?"
+ 
+so consistent?"
+I'm here with the star of my V3
+I'm here with the star of my V3
+ 
+I'm here with the star of my V3
+documentary to show you how I generated
+documentary to show you how I generated
+ 
+documentary to show you how I generated
+consistent characters in V3.
+consistent characters in V3.
+ 
+consistent characters in V3.
+They're going to want to know how you
+They're going to want to know how you
+ 
+They're going to want to know how you
+did this part, too. Yeah, you're right.
+did this part, too. Yeah, you're right.
+ 
+did this part, too. Yeah, you're right.
+All right. This intro I did in Runway.
+All right. This intro I did in Runway.
+ 
+All right. This intro I did in Runway.
+V3 currently doesn't support character
+V3 currently doesn't support character
+ 
+V3 currently doesn't support character
+references, which is the easiest way to
+references, which is the easiest way to
+ 
+references, which is the easiest way to
+create consistent characters. So, I'm
+create consistent characters. So, I'm
+ 
+create consistent characters. So, I'm
+going to show you what I did. And the
+going to show you what I did. And the
+ 
+going to show you what I did. And the
+foundation came from my previous video
+foundation came from my previous video
+ 
+foundation came from my previous video
+called Wonderful Dream, which I created
+called Wonderful Dream, which I created
+ 
+called Wonderful Dream, which I created
+in Whisk. And the character from that
+in Whisk. And the character from that
+ 
+in Whisk. And the character from that
+makes a cameo in this movie. All right.
+makes a cameo in this movie. All right.
+ 
+makes a cameo in this movie. All right.
+So, this is Whisk, and it's a tool from
+So, this is Whisk, and it's a tool from
+ 
+So, this is Whisk, and it's a tool from
+Google that lets you generate images,
+Google that lets you generate images,
+ 
+Google that lets you generate images,
+and then you can generate videos from
+and then you can generate videos from
+ 
+and then you can generate videos from
+those images. Um, this is what I made
+those images. Um, this is what I made
+ 
+those images. Um, this is what I made
+Wonderful Dream in. So, this was the
+Wonderful Dream in. So, this was the
+ 
+Wonderful Dream in. So, this was the
+final prompt that I used um to create
+final prompt that I used um to create
+ 
+final prompt that I used um to create
+one image of the character. So, I didn't
+one image of the character. So, I didn't
+ 
+one image of the character. So, I didn't
+use it as a reference image, but I had
+use it as a reference image, but I had
+ 
+use it as a reference image, but I had
+to create an image of that character.
+to create an image of that character.
+ 
+to create an image of that character.
+This is what I used. So, if we were
+This is what I used. So, if we were
+ 
+This is what I used. So, if we were
+using character reference images, we
+using character reference images, we
+ 
+using character reference images, we
+would expect this image to be what the
+would expect this image to be what the
+ 
+would expect this image to be what the
+character in the video looks like. But
+character in the video looks like. But
+ 
+character in the video looks like. But
+all we're doing really is taking these
+all we're doing really is taking these
+ 
+all we're doing really is taking these
+characters and then we're going to go
+characters and then we're going to go
+ 
+characters and then we're going to go
+over here to the subject and drag it
+over here to the subject and drag it
+ 
+over here to the subject and drag it
+over here. And why are we doing that?
+over here. And why are we doing that?
+ 
+over here. And why are we doing that?
+So, it's going to analyze this image and
+So, it's going to analyze this image and
+ 
+So, it's going to analyze this image and
+it's going to give us a much more robust
+it's going to give us a much more robust
+ 
+it's going to give us a much more robust
+prompt. So, this is what it sees. So,
+prompt. So, this is what it sees. So,
+ 
+prompt. So, this is what it sees. So,
+this is kind of how the Google AI
+this is kind of how the Google AI
+ 
+this is kind of how the Google AI
+universe sees this image. So, this
+universe sees this image. So, this
+ 
+universe sees this image. So, this
+became the basis for my prompt. I took
+became the basis for my prompt. I took
+ 
+became the basis for my prompt. I took
+all of it over to Gemini and I attached
+all of it over to Gemini and I attached
+ 
+all of it over to Gemini and I attached
+this photo and I said, "Here's a prompt
+this photo and I said, "Here's a prompt
+ 
+this photo and I said, "Here's a prompt
+I wrote in Whisk." and I gave it my
+I wrote in Whisk." and I gave it my
+ 
+I wrote in Whisk." and I gave it my
+prompt. And then it said, "Here is the
+prompt. And then it said, "Here is the
+ 
+prompt. And then it said, "Here is the
+image description I received for this
+image description I received for this
+ 
+image description I received for this
+image." And I put that image description
+image." And I put that image description
+ 
+image." And I put that image description
+in there. And then I said, "I would like
+in there. And then I said, "I would like
+ 
+in there. And then I said, "I would like
+a detailed VO3 description of just the
+a detailed VO3 description of just the
+ 
+a detailed VO3 description of just the
+man that I can use in a template for
+man that I can use in a template for
+ 
+man that I can use in a template for
+building prompts where I try to place
+building prompts where I try to place
+ 
+building prompts where I try to place
+him in a consistent looking way." So
+him in a consistent looking way." So
+ 
+him in a consistent looking way." So
+don't worry about the wardrobe. Just
+don't worry about the wardrobe. Just
+ 
+don't worry about the wardrobe. Just
+focus on his face. Just to recap, here's
+focus on his face. Just to recap, here's
+ 
+focus on his face. Just to recap, here's
+the image. Here's the prompt I gave.
+the image. Here's the prompt I gave.
+ 
+the image. Here's the prompt I gave.
+Here's the image description from Whisk
+Here's the image description from Whisk
+ 
+Here's the image description from Whisk
+and give me something to use
+and give me something to use
+ 
+and give me something to use
+consistently. So, I just asked, "What do
+consistently. So, I just asked, "What do
+ 
+consistently. So, I just asked, "What do
+you think his name would be and how
+you think his name would be and how
+ 
+you think his name would be and how
+would you write a voice prompt for him
+would you write a voice prompt for him
+ 
+would you write a voice prompt for him
+in VO3?" Cuz I want to have a consistent
+in VO3?" Cuz I want to have a consistent
+ 
+in VO3?" Cuz I want to have a consistent
+voice all the time. It thinks about it.
+voice all the time. It thinks about it.
+ 
+voice all the time. It thinks about it.
+It says Aram. And I was like, "Okay,
+It says Aram. And I was like, "Okay,
+ 
+It says Aram. And I was like, "Okay,
+cool." Like, I'm not going to I'm not
+cool." Like, I'm not going to I'm not
+ 
+cool." Like, I'm not going to I'm not
+fuss with you. Let's call him Aram. And
+fuss with you. Let's call him Aram. And
+ 
+fuss with you. Let's call him Aram. And
+then it gave me some options for his
+then it gave me some options for his
+ 
+then it gave me some options for his
+voice. Here's an example of the full
+voice. Here's an example of the full
+ 
+voice. Here's an example of the full
+prompt. So it gives you the physical
+prompt. So it gives you the physical
+ 
+prompt. So it gives you the physical
+description of him. And then when he
+description of him. And then when he
+ 
+description of him. And then when he
+speaks, this is um how he talks. And I
+speaks, this is um how he talks. And I
+ 
+speaks, this is um how he talks. And I
+wanted a certain style. So I said,
+wanted a certain style. So I said,
+ 
+wanted a certain style. So I said,
+"Please provide a core prompt for Aram,
+"Please provide a core prompt for Aram,
+ 
+"Please provide a core prompt for Aram,
+core prompt for Aram's voice, and a core
+core prompt for Aram's voice, and a core
+ 
+core prompt for Aram's voice, and a core
+prompt for a cinematic style shot in
+prompt for a cinematic style shot in
+ 
+prompt for a cinematic style shot in
+35mm." This is for the visual or
+35mm." This is for the visual or
+ 
+35mm." This is for the visual or
+physical description of him. This is
+physical description of him. This is
+ 
+physical description of him. This is
+what his voice would sound like.
+what his voice would sound like.
+ 
+what his voice would sound like.
+Slightly raspy and grally, tinged with
+Slightly raspy and grally, tinged with
+ 
+Slightly raspy and grally, tinged with
+thoughtful curiosity. All right. Now, do
+thoughtful curiosity. All right. Now, do
+ 
+thoughtful curiosity. All right. Now, do
+a prompt in a high-end documentary style
+a prompt in a high-end documentary style
+ 
+a prompt in a high-end documentary style
+where he says, "I used to wake up and
+where he says, "I used to wake up and
+ 
+where he says, "I used to wake up and
+worry about all of the things I needed
+worry about all of the things I needed
+ 
+worry about all of the things I needed
+to do that day." And it gave me this.
+to do that day." And it gave me this.
+ 
+to do that day." And it gave me this.
+I used to wake up and worry about all of
+I used to wake up and worry about all of
+ 
+I used to wake up and worry about all of
+the things I needed to do that day. So,
+the things I needed to do that day. So,
+ 
+the things I needed to do that day. So,
+that's kind of it for consistent
+that's kind of it for consistent
+ 
+that's kind of it for consistent
+characters. Build a very detailed
+characters. Build a very detailed
+ 
+characters. Build a very detailed
+description of the character and use
+description of the character and use
+ 
+description of the character and use
+that in all of the prompts. Okay. So,
+that in all of the prompts. Okay. So,
+ 
+that in all of the prompts. Okay. So,
+the trick is using the same detailed
+the trick is using the same detailed
+ 
+the trick is using the same detailed
+character description in the prompt, but
+character description in the prompt, but
+ 
+character description in the prompt, but
+how do you get rid of these subtitles?
+how do you get rid of these subtitles?
+ 
+how do you get rid of these subtitles?
+The other big thing that people have a
+The other big thing that people have a
+ 
+The other big thing that people have a
+problem with are the captions. So, I
+problem with are the captions. So, I
+ 
+problem with are the captions. So, I
+heard on Discord that if you use Gemini
+heard on Discord that if you use Gemini
+ 
+heard on Discord that if you use Gemini
+to generate the videos, you don't see
+to generate the videos, you don't see
+ 
+to generate the videos, you don't see
+the captions. So, I tried that in the
+the captions. So, I tried that in the
+ 
+the captions. So, I tried that in the
+first one. There were no captions and I
+first one. There were no captions and I
+ 
+first one. There were no captions and I
+was excited. And then I did it again and
+was excited. And then I did it again and
+ 
+was excited. And then I did it again and
+I got captions. So, that didn't work.
+I got captions. So, that didn't work.
+ 
+I got captions. So, that didn't work.
+So, I wanted to try an AI way to get rid
+So, I wanted to try an AI way to get rid
+ 
+So, I wanted to try an AI way to get rid
+of the captions. So even if VO3
+of the captions. So even if VO3
+ 
+of the captions. So even if VO3
+generated it with captions, I can remove
+generated it with captions, I can remove
+ 
+generated it with captions, I can remove
+them with AI. So the first one I tried
+them with AI. So the first one I tried
+ 
+them with AI. So the first one I tried
+was Runway's inpainting tool. You've got
+was Runway's inpainting tool. You've got
+ 
+was Runway's inpainting tool. You've got
+a brush over here. Just go to the
+a brush over here. Just go to the
+ 
+a brush over here. Just go to the
+captions and just kind of wipe the brush
+captions and just kind of wipe the brush
+ 
+captions and just kind of wipe the brush
+over the captions and then they
+over the captions and then they
+ 
+over the captions and then they
+disappear. So you can kind of, in my
+disappear. So you can kind of, in my
+ 
+disappear. So you can kind of, in my
+opinion, you can kind of see a little
+opinion, you can kind of see a little
+ 
+opinion, you can kind of see a little
+bit when it adjusts there. But it's
+bit when it adjusts there. But it's
+ 
+bit when it adjusts there. But it's
+better than nothing. Like if you didn't
+better than nothing. Like if you didn't
+ 
+better than nothing. Like if you didn't
+know it was there, you might not notice.
+know it was there, you might not notice.
+ 
+know it was there, you might not notice.
+like if you didn't know to look at that
+like if you didn't know to look at that
+ 
+like if you didn't know to look at that
+spot, you might not see it because
+spot, you might not see it because
+ 
+spot, you might not see it because
+you're watching him talk. So, that was
+you're watching him talk. So, that was
+ 
+you're watching him talk. So, that was
+okay. But then I remembered that Cap Cut
+okay. But then I remembered that Cap Cut
+ 
+okay. But then I remembered that Cap Cut
+also has something similar. Um, I use
+also has something similar. Um, I use
+ 
+also has something similar. Um, I use
+Cap Cut. I think it's a great AI editor.
+Cap Cut. I think it's a great AI editor.
+ 
+Cap Cut. I think it's a great AI editor.
+So, in Cap Cut, I just put the video on
+So, in Cap Cut, I just put the video on
+ 
+So, in Cap Cut, I just put the video on
+my editing timeline as I'm editing the
+my editing timeline as I'm editing the
+ 
+my editing timeline as I'm editing the
+video. I selected it. I went to video
+video. I selected it. I went to video
+ 
+video. I selected it. I went to video
+and I scrolled down here to where it
+and I scrolled down here to where it
+ 
+and I scrolled down here to where it
+says AI remove. I checked that. It takes
+says AI remove. I checked that. It takes
+ 
+says AI remove. I checked that. It takes
+a second to recognize the video. I
+a second to recognize the video. I
+ 
+a second to recognize the video. I
+selected one of the brushes. So, I did
+selected one of the brushes. So, I did
+ 
+selected one of the brushes. So, I did
+the quick brush, just kind of like moved
+the quick brush, just kind of like moved
+ 
+the quick brush, just kind of like moved
+it over and boom, it did that. So, I put
+it over and boom, it did that. So, I put
+ 
+it over and boom, it did that. So, I put
+a little like box around it even. Then I
+a little like box around it even. Then I
+ 
+a little like box around it even. Then I
+said remove him. And look at that. Like
+said remove him. And look at that. Like
+ 
+said remove him. And look at that. Like
+even in the collar, it didn't like
+even in the collar, it didn't like
+ 
+even in the collar, it didn't like
+there's all of these lines in the collar
+there's all of these lines in the collar
+ 
+there's all of these lines in the collar
+and it it's pretty it's pretty smooth.
+and it it's pretty it's pretty smooth.
+ 
+and it it's pretty it's pretty smooth.
+So, I think that the cap cut one worked
+So, I think that the cap cut one worked
+ 
+So, I think that the cap cut one worked
+terrific. Okay. And then lastly, one of
+terrific. Okay. And then lastly, one of
+ 
+terrific. Okay. And then lastly, one of
+the problems I had with his voice was, I
+the problems I had with his voice was, I
+ 
+the problems I had with his voice was, I
+think, because he's described as an
+think, because he's described as an
+ 
+think, because he's described as an
+Armenian farmer. It would give him
+Armenian farmer. It would give him
+ 
+Armenian farmer. It would give him
+different accents. I had a lot of jobs.
+different accents. I had a lot of jobs.
+ 
+different accents. I had a lot of jobs.
+My favorite ones were being a butcher
+My favorite ones were being a butcher
+ 
+My favorite ones were being a butcher
+and being a barber. And I really liked
+and being a barber. And I really liked
+ 
+and being a barber. And I really liked
+the voices that I created in the
+the voices that I created in the
+ 
+the voices that I created in the
+documentary interview styles. So, I
+documentary interview styles. So, I
+ 
+documentary interview styles. So, I
+combined a few clips of him in order to
+combined a few clips of him in order to
+ 
+combined a few clips of him in order to
+get 10 seconds and exported just the
+get 10 seconds and exported just the
+ 
+get 10 seconds and exported just the
+audio. Then, I brought that into 11
+audio. Then, I brought that into 11
+ 
+audio. Then, I brought that into 11
+Labs. And 11 Labs will let you clone a
+Labs. And 11 Labs will let you clone a
+ 
+Labs. And 11 Labs will let you clone a
+voice with only 10 seconds of audio. I
+voice with only 10 seconds of audio. I
+ 
+voice with only 10 seconds of audio. I
+added the clip of him talking and
+added the clip of him talking and
+ 
+added the clip of him talking and
+generated a voice is called the Aram. So
+generated a voice is called the Aram. So
+ 
+generated a voice is called the Aram. So
+I exported all of the audio where he's
+I exported all of the audio where he's
+ 
+I exported all of the audio where he's
+talking and brought that into 11 Labs
+talking and brought that into 11 Labs
+ 
+talking and brought that into 11 Labs
+and used their voice changer. And what I
+and used their voice changer. And what I
+ 
+and used their voice changer. And what I
+was hoping would happen is that he would
+was hoping would happen is that he would
+ 
+was hoping would happen is that he would
+lose his accent and it would sound like
+lose his accent and it would sound like
+ 
+lose his accent and it would sound like
+the same character. So that didn't
+the same character. So that didn't
+ 
+the same character. So that didn't
+really happen. Some of the videos had an
+really happen. Some of the videos had an
+ 
+really happen. Some of the videos had an
+accent to them and so I just typed in
+accent to them and so I just typed in
+ 
+accent to them and so I just typed in
+and did like text to speech for those
+and did like text to speech for those
+ 
+and did like text to speech for those
+until I found ones that were close
+until I found ones that were close
+ 
+until I found ones that were close
+enough to the same timing where I could
+enough to the same timing where I could
+ 
+enough to the same timing where I could
+just drop those in. So it's kind of
+just drop those in. So it's kind of
+ 
+just drop those in. So it's kind of
+cheating I know in terms of like it's
+cheating I know in terms of like it's
+ 
+cheating I know in terms of like it's
+not the same generated audio, but um it
+not the same generated audio, but um it
+ 
+not the same generated audio, but um it
+is generated audio and I think that
+is generated audio and I think that
+ 
+is generated audio and I think that
+having a consistent voice as well as a
+having a consistent voice as well as a
+ 
+having a consistent voice as well as a
+consistent face really helps sell it.
+consistent face really helps sell it.
+ 
+consistent face really helps sell it.
+It's not that I dislike reality.
+It's not that I dislike reality.
+ 
+It's not that I dislike reality.
+It's just there's more than one reality.
+It's just there's more than one reality.
+ 
+It's just there's more than one reality.
+It used to be 100 credits for every
+It used to be 100 credits for every
+ 
+It used to be 100 credits for every
+video in V3 and now you can actually do
+video in V3 and now you can actually do
+ 
+video in V3 and now you can actually do
+the fast ones. And some of the fast ones
+the fast ones. And some of the fast ones
+ 
+the fast ones. And some of the fast ones
+turned out just as good as the pro ones
+turned out just as good as the pro ones
+ 
+turned out just as good as the pro ones
+in my opinion. Sometimes too, the fast
+in my opinion. Sometimes too, the fast
+ 
+in my opinion. Sometimes too, the fast
+ones gave me like really weird surreal
+ones gave me like really weird surreal
+ 
+ones gave me like really weird surreal
+things. Like this one was not what I
+things. Like this one was not what I
+ 
+things. Like this one was not what I
+wanted to do, but it was kind of uh very
+wanted to do, but it was kind of uh very
+ 
+wanted to do, but it was kind of uh very
+bizarre. feel like this one was done in
+bizarre. feel like this one was done in
+ 
+bizarre. feel like this one was done in
+the fast one. This is one of my favorite
+the fast one. This is one of my favorite
+ 
+the fast one. This is one of my favorite
+shots in the whole thing. And this was
+shots in the whole thing. And this was
+ 
+shots in the whole thing. And this was
+done on the fast mode.
+done on the fast mode.
+ 
+done on the fast mode.
+If you're wondering where to change
+If you're wondering where to change
+ 
+If you're wondering where to change
+that, you go here to the settings
+that, you go here to the settings
+ 
+that, you go here to the settings
+button, and you can choose between
+button, and you can choose between
+ 
+button, and you can choose between
+three, V3 fast, which shows you it's 20
+three, V3 fast, which shows you it's 20
+ 
+three, V3 fast, which shows you it's 20
+credits, or V3 quality, which is 100.
+credits, or V3 quality, which is 100.
+ 
+credits, or V3 quality, which is 100.
+So, I hope this helps you create
+So, I hope this helps you create
+ 
+So, I hope this helps you create
+consistent characters in V3. And if you
+consistent characters in V3. And if you
+ 
+consistent characters in V3. And if you
+enjoy this kind of thing, please
+enjoy this kind of thing, please
+ 
+enjoy this kind of thing, please
+subscribe because I like to make movies
+subscribe because I like to make movies
+ 
+subscribe because I like to make movies
+and I like to do tutorials about how I
+and I like to do tutorials about how I
+ 
+and I like to do tutorials about how I
+made those movies. All right, before I
+made those movies. All right, before I
+ 
+made those movies. All right, before I
+show your blooper reel, do you have any
+show your blooper reel, do you have any
+ 
+show your blooper reel, do you have any
+final wisdom? Is this where I'm supposed
+final wisdom? Is this where I'm supposed
+ 
+final wisdom? Is this where I'm supposed
+to say smash that subscribe button? I
+to say smash that subscribe button? I
+ 
+to say smash that subscribe button? I
+don't think people say that anymore. All
+don't think people say that anymore. All
+ 
+don't think people say that anymore. All
+right, let's watch some Bad Generations.
+right, let's watch some Bad Generations.
+ 
+right, let's watch some Bad Generations.
+All right, thank you for watching. Um,
+All right, thank you for watching. Um,
+ 
+All right, thank you for watching. Um,
+if you're interested in any of the tools
+if you're interested in any of the tools
+ 
+if you're interested in any of the tools
+that I use today, please check the
+that I use today, please check the
+ 
+that I use today, please check the
+description. and I put links to
+description. and I put links to
+ 
+description. and I put links to
+different things in there. All right, go
+different things in there. All right, go
+ 
+different things in there. All right, go
+make some consistent characters in VO3.
+
+ 
+
+[Music]
+
+ 
+
+[Music]

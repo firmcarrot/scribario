@@ -1,0 +1,1605 @@
+1
+00:00:00,080 --> 00:00:03,270
+
+What if you could turn this into reality
+
+2
+00:00:03,270 --> 00:00:03,280
+What if you could turn this into reality
+ 
+
+3
+00:00:03,280 --> 00:00:06,470
+What if you could turn this into reality
+just by typing a sentence? Hi, I'm Kevin
+
+4
+00:00:06,470 --> 00:00:06,480
+just by typing a sentence? Hi, I'm Kevin
+ 
+
+5
+00:00:06,480 --> 00:00:10,150
+just by typing a sentence? Hi, I'm Kevin
+and Google just released V3, an AI video
+
+6
+00:00:10,150 --> 00:00:10,160
+and Google just released V3, an AI video
+ 
+
+7
+00:00:10,160 --> 00:00:12,870
+and Google just released V3, an AI video
+generator that turns your imagination
+
+8
+00:00:12,870 --> 00:00:12,880
+generator that turns your imagination
+ 
+
+9
+00:00:12,880 --> 00:00:15,749
+generator that turns your imagination
+into cinematic quality videos using
+
+10
+00:00:15,749 --> 00:00:15,759
+into cinematic quality videos using
+ 
+
+11
+00:00:15,759 --> 00:00:18,630
+into cinematic quality videos using
+nothing more than a simple prompt. In
+
+12
+00:00:18,630 --> 00:00:18,640
+nothing more than a simple prompt. In
+ 
+
+13
+00:00:18,640 --> 00:00:20,470
+nothing more than a simple prompt. In
+this video, I'll walk you through
+
+14
+00:00:20,470 --> 00:00:20,480
+this video, I'll walk you through
+ 
+
+15
+00:00:20,480 --> 00:00:23,349
+this video, I'll walk you through
+exactly how to use V3, how to write
+
+16
+00:00:23,349 --> 00:00:23,359
+exactly how to use V3, how to write
+ 
+
+17
+00:00:23,359 --> 00:00:25,509
+exactly how to use V3, how to write
+better prompts, and how to get the most
+
+18
+00:00:25,509 --> 00:00:25,519
+better prompts, and how to get the most
+ 
+
+19
+00:00:25,519 --> 00:00:28,310
+better prompts, and how to get the most
+out of it, even if you're brand new to
+
+20
+00:00:28,310 --> 00:00:28,320
+out of it, even if you're brand new to
+ 
+
+21
+00:00:28,320 --> 00:00:31,189
+out of it, even if you're brand new to
+AI video tools. Oh, and best of all, you
+
+22
+00:00:31,189 --> 00:00:31,199
+AI video tools. Oh, and best of all, you
+ 
+
+23
+00:00:31,199 --> 00:00:34,310
+AI video tools. Oh, and best of all, you
+can use it for free for an entire month.
+
+24
+00:00:34,310 --> 00:00:34,320
+can use it for free for an entire month.
+ 
+
+25
+00:00:34,320 --> 00:00:38,709
+can use it for free for an entire month.
+Let's dive in. So, what is Google V3? V3
+
+26
+00:00:38,709 --> 00:00:38,719
+Let's dive in. So, what is Google V3? V3
+ 
+
+27
+00:00:38,719 --> 00:00:41,190
+Let's dive in. So, what is Google V3? V3
+is Google's latest AI video generation
+
+28
+00:00:41,190 --> 00:00:41,200
+is Google's latest AI video generation
+ 
+
+29
+00:00:41,200 --> 00:00:43,990
+is Google's latest AI video generation
+model built by DeepMind and it lets you
+
+30
+00:00:43,990 --> 00:00:44,000
+model built by DeepMind and it lets you
+ 
+
+31
+00:00:44,000 --> 00:00:46,389
+model built by DeepMind and it lets you
+create cinematic quality videos from
+
+32
+00:00:46,389 --> 00:00:46,399
+create cinematic quality videos from
+ 
+
+33
+00:00:46,399 --> 00:00:49,029
+create cinematic quality videos from
+just a text prompt. It understands
+
+34
+00:00:49,029 --> 00:00:49,039
+just a text prompt. It understands
+ 
+
+35
+00:00:49,039 --> 00:00:51,670
+just a text prompt. It understands
+things like camera movement, lighting,
+
+36
+00:00:51,670 --> 00:00:51,680
+things like camera movement, lighting,
+ 
+
+37
+00:00:51,680 --> 00:00:54,389
+things like camera movement, lighting,
+and composition. So, the results feel
+
+38
+00:00:54,389 --> 00:00:54,399
+and composition. So, the results feel
+ 
+
+39
+00:00:54,399 --> 00:00:57,670
+and composition. So, the results feel
+polished and natural, far beyond most AI
+
+40
+00:00:57,670 --> 00:00:57,680
+polished and natural, far beyond most AI
+ 
+
+41
+00:00:57,680 --> 00:00:59,910
+polished and natural, far beyond most AI
+tools. But here's what really sets it
+
+42
+00:00:59,910 --> 00:00:59,920
+tools. But here's what really sets it
+ 
+
+43
+00:00:59,920 --> 00:01:02,950
+tools. But here's what really sets it
+apart. V3 doesn't just generate video.
+
+44
+00:01:02,950 --> 00:01:02,960
+apart. V3 doesn't just generate video.
+ 
+
+45
+00:01:02,960 --> 00:01:05,509
+apart. V3 doesn't just generate video.
+It also adds audio automatically. Like
+
+46
+00:01:05,509 --> 00:01:05,519
+It also adds audio automatically. Like
+ 
+
+47
+00:01:05,519 --> 00:01:06,710
+It also adds audio automatically. Like
+here in this example,
+
+48
+00:01:06,710 --> 00:01:06,720
+here in this example,
+ 
+
+49
+00:01:06,720 --> 00:01:10,870
+here in this example,
+I'm one with nature now.
+
+50
+00:01:10,870 --> 00:01:10,880
+I'm one with nature now.
+ 
+
+51
+00:01:10,880 --> 00:01:14,710
+I'm one with nature now.
+Nature would prefer some personal space.
+
+52
+00:01:14,710 --> 00:01:14,720
+Nature would prefer some personal space.
+ 
+
+53
+00:01:14,720 --> 00:01:16,950
+Nature would prefer some personal space.
+That includes background music, ambient
+
+54
+00:01:16,950 --> 00:01:16,960
+That includes background music, ambient
+ 
+
+55
+00:01:16,960 --> 00:01:19,670
+That includes background music, ambient
+sound effects, and even voice narration
+
+56
+00:01:19,670 --> 00:01:19,680
+sound effects, and even voice narration
+ 
+
+57
+00:01:19,680 --> 00:01:21,830
+sound effects, and even voice narration
+if you wanted to speak specific lines of
+
+58
+00:01:21,830 --> 00:01:21,840
+if you wanted to speak specific lines of
+ 
+
+59
+00:01:21,840 --> 00:01:24,870
+if you wanted to speak specific lines of
+text. And honestly, it looks darn good.
+
+60
+00:01:24,870 --> 00:01:24,880
+text. And honestly, it looks darn good.
+ 
+
+61
+00:01:24,880 --> 00:01:27,749
+text. And honestly, it looks darn good.
+To use V3, you need a paid plan. The
+
+62
+00:01:27,749 --> 00:01:27,759
+To use V3, you need a paid plan. The
+ 
+
+63
+00:01:27,759 --> 00:01:29,590
+To use V3, you need a paid plan. The
+good news though, you can try it for
+
+64
+00:01:29,590 --> 00:01:29,600
+good news though, you can try it for
+ 
+
+65
+00:01:29,600 --> 00:01:31,429
+good news though, you can try it for
+free for the first month, giving you a
+
+66
+00:01:31,429 --> 00:01:31,439
+free for the first month, giving you a
+ 
+
+67
+00:01:31,439 --> 00:01:33,510
+free for the first month, giving you a
+chance to see everything that V3 is
+
+68
+00:01:33,510 --> 00:01:33,520
+chance to see everything that V3 is
+ 
+
+69
+00:01:33,520 --> 00:01:35,670
+chance to see everything that V3 is
+capable of. You can explore the
+
+70
+00:01:35,670 --> 00:01:35,680
+capable of. You can explore the
+ 
+
+71
+00:01:35,680 --> 00:01:37,510
+capable of. You can explore the
+available plans using the link right
+
+72
+00:01:37,510 --> 00:01:37,520
+available plans using the link right
+ 
+
+73
+00:01:37,520 --> 00:01:39,990
+available plans using the link right
+down below on the screen. Both plans
+
+74
+00:01:39,990 --> 00:01:40,000
+down below on the screen. Both plans
+ 
+
+75
+00:01:40,000 --> 00:01:43,270
+down below on the screen. Both plans
+include access to V3. In addition to AI
+
+76
+00:01:43,270 --> 00:01:43,280
+include access to V3. In addition to AI
+ 
+
+77
+00:01:43,280 --> 00:01:45,510
+include access to V3. In addition to AI
+video generation, you also get access to
+
+78
+00:01:45,510 --> 00:01:45,520
+video generation, you also get access to
+ 
+
+79
+00:01:45,520 --> 00:01:47,910
+video generation, you also get access to
+things like Gemini and Gmail Docs and
+
+80
+00:01:47,910 --> 00:01:47,920
+things like Gemini and Gmail Docs and
+ 
+
+81
+00:01:47,920 --> 00:01:50,550
+things like Gemini and Gmail Docs and
+more. Plus, you also get 2 TB of storage
+
+82
+00:01:50,550 --> 00:01:50,560
+more. Plus, you also get 2 TB of storage
+ 
+
+83
+00:01:50,560 --> 00:01:52,469
+more. Plus, you also get 2 TB of storage
+for your Google Photos, Drive, and
+
+84
+00:01:52,469 --> 00:01:52,479
+for your Google Photos, Drive, and
+ 
+
+85
+00:01:52,479 --> 00:01:55,590
+for your Google Photos, Drive, and
+email. All in all, it's a solid deal and
+
+86
+00:01:55,590 --> 00:01:55,600
+email. All in all, it's a solid deal and
+ 
+
+87
+00:01:55,600 --> 00:01:57,270
+email. All in all, it's a solid deal and
+pretty much in line with what other
+
+88
+00:01:57,270 --> 00:01:57,280
+pretty much in line with what other
+ 
+
+89
+00:01:57,280 --> 00:01:59,270
+pretty much in line with what other
+companies are charging for their AI
+
+90
+00:01:59,270 --> 00:01:59,280
+companies are charging for their AI
+ 
+
+91
+00:01:59,280 --> 00:02:01,190
+companies are charging for their AI
+tools. Once you've signed up for a plan,
+
+92
+00:02:01,190 --> 00:02:01,200
+tools. Once you've signed up for a plan,
+ 
+
+93
+00:02:01,200 --> 00:02:02,709
+tools. Once you've signed up for a plan,
+head over to the address at the bottom
+
+94
+00:02:02,709 --> 00:02:02,719
+head over to the address at the bottom
+ 
+
+95
+00:02:02,719 --> 00:02:04,310
+head over to the address at the bottom
+of the screen and then sign in with your
+
+96
+00:02:04,310 --> 00:02:04,320
+of the screen and then sign in with your
+ 
+
+97
+00:02:04,320 --> 00:02:06,550
+of the screen and then sign in with your
+Google account. This drops us into the
+
+98
+00:02:06,550 --> 00:02:06,560
+Google account. This drops us into the
+ 
+
+99
+00:02:06,560 --> 00:02:09,190
+Google account. This drops us into the
+Gemini chat interface and at the bottom
+
+100
+00:02:09,190 --> 00:02:09,200
+Gemini chat interface and at the bottom
+ 
+
+101
+00:02:09,200 --> 00:02:10,869
+Gemini chat interface and at the bottom
+of the screen, you'll see the prompt
+
+102
+00:02:10,869 --> 00:02:10,879
+of the screen, you'll see the prompt
+ 
+
+103
+00:02:10,879 --> 00:02:14,309
+of the screen, you'll see the prompt
+field along with a few different tools.
+
+104
+00:02:14,309 --> 00:02:14,319
+field along with a few different tools.
+ 
+
+105
+00:02:14,319 --> 00:02:16,309
+field along with a few different tools.
+Let's click on the one titled video and
+
+106
+00:02:16,309 --> 00:02:16,319
+Let's click on the one titled video and
+ 
+
+107
+00:02:16,319 --> 00:02:19,270
+Let's click on the one titled video and
+that turns on V3. From there, you could
+
+108
+00:02:19,270 --> 00:02:19,280
+that turns on V3. From there, you could
+ 
+
+109
+00:02:19,280 --> 00:02:21,190
+that turns on V3. From there, you could
+start typing in your prompt. Let's try
+
+110
+00:02:21,190 --> 00:02:21,200
+start typing in your prompt. Let's try
+ 
+
+111
+00:02:21,200 --> 00:02:23,910
+start typing in your prompt. Let's try
+one. A cinematic slow motion shot of
+
+112
+00:02:23,910 --> 00:02:23,920
+one. A cinematic slow motion shot of
+ 
+
+113
+00:02:23,920 --> 00:02:25,670
+one. A cinematic slow motion shot of
+freshly baked chocolate chip cookies
+
+114
+00:02:25,670 --> 00:02:25,680
+freshly baked chocolate chip cookies
+ 
+
+115
+00:02:25,680 --> 00:02:28,150
+freshly baked chocolate chip cookies
+being pulled out of the oven. Then you
+
+116
+00:02:28,150 --> 00:02:28,160
+being pulled out of the oven. Then you
+ 
+
+117
+00:02:28,160 --> 00:02:30,070
+being pulled out of the oven. Then you
+could also offer information like where
+
+118
+00:02:30,070 --> 00:02:30,080
+could also offer information like where
+ 
+
+119
+00:02:30,080 --> 00:02:32,550
+could also offer information like where
+is it here? I want it to be in a cozy
+
+120
+00:02:32,550 --> 00:02:32,560
+is it here? I want it to be in a cozy
+ 
+
+121
+00:02:32,560 --> 00:02:34,550
+is it here? I want it to be in a cozy
+sunlit kitchen. You could also talk
+
+122
+00:02:34,550 --> 00:02:34,560
+sunlit kitchen. You could also talk
+ 
+
+123
+00:02:34,560 --> 00:02:35,990
+sunlit kitchen. You could also talk
+about the lighting. I want it to be
+
+124
+00:02:35,990 --> 00:02:36,000
+about the lighting. I want it to be
+ 
+
+125
+00:02:36,000 --> 00:02:38,470
+about the lighting. I want it to be
+warm, what the focus should look like,
+
+126
+00:02:38,470 --> 00:02:38,480
+warm, what the focus should look like,
+ 
+
+127
+00:02:38,480 --> 00:02:40,390
+warm, what the focus should look like,
+any atmospheric effects like steam
+
+128
+00:02:40,390 --> 00:02:40,400
+any atmospheric effects like steam
+ 
+
+129
+00:02:40,400 --> 00:02:42,390
+any atmospheric effects like steam
+rising. And also if you want to include
+
+130
+00:02:42,390 --> 00:02:42,400
+rising. And also if you want to include
+ 
+
+131
+00:02:42,400 --> 00:02:45,110
+rising. And also if you want to include
+any music. The more details you provide,
+
+132
+00:02:45,110 --> 00:02:45,120
+any music. The more details you provide,
+ 
+
+133
+00:02:45,120 --> 00:02:46,949
+any music. The more details you provide,
+the closer the resulting video will
+
+134
+00:02:46,949 --> 00:02:46,959
+the closer the resulting video will
+ 
+
+135
+00:02:46,959 --> 00:02:49,430
+the closer the resulting video will
+match what you had in mind. Once you're
+
+136
+00:02:49,430 --> 00:02:49,440
+match what you had in mind. Once you're
+ 
+
+137
+00:02:49,440 --> 00:02:51,030
+match what you had in mind. Once you're
+done entering in your prompt in the
+
+138
+00:02:51,030 --> 00:02:51,040
+done entering in your prompt in the
+ 
+
+139
+00:02:51,040 --> 00:02:52,949
+done entering in your prompt in the
+bottom right, let's submit that. Let's
+
+140
+00:02:52,949 --> 00:02:52,959
+bottom right, let's submit that. Let's
+ 
+
+141
+00:02:52,959 --> 00:03:02,390
+bottom right, let's submit that. Let's
+now watch how it turned out.
+
+142
+00:03:02,390 --> 00:03:02,400
+
+ 
+
+143
+00:03:02,400 --> 00:03:05,110
+
+Oh, overall that's really impressive. I
+
+144
+00:03:05,110 --> 00:03:05,120
+Oh, overall that's really impressive. I
+ 
+
+145
+00:03:05,120 --> 00:03:07,190
+Oh, overall that's really impressive. I
+did notice a few issues. For example,
+
+146
+00:03:07,190 --> 00:03:07,200
+did notice a few issues. For example,
+ 
+
+147
+00:03:07,200 --> 00:03:08,470
+did notice a few issues. For example,
+for whatever reason, some of the
+
+148
+00:03:08,470 --> 00:03:08,480
+for whatever reason, some of the
+ 
+
+149
+00:03:08,480 --> 00:03:10,390
+for whatever reason, some of the
+chocolate chips completely melted on top
+
+150
+00:03:10,390 --> 00:03:10,400
+chocolate chips completely melted on top
+ 
+
+151
+00:03:10,400 --> 00:03:13,030
+chocolate chips completely melted on top
+of the cookie, but overall it matches my
+
+152
+00:03:13,030 --> 00:03:13,040
+of the cookie, but overall it matches my
+ 
+
+153
+00:03:13,040 --> 00:03:15,350
+of the cookie, but overall it matches my
+prompt really closely. I'm really
+
+154
+00:03:15,350 --> 00:03:15,360
+prompt really closely. I'm really
+ 
+
+155
+00:03:15,360 --> 00:03:18,070
+prompt really closely. I'm really
+impressed. One cool feature of V3 is
+
+156
+00:03:18,070 --> 00:03:18,080
+impressed. One cool feature of V3 is
+ 
+
+157
+00:03:18,080 --> 00:03:20,229
+impressed. One cool feature of V3 is
+that it doesn't just generate video. It
+
+158
+00:03:20,229 --> 00:03:20,239
+that it doesn't just generate video. It
+ 
+
+159
+00:03:20,239 --> 00:03:22,869
+that it doesn't just generate video. It
+can also add narration. If you wanted to
+
+160
+00:03:22,869 --> 00:03:22,879
+can also add narration. If you wanted to
+ 
+
+161
+00:03:22,879 --> 00:03:25,350
+can also add narration. If you wanted to
+speak specific lines of text, just
+
+162
+00:03:25,350 --> 00:03:25,360
+speak specific lines of text, just
+ 
+
+163
+00:03:25,360 --> 00:03:27,589
+speak specific lines of text, just
+include that text in quotes as part of
+
+164
+00:03:27,589 --> 00:03:27,599
+include that text in quotes as part of
+ 
+
+165
+00:03:27,599 --> 00:03:29,830
+include that text in quotes as part of
+your prompt. Right here, I'll type in my
+
+166
+00:03:29,830 --> 00:03:29,840
+your prompt. Right here, I'll type in my
+ 
+
+167
+00:03:29,840 --> 00:03:31,990
+your prompt. Right here, I'll type in my
+prompt. And at the very end, I call out
+
+168
+00:03:31,990 --> 00:03:32,000
+prompt. And at the very end, I call out
+ 
+
+169
+00:03:32,000 --> 00:03:33,910
+prompt. And at the very end, I call out
+that this is the narration. And then
+
+170
+00:03:33,910 --> 00:03:33,920
+that this is the narration. And then
+ 
+
+171
+00:03:33,920 --> 00:03:36,309
+that this is the narration. And then
+here, I have all the text that I wanted
+
+172
+00:03:36,309 --> 00:03:36,319
+here, I have all the text that I wanted
+ 
+
+173
+00:03:36,319 --> 00:03:39,030
+here, I have all the text that I wanted
+to narrate included in quotes. Once you
+
+174
+00:03:39,030 --> 00:03:39,040
+to narrate included in quotes. Once you
+ 
+
+175
+00:03:39,040 --> 00:03:40,710
+to narrate included in quotes. Once you
+enter that in as part of your prompt,
+
+176
+00:03:40,710 --> 00:03:40,720
+enter that in as part of your prompt,
+ 
+
+177
+00:03:40,720 --> 00:03:42,630
+enter that in as part of your prompt,
+let's submit that. Let's preview how
+
+178
+00:03:42,630 --> 00:03:42,640
+let's submit that. Let's preview how
+ 
+
+179
+00:03:42,640 --> 00:03:45,430
+let's submit that. Let's preview how
+this turned out. History is being made.
+
+180
+00:03:45,430 --> 00:03:45,440
+this turned out. History is being made.
+ 
+
+181
+00:03:45,440 --> 00:03:48,470
+this turned out. History is being made.
+The Kevin Cookie Company unveils the
+
+182
+00:03:48,470 --> 00:03:48,480
+The Kevin Cookie Company unveils the
+ 
+
+183
+00:03:48,480 --> 00:03:51,589
+The Kevin Cookie Company unveils the
+world's largest chocolate chip cookie.
+
+184
+00:03:51,589 --> 00:03:51,599
+world's largest chocolate chip cookie.
+ 
+
+185
+00:03:51,599 --> 00:03:54,229
+world's largest chocolate chip cookie.
+That voice really fits the part. Once
+
+186
+00:03:54,229 --> 00:03:54,239
+That voice really fits the part. Once
+ 
+
+187
+00:03:54,239 --> 00:03:55,990
+That voice really fits the part. Once
+you're satisfied with the way your video
+
+188
+00:03:55,990 --> 00:03:56,000
+you're satisfied with the way your video
+ 
+
+189
+00:03:56,000 --> 00:03:57,589
+you're satisfied with the way your video
+turned out, it's really easy to
+
+190
+00:03:57,589 --> 00:03:57,599
+turned out, it's really easy to
+ 
+
+191
+00:03:57,599 --> 00:04:00,149
+turned out, it's really easy to
+download. Simply hover over your video.
+
+192
+00:04:00,149 --> 00:04:00,159
+download. Simply hover over your video.
+ 
+
+193
+00:04:00,159 --> 00:04:01,509
+download. Simply hover over your video.
+Then in the top right hand corner,
+
+194
+00:04:01,509 --> 00:04:01,519
+Then in the top right hand corner,
+ 
+
+195
+00:04:01,519 --> 00:04:03,589
+Then in the top right hand corner,
+you'll see this download icon. Simply
+
+196
+00:04:03,589 --> 00:04:03,599
+you'll see this download icon. Simply
+ 
+
+197
+00:04:03,599 --> 00:04:05,910
+you'll see this download icon. Simply
+click on that and it'll download an MP4
+
+198
+00:04:05,910 --> 00:04:05,920
+click on that and it'll download an MP4
+ 
+
+199
+00:04:05,920 --> 00:04:08,149
+click on that and it'll download an MP4
+file onto your computer. And that's it.
+
+200
+00:04:08,149 --> 00:04:08,159
+file onto your computer. And that's it.
+ 
+
+201
+00:04:08,159 --> 00:04:09,990
+file onto your computer. And that's it.
+You're ready to use your AI generated
+
+202
+00:04:09,990 --> 00:04:10,000
+You're ready to use your AI generated
+ 
+
+203
+00:04:10,000 --> 00:04:12,309
+You're ready to use your AI generated
+video wherever you want. One really
+
+204
+00:04:12,309 --> 00:04:12,319
+video wherever you want. One really
+ 
+
+205
+00:04:12,319 --> 00:04:15,110
+video wherever you want. One really
+helpful trick when you're not sure how
+
+206
+00:04:15,110 --> 00:04:15,120
+helpful trick when you're not sure how
+ 
+
+207
+00:04:15,120 --> 00:04:18,550
+helpful trick when you're not sure how
+to phrase your V3 prompt is to just ask
+
+208
+00:04:18,550 --> 00:04:18,560
+to phrase your V3 prompt is to just ask
+ 
+
+209
+00:04:18,560 --> 00:04:21,189
+to phrase your V3 prompt is to just ask
+Gemini. Since V3 lives right inside
+
+210
+00:04:21,189 --> 00:04:21,199
+Gemini. Since V3 lives right inside
+ 
+
+211
+00:04:21,199 --> 00:04:23,510
+Gemini. Since V3 lives right inside
+Gemini, you can use the same chat to
+
+212
+00:04:23,510 --> 00:04:23,520
+Gemini, you can use the same chat to
+ 
+
+213
+00:04:23,520 --> 00:04:25,430
+Gemini, you can use the same chat to
+help you refine or improve your ideas
+
+214
+00:04:25,430 --> 00:04:25,440
+help you refine or improve your ideas
+ 
+
+215
+00:04:25,440 --> 00:04:27,430
+help you refine or improve your ideas
+before you generate the video. Now,
+
+216
+00:04:27,430 --> 00:04:27,440
+before you generate the video. Now,
+ 
+
+217
+00:04:27,440 --> 00:04:28,469
+before you generate the video. Now,
+let's say I want to make a video about
+
+218
+00:04:28,469 --> 00:04:28,479
+let's say I want to make a video about
+ 
+
+219
+00:04:28,479 --> 00:04:30,230
+let's say I want to make a video about
+the Kevin Cookie Company baking the
+
+220
+00:04:30,230 --> 00:04:30,240
+the Kevin Cookie Company baking the
+ 
+
+221
+00:04:30,240 --> 00:04:31,749
+the Kevin Cookie Company baking the
+world's largest chocolate chip cookie,
+
+222
+00:04:31,749 --> 00:04:31,759
+world's largest chocolate chip cookie,
+ 
+
+223
+00:04:31,759 --> 00:04:34,070
+world's largest chocolate chip cookie,
+but I'm not quite sure how to word it to
+
+224
+00:04:34,070 --> 00:04:34,080
+but I'm not quite sure how to word it to
+ 
+
+225
+00:04:34,080 --> 00:04:36,950
+but I'm not quite sure how to word it to
+get that cinematic storybook vibe. Right
+
+226
+00:04:36,950 --> 00:04:36,960
+get that cinematic storybook vibe. Right
+ 
+
+227
+00:04:36,960 --> 00:04:38,629
+get that cinematic storybook vibe. Right
+down below, I could simply ask Gemini.
+
+228
+00:04:38,629 --> 00:04:38,639
+down below, I could simply ask Gemini.
+ 
+
+229
+00:04:38,639 --> 00:04:40,469
+down below, I could simply ask Gemini.
+So, here I can type in, "Can you help me
+
+230
+00:04:40,469 --> 00:04:40,479
+So, here I can type in, "Can you help me
+ 
+
+231
+00:04:40,479 --> 00:04:42,629
+So, here I can type in, "Can you help me
+write a cinematic video prompt about a
+
+232
+00:04:42,629 --> 00:04:42,639
+write a cinematic video prompt about a
+ 
+
+233
+00:04:42,639 --> 00:04:44,469
+write a cinematic video prompt about a
+team of bakers making the world's
+
+234
+00:04:44,469 --> 00:04:44,479
+team of bakers making the world's
+ 
+
+235
+00:04:44,479 --> 00:04:46,150
+team of bakers making the world's
+largest cookie?" Then, let's submit
+
+236
+00:04:46,150 --> 00:04:46,160
+largest cookie?" Then, let's submit
+ 
+
+237
+00:04:46,160 --> 00:04:48,950
+largest cookie?" Then, let's submit
+that. Right up above, Gemini suggests a
+
+238
+00:04:48,950 --> 00:04:48,960
+that. Right up above, Gemini suggests a
+ 
+
+239
+00:04:48,960 --> 00:04:50,870
+that. Right up above, Gemini suggests a
+much more descriptive version. It
+
+240
+00:04:50,870 --> 00:04:50,880
+much more descriptive version. It
+ 
+
+241
+00:04:50,880 --> 00:04:52,790
+much more descriptive version. It
+includes things like the camera angles,
+
+242
+00:04:52,790 --> 00:04:52,800
+includes things like the camera angles,
+ 
+
+243
+00:04:52,800 --> 00:04:54,629
+includes things like the camera angles,
+the lighting, the background music, even
+
+244
+00:04:54,629 --> 00:04:54,639
+the lighting, the background music, even
+ 
+
+245
+00:04:54,639 --> 00:04:57,030
+the lighting, the background music, even
+the pacing. Now, here I could take this
+
+246
+00:04:57,030 --> 00:04:57,040
+the pacing. Now, here I could take this
+ 
+
+247
+00:04:57,040 --> 00:04:58,469
+the pacing. Now, here I could take this
+as it is, and I could paste it into the
+
+248
+00:04:58,469 --> 00:04:58,479
+as it is, and I could paste it into the
+ 
+
+249
+00:04:58,479 --> 00:05:00,230
+as it is, and I could paste it into the
+prompt field, and then I can make tweaks
+
+250
+00:05:00,230 --> 00:05:00,240
+prompt field, and then I can make tweaks
+ 
+
+251
+00:05:00,240 --> 00:05:02,230
+prompt field, and then I can make tweaks
+to it to match exactly what I'm looking
+
+252
+00:05:02,230 --> 00:05:02,240
+to it to match exactly what I'm looking
+ 
+
+253
+00:05:02,240 --> 00:05:03,909
+to it to match exactly what I'm looking
+for. If we scroll down a little bit
+
+254
+00:05:03,909 --> 00:05:03,919
+for. If we scroll down a little bit
+ 
+
+255
+00:05:03,919 --> 00:05:05,990
+for. If we scroll down a little bit
+more, here I have another option. So, I
+
+256
+00:05:05,990 --> 00:05:06,000
+more, here I have another option. So, I
+ 
+
+257
+00:05:06,000 --> 00:05:07,270
+more, here I have another option. So, I
+could look through that to see if maybe
+
+258
+00:05:07,270 --> 00:05:07,280
+could look through that to see if maybe
+ 
+
+259
+00:05:07,280 --> 00:05:09,270
+could look through that to see if maybe
+this is a better fit. And all the way
+
+260
+00:05:09,270 --> 00:05:09,280
+this is a better fit. And all the way
+ 
+
+261
+00:05:09,280 --> 00:05:11,270
+this is a better fit. And all the way
+down at the bottom, I even have tips on
+
+262
+00:05:11,270 --> 00:05:11,280
+down at the bottom, I even have tips on
+ 
+
+263
+00:05:11,280 --> 00:05:13,430
+down at the bottom, I even have tips on
+the types of things to include in my
+
+264
+00:05:13,430 --> 00:05:13,440
+the types of things to include in my
+ 
+
+265
+00:05:13,440 --> 00:05:16,550
+the types of things to include in my
+prompts to get the best results. So, if
+
+266
+00:05:16,550 --> 00:05:16,560
+prompts to get the best results. So, if
+ 
+
+267
+00:05:16,560 --> 00:05:18,230
+prompts to get the best results. So, if
+you're ever stuck or you just want your
+
+268
+00:05:18,230 --> 00:05:18,240
+you're ever stuck or you just want your
+ 
+
+269
+00:05:18,240 --> 00:05:20,390
+you're ever stuck or you just want your
+prompt to sound more epic, just let
+
+270
+00:05:20,390 --> 00:05:20,400
+prompt to sound more epic, just let
+ 
+
+271
+00:05:20,400 --> 00:05:22,550
+prompt to sound more epic, just let
+Gemini do all the heavy lifting. If you
+
+272
+00:05:22,550 --> 00:05:22,560
+Gemini do all the heavy lifting. If you
+ 
+
+273
+00:05:22,560 --> 00:05:24,469
+Gemini do all the heavy lifting. If you
+ever want to go back and watch a video
+
+274
+00:05:24,469 --> 00:05:24,479
+ever want to go back and watch a video
+ 
+
+275
+00:05:24,479 --> 00:05:27,189
+ever want to go back and watch a video
+that you generated earlier, it's super
+
+276
+00:05:27,189 --> 00:05:27,199
+that you generated earlier, it's super
+ 
+
+277
+00:05:27,199 --> 00:05:29,110
+that you generated earlier, it's super
+easy. Just look over on the lefth hand
+
+278
+00:05:29,110 --> 00:05:29,120
+easy. Just look over on the lefth hand
+ 
+
+279
+00:05:29,120 --> 00:05:30,870
+easy. Just look over on the lefth hand
+side of the Gemini interface under
+
+280
+00:05:30,870 --> 00:05:30,880
+side of the Gemini interface under
+ 
+
+281
+00:05:30,880 --> 00:05:32,550
+side of the Gemini interface under
+recent. And here you'll see a list of
+
+282
+00:05:32,550 --> 00:05:32,560
+recent. And here you'll see a list of
+ 
+
+283
+00:05:32,560 --> 00:05:34,870
+recent. And here you'll see a list of
+all of your past chats. Here, I could
+
+284
+00:05:34,870 --> 00:05:34,880
+all of your past chats. Here, I could
+ 
+
+285
+00:05:34,880 --> 00:05:36,790
+all of your past chats. Here, I could
+click into any one of them and I see the
+
+286
+00:05:36,790 --> 00:05:36,800
+click into any one of them and I see the
+ 
+
+287
+00:05:36,800 --> 00:05:39,909
+click into any one of them and I see the
+associated video with that chat. And
+
+288
+00:05:39,909 --> 00:05:39,919
+associated video with that chat. And
+ 
+
+289
+00:05:39,919 --> 00:05:42,310
+associated video with that chat. And
+just like that, we've officially baked
+
+290
+00:05:42,310 --> 00:05:42,320
+just like that, we've officially baked
+ 
+
+291
+00:05:42,320 --> 00:05:44,070
+just like that, we've officially baked
+the world's largest chocolate chip
+
+292
+00:05:44,070 --> 00:05:44,080
+the world's largest chocolate chip
+ 
+
+293
+00:05:44,080 --> 00:05:45,749
+the world's largest chocolate chip
+cookie.
+
+294
+00:05:45,749 --> 00:05:45,759
+cookie.
+ 
+
+295
+00:05:45,759 --> 00:05:49,990
+cookie.
+Or did we? What's real and what's not?
+
+296
+00:05:49,990 --> 00:05:50,000
+Or did we? What's real and what's not?
+ 
+
+297
+00:05:50,000 --> 00:05:52,629
+Or did we? What's real and what's not?
+Can we even tell anymore? How do you
+
+298
+00:05:52,629 --> 00:05:52,639
+Can we even tell anymore? How do you
+ 
+
+299
+00:05:52,639 --> 00:05:55,110
+Can we even tell anymore? How do you
+know this video is real? Don't I mean,
+
+300
+00:05:55,110 --> 00:05:55,120
+know this video is real? Don't I mean,
+ 
+
+301
+00:05:55,120 --> 00:05:57,990
+know this video is real? Don't I mean,
+don't worry. I'm not generated by V3. At
+
+302
+00:05:57,990 --> 00:05:58,000
+don't worry. I'm not generated by V3. At
+ 
+
+303
+00:05:58,000 --> 00:06:00,790
+don't worry. I'm not generated by V3. At
+least I don't think I am. How can I
+
+304
+00:06:00,790 --> 00:06:00,800
+least I don't think I am. How can I
+ 
+
+305
+00:06:00,800 --> 00:06:03,909
+least I don't think I am. How can I
+prove it? Oh, this face is way too good
+
+306
+00:06:03,909 --> 00:06:03,919
+prove it? Oh, this face is way too good
+ 
+
+307
+00:06:03,919 --> 00:06:06,309
+prove it? Oh, this face is way too good
+to be generated by AI. This is the best
+
+308
+00:06:06,309 --> 00:06:06,319
+to be generated by AI. This is the best
+ 
+
+309
+00:06:06,319 --> 00:06:09,029
+to be generated by AI. This is the best
+cookie I've ever sampled. Flavor,
+
+310
+00:06:09,029 --> 00:06:09,039
+cookie I've ever sampled. Flavor,
+ 
+
+311
+00:06:09,039 --> 00:06:13,749
+cookie I've ever sampled. Flavor,
+texture, everything is perfect.
+
+312
+00:06:13,749 --> 00:06:13,759
+
+ 
+
+313
+00:06:13,759 --> 00:06:16,150
+
+Everyone agrees Kevin Cookie Company
+
+314
+00:06:16,150 --> 00:06:16,160
+Everyone agrees Kevin Cookie Company
+ 
+
+315
+00:06:16,160 --> 00:06:18,390
+Everyone agrees Kevin Cookie Company
+cookies are the best in the world.
+
+316
+00:06:18,390 --> 00:06:18,400
+cookies are the best in the world.
+ 
+
+317
+00:06:18,400 --> 00:06:20,390
+cookies are the best in the world.
+Thousands are lining up for a taste of
+
+318
+00:06:20,390 --> 00:06:20,400
+Thousands are lining up for a taste of
+ 
+
+319
+00:06:20,400 --> 00:06:23,440
+Thousands are lining up for a taste of
+cookie greatness.
+
+320
+00:06:23,440 --> 00:06:23,450
+cookie greatness.
+ 
+
+321
+00:06:23,450 --> 00:06:29,029
+cookie greatness.
+[Applause]
+

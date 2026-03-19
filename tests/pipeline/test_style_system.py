@@ -50,9 +50,7 @@ class TestParseStyleOverride:
 class TestStyleInjectionInVisualPrompt:
     """Test that style prefix is injected into visual prompts in generate_captions."""
 
-    @pytest.mark.asyncio
-    async def test_style_injected_into_visual_prompt(self):
-        """When style='cinematic', visual prompts should start with [STYLE: cinematic]."""
+    def _mock_claude_response(self):
         mock_response = MagicMock()
         mock_response.content = [
             MagicMock(
@@ -60,7 +58,12 @@ class TestStyleInjectionInVisualPrompt:
                 text='{"captions": [{"text": "Hot sauce caption", "visual_prompt": "beautiful food"}]}',
             )
         ]
+        mock_response.usage = MagicMock(input_tokens=100, output_tokens=50)
+        return mock_response
 
+    @pytest.mark.asyncio
+    async def test_style_injected_into_visual_prompt(self):
+        """When style='cinematic', visual prompts should start with [STYLE: cinematic]."""
         profile = BrandProfile(
             tenant_id="t1",
             name="Mondo Shrimp",
@@ -73,9 +76,9 @@ class TestStyleInjectionInVisualPrompt:
         with patch("pipeline.caption_gen.anthropic.AsyncAnthropic") as mock_anthropic:
             mock_client = AsyncMock()
             mock_anthropic.return_value = mock_client
-            mock_client.messages.create = AsyncMock(return_value=mock_response)
+            mock_client.messages.create = AsyncMock(return_value=self._mock_claude_response())
 
-            results = await generate_captions(
+            response = await generate_captions(
                 intent="our new sauce",
                 profile=profile,
                 examples=[],
@@ -84,20 +87,12 @@ class TestStyleInjectionInVisualPrompt:
                 style="cinematic",
             )
 
-        assert len(results) == 1
-        assert results[0].visual_prompt == "[STYLE: cinematic] beautiful food"
+        assert len(response.results) == 1
+        assert response.results[0].visual_prompt == "[STYLE: cinematic] beautiful food"
 
     @pytest.mark.asyncio
     async def test_no_style_leaves_visual_prompt_unchanged(self):
         """When style=None, visual prompts should not be modified."""
-        mock_response = MagicMock()
-        mock_response.content = [
-            MagicMock(
-                type="text",
-                text='{"captions": [{"text": "Hot sauce caption", "visual_prompt": "beautiful food"}]}',
-            )
-        ]
-
         profile = BrandProfile(
             tenant_id="t1",
             name="Mondo Shrimp",
@@ -110,9 +105,9 @@ class TestStyleInjectionInVisualPrompt:
         with patch("pipeline.caption_gen.anthropic.AsyncAnthropic") as mock_anthropic:
             mock_client = AsyncMock()
             mock_anthropic.return_value = mock_client
-            mock_client.messages.create = AsyncMock(return_value=mock_response)
+            mock_client.messages.create = AsyncMock(return_value=self._mock_claude_response())
 
-            results = await generate_captions(
+            response = await generate_captions(
                 intent="our new sauce",
                 profile=profile,
                 examples=[],
@@ -121,8 +116,8 @@ class TestStyleInjectionInVisualPrompt:
                 style=None,
             )
 
-        assert len(results) == 1
-        assert results[0].visual_prompt == "beautiful food"
+        assert len(response.results) == 1
+        assert response.results[0].visual_prompt == "beautiful food"
 
 
 class TestStyleFallbackToBrandDefault:

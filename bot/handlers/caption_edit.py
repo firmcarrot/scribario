@@ -172,10 +172,24 @@ async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
             tenant_id=tenant_id,
             action="edit",
             edited_caption=revised,
+            original_caption=current_caption,
+            edit_instruction=instruction,
         )
     except Exception:
         logger.warning("Failed to log feedback event for edit", extra={"draft_id": draft_id})
         # Non-critical — don't block the user
+
+    # Fire-and-forget: analyze edit pattern with Haiku
+    try:
+        from pipeline.learning.edit_analyzer import fire_and_forget_edit_analysis
+        fire_and_forget_edit_analysis(
+            tenant_id=tenant_id,
+            original_caption=current_caption,
+            edit_instruction=instruction,
+            edited_caption=revised,
+        )
+    except Exception:
+        pass  # Learning is non-critical
 
     # Build re-preview keyboard: Post it / Edit Again / Discard (permanently rejects draft)
     option_number = option_idx + 1

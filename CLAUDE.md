@@ -27,6 +27,12 @@ pipeline/             # Content generation pipeline
   caption_gen.py      # Claude API caption generation
   posting.py          # Postiz posting wrapper
   brand_voice.py      # Brand profile + few-shot loader
+  learning/             # Invisible AI learning engine
+    structural_diff.py  # Caption feature extraction + pairwise diff
+    preference_engine.py # Preference signal accumulation
+    edit_analyzer.py    # Haiku edit triple analysis
+    formula_tracker.py  # Formula performance stats
+    engagement_scorer.py # Engagement score computation
 worker/               # Background job worker
   jobs/               # Job handlers (generate, post, etc.)
 supabase/             # Supabase config + migrations
@@ -84,6 +90,8 @@ NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
 - **Provider abstraction:** Thin wrappers around all external APIs (swap without pipeline changes)
 - **Fail loud:** Never return fake data or silently succeed on failure
 - **Inline video gen:** When generate_video=True, video is generated INSIDE generate_content job (not a separate job). Falls back to image-only on Veo failure.
+- **Invisible learning:** All learning is fire-and-forget -- never blocks user flow. Edit signals high-confidence (2x = hard rule), approval signals low-confidence (8x = soft nudge). Wildcard rule: always 1 of 3 options breaks from patterns.
+- **Layer 11:** Learned preferences injected into system prompt. Hard rules from edits, soft nudges from approvals, formula performance stats.
 - **Long video deprecated:** `/longvideo` router and `generate_long_video` handler disconnected. Files still exist but are not wired.
 
 ## Video Pipeline (March 2026)

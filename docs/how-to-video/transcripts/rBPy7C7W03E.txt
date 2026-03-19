@@ -1,0 +1,922 @@
+
+Google has shared with us the best way
+Google has shared with us the best way
+ 
+Google has shared with us the best way
+to prompt VO 3.1. And in the video
+to prompt VO 3.1. And in the video
+ 
+to prompt VO 3.1. And in the video
+today, I'm going to show you how to do
+today, I'm going to show you how to do
+ 
+today, I'm going to show you how to do
+this simply so that you can start
+this simply so that you can start
+ 
+this simply so that you can start
+creating the very best prompts for your
+creating the very best prompts for your
+ 
+creating the very best prompts for your
+videos. In the video, you're going to
+videos. In the video, you're going to
+ 
+videos. In the video, you're going to
+learn the fivepart formula for directing
+learn the fivepart formula for directing
+ 
+learn the fivepart formula for directing
+the scene. This is cinematography shot
+the scene. This is cinematography shot
+ 
+the scene. This is cinematography shot
+composition, which is the camera angle
+composition, which is the camera angle
+ 
+composition, which is the camera angle
+and the position, the movement. It's the
+and the position, the movement. It's the
+ 
+and the position, the movement. It's the
+subject, which is the main character or
+subject, which is the main character or
+ 
+subject, which is the main character or
+focal point in the video. action, which
+focal point in the video. action, which
+ 
+focal point in the video. action, which
+is what is the subject doing? How is it
+is what is the subject doing? How is it
+ 
+is what is the subject doing? How is it
+moving in the video? Then you've got
+moving in the video? Then you've got
+ 
+moving in the video? Then you've got
+context and setting. This is the
+context and setting. This is the
+ 
+context and setting. This is the
+environment and the background or the
+environment and the background or the
+ 
+environment and the background or the
+time of day. And finally, style and
+time of day. And finally, style and
+ 
+time of day. And finally, style and
+ambiance. The overall aesthetic, mood,
+ambiance. The overall aesthetic, mood,
+ 
+ambiance. The overall aesthetic, mood,
+lighting or feeling of the scene. So,
+lighting or feeling of the scene. So,
+ 
+lighting or feeling of the scene. So,
+before we get into how to do this prompt
+before we get into how to do this prompt
+ 
+before we get into how to do this prompt
+formula and create really good prompts
+formula and create really good prompts
+ 
+formula and create really good prompts
+with it, let's show you how you can
+with it, let's show you how you can
+ 
+with it, let's show you how you can
+access Google V3.1. The first place you
+access Google V3.1. The first place you
+ 
+access Google V3.1. The first place you
+can access VO3.1 is in Google Flow and
+can access VO3.1 is in Google Flow and
+ 
+can access VO3.1 is in Google Flow and
+you can just type this into Google and
+you can just type this into Google and
+ 
+you can just type this into Google and
+it will take you straight here. Now you
+it will take you straight here. Now you
+ 
+it will take you straight here. Now you
+will have to sign up to use it but then
+will have to sign up to use it but then
+ 
+will have to sign up to use it but then
+you get access to text to video and
+you get access to text to video and
+ 
+you get access to text to video and
+frames to video inside Google Flow. So
+frames to video inside Google Flow. So
+ 
+frames to video inside Google Flow. So
+the other way that I use VO3.1 is in
+the other way that I use VO3.1 is in
+ 
+the other way that I use VO3.1 is in
+Higsfield AI. Now, this is brilliant
+Higsfield AI. Now, this is brilliant
+ 
+Higsfield AI. Now, this is brilliant
+because you could get access to Sora 2,
+because you could get access to Sora 2,
+ 
+because you could get access to Sora 2,
+Google V3.1, Clean 2.5 Turbo, and a
+Google V3.1, Clean 2.5 Turbo, and a
+ 
+Google V3.1, Clean 2.5 Turbo, and a
+whole lot of amazing software. You also
+whole lot of amazing software. You also
+ 
+whole lot of amazing software. You also
+have a lot more power inside this. You
+have a lot more power inside this. You
+ 
+have a lot more power inside this. You
+can use the frames option, start to end
+can use the frames option, start to end
+ 
+can use the frames option, start to end
+frame, the ingredients option to add in
+frame, the ingredients option to add in
+ 
+frame, the ingredients option to add in
+your own images, and you've got
+your own images, and you've got
+ 
+your own images, and you've got
+prompting and different options to
+prompting and different options to
+ 
+prompting and different options to
+change the quality and multi-shot mode.
+change the quality and multi-shot mode.
+ 
+change the quality and multi-shot mode.
+It's definitely worth checking this out
+It's definitely worth checking this out
+ 
+It's definitely worth checking this out
+if you're going to use VO3.1 a lot
+if you're going to use VO3.1 a lot
+ 
+if you're going to use VO3.1 a lot
+moving forward.
+
+ 
+
+So, first up, we have cinematography and
+So, first up, we have cinematography and
+ 
+So, first up, we have cinematography and
+shot composition. This is the camera
+shot composition. This is the camera
+ 
+shot composition. This is the camera
+angle and the position or the movement
+angle and the position or the movement
+ 
+angle and the position or the movement
+of the character or the scene. You can
+of the character or the scene. You can
+ 
+of the character or the scene. You can
+control this in many different ways,
+control this in many different ways,
+ 
+control this in many different ways,
+like a medium shot, a slow zoom, a low
+like a medium shot, a slow zoom, a low
+ 
+like a medium shot, a slow zoom, a low
+camera angle, creating different moods
+camera angle, creating different moods
+ 
+camera angle, creating different moods
+and feelings in your video. Adding
+and feelings in your video. Adding
+ 
+and feelings in your video. Adding
+specific camera angles and movements can
+specific camera angles and movements can
+ 
+specific camera angles and movements can
+really make your video dynamic. Next up
+really make your video dynamic. Next up
+ 
+really make your video dynamic. Next up
+is the subject. This is the main
+is the subject. This is the main
+ 
+is the subject. This is the main
+character or the focal point that you
+character or the focal point that you
+ 
+character or the focal point that you
+want to focus on in the video. And it's
+want to focus on in the video. And it's
+ 
+want to focus on in the video. And it's
+best to describe this in detail. The
+best to describe this in detail. The
+ 
+best to describe this in detail. The
+better you describe the look of your
+better you describe the look of your
+ 
+better you describe the look of your
+character and the details you add in,
+character and the details you add in,
+ 
+character and the details you add in,
+the better the result you'll get. When
+the better the result you'll get. When
+ 
+the better the result you'll get. When
+you've created the main character, you
+you've created the main character, you
+ 
+you've created the main character, you
+want to look at action. This is an
+want to look at action. This is an
+ 
+want to look at action. This is an
+important step to really show what the
+important step to really show what the
+ 
+important step to really show what the
+subject is doing in the video, and you
+subject is doing in the video, and you
+ 
+subject is doing in the video, and you
+can control this with this part of the
+can control this with this part of the
+ 
+can control this with this part of the
+prompt. A great way to do this is to
+prompt. A great way to do this is to
+ 
+prompt. A great way to do this is to
+really describe the way the subject is
+really describe the way the subject is
+ 
+really describe the way the subject is
+moving around the scene. Next up, you've
+moving around the scene. Next up, you've
+ 
+moving around the scene. Next up, you've
+got context and setting. This is
+got context and setting. This is
+ 
+got context and setting. This is
+important because it describes the
+important because it describes the
+ 
+important because it describes the
+environment or the world that you're
+environment or the world that you're
+ 
+environment or the world that you're
+creating with the video. Also, this is
+creating with the video. Also, this is
+ 
+creating with the video. Also, this is
+describing the background, the time of
+describing the background, the time of
+ 
+describing the background, the time of
+day, weather, if it's bright or if it's
+day, weather, if it's bright or if it's
+ 
+day, weather, if it's bright or if it's
+dark. You could really set the scene
+dark. You could really set the scene
+ 
+dark. You could really set the scene
+with this part of the prompt. Finally,
+with this part of the prompt. Finally,
+ 
+with this part of the prompt. Finally,
+you've got style and ambience. This is
+you've got style and ambience. This is
+ 
+you've got style and ambience. This is
+the overall aesthetic. It really follows
+the overall aesthetic. It really follows
+ 
+the overall aesthetic. It really follows
+on nicely from the environment, just
+on nicely from the environment, just
+ 
+on nicely from the environment, just
+really digging deeper into the mood and
+really digging deeper into the mood and
+ 
+really digging deeper into the mood and
+the lighting. You can describe things
+the lighting. You can describe things
+ 
+the lighting. You can describe things
+like the light and how you want it to
+like the light and how you want it to
+ 
+like the light and how you want it to
+look. And if you want things to be
+look. And if you want things to be
+ 
+look. And if you want things to be
+cinematic, ultra real, or if you want it
+cinematic, ultra real, or if you want it
+ 
+cinematic, ultra real, or if you want it
+to be a cartoon, I'm really excited to
+to be a cartoon, I'm really excited to
+ 
+to be a cartoon, I'm really excited to
+announce that today's video has been
+announce that today's video has been
+ 
+announce that today's video has been
+sponsored by Skillshare. On Skillshare,
+sponsored by Skillshare. On Skillshare,
+ 
+sponsored by Skillshare. On Skillshare,
+you have access to thousands of classes
+you have access to thousands of classes
+ 
+you have access to thousands of classes
+at all levels. Whether you're an artist,
+at all levels. Whether you're an artist,
+ 
+at all levels. Whether you're an artist,
+freelancer, entrepreneur, or just a
+freelancer, entrepreneur, or just a
+ 
+freelancer, entrepreneur, or just a
+person trying not to unravel, Skillshare
+person trying not to unravel, Skillshare
+ 
+person trying not to unravel, Skillshare
+helps you tap into creativity that fuels
+helps you tap into creativity that fuels
+ 
+helps you tap into creativity that fuels
+long-term clarity, balance, growth, and
+long-term clarity, balance, growth, and
+ 
+long-term clarity, balance, growth, and
+success. Now, on Skillshare, I became a
+success. Now, on Skillshare, I became a
+ 
+success. Now, on Skillshare, I became a
+member because I wanted to learn to
+member because I wanted to learn to
+ 
+member because I wanted to learn to
+become more productive and to get a bit
+become more productive and to get a bit
+ 
+become more productive and to get a bit
+of a handle on AI. This class here on
+of a handle on AI. This class here on
+ 
+of a handle on AI. This class here on
+VO3 in Canva showed me how to make
+VO3 in Canva showed me how to make
+ 
+VO3 in Canva showed me how to make
+cinematic AI videos using effective
+cinematic AI videos using effective
+ 
+cinematic AI videos using effective
+prompting. I've used the skills provided
+prompting. I've used the skills provided
+ 
+prompting. I've used the skills provided
+in this class to gain a good
+in this class to gain a good
+ 
+in this class to gain a good
+understanding of how to prompt AI. It
+understanding of how to prompt AI. It
+ 
+understanding of how to prompt AI. It
+also changed my mindset on AI, which I
+also changed my mindset on AI, which I
+ 
+also changed my mindset on AI, which I
+now feel great about. It's hugely
+now feel great about. It's hugely
+ 
+now feel great about. It's hugely
+improved my productivity and also my
+improved my productivity and also my
+ 
+improved my productivity and also my
+understanding of AI. Now, the first 500
+understanding of AI. Now, the first 500
+ 
+understanding of AI. Now, the first 500
+people that use the link in the
+people that use the link in the
+ 
+people that use the link in the
+description or the QR code on the screen
+description or the QR code on the screen
+ 
+description or the QR code on the screen
+will get a free month trial. I'm telling
+will get a free month trial. I'm telling
+ 
+will get a free month trial. I'm telling
+you guys, using Skillshare is worth it.
+you guys, using Skillshare is worth it.
+ 
+you guys, using Skillshare is worth it.
+So, go check it out right now. So, now
+So, go check it out right now. So, now
+ 
+So, go check it out right now. So, now
+we've got all of the individual prompt
+we've got all of the individual prompt
+ 
+we've got all of the individual prompt
+pieces. We can actually add these
+pieces. We can actually add these
+ 
+pieces. We can actually add these
+together to create the perfect prompt to
+together to create the perfect prompt to
+ 
+together to create the perfect prompt to
+generate the best video. Let's show you
+generate the best video. Let's show you
+ 
+generate the best video. Let's show you
+how to do it. So, here are the prompt
+how to do it. So, here are the prompt
+ 
+how to do it. So, here are the prompt
+ingredients added together into this
+ingredients added together into this
+ 
+ingredients added together into this
+prompt. A lone grizzled fish in the
+prompt. A lone grizzled fish in the
+ 
+prompt. A lone grizzled fish in the
+mid60s in a faded yellow slicker jacket
+mid60s in a faded yellow slicker jacket
+ 
+mid60s in a faded yellow slicker jacket
+face weathered and focused deliberately
+face weathered and focused deliberately
+ 
+face weathered and focused deliberately
+mends a heavy wet net with his scarred
+mends a heavy wet net with his scarred
+ 
+mends a heavy wet net with his scarred
+hands. So, this whole first part here is
+hands. So, this whole first part here is
+ 
+hands. So, this whole first part here is
+the subject and the action. So, we're
+the subject and the action. So, we're
+ 
+the subject and the action. So, we're
+describing the subject in the scene and
+describing the subject in the scene and
+ 
+describing the subject in the scene and
+then the action or what he's doing. Next
+then the action or what he's doing. Next
+ 
+then the action or what he's doing. Next
+up, we're moving on to shot with a slow
+up, we're moving on to shot with a slow
+ 
+up, we're moving on to shot with a slow
+continuous handheld tracking shot at
+continuous handheld tracking shot at
+ 
+continuous handheld tracking shot at
+shoulder level with shallow depth of
+shoulder level with shallow depth of
+ 
+shoulder level with shallow depth of
+field on the subject. Now, we're setting
+field on the subject. Now, we're setting
+ 
+field on the subject. Now, we're setting
+the composition. We're also describing
+the composition. We're also describing
+ 
+the composition. We're also describing
+what camera angle to really display this
+what camera angle to really display this
+ 
+what camera angle to really display this
+in. Next up takes place on a fogdrenched
+in. Next up takes place on a fogdrenched
+ 
+in. Next up takes place on a fogdrenched
+deck of a rusty troller in the middle of
+deck of a rusty troller in the middle of
+ 
+deck of a rusty troller in the middle of
+a choppy pre-dawn sea with sea spray
+a choppy pre-dawn sea with sea spray
+ 
+a choppy pre-dawn sea with sea spray
+hitting the lens. So this is the
+hitting the lens. So this is the
+ 
+hitting the lens. So this is the
+environment and we're describing the
+environment and we're describing the
+ 
+environment and we're describing the
+environment so that we can really paint
+environment so that we can really paint
+ 
+environment so that we can really paint
+the picture or in this case create the
+the picture or in this case create the
+ 
+the picture or in this case create the
+video. Here we have style. We're
+video. Here we have style. We're
+ 
+video. Here we have style. We're
+describing how we want the style of the
+describing how we want the style of the
+ 
+describing how we want the style of the
+video to look. So ultra realistic
+video to look. So ultra realistic
+ 
+video to look. So ultra realistic
+cinematic portrait. And then let's go on
+cinematic portrait. And then let's go on
+ 
+cinematic portrait. And then let's go on
+to really mention the color grade. So
+to really mention the color grade. So
+ 
+to really mention the color grade. So
+the color of the scene, moody teal and
+the color of the scene, moody teal and
+ 
+the color of the scene, moody teal and
+orange color grade with some harsh rim
+orange color grade with some harsh rim
+ 
+orange color grade with some harsh rim
+lighting. So, we've set the whole scene
+lighting. So, we've set the whole scene
+ 
+lighting. So, we've set the whole scene
+and we've gone through every part of the
+and we've gone through every part of the
+ 
+and we've gone through every part of the
+prompt formula. But one thing we haven't
+prompt formula. But one thing we haven't
+ 
+prompt formula. But one thing we haven't
+discussed and this is so important is to
+discussed and this is so important is to
+ 
+discussed and this is so important is to
+add in an audio prompt as well. So,
+add in an audio prompt as well. So,
+ 
+add in an audio prompt as well. So,
+visually bringing the scene to life is
+visually bringing the scene to life is
+ 
+visually bringing the scene to life is
+so important. But if you don't also tap
+so important. But if you don't also tap
+ 
+so important. But if you don't also tap
+in to people's hearing so that they can
+in to people's hearing so that they can
+ 
+in to people's hearing so that they can
+hear things going on in the scene as
+hear things going on in the scene as
+ 
+hear things going on in the scene as
+well, then your video is not going to
+well, then your video is not going to
+ 
+well, then your video is not going to
+have nowhere near as much impact. So the
+have nowhere near as much impact. So the
+ 
+have nowhere near as much impact. So the
+audio is the creek of the boat, rhythmic
+audio is the creek of the boat, rhythmic
+ 
+audio is the creek of the boat, rhythmic
+thud of waves and wet slap of the net.
+thud of waves and wet slap of the net.
+ 
+thud of waves and wet slap of the net.
+So let's have a look at the result.
+
+ 
+
+Let's try this with a completely
+Let's try this with a completely
+ 
+Let's try this with a completely
+different theme though to show you that
+different theme though to show you that
+ 
+different theme though to show you that
+this will work across the board. So,
+this will work across the board. So,
+ 
+this will work across the board. So,
+this one is a young woman, the 20ies,
+this one is a young woman, the 20ies,
+ 
+this one is a young woman, the 20ies,
+with expressive wide eyes and a slight
+with expressive wide eyes and a slight
+ 
+with expressive wide eyes and a slight
+confident grin pulls a sleek, futuristic
+confident grin pulls a sleek, futuristic
+ 
+confident grin pulls a sleek, futuristic
+augmented reality headset down over her
+augmented reality headset down over her
+ 
+augmented reality headset down over her
+eyes with a purposeful practiced motion.
+eyes with a purposeful practiced motion.
+ 
+eyes with a purposeful practiced motion.
+This is the subject and this is the
+This is the subject and this is the
+ 
+This is the subject and this is the
+action that the subject is doing with
+action that the subject is doing with
+ 
+action that the subject is doing with
+the product. Next up, we're looking at
+the product. Next up, we're looking at
+ 
+the product. Next up, we're looking at
+the aspect ratio, which is going to be a
+the aspect ratio, which is going to be a
+ 
+the aspect ratio, which is going to be a
+medium shot with a fast, shaky, close
+medium shot with a fast, shaky, close
+ 
+medium shot with a fast, shaky, close
+quarters dolly in on the subject's face.
+quarters dolly in on the subject's face.
+ 
+quarters dolly in on the subject's face.
+So, this is saying what camera motion we
+So, this is saying what camera motion we
+ 
+So, this is saying what camera motion we
+want to create when we generate the
+want to create when we generate the
+ 
+want to create when we generate the
+video. Then, a bit of context, a busy
+video. Then, a bit of context, a busy
+ 
+video. Then, a bit of context, a busy
+colorful calf filled with diffused
+colorful calf filled with diffused
+ 
+colorful calf filled with diffused
+natural light and the soft chatter of
+natural light and the soft chatter of
+ 
+natural light and the soft chatter of
+other patrons. So, this is saying that
+other patrons. So, this is saying that
+ 
+other patrons. So, this is saying that
+the environment needs to be this
+the environment needs to be this
+ 
+the environment needs to be this
+colorful calf and we need to add these
+colorful calf and we need to add these
+ 
+colorful calf and we need to add these
+people or these patrons into the
+people or these patrons into the
+ 
+people or these patrons into the
+background. Finally, we're looking at
+background. Finally, we're looking at
+ 
+background. Finally, we're looking at
+style. We want this to be a modern
+style. We want this to be a modern
+ 
+style. We want this to be a modern
+social media/tech ad. Shallow depth of
+social media/tech ad. Shallow depth of
+ 
+social media/tech ad. Shallow depth of
+field. We're describing the background.
+field. We're describing the background.
+ 
+field. We're describing the background.
+Clean, vibrant color grading. So, we've
+Clean, vibrant color grading. So, we've
+ 
+Clean, vibrant color grading. So, we've
+now got the color and the real feel of
+now got the color and the real feel of
+ 
+now got the color and the real feel of
+the scene. Then, of course, you have
+the scene. Then, of course, you have
+ 
+the scene. Then, of course, you have
+audio. We want this clear, crisp ASMR
+audio. We want this clear, crisp ASMR
+ 
+audio. We want this clear, crisp ASMR
+light click of the headset immediately
+light click of the headset immediately
+ 
+light click of the headset immediately
+followed by an energetic bassheavy
+followed by an energetic bassheavy
+ 
+followed by an energetic bassheavy
+electronic beat drop. So I understand
+electronic beat drop. So I understand
+ 
+electronic beat drop. So I understand
+that this seems like a lot of things,
+that this seems like a lot of things,
+ 
+that this seems like a lot of things,
+but you have to break this down. Each
+but you have to break this down. Each
+ 
+but you have to break this down. Each
+prompt piece of the ingredient you need
+prompt piece of the ingredient you need
+ 
+prompt piece of the ingredient you need
+to bring together and then you end up
+to bring together and then you end up
+ 
+to bring together and then you end up
+with this whole prompt which is going to
+with this whole prompt which is going to
+ 
+with this whole prompt which is going to
+work really well for us.
+
+ 
+
+[Music]
+[Music]
+ 
+[Music]
+So, there might feel like a lot to
+So, there might feel like a lot to
+ 
+So, there might feel like a lot to
+remember, but if you stick to these five
+remember, but if you stick to these five
+ 
+remember, but if you stick to these five
+ingredients, these five themes in your
+ingredients, these five themes in your
+ 
+ingredients, these five themes in your
+prompt, you're going to get good
+prompt, you're going to get good
+ 
+prompt, you're going to get good
+results. Now, you'll have to practice
+results. Now, you'll have to practice
+ 
+results. Now, you'll have to practice
+though because the more detailed you are
+though because the more detailed you are
+ 
+though because the more detailed you are
+with your describing of things, the
+with your describing of things, the
+ 
+with your describing of things, the
+better result you're going to get. So,
+better result you're going to get. So,
+ 
+better result you're going to get. So,
+don't get discouraged if you start doing
+don't get discouraged if you start doing
+ 
+don't get discouraged if you start doing
+this and your results aren't great. Just
+this and your results aren't great. Just
+ 
+this and your results aren't great. Just
+try and be specific. Practice using
+try and be specific. Practice using
+ 
+try and be specific. Practice using
+details and the more you practice, the
+details and the more you practice, the
+ 
+details and the more you practice, the
+better you'll get. I hope you've enjoyed
+better you'll get. I hope you've enjoyed
+ 
+better you'll get. I hope you've enjoyed
+the video. In the next video, I'm going
+the video. In the next video, I'm going
+ 
+the video. In the next video, I'm going
+to show you how to do start frame to end
+to show you how to do start frame to end
+ 
+to show you how to do start frame to end
+frame. And this is a more advanced
+frame. And this is a more advanced
+ 
+frame. And this is a more advanced
+technique where you can create whole
+technique where you can create whole
+ 
+technique where you can create whole
+stories and link different video clips
+stories and link different video clips
+ 
+stories and link different video clips
+together to create short films. This is
+together to create short films. This is
+ 
+together to create short films. This is
+a very powerful technique. It's going to
+a very powerful technique. It's going to
+ 
+a very powerful technique. It's going to
+be more involved and I'm going to spend
+be more involved and I'm going to spend
+ 
+be more involved and I'm going to spend
+a little bit more time in the next video
+a little bit more time in the next video
+ 
+a little bit more time in the next video
+showing you how to do it. If that sounds
+showing you how to do it. If that sounds
+ 
+showing you how to do it. If that sounds
+like something you'd like to learn to
+like something you'd like to learn to
+ 
+like something you'd like to learn to
+do, make sure you hit subscribe. And if
+do, make sure you hit subscribe. And if
+ 
+do, make sure you hit subscribe. And if
+you've enjoyed the video, give me a
+you've enjoyed the video, give me a
+ 
+you've enjoyed the video, give me a
+like. Any questions you've got, drop
+like. Any questions you've got, drop
+ 
+like. Any questions you've got, drop
+them in the comments section. Whatever
+them in the comments section. Whatever
+ 
+them in the comments section. Whatever
+you do for the rest of the day, guys,
+you do for the rest of the day, guys,
+ 
+you do for the rest of the day, guys,
+make sure it's a good and I'll see you
+make sure it's a good and I'll see you
+ 
+make sure it's a good and I'll see you
+in the next video.

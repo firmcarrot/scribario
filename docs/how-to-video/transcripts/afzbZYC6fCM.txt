@@ -1,0 +1,798 @@
+
+These VO3 Tree AI ads are going
+These VO3 Tree AI ads are going
+ 
+These VO3 Tree AI ads are going
+absolutely viral lately. They're all
+absolutely viral lately. They're all
+ 
+absolutely viral lately. They're all
+created using a new prompting format
+created using a new prompting format
+ 
+created using a new prompting format
+which is called JSON prompting. And
+which is called JSON prompting. And
+ 
+which is called JSON prompting. And
+honestly, you can make some pretty sick
+honestly, you can make some pretty sick
+ 
+honestly, you can make some pretty sick
+stuff with it. So, in this video, I will
+stuff with it. So, in this video, I will
+ 
+stuff with it. So, in this video, I will
+show you exactly how you can do that.
+show you exactly how you can do that.
+ 
+show you exactly how you can do that.
+Now, it all started when this person
+Now, it all started when this person
+ 
+Now, it all started when this person
+right here started posting these IKEA
+right here started posting these IKEA
+ 
+right here started posting these IKEA
+unboxing videos. You're not just limited
+unboxing videos. You're not just limited
+ 
+unboxing videos. You're not just limited
+to using this IKEA format. You can do
+to using this IKEA format. You can do
+ 
+to using this IKEA format. You can do
+different brands, different styles. You
+different brands, different styles. You
+ 
+different brands, different styles. You
+can even do something with characters.
+can even do something with characters.
+ 
+can even do something with characters.
+So, in this video, I will show you how
+So, in this video, I will show you how
+ 
+So, in this video, I will show you how
+you can make this yourself. I will give
+you can make this yourself. I will give
+ 
+you can make this yourself. I will give
+you all the prompts that you need to use
+you all the prompts that you need to use
+ 
+you all the prompts that you need to use
+in order to get started with this, and I
+in order to get started with this, and I
+ 
+in order to get started with this, and I
+will show you a few creative examples.
+will show you a few creative examples.
+ 
+will show you a few creative examples.
+Before we dive in, let me tell you this.
+Before we dive in, let me tell you this.
+ 
+Before we dive in, let me tell you this.
+There's quite a bit of buzz around the
+There's quite a bit of buzz around the
+ 
+There's quite a bit of buzz around the
+word Jason prompting. Some people
+word Jason prompting. Some people
+ 
+word Jason prompting. Some people
+believe it's a new magical spell that
+believe it's a new magical spell that
+ 
+believe it's a new magical spell that
+automatically makes your videos look
+automatically makes your videos look
+ 
+automatically makes your videos look
+insane. It's not the case at all. It's
+insane. It's not the case at all. It's
+ 
+insane. It's not the case at all. It's
+just a way to structure your video. So,
+just a way to structure your video. So,
+ 
+just a way to structure your video. So,
+you don't even need to use the JSON
+you don't even need to use the JSON
+ 
+you don't even need to use the JSON
+prompting if you don't want to. In my
+prompting if you don't want to. In my
+ 
+prompting if you don't want to. In my
+opinion, it works great for these type
+opinion, it works great for these type
+ 
+opinion, it works great for these type
+of videos. Either way, I will share the
+of videos. Either way, I will share the
+ 
+of videos. Either way, I will share the
+exact JSON prompt that I use to create a
+exact JSON prompt that I use to create a
+ 
+exact JSON prompt that I use to create a
+really cool Starbucks ad like this one
+
+ 
+
+or this perfumemer.
+
+ 
+
+I also made this chip bolt that creates
+I also made this chip bolt that creates
+ 
+I also made this chip bolt that creates
+the JSON prompts for you by just using
+the JSON prompts for you by just using
+ 
+the JSON prompts for you by just using
+my link in description down below. Okay,
+my link in description down below. Okay,
+ 
+my link in description down below. Okay,
+first let me get started with the
+first let me get started with the
+ 
+first let me get started with the
+unboxing videos. So, what you want to do
+unboxing videos. So, what you want to do
+ 
+unboxing videos. So, what you want to do
+is you want to go over to the platform
+is you want to go over to the platform
+ 
+is you want to go over to the platform
+where you can get access to Google V3.
+where you can get access to Google V3.
+ 
+where you can get access to Google V3.
+For me, I'm using Open Art. I will leave
+For me, I'm using Open Art. I will leave
+ 
+For me, I'm using Open Art. I will leave
+a link to that in the description down
+a link to that in the description down
+ 
+a link to that in the description down
+below, but you can also do this directly
+below, but you can also do this directly
+ 
+below, but you can also do this directly
+on Google Flow. Now, what you want to do
+on Google Flow. Now, what you want to do
+ 
+on Google Flow. Now, what you want to do
+next is you want to use the text to
+next is you want to use the text to
+ 
+next is you want to use the text to
+video, not the image to video, but the
+video, not the image to video, but the
+ 
+video, not the image to video, but the
+text to video model. Then you want to
+text to video model. Then you want to
+ 
+text to video model. Then you want to
+switch it to V3. The reason why I'm
+switch it to V3. The reason why I'm
+ 
+switch it to V3. The reason why I'm
+using Open Art is because I get access
+using Open Art is because I get access
+ 
+using Open Art is because I get access
+to like all of these different AI video
+to like all of these different AI video
+ 
+to like all of these different AI video
+generators. And in my opinion, that's
+generators. And in my opinion, that's
+ 
+generators. And in my opinion, that's
+much easier than having multiple
+much easier than having multiple
+ 
+much easier than having multiple
+different subscriptions. So, use model
+different subscriptions. So, use model
+ 
+different subscriptions. So, use model
+VO3 Tree. Then, for the audio, you want
+VO3 Tree. Then, for the audio, you want
+ 
+VO3 Tree. Then, for the audio, you want
+to leave that on because then you get
+to leave that on because then you get
+ 
+to leave that on because then you get
+that cool sound effect with your video.
+that cool sound effect with your video.
+ 
+that cool sound effect with your video.
+Resolution, you want to switch it over
+Resolution, you want to switch it over
+ 
+Resolution, you want to switch it over
+to 1080p. And then for the video mode,
+to 1080p. And then for the video mode,
+ 
+to 1080p. And then for the video mode,
+you can either choose fast or normal,
+you can either choose fast or normal,
+ 
+you can either choose fast or normal,
+but fast is a lot cheaper, so I'm using
+but fast is a lot cheaper, so I'm using
+ 
+but fast is a lot cheaper, so I'm using
+fast in this case as I want to save some
+fast in this case as I want to save some
+ 
+fast in this case as I want to save some
+credits. Next up, you want to add in
+credits. Next up, you want to add in
+ 
+credits. Next up, you want to add in
+your prompt. Now, I will share this
+your prompt. Now, I will share this
+ 
+your prompt. Now, I will share this
+document with you with all the prompts I
+document with you with all the prompts I
+ 
+document with you with all the prompts I
+use in this video. So, for me, I have
+use in this video. So, for me, I have
+ 
+use in this video. So, for me, I have
+this labuba room transformation. That's
+this labuba room transformation. That's
+ 
+this labuba room transformation. That's
+the first prompt that I'm going to use.
+the first prompt that I'm going to use.
+ 
+the first prompt that I'm going to use.
+So, I'm actually going to copy all of
+So, I'm actually going to copy all of
+ 
+So, I'm actually going to copy all of
+this. I'm going to go back to OpenArt.
+this. I'm going to go back to OpenArt.
+ 
+this. I'm going to go back to OpenArt.
+And here, I'm going to enter in my
+And here, I'm going to enter in my
+ 
+And here, I'm going to enter in my
+prompt. Now, this will cost me a few
+prompt. Now, this will cost me a few
+ 
+prompt. Now, this will cost me a few
+credits to create. And while this video
+credits to create. And while this video
+ 
+credits to create. And while this video
+is generating, let me just explain what
+is generating, let me just explain what
+ 
+is generating, let me just explain what
+JSON prompting is. So basically, it's a
+JSON prompting is. So basically, it's a
+ 
+JSON prompting is. So basically, it's a
+JavaScript form of code. It's actually a
+JavaScript form of code. It's actually a
+ 
+JavaScript form of code. It's actually a
+lot more informative in this way.
+lot more informative in this way.
+ 
+lot more informative in this way.
+Doesn't mean that you have to write it
+Doesn't mean that you have to write it
+ 
+Doesn't mean that you have to write it
+like that, but if you can see with like
+like that, but if you can see with like
+ 
+like that, but if you can see with like
+what's going on here, it's basically
+what's going on here, it's basically
+ 
+what's going on here, it's basically
+giving us in the exact order of what's
+giving us in the exact order of what's
+ 
+giving us in the exact order of what's
+going on, what we want to happen, what
+going on, what we want to happen, what
+ 
+going on, what we want to happen, what
+type of camera, what type of lighting,
+type of camera, what type of lighting,
+ 
+type of camera, what type of lighting,
+what type of room, what type of
+what type of room, what type of
+ 
+what type of room, what type of
+elements. Basically, with that, it gives
+elements. Basically, with that, it gives
+ 
+elements. Basically, with that, it gives
+the AI somewhat of a format. Most people
+the AI somewhat of a format. Most people
+ 
+the AI somewhat of a format. Most people
+just say like, "Hey, box unboxing
+just say like, "Hey, box unboxing
+ 
+just say like, "Hey, box unboxing
+explosion." That doesn't work. So, with
+explosion." That doesn't work. So, with
+ 
+explosion." That doesn't work. So, with
+this style, you get something cool.
+
+ 
+
+It's not quite labubu. It had a pretty
+It's not quite labubu. It had a pretty
+ 
+It's not quite labubu. It had a pretty
+hard time with that. I reckon it is
+hard time with that. I reckon it is
+ 
+hard time with that. I reckon it is
+because it's quite new. That was already
+because it's quite new. That was already
+ 
+because it's quite new. That was already
+pretty cool. But let me now show you how
+pretty cool. But let me now show you how
+ 
+pretty cool. But let me now show you how
+you can actually prompt like this. So,
+you can actually prompt like this. So,
+ 
+you can actually prompt like this. So,
+you can make your own custom prompts.
+you can make your own custom prompts.
+ 
+you can make your own custom prompts.
+And for that I have inside this document
+And for that I have inside this document
+ 
+And for that I have inside this document
+I have my custom prompt. So if you click
+I have my custom prompt. So if you click
+ 
+I have my custom prompt. So if you click
+on this link then you will be redirected
+on this link then you will be redirected
+ 
+on this link then you will be redirected
+to chat and you will get access to my
+to chat and you will get access to my
+ 
+to chat and you will get access to my
+custom bot. Now here you can simply ask
+custom bot. Now here you can simply ask
+ 
+custom bot. Now here you can simply ask
+it to give me a JSON FO3 prompt of a box
+it to give me a JSON FO3 prompt of a box
+ 
+it to give me a JSON FO3 prompt of a box
+opening room transformation in let's do
+opening room transformation in let's do
+ 
+opening room transformation in let's do
+Tom and Jerry style. So now we hit enter
+Tom and Jerry style. So now we hit enter
+ 
+Tom and Jerry style. So now we hit enter
+and what it does is I have trained it on
+and what it does is I have trained it on
+ 
+and what it does is I have trained it on
+the exact format. So now it will write
+the exact format. So now it will write
+ 
+the exact format. So now it will write
+this prompt for you. So, it made up all
+this prompt for you. So, it made up all
+ 
+this prompt for you. So, it made up all
+of these details in this prompt itself.
+of these details in this prompt itself.
+ 
+of these details in this prompt itself.
+If you want to change anything, you have
+If you want to change anything, you have
+ 
+If you want to change anything, you have
+to do that yourself. I'm just going to
+to do that yourself. I'm just going to
+ 
+to do that yourself. I'm just going to
+copy this and I'm going to go back to
+copy this and I'm going to go back to
+ 
+copy this and I'm going to go back to
+open art. And here I'm actually going to
+open art. And here I'm actually going to
+ 
+open art. And here I'm actually going to
+copy and paste in my prompt. And now we
+copy and paste in my prompt. And now we
+ 
+copy and paste in my prompt. And now we
+just do the same thing. And then we have
+just do the same thing. And then we have
+ 
+just do the same thing. And then we have
+a new video generated like this.
+
+ 
+
+So, there you have it. That's quite
+So, there you have it. That's quite
+ 
+So, there you have it. That's quite
+good. Honestly, you might want to try it
+good. Honestly, you might want to try it
+ 
+good. Honestly, you might want to try it
+out a few more times because in my
+out a few more times because in my
+ 
+out a few more times because in my
+experience, sometimes it doesn't work as
+experience, sometimes it doesn't work as
+ 
+experience, sometimes it doesn't work as
+good as I hope to. But that just takes a
+good as I hope to. But that just takes a
+ 
+good as I hope to. But that just takes a
+few generations. Now, let's do another
+few generations. Now, let's do another
+ 
+few generations. Now, let's do another
+example. Next up, I had the idea of
+example. Next up, I had the idea of
+ 
+example. Next up, I had the idea of
+doing a Pikachu in a Pokeball, and it
+doing a Pikachu in a Pokeball, and it
+ 
+doing a Pikachu in a Pokeball, and it
+turned out quite awesome.
+
+ 
+
+So, yeah. Isn't that quite insane?
+So, yeah. Isn't that quite insane?
+ 
+So, yeah. Isn't that quite insane?
+Honestly, I love how the little
+Honestly, I love how the little
+ 
+Honestly, I love how the little
+Pikachu's like pop out. And how you have
+Pikachu's like pop out. And how you have
+ 
+Pikachu's like pop out. And how you have
+like a whole Pikachu themed bedroom for
+like a whole Pikachu themed bedroom for
+ 
+like a whole Pikachu themed bedroom for
+anyone. Like if I was a kid, I would
+anyone. Like if I was a kid, I would
+ 
+anyone. Like if I was a kid, I would
+love to have a bedroom like that. And
+love to have a bedroom like that. And
+ 
+love to have a bedroom like that. And
+here I have one for Louis Vuitton, a
+here I have one for Louis Vuitton, a
+ 
+here I have one for Louis Vuitton, a
+luxury brand. So that's possible as
+luxury brand. So that's possible as
+ 
+luxury brand. So that's possible as
+well.
+
+ 
+
+So the whole unboxing thing is fun, but
+So the whole unboxing thing is fun, but
+ 
+So the whole unboxing thing is fun, but
+it's also a bit of a trend. You could
+it's also a bit of a trend. You could
+ 
+it's also a bit of a trend. You could
+also use these kind of like formats to
+also use these kind of like formats to
+ 
+also use these kind of like formats to
+create professional advertisements. Take
+create professional advertisements. Take
+ 
+create professional advertisements. Take
+a look at this one of Apple for example.
+a look at this one of Apple for example.
+ 
+a look at this one of Apple for example.
+[Music]
+[Music]
+ 
+[Music]
+For this, you can literally use a prompt
+For this, you can literally use a prompt
+ 
+For this, you can literally use a prompt
+like just this. Generate a cinematic
+like just this. Generate a cinematic
+ 
+like just this. Generate a cinematic
+prompt for Samsung product launch or do
+prompt for Samsung product launch or do
+ 
+prompt for Samsung product launch or do
+that for Apple, do that for any brand
+that for Apple, do that for any brand
+ 
+that for Apple, do that for any brand
+you have in mind and it will spit out an
+you have in mind and it will spit out an
+ 
+you have in mind and it will spit out an
+entire prompt for you that you can just
+entire prompt for you that you can just
+ 
+entire prompt for you that you can just
+copy in here.
+
+ 
+
+Now, with this Apple one, it took me a
+Now, with this Apple one, it took me a
+ 
+Now, with this Apple one, it took me a
+few tries, but I honestly really love
+few tries, but I honestly really love
+ 
+few tries, but I honestly really love
+this result. And actually, I want to
+this result. And actually, I want to
+ 
+this result. And actually, I want to
+show you this one as well.
+
+ 
+
+Just look at how insane this is if you
+Just look at how insane this is if you
+ 
+Just look at how insane this is if you
+have a product. Now, let me show another
+have a product. Now, let me show another
+ 
+have a product. Now, let me show another
+one of a Ferrari one that I did.
+
+ 
+
+I've seen people do this with Tesla, all
+I've seen people do this with Tesla, all
+ 
+I've seen people do this with Tesla, all
+kind of different cool things. And I'm
+kind of different cool things. And I'm
+ 
+kind of different cool things. And I'm
+just very curious what you would do if
+just very curious what you would do if
+ 
+just very curious what you would do if
+you have access to this and what you
+you have access to this and what you
+ 
+you have access to this and what you
+would make out of this. Let me know in
+would make out of this. Let me know in
+ 
+would make out of this. Let me know in
+the comments, please. Here you have
+the comments, please. Here you have
+ 
+the comments, please. Here you have
+another one that I already showed in the
+another one that I already showed in the
+ 
+another one that I already showed in the
+intro, but this one is of Starbucks.
+intro, but this one is of Starbucks.
+ 
+intro, but this one is of Starbucks.
+[Applause]
+
+ 
+
+This is sick. like this could literally
+This is sick. like this could literally
+ 
+This is sick. like this could literally
+replace a $100,000 commercial that
+replace a $100,000 commercial that
+ 
+replace a $100,000 commercial that
+people pay for. Then this one is my
+people pay for. Then this one is my
+ 
+people pay for. Then this one is my
+absolute favorite. And this one honestly
+absolute favorite. And this one honestly
+ 
+absolute favorite. And this one honestly
+took like four or five tries to get it
+took like four or five tries to get it
+ 
+took like four or five tries to get it
+right. But take a look at this.
+
+ 
+
+That's That's super dope. For this
+That's That's super dope. For this
+ 
+That's That's super dope. For this
+prompt, I will show you briefly right
+prompt, I will show you briefly right
+ 
+prompt, I will show you briefly right
+here, but if you want to get access to
+here, but if you want to get access to
+ 
+here, but if you want to get access to
+the full prompt, just click the link in
+the full prompt, just click the link in
+ 
+the full prompt, just click the link in
+description down below, sign up to my
+description down below, sign up to my
+ 
+description down below, sign up to my
+newsletter, and you will get access to
+newsletter, and you will get access to
+ 
+newsletter, and you will get access to
+it. Promise you I won't spam you with
+it. Promise you I won't spam you with
+ 
+it. Promise you I won't spam you with
+bad emails. It's all about AI stuff.
+bad emails. It's all about AI stuff.
+ 
+bad emails. It's all about AI stuff.
+Now, lastly, to end it off with a
+Now, lastly, to end it off with a
+ 
+Now, lastly, to end it off with a
+banger, I got this perfume ad.
+
+ 
+
+If people will call this trash, then I'm
+If people will call this trash, then I'm
+ 
+If people will call this trash, then I'm
+going to fight you in the comments.
+going to fight you in the comments.
+ 
+going to fight you in the comments.
+Like, this is insane to me. Like, this
+Like, this is insane to me. Like, this
+ 
+Like, this is insane to me. Like, this
+crazy. I I lack the vocabulary to give
+crazy. I I lack the vocabulary to give
+ 
+crazy. I I lack the vocabulary to give
+words to this. Literally. Wow. Now, if
+words to this. Literally. Wow. Now, if
+ 
+words to this. Literally. Wow. Now, if
+you want to try this out yourself, then
+you want to try this out yourself, then
+ 
+you want to try this out yourself, then
+use this prompot and you will get some
+use this prompot and you will get some
+ 
+use this prompot and you will get some
+good results. Be creative with this.
+good results. Be creative with this.
+ 
+good results. Be creative with this.
+More creativity generates better prompts
+More creativity generates better prompts
+ 
+More creativity generates better prompts
+in my opinion as long as you have a
+in my opinion as long as you have a
+ 
+in my opinion as long as you have a
+clear objective. Other than that, if you
+clear objective. Other than that, if you
+ 
+clear objective. Other than that, if you
+want to try this using Open Art, I will
+want to try this using Open Art, I will
+ 
+want to try this using Open Art, I will
+leave the link for that as well. You can
+leave the link for that as well. You can
+ 
+leave the link for that as well. You can
+also use Google Flow if you prefer that.
+also use Google Flow if you prefer that.
+ 
+also use Google Flow if you prefer that.
+I use this because it also has like the
+I use this because it also has like the
+ 
+I use this because it also has like the
+image model. It also has like all the
+image model. It also has like all the
+ 
+image model. It also has like all the
+video models that I want to use. That's
+video models that I want to use. That's
+ 
+video models that I want to use. That's
+my reason for using Open Art. Also,
+my reason for using Open Art. Also,
+ 
+my reason for using Open Art. Also,
+click the video that's on the screen
+click the video that's on the screen
+ 
+click the video that's on the screen
+right now if you want to learn how you
+right now if you want to learn how you
+ 
+right now if you want to learn how you
+can make fully AI animated stories like
+can make fully AI animated stories like
+ 
+can make fully AI animated stories like
+the one that I'm showing right now.
+the one that I'm showing right now.
+ 
+the one that I'm showing right now.
+[Music]
+
+ 
+
+It's honestly quite sick what you can do
+It's honestly quite sick what you can do
+ 
+It's honestly quite sick what you can do
+with AI

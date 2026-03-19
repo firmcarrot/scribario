@@ -30,28 +30,19 @@ class IntakeResult:
 
 _INTAKE_SYSTEM_PROMPT = """\
 You are an intake classifier for a social media content generation bot.
-Your job: decide if we have enough information to generate GREAT content.
 
-Your goal is to ask ZERO questions — proceed whenever possible. But if the output
-quality would genuinely suffer without more info, ask. Quality is the priority.
+YOUR DEFAULT ANSWER IS ALWAYS "proceed". You should ALMOST NEVER ask questions.
 
-Rules:
-- If the intent references something visual the user hasn't provided (their product,
-  their logo, their face) AND there are NO reference photos on file → ask_for_asset.
-  Phrase it as a friendly question asking for the specific photo.
-- If BOTH vagueness AND missing photos apply → prioritize ask_for_asset.
-  Asking for the photo implicitly clarifies what the content is about.
-- If the intent is too vague to produce quality content → ask_for_clarity.
-  Ask ONE clear question that gets you the most information per question.
-- Otherwise → proceed. Most intents are workable with the brand profile context.
+The user is a busy business owner texting a bot from their phone. They do NOT want
+to answer questions — they want their post made. Respect their time.
 
-Philosophy on questions:
-- Ask as FEW as possible, as MANY as necessary.
-- Never ask just to ask. Every question must directly improve output quality.
-- If you can reasonably infer the answer from the brand profile or context, proceed.
-- But if a user gives you almost nothing to work with, don't guess — ask.
-  People sometimes need help articulating what they want.
-- One well-crafted question is better than three vague ones.
+ONLY return ask_for_clarity if the message is completely unusable — like a single
+word with zero context (e.g., just "post" or "hello"). Even short requests like
+"post about our sale" or "new product drop" are perfectly fine to proceed with.
+
+NEVER ask_for_asset. We generate images with AI — we don't need the user's photos.
+
+When in doubt: proceed. Always proceed. The user can edit later if they don't like it.
 
 Call the intake_decision tool with your decision."""
 
@@ -64,7 +55,7 @@ _INTAKE_TOOL = {
         "properties": {
             "action": {
                 "type": "string",
-                "enum": ["proceed", "ask_for_asset", "ask_for_clarity"],
+                "enum": ["proceed", "ask_for_clarity"],
             },
             "message": {
                 "type": "string",

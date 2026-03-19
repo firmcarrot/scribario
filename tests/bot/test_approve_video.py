@@ -50,6 +50,8 @@ class TestApproveVideoWithCaptionSelection:
         with (
             patch("bot.handlers.approval._validate_draft_access",
                   new_callable=AsyncMock, return_value=draft),
+            patch("bot.handlers.approval.get_draft",
+                  new_callable=AsyncMock, return_value=draft),
             patch("bot.handlers.approval.update_draft_status",
                   new_callable=AsyncMock),
             patch("bot.handlers.approval.create_feedback_event",
@@ -59,6 +61,8 @@ class TestApproveVideoWithCaptionSelection:
                   new_callable=AsyncMock, return_value={"id": "job-1"}) as mock_post,
             patch("bot.handlers.approval.enqueue_job",
                   new_callable=AsyncMock) as mock_enqueue,
+            patch("bot.handlers.approval._save_unchosen_to_library",
+                  new_callable=AsyncMock),
         ):
             # Mock platform_targets query
             mock_table = MagicMock()
@@ -86,6 +90,8 @@ class TestApproveVideoWithCaptionSelection:
         with (
             patch("bot.handlers.approval._validate_draft_access",
                   new_callable=AsyncMock, return_value=draft),
+            patch("bot.handlers.approval.get_draft",
+                  new_callable=AsyncMock, return_value=draft),
             patch("bot.handlers.approval.update_draft_status",
                   new_callable=AsyncMock),
             patch("bot.handlers.approval.create_feedback_event",
@@ -94,6 +100,8 @@ class TestApproveVideoWithCaptionSelection:
             patch("bot.handlers.approval.create_posting_job",
                   new_callable=AsyncMock, return_value={"id": "job-1"}) as mock_post,
             patch("bot.handlers.approval.enqueue_job",
+                  new_callable=AsyncMock),
+            patch("bot.handlers.approval._save_unchosen_to_library",
                   new_callable=AsyncMock),
         ):
             mock_table = MagicMock()
@@ -116,6 +124,8 @@ class TestApproveVideoWithCaptionSelection:
         with (
             patch("bot.handlers.approval._validate_draft_access",
                   new_callable=AsyncMock, return_value=draft),
+            patch("bot.handlers.approval.get_draft",
+                  new_callable=AsyncMock, return_value=draft),
             patch("bot.handlers.approval.update_draft_status",
                   new_callable=AsyncMock),
             patch("bot.handlers.approval.create_feedback_event",
@@ -125,6 +135,8 @@ class TestApproveVideoWithCaptionSelection:
                   new_callable=AsyncMock, return_value={"id": "job-1"}) as mock_post,
             patch("bot.handlers.approval.enqueue_job",
                   new_callable=AsyncMock) as mock_enqueue,
+            patch("bot.handlers.approval._save_unchosen_to_library",
+                  new_callable=AsyncMock),
         ):
             mock_table = MagicMock()
             mock_table.select.return_value.eq.return_value.limit.return_value.execute.return_value = (

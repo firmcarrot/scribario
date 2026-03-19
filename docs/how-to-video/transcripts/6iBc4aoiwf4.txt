@@ -1,0 +1,1662 @@
+
+This is a tutorial about how I made two
+This is a tutorial about how I made two
+ 
+This is a tutorial about how I made two
+different single take continuous shot
+different single take continuous shot
+ 
+different single take continuous shot
+videos using Google Flow. In one of
+videos using Google Flow. In one of
+ 
+videos using Google Flow. In one of
+them, I started with a VO3 clip which I
+them, I started with a VO3 clip which I
+ 
+them, I started with a VO3 clip which I
+extended using V2. So, I lost all the
+extended using V2. So, I lost all the
+ 
+extended using V2. So, I lost all the
+sound. And this is kind of what that one
+sound. And this is kind of what that one
+ 
+sound. And this is kind of what that one
+looks like. Okay, here we go. One
+looks like. Okay, here we go. One
+ 
+looks like. Okay, here we go. One
+minute, no cuts. Walking all the way
+minute, no cuts. Walking all the way
+ 
+minute, no cuts. Walking all the way
+through the train.
+
+ 
+
+[Music]
+[Music]
+ 
+[Music]
+And the other one is a one minute
+And the other one is a one minute
+ 
+And the other one is a one minute
+continuous take where someone's talking
+continuous take where someone's talking
+ 
+continuous take where someone's talking
+the whole time.
+the whole time.
+ 
+the whole time.
+>> There's a poem we had to read back in
+>> There's a poem we had to read back in
+ 
+>> There's a poem we had to read back in
+high school about taking the road less
+high school about taking the road less
+ 
+high school about taking the road less
+traveled.
+traveled.
+ 
+traveled.
+>> And she's kind of a consistent
+>> And she's kind of a consistent
+ 
+>> And she's kind of a consistent
+character, but not really if you compare
+character, but not really if you compare
+ 
+character, but not really if you compare
+the start frame and the end frame. I
+the start frame and the end frame. I
+ 
+the start frame and the end frame. I
+used V3 fast mode. And in this tutorial,
+used V3 fast mode. And in this tutorial,
+ 
+used V3 fast mode. And in this tutorial,
+I'm going to redo that movie in V3
+I'm going to redo that movie in V3
+ 
+I'm going to redo that movie in V3
+quality, so we can kind of compare the
+quality, so we can kind of compare the
+ 
+quality, so we can kind of compare the
+fast mode versus the quality mode. I
+fast mode versus the quality mode. I
+ 
+fast mode versus the quality mode. I
+know a lot of people have questions
+know a lot of people have questions
+ 
+know a lot of people have questions
+about that. The big difference, of
+about that. The big difference, of
+ 
+about that. The big difference, of
+course, is the number of credits each
+course, is the number of credits each
+ 
+course, is the number of credits each
+one uses. So, V3 quality uses 100
+one uses. So, V3 quality uses 100
+ 
+one uses. So, V3 quality uses 100
+credits and V3 fast uses 20 credits. So,
+credits and V3 fast uses 20 credits. So,
+ 
+credits and V3 fast uses 20 credits. So,
+you basically get five to one if I did
+you basically get five to one if I did
+ 
+you basically get five to one if I did
+my math right. So, we're going to learn
+my math right. So, we're going to learn
+ 
+my math right. So, we're going to learn
+two different ways to do continuous
+two different ways to do continuous
+ 
+two different ways to do continuous
+shots. One is extending a clip and one
+shots. One is extending a clip and one
+ 
+shots. One is extending a clip and one
+is using what's commonly known as the
+is using what's commonly known as the
+ 
+is using what's commonly known as the
+last frame first frame technique and
+last frame first frame technique and
+ 
+last frame first frame technique and
+that uses the frames to video option in
+that uses the frames to video option in
+ 
+that uses the frames to video option in
+Google Flow.
+Google Flow.
+ 
+Google Flow.
+>> Okay, here we go. 1 minute, no cuts.
+>> Okay, here we go. 1 minute, no cuts.
+ 
+>> Okay, here we go. 1 minute, no cuts.
+Walking all the way through the train.
+Walking all the way through the train.
+ 
+Walking all the way through the train.
+>> So, the trick with this one is that I
+>> So, the trick with this one is that I
+ 
+>> So, the trick with this one is that I
+wanted to start with someone talking
+wanted to start with someone talking
+ 
+wanted to start with someone talking
+because VO3 has audio and V2 doesn't. I
+because VO3 has audio and V2 doesn't. I
+ 
+because VO3 has audio and V2 doesn't. I
+wanted to start with a VO3 clip to begin
+wanted to start with a VO3 clip to begin
+ 
+wanted to start with a VO3 clip to begin
+with some dialogue and then as I
+with some dialogue and then as I
+ 
+with some dialogue and then as I
+extended it, I could just add some
+extended it, I could just add some
+ 
+extended it, I could just add some
+music. So, I like this idea of a
+music. So, I like this idea of a
+ 
+music. So, I like this idea of a
+character walking down a train and
+character walking down a train and
+ 
+character walking down a train and
+having the passengers change into
+having the passengers change into
+ 
+having the passengers change into
+different types of passengers as she's
+different types of passengers as she's
+ 
+different types of passengers as she's
+walking through it. So, this was the
+walking through it. So, this was the
+ 
+walking through it. So, this was the
+clip that I started with. This was the
+clip that I started with. This was the
+ 
+clip that I started with. This was the
+very first prompt I tried.
+
+ 
+
+Okay, this is a one minute continuous
+Okay, this is a one minute continuous
+ 
+Okay, this is a one minute continuous
+shot video walking through a train
+shot video walking through a train
+ 
+shot video walking through a train
+>> and the wrong character is saying the
+>> and the wrong character is saying the
+ 
+>> and the wrong character is saying the
+line. Like if you look at here, it
+line. Like if you look at here, it
+ 
+line. Like if you look at here, it
+should be the production assistant
+should be the production assistant
+ 
+should be the production assistant
+saying that line. So I tried it again
+saying that line. So I tried it again
+ 
+saying that line. So I tried it again
+and it worked. So once I had that one, I
+and it worked. So once I had that one, I
+ 
+and it worked. So once I had that one, I
+just followed this prompt and then just
+just followed this prompt and then just
+ 
+just followed this prompt and then just
+continued to change who the passengers
+continued to change who the passengers
+ 
+continued to change who the passengers
+were. So I'll show you what I mean. So
+were. So I'll show you what I mean. So
+ 
+were. So I'll show you what I mean. So
+if you were doing this and you had just
+if you were doing this and you had just
+ 
+if you were doing this and you had just
+found your first clip that you liked,
+found your first clip that you liked,
+ 
+found your first clip that you liked,
+you would go add to scene. And now we're
+you would go add to scene. And now we're
+ 
+you would go add to scene. And now we're
+over to scene builder. So this is the
+over to scene builder. So this is the
+ 
+over to scene builder. So this is the
+project and then this is the scene
+project and then this is the scene
+ 
+project and then this is the scene
+builder where we can arrange the scenes.
+builder where we can arrange the scenes.
+ 
+builder where we can arrange the scenes.
+Everything we generate in scene builder
+Everything we generate in scene builder
+ 
+Everything we generate in scene builder
+will also be in this project. What I did
+will also be in this project. What I did
+ 
+will also be in this project. What I did
+is I had this initial shot and then I
+is I had this initial shot and then I
+ 
+is I had this initial shot and then I
+clicked the plus button and went to
+clicked the plus button and went to
+ 
+clicked the plus button and went to
+extend.
+extend.
+ 
+extend.
+And now it says what should happen next?
+And now it says what should happen next?
+ 
+And now it says what should happen next?
+And over here is our prompt for this
+And over here is our prompt for this
+ 
+And over here is our prompt for this
+happens and then the extended shot. So
+happens and then the extended shot. So
+ 
+happens and then the extended shot. So
+the first one I did was camera tracking
+the first one I did was camera tracking
+ 
+the first one I did was camera tracking
+motion as the conductor walks down the
+motion as the conductor walks down the
+ 
+motion as the conductor walks down the
+aisle revealing more passengers. And I
+aisle revealing more passengers. And I
+ 
+aisle revealing more passengers. And I
+think this is an important part where we
+think this is an important part where we
+ 
+think this is an important part where we
+say there are more passengers being
+say there are more passengers being
+ 
+say there are more passengers being
+revealed and then we say the passengers
+revealed and then we say the passengers
+ 
+revealed and then we say the passengers
+are all anthropomorphic animals and then
+are all anthropomorphic animals and then
+ 
+are all anthropomorphic animals and then
+she smiles in amusement. So we're
+she smiles in amusement. So we're
+ 
+she smiles in amusement. So we're
+getting a reaction from her. So let's
+getting a reaction from her. So let's
+ 
+getting a reaction from her. So let's
+see how this one turns out. And again
+see how this one turns out. And again
+ 
+see how this one turns out. And again
+I'm doing Oh, let me show you. So it
+I'm doing Oh, let me show you. So it
+ 
+I'm doing Oh, let me show you. So it
+looks like I can do this in V3 fast
+looks like I can do this in V3 fast
+ 
+looks like I can do this in V3 fast
+mode. Um let's try it. And it says no.
+mode. Um let's try it. And it says no.
+ 
+mode. Um let's try it. And it says no.
+This feature isn't supported in V3 fast.
+This feature isn't supported in V3 fast.
+ 
+This feature isn't supported in V3 fast.
+You have to switch to V2. So, the only
+You have to switch to V2. So, the only
+ 
+You have to switch to V2. So, the only
+way we can extend these clips is to use
+way we can extend these clips is to use
+ 
+way we can extend these clips is to use
+V2 fast for now. And hopefully that will
+V2 fast for now. And hopefully that will
+ 
+V2 fast for now. And hopefully that will
+change soon. But as of right now, that's
+change soon. But as of right now, that's
+ 
+change soon. But as of right now, that's
+the only one that will work for this
+the only one that will work for this
+ 
+the only one that will work for this
+technique. And then a little bit later,
+technique. And then a little bit later,
+ 
+technique. And then a little bit later,
+I'm going to show you how to extend a
+I'm going to show you how to extend a
+ 
+I'm going to show you how to extend a
+clip using VO3. So, we're going to do
+clip using VO3. So, we're going to do
+ 
+clip using VO3. So, we're going to do
+the anthropomorphic animals like I did
+the anthropomorphic animals like I did
+ 
+the anthropomorphic animals like I did
+in my original. All right, let's see how
+in my original. All right, let's see how
+ 
+in my original. All right, let's see how
+that turns out. So, you can either you
+that turns out. So, you can either you
+ 
+that turns out. So, you can either you
+can either grab this and just kind of
+can either grab this and just kind of
+ 
+can either grab this and just kind of
+scrub and see what happens. Um, or you
+scrub and see what happens. Um, or you
+ 
+scrub and see what happens. Um, or you
+can play it
+
+ 
+
+So now we have the anthropomorphic
+So now we have the anthropomorphic
+ 
+So now we have the anthropomorphic
+animals. Let's do another one. So we'll
+animals. Let's do another one. So we'll
+ 
+animals. Let's do another one. So we'll
+just click the plus button again and
+just click the plus button again and
+ 
+just click the plus button again and
+click extend. What should happen next?
+click extend. What should happen next?
+ 
+click extend. What should happen next?
+And we'll paste that same prompt. And
+And we'll paste that same prompt. And
+ 
+And we'll paste that same prompt. And
+now we'll change them to um let's change
+now we'll change them to um let's change
+ 
+now we'll change them to um let's change
+them to something different that wasn't
+them to something different that wasn't
+ 
+them to something different that wasn't
+in my original um ballerinas. How about
+in my original um ballerinas. How about
+ 
+in my original um ballerinas. How about
+And let's try and give her a little bit
+And let's try and give her a little bit
+ 
+And let's try and give her a little bit
+of action, which I didn't really do. Um
+of action, which I didn't really do. Um
+ 
+of action, which I didn't really do. Um
+so let's have the conductor wave to one
+so let's have the conductor wave to one
+ 
+so let's have the conductor wave to one
+ballerina. All right. Let's just kind of
+ballerina. All right. Let's just kind of
+ 
+ballerina. All right. Let's just kind of
+see what happened here.
+see what happened here.
+ 
+see what happened here.
+Oh, now she stopped entirely.
+Oh, now she stopped entirely.
+ 
+Oh, now she stopped entirely.
+What happened there? Now she waved. So,
+What happened there? Now she waved. So,
+ 
+What happened there? Now she waved. So,
+what was that? So, I I can't remember
+what was that? So, I I can't remember
+ 
+what was that? So, I I can't remember
+exact prompt that we did. So, what I can
+exact prompt that we did. So, what I can
+ 
+exact prompt that we did. So, what I can
+do is go back to this project and see
+do is go back to this project and see
+ 
+do is go back to this project and see
+camera tracking as she walks down. So,
+camera tracking as she walks down. So,
+ 
+camera tracking as she walks down. So,
+I'm going to go back to scene builder.
+I'm going to go back to scene builder.
+ 
+I'm going to go back to scene builder.
+There's nothing in this prompt that
+There's nothing in this prompt that
+ 
+There's nothing in this prompt that
+makes me think it should have just
+makes me think it should have just
+ 
+makes me think it should have just
+stopped and had her turn around and go
+stopped and had her turn around and go
+ 
+stopped and had her turn around and go
+that way. It looks like it thinks that
+that way. It looks like it thinks that
+ 
+that way. It looks like it thinks that
+she's standing still
+she's standing still
+ 
+she's standing still
+um because of this that maybe this looks
+um because of this that maybe this looks
+ 
+um because of this that maybe this looks
+like she's not moving. What we can do
+like she's not moving. What we can do
+ 
+like she's not moving. What we can do
+here is trim it. So we can go here,
+here is trim it. So we can go here,
+ 
+here is trim it. So we can go here,
+trim back,
+trim back,
+ 
+trim back,
+and now we'll extend again. So we've
+and now we'll extend again. So we've
+ 
+and now we'll extend again. So we've
+kind of trimmed to the end here. So now
+kind of trimmed to the end here. So now
+ 
+kind of trimmed to the end here. So now
+we're starting from there instead of
+we're starting from there instead of
+ 
+we're starting from there instead of
+where we were before. And we'll extend
+where we were before. And we'll extend
+ 
+where we were before. And we'll extend
+from here.
+from here.
+ 
+from here.
+I think it's important to show these
+I think it's important to show these
+ 
+I think it's important to show these
+times that things don't work out because
+times that things don't work out because
+ 
+times that things don't work out because
+I think if you see a tutorial and
+I think if you see a tutorial and
+ 
+I think if you see a tutorial and
+everything works out perfectly, but they
+everything works out perfectly, but they
+ 
+everything works out perfectly, but they
+don't always work the way they're
+don't always work the way they're
+ 
+don't always work the way they're
+supposed to. And a lot of times you run
+supposed to. And a lot of times you run
+ 
+supposed to. And a lot of times you run
+into problems and you have to figure out
+into problems and you have to figure out
+ 
+into problems and you have to figure out
+ways around them. So, thanks for
+ways around them. So, thanks for
+ 
+ways around them. So, thanks for
+sticking with me through these mistakes.
+sticking with me through these mistakes.
+ 
+sticking with me through these mistakes.
+See if that helped at all.
+
+ 
+
+Yeah. So, now we got her walking again.
+Yeah. So, now we got her walking again.
+ 
+Yeah. So, now we got her walking again.
+The trick there was that the final frame
+The trick there was that the final frame
+ 
+The trick there was that the final frame
+looked too much like she was just
+looked too much like she was just
+ 
+looked too much like she was just
+standing there and it didn't know that
+standing there and it didn't know that
+ 
+standing there and it didn't know that
+she was in motion. All right. And that
+she was in motion. All right. And that
+ 
+she was in motion. All right. And that
+was basically what I did. So, you know,
+was basically what I did. So, you know,
+ 
+was basically what I did. So, you know,
+it started with a V3 clip and then went
+it started with a V3 clip and then went
+ 
+it started with a V3 clip and then went
+to the V2 and the V2 and just kept
+to the V2 and the V2 and just kept
+ 
+to the V2 and the V2 and just kept
+continually doing that and changing the
+continually doing that and changing the
+ 
+continually doing that and changing the
+background characters um to, you know,
+background characters um to, you know,
+ 
+background characters um to, you know,
+different creatures and aliens and
+different creatures and aliens and
+ 
+different creatures and aliens and
+things like that. So, that's how I did
+things like that. So, that's how I did
+ 
+things like that. So, that's how I did
+that one. There was one point where I
+that one. There was one point where I
+ 
+that one. There was one point where I
+extended and I had to leave the train. I
+extended and I had to leave the train. I
+ 
+extended and I had to leave the train. I
+was trying to figure out how to get out
+was trying to figure out how to get out
+ 
+was trying to figure out how to get out
+of the train and that took a little bit
+of the train and that took a little bit
+ 
+of the train and that took a little bit
+more work. Um, let me show you that
+more work. Um, let me show you that
+ 
+more work. Um, let me show you that
+really quick. I wanted her to come to
+really quick. I wanted her to come to
+ 
+really quick. I wanted her to come to
+the end of the train and walk off the
+the end of the train and walk off the
+ 
+the end of the train and walk off the
+train. Um, and I'm going to try this one
+train. Um, and I'm going to try this one
+ 
+train. Um, and I'm going to try this one
+again. But here's what happened for me.
+again. But here's what happened for me.
+ 
+again. But here's what happened for me.
+Um, she gets there and then all of a
+Um, she gets there and then all of a
+ 
+Um, she gets there and then all of a
+sudden the camera started to pan up and
+sudden the camera started to pan up and
+ 
+sudden the camera started to pan up and
+I thought, well, that's kind of
+I thought, well, that's kind of
+ 
+I thought, well, that's kind of
+interesting. What if what if um at the
+interesting. What if what if um at the
+ 
+interesting. What if what if um at the
+end of this the camera continues to pan
+end of this the camera continues to pan
+ 
+end of this the camera continues to pan
+up um and
+up um and
+ 
+up um and
+now we kind of see the top of the train.
+now we kind of see the top of the train.
+ 
+now we kind of see the top of the train.
+It took a little bit. Didn't quite get
+It took a little bit. Didn't quite get
+ 
+It took a little bit. Didn't quite get
+there. There we go. This was like, okay,
+there. There we go. This was like, okay,
+ 
+there. There we go. This was like, okay,
+now I'm outside the train. This is
+now I'm outside the train. This is
+ 
+now I'm outside the train. This is
+perfect. So, I liked that. And then I
+perfect. So, I liked that. And then I
+ 
+perfect. So, I liked that. And then I
+was able to try different things. And
+was able to try different things. And
+ 
+was able to try different things. And
+this is for me where the project went
+this is for me where the project went
+ 
+this is for me where the project went
+off the rails because I was like, oh, I
+off the rails because I was like, oh, I
+ 
+off the rails because I was like, oh, I
+could have it pan over here. So, I tried
+could have it pan over here. So, I tried
+ 
+could have it pan over here. So, I tried
+a bunch of things. And um that's where I
+a bunch of things. And um that's where I
+ 
+a bunch of things. And um that's where I
+really went through credits on this
+really went through credits on this
+ 
+really went through credits on this
+project was trying to figure out what
+project was trying to figure out what
+ 
+project was trying to figure out what
+happens after we get out of the train.
+happens after we get out of the train.
+ 
+happens after we get out of the train.
+But the actual walk through the train
+But the actual walk through the train
+ 
+But the actual walk through the train
+was pretty easy to get through. That's
+was pretty easy to get through. That's
+ 
+was pretty easy to get through. That's
+how you use Google Flow to do a single
+how you use Google Flow to do a single
+ 
+how you use Google Flow to do a single
+continuous shot with VO3 that extends
+continuous shot with VO3 that extends
+ 
+continuous shot with VO3 that extends
+with V2 clips. Now, let's do one with V3
+with V2 clips. Now, let's do one with V3
+ 
+with V2 clips. Now, let's do one with V3
+quality mode and extend them that way. I
+quality mode and extend them that way. I
+ 
+quality mode and extend them that way. I
+know you're probably thinking like,
+know you're probably thinking like,
+ 
+know you're probably thinking like,
+"Wait, but you said that you can't
+"Wait, but you said that you can't
+ 
+"Wait, but you said that you can't
+extend them in V3." And you can't, but
+extend them in V3." And you can't, but
+ 
+extend them in V3." And you can't, but
+you can do this other technique that
+you can do this other technique that
+ 
+you can do this other technique that
+many of you know about called last
+many of you know about called last
+ 
+many of you know about called last
+frame, first frame.
+frame, first frame.
+ 
+frame, first frame.
+>> There's a poem we had to read back in
+>> There's a poem we had to read back in
+ 
+>> There's a poem we had to read back in
+high school about taking the road less
+high school about taking the road less
+ 
+high school about taking the road less
+traveled.
+traveled.
+ 
+traveled.
+>> So, this is how she started off and then
+>> So, this is how she started off and then
+ 
+>> So, this is how she started off and then
+we see her walking for one minute. And
+we see her walking for one minute. And
+ 
+we see her walking for one minute. And
+for the most part, initially, you don't
+for the most part, initially, you don't
+ 
+for the most part, initially, you don't
+really notice that she's changing. And
+really notice that she's changing. And
+ 
+really notice that she's changing. And
+then every 8 seconds, it gets worse and
+then every 8 seconds, it gets worse and
+ 
+then every 8 seconds, it gets worse and
+worse. And as someone in the comments
+worse. And as someone in the comments
+ 
+worse. And as someone in the comments
+pointed out, and I was thinking as well,
+pointed out, and I was thinking as well,
+ 
+pointed out, and I was thinking as well,
+it's like when you used to do VHS tapes,
+it's like when you used to do VHS tapes,
+ 
+it's like when you used to do VHS tapes,
+every time you make a copy, every copy
+every time you make a copy, every copy
+ 
+every time you make a copy, every copy
+is worse than the version that came
+is worse than the version that came
+ 
+is worse than the version that came
+before it. So the midjourney image that
+before it. So the midjourney image that
+ 
+before it. So the midjourney image that
+we're starting with looks fine. Then
+we're starting with looks fine. Then
+ 
+we're starting with looks fine. Then
+we're doing a screen grab from an AI
+we're doing a screen grab from an AI
+ 
+we're doing a screen grab from an AI
+generated video, which doesn't have the
+generated video, which doesn't have the
+ 
+generated video, which doesn't have the
+same quality, doesn't have the same
+same quality, doesn't have the same
+ 
+same quality, doesn't have the same
+amount of detail, and so it's a little
+amount of detail, and so it's a little
+ 
+amount of detail, and so it's a little
+bit less quality, and then we just keep
+bit less quality, and then we just keep
+ 
+bit less quality, and then we just keep
+reducing the quality. So over time it
+reducing the quality. So over time it
+ 
+reducing the quality. So over time it
+just gets to be it looks more like this
+just gets to be it looks more like this
+ 
+just gets to be it looks more like this
+at the end. So for starting from
+at the end. So for starting from
+ 
+at the end. So for starting from
+scratch, we can go to text to video and
+scratch, we can go to text to video and
+ 
+scratch, we can go to text to video and
+click frames to video. And for these
+click frames to video. And for these
+ 
+click frames to video. And for these
+continuous shots, we're only going to
+continuous shots, we're only going to
+ 
+continuous shots, we're only going to
+use a start frame because we want the
+use a start frame because we want the
+ 
+use a start frame because we want the
+end frame to be wherever the video ends
+end frame to be wherever the video ends
+ 
+end frame to be wherever the video ends
+up going. And then we'll use the last
+up going. And then we'll use the last
+ 
+up going. And then we'll use the last
+frame of that video as the start frame
+frame of that video as the start frame
+ 
+frame of that video as the start frame
+for the next video. That's why they call
+for the next video. That's why they call
+ 
+for the next video. That's why they call
+it last frame, first frame. So once
+it last frame, first frame. So once
+ 
+it last frame, first frame. So once
+we're on frames to video, we click this
+we're on frames to video, we click this
+ 
+we're on frames to video, we click this
+plus button to upload a new one. It
+plus button to upload a new one. It
+ 
+plus button to upload a new one. It
+remembers all of the previous ones that
+remembers all of the previous ones that
+ 
+remembers all of the previous ones that
+you've uploaded. So since I started with
+you've uploaded. So since I started with
+ 
+you've uploaded. So since I started with
+this one, I'm just going to click this
+this one, I'm just going to click this
+ 
+this one, I'm just going to click this
+button here. Um you could also just
+button here. Um you could also just
+ 
+button here. Um you could also just
+upload one from scratch. Um and since I
+upload one from scratch. Um and since I
+ 
+upload one from scratch. Um and since I
+did this in VO fast last time, I'm going
+did this in VO fast last time, I'm going
+ 
+did this in VO fast last time, I'm going
+to do So this is 20 credits to do frames
+to do So this is 20 credits to do frames
+ 
+to do So this is 20 credits to do frames
+to video. I'm going to go to quality
+to video. I'm going to go to quality
+ 
+to video. I'm going to go to quality
+mode. And now it's going to be 100
+mode. And now it's going to be 100
+ 
+mode. And now it's going to be 100
+credits. Okay. So let's see how this
+credits. Okay. So let's see how this
+ 
+credits. Okay. So let's see how this
+goes.
+goes.
+ 
+goes.
+There's a poem we had to read back in
+There's a poem we had to read back in
+ 
+There's a poem we had to read back in
+high school about taking the road less
+high school about taking the road less
+ 
+high school about taking the road less
+traveled.
+traveled.
+ 
+traveled.
+>> I think that looks really good. Um, so
+>> I think that looks really good. Um, so
+ 
+>> I think that looks really good. Um, so
+let's do this. Let's add it to the
+let's do this. Let's add it to the
+ 
+let's do this. Let's add it to the
+scene. So we're in the project here and
+scene. So we're in the project here and
+ 
+scene. So we're in the project here and
+we want to get it over to scene builder.
+we want to get it over to scene builder.
+ 
+we want to get it over to scene builder.
+So let's add it to scene.
+So let's add it to scene.
+ 
+So let's add it to scene.
+And now we're in scene builder. Um, and
+And now we're in scene builder. Um, and
+ 
+And now we're in scene builder. Um, and
+what I did when I did it is I just
+what I did when I did it is I just
+ 
+what I did when I did it is I just
+jumped to the last frame of each of the
+jumped to the last frame of each of the
+ 
+jumped to the last frame of each of the
+clips like this. And then there's a
+clips like this. And then there's a
+ 
+clips like this. And then there's a
+button at the top here that says save
+button at the top here that says save
+ 
+button at the top here that says save
+frame as asset. And I click that one and
+frame as asset. And I click that one and
+ 
+frame as asset. And I click that one and
+then it adds the frame there. And as you
+then it adds the frame there. And as you
+ 
+then it adds the frame there. And as you
+can see looking at these, you can kind
+can see looking at these, you can kind
+ 
+can see looking at these, you can kind
+of see how she changes over time. So she
+of see how she changes over time. So she
+ 
+of see how she changes over time. So she
+starts off here and then it's
+starts off here and then it's
+ 
+starts off here and then it's
+progressively changing and now it's a
+progressively changing and now it's a
+ 
+progressively changing and now it's a
+completely different person. So this is
+completely different person. So this is
+ 
+completely different person. So this is
+a good way to visualize the degradation
+a good way to visualize the degradation
+ 
+a good way to visualize the degradation
+of doing the last frame each time. Um,
+of doing the last frame each time. Um,
+ 
+of doing the last frame each time. Um,
+one thing that I wanted to try and
+one thing that I wanted to try and
+ 
+one thing that I wanted to try and
+someone suggested, um, was not
+someone suggested, um, was not
+ 
+someone suggested, um, was not
+necessarily sometimes the last frame is
+necessarily sometimes the last frame is
+ 
+necessarily sometimes the last frame is
+blurry. Like if you'll see around her
+blurry. Like if you'll see around her
+ 
+blurry. Like if you'll see around her
+eyes, they're a little bit blurry where
+eyes, they're a little bit blurry where
+ 
+eyes, they're a little bit blurry where
+if you go here, they're not quite as
+if you go here, they're not quite as
+ 
+if you go here, they're not quite as
+blurry. So, because this is a little bit
+blurry. So, because this is a little bit
+ 
+blurry. So, because this is a little bit
+higher quality here, um, we're going to
+higher quality here, um, we're going to
+ 
+higher quality here, um, we're going to
+use this as the last frame. Um, and I
+use this as the last frame. Um, and I
+ 
+use this as the last frame. Um, and I
+know what you're thinking. It's not all
+know what you're thinking. It's not all
+ 
+know what you're thinking. It's not all
+going to blend together. But what I
+going to blend together. But what I
+ 
+going to blend together. But what I
+noticed is when I did last frame, first
+noticed is when I did last frame, first
+ 
+noticed is when I did last frame, first
+frame, and actually used the last frame,
+frame, and actually used the last frame,
+ 
+frame, and actually used the last frame,
+I still had to trim up the clips in a
+I still had to trim up the clips in a
+ 
+I still had to trim up the clips in a
+video editing program. It it wasn't a
+video editing program. It it wasn't a
+ 
+video editing program. It it wasn't a
+seamless single clip. Um, I had to
+seamless single clip. Um, I had to
+ 
+seamless single clip. Um, I had to
+download each individual clip and trim
+download each individual clip and trim
+ 
+download each individual clip and trim
+them up. And since I have to do that
+them up. And since I have to do that
+ 
+them up. And since I have to do that
+anyway, I may as well try and find the
+anyway, I may as well try and find the
+ 
+anyway, I may as well try and find the
+best clip that I can. So, let's use this
+best clip that I can. So, let's use this
+ 
+best clip that I can. So, let's use this
+frame as asset. And I don't want to go
+frame as asset. And I don't want to go
+ 
+frame as asset. And I don't want to go
+too far back as she talks almost all the
+too far back as she talks almost all the
+ 
+too far back as she talks almost all the
+way to the end. Let's see. less travel.
+way to the end. Let's see. less travel.
+ 
+way to the end. Let's see. less travel.
+>> Yeah. So, we've got like a like a
+>> Yeah. So, we've got like a like a
+ 
+>> Yeah. So, we've got like a like a
+quarter of a second or so. So, that's a
+quarter of a second or so. So, that's a
+ 
+quarter of a second or so. So, that's a
+pretty good shot there, right? All
+pretty good shot there, right? All
+ 
+pretty good shot there, right? All
+right. So, we'll use this frame as the
+right. So, we'll use this frame as the
+ 
+right. So, we'll use this frame as the
+asset. I like this too cuz she's looking
+asset. I like this too cuz she's looking
+ 
+asset. I like this too cuz she's looking
+at the camera. So, hopefully this will
+at the camera. So, hopefully this will
+ 
+at the camera. So, hopefully this will
+help keep her consistent. So, if this
+help keep her consistent. So, if this
+ 
+help keep her consistent. So, if this
+makes sense, we've got our first clip
+makes sense, we've got our first clip
+ 
+makes sense, we've got our first clip
+here. We've saved this frame as an
+here. We've saved this frame as an
+ 
+here. We've saved this frame as an
+asset. So, now we're using this last
+asset. So, now we're using this last
+ 
+asset. So, now we're using this last
+frame or almost last frame as our first
+frame or almost last frame as our first
+ 
+frame or almost last frame as our first
+frame over here. So, now motion tracking
+frame over here. So, now motion tracking
+ 
+frame over here. So, now motion tracking
+shot of the woman walking. She says,
+shot of the woman walking. She says,
+ 
+shot of the woman walking. She says,
+"Everyone was so sure they'd take the
+"Everyone was so sure they'd take the
+ 
+"Everyone was so sure they'd take the
+road less traveled, including me." So,
+road less traveled, including me." So,
+ 
+road less traveled, including me." So,
+we've switched over here to V3 fast
+we've switched over here to V3 fast
+ 
+we've switched over here to V3 fast
+mode. I'm going to switch back to V3
+mode. I'm going to switch back to V3
+ 
+mode. I'm going to switch back to V3
+quality mode. So, I'm not sure why it
+quality mode. So, I'm not sure why it
+ 
+quality mode. So, I'm not sure why it
+switched over, but it did. And as you
+switched over, but it did. And as you
+ 
+switched over, but it did. And as you
+can see, we're going from 20 to 100
+can see, we're going from 20 to 100
+ 
+can see, we're going from 20 to 100
+credits again. And now, let's run this
+credits again. And now, let's run this
+ 
+credits again. And now, let's run this
+one.
+one.
+ 
+one.
+>> Everyone was so sure they'll take the
+>> Everyone was so sure they'll take the
+ 
+>> Everyone was so sure they'll take the
+road less traveled, me included. Already
+road less traveled, me included. Already
+ 
+road less traveled, me included. Already
+we can kind of see between that and that
+we can kind of see between that and that
+ 
+we can kind of see between that and that
+it's kind of the same, but we we I can
+it's kind of the same, but we we I can
+ 
+it's kind of the same, but we we I can
+tell we're going to we're losing it a
+tell we're going to we're losing it a
+ 
+tell we're going to we're losing it a
+little bit, right? Um let's try that,
+little bit, right? Um let's try that,
+ 
+little bit, right? Um let's try that,
+but this time let's trim it up a little
+but this time let's trim it up a little
+ 
+but this time let's trim it up a little
+bit. So, we've trimmed it and we'll save
+bit. So, we've trimmed it and we'll save
+ 
+bit. So, we've trimmed it and we'll save
+frame as asset
+frame as asset
+ 
+frame as asset
+and click that and then say motion
+and click that and then say motion
+ 
+and click that and then say motion
+tracking. Now, one thing that I've
+tracking. Now, one thing that I've
+ 
+tracking. Now, one thing that I've
+noticed is like sometimes you can add
+noticed is like sometimes you can add
+ 
+noticed is like sometimes you can add
+words in there like regretfully uh to
+words in there like regretfully uh to
+ 
+words in there like regretfully uh to
+try and give her a little bit of
+try and give her a little bit of
+ 
+try and give her a little bit of
+emotion. Sometimes it works, sometimes
+emotion. Sometimes it works, sometimes
+ 
+emotion. Sometimes it works, sometimes
+it doesn't. But let's see how this
+it doesn't. But let's see how this
+ 
+it doesn't. But let's see how this
+works.
+works.
+ 
+works.
+>> But that's not how things turned out.
+>> But that's not how things turned out.
+ 
+>> But that's not how things turned out.
+I've always taken the road most
+I've always taken the road most
+ 
+I've always taken the road most
+traveled.
+traveled.
+ 
+traveled.
+>> If you've ever used VO3, you know this,
+>> If you've ever used VO3, you know this,
+ 
+>> If you've ever used VO3, you know this,
+and I have had a lot of people tell me
+and I have had a lot of people tell me
+ 
+and I have had a lot of people tell me
+all of the things that you can do to not
+all of the things that you can do to not
+ 
+all of the things that you can do to not
+get subtitles. And I've tried all of
+get subtitles. And I've tried all of
+ 
+get subtitles. And I've tried all of
+them, and nothing works 100%. I kind of
+them, and nothing works 100%. I kind of
+ 
+them, and nothing works 100%. I kind of
+get the impression that not putting
+get the impression that not putting
+ 
+get the impression that not putting
+quotes in helps a little bit, but as you
+quotes in helps a little bit, but as you
+ 
+quotes in helps a little bit, but as you
+can see in that one, there are no
+can see in that one, there are no
+ 
+can see in that one, there are no
+quotes. And I've tried the same thing by
+quotes. And I've tried the same thing by
+ 
+quotes. And I've tried the same thing by
+saying no subtitles, and I still get
+saying no subtitles, and I still get
+ 
+saying no subtitles, and I still get
+subtitles. So, so if I were doing this
+subtitles. So, so if I were doing this
+ 
+subtitles. So, so if I were doing this
+for real and not for this tutorial, I
+for real and not for this tutorial, I
+ 
+for real and not for this tutorial, I
+would redo this one. Uh, but since
+would redo this one. Uh, but since
+ 
+would redo this one. Uh, but since
+there's not captions on this final frame
+there's not captions on this final frame
+ 
+there's not captions on this final frame
+that we want to use, I'm just going to
+that we want to use, I'm just going to
+ 
+that we want to use, I'm just going to
+keep them for now. That's actually a
+keep them for now. That's actually a
+ 
+keep them for now. That's actually a
+pretty good shot. I think you can kind
+pretty good shot. I think you can kind
+ 
+pretty good shot. I think you can kind
+of tell she's walking and she's smiling
+of tell she's walking and she's smiling
+ 
+of tell she's walking and she's smiling
+a little bit. Let's actually use the
+a little bit. Let's actually use the
+ 
+a little bit. Let's actually use the
+final frame this time. Now, I did this a
+final frame this time. Now, I did this a
+ 
+final frame this time. Now, I did this a
+little bit later in mind, but I wanted
+little bit later in mind, but I wanted
+ 
+little bit later in mind, but I wanted
+to slowly introduce things that are
+to slowly introduce things that are
+ 
+to slowly introduce things that are
+changing. Um, so we can say motion
+changing. Um, so we can say motion
+ 
+changing. Um, so we can say motion
+tracking shot of the woman walking. So,
+tracking shot of the woman walking. So,
+ 
+tracking shot of the woman walking. So,
+now we can introduce other elements that
+now we can introduce other elements that
+ 
+now we can introduce other elements that
+will be showing up as she's walking.
+will be showing up as she's walking.
+ 
+will be showing up as she's walking.
+>> I did all the things I was supposed to
+>> I did all the things I was supposed to
+ 
+>> I did all the things I was supposed to
+do. Got a job, got married, got
+do. Got a job, got married, got
+ 
+do. Got a job, got married, got
+divorced.
+divorced.
+ 
+divorced.
+Rinse and repeat.
+Rinse and repeat.
+ 
+Rinse and repeat.
+So, on the pro side, I love the fact
+So, on the pro side, I love the fact
+ 
+So, on the pro side, I love the fact
+that we switched to this profile view
+that we switched to this profile view
+ 
+that we switched to this profile view
+and we have this person in the park
+and we have this person in the park
+ 
+and we have this person in the park
+bench like the prompt said. Um, on the
+bench like the prompt said. Um, on the
+ 
+bench like the prompt said. Um, on the
+con side, the talking, if you just look
+con side, the talking, if you just look
+ 
+con side, the talking, if you just look
+at it in general, it's fine, but when
+at it in general, it's fine, but when
+ 
+at it in general, it's fine, but when
+she's talking, it seems like maybe she's
+she's talking, it seems like maybe she's
+ 
+she's talking, it seems like maybe she's
+talking to the interviewer over here and
+talking to the interviewer over here and
+ 
+talking to the interviewer over here and
+the camera moved to the side. We have a
+the camera moved to the side. We have a
+ 
+the camera moved to the side. We have a
+lot to work with here because she says
+lot to work with here because she says
+ 
+lot to work with here because she says
+rinse and repeat here. I think she got
+rinse and repeat here. I think she got
+ 
+rinse and repeat here. I think she got
+some extra piercings, too, maybe. All
+some extra piercings, too, maybe. All
+ 
+some extra piercings, too, maybe. All
+right, let's kind of play off of this
+right, let's kind of play off of this
+ 
+right, let's kind of play off of this
+and let's have someone holding a boom
+and let's have someone holding a boom
+ 
+and let's have someone holding a boom
+mic. Like like the camera person moved
+mic. Like like the camera person moved
+ 
+mic. Like like the camera person moved
+over. I imagine there's someone holding
+over. I imagine there's someone holding
+ 
+over. I imagine there's someone holding
+a boom mic over here and there's an
+a boom mic over here and there's an
+ 
+a boom mic over here and there's an
+interviewer here and we're the camera.
+interviewer here and we're the camera.
+ 
+interviewer here and we're the camera.
+>> But I like where I'm at now
+>> But I like where I'm at now
+ 
+>> But I like where I'm at now
+and I only got here because my road took
+and I only got here because my road took
+ 
+and I only got here because my road took
+me here.
+me here.
+ 
+me here.
+>> And let's update the script a little
+>> And let's update the script a little
+ 
+>> And let's update the script a little
+bit. I It was like 11:00 p.m. at night
+bit. I It was like 11:00 p.m. at night
+ 
+bit. I It was like 11:00 p.m. at night
+when I was writing this. So, let's just
+when I was writing this. So, let's just
+ 
+when I was writing this. So, let's just
+change it. I'm not going to change it
+change it. I'm not going to change it
+ 
+change it. I'm not going to change it
+too much, but let's just have her say,
+too much, but let's just have her say,
+ 
+too much, but let's just have her say,
+um,
+um,
+ 
+um,
+>> and why wouldn't I?
+>> and why wouldn't I?
+ 
+>> and why wouldn't I?
+This road made me younger in 60 seconds.
+This road made me younger in 60 seconds.
+ 
+This road made me younger in 60 seconds.
+>> So, I think you get the idea of how to
+>> So, I think you get the idea of how to
+ 
+>> So, I think you get the idea of how to
+do it. So, is V3 quality perfect? No.
+do it. So, is V3 quality perfect? No.
+ 
+do it. So, is V3 quality perfect? No.
+But it's definitely a lot better than
+But it's definitely a lot better than
+ 
+But it's definitely a lot better than
+the fast mode in terms of taking the
+the fast mode in terms of taking the
+ 
+the fast mode in terms of taking the
+last frame and using it as the first
+last frame and using it as the first
+ 
+last frame and using it as the first
+frame. The tradeoff there is that it's
+frame. The tradeoff there is that it's
+ 
+frame. The tradeoff there is that it's
+much more credit intensive. So, it's
+much more credit intensive. So, it's
+ 
+much more credit intensive. So, it's
+five to one like I said. So, you can do
+five to one like I said. So, you can do
+ 
+five to one like I said. So, you can do
+a lot more iterating with the fast mode.
+a lot more iterating with the fast mode.
+ 
+a lot more iterating with the fast mode.
+I hope this was helpful. I hope this
+I hope this was helpful. I hope this
+ 
+I hope this was helpful. I hope this
+helps you uh create single continuous
+helps you uh create single continuous
+ 
+helps you uh create single continuous
+shots using either of the methods,
+shots using either of the methods,
+ 
+shots using either of the methods,
+whether you're extending a clip or
+whether you're extending a clip or
+ 
+whether you're extending a clip or
+whether you're doing the last frame
+whether you're doing the last frame
+ 
+whether you're doing the last frame
+first frame or maybe you're doing a
+first frame or maybe you're doing a
+ 
+first frame or maybe you're doing a
+combination of both. I don't know. U but
+combination of both. I don't know. U but
+ 
+combination of both. I don't know. U but
+hopefully that helps you understand how
+hopefully that helps you understand how
+ 
+hopefully that helps you understand how
+people are doing these really cool
+people are doing these really cool
+ 
+people are doing these really cool
+shots. And that's it for me. Uh do you
+shots. And that's it for me. Uh do you
+ 
+shots. And that's it for me. Uh do you
+have any final words?
+have any final words?
+ 
+have any final words?
+Sub subscribe to AI video school and
+Sub subscribe to AI video school and
+ 
+Sub subscribe to AI video school and
+come along for the along for the ride.
+
+ 
+
+[Applause]
+[Applause]
+ 
+[Applause]
+[Music]
+[Music]
+ 
+[Music]
+[Applause]
+[Applause]
+ 
+[Applause]
+[Music]

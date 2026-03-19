@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
@@ -35,7 +35,7 @@ class TestParseScheduledTime:
         """Parsed datetime should be in the future."""
         result = parse_scheduled_time("post this Friday at 9am")
         if result is not None:
-            now = datetime.now()
+            now = datetime.now(timezone.utc)
             # Allow same-day (within a few seconds) or future
             assert result >= now or abs((result - now).total_seconds()) < 5
 

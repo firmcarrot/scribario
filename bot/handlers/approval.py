@@ -94,42 +94,65 @@ async def _validate_draft_access(
     return draft
 
 
-@router.callback_query(F.data.startswith("approve:"))
-async def handle_approve(callback: CallbackQuery) -> None:
-    """Handle approval — mark draft as approved, enqueue posting jobs.
+async def approve_draft(
+    draft_id: str,
+    option_idx: int = 0,
+    tenant_id: str | None = None,
+    platform_targets_override: list[str] | None = None,
+) -> dict | None:
+    """Shared approval logic — used by both manual approve and autopilot.
 
-    Callback data format: "approve:{draft_id}:{option_number}"
+    Args:
+        draft_id: The draft to approve
+        option_idx: Which caption variant to use (0-indexed)
+        tenant_id: Tenant ID (if None, loaded from draft)
+        platform_targets_override: Override platform targets (for autopilot)
+
+    Returns:
+        The posting job dict, or None if draft not found / already handled.
     """
-    if not callback.data:
-        return
-
-    parts = callback.data.split(":")
-    draft_id = parts[1]
-    # Option number (1-indexed), default to 1 for backwards compat
-    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
-
-    # Validate user has access to this draft
-    draft = await _validate_draft_access(callback, draft_id)
+    draft = await get_draft(draft_id)
     if not draft:
-        return
+        logger.warning("approve_draft: draft not found", extra={"draft_id": draft_id})
+        return None
 
-    # Prevent double-click: only approve if still in "previewing" state
-    if draft.get("status") != "previewing":
-        await callback.answer("Already handled.")
-        return
+    if not tenant_id:
+        tenant_id = draft["tenant_id"]
 
     logger.info("Draft approved", extra={"draft_id": draft_id, "option": option_idx + 1})
-
-    tenant_id = draft["tenant_id"]
 
     # Update draft status
     await update_draft_status(draft_id, "approved")
 
-    # Record feedback
-    await create_feedback_event(draft_id=draft_id, tenant_id=tenant_id, action="approve")
-
     # Pick the selected caption variant
     caption_variants = draft.get("caption_variants", [])
+
+    # Record feedback with enriched data
+    chosen_variant = (
+        caption_variants[option_idx] if option_idx < len(caption_variants) else {}
+    )
+    chosen_formula = chosen_variant.get("formula")
+
+    await create_feedback_event(
+        draft_id=draft_id,
+        tenant_id=tenant_id,
+        action="approve",
+        chosen_option_idx=option_idx,
+        chosen_formula=chosen_formula,
+        all_options=caption_variants,
+    )
+
+    # Fire-and-forget: accumulate learning signals
+    try:
+        import asyncio
+
+        from pipeline.learning.preference_engine import accumulate_approval_signals
+        asyncio.get_running_loop().create_task(
+            accumulate_approval_signals(tenant_id, option_idx, caption_variants)
+        )
+    except Exception:
+        pass  # Learning is non-critical
+
     if option_idx < len(caption_variants):
         caption = caption_variants[option_idx].get("text", "")
     elif caption_variants:
@@ -139,18 +162,20 @@ async def handle_approve(callback: CallbackQuery) -> None:
     all_image_urls = draft.get("image_urls", [])
     image_urls = [all_image_urls[option_idx]] if option_idx < len(all_image_urls) else all_image_urls[:1]
 
-    # Load platform_targets from the originating content_request
-    _client = get_supabase_client()
-    _req = (
-        _client.table("content_requests")
-        .select("platform_targets")
-        .eq("id", draft["request_id"])
-        .limit(1)
-        .execute()
-    )
-    platform_targets: list[str] | None = (
-        _req.data[0].get("platform_targets") if _req.data else None
-    ) or None
+    # Load platform_targets from the originating content_request (or use override)
+    platform_targets = platform_targets_override
+    if platform_targets is None:
+        _client = get_supabase_client()
+        _req = (
+            _client.table("content_requests")
+            .select("platform_targets")
+            .eq("id", draft["request_id"])
+            .limit(1)
+            .execute()
+        )
+        platform_targets = (
+            _req.data[0].get("platform_targets") if _req.data else None
+        ) or None
 
     # Create one posting job — worker matches against connected Postiz integrations
     idempotency_key = hashlib.sha256(f"{draft_id}:post_content".encode()).hexdigest()
@@ -180,6 +205,38 @@ async def handle_approve(callback: CallbackQuery) -> None:
 
     # Save unchosen options to content library for free reuse
     await _save_unchosen_to_library(draft, chosen_idx=option_idx, platform_targets=platform_targets)
+
+    return job
+
+
+@router.callback_query(F.data.startswith("approve:"))
+async def handle_approve(callback: CallbackQuery) -> None:
+    """Handle approval — mark draft as approved, enqueue posting jobs.
+
+    Callback data format: "approve:{draft_id}:{option_number}"
+    """
+    if not callback.data:
+        return
+
+    parts = callback.data.split(":")
+    draft_id = parts[1]
+    # Option number (1-indexed), default to 1 for backwards compat
+    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
+
+    # Validate user has access to this draft
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    # Prevent double-click: only approve if still in "previewing" state
+    if draft.get("status") != "previewing":
+        await callback.answer("Already handled.")
+        return
+
+    job = await approve_draft(draft_id, option_idx=option_idx, tenant_id=draft["tenant_id"])
+    if not job:
+        await callback.answer("Failed to approve.")
+        return
 
     await callback.answer("Approved! Posting now...")
     if callback.message:
@@ -352,36 +409,53 @@ async def handle_make_video(callback: CallbackQuery) -> None:
         )
 
 
-@router.callback_query(F.data.startswith("approve_video:"))
-async def handle_approve_video(callback: CallbackQuery) -> None:
-    """Handle video approval — enqueue posting with video + selected caption.
+async def approve_video_draft(
+    draft_id: str,
+    option_idx: int = 0,
+    tenant_id: str | None = None,
+    platform_targets_override: list[str] | None = None,
+) -> dict | None:
+    """Shared video approval logic — used by both manual approve and autopilot.
 
-    Callback data format: "approve_video:{draft_id}:{option_number}"
+    Returns the posting job dict, or None if draft not found.
     """
-    if not callback.data:
-        return
-
-    parts = callback.data.split(":")
-    draft_id = parts[1]
-    # Option number (1-indexed), default to 1 for backwards compat
-    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
-
-    draft = await _validate_draft_access(callback, draft_id)
+    draft = await get_draft(draft_id)
     if not draft:
-        return
+        return None
 
-    if draft.get("status") not in ("previewing", "generated"):
-        await callback.answer("Already handled.")
-        return
-
-    tenant_id = draft["tenant_id"]
+    if not tenant_id:
+        tenant_id = draft["tenant_id"]
 
     await update_draft_status(draft_id, "approved")
-    await create_feedback_event(draft_id=draft_id, tenant_id=tenant_id, action="approve_video")
 
-    # Use the video_url for posting
     video_url = draft.get("video_url", "")
     caption_variants = draft.get("caption_variants", [])
+
+    # Record feedback with enriched data
+    chosen_variant = (
+        caption_variants[option_idx] if option_idx < len(caption_variants) else {}
+    )
+    chosen_formula = chosen_variant.get("formula")
+
+    await create_feedback_event(
+        draft_id=draft_id,
+        tenant_id=tenant_id,
+        action="approve_video",
+        chosen_option_idx=option_idx,
+        chosen_formula=chosen_formula,
+        all_options=caption_variants,
+    )
+
+    # Fire-and-forget: accumulate learning signals
+    try:
+        import asyncio
+
+        from pipeline.learning.preference_engine import accumulate_approval_signals
+        asyncio.get_running_loop().create_task(
+            accumulate_approval_signals(tenant_id, option_idx, caption_variants)
+        )
+    except Exception:
+        pass  # Learning is non-critical
     if option_idx < len(caption_variants):
         caption = caption_variants[option_idx].get("text", "")
     elif caption_variants:
@@ -389,18 +463,19 @@ async def handle_approve_video(callback: CallbackQuery) -> None:
     else:
         caption = ""
 
-    # Load platform_targets from originating content_request
-    _client = get_supabase_client()
-    _req = (
-        _client.table("content_requests")
-        .select("platform_targets")
-        .eq("id", draft["request_id"])
-        .limit(1)
-        .execute()
-    )
-    platform_targets: list[str] | None = (
-        _req.data[0].get("platform_targets") if _req.data else None
-    ) or None
+    platform_targets = platform_targets_override
+    if platform_targets is None:
+        _client = get_supabase_client()
+        _req = (
+            _client.table("content_requests")
+            .select("platform_targets")
+            .eq("id", draft["request_id"])
+            .limit(1)
+            .execute()
+        )
+        platform_targets = (
+            _req.data[0].get("platform_targets") if _req.data else None
+        ) or None
 
     idempotency_key = hashlib.sha256(f"{draft_id}:post_video".encode()).hexdigest()
 
@@ -428,8 +503,35 @@ async def handle_approve_video(callback: CallbackQuery) -> None:
         idempotency_key=f"{draft_id}:post:video",
     )
 
-    # Save unchosen caption options to content library
     await _save_unchosen_to_library(draft, chosen_idx=option_idx, platform_targets=platform_targets)
+    return job
+
+
+@router.callback_query(F.data.startswith("approve_video:"))
+async def handle_approve_video(callback: CallbackQuery) -> None:
+    """Handle video approval — enqueue posting with video + selected caption.
+
+    Callback data format: "approve_video:{draft_id}:{option_number}"
+    """
+    if not callback.data:
+        return
+
+    parts = callback.data.split(":")
+    draft_id = parts[1]
+    option_idx = int(parts[2]) - 1 if len(parts) > 2 else 0
+
+    draft = await _validate_draft_access(callback, draft_id)
+    if not draft:
+        return
+
+    if draft.get("status") not in ("previewing", "generated"):
+        await callback.answer("Already handled.")
+        return
+
+    job = await approve_video_draft(draft_id, option_idx=option_idx, tenant_id=draft["tenant_id"])
+    if not job:
+        await callback.answer("Failed to approve.")
+        return
 
     await callback.answer("Approved! Posting video now...")
     if callback.message:

@@ -203,6 +203,9 @@ def build_system_prompt(
     profile: BrandProfile,
     examples: list[FewShotExample],
     manifest: AssetManifest,
+    learned_preferences: str = "",
+    edit_lessons: str = "",
+    formula_performance: str = "",
 ) -> str:
     """Assemble the full system prompt from all layers.
 
@@ -210,6 +213,9 @@ def build_system_prompt(
         profile: Brand identity and voice rules.
         examples: Few-shot examples for brand voice.
         manifest: Available reference assets for this tenant.
+        learned_preferences: Layer 11 — preferences from approval/edit/engagement signals.
+        edit_lessons: Layer 11b — concrete lessons from user edits.
+        formula_performance: Layer 11c — formula stats + wildcard assignment.
 
     Returns:
         Complete system prompt string for the Prompt Engine Claude call.
@@ -229,5 +235,12 @@ def build_system_prompt(
         f"## Brand Context\n\n{brand_context}",
         asset_context,
     ]
+
+    # Layer 11: Learned preferences (only when data exists)
+    layer_11_parts = [
+        p for p in [learned_preferences, edit_lessons, formula_performance] if p
+    ]
+    if layer_11_parts:
+        layers.append("\n\n".join(layer_11_parts))
 
     return "\n\n---\n\n".join(layers)

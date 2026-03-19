@@ -8,9 +8,11 @@ class OnboardingSG(StatesGroup):
 
     welcome = State()
     business_name = State()
+    timezone = State()
     website_url = State()
     scraping = State()
     profile_review = State()
+    tour = State()
     complete = State()
 
 

@@ -1,0 +1,1834 @@
+
+Wow, this is the best day of my life.
+Wow, this is the best day of my life.
+ 
+Wow, this is the best day of my life.
+Let's go to the lab. But first, here's
+Let's go to the lab. But first, here's
+ 
+Let's go to the lab. But first, here's
+what you need to know [music] about the
+what you need to know [music] about the
+ 
+what you need to know [music] about the
+new Veo 3.1. It now supports highquality
+new Veo 3.1. It now supports highquality
+ 
+new Veo 3.1. It now supports highquality
+video with [music] audio and flow, which
+video with [music] audio and flow, which
+ 
+video with [music] audio and flow, which
+means you can create long AI videos.
+means you can create long AI videos.
+ 
+means you can create long AI videos.
+This is the right time to explore your
+This is the right time to explore your
+ 
+This is the right time to explore your
+creativity or create something far more
+creativity or create something far more
+ 
+creativity or create something far more
+powerful. [laughter]
+
+ 
+
+Yes, it is now possible to create long
+Yes, it is now possible to create long
+ 
+Yes, it is now possible to create long
+videos using Google Flow. You can
+videos using Google Flow. You can
+ 
+videos using Google Flow. You can
+literally build [music] out complete
+literally build [music] out complete
+ 
+literally build [music] out complete
+video sequences, keep the same
+video sequences, keep the same
+ 
+video sequences, keep the same
+characters,
+
+ 
+
+and maintain smooth transitions all the
+and maintain smooth transitions all the
+ 
+and maintain smooth transitions all the
+way through. This is a huge step forward
+way through. This is a huge step forward
+ 
+way through. This is a huge step forward
+for creators like us, filmmakers,
+for creators like us, filmmakers,
+ 
+for creators like us, filmmakers,
+storytellers, [music]
+storytellers, [music]
+ 
+storytellers, [music]
+and anyone who wants to bring their full
+and anyone who wants to bring their full
+ 
+and anyone who wants to bring their full
+story ideas to life or produce cinematic
+story ideas to life or produce cinematic
+ 
+story ideas to life or produce cinematic
+AI content [music] that feels real and
+AI content [music] that feels real and
+ 
+AI content [music] that feels real and
+flows naturally. I'm going to let the
+flows naturally. I'm going to let the
+ 
+flows naturally. I'm going to let the
+real me take over this video. Over to
+real me take over this video. Over to
+ 
+real me take over this video. Over to
+you, bro.
+you, bro.
+ 
+you, bro.
+This is beautiful. [laughter]
+
+ 
+
+This is truly beautiful. You can create
+This is truly beautiful. You can create
+ 
+This is truly beautiful. You can create
+better videos than what you've watched.
+better videos than what you've watched.
+ 
+better videos than what you've watched.
+In fact, after this video, you'll be
+In fact, after this video, you'll be
+ 
+In fact, after this video, you'll be
+able to create something better than
+able to create something better than
+ 
+able to create something better than
+what I've shown you. Because in this
+what I've shown you. Because in this
+ 
+what I've shown you. Because in this
+video, I'm going to show you how to
+video, I'm going to show you how to
+ 
+video, I'm going to show you how to
+create long videos with consistent
+create long videos with consistent
+ 
+create long videos with consistent
+characters using Google's new V3.1 and
+characters using Google's new V3.1 and
+ 
+characters using Google's new V3.1 and
+Google Flow. My name is Charles. Let's
+Google Flow. My name is Charles. Let's
+ 
+Google Flow. My name is Charles. Let's
+dive in.
+
+ 
+
+Now, to get started, we're going to go
+Now, to get started, we're going to go
+ 
+Now, to get started, we're going to go
+to deepmind.google/mod/view
+to deepmind.google/mod/view
+ 
+to deepmind.google/mod/view
+and then click try and flow. Here we'll
+and then click try and flow. Here we'll
+ 
+and then click try and flow. Here we'll
+be able to access Google Flow which is
+be able to access Google Flow which is
+ 
+be able to access Google Flow which is
+what we'll be using to create this long
+what we'll be using to create this long
+ 
+what we'll be using to create this long
+video. So we'll click create with flow
+video. So we'll click create with flow
+ 
+video. So we'll click create with flow
+and then we start a new project. Now to
+and then we start a new project. Now to
+ 
+and then we start a new project. Now to
+use Google flow you can just click on
+use Google flow you can just click on
+ 
+use Google flow you can just click on
+scene builder and start creating from
+scene builder and start creating from
+ 
+scene builder and start creating from
+here or you could just go back you know
+here or you could just go back you know
+ 
+here or you could just go back you know
+to the normal V3 interface right here
+to the normal V3 interface right here
+ 
+to the normal V3 interface right here
+and start creating. So when you generate
+and start creating. So when you generate
+ 
+and start creating. So when you generate
+a video here you can just add it to the
+a video here you can just add it to the
+ 
+a video here you can just add it to the
+scene builder which is Google flow. So
+scene builder which is Google flow. So
+ 
+scene builder which is Google flow. So
+we paste our prompt here and then we
+we paste our prompt here and then we
+ 
+we paste our prompt here and then we
+ensure that this is in text to video
+ensure that this is in text to video
+ 
+ensure that this is in text to video
+because we want to use text to video to
+because we want to use text to video to
+ 
+because we want to use text to video to
+create the first video and then from
+create the first video and then from
+ 
+create the first video and then from
+that first video we'll build the rest of
+that first video we'll build the rest of
+ 
+that first video we'll build the rest of
+the videos from there on. Now we ensure
+the videos from there on. Now we ensure
+ 
+the videos from there on. Now we ensure
+that in text to video but for this you
+that in text to video but for this you
+ 
+that in text to video but for this you
+can also use frames to video but for the
+can also use frames to video but for the
+ 
+can also use frames to video but for the
+sake of this tutorial I want to generate
+sake of this tutorial I want to generate
+ 
+sake of this tutorial I want to generate
+everything here in V3. So now we've
+everything here in V3. So now we've
+ 
+everything here in V3. So now we've
+selected text to video and then we click
+selected text to video and then we click
+ 
+selected text to video and then we click
+settings here and we ensure that it's in
+settings here and we ensure that it's in
+ 
+settings here and we ensure that it's in
+the right aspect ratio which is 16:9 and
+the right aspect ratio which is 16:9 and
+ 
+the right aspect ratio which is 16:9 and
+the number of outputs for me is two and
+the number of outputs for me is two and
+ 
+the number of outputs for me is two and
+right here the model I'm using is V 3.1
+right here the model I'm using is V 3.1
+ 
+right here the model I'm using is V 3.1
+quality. If you notice V3 is no longer
+quality. If you notice V3 is no longer
+ 
+quality. If you notice V3 is no longer
+available here unless you're using an
+available here unless you're using an
+ 
+available here unless you're using an
+API. So V3 is no longer available on the
+API. So V3 is no longer available on the
+ 
+API. So V3 is no longer available on the
+platform. It's just 3.1 and V2. So leave
+platform. It's just 3.1 and V2. So leave
+ 
+platform. It's just 3.1 and V2. So leave
+it on quality. But if you want to save
+it on quality. But if you want to save
+ 
+it on quality. But if you want to save
+credits, use V3.1 fast. Now, once we
+credits, use V3.1 fast. Now, once we
+ 
+credits, use V3.1 fast. Now, once we
+have all this set, the next thing I'm
+have all this set, the next thing I'm
+ 
+have all this set, the next thing I'm
+going to do is to, you know, use our
+going to do is to, you know, use our
+ 
+going to do is to, you know, use our
+prompt and send it. Now, before we send
+prompt and send it. Now, before we send
+ 
+prompt and send it. Now, before we send
+this prompt, let's look at what I want
+this prompt, let's look at what I want
+ 
+this prompt, let's look at what I want
+to generate. I'm trying to generate a
+to generate. I'm trying to generate a
+ 
+to generate. I'm trying to generate a
+video, which is a young boy in a lab
+video, which is a young boy in a lab
+ 
+video, which is a young boy in a lab
+wearing um blue coat and all that, lab
+wearing um blue coat and all that, lab
+ 
+wearing um blue coat and all that, lab
+coat and all that. And you can see
+coat and all that. And you can see
+ 
+coat and all that. And you can see
+[snorts] here I described the aesthetic
+[snorts] here I described the aesthetic
+ 
+[snorts] here I described the aesthetic
+style in the prompt, the lighting and
+style in the prompt, the lighting and
+ 
+style in the prompt, the lighting and
+the visual look, the color palette, the
+the visual look, the color palette, the
+ 
+the visual look, the color palette, the
+camera direction and then what should
+camera direction and then what should
+ 
+camera direction and then what should
+happen from 0 to 2 seconds, 3 [snorts]
+happen from 0 to 2 seconds, 3 [snorts]
+ 
+happen from 0 to 2 seconds, 3 [snorts]
+seconds to 4 seconds, 5 to 8. But
+seconds to 4 seconds, 5 to 8. But
+ 
+seconds to 4 seconds, 5 to 8. But
+generally
+generally
+ 
+generally
+I know V3 is not going to stick with
+I know V3 is not going to stick with
+ 
+I know V3 is not going to stick with
+this, right? V 3.1 will not stick with
+this, right? V 3.1 will not stick with
+ 
+this, right? V 3.1 will not stick with
+this. But I just added it here and here.
+this. But I just added it here and here.
+ 
+this. But I just added it here and here.
+This is what the boy is going to say. So
+This is what the boy is going to say. So
+ 
+This is what the boy is going to say. So
+here this is the aesthetic style pixel
+here this is the aesthetic style pixel
+ 
+here this is the aesthetic style pixel
+style 3D animation the visual look
+style 3D animation the visual look
+ 
+style 3D animation the visual look
+golden hour sunlight that's kind of
+golden hour sunlight that's kind of
+ 
+golden hour sunlight that's kind of
+lighting I want you know daylight and
+lighting I want you know daylight and
+ 
+lighting I want you know daylight and
+then the color palette which is bright
+then the color palette which is bright
+ 
+then the color palette which is bright
+blue coat orange sunlight metallic
+blue coat orange sunlight metallic
+ 
+blue coat orange sunlight metallic
+silver gadget and then the camera
+silver gadget and then the camera
+ 
+silver gadget and then the camera
+direction. From the camera direction I
+direction. From the camera direction I
+ 
+direction. From the camera direction I
+also detailed what I want the boy to say
+also detailed what I want the boy to say
+ 
+also detailed what I want the boy to say
+for that particular um time or that
+for that particular um time or that
+ 
+for that particular um time or that
+shot. Right. So here I said, "Wow, this
+shot. Right. So here I said, "Wow, this
+ 
+shot. Right. So here I said, "Wow, this
+is the best day of my life." And then 3
+is the best day of my life." And then 3
+ 
+is the best day of my life." And then 3
+to 4 seconds, let's go to the lab. And
+to 4 seconds, let's go to the lab. And
+ 
+to 4 seconds, let's go to the lab. And
+then 5 to 8 seconds. But first, check
+then 5 to 8 seconds. But first, check
+ 
+then 5 to 8 seconds. But first, check
+out my new podcast studio and all that.
+out my new podcast studio and all that.
+ 
+out my new podcast studio and all that.
+So the next thing is to generate. So we
+So the next thing is to generate. So we
+ 
+So the next thing is to generate. So we
+click here to generate. And boom, we
+click here to generate. And boom, we
+ 
+click here to generate. And boom, we
+have our first video right here. So
+have our first video right here. So
+ 
+have our first video right here. So
+let's play it.
+let's play it.
+ 
+let's play it.
+>> Wow, this is the best day of my life.
+>> Wow, this is the best day of my life.
+ 
+>> Wow, this is the best day of my life.
+Let's go to the lab. But first,
+Let's go to the lab. But first,
+ 
+Let's go to the lab. But first,
+>> if you've not subscribed to this
+>> if you've not subscribed to this
+ 
+>> if you've not subscribed to this
+channel, subscribe. There a lot of
+channel, subscribe. There a lot of
+ 
+channel, subscribe. There a lot of
+helpful videos here. So like, comment,
+helpful videos here. So like, comment,
+ 
+helpful videos here. So like, comment,
+and share this video. For the next step,
+and share this video. For the next step,
+ 
+and share this video. For the next step,
+I'm going to show you a feature that you
+I'm going to show you a feature that you
+ 
+I'm going to show you a feature that you
+can use in V3.1.
+can use in V3.1.
+ 
+can use in V3.1.
+V 3.1 has given you the option to edit
+V 3.1 has given you the option to edit
+ 
+V 3.1 has given you the option to edit
+your video. So I'm going to edit this
+your video. So I'm going to edit this
+ 
+your video. So I'm going to edit this
+video and add a Chihuahua dog in the
+video and add a Chihuahua dog in the
+ 
+video and add a Chihuahua dog in the
+video. So what I'm going to do is to
+video. So what I'm going to do is to
+ 
+video. So what I'm going to do is to
+click on this edit button right here,
+click on this edit button right here,
+ 
+click on this edit button right here,
+and it's going to bring up a new panel.
+and it's going to bring up a new panel.
+ 
+and it's going to bring up a new panel.
+So I'm going to draw this box here where
+So I'm going to draw this box here where
+ 
+So I'm going to draw this box here where
+I want to insert the object and then
+I want to insert the object and then
+ 
+I want to insert the object and then
+enter this prompt. I'm going to say a
+enter this prompt. I'm going to say a
+ 
+enter this prompt. I'm going to say a
+small Chihuahua dog walking and then
+small Chihuahua dog walking and then
+ 
+small Chihuahua dog walking and then
+send it. And boom, V3.1 has added a
+send it. And boom, V3.1 has added a
+ 
+send it. And boom, V3.1 has added a
+small Chihuahua dog just where I wanted.
+small Chihuahua dog just where I wanted.
+ 
+small Chihuahua dog just where I wanted.
+Let's play the video.
+Let's play the video.
+ 
+Let's play the video.
+>> Wow, this is the best day of my life.
+>> Wow, this is the best day of my life.
+ 
+>> Wow, this is the best day of my life.
+Let's go to the lab. But first,
+Let's go to the lab. But first,
+ 
+Let's go to the lab. But first,
+>> you can see here that V3.1 added this
+>> you can see here that V3.1 added this
+ 
+>> you can see here that V3.1 added this
+small Chihuahua just where I wanted.
+small Chihuahua just where I wanted.
+ 
+small Chihuahua just where I wanted.
+Now, this insert feature is very useful.
+Now, this insert feature is very useful.
+ 
+Now, this insert feature is very useful.
+Let's say you generate a video and you
+Let's say you generate a video and you
+ 
+Let's say you generate a video and you
+want to add a specific thing in that
+want to add a specific thing in that
+ 
+want to add a specific thing in that
+video. You can just use this feature to
+video. You can just use this feature to
+ 
+video. You can just use this feature to
+add whatever you want to add to the
+add whatever you want to add to the
+ 
+add whatever you want to add to the
+video. It could be another character. It
+video. It could be another character. It
+ 
+video. It could be another character. It
+could be something else an object.
+could be something else an object.
+ 
+could be something else an object.
+Right? So this feature is very useful.
+Right? So this feature is very useful.
+ 
+Right? So this feature is very useful.
+And now yes, we have this video. The
+And now yes, we have this video. The
+ 
+And now yes, we have this video. The
+next thing we are going to do is
+next thing we are going to do is
+ 
+next thing we are going to do is
+[snorts] to click on add to scene. So
+[snorts] to click on add to scene. So
+ 
+[snorts] to click on add to scene. So
+we're going to click add to scene and
+we're going to click add to scene and
+ 
+we're going to click add to scene and
+add our first video to scene. It's going
+add our first video to scene. It's going
+ 
+add our first video to scene. It's going
+to add it to Google flow which is the
+to add it to Google flow which is the
+ 
+to add it to Google flow which is the
+scene builder. So once you've added the
+scene builder. So once you've added the
+ 
+scene builder. So once you've added the
+first video to the scene builder which
+first video to the scene builder which
+ 
+first video to the scene builder which
+is Google flow you start extending it
+is Google flow you start extending it
+ 
+is Google flow you start extending it
+and making that video long. So your
+and making that video long. So your
+ 
+and making that video long. So your
+first video is the basic the first one
+first video is the basic the first one
+ 
+first video is the basic the first one
+and then from that video you keep
+and then from that video you keep
+ 
+and then from that video you keep
+building it and making it long. So to
+building it and making it long. So to
+ 
+building it and making it long. So to
+access the scene builder click here you
+access the scene builder click here you
+ 
+access the scene builder click here you
+say scene builder and then it will take
+say scene builder and then it will take
+ 
+say scene builder and then it will take
+you to Google flow. So you can see here
+you to Google flow. So you can see here
+ 
+you to Google flow. So you can see here
+in Google flow I already created you
+in Google flow I already created you
+ 
+in Google flow I already created you
+know this long video and you can see the
+know this long video and you can see the
+ 
+know this long video and you can see the
+different clips in the long video. So,
+different clips in the long video. So,
+ 
+different clips in the long video. So,
+how did I get these other clips that
+how did I get these other clips that
+ 
+how did I get these other clips that
+matched with the first one? Right. How
+matched with the first one? Right. How
+ 
+matched with the first one? Right. How
+did I get these clips? So, once you have
+did I get these clips? So, once you have
+ 
+did I get these clips? So, once you have
+your first video in, what you're going
+your first video in, what you're going
+ 
+your first video in, what you're going
+to do is to click this plus sign here.
+to do is to click this plus sign here.
+ 
+to do is to click this plus sign here.
+You're going to see a plus sign. If you
+You're going to see a plus sign. If you
+ 
+You're going to see a plus sign. If you
+click that plus sign, you're going to
+click that plus sign, you're going to
+ 
+click that plus sign, you're going to
+see extend or jump to. So, what does
+see extend or jump to. So, what does
+ 
+see extend or jump to. So, what does
+jump to do? If I click jump to,
+jump to do? If I click jump to,
+ 
+jump to do? If I click jump to,
+I can just generate a separate clip,
+I can just generate a separate clip,
+ 
+I can just generate a separate clip,
+right? I can just enter the text prompt
+right? I can just enter the text prompt
+ 
+right? I can just enter the text prompt
+and generate right here using jump. And
+and generate right here using jump. And
+ 
+and generate right here using jump. And
+it's going to take that frame, right?
+it's going to take that frame, right?
+ 
+it's going to take that frame, right?
+It's going to take the frame from where
+It's going to take the frame from where
+ 
+It's going to take the frame from where
+you selected and then create another
+you selected and then create another
+ 
+you selected and then create another
+video, jump to that video, right?
+video, jump to that video, right?
+ 
+video, jump to that video, right?
+Instead of extending the the clip you
+Instead of extending the the clip you
+ 
+Instead of extending the the clip you
+selected. So, it's going to jump to the
+selected. So, it's going to jump to the
+ 
+selected. So, it's going to jump to the
+end here to create that video with this
+end here to create that video with this
+ 
+end here to create that video with this
+frame. Okay. Now, the second one is
+frame. Okay. Now, the second one is
+ 
+frame. Okay. Now, the second one is
+extend. What does extend do? So if I
+extend. What does extend do? So if I
+ 
+extend. What does extend do? So if I
+click this plus sign and then click
+click this plus sign and then click
+ 
+click this plus sign and then click
+extend, I'll be able to extend this
+extend, I'll be able to extend this
+ 
+extend, I'll be able to extend this
+particular clip here, right? [snorts]
+particular clip here, right? [snorts]
+ 
+particular clip here, right? [snorts]
+What should happen next? I'll just enter
+What should happen next? I'll just enter
+ 
+What should happen next? I'll just enter
+my prompt and say oh this this this and
+my prompt and say oh this this this and
+ 
+my prompt and say oh this this this and
+it will generate the video. So for this
+it will generate the video. So for this
+ 
+it will generate the video. So for this
+particular video here, what I did was to
+particular video here, what I did was to
+ 
+particular video here, what I did was to
+click here and then click on extend
+click here and then click on extend
+ 
+click here and then click on extend
+and then enter the prompt to generate
+and then enter the prompt to generate
+ 
+and then enter the prompt to generate
+this particular video. So I enter this
+this particular video. So I enter this
+ 
+this particular video. So I enter this
+prompt here that says voice. The boy
+prompt here that says voice. The boy
+ 
+prompt here that says voice. The boy
+says it now supports high quality video
+says it now supports high quality video
+ 
+says it now supports high quality video
+with audio in flow. He gestures to the
+with audio in flow. He gestures to the
+ 
+with audio in flow. He gestures to the
+holographic screen behind him showing
+holographic screen behind him showing
+ 
+holographic screen behind him showing
+waveforms and clips playing together
+waveforms and clips playing together
+ 
+waveforms and clips playing together
+seamlessly.
+seamlessly.
+ 
+seamlessly.
+And I send this prompt and boom, he
+And I send this prompt and boom, he
+ 
+And I send this prompt and boom, he
+created this next clip here which is
+created this next clip here which is
+ 
+created this next clip here which is
+what is showing here. Let me play it.
+what is showing here. Let me play it.
+ 
+what is showing here. Let me play it.
+>> Here's what you need to know about the
+>> Here's what you need to know about the
+ 
+>> Here's what you need to know about the
+new Veo 3.1. It now supports high
+new Veo 3.1. It now supports high
+ 
+new Veo 3.1. It now supports high
+quality video with audio and flow which
+quality video with audio and flow which
+ 
+quality video with audio and flow which
+means
+means
+ 
+means
+>> so [snorts] that was the video I
+>> so [snorts] that was the video I
+ 
+>> so [snorts] that was the video I
+generated. So from here after getting
+generated. So from here after getting
+ 
+generated. So from here after getting
+this video what I did was to click on it
+this video what I did was to click on it
+ 
+this video what I did was to click on it
+and then click on plus and click extend
+and then click on plus and click extend
+ 
+and then click on plus and click extend
+and then enter the prompt for the next
+and then enter the prompt for the next
+ 
+and then enter the prompt for the next
+video and generated it. I got this video
+video and generated it. I got this video
+ 
+video and generated it. I got this video
+right here. Let's play it.
+right here. Let's play it.
+ 
+right here. Let's play it.
+>> You can create long AI videos. This is
+>> You can create long AI videos. This is
+ 
+>> You can create long AI videos. This is
+the right time to explore your
+the right time to explore your
+ 
+the right time to explore your
+creativity or create.
+creativity or create.
+ 
+creativity or create.
+>> In my school community, I go deep into
+>> In my school community, I go deep into
+ 
+>> In my school community, I go deep into
+showing you step by step how to create
+showing you step by step how to create
+ 
+showing you step by step how to create
+cinematic videos, animated videos, AI
+cinematic videos, animated videos, AI
+ 
+cinematic videos, animated videos, AI
+ads and creatives and niche based videos
+ads and creatives and niche based videos
+ 
+ads and creatives and niche based videos
+using different AI tools, not just
+using different AI tools, not just
+ 
+using different AI tools, not just
+Google View 3.1 and Flow. Inside this
+Google View 3.1 and Flow. Inside this
+ 
+Google View 3.1 and Flow. Inside this
+community, I'll guide you through
+community, I'll guide you through
+ 
+community, I'll guide you through
+hands-on project to help you build the
+hands-on project to help you build the
+ 
+hands-on project to help you build the
+skills that can place you in the top 1%
+skills that can place you in the top 1%
+ 
+skills that can place you in the top 1%
+of creative professionals. So, if you're
+of creative professionals. So, if you're
+ 
+of creative professionals. So, if you're
+looking to start a creative agency, you
+looking to start a creative agency, you
+ 
+looking to start a creative agency, you
+also learn how to get started and how to
+also learn how to get started and how to
+ 
+also learn how to get started and how to
+find clients. In fact, in this
+find clients. In fact, in this
+ 
+find clients. In fact, in this
+community, if there's something around
+community, if there's something around
+ 
+community, if there's something around
+the AI space that you want to learn and
+the AI space that you want to learn and
+ 
+the AI space that you want to learn and
+I haven't covered that topic, you can
+I haven't covered that topic, you can
+ 
+I haven't covered that topic, you can
+make a request for it and I'll go deep
+make a request for it and I'll go deep
+ 
+make a request for it and I'll go deep
+in teaching on that topic. I'll leave
+in teaching on that topic. I'll leave
+ 
+in teaching on that topic. I'll leave
+the link to Bran's AI creative network
+the link to Bran's AI creative network
+ 
+the link to Bran's AI creative network
+in the description of this video. I'll
+in the description of this video. I'll
+ 
+in the description of this video. I'll
+see you inside. So, there's something
+see you inside. So, there's something
+ 
+see you inside. So, there's something
+else you can do. Let's say you want to
+else you can do. Let's say you want to
+ 
+else you can do. Let's say you want to
+generate another video with a particular
+generate another video with a particular
+ 
+generate another video with a particular
+frame in this video. What you can do is
+frame in this video. What you can do is
+ 
+frame in this video. What you can do is
+to click on this plus sign and save
+to click on this plus sign and save
+ 
+to click on this plus sign and save
+frame as asset. So you can see it
+frame as asset. So you can see it
+ 
+frame as asset. So you can see it
+automatically saved the frame. So I can
+automatically saved the frame. So I can
+ 
+automatically saved the frame. So I can
+generate a video in flow or inside your
+generate a video in flow or inside your
+ 
+generate a video in flow or inside your
+3.1 itself with this particular frame
+3.1 itself with this particular frame
+ 
+3.1 itself with this particular frame
+that I've saved. Right? You can see the
+that I've saved. Right? You can see the
+ 
+that I've saved. Right? You can see the
+frame here. So I can use this frame as
+frame here. So I can use this frame as
+ 
+frame here. So I can use this frame as
+first frame and generate a different
+first frame and generate a different
+ 
+first frame and generate a different
+video. So once you've generated the
+video. So once you've generated the
+ 
+video. So once you've generated the
+third video, you can extend it again
+third video, you can extend it again
+ 
+third video, you can extend it again
+further to the fourth video, the fifth
+further to the fourth video, the fifth
+ 
+further to the fourth video, the fifth
+video. And this is the next video I
+video. And this is the next video I
+ 
+video. And this is the next video I
+generated here. I clicked on this,
+generated here. I clicked on this,
+ 
+generated here. I clicked on this,
+clicked here, and then click extend and
+clicked here, and then click extend and
+ 
+clicked here, and then click extend and
+enter the prompt that I want to use. And
+enter the prompt that I want to use. And
+ 
+enter the prompt that I want to use. And
+boom, it gave me this video right here.
+boom, it gave me this video right here.
+ 
+boom, it gave me this video right here.
+So for this particular video, let's play
+So for this particular video, let's play
+ 
+So for this particular video, let's play
+it
+it
+ 
+it
+>> or powerful. [laughter]
+
+ 
+
+So now I'm going to extend this last
+So now I'm going to extend this last
+ 
+So now I'm going to extend this last
+video further. Right, I'm going to click
+video further. Right, I'm going to click
+ 
+video further. Right, I'm going to click
+on this plus here and click extend and
+on this plus here and click extend and
+ 
+on this plus here and click extend and
+then paste the prompt that I want to
+then paste the prompt that I want to
+ 
+then paste the prompt that I want to
+see. If you're wondering how did I get
+see. If you're wondering how did I get
+ 
+see. If you're wondering how did I get
+this prompt, I got it from Charypity. I
+this prompt, I got it from Charypity. I
+ 
+this prompt, I got it from Charypity. I
+just gave Chajity my idea and then
+just gave Chajity my idea and then
+ 
+just gave Chajity my idea and then
+Charypity helped me come up with the
+Charypity helped me come up with the
+ 
+Charypity helped me come up with the
+prompt. So we post our prompt here. And
+prompt. So we post our prompt here. And
+ 
+prompt. So we post our prompt here. And
+in Google Flow, remember before you
+in Google Flow, remember before you
+ 
+in Google Flow, remember before you
+couldn't use 3.1 in Google Flow, but now
+couldn't use 3.1 in Google Flow, but now
+ 
+couldn't use 3.1 in Google Flow, but now
+you can use 3.1 quality or fast. I'm
+you can use 3.1 quality or fast. I'm
+ 
+you can use 3.1 quality or fast. I'm
+still using the quality version. Okay.
+still using the quality version. Okay.
+ 
+still using the quality version. Okay.
+So, I've noticed that quality gives
+So, I've noticed that quality gives
+ 
+So, I've noticed that quality gives
+better um better videos, right?
+better um better videos, right?
+ 
+better um better videos, right?
+Especially when you're using frames to
+Especially when you're using frames to
+ 
+Especially when you're using frames to
+video. So, once we paste our prompt, we
+video. So, once we paste our prompt, we
+ 
+video. So, once we paste our prompt, we
+just generate. So, let's work on this
+just generate. So, let's work on this
+ 
+just generate. So, let's work on this
+prompt. And then we enter this prompt
+prompt. And then we enter this prompt
+ 
+prompt. And then we enter this prompt
+here where it says I'm more powerful,
+here where it says I'm more powerful,
+ 
+here where it says I'm more powerful,
+more creative than ever. I'll create
+more creative than ever. I'll create
+ 
+more creative than ever. I'll create
+something that will shake the world and
+something that will shake the world and
+ 
+something that will shake the world and
+all that. So, we enter this prompt to
+all that. So, we enter this prompt to
+ 
+all that. So, we enter this prompt to
+extend the video further. Once we have
+extend the video further. Once we have
+ 
+extend the video further. Once we have
+this, we just click generate. And you
+this, we just click generate. And you
+ 
+this, we just click generate. And you
+can see here that it is extending this
+can see here that it is extending this
+ 
+can see here that it is extending this
+video. So from here the video is just
+video. So from here the video is just
+ 
+video. So from here the video is just
+going to flow and blend into the next
+going to flow and blend into the next
+ 
+going to flow and blend into the next
+video that it's creating. Now let's say
+video that it's creating. Now let's say
+ 
+video that it's creating. Now let's say
+you have generated clips and probably
+you have generated clips and probably
+ 
+you have generated clips and probably
+you want to delete a few from the videos
+you want to delete a few from the videos
+ 
+you want to delete a few from the videos
+that you have generated here in flow.
+that you have generated here in flow.
+ 
+that you have generated here in flow.
+What you're going to do is click this
+What you're going to do is click this
+ 
+What you're going to do is click this
+icon here and then click on anyone to
+icon here and then click on anyone to
+ 
+icon here and then click on anyone to
+remove the video. So it allow you delete
+remove the video. So it allow you delete
+ 
+remove the video. So it allow you delete
+any video from this flow right here. And
+any video from this flow right here. And
+ 
+any video from this flow right here. And
+if you're done, you want to download it,
+if you're done, you want to download it,
+ 
+if you're done, you want to download it,
+you just click on this download button
+you just click on this download button
+ 
+you just click on this download button
+here. So using flow is quite easy. It
+here. So using flow is quite easy. It
+ 
+here. So using flow is quite easy. It
+helps, you know, it helps your work.
+helps, you know, it helps your work.
+ 
+helps, you know, it helps your work.
+Let's say you're trying to create um a
+Let's say you're trying to create um a
+ 
+Let's say you're trying to create um a
+long video, more like a faceless channel
+long video, more like a faceless channel
+ 
+long video, more like a faceless channel
+type of video where someone is speaking.
+type of video where someone is speaking.
+ 
+type of video where someone is speaking.
+This is the best way to use it, right?
+This is the best way to use it, right?
+ 
+This is the best way to use it, right?
+You generate the first part and then you
+You generate the first part and then you
+ 
+You generate the first part and then you
+continue, you generate the next. What
+continue, you generate the next. What
+ 
+continue, you generate the next. What
+you just have to change would probably
+you just have to change would probably
+ 
+you just have to change would probably
+be the speech, right? That will be the
+be the speech, right? That will be the
+ 
+be the speech, right? That will be the
+only thing to change. Now, if you notice
+only thing to change. Now, if you notice
+ 
+only thing to change. Now, if you notice
+in these four videos, the characters are
+in these four videos, the characters are
+ 
+in these four videos, the characters are
+the same. It did not change. And the
+the same. It did not change. And the
+ 
+the same. It did not change. And the
+next one is still going to be the same.
+next one is still going to be the same.
+ 
+next one is still going to be the same.
+So, let's play it so you'll see the
+So, let's play it so you'll see the
+ 
+So, let's play it so you'll see the
+flow. The next one has been generated.
+flow. The next one has been generated.
+ 
+flow. The next one has been generated.
+I've extended it.
+
+ 
+
+>> I'm more powerful, more creative than
+>> I'm more powerful, more creative than
+ 
+>> I'm more powerful, more creative than
+ever. I will create something that will
+ever. I will create something that will
+ 
+ever. I will create something that will
+shake the world.
+shake the world.
+ 
+shake the world.
+>> Wow.
+>> Wow.
+ 
+>> Wow.
+>> So, you can see I've added to this part.
+>> So, you can see I've added to this part.
+ 
+>> So, you can see I've added to this part.
+So here what I can do is to trim it,
+So here what I can do is to trim it,
+ 
+So here what I can do is to trim it,
+right? I can reduce it from here and
+right? I can reduce it from here and
+ 
+right? I can reduce it from here and
+then reduce this part of the video. Trim
+then reduce this part of the video. Trim
+ 
+then reduce this part of the video. Trim
+it back a bit so that it will just blend
+it back a bit so that it will just blend
+ 
+it back a bit so that it will just blend
+in. So let me play it from here.
+in. So let me play it from here.
+ 
+in. So let me play it from here.
+[laughter]
+
+ 
+
+>> I'm more powerful, more creative than
+>> I'm more powerful, more creative than
+ 
+>> I'm more powerful, more creative than
+ever. I will create something that will
+ever. I will create something that will
+ 
+ever. I will create something that will
+shake the world.
+shake the world.
+ 
+shake the world.
+So, if you notice, it cut the speech
+So, if you notice, it cut the speech
+ 
+So, if you notice, it cut the speech
+actually because um the speech was
+actually because um the speech was
+ 
+actually because um the speech was
+actually too long. I had the feeling
+actually too long. I had the feeling
+ 
+actually too long. I had the feeling
+that it's going to cut it. So, if you're
+that it's going to cut it. So, if you're
+ 
+that it's going to cut it. So, if you're
+trying to generate a video in your tree,
+trying to generate a video in your tree,
+ 
+trying to generate a video in your tree,
+just ensure that your speech is not too
+just ensure that your speech is not too
+ 
+just ensure that your speech is not too
+long or else it's going to cut it down.
+long or else it's going to cut it down.
+ 
+long or else it's going to cut it down.
+You just have 8 seconds to, you know, to
+You just have 8 seconds to, you know, to
+ 
+You just have 8 seconds to, you know, to
+use, right? So, let's play the video
+use, right? So, let's play the video
+ 
+use, right? So, let's play the video
+again. This time, let's play it from the
+again. This time, let's play it from the
+ 
+again. This time, let's play it from the
+beginning.
+beginning.
+ 
+beginning.
+Let's see how it flows.
+Let's see how it flows.
+ 
+Let's see how it flows.
+>> Wow, this is the best day of my life.
+>> Wow, this is the best day of my life.
+ 
+>> Wow, this is the best day of my life.
+Let's go to the lab. But first, here's
+Let's go to the lab. But first, here's
+ 
+Let's go to the lab. But first, here's
+what you need to know about the new Veo
+what you need to know about the new Veo
+ 
+what you need to know about the new Veo
+3.1. It now supports highquality video
+3.1. It now supports highquality video
+ 
+3.1. It now supports highquality video
+with audio and flow, which means you can
+with audio and flow, which means you can
+ 
+with audio and flow, which means you can
+create long AI videos. This is the right
+create long AI videos. This is the right
+ 
+create long AI videos. This is the right
+time to explore your creativity or
+time to explore your creativity or
+ 
+time to explore your creativity or
+create something far more powerful.
+create something far more powerful.
+ 
+create something far more powerful.
+[laughter]
+
+ 
+
+I'm more powerful, more creative than
+I'm more powerful, more creative than
+ 
+I'm more powerful, more creative than
+ever. I will create something that will
+ever. I will create something that will
+ 
+ever. I will create something that will
+shake the world.
+shake the world.
+ 
+shake the world.
+>> Now, this is beautiful. Once you're done
+>> Now, this is beautiful. Once you're done
+ 
+>> Now, this is beautiful. Once you're done
+with creating your full video, you
+with creating your full video, you
+ 
+with creating your full video, you
+download. Like I said, you can as well
+download. Like I said, you can as well
+ 
+download. Like I said, you can as well
+make it even longer. Add more clips.
+make it even longer. Add more clips.
+ 
+make it even longer. Add more clips.
+Click here, extend it further, give it
+Click here, extend it further, give it
+ 
+Click here, extend it further, give it
+more ideas. Now, let's say you don't
+more ideas. Now, let's say you don't
+ 
+more ideas. Now, let's say you don't
+want to use this scene and you want to
+want to use this scene and you want to
+ 
+want to use this scene and you want to
+change the whole scene, right? And you
+change the whole scene, right? And you
+ 
+change the whole scene, right? And you
+don't want it to blend. You just want a
+don't want it to blend. You just want a
+ 
+don't want it to blend. You just want a
+totally different scene with another
+totally different scene with another
+ 
+totally different scene with another
+character. What you can do is to come
+character. What you can do is to come
+ 
+character. What you can do is to come
+here and ensure that it's in frames to
+here and ensure that it's in frames to
+ 
+here and ensure that it's in frames to
+video. And then you upload the image,
+video. And then you upload the image,
+ 
+video. And then you upload the image,
+right? And use it to create that next
+right? And use it to create that next
+ 
+right? And use it to create that next
+scene or just use text to video. And
+scene or just use text to video. And
+ 
+scene or just use text to video. And
+once you create it, it's going to add it
+once you create it, it's going to add it
+ 
+once you create it, it's going to add it
+in flow. And then after creating that
+in flow. And then after creating that
+ 
+in flow. And then after creating that
+video, you just extend extend extend
+video, you just extend extend extend
+ 
+video, you just extend extend extend
+until that scene is done. And then if
+until that scene is done. And then if
+ 
+until that scene is done. And then if
+you want another scene, you use frames
+you want another scene, you use frames
+ 
+you want another scene, you use frames
+to video, generate a video, and then
+to video, generate a video, and then
+ 
+to video, generate a video, and then
+extend that, extend that until you get
+extend that, extend that until you get
+ 
+extend that, extend that until you get
+to what you want. So once you're done
+to what you want. So once you're done
+ 
+to what you want. So once you're done
+with all this, what you can do is to
+with all this, what you can do is to
+ 
+with all this, what you can do is to
+download it. So you click on download to
+download it. So you click on download to
+ 
+download it. So you click on download to
+download and it's going to download this
+download and it's going to download this
+ 
+download and it's going to download this
+videos right here and you can take it to
+videos right here and you can take it to
+ 
+videos right here and you can take it to
+capcot or any video editing tool to edit
+capcot or any video editing tool to edit
+ 
+capcot or any video editing tool to edit
+further right it's not going to perfect
+further right it's not going to perfect
+ 
+further right it's not going to perfect
+here in flow you still need to take it
+here in flow you still need to take it
+ 
+here in flow you still need to take it
+to like any editing tool like cap cut or
+to like any editing tool like cap cut or
+ 
+to like any editing tool like cap cut or
+premier pro to ensure that they are
+premier pro to ensure that they are
+ 
+premier pro to ensure that they are
+properly trimmed and you know they flow
+properly trimmed and you know they flow
+ 
+properly trimmed and you know they flow
+seamlessly and in the editing tool you
+seamlessly and in the editing tool you
+ 
+seamlessly and in the editing tool you
+can also add like sound effects
+can also add like sound effects
+ 
+can also add like sound effects
+background music and all that to just um
+background music and all that to just um
+ 
+background music and all that to just um
+improve the vibe of the video. So, I
+improve the vibe of the video. So, I
+ 
+improve the vibe of the video. So, I
+downloaded this video and then edited it
+downloaded this video and then edited it
+ 
+downloaded this video and then edited it
+further in Capcot, which is pretty
+further in Capcot, which is pretty
+ 
+further in Capcot, which is pretty
+basic, and got this video here.
+basic, and got this video here.
+ 
+basic, and got this video here.
+>> Wow, this is the best day of my life.
+>> Wow, this is the best day of my life.
+ 
+>> Wow, this is the best day of my life.
+Let's go to the lab. But first, here's
+Let's go to the lab. But first, here's
+ 
+Let's go to the lab. But first, here's
+what you need to know about the new Veo
+what you need to know about the new Veo
+ 
+what you need to know about the new Veo
+3.1. It now supports highquality video
+3.1. It now supports highquality video
+ 
+3.1. It now supports highquality video
+with audio and flow, which means you can
+with audio and flow, which means you can
+ 
+with audio and flow, which means you can
+create long AI [music] videos. This is
+create long AI [music] videos. This is
+ 
+create long AI [music] videos. This is
+the right time to explore your
+the right time to explore your
+ 
+the right time to explore your
+creativity or create something far more
+creativity or create something far more
+ 
+creativity or create something far more
+powerful. [laughter]
+
+ 
+
+And then for the second intro video that
+And then for the second intro video that
+ 
+And then for the second intro video that
+I showed you, I used first frame and
+I showed you, I used first frame and
+ 
+I showed you, I used first frame and
+last frame. However, I did not use
+last frame. However, I did not use
+ 
+last frame. However, I did not use
+Google flow. I used the normal view 3.1
+Google flow. I used the normal view 3.1
+ 
+Google flow. I used the normal view 3.1
+here. I use this normal interface. I
+here. I use this normal interface. I
+ 
+here. I use this normal interface. I
+generated it using first frame and last
+generated it using first frame and last
+ 
+generated it using first frame and last
+frame. And it's just like pretty basic,
+frame. And it's just like pretty basic,
+ 
+frame. And it's just like pretty basic,
+right? So this is the first frame and
+right? So this is the first frame and
+ 
+right? So this is the first frame and
+last frame. I generated the first uh
+last frame. I generated the first uh
+ 
+last frame. I generated the first uh
+part of the video. And then for this
+part of the video. And then for this
+ 
+part of the video. And then for this
+part where he was standing and talking,
+part where he was standing and talking,
+ 
+part where he was standing and talking,
+I just used the first frame of, you
+I just used the first frame of, you
+ 
+I just used the first frame of, you
+know, the video to get this part. And
+know, the video to get this part. And
+ 
+know, the video to get this part. And
+then for this part where it's more like
+then for this part where it's more like
+ 
+then for this part where it's more like
+a close shot, I used the frame of a
+a close shot, I used the frame of a
+ 
+a close shot, I used the frame of a
+close shot in a close shot of him or me.
+close shot in a close shot of him or me.
+ 
+close shot in a close shot of him or me.
+And then uh yeah, so basically I used
+And then uh yeah, so basically I used
+ 
+And then uh yeah, so basically I used
+like first frame, last frame to achieve
+like first frame, last frame to achieve
+ 
+like first frame, last frame to achieve
+this result. And then
+this result. And then
+ 
+this result. And then
+I got this
+I got this
+ 
+I got this
+>> [music]
+
+ 
+
+>> Yes, it is now possible to create long
+>> Yes, it is now possible to create long
+ 
+>> Yes, it is now possible to create long
+videos using Google Flow. You can
+videos using Google Flow. You can
+ 
+videos using Google Flow. You can
+literally build out complete video
+literally build out complete video
+ 
+literally build out complete video
+sequences, keep the same characters
+
+ 
+
+and maintain smooth transitions all the
+and maintain smooth transitions all the
+ 
+and maintain smooth transitions all the
+way through. This is a huge step forward
+way through. This is a huge step forward
+ 
+way through. This is a huge step forward
+for creators like us, filmmakers,
+for creators like us, filmmakers,
+ 
+for creators like us, filmmakers,
+storytellers, [music]
+storytellers, [music]
+ 
+storytellers, [music]
+and anyone who wants to bring their full
+and anyone who wants to bring their full
+ 
+and anyone who wants to bring their full
+story ideas to life or produce cinematic
+story ideas to life or produce cinematic
+ 
+story ideas to life or produce cinematic
+AI content that feels real and flows
+AI content that feels real and flows
+ 
+AI content that feels real and flows
+naturally. I'm going to let the real me
+naturally. I'm going to let the real me
+ 
+naturally. I'm going to let the real me
+take over this video. Over to you, bro.
+take over this video. Over to you, bro.
+ 
+take over this video. Over to you, bro.
+This is beautiful.
+This is beautiful.
+ 
+This is beautiful.
+So, it's that easy to create long videos
+So, it's that easy to create long videos
+ 
+So, it's that easy to create long videos
+or consistent characters. But if you're
+or consistent characters. But if you're
+ 
+or consistent characters. But if you're
+having issues, you're trying, you're not
+having issues, you're trying, you're not
+ 
+having issues, you're trying, you're not
+getting the result, what I'll suggest
+getting the result, what I'll suggest
+ 
+getting the result, what I'll suggest
+you do is to use the link in the
+you do is to use the link in the
+ 
+you do is to use the link in the
+description to join my private community
+description to join my private community
+ 
+description to join my private community
+where I can, you know, jump on a call
+where I can, you know, jump on a call
+ 
+where I can, you know, jump on a call
+with you. You ask me the question in the
+with you. You ask me the question in the
+ 
+with you. You ask me the question in the
+call and I'll help you um resolve your
+call and I'll help you um resolve your
+ 
+call and I'll help you um resolve your
+issues. It's better way to connect with
+issues. It's better way to connect with
+ 
+issues. It's better way to connect with
+you. So I can't do that here on YouTube.
+you. So I can't do that here on YouTube.
+ 
+you. So I can't do that here on YouTube.
+So my private community, I go live, I
+So my private community, I go live, I
+ 
+So my private community, I go live, I
+take questions, you know, we discuss,
+take questions, you know, we discuss,
+ 
+take questions, you know, we discuss,
+get your issues and all that. So um if
+get your issues and all that. So um if
+ 
+get your issues and all that. So um if
+you have not joined Brian's AI creative
+you have not joined Brian's AI creative
+ 
+you have not joined Brian's AI creative
+network, you can join it. That way I'll
+network, you can join it. That way I'll
+ 
+network, you can join it. That way I'll
+be able to help you. If you're not
+be able to help you. If you're not
+ 
+be able to help you. If you're not
+subscribed to this channel, subscribe
+subscribed to this channel, subscribe
+ 
+subscribed to this channel, subscribe
+because there are lot of helpful videos
+because there are lot of helpful videos
+ 
+because there are lot of helpful videos
+here. In fact, if you're not part of
+here. In fact, if you're not part of
+ 
+here. In fact, if you're not part of
+this channel, you're missing out. So,
+this channel, you're missing out. So,
+ 
+this channel, you're missing out. So,
+subscribe, like, and leave a comment.
+subscribe, like, and leave a comment.
+ 
+subscribe, like, and leave a comment.
+I've created this video because I know
+I've created this video because I know
+ 
+I've created this video because I know
+it's going to help you. So, watch this
+it's going to help you. So, watch this
+ 
+it's going to help you. So, watch this
+video next. I'll see you there.

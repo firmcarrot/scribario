@@ -16,7 +16,6 @@ from aiogram_dialog import DialogManager, StartMode
 
 from bot.db import get_tenant_by_telegram_user
 from bot.dialogs.states import OnboardingSG
-from bot.services.postiz import get_oauth_url
 
 logger = logging.getLogger(__name__)
 
@@ -24,47 +23,32 @@ router = Router(name="onboarding")
 
 
 async def send_platform_buttons(bot: Bot, chat_id: int) -> None:
-    """Send OAuth platform connection buttons to a chat.
+    """Send platform connection buttons that route through our OAuth proxy.
 
     Uses bot.send_message (not callback.message.answer) to avoid
     InaccessibleMessage issues after dialog close.
     """
+    from bot.config import get_settings
+
+    settings = get_settings()
+    base_url = settings.connect_base_url
+
     platforms = [
-        ("facebook", "Facebook"),
-        ("instagram", "Instagram"),
-        ("linkedin", "LinkedIn"),
-        ("youtube", "YouTube"),
-        ("tiktok", "TikTok"),
-        ("twitter", "X / Twitter"),
-        ("pinterest", "Pinterest"),
-        ("threads", "Threads"),
-        ("bluesky", "Bluesky"),
+        ("facebook", "\U0001f7e6 Facebook"),
+        ("instagram", "\U0001f4f7 Instagram"),
+        ("linkedin", "\U0001f4bc LinkedIn"),
+        ("youtube", "\u25b6\ufe0f YouTube"),
+        ("tiktok", "\U0001f3b5 TikTok"),
+        ("twitter", "\U0001d54f X / Twitter"),
+        ("pinterest", "\U0001f4cc Pinterest"),
+        ("threads", "\U0001f9f5 Threads"),
+        ("bluesky", "\U0001f98b Bluesky"),
     ]
 
-    async def fetch_url(platform_id: str, platform_name: str) -> tuple[str, str, str | None]:
-        try:
-            url = await get_oauth_url(platform_id)
-            if url and url.startswith("https://") and len(url) > 20:
-                return platform_id, platform_name, url
-            return platform_id, platform_name, None
-        except Exception as e:
-            logger.warning(f"OAuth URL unavailable for {platform_id}: {e}")
-            return platform_id, platform_name, None
-
-    results = await asyncio.gather(*[fetch_url(pid, pname) for pid, pname in platforms])
-
     buttons = []
-    for _, pname, url in results:
-        if url:
-            buttons.append([InlineKeyboardButton(text=f"Connect {pname}", url=url)])
-
-    if not buttons:
-        await bot.send_message(
-            chat_id,
-            "Social platform connections aren't configured yet. "
-            "Please contact support.",
-        )
-        return
+    for platform_id, platform_name in platforms:
+        url = f"{base_url}/connect/{platform_id}?chat_id={chat_id}"
+        buttons.append([InlineKeyboardButton(text=f"Connect {platform_name}", url=url)])
 
     markup = InlineKeyboardMarkup(inline_keyboard=buttons)
 
@@ -85,6 +69,7 @@ async def cmd_start(message: Message, dialog_manager: DialogManager) -> None:
 
     # Check if user already has a tenant
     membership = await get_tenant_by_telegram_user(user.id)
+    logger.info("cmd_start: user=%s membership=%s", user.id, membership)
 
     if membership:
         # Check if onboarding is incomplete — relaunch dialog from welcome
@@ -105,7 +90,9 @@ async def cmd_start(message: Message, dialog_manager: DialogManager) -> None:
         )
     else:
         # New user — launch the onboarding dialog
+        logger.info("cmd_start: launching onboarding dialog for user=%s", user.id)
         await dialog_manager.start(OnboardingSG.welcome, mode=StartMode.RESET_STACK)
+        logger.info("cmd_start: dialog started successfully")
 
 
 @router.message(Command("connect"))

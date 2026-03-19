@@ -3,7 +3,7 @@
 **Your AI social media team — in a Telegram bot.**
 
 [![Website](https://img.shields.io/badge/web-scribario.com-FF6B4A)](https://scribario.com)
-[![Tests](https://img.shields.io/badge/tests-566%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-755%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Telegram](https://img.shields.io/badge/bot-%40ScribarioBot-2CA5E0?logo=telegram)](https://t.me/ScribarioBot)
@@ -28,6 +28,7 @@ Business owners describe what they want to post. Scribario generates three uniqu
 
 - **Text-to-post in seconds** — describe it in plain English, get three professional options
 - **Brand voice that actually sounds like you** — few-shot learning from your best past posts, auto-updated after every approved post
+- **AI that learns from your feedback** — approvals, edits, and engagement data silently improve future content. No extra taps, no settings to configure
 - **3 image options per request** — generated in parallel by Kie.ai Nano Banana 2 (~25s)
 - **One-tap approval** — Approve, Reject All, or Regenerate without leaving Telegram
 - **Caption editing** — tap ✏️ Edit on any option, type your revision, re-preview before approving
@@ -42,7 +43,8 @@ Business owners describe what they want to post. Scribario generates three uniqu
 - **Reference photo support** — send a photo as creative direction for the image style
 - **Image-only regeneration** — 🖼️ New Image per option — regenerates the photo, keeps the caption
 - **Short-form video** — say "make a video reel" and get a video + 3 caption options in one preview
-- **566 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
+- **Autopilot Mode** — set it and forget it: AI generates and posts content on a schedule (Smart Queue with preview + Full Autopilot)
+- **755 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
 
 ---
 
@@ -127,10 +129,11 @@ python -m bot.main
 scribario/
 ├── bot/                # Telegram bot (aiogram 3.x)
 ├── pipeline/           # Content generation pipeline (Claude + Kie.ai)
+│   └── learning/       # Invisible AI learning engine
 ├── worker/             # Background job processor (pgmq poller)
 ├── web/                # Marketing website (Next.js 16, Vercel)
 ├── supabase/           # Database migrations and edge functions
-├── tests/              # 566+ automated tests
+├── tests/              # 755+ automated tests
 ├── docs/               # Architecture, setup, user guide, roadmap
 ├── docker-compose.yml  # Local development stack
 └── .env.example        # Environment variable template
@@ -143,7 +146,8 @@ scribario/
 Scribario is in active development with a live beta deployment serving its first client.
 
 - **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, Redis FSM
-- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation, unified short-form video pipeline (566 tests). Long video generation has been deprecated in favor of the unified pipeline.
+- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation, unified short-form video pipeline, content library, autopilot mode (755 tests). Long video generation has been deprecated in favor of the unified pipeline.
+- **Phase 2.5:** Complete — Invisible Learning Engine: structural diff, preference accumulation, edit analysis, formula tracking, wildcard enforcement, Layer 11 prompt injection (755 tests)
 - **Phase 3:** Planned — analytics, agency dashboard, Meta App Review for public Instagram access
 
 See the full roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)

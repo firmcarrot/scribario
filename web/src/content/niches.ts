@@ -372,6 +372,8 @@ export const niches: Record<string, NichePage> = {
       { stat: "4 tools", statement: "Average number of subscriptions needed to manage social media" },
       { stat: "$500+/mo", statement: "Minimum spend on social media tools and content creation" },
       { stat: "73%", statement: "Of small businesses say social media is their biggest marketing challenge" },
+      { stat: "50%", statement: "Of small businesses have no social media strategy at all — they post randomly or not at all, according to Clutch research" },
+      { stat: "1 in 3", statement: "Small business owners handle marketing entirely alone with no dedicated employee, freelancer, or agency" },
     ],
     benefits: [
       {
@@ -389,6 +391,14 @@ export const niches: Record<string, NichePage> = {
       {
         title: "Professional content on a bootstrap budget",
         description: "Starting at free. No agency retainer, no design tool subscriptions, no stock photo fees. Professional-quality content for the price of a coffee.",
+      },
+      {
+        title: "Multi-platform publishing in one step",
+        description: "One text message, nine platforms. Scribario formats your content correctly for Instagram, Facebook, LinkedIn, X, Google Business, and more — no resizing, no rewriting, no logging into each app.",
+      },
+      {
+        title: "Brand voice that sounds like you, not a robot",
+        description: "Set your brand voice once — casual, professional, witty, warm — and every post matches your personality. Customers engage with consistency, and Scribario learns what works for your audience over time.",
       },
     ],
     useCases: [
@@ -416,6 +426,18 @@ export const niches: Record<string, NichePage> = {
         example: "\"Post a tip about choosing the right running shoes for beginners, mention our fitting service\"",
         image: "/images/posts/sb-tips.webp",
       },
+      {
+        title: "Behind-the-Scenes & Story Posts",
+        description: "Show the human side of your business — packing orders, setting up the shop, testing a new recipe. Authenticity drives engagement more than polish.",
+        example: "\"Post a behind-the-scenes: packing 50 orders tonight for our biggest drop yet, show the team working late\"",
+        image: "/images/posts/sb-bts.webp",
+      },
+      {
+        title: "Hiring & Team Announcements",
+        description: "Attract talent and show growth with posts that celebrate new hires and open positions. Your social feed is a recruiting tool whether you realize it or not.",
+        example: "\"We're hiring a part-time barista, weekends, $17/hr plus tips, apply in person or DM us\"",
+        image: "/images/posts/sb-hiring.webp",
+      },
     ],
     faq: [
       {
@@ -433,6 +455,14 @@ export const niches: Record<string, NichePage> = {
       {
         question: "How does it compare to hiring a freelancer?",
         answer: "A social media freelancer costs $500-$2,000/month for 3-5 posts per week. Scribario Pro is $19/month for unlimited posts. The quality is comparable — and you get results in seconds instead of days.",
+      },
+      {
+        question: "Can I review posts before they go live?",
+        answer: "Yes, always. Scribario sends you a preview in Telegram with the image, caption, and hashtags. You tap approve to publish, edit to tweak, or reject to start over. Nothing goes live without your say-so.",
+      },
+      {
+        question: "Does it work for service businesses, not just product businesses?",
+        answer: "Absolutely. Plumbers, consultants, personal trainers, accountants, tutors — service businesses benefit even more because social media is often their only marketing channel. Scribario turns your expertise into tip posts, client wins, and availability updates.",
       },
     ],
     ctaCopy: "Start posting for your business",

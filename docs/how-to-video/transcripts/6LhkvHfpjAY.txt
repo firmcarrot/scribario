@@ -1,0 +1,1030 @@
+
+If you ever wondered how creators are
+If you ever wondered how creators are
+ 
+If you ever wondered how creators are
+making ads that look like $100,000
+making ads that look like $100,000
+ 
+making ads that look like $100,000
+productions, well, let me be the one to
+productions, well, let me be the one to
+ 
+productions, well, let me be the one to
+tell you that it's all done using AI.
+tell you that it's all done using AI.
+ 
+tell you that it's all done using AI.
+And you're not going to believe me when
+And you're not going to believe me when
+ 
+And you're not going to believe me when
+I say this, but these videos use just
+I say this, but these videos use just
+ 
+I say this, but these videos use just
+one tool and one text prompt to do it.
+one tool and one text prompt to do it.
+ 
+one tool and one text prompt to do it.
+Now, right off the bat, we've got some
+Now, right off the bat, we've got some
+ 
+Now, right off the bat, we've got some
+really creative ads to show you. So, you
+really creative ads to show you. So, you
+ 
+really creative ads to show you. So, you
+can start visualizing how you can use
+can start visualizing how you can use
+ 
+can start visualizing how you can use
+this for your brand. And it's incredibly
+this for your brand. And it's incredibly
+ 
+this for your brand. And it's incredibly
+easy to do and customize, just like this
+easy to do and customize, just like this
+ 
+easy to do and customize, just like this
+insane Tesla video. And again, we also
+insane Tesla video. And again, we also
+ 
+insane Tesla video. And again, we also
+have this really funny Uber Eats one
+have this really funny Uber Eats one
+ 
+have this really funny Uber Eats one
+made by Mentor over on Twitter. Check
+made by Mentor over on Twitter. Check
+ 
+made by Mentor over on Twitter. Check
+this out.
+this out.
+ 
+this out.
+>> But yo, what if you want some real earth
+>> But yo, what if you want some real earth
+ 
+>> But yo, what if you want some real earth
+food, though? That's when you hit up
+food, though? That's when you hit up
+ 
+food, though? That's when you hit up
+Uber Eats, my guy. Pizza, burgers,
+Uber Eats, my guy. Pizza, burgers,
+ 
+Uber Eats, my guy. Pizza, burgers,
+sushi.
+sushi.
+ 
+sushi.
+>> Now, in this video, I'm going to give
+>> Now, in this video, I'm going to give
+ 
+>> Now, in this video, I'm going to give
+you a few real world use cases so you
+you a few real world use cases so you
+ 
+you a few real world use cases so you
+can start visualizing how you can create
+can start visualizing how you can create
+ 
+can start visualizing how you can create
+your very own. I'm then going to explain
+your very own. I'm then going to explain
+ 
+your very own. I'm then going to explain
+the entire process to create these
+the entire process to create these
+ 
+the entire process to create these
+prompts. And then we're actually going
+prompts. And then we're actually going
+ 
+prompts. And then we're actually going
+to go ahead and create these videos.
+to go ahead and create these videos.
+ 
+to go ahead and create these videos.
+Now, we're going to be using my own
+Now, we're going to be using my own
+ 
+Now, we're going to be using my own
+custom workflow to customize these
+custom workflow to customize these
+ 
+custom workflow to customize these
+prompts. so you can create exactly what
+prompts. so you can create exactly what
+ 
+prompts. so you can create exactly what
+you want. And I'm also going to give you
+you want. And I'm also going to give you
+ 
+you want. And I'm also going to give you
+access to 10 different prompts that you
+access to 10 different prompts that you
+ 
+access to 10 different prompts that you
+can use right away to create some of
+can use right away to create some of
+ 
+can use right away to create some of
+these videos. So, be sure to stay tuned
+these videos. So, be sure to stay tuned
+ 
+these videos. So, be sure to stay tuned
+for that. Now, before we jump into all
+for that. Now, before we jump into all
+ 
+for that. Now, before we jump into all
+of it, if you're new to AI and want to
+of it, if you're new to AI and want to
+ 
+of it, if you're new to AI and want to
+actually learn how to use all the best
+actually learn how to use all the best
+ 
+actually learn how to use all the best
+AI tools to create content for yourself
+AI tools to create content for yourself
+ 
+AI tools to create content for yourself
+or even your brand, or you just want to
+or even your brand, or you just want to
+ 
+or even your brand, or you just want to
+stay ahead of the curve, then make sure
+stay ahead of the curve, then make sure
+ 
+stay ahead of the curve, then make sure
+to check out my AI community down below.
+to check out my AI community down below.
+ 
+to check out my AI community down below.
+But all that said and done, let's go
+But all that said and done, let's go
+ 
+But all that said and done, let's go
+ahead and jump right into it. So, just
+ahead and jump right into it. So, just
+ 
+ahead and jump right into it. So, just
+to simplify things, I found this really
+to simplify things, I found this really
+ 
+to simplify things, I found this really
+cool thread on Twitter which gives a
+cool thread on Twitter which gives a
+ 
+cool thread on Twitter which gives a
+bunch of different examples that you can
+bunch of different examples that you can
+ 
+bunch of different examples that you can
+go ahead and look through. We also leave
+go ahead and look through. We also leave
+ 
+go ahead and look through. We also leave
+a link to this in the description if you
+a link to this in the description if you
+ 
+a link to this in the description if you
+want to check it out. But if we go ahead
+want to check it out. But if we go ahead
+ 
+want to check it out. But if we go ahead
+and click play, you can see we've got
+and click play, you can see we've got
+ 
+and click play, you can see we've got
+two examples right here. We've got the
+two examples right here. We've got the
+ 
+two examples right here. We've got the
+Tesla one and then we've got the Apple
+Tesla one and then we've got the Apple
+ 
+Tesla one and then we've got the Apple
+Watch one. And you can see that they
+Watch one. And you can see that they
+ 
+Watch one. And you can see that they
+just look immaculate. Like they look
+just look immaculate. Like they look
+ 
+just look immaculate. Like they look
+like real CGI VFX videos, which would
+like real CGI VFX videos, which would
+ 
+like real CGI VFX videos, which would
+literally cost $100,000. If you go ahead
+literally cost $100,000. If you go ahead
+ 
+literally cost $100,000. If you go ahead
+and scroll down a little bit, we've got
+and scroll down a little bit, we've got
+ 
+and scroll down a little bit, we've got
+another Tesla one, and this one just
+another Tesla one, and this one just
+ 
+another Tesla one, and this one just
+looks like a showroom. It looks
+looks like a showroom. It looks
+ 
+looks like a showroom. It looks
+absolutely amazing. But if we go ahead
+absolutely amazing. But if we go ahead
+ 
+absolutely amazing. But if we go ahead
+and scroll down a little bit further,
+and scroll down a little bit further,
+ 
+and scroll down a little bit further,
+you can start to see that we're getting
+you can start to see that we're getting
+ 
+you can start to see that we're getting
+the Jason prompts that we talked about.
+the Jason prompts that we talked about.
+ 
+the Jason prompts that we talked about.
+So this is a Pepsi ad and you can kind
+So this is a Pepsi ad and you can kind
+ 
+So this is a Pepsi ad and you can kind
+of imagine this being shown at like the
+of imagine this being shown at like the
+ 
+of imagine this being shown at like the
+Super Bowl or something. It looks really
+Super Bowl or something. It looks really
+ 
+Super Bowl or something. It looks really
+good. Then we've got another Apple Watch
+good. Then we've got another Apple Watch
+ 
+good. Then we've got another Apple Watch
+one and you can see that it's using the
+one and you can see that it's using the
+ 
+one and you can see that it's using the
+logo and the actual Apple Watch itself
+logo and the actual Apple Watch itself
+ 
+logo and the actual Apple Watch itself
+looks like the real Apple Watch, which
+looks like the real Apple Watch, which
+ 
+looks like the real Apple Watch, which
+is absolutely crazy. And this isn't done
+is absolutely crazy. And this isn't done
+ 
+is absolutely crazy. And this isn't done
+by using any images. It's all done using
+by using any images. It's all done using
+ 
+by using any images. It's all done using
+JSON prompts, which you can see looks
+JSON prompts, which you can see looks
+ 
+JSON prompts, which you can see looks
+like this. And as you can tell, it looks
+like this. And as you can tell, it looks
+ 
+like this. And as you can tell, it looks
+pretty complicated, but trust me, I'm
+pretty complicated, but trust me, I'm
+ 
+pretty complicated, but trust me, I'm
+gonna explain what this is, and it's
+gonna explain what this is, and it's
+ 
+gonna explain what this is, and it's
+going to simplify it for you so much
+going to simplify it for you so much
+ 
+going to simplify it for you so much
+more, and you're gonna be like, "Oh,
+more, and you're gonna be like, "Oh,
+ 
+more, and you're gonna be like, "Oh,
+that's not hard at all." To finish off,
+that's not hard at all." To finish off,
+ 
+that's not hard at all." To finish off,
+I wanted to show you this Dior one. It
+I wanted to show you this Dior one. It
+ 
+I wanted to show you this Dior one. It
+looks really cool. Obviously, Dior is a
+looks really cool. Obviously, Dior is a
+ 
+looks really cool. Obviously, Dior is a
+perfume, and it has all of the flower
+perfume, and it has all of the flower
+ 
+perfume, and it has all of the flower
+scents and etc. It just looks really,
+scents and etc. It just looks really,
+ 
+scents and etc. It just looks really,
+really good. So, I wanted to show you
+really good. So, I wanted to show you
+ 
+really good. So, I wanted to show you
+some of these use cases so you can start
+some of these use cases so you can start
+ 
+some of these use cases so you can start
+to imagine how you can incorporate your
+to imagine how you can incorporate your
+ 
+to imagine how you can incorporate your
+own products when it comes to creating
+own products when it comes to creating
+ 
+own products when it comes to creating
+ads like this. Now in order to create
+ads like this. Now in order to create
+ 
+ads like this. Now in order to create
+these videos you can of course use
+these videos you can of course use
+ 
+these videos you can of course use
+native text prompting but to get the
+native text prompting but to get the
+ 
+native text prompting but to get the
+best results and what all these creators
+best results and what all these creators
+ 
+best results and what all these creators
+using is something called JSON
+using is something called JSON
+ 
+using is something called JSON
+prompting. Now JSON prompting is a
+prompting. Now JSON prompting is a
+ 
+prompting. Now JSON prompting is a
+method of structurizing your prompts
+method of structurizing your prompts
+ 
+method of structurizing your prompts
+using a JSON format which basically just
+using a JSON format which basically just
+ 
+using a JSON format which basically just
+defines your roles and instructions. So
+defines your roles and instructions. So
+ 
+defines your roles and instructions. So
+it kind of makes the AI analyze this
+it kind of makes the AI analyze this
+ 
+it kind of makes the AI analyze this
+text and it uses readable tokens. So it
+text and it uses readable tokens. So it
+ 
+text and it uses readable tokens. So it
+makes it easier for the AI to understand
+makes it easier for the AI to understand
+ 
+makes it easier for the AI to understand
+exactly what you want without using any
+exactly what you want without using any
+ 
+exactly what you want without using any
+fluff words like and also add the
+fluff words like and also add the
+ 
+fluff words like and also add the
+environment to this um and do this but
+environment to this um and do this but
+ 
+environment to this um and do this but
+don't do this etc etc. So you kind of
+don't do this etc etc. So you kind of
+ 
+don't do this etc etc. So you kind of
+get the point. So to give you a good
+get the point. So to give you a good
+ 
+get the point. So to give you a good
+example of what a text prompt would look
+example of what a text prompt would look
+ 
+example of what a text prompt would look
+like in VO and adjacent prompt I
+like in VO and adjacent prompt I
+ 
+like in VO and adjacent prompt I
+actually found a really great example
+actually found a really great example
+ 
+actually found a really great example
+from Tim Simmons. So shout out to him.
+from Tim Simmons. So shout out to him.
+ 
+from Tim Simmons. So shout out to him.
+So first up we have a video which uses
+So first up we have a video which uses
+ 
+So first up we have a video which uses
+just text prompts. So let's go ahead and
+just text prompts. So let's go ahead and
+ 
+just text prompts. So let's go ahead and
+play that. She left me. But I'll have my
+play that. She left me. But I'll have my
+ 
+play that. She left me. But I'll have my
+revenge. I'm going to find that man in a
+revenge. I'm going to find that man in a
+ 
+revenge. I'm going to find that man in a
+blue business suit and make him pay.
+blue business suit and make him pay.
+ 
+blue business suit and make him pay.
+>> Now, as you just saw, the video does
+>> Now, as you just saw, the video does
+ 
+>> Now, as you just saw, the video does
+look really good. Don't get me wrong,
+look really good. Don't get me wrong,
+ 
+look really good. Don't get me wrong,
+but it definitely doesn't live up to
+but it definitely doesn't live up to
+ 
+but it definitely doesn't live up to
+that cinematic style that I showed you
+that cinematic style that I showed you
+ 
+that cinematic style that I showed you
+at the start of this video. So, now
+at the start of this video. So, now
+ 
+at the start of this video. So, now
+let's go ahead and play a video using
+let's go ahead and play a video using
+ 
+let's go ahead and play a video using
+Jason prompting.
+Jason prompting.
+ 
+Jason prompting.
+>> She left me, but I'll have my revenge.
+>> She left me, but I'll have my revenge.
+ 
+>> She left me, but I'll have my revenge.
+I'm going to find that man in a blue
+I'm going to find that man in a blue
+ 
+I'm going to find that man in a blue
+business suit and make him pay. Now, as
+business suit and make him pay. Now, as
+ 
+business suit and make him pay. Now, as
+you can see, that looks way better. And
+you can see, that looks way better. And
+ 
+you can see, that looks way better. And
+I'm going to go ahead and put both
+I'm going to go ahead and put both
+ 
+I'm going to go ahead and put both
+videos side by side, so you can compare
+videos side by side, so you can compare
+ 
+videos side by side, so you can compare
+them visually together. But right off
+them visually together. But right off
+ 
+them visually together. But right off
+the bat, you can see that the Jason
+the bat, you can see that the Jason
+ 
+the bat, you can see that the Jason
+prompting just looks way more cinematic
+prompting just looks way more cinematic
+ 
+prompting just looks way more cinematic
+and actually something like you would
+and actually something like you would
+ 
+and actually something like you would
+see in a real ad. So, now that you have
+see in a real ad. So, now that you have
+ 
+see in a real ad. So, now that you have
+a basic understanding of what Jason
+a basic understanding of what Jason
+ 
+a basic understanding of what Jason
+prompting is, I'm going to go ahead and
+prompting is, I'm going to go ahead and
+ 
+prompting is, I'm going to go ahead and
+show you how you can create your very
+show you how you can create your very
+ 
+show you how you can create your very
+own super easily using this method. So,
+own super easily using this method. So,
+ 
+own super easily using this method. So,
+I put together a resource that you can
+I put together a resource that you can
+ 
+I put together a resource that you can
+get in the description down below. And
+get in the description down below. And
+ 
+get in the description down below. And
+if you're using Chat GPT or Gemini, you
+if you're using Chat GPT or Gemini, you
+ 
+if you're using Chat GPT or Gemini, you
+can create dedicated gems or projects.
+can create dedicated gems or projects.
+ 
+can create dedicated gems or projects.
+So you can create your prompts in
+So you can create your prompts in
+ 
+So you can create your prompts in
+literally 5 seconds. I'm not even
+literally 5 seconds. I'm not even
+ 
+literally 5 seconds. I'm not even
+joking. So I'm going to be using Chat
+joking. So I'm going to be using Chat
+ 
+joking. So I'm going to be using Chat
+GPT. And if you've got a subscription,
+GPT. And if you've got a subscription,
+ 
+GPT. And if you've got a subscription,
+you can go ahead and create projects. I
+you can go ahead and create projects. I
+ 
+you can go ahead and create projects. I
+definitely recommend you do this because
+definitely recommend you do this because
+ 
+definitely recommend you do this because
+it'll make your workflow so much easier.
+it'll make your workflow so much easier.
+ 
+it'll make your workflow so much easier.
+So here you can see that we have
+So here you can see that we have
+ 
+So here you can see that we have
+instructions and project files. So
+instructions and project files. So
+ 
+instructions and project files. So
+basically, whenever you prompt anything
+basically, whenever you prompt anything
+ 
+basically, whenever you prompt anything
+inside of here, it's basically going to
+inside of here, it's basically going to
+ 
+inside of here, it's basically going to
+take your instructions and your project
+take your instructions and your project
+ 
+take your instructions and your project
+files. And the instructions look
+files. And the instructions look
+ 
+files. And the instructions look
+something like this. And then the file
+something like this. And then the file
+ 
+something like this. And then the file
+is basically a file with a bunch of JSON
+is basically a file with a bunch of JSON
+ 
+is basically a file with a bunch of JSON
+examples which is going to take as
+examples which is going to take as
+ 
+examples which is going to take as
+reference to create our prompts. So if I
+reference to create our prompts. So if I
+ 
+reference to create our prompts. So if I
+go ahead and ask chat GPT create a JSON
+go ahead and ask chat GPT create a JSON
+ 
+go ahead and ask chat GPT create a JSON
+prompt for a Tesla ad, you'll see that
+prompt for a Tesla ad, you'll see that
+ 
+prompt for a Tesla ad, you'll see that
+it then puts our text. And then if we go
+it then puts our text. And then if we go
+ 
+it then puts our text. And then if we go
+ahead and hit generate, you're going to
+ahead and hit generate, you're going to
+ 
+ahead and hit generate, you're going to
+see that it spits out a perfectly
+see that it spits out a perfectly
+ 
+see that it spits out a perfectly
+crafted JSON prompt. So all you have to
+crafted JSON prompt. So all you have to
+ 
+crafted JSON prompt. So all you have to
+do is basically just prompt it what you
+do is basically just prompt it what you
+ 
+do is basically just prompt it what you
+want. And if you have a product of your
+want. And if you have a product of your
+ 
+want. And if you have a product of your
+image, you can add your own image and
+image, you can add your own image and
+ 
+image, you can add your own image and
+say this is a product of my image. It
+say this is a product of my image. It
+ 
+say this is a product of my image. It
+basically does XY Z. Can you go ahead
+basically does XY Z. Can you go ahead
+ 
+basically does XY Z. Can you go ahead
+and create a JSON prompt? If you have an
+and create a JSON prompt? If you have an
+ 
+and create a JSON prompt? If you have an
+idea of what you want, you could say I
+idea of what you want, you could say I
+ 
+idea of what you want, you could say I
+want the let's say it's a bottle of
+want the let's say it's a bottle of
+ 
+want the let's say it's a bottle of
+shampoo. I want the shampoo to start
+shampoo. I want the shampoo to start
+ 
+shampoo. I want the shampoo to start
+hovering in the bathroom and then I
+hovering in the bathroom and then I
+ 
+hovering in the bathroom and then I
+don't know, you just tell it what you
+don't know, you just tell it what you
+ 
+don't know, you just tell it what you
+want and it will do it. But here you can
+want and it will do it. But here you can
+ 
+want and it will do it. But here you can
+see we have our JSON prompt. So it's
+see we have our JSON prompt. So it's
+ 
+see we have our JSON prompt. So it's
+been perfectly crafted. So once you have
+been perfectly crafted. So once you have
+ 
+been perfectly crafted. So once you have
+that, you want to go ahead and click on
+that, you want to go ahead and click on
+ 
+that, you want to go ahead and click on
+copy. And now we're going to go ahead
+copy. And now we're going to go ahead
+ 
+copy. And now we're going to go ahead
+and create our video. So you want to
+and create our video. So you want to
+ 
+and create our video. So you want to
+start off by heading over to
+start off by heading over to
+ 
+start off by heading over to
+flow.google. This is going to give us
+flow.google. This is going to give us
+ 
+flow.google. This is going to give us
+access to voree. Now if you don't have
+access to voree. Now if you don't have
+ 
+access to voree. Now if you don't have
+access to this, it is a paid tool. I'm
+access to this, it is a paid tool. I'm
+ 
+access to this, it is a paid tool. I'm
+going to quickly show you how you can
+going to quickly show you how you can
+ 
+going to quickly show you how you can
+get it for completely free. So go ahead
+get it for completely free. So go ahead
+ 
+get it for completely free. So go ahead
+and open up a new tab and then just type
+and open up a new tab and then just type
+ 
+and open up a new tab and then just type
+in Gemini AI Pro. And then you want to
+in Gemini AI Pro. And then you want to
+ 
+in Gemini AI Pro. And then you want to
+make sure you're clicking on this
+make sure you're clicking on this
+ 
+make sure you're clicking on this
+Gemini. Google and make sure it goes to
+Gemini. Google and make sure it goes to
+ 
+Gemini. Google and make sure it goes to
+subscriptions. And then here you can see
+subscriptions. And then here you can see
+ 
+subscriptions. And then here you can see
+if you scroll down you have access to
+if you scroll down you have access to
+ 
+if you scroll down you have access to
+Google AI pro for completely free for 1
+Google AI pro for completely free for 1
+ 
+Google AI pro for completely free for 1
+month. And they've just recently added
+month. And they've just recently added
+ 
+month. And they've just recently added
+Flow which gives you access to VO free.
+Flow which gives you access to VO free.
+ 
+Flow which gives you access to VO free.
+Now you get a,000 credits using this
+Now you get a,000 credits using this
+ 
+Now you get a,000 credits using this
+plan. It's free. So what this means is
+plan. It's free. So what this means is
+ 
+plan. It's free. So what this means is
+you can generate 10 videos in high
+you can generate 10 videos in high
+ 
+you can generate 10 videos in high
+quality or you can generate over I think
+quality or you can generate over I think
+ 
+quality or you can generate over I think
+100 or a,000 videos. I'm not entirely
+100 or a,000 videos. I'm not entirely
+ 
+100 or a,000 videos. I'm not entirely
+sure. It uses 20 credits um using the
+sure. It uses 20 credits um using the
+ 
+sure. It uses 20 credits um using the
+slow mode which is 720p. So once you've
+slow mode which is 720p. So once you've
+ 
+slow mode which is 720p. So once you've
+gone ahead and gotten access come back
+gone ahead and gotten access come back
+ 
+gone ahead and gotten access come back
+to flow, click on create with flow. Then
+to flow, click on create with flow. Then
+ 
+to flow, click on create with flow. Then
+you're going to come on this page right
+you're going to come on this page right
+ 
+you're going to come on this page right
+here. It's as simple as clicking new
+here. It's as simple as clicking new
+ 
+here. It's as simple as clicking new
+project. And then if you've copied your
+project. And then if you've copied your
+ 
+project. And then if you've copied your
+prompt, go ahead and paste it in just
+prompt, go ahead and paste it in just
+ 
+prompt, go ahead and paste it in just
+like that. Now, quickly before you hit
+like that. Now, quickly before you hit
+ 
+like that. Now, quickly before you hit
+generate, make sure you're using V3 fast
+generate, make sure you're using V3 fast
+ 
+generate, make sure you're using V3 fast
+because this uses only 20 credits. The
+because this uses only 20 credits. The
+ 
+because this uses only 20 credits. The
+downside is it's 720p. So to access
+downside is it's 720p. So to access
+ 
+downside is it's 720p. So to access
+this, go to settings, go to models, and
+this, go to settings, go to models, and
+ 
+this, go to settings, go to models, and
+then use V3 fast, not V2 because V2 will
+then use V3 fast, not V2 because V2 will
+ 
+then use V3 fast, not V2 because V2 will
+not generate audio, but V3 will. If you
+not generate audio, but V3 will. If you
+ 
+not generate audio, but V3 will. If you
+do want a high quality one, then use the
+do want a high quality one, then use the
+ 
+do want a high quality one, then use the
+quality setting here. Just make sure
+quality setting here. Just make sure
+ 
+quality setting here. Just make sure
+it's the one that says beta audio. Then,
+it's the one that says beta audio. Then,
+ 
+it's the one that says beta audio. Then,
+if you want to maximize on your credits
+if you want to maximize on your credits
+ 
+if you want to maximize on your credits
+and not spend too many, change your
+and not spend too many, change your
+ 
+and not spend too many, change your
+output to one. We're just going to go
+output to one. We're just going to go
+ 
+output to one. We're just going to go
+ahead and click two because it only cost
+ahead and click two because it only cost
+ 
+ahead and click two because it only cost
+20 credits and we're on the ultra plan,
+20 credits and we're on the ultra plan,
+ 
+20 credits and we're on the ultra plan,
+so we've got a bunch of credits. Now, if
+so we've got a bunch of credits. Now, if
+ 
+so we've got a bunch of credits. Now, if
+we go ahead and hit generate, you'll see
+we go ahead and hit generate, you'll see
+ 
+we go ahead and hit generate, you'll see
+that the videos are going to start
+that the videos are going to start
+ 
+that the videos are going to start
+loading. So, let's go ahead and skip
+loading. So, let's go ahead and skip
+ 
+loading. So, let's go ahead and skip
+forward so I can show you these videos.
+
+ 
+
+And as you saw, that looks amazing. We
+And as you saw, that looks amazing. We
+ 
+And as you saw, that looks amazing. We
+basically gave it a simple prompt and it
+basically gave it a simple prompt and it
+ 
+basically gave it a simple prompt and it
+created all of this, which is absolutely
+created all of this, which is absolutely
+ 
+created all of this, which is absolutely
+mind-blowing. If you think back to 2022
+mind-blowing. If you think back to 2022
+ 
+mind-blowing. If you think back to 2022
+when we were getting videos that look
+when we were getting videos that look
+ 
+when we were getting videos that look
+like this, and now we're in 2025 and
+like this, and now we're in 2025 and
+ 
+like this, and now we're in 2025 and
+we're getting full-blown $100,000
+we're getting full-blown $100,000
+ 
+we're getting full-blown $100,000
+productions using a simple prompt, you
+productions using a simple prompt, you
+ 
+productions using a simple prompt, you
+will not believe me. Now, of course, if
+will not believe me. Now, of course, if
+ 
+will not believe me. Now, of course, if
+you're using the fast mode, I said it's
+you're using the fast mode, I said it's
+ 
+you're using the fast mode, I said it's
+720p video, but the upside is you can
+720p video, but the upside is you can
+ 
+720p video, but the upside is you can
+actually go ahead and click on download,
+actually go ahead and click on download,
+ 
+actually go ahead and click on download,
+and then you can upscale it to 1080p.
+and then you can upscale it to 1080p.
+ 
+and then you can upscale it to 1080p.
+And of course, if you have access to a
+And of course, if you have access to a
+ 
+And of course, if you have access to a
+video upscaler or a third party one, you
+video upscaler or a third party one, you
+ 
+video upscaler or a third party one, you
+can upscale that over to 4K. So, then
+can upscale that over to 4K. So, then
+ 
+can upscale that over to 4K. So, then
+you get even higher quality. Now, if you
+you get even higher quality. Now, if you
+ 
+you get even higher quality. Now, if you
+want to start creating videos right away
+want to start creating videos right away
+ 
+want to start creating videos right away
+and you don't want to go ahead and use a
+and you don't want to go ahead and use a
+ 
+and you don't want to go ahead and use a
+chat GPT workflow, what we're going to
+chat GPT workflow, what we're going to
+ 
+chat GPT workflow, what we're going to
+do is in the description down below,
+do is in the description down below,
+ 
+do is in the description down below,
+there'll be a Google Docs link, which
+there'll be a Google Docs link, which
+ 
+there'll be a Google Docs link, which
+gives you access to 10 different prompts
+gives you access to 10 different prompts
+ 
+gives you access to 10 different prompts
+so you can start creating videos like
+so you can start creating videos like
+ 
+so you can start creating videos like
+these right away. Now, if you found this
+these right away. Now, if you found this
+ 
+these right away. Now, if you found this
+video helpful, then be sure to like and
+video helpful, then be sure to like and
+ 
+video helpful, then be sure to like and
+subscribe for more awesome AI updates.
+subscribe for more awesome AI updates.
+ 
+subscribe for more awesome AI updates.
+And again, if you want to learn how to
+And again, if you want to learn how to
+ 
+And again, if you want to learn how to
+master all the best AI tools, then be
+master all the best AI tools, then be
+ 
+master all the best AI tools, then be
+sure to check out the private community
+sure to check out the private community
+ 
+sure to check out the private community
+down below. I'll see you in the next

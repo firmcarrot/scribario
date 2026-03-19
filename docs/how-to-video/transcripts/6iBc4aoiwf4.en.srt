@@ -1,0 +1,4155 @@
+1
+00:00:00,320 --> 00:00:03,030
+
+This is a tutorial about how I made two
+
+2
+00:00:03,030 --> 00:00:03,040
+This is a tutorial about how I made two
+ 
+
+3
+00:00:03,040 --> 00:00:05,749
+This is a tutorial about how I made two
+different single take continuous shot
+
+4
+00:00:05,749 --> 00:00:05,759
+different single take continuous shot
+ 
+
+5
+00:00:05,759 --> 00:00:08,549
+different single take continuous shot
+videos using Google Flow. In one of
+
+6
+00:00:08,549 --> 00:00:08,559
+videos using Google Flow. In one of
+ 
+
+7
+00:00:08,559 --> 00:00:12,150
+videos using Google Flow. In one of
+them, I started with a VO3 clip which I
+
+8
+00:00:12,150 --> 00:00:12,160
+them, I started with a VO3 clip which I
+ 
+
+9
+00:00:12,160 --> 00:00:15,589
+them, I started with a VO3 clip which I
+extended using V2. So, I lost all the
+
+10
+00:00:15,589 --> 00:00:15,599
+extended using V2. So, I lost all the
+ 
+
+11
+00:00:15,599 --> 00:00:17,590
+extended using V2. So, I lost all the
+sound. And this is kind of what that one
+
+12
+00:00:17,590 --> 00:00:17,600
+sound. And this is kind of what that one
+ 
+
+13
+00:00:17,600 --> 00:00:19,990
+sound. And this is kind of what that one
+looks like. Okay, here we go. One
+
+14
+00:00:19,990 --> 00:00:20,000
+looks like. Okay, here we go. One
+ 
+
+15
+00:00:20,000 --> 00:00:21,269
+looks like. Okay, here we go. One
+minute, no cuts. Walking all the way
+
+16
+00:00:21,269 --> 00:00:21,279
+minute, no cuts. Walking all the way
+ 
+
+17
+00:00:21,279 --> 00:00:26,710
+minute, no cuts. Walking all the way
+through the train.
+
+18
+00:00:26,710 --> 00:00:26,720
+
+ 
+
+19
+00:00:26,720 --> 00:00:29,750
+
+[Music]
+
+20
+00:00:29,750 --> 00:00:29,760
+[Music]
+ 
+
+21
+00:00:29,760 --> 00:00:31,830
+[Music]
+And the other one is a one minute
+
+22
+00:00:31,830 --> 00:00:31,840
+And the other one is a one minute
+ 
+
+23
+00:00:31,840 --> 00:00:33,830
+And the other one is a one minute
+continuous take where someone's talking
+
+24
+00:00:33,830 --> 00:00:33,840
+continuous take where someone's talking
+ 
+
+25
+00:00:33,840 --> 00:00:35,510
+continuous take where someone's talking
+the whole time.
+
+26
+00:00:35,510 --> 00:00:35,520
+the whole time.
+ 
+
+27
+00:00:35,520 --> 00:00:37,590
+the whole time.
+>> There's a poem we had to read back in
+
+28
+00:00:37,590 --> 00:00:37,600
+>> There's a poem we had to read back in
+ 
+
+29
+00:00:37,600 --> 00:00:41,110
+>> There's a poem we had to read back in
+high school about taking the road less
+
+30
+00:00:41,110 --> 00:00:41,120
+high school about taking the road less
+ 
+
+31
+00:00:41,120 --> 00:00:41,990
+high school about taking the road less
+traveled.
+
+32
+00:00:41,990 --> 00:00:42,000
+traveled.
+ 
+
+33
+00:00:42,000 --> 00:00:43,590
+traveled.
+>> And she's kind of a consistent
+
+34
+00:00:43,590 --> 00:00:43,600
+>> And she's kind of a consistent
+ 
+
+35
+00:00:43,600 --> 00:00:45,430
+>> And she's kind of a consistent
+character, but not really if you compare
+
+36
+00:00:45,430 --> 00:00:45,440
+character, but not really if you compare
+ 
+
+37
+00:00:45,440 --> 00:00:47,430
+character, but not really if you compare
+the start frame and the end frame. I
+
+38
+00:00:47,430 --> 00:00:47,440
+the start frame and the end frame. I
+ 
+
+39
+00:00:47,440 --> 00:00:51,029
+the start frame and the end frame. I
+used V3 fast mode. And in this tutorial,
+
+40
+00:00:51,029 --> 00:00:51,039
+used V3 fast mode. And in this tutorial,
+ 
+
+41
+00:00:51,039 --> 00:00:53,670
+used V3 fast mode. And in this tutorial,
+I'm going to redo that movie in V3
+
+42
+00:00:53,670 --> 00:00:53,680
+I'm going to redo that movie in V3
+ 
+
+43
+00:00:53,680 --> 00:00:55,910
+I'm going to redo that movie in V3
+quality, so we can kind of compare the
+
+44
+00:00:55,910 --> 00:00:55,920
+quality, so we can kind of compare the
+ 
+
+45
+00:00:55,920 --> 00:00:58,150
+quality, so we can kind of compare the
+fast mode versus the quality mode. I
+
+46
+00:00:58,150 --> 00:00:58,160
+fast mode versus the quality mode. I
+ 
+
+47
+00:00:58,160 --> 00:00:59,750
+fast mode versus the quality mode. I
+know a lot of people have questions
+
+48
+00:00:59,750 --> 00:00:59,760
+know a lot of people have questions
+ 
+
+49
+00:00:59,760 --> 00:01:01,510
+know a lot of people have questions
+about that. The big difference, of
+
+50
+00:01:01,510 --> 00:01:01,520
+about that. The big difference, of
+ 
+
+51
+00:01:01,520 --> 00:01:03,189
+about that. The big difference, of
+course, is the number of credits each
+
+52
+00:01:03,189 --> 00:01:03,199
+course, is the number of credits each
+ 
+
+53
+00:01:03,199 --> 00:01:06,469
+course, is the number of credits each
+one uses. So, V3 quality uses 100
+
+54
+00:01:06,469 --> 00:01:06,479
+one uses. So, V3 quality uses 100
+ 
+
+55
+00:01:06,479 --> 00:01:09,590
+one uses. So, V3 quality uses 100
+credits and V3 fast uses 20 credits. So,
+
+56
+00:01:09,590 --> 00:01:09,600
+credits and V3 fast uses 20 credits. So,
+ 
+
+57
+00:01:09,600 --> 00:01:12,230
+credits and V3 fast uses 20 credits. So,
+you basically get five to one if I did
+
+58
+00:01:12,230 --> 00:01:12,240
+you basically get five to one if I did
+ 
+
+59
+00:01:12,240 --> 00:01:14,149
+you basically get five to one if I did
+my math right. So, we're going to learn
+
+60
+00:01:14,149 --> 00:01:14,159
+my math right. So, we're going to learn
+ 
+
+61
+00:01:14,159 --> 00:01:16,390
+my math right. So, we're going to learn
+two different ways to do continuous
+
+62
+00:01:16,390 --> 00:01:16,400
+two different ways to do continuous
+ 
+
+63
+00:01:16,400 --> 00:01:19,270
+two different ways to do continuous
+shots. One is extending a clip and one
+
+64
+00:01:19,270 --> 00:01:19,280
+shots. One is extending a clip and one
+ 
+
+65
+00:01:19,280 --> 00:01:21,429
+shots. One is extending a clip and one
+is using what's commonly known as the
+
+66
+00:01:21,429 --> 00:01:21,439
+is using what's commonly known as the
+ 
+
+67
+00:01:21,439 --> 00:01:23,510
+is using what's commonly known as the
+last frame first frame technique and
+
+68
+00:01:23,510 --> 00:01:23,520
+last frame first frame technique and
+ 
+
+69
+00:01:23,520 --> 00:01:26,550
+last frame first frame technique and
+that uses the frames to video option in
+
+70
+00:01:26,550 --> 00:01:26,560
+that uses the frames to video option in
+ 
+
+71
+00:01:26,560 --> 00:01:28,149
+that uses the frames to video option in
+Google Flow.
+
+72
+00:01:28,149 --> 00:01:28,159
+Google Flow.
+ 
+
+73
+00:01:28,159 --> 00:01:29,830
+Google Flow.
+>> Okay, here we go. 1 minute, no cuts.
+
+74
+00:01:29,830 --> 00:01:29,840
+>> Okay, here we go. 1 minute, no cuts.
+ 
+
+75
+00:01:29,840 --> 00:01:33,030
+>> Okay, here we go. 1 minute, no cuts.
+Walking all the way through the train.
+
+76
+00:01:33,030 --> 00:01:33,040
+Walking all the way through the train.
+ 
+
+77
+00:01:33,040 --> 00:01:34,870
+Walking all the way through the train.
+>> So, the trick with this one is that I
+
+78
+00:01:34,870 --> 00:01:34,880
+>> So, the trick with this one is that I
+ 
+
+79
+00:01:34,880 --> 00:01:37,510
+>> So, the trick with this one is that I
+wanted to start with someone talking
+
+80
+00:01:37,510 --> 00:01:37,520
+wanted to start with someone talking
+ 
+
+81
+00:01:37,520 --> 00:01:41,749
+wanted to start with someone talking
+because VO3 has audio and V2 doesn't. I
+
+82
+00:01:41,749 --> 00:01:41,759
+because VO3 has audio and V2 doesn't. I
+ 
+
+83
+00:01:41,759 --> 00:01:44,870
+because VO3 has audio and V2 doesn't. I
+wanted to start with a VO3 clip to begin
+
+84
+00:01:44,870 --> 00:01:44,880
+wanted to start with a VO3 clip to begin
+ 
+
+85
+00:01:44,880 --> 00:01:46,789
+wanted to start with a VO3 clip to begin
+with some dialogue and then as I
+
+86
+00:01:46,789 --> 00:01:46,799
+with some dialogue and then as I
+ 
+
+87
+00:01:46,799 --> 00:01:48,310
+with some dialogue and then as I
+extended it, I could just add some
+
+88
+00:01:48,310 --> 00:01:48,320
+extended it, I could just add some
+ 
+
+89
+00:01:48,320 --> 00:01:50,310
+extended it, I could just add some
+music. So, I like this idea of a
+
+90
+00:01:50,310 --> 00:01:50,320
+music. So, I like this idea of a
+ 
+
+91
+00:01:50,320 --> 00:01:51,830
+music. So, I like this idea of a
+character walking down a train and
+
+92
+00:01:51,830 --> 00:01:51,840
+character walking down a train and
+ 
+
+93
+00:01:51,840 --> 00:01:53,990
+character walking down a train and
+having the passengers change into
+
+94
+00:01:53,990 --> 00:01:54,000
+having the passengers change into
+ 
+
+95
+00:01:54,000 --> 00:01:56,310
+having the passengers change into
+different types of passengers as she's
+
+96
+00:01:56,310 --> 00:01:56,320
+different types of passengers as she's
+ 
+
+97
+00:01:56,320 --> 00:01:58,069
+different types of passengers as she's
+walking through it. So, this was the
+
+98
+00:01:58,069 --> 00:01:58,079
+walking through it. So, this was the
+ 
+
+99
+00:01:58,079 --> 00:01:59,590
+walking through it. So, this was the
+clip that I started with. This was the
+
+100
+00:01:59,590 --> 00:01:59,600
+clip that I started with. This was the
+ 
+
+101
+00:01:59,600 --> 00:02:03,749
+clip that I started with. This was the
+very first prompt I tried.
+
+102
+00:02:03,749 --> 00:02:03,759
+
+ 
+
+103
+00:02:03,759 --> 00:02:05,510
+
+Okay, this is a one minute continuous
+
+104
+00:02:05,510 --> 00:02:05,520
+Okay, this is a one minute continuous
+ 
+
+105
+00:02:05,520 --> 00:02:07,270
+Okay, this is a one minute continuous
+shot video walking through a train
+
+106
+00:02:07,270 --> 00:02:07,280
+shot video walking through a train
+ 
+
+107
+00:02:07,280 --> 00:02:09,430
+shot video walking through a train
+>> and the wrong character is saying the
+
+108
+00:02:09,430 --> 00:02:09,440
+>> and the wrong character is saying the
+ 
+
+109
+00:02:09,440 --> 00:02:11,029
+>> and the wrong character is saying the
+line. Like if you look at here, it
+
+110
+00:02:11,029 --> 00:02:11,039
+line. Like if you look at here, it
+ 
+
+111
+00:02:11,039 --> 00:02:12,309
+line. Like if you look at here, it
+should be the production assistant
+
+112
+00:02:12,309 --> 00:02:12,319
+should be the production assistant
+ 
+
+113
+00:02:12,319 --> 00:02:14,710
+should be the production assistant
+saying that line. So I tried it again
+
+114
+00:02:14,710 --> 00:02:14,720
+saying that line. So I tried it again
+ 
+
+115
+00:02:14,720 --> 00:02:17,670
+saying that line. So I tried it again
+and it worked. So once I had that one, I
+
+116
+00:02:17,670 --> 00:02:17,680
+and it worked. So once I had that one, I
+ 
+
+117
+00:02:17,680 --> 00:02:20,790
+and it worked. So once I had that one, I
+just followed this prompt and then just
+
+118
+00:02:20,790 --> 00:02:20,800
+just followed this prompt and then just
+ 
+
+119
+00:02:20,800 --> 00:02:23,270
+just followed this prompt and then just
+continued to change who the passengers
+
+120
+00:02:23,270 --> 00:02:23,280
+continued to change who the passengers
+ 
+
+121
+00:02:23,280 --> 00:02:25,270
+continued to change who the passengers
+were. So I'll show you what I mean. So
+
+122
+00:02:25,270 --> 00:02:25,280
+were. So I'll show you what I mean. So
+ 
+
+123
+00:02:25,280 --> 00:02:27,350
+were. So I'll show you what I mean. So
+if you were doing this and you had just
+
+124
+00:02:27,350 --> 00:02:27,360
+if you were doing this and you had just
+ 
+
+125
+00:02:27,360 --> 00:02:29,190
+if you were doing this and you had just
+found your first clip that you liked,
+
+126
+00:02:29,190 --> 00:02:29,200
+found your first clip that you liked,
+ 
+
+127
+00:02:29,200 --> 00:02:32,390
+found your first clip that you liked,
+you would go add to scene. And now we're
+
+128
+00:02:32,390 --> 00:02:32,400
+you would go add to scene. And now we're
+ 
+
+129
+00:02:32,400 --> 00:02:34,229
+you would go add to scene. And now we're
+over to scene builder. So this is the
+
+130
+00:02:34,229 --> 00:02:34,239
+over to scene builder. So this is the
+ 
+
+131
+00:02:34,239 --> 00:02:36,470
+over to scene builder. So this is the
+project and then this is the scene
+
+132
+00:02:36,470 --> 00:02:36,480
+project and then this is the scene
+ 
+
+133
+00:02:36,480 --> 00:02:38,710
+project and then this is the scene
+builder where we can arrange the scenes.
+
+134
+00:02:38,710 --> 00:02:38,720
+builder where we can arrange the scenes.
+ 
+
+135
+00:02:38,720 --> 00:02:40,630
+builder where we can arrange the scenes.
+Everything we generate in scene builder
+
+136
+00:02:40,630 --> 00:02:40,640
+Everything we generate in scene builder
+ 
+
+137
+00:02:40,640 --> 00:02:43,670
+Everything we generate in scene builder
+will also be in this project. What I did
+
+138
+00:02:43,670 --> 00:02:43,680
+will also be in this project. What I did
+ 
+
+139
+00:02:43,680 --> 00:02:46,630
+will also be in this project. What I did
+is I had this initial shot and then I
+
+140
+00:02:46,630 --> 00:02:46,640
+is I had this initial shot and then I
+ 
+
+141
+00:02:46,640 --> 00:02:48,550
+is I had this initial shot and then I
+clicked the plus button and went to
+
+142
+00:02:48,550 --> 00:02:48,560
+clicked the plus button and went to
+ 
+
+143
+00:02:48,560 --> 00:02:50,150
+clicked the plus button and went to
+extend.
+
+144
+00:02:50,150 --> 00:02:50,160
+extend.
+ 
+
+145
+00:02:50,160 --> 00:02:52,150
+extend.
+And now it says what should happen next?
+
+146
+00:02:52,150 --> 00:02:52,160
+And now it says what should happen next?
+ 
+
+147
+00:02:52,160 --> 00:02:54,630
+And now it says what should happen next?
+And over here is our prompt for this
+
+148
+00:02:54,630 --> 00:02:54,640
+And over here is our prompt for this
+ 
+
+149
+00:02:54,640 --> 00:02:57,670
+And over here is our prompt for this
+happens and then the extended shot. So
+
+150
+00:02:57,670 --> 00:02:57,680
+happens and then the extended shot. So
+ 
+
+151
+00:02:57,680 --> 00:03:00,150
+happens and then the extended shot. So
+the first one I did was camera tracking
+
+152
+00:03:00,150 --> 00:03:00,160
+the first one I did was camera tracking
+ 
+
+153
+00:03:00,160 --> 00:03:02,070
+the first one I did was camera tracking
+motion as the conductor walks down the
+
+154
+00:03:02,070 --> 00:03:02,080
+motion as the conductor walks down the
+ 
+
+155
+00:03:02,080 --> 00:03:04,630
+motion as the conductor walks down the
+aisle revealing more passengers. And I
+
+156
+00:03:04,630 --> 00:03:04,640
+aisle revealing more passengers. And I
+ 
+
+157
+00:03:04,640 --> 00:03:06,149
+aisle revealing more passengers. And I
+think this is an important part where we
+
+158
+00:03:06,149 --> 00:03:06,159
+think this is an important part where we
+ 
+
+159
+00:03:06,159 --> 00:03:08,710
+think this is an important part where we
+say there are more passengers being
+
+160
+00:03:08,710 --> 00:03:08,720
+say there are more passengers being
+ 
+
+161
+00:03:08,720 --> 00:03:11,430
+say there are more passengers being
+revealed and then we say the passengers
+
+162
+00:03:11,430 --> 00:03:11,440
+revealed and then we say the passengers
+ 
+
+163
+00:03:11,440 --> 00:03:14,790
+revealed and then we say the passengers
+are all anthropomorphic animals and then
+
+164
+00:03:14,790 --> 00:03:14,800
+are all anthropomorphic animals and then
+ 
+
+165
+00:03:14,800 --> 00:03:16,710
+are all anthropomorphic animals and then
+she smiles in amusement. So we're
+
+166
+00:03:16,710 --> 00:03:16,720
+she smiles in amusement. So we're
+ 
+
+167
+00:03:16,720 --> 00:03:18,630
+she smiles in amusement. So we're
+getting a reaction from her. So let's
+
+168
+00:03:18,630 --> 00:03:18,640
+getting a reaction from her. So let's
+ 
+
+169
+00:03:18,640 --> 00:03:20,390
+getting a reaction from her. So let's
+see how this one turns out. And again
+
+170
+00:03:20,390 --> 00:03:20,400
+see how this one turns out. And again
+ 
+
+171
+00:03:20,400 --> 00:03:22,790
+see how this one turns out. And again
+I'm doing Oh, let me show you. So it
+
+172
+00:03:22,790 --> 00:03:22,800
+I'm doing Oh, let me show you. So it
+ 
+
+173
+00:03:22,800 --> 00:03:25,190
+I'm doing Oh, let me show you. So it
+looks like I can do this in V3 fast
+
+174
+00:03:25,190 --> 00:03:25,200
+looks like I can do this in V3 fast
+ 
+
+175
+00:03:25,200 --> 00:03:28,630
+looks like I can do this in V3 fast
+mode. Um let's try it. And it says no.
+
+176
+00:03:28,630 --> 00:03:28,640
+mode. Um let's try it. And it says no.
+ 
+
+177
+00:03:28,640 --> 00:03:30,710
+mode. Um let's try it. And it says no.
+This feature isn't supported in V3 fast.
+
+178
+00:03:30,710 --> 00:03:30,720
+This feature isn't supported in V3 fast.
+ 
+
+179
+00:03:30,720 --> 00:03:33,190
+This feature isn't supported in V3 fast.
+You have to switch to V2. So, the only
+
+180
+00:03:33,190 --> 00:03:33,200
+You have to switch to V2. So, the only
+ 
+
+181
+00:03:33,200 --> 00:03:35,110
+You have to switch to V2. So, the only
+way we can extend these clips is to use
+
+182
+00:03:35,110 --> 00:03:35,120
+way we can extend these clips is to use
+ 
+
+183
+00:03:35,120 --> 00:03:38,229
+way we can extend these clips is to use
+V2 fast for now. And hopefully that will
+
+184
+00:03:38,229 --> 00:03:38,239
+V2 fast for now. And hopefully that will
+ 
+
+185
+00:03:38,239 --> 00:03:40,550
+V2 fast for now. And hopefully that will
+change soon. But as of right now, that's
+
+186
+00:03:40,550 --> 00:03:40,560
+change soon. But as of right now, that's
+ 
+
+187
+00:03:40,560 --> 00:03:42,470
+change soon. But as of right now, that's
+the only one that will work for this
+
+188
+00:03:42,470 --> 00:03:42,480
+the only one that will work for this
+ 
+
+189
+00:03:42,480 --> 00:03:44,470
+the only one that will work for this
+technique. And then a little bit later,
+
+190
+00:03:44,470 --> 00:03:44,480
+technique. And then a little bit later,
+ 
+
+191
+00:03:44,480 --> 00:03:45,910
+technique. And then a little bit later,
+I'm going to show you how to extend a
+
+192
+00:03:45,910 --> 00:03:45,920
+I'm going to show you how to extend a
+ 
+
+193
+00:03:45,920 --> 00:03:48,470
+I'm going to show you how to extend a
+clip using VO3. So, we're going to do
+
+194
+00:03:48,470 --> 00:03:48,480
+clip using VO3. So, we're going to do
+ 
+
+195
+00:03:48,480 --> 00:03:50,470
+clip using VO3. So, we're going to do
+the anthropomorphic animals like I did
+
+196
+00:03:50,470 --> 00:03:50,480
+the anthropomorphic animals like I did
+ 
+
+197
+00:03:50,480 --> 00:03:52,630
+the anthropomorphic animals like I did
+in my original. All right, let's see how
+
+198
+00:03:52,630 --> 00:03:52,640
+in my original. All right, let's see how
+ 
+
+199
+00:03:52,640 --> 00:03:54,070
+in my original. All right, let's see how
+that turns out. So, you can either you
+
+200
+00:03:54,070 --> 00:03:54,080
+that turns out. So, you can either you
+ 
+
+201
+00:03:54,080 --> 00:03:55,990
+that turns out. So, you can either you
+can either grab this and just kind of
+
+202
+00:03:55,990 --> 00:03:56,000
+can either grab this and just kind of
+ 
+
+203
+00:03:56,000 --> 00:03:59,190
+can either grab this and just kind of
+scrub and see what happens. Um, or you
+
+204
+00:03:59,190 --> 00:03:59,200
+scrub and see what happens. Um, or you
+ 
+
+205
+00:03:59,200 --> 00:04:03,830
+scrub and see what happens. Um, or you
+can play it
+
+206
+00:04:03,830 --> 00:04:03,840
+
+ 
+
+207
+00:04:03,840 --> 00:04:05,350
+
+So now we have the anthropomorphic
+
+208
+00:04:05,350 --> 00:04:05,360
+So now we have the anthropomorphic
+ 
+
+209
+00:04:05,360 --> 00:04:06,789
+So now we have the anthropomorphic
+animals. Let's do another one. So we'll
+
+210
+00:04:06,789 --> 00:04:06,799
+animals. Let's do another one. So we'll
+ 
+
+211
+00:04:06,799 --> 00:04:08,390
+animals. Let's do another one. So we'll
+just click the plus button again and
+
+212
+00:04:08,390 --> 00:04:08,400
+just click the plus button again and
+ 
+
+213
+00:04:08,400 --> 00:04:10,869
+just click the plus button again and
+click extend. What should happen next?
+
+214
+00:04:10,869 --> 00:04:10,879
+click extend. What should happen next?
+ 
+
+215
+00:04:10,879 --> 00:04:12,470
+click extend. What should happen next?
+And we'll paste that same prompt. And
+
+216
+00:04:12,470 --> 00:04:12,480
+And we'll paste that same prompt. And
+ 
+
+217
+00:04:12,480 --> 00:04:15,670
+And we'll paste that same prompt. And
+now we'll change them to um let's change
+
+218
+00:04:15,670 --> 00:04:15,680
+now we'll change them to um let's change
+ 
+
+219
+00:04:15,680 --> 00:04:17,030
+now we'll change them to um let's change
+them to something different that wasn't
+
+220
+00:04:17,030 --> 00:04:17,040
+them to something different that wasn't
+ 
+
+221
+00:04:17,040 --> 00:04:20,949
+them to something different that wasn't
+in my original um ballerinas. How about
+
+222
+00:04:20,949 --> 00:04:20,959
+in my original um ballerinas. How about
+ 
+
+223
+00:04:20,959 --> 00:04:22,469
+in my original um ballerinas. How about
+And let's try and give her a little bit
+
+224
+00:04:22,469 --> 00:04:22,479
+And let's try and give her a little bit
+ 
+
+225
+00:04:22,479 --> 00:04:25,110
+And let's try and give her a little bit
+of action, which I didn't really do. Um
+
+226
+00:04:25,110 --> 00:04:25,120
+of action, which I didn't really do. Um
+ 
+
+227
+00:04:25,120 --> 00:04:27,030
+of action, which I didn't really do. Um
+so let's have the conductor wave to one
+
+228
+00:04:27,030 --> 00:04:27,040
+so let's have the conductor wave to one
+ 
+
+229
+00:04:27,040 --> 00:04:29,350
+so let's have the conductor wave to one
+ballerina. All right. Let's just kind of
+
+230
+00:04:29,350 --> 00:04:29,360
+ballerina. All right. Let's just kind of
+ 
+
+231
+00:04:29,360 --> 00:04:31,990
+ballerina. All right. Let's just kind of
+see what happened here.
+
+232
+00:04:31,990 --> 00:04:32,000
+see what happened here.
+ 
+
+233
+00:04:32,000 --> 00:04:35,990
+see what happened here.
+Oh, now she stopped entirely.
+
+234
+00:04:35,990 --> 00:04:36,000
+Oh, now she stopped entirely.
+ 
+
+235
+00:04:36,000 --> 00:04:40,870
+Oh, now she stopped entirely.
+What happened there? Now she waved. So,
+
+236
+00:04:40,870 --> 00:04:40,880
+What happened there? Now she waved. So,
+ 
+
+237
+00:04:40,880 --> 00:04:42,870
+What happened there? Now she waved. So,
+what was that? So, I I can't remember
+
+238
+00:04:42,870 --> 00:04:42,880
+what was that? So, I I can't remember
+ 
+
+239
+00:04:42,880 --> 00:04:44,390
+what was that? So, I I can't remember
+exact prompt that we did. So, what I can
+
+240
+00:04:44,390 --> 00:04:44,400
+exact prompt that we did. So, what I can
+ 
+
+241
+00:04:44,400 --> 00:04:47,990
+exact prompt that we did. So, what I can
+do is go back to this project and see
+
+242
+00:04:47,990 --> 00:04:48,000
+do is go back to this project and see
+ 
+
+243
+00:04:48,000 --> 00:04:50,230
+do is go back to this project and see
+camera tracking as she walks down. So,
+
+244
+00:04:50,230 --> 00:04:50,240
+camera tracking as she walks down. So,
+ 
+
+245
+00:04:50,240 --> 00:04:51,990
+camera tracking as she walks down. So,
+I'm going to go back to scene builder.
+
+246
+00:04:51,990 --> 00:04:52,000
+I'm going to go back to scene builder.
+ 
+
+247
+00:04:52,000 --> 00:04:53,350
+I'm going to go back to scene builder.
+There's nothing in this prompt that
+
+248
+00:04:53,350 --> 00:04:53,360
+There's nothing in this prompt that
+ 
+
+249
+00:04:53,360 --> 00:04:55,270
+There's nothing in this prompt that
+makes me think it should have just
+
+250
+00:04:55,270 --> 00:04:55,280
+makes me think it should have just
+ 
+
+251
+00:04:55,280 --> 00:04:58,550
+makes me think it should have just
+stopped and had her turn around and go
+
+252
+00:04:58,550 --> 00:04:58,560
+stopped and had her turn around and go
+ 
+
+253
+00:04:58,560 --> 00:05:00,790
+stopped and had her turn around and go
+that way. It looks like it thinks that
+
+254
+00:05:00,790 --> 00:05:00,800
+that way. It looks like it thinks that
+ 
+
+255
+00:05:00,800 --> 00:05:03,670
+that way. It looks like it thinks that
+she's standing still
+
+256
+00:05:03,670 --> 00:05:03,680
+she's standing still
+ 
+
+257
+00:05:03,680 --> 00:05:07,670
+she's standing still
+um because of this that maybe this looks
+
+258
+00:05:07,670 --> 00:05:07,680
+um because of this that maybe this looks
+ 
+
+259
+00:05:07,680 --> 00:05:10,469
+um because of this that maybe this looks
+like she's not moving. What we can do
+
+260
+00:05:10,469 --> 00:05:10,479
+like she's not moving. What we can do
+ 
+
+261
+00:05:10,479 --> 00:05:14,070
+like she's not moving. What we can do
+here is trim it. So we can go here,
+
+262
+00:05:14,070 --> 00:05:14,080
+here is trim it. So we can go here,
+ 
+
+263
+00:05:14,080 --> 00:05:16,790
+here is trim it. So we can go here,
+trim back,
+
+264
+00:05:16,790 --> 00:05:16,800
+trim back,
+ 
+
+265
+00:05:16,800 --> 00:05:19,110
+trim back,
+and now we'll extend again. So we've
+
+266
+00:05:19,110 --> 00:05:19,120
+and now we'll extend again. So we've
+ 
+
+267
+00:05:19,120 --> 00:05:21,029
+and now we'll extend again. So we've
+kind of trimmed to the end here. So now
+
+268
+00:05:21,029 --> 00:05:21,039
+kind of trimmed to the end here. So now
+ 
+
+269
+00:05:21,039 --> 00:05:22,390
+kind of trimmed to the end here. So now
+we're starting from there instead of
+
+270
+00:05:22,390 --> 00:05:22,400
+we're starting from there instead of
+ 
+
+271
+00:05:22,400 --> 00:05:24,790
+we're starting from there instead of
+where we were before. And we'll extend
+
+272
+00:05:24,790 --> 00:05:24,800
+where we were before. And we'll extend
+ 
+
+273
+00:05:24,800 --> 00:05:26,550
+where we were before. And we'll extend
+from here.
+
+274
+00:05:26,550 --> 00:05:26,560
+from here.
+ 
+
+275
+00:05:26,560 --> 00:05:28,550
+from here.
+I think it's important to show these
+
+276
+00:05:28,550 --> 00:05:28,560
+I think it's important to show these
+ 
+
+277
+00:05:28,560 --> 00:05:30,390
+I think it's important to show these
+times that things don't work out because
+
+278
+00:05:30,390 --> 00:05:30,400
+times that things don't work out because
+ 
+
+279
+00:05:30,400 --> 00:05:32,629
+times that things don't work out because
+I think if you see a tutorial and
+
+280
+00:05:32,629 --> 00:05:32,639
+I think if you see a tutorial and
+ 
+
+281
+00:05:32,639 --> 00:05:34,870
+I think if you see a tutorial and
+everything works out perfectly, but they
+
+282
+00:05:34,870 --> 00:05:34,880
+everything works out perfectly, but they
+ 
+
+283
+00:05:34,880 --> 00:05:36,230
+everything works out perfectly, but they
+don't always work the way they're
+
+284
+00:05:36,230 --> 00:05:36,240
+don't always work the way they're
+ 
+
+285
+00:05:36,240 --> 00:05:37,670
+don't always work the way they're
+supposed to. And a lot of times you run
+
+286
+00:05:37,670 --> 00:05:37,680
+supposed to. And a lot of times you run
+ 
+
+287
+00:05:37,680 --> 00:05:39,270
+supposed to. And a lot of times you run
+into problems and you have to figure out
+
+288
+00:05:39,270 --> 00:05:39,280
+into problems and you have to figure out
+ 
+
+289
+00:05:39,280 --> 00:05:41,830
+into problems and you have to figure out
+ways around them. So, thanks for
+
+290
+00:05:41,830 --> 00:05:41,840
+ways around them. So, thanks for
+ 
+
+291
+00:05:41,840 --> 00:05:44,150
+ways around them. So, thanks for
+sticking with me through these mistakes.
+
+292
+00:05:44,150 --> 00:05:44,160
+sticking with me through these mistakes.
+ 
+
+293
+00:05:44,160 --> 00:05:48,870
+sticking with me through these mistakes.
+See if that helped at all.
+
+294
+00:05:48,870 --> 00:05:48,880
+
+ 
+
+295
+00:05:48,880 --> 00:05:50,790
+
+Yeah. So, now we got her walking again.
+
+296
+00:05:50,790 --> 00:05:50,800
+Yeah. So, now we got her walking again.
+ 
+
+297
+00:05:50,800 --> 00:05:52,469
+Yeah. So, now we got her walking again.
+The trick there was that the final frame
+
+298
+00:05:52,469 --> 00:05:52,479
+The trick there was that the final frame
+ 
+
+299
+00:05:52,479 --> 00:05:54,469
+The trick there was that the final frame
+looked too much like she was just
+
+300
+00:05:54,469 --> 00:05:54,479
+looked too much like she was just
+ 
+
+301
+00:05:54,479 --> 00:05:56,870
+looked too much like she was just
+standing there and it didn't know that
+
+302
+00:05:56,870 --> 00:05:56,880
+standing there and it didn't know that
+ 
+
+303
+00:05:56,880 --> 00:05:58,629
+standing there and it didn't know that
+she was in motion. All right. And that
+
+304
+00:05:58,629 --> 00:05:58,639
+she was in motion. All right. And that
+ 
+
+305
+00:05:58,639 --> 00:06:00,310
+she was in motion. All right. And that
+was basically what I did. So, you know,
+
+306
+00:06:00,310 --> 00:06:00,320
+was basically what I did. So, you know,
+ 
+
+307
+00:06:00,320 --> 00:06:02,310
+was basically what I did. So, you know,
+it started with a V3 clip and then went
+
+308
+00:06:02,310 --> 00:06:02,320
+it started with a V3 clip and then went
+ 
+
+309
+00:06:02,320 --> 00:06:04,790
+it started with a V3 clip and then went
+to the V2 and the V2 and just kept
+
+310
+00:06:04,790 --> 00:06:04,800
+to the V2 and the V2 and just kept
+ 
+
+311
+00:06:04,800 --> 00:06:07,430
+to the V2 and the V2 and just kept
+continually doing that and changing the
+
+312
+00:06:07,430 --> 00:06:07,440
+continually doing that and changing the
+ 
+
+313
+00:06:07,440 --> 00:06:09,749
+continually doing that and changing the
+background characters um to, you know,
+
+314
+00:06:09,749 --> 00:06:09,759
+background characters um to, you know,
+ 
+
+315
+00:06:09,759 --> 00:06:11,670
+background characters um to, you know,
+different creatures and aliens and
+
+316
+00:06:11,670 --> 00:06:11,680
+different creatures and aliens and
+ 
+
+317
+00:06:11,680 --> 00:06:14,469
+different creatures and aliens and
+things like that. So, that's how I did
+
+318
+00:06:14,469 --> 00:06:14,479
+things like that. So, that's how I did
+ 
+
+319
+00:06:14,479 --> 00:06:16,870
+things like that. So, that's how I did
+that one. There was one point where I
+
+320
+00:06:16,870 --> 00:06:16,880
+that one. There was one point where I
+ 
+
+321
+00:06:16,880 --> 00:06:19,430
+that one. There was one point where I
+extended and I had to leave the train. I
+
+322
+00:06:19,430 --> 00:06:19,440
+extended and I had to leave the train. I
+ 
+
+323
+00:06:19,440 --> 00:06:20,550
+extended and I had to leave the train. I
+was trying to figure out how to get out
+
+324
+00:06:20,550 --> 00:06:20,560
+was trying to figure out how to get out
+ 
+
+325
+00:06:20,560 --> 00:06:22,629
+was trying to figure out how to get out
+of the train and that took a little bit
+
+326
+00:06:22,629 --> 00:06:22,639
+of the train and that took a little bit
+ 
+
+327
+00:06:22,639 --> 00:06:26,230
+of the train and that took a little bit
+more work. Um, let me show you that
+
+328
+00:06:26,230 --> 00:06:26,240
+more work. Um, let me show you that
+ 
+
+329
+00:06:26,240 --> 00:06:28,150
+more work. Um, let me show you that
+really quick. I wanted her to come to
+
+330
+00:06:28,150 --> 00:06:28,160
+really quick. I wanted her to come to
+ 
+
+331
+00:06:28,160 --> 00:06:30,070
+really quick. I wanted her to come to
+the end of the train and walk off the
+
+332
+00:06:30,070 --> 00:06:30,080
+the end of the train and walk off the
+ 
+
+333
+00:06:30,080 --> 00:06:32,550
+the end of the train and walk off the
+train. Um, and I'm going to try this one
+
+334
+00:06:32,550 --> 00:06:32,560
+train. Um, and I'm going to try this one
+ 
+
+335
+00:06:32,560 --> 00:06:34,790
+train. Um, and I'm going to try this one
+again. But here's what happened for me.
+
+336
+00:06:34,790 --> 00:06:34,800
+again. But here's what happened for me.
+ 
+
+337
+00:06:34,800 --> 00:06:36,390
+again. But here's what happened for me.
+Um, she gets there and then all of a
+
+338
+00:06:36,390 --> 00:06:36,400
+Um, she gets there and then all of a
+ 
+
+339
+00:06:36,400 --> 00:06:38,070
+Um, she gets there and then all of a
+sudden the camera started to pan up and
+
+340
+00:06:38,070 --> 00:06:38,080
+sudden the camera started to pan up and
+ 
+
+341
+00:06:38,080 --> 00:06:39,110
+sudden the camera started to pan up and
+I thought, well, that's kind of
+
+342
+00:06:39,110 --> 00:06:39,120
+I thought, well, that's kind of
+ 
+
+343
+00:06:39,120 --> 00:06:41,270
+I thought, well, that's kind of
+interesting. What if what if um at the
+
+344
+00:06:41,270 --> 00:06:41,280
+interesting. What if what if um at the
+ 
+
+345
+00:06:41,280 --> 00:06:43,590
+interesting. What if what if um at the
+end of this the camera continues to pan
+
+346
+00:06:43,590 --> 00:06:43,600
+end of this the camera continues to pan
+ 
+
+347
+00:06:43,600 --> 00:06:47,110
+end of this the camera continues to pan
+up um and
+
+348
+00:06:47,110 --> 00:06:47,120
+up um and
+ 
+
+349
+00:06:47,120 --> 00:06:49,110
+up um and
+now we kind of see the top of the train.
+
+350
+00:06:49,110 --> 00:06:49,120
+now we kind of see the top of the train.
+ 
+
+351
+00:06:49,120 --> 00:06:51,430
+now we kind of see the top of the train.
+It took a little bit. Didn't quite get
+
+352
+00:06:51,430 --> 00:06:51,440
+It took a little bit. Didn't quite get
+ 
+
+353
+00:06:51,440 --> 00:06:54,390
+It took a little bit. Didn't quite get
+there. There we go. This was like, okay,
+
+354
+00:06:54,390 --> 00:06:54,400
+there. There we go. This was like, okay,
+ 
+
+355
+00:06:54,400 --> 00:06:55,830
+there. There we go. This was like, okay,
+now I'm outside the train. This is
+
+356
+00:06:55,830 --> 00:06:55,840
+now I'm outside the train. This is
+ 
+
+357
+00:06:55,840 --> 00:06:57,430
+now I'm outside the train. This is
+perfect. So, I liked that. And then I
+
+358
+00:06:57,430 --> 00:06:57,440
+perfect. So, I liked that. And then I
+ 
+
+359
+00:06:57,440 --> 00:06:59,990
+perfect. So, I liked that. And then I
+was able to try different things. And
+
+360
+00:06:59,990 --> 00:07:00,000
+was able to try different things. And
+ 
+
+361
+00:07:00,000 --> 00:07:02,070
+was able to try different things. And
+this is for me where the project went
+
+362
+00:07:02,070 --> 00:07:02,080
+this is for me where the project went
+ 
+
+363
+00:07:02,080 --> 00:07:03,589
+this is for me where the project went
+off the rails because I was like, oh, I
+
+364
+00:07:03,589 --> 00:07:03,599
+off the rails because I was like, oh, I
+ 
+
+365
+00:07:03,599 --> 00:07:05,510
+off the rails because I was like, oh, I
+could have it pan over here. So, I tried
+
+366
+00:07:05,510 --> 00:07:05,520
+could have it pan over here. So, I tried
+ 
+
+367
+00:07:05,520 --> 00:07:08,070
+could have it pan over here. So, I tried
+a bunch of things. And um that's where I
+
+368
+00:07:08,070 --> 00:07:08,080
+a bunch of things. And um that's where I
+ 
+
+369
+00:07:08,080 --> 00:07:10,150
+a bunch of things. And um that's where I
+really went through credits on this
+
+370
+00:07:10,150 --> 00:07:10,160
+really went through credits on this
+ 
+
+371
+00:07:10,160 --> 00:07:12,070
+really went through credits on this
+project was trying to figure out what
+
+372
+00:07:12,070 --> 00:07:12,080
+project was trying to figure out what
+ 
+
+373
+00:07:12,080 --> 00:07:13,510
+project was trying to figure out what
+happens after we get out of the train.
+
+374
+00:07:13,510 --> 00:07:13,520
+happens after we get out of the train.
+ 
+
+375
+00:07:13,520 --> 00:07:15,029
+happens after we get out of the train.
+But the actual walk through the train
+
+376
+00:07:15,029 --> 00:07:15,039
+But the actual walk through the train
+ 
+
+377
+00:07:15,039 --> 00:07:17,350
+But the actual walk through the train
+was pretty easy to get through. That's
+
+378
+00:07:17,350 --> 00:07:17,360
+was pretty easy to get through. That's
+ 
+
+379
+00:07:17,360 --> 00:07:19,990
+was pretty easy to get through. That's
+how you use Google Flow to do a single
+
+380
+00:07:19,990 --> 00:07:20,000
+how you use Google Flow to do a single
+ 
+
+381
+00:07:20,000 --> 00:07:22,870
+how you use Google Flow to do a single
+continuous shot with VO3 that extends
+
+382
+00:07:22,870 --> 00:07:22,880
+continuous shot with VO3 that extends
+ 
+
+383
+00:07:22,880 --> 00:07:27,510
+continuous shot with VO3 that extends
+with V2 clips. Now, let's do one with V3
+
+384
+00:07:27,510 --> 00:07:27,520
+with V2 clips. Now, let's do one with V3
+ 
+
+385
+00:07:27,520 --> 00:07:30,550
+with V2 clips. Now, let's do one with V3
+quality mode and extend them that way. I
+
+386
+00:07:30,550 --> 00:07:30,560
+quality mode and extend them that way. I
+ 
+
+387
+00:07:30,560 --> 00:07:31,589
+quality mode and extend them that way. I
+know you're probably thinking like,
+
+388
+00:07:31,589 --> 00:07:31,599
+know you're probably thinking like,
+ 
+
+389
+00:07:31,599 --> 00:07:33,189
+know you're probably thinking like,
+"Wait, but you said that you can't
+
+390
+00:07:33,189 --> 00:07:33,199
+"Wait, but you said that you can't
+ 
+
+391
+00:07:33,199 --> 00:07:35,830
+"Wait, but you said that you can't
+extend them in V3." And you can't, but
+
+392
+00:07:35,830 --> 00:07:35,840
+extend them in V3." And you can't, but
+ 
+
+393
+00:07:35,840 --> 00:07:37,990
+extend them in V3." And you can't, but
+you can do this other technique that
+
+394
+00:07:37,990 --> 00:07:38,000
+you can do this other technique that
+ 
+
+395
+00:07:38,000 --> 00:07:39,589
+you can do this other technique that
+many of you know about called last
+
+396
+00:07:39,589 --> 00:07:39,599
+many of you know about called last
+ 
+
+397
+00:07:39,599 --> 00:07:41,909
+many of you know about called last
+frame, first frame.
+
+398
+00:07:41,909 --> 00:07:41,919
+frame, first frame.
+ 
+
+399
+00:07:41,919 --> 00:07:44,070
+frame, first frame.
+>> There's a poem we had to read back in
+
+400
+00:07:44,070 --> 00:07:44,080
+>> There's a poem we had to read back in
+ 
+
+401
+00:07:44,080 --> 00:07:47,589
+>> There's a poem we had to read back in
+high school about taking the road less
+
+402
+00:07:47,589 --> 00:07:47,599
+high school about taking the road less
+ 
+
+403
+00:07:47,599 --> 00:07:48,309
+high school about taking the road less
+traveled.
+
+404
+00:07:48,309 --> 00:07:48,319
+traveled.
+ 
+
+405
+00:07:48,319 --> 00:07:50,710
+traveled.
+>> So, this is how she started off and then
+
+406
+00:07:50,710 --> 00:07:50,720
+>> So, this is how she started off and then
+ 
+
+407
+00:07:50,720 --> 00:07:53,350
+>> So, this is how she started off and then
+we see her walking for one minute. And
+
+408
+00:07:53,350 --> 00:07:53,360
+we see her walking for one minute. And
+ 
+
+409
+00:07:53,360 --> 00:07:55,670
+we see her walking for one minute. And
+for the most part, initially, you don't
+
+410
+00:07:55,670 --> 00:07:55,680
+for the most part, initially, you don't
+ 
+
+411
+00:07:55,680 --> 00:07:57,990
+for the most part, initially, you don't
+really notice that she's changing. And
+
+412
+00:07:57,990 --> 00:07:58,000
+really notice that she's changing. And
+ 
+
+413
+00:07:58,000 --> 00:08:00,869
+really notice that she's changing. And
+then every 8 seconds, it gets worse and
+
+414
+00:08:00,869 --> 00:08:00,879
+then every 8 seconds, it gets worse and
+ 
+
+415
+00:08:00,879 --> 00:08:03,110
+then every 8 seconds, it gets worse and
+worse. And as someone in the comments
+
+416
+00:08:03,110 --> 00:08:03,120
+worse. And as someone in the comments
+ 
+
+417
+00:08:03,120 --> 00:08:05,350
+worse. And as someone in the comments
+pointed out, and I was thinking as well,
+
+418
+00:08:05,350 --> 00:08:05,360
+pointed out, and I was thinking as well,
+ 
+
+419
+00:08:05,360 --> 00:08:07,909
+pointed out, and I was thinking as well,
+it's like when you used to do VHS tapes,
+
+420
+00:08:07,909 --> 00:08:07,919
+it's like when you used to do VHS tapes,
+ 
+
+421
+00:08:07,919 --> 00:08:10,390
+it's like when you used to do VHS tapes,
+every time you make a copy, every copy
+
+422
+00:08:10,390 --> 00:08:10,400
+every time you make a copy, every copy
+ 
+
+423
+00:08:10,400 --> 00:08:12,309
+every time you make a copy, every copy
+is worse than the version that came
+
+424
+00:08:12,309 --> 00:08:12,319
+is worse than the version that came
+ 
+
+425
+00:08:12,319 --> 00:08:14,150
+is worse than the version that came
+before it. So the midjourney image that
+
+426
+00:08:14,150 --> 00:08:14,160
+before it. So the midjourney image that
+ 
+
+427
+00:08:14,160 --> 00:08:15,990
+before it. So the midjourney image that
+we're starting with looks fine. Then
+
+428
+00:08:15,990 --> 00:08:16,000
+we're starting with looks fine. Then
+ 
+
+429
+00:08:16,000 --> 00:08:18,150
+we're starting with looks fine. Then
+we're doing a screen grab from an AI
+
+430
+00:08:18,150 --> 00:08:18,160
+we're doing a screen grab from an AI
+ 
+
+431
+00:08:18,160 --> 00:08:20,309
+we're doing a screen grab from an AI
+generated video, which doesn't have the
+
+432
+00:08:20,309 --> 00:08:20,319
+generated video, which doesn't have the
+ 
+
+433
+00:08:20,319 --> 00:08:21,749
+generated video, which doesn't have the
+same quality, doesn't have the same
+
+434
+00:08:21,749 --> 00:08:21,759
+same quality, doesn't have the same
+ 
+
+435
+00:08:21,759 --> 00:08:23,670
+same quality, doesn't have the same
+amount of detail, and so it's a little
+
+436
+00:08:23,670 --> 00:08:23,680
+amount of detail, and so it's a little
+ 
+
+437
+00:08:23,680 --> 00:08:25,749
+amount of detail, and so it's a little
+bit less quality, and then we just keep
+
+438
+00:08:25,749 --> 00:08:25,759
+bit less quality, and then we just keep
+ 
+
+439
+00:08:25,759 --> 00:08:27,749
+bit less quality, and then we just keep
+reducing the quality. So over time it
+
+440
+00:08:27,749 --> 00:08:27,759
+reducing the quality. So over time it
+ 
+
+441
+00:08:27,759 --> 00:08:30,150
+reducing the quality. So over time it
+just gets to be it looks more like this
+
+442
+00:08:30,150 --> 00:08:30,160
+just gets to be it looks more like this
+ 
+
+443
+00:08:30,160 --> 00:08:31,909
+just gets to be it looks more like this
+at the end. So for starting from
+
+444
+00:08:31,909 --> 00:08:31,919
+at the end. So for starting from
+ 
+
+445
+00:08:31,919 --> 00:08:34,870
+at the end. So for starting from
+scratch, we can go to text to video and
+
+446
+00:08:34,870 --> 00:08:34,880
+scratch, we can go to text to video and
+ 
+
+447
+00:08:34,880 --> 00:08:37,829
+scratch, we can go to text to video and
+click frames to video. And for these
+
+448
+00:08:37,829 --> 00:08:37,839
+click frames to video. And for these
+ 
+
+449
+00:08:37,839 --> 00:08:39,670
+click frames to video. And for these
+continuous shots, we're only going to
+
+450
+00:08:39,670 --> 00:08:39,680
+continuous shots, we're only going to
+ 
+
+451
+00:08:39,680 --> 00:08:42,310
+continuous shots, we're only going to
+use a start frame because we want the
+
+452
+00:08:42,310 --> 00:08:42,320
+use a start frame because we want the
+ 
+
+453
+00:08:42,320 --> 00:08:44,870
+use a start frame because we want the
+end frame to be wherever the video ends
+
+454
+00:08:44,870 --> 00:08:44,880
+end frame to be wherever the video ends
+ 
+
+455
+00:08:44,880 --> 00:08:47,509
+end frame to be wherever the video ends
+up going. And then we'll use the last
+
+456
+00:08:47,509 --> 00:08:47,519
+up going. And then we'll use the last
+ 
+
+457
+00:08:47,519 --> 00:08:50,630
+up going. And then we'll use the last
+frame of that video as the start frame
+
+458
+00:08:50,630 --> 00:08:50,640
+frame of that video as the start frame
+ 
+
+459
+00:08:50,640 --> 00:08:53,110
+frame of that video as the start frame
+for the next video. That's why they call
+
+460
+00:08:53,110 --> 00:08:53,120
+for the next video. That's why they call
+ 
+
+461
+00:08:53,120 --> 00:08:55,509
+for the next video. That's why they call
+it last frame, first frame. So once
+
+462
+00:08:55,509 --> 00:08:55,519
+it last frame, first frame. So once
+ 
+
+463
+00:08:55,519 --> 00:08:57,670
+it last frame, first frame. So once
+we're on frames to video, we click this
+
+464
+00:08:57,670 --> 00:08:57,680
+we're on frames to video, we click this
+ 
+
+465
+00:08:57,680 --> 00:09:00,230
+we're on frames to video, we click this
+plus button to upload a new one. It
+
+466
+00:09:00,230 --> 00:09:00,240
+plus button to upload a new one. It
+ 
+
+467
+00:09:00,240 --> 00:09:01,910
+plus button to upload a new one. It
+remembers all of the previous ones that
+
+468
+00:09:01,910 --> 00:09:01,920
+remembers all of the previous ones that
+ 
+
+469
+00:09:01,920 --> 00:09:03,590
+remembers all of the previous ones that
+you've uploaded. So since I started with
+
+470
+00:09:03,590 --> 00:09:03,600
+you've uploaded. So since I started with
+ 
+
+471
+00:09:03,600 --> 00:09:05,030
+you've uploaded. So since I started with
+this one, I'm just going to click this
+
+472
+00:09:05,030 --> 00:09:05,040
+this one, I'm just going to click this
+ 
+
+473
+00:09:05,040 --> 00:09:07,350
+this one, I'm just going to click this
+button here. Um you could also just
+
+474
+00:09:07,350 --> 00:09:07,360
+button here. Um you could also just
+ 
+
+475
+00:09:07,360 --> 00:09:09,990
+button here. Um you could also just
+upload one from scratch. Um and since I
+
+476
+00:09:09,990 --> 00:09:10,000
+upload one from scratch. Um and since I
+ 
+
+477
+00:09:10,000 --> 00:09:11,990
+upload one from scratch. Um and since I
+did this in VO fast last time, I'm going
+
+478
+00:09:11,990 --> 00:09:12,000
+did this in VO fast last time, I'm going
+ 
+
+479
+00:09:12,000 --> 00:09:14,790
+did this in VO fast last time, I'm going
+to do So this is 20 credits to do frames
+
+480
+00:09:14,790 --> 00:09:14,800
+to do So this is 20 credits to do frames
+ 
+
+481
+00:09:14,800 --> 00:09:17,750
+to do So this is 20 credits to do frames
+to video. I'm going to go to quality
+
+482
+00:09:17,750 --> 00:09:17,760
+to video. I'm going to go to quality
+ 
+
+483
+00:09:17,760 --> 00:09:19,509
+to video. I'm going to go to quality
+mode. And now it's going to be 100
+
+484
+00:09:19,509 --> 00:09:19,519
+mode. And now it's going to be 100
+ 
+
+485
+00:09:19,519 --> 00:09:22,550
+mode. And now it's going to be 100
+credits. Okay. So let's see how this
+
+486
+00:09:22,550 --> 00:09:22,560
+credits. Okay. So let's see how this
+ 
+
+487
+00:09:22,560 --> 00:09:24,550
+credits. Okay. So let's see how this
+goes.
+
+488
+00:09:24,550 --> 00:09:24,560
+goes.
+ 
+
+489
+00:09:24,560 --> 00:09:26,790
+goes.
+There's a poem we had to read back in
+
+490
+00:09:26,790 --> 00:09:26,800
+There's a poem we had to read back in
+ 
+
+491
+00:09:26,800 --> 00:09:30,070
+There's a poem we had to read back in
+high school about taking the road less
+
+492
+00:09:30,070 --> 00:09:30,080
+high school about taking the road less
+ 
+
+493
+00:09:30,080 --> 00:09:31,430
+high school about taking the road less
+traveled.
+
+494
+00:09:31,430 --> 00:09:31,440
+traveled.
+ 
+
+495
+00:09:31,440 --> 00:09:33,910
+traveled.
+>> I think that looks really good. Um, so
+
+496
+00:09:33,910 --> 00:09:33,920
+>> I think that looks really good. Um, so
+ 
+
+497
+00:09:33,920 --> 00:09:35,670
+>> I think that looks really good. Um, so
+let's do this. Let's add it to the
+
+498
+00:09:35,670 --> 00:09:35,680
+let's do this. Let's add it to the
+ 
+
+499
+00:09:35,680 --> 00:09:37,350
+let's do this. Let's add it to the
+scene. So we're in the project here and
+
+500
+00:09:37,350 --> 00:09:37,360
+scene. So we're in the project here and
+ 
+
+501
+00:09:37,360 --> 00:09:39,030
+scene. So we're in the project here and
+we want to get it over to scene builder.
+
+502
+00:09:39,030 --> 00:09:39,040
+we want to get it over to scene builder.
+ 
+
+503
+00:09:39,040 --> 00:09:42,070
+we want to get it over to scene builder.
+So let's add it to scene.
+
+504
+00:09:42,070 --> 00:09:42,080
+So let's add it to scene.
+ 
+
+505
+00:09:42,080 --> 00:09:44,630
+So let's add it to scene.
+And now we're in scene builder. Um, and
+
+506
+00:09:44,630 --> 00:09:44,640
+And now we're in scene builder. Um, and
+ 
+
+507
+00:09:44,640 --> 00:09:46,710
+And now we're in scene builder. Um, and
+what I did when I did it is I just
+
+508
+00:09:46,710 --> 00:09:46,720
+what I did when I did it is I just
+ 
+
+509
+00:09:46,720 --> 00:09:49,030
+what I did when I did it is I just
+jumped to the last frame of each of the
+
+510
+00:09:49,030 --> 00:09:49,040
+jumped to the last frame of each of the
+ 
+
+511
+00:09:49,040 --> 00:09:50,710
+jumped to the last frame of each of the
+clips like this. And then there's a
+
+512
+00:09:50,710 --> 00:09:50,720
+clips like this. And then there's a
+ 
+
+513
+00:09:50,720 --> 00:09:52,470
+clips like this. And then there's a
+button at the top here that says save
+
+514
+00:09:52,470 --> 00:09:52,480
+button at the top here that says save
+ 
+
+515
+00:09:52,480 --> 00:09:56,310
+button at the top here that says save
+frame as asset. And I click that one and
+
+516
+00:09:56,310 --> 00:09:56,320
+frame as asset. And I click that one and
+ 
+
+517
+00:09:56,320 --> 00:09:59,269
+frame as asset. And I click that one and
+then it adds the frame there. And as you
+
+518
+00:09:59,269 --> 00:09:59,279
+then it adds the frame there. And as you
+ 
+
+519
+00:09:59,279 --> 00:10:01,190
+then it adds the frame there. And as you
+can see looking at these, you can kind
+
+520
+00:10:01,190 --> 00:10:01,200
+can see looking at these, you can kind
+ 
+
+521
+00:10:01,200 --> 00:10:04,310
+can see looking at these, you can kind
+of see how she changes over time. So she
+
+522
+00:10:04,310 --> 00:10:04,320
+of see how she changes over time. So she
+ 
+
+523
+00:10:04,320 --> 00:10:06,550
+of see how she changes over time. So she
+starts off here and then it's
+
+524
+00:10:06,550 --> 00:10:06,560
+starts off here and then it's
+ 
+
+525
+00:10:06,560 --> 00:10:08,550
+starts off here and then it's
+progressively changing and now it's a
+
+526
+00:10:08,550 --> 00:10:08,560
+progressively changing and now it's a
+ 
+
+527
+00:10:08,560 --> 00:10:10,230
+progressively changing and now it's a
+completely different person. So this is
+
+528
+00:10:10,230 --> 00:10:10,240
+completely different person. So this is
+ 
+
+529
+00:10:10,240 --> 00:10:12,870
+completely different person. So this is
+a good way to visualize the degradation
+
+530
+00:10:12,870 --> 00:10:12,880
+a good way to visualize the degradation
+ 
+
+531
+00:10:12,880 --> 00:10:16,389
+a good way to visualize the degradation
+of doing the last frame each time. Um,
+
+532
+00:10:16,389 --> 00:10:16,399
+of doing the last frame each time. Um,
+ 
+
+533
+00:10:16,399 --> 00:10:18,069
+of doing the last frame each time. Um,
+one thing that I wanted to try and
+
+534
+00:10:18,069 --> 00:10:18,079
+one thing that I wanted to try and
+ 
+
+535
+00:10:18,079 --> 00:10:21,110
+one thing that I wanted to try and
+someone suggested, um, was not
+
+536
+00:10:21,110 --> 00:10:21,120
+someone suggested, um, was not
+ 
+
+537
+00:10:21,120 --> 00:10:23,030
+someone suggested, um, was not
+necessarily sometimes the last frame is
+
+538
+00:10:23,030 --> 00:10:23,040
+necessarily sometimes the last frame is
+ 
+
+539
+00:10:23,040 --> 00:10:24,870
+necessarily sometimes the last frame is
+blurry. Like if you'll see around her
+
+540
+00:10:24,870 --> 00:10:24,880
+blurry. Like if you'll see around her
+ 
+
+541
+00:10:24,880 --> 00:10:27,509
+blurry. Like if you'll see around her
+eyes, they're a little bit blurry where
+
+542
+00:10:27,509 --> 00:10:27,519
+eyes, they're a little bit blurry where
+ 
+
+543
+00:10:27,519 --> 00:10:30,150
+eyes, they're a little bit blurry where
+if you go here, they're not quite as
+
+544
+00:10:30,150 --> 00:10:30,160
+if you go here, they're not quite as
+ 
+
+545
+00:10:30,160 --> 00:10:33,670
+if you go here, they're not quite as
+blurry. So, because this is a little bit
+
+546
+00:10:33,670 --> 00:10:33,680
+blurry. So, because this is a little bit
+ 
+
+547
+00:10:33,680 --> 00:10:36,550
+blurry. So, because this is a little bit
+higher quality here, um, we're going to
+
+548
+00:10:36,550 --> 00:10:36,560
+higher quality here, um, we're going to
+ 
+
+549
+00:10:36,560 --> 00:10:39,350
+higher quality here, um, we're going to
+use this as the last frame. Um, and I
+
+550
+00:10:39,350 --> 00:10:39,360
+use this as the last frame. Um, and I
+ 
+
+551
+00:10:39,360 --> 00:10:40,630
+use this as the last frame. Um, and I
+know what you're thinking. It's not all
+
+552
+00:10:40,630 --> 00:10:40,640
+know what you're thinking. It's not all
+ 
+
+553
+00:10:40,640 --> 00:10:42,630
+know what you're thinking. It's not all
+going to blend together. But what I
+
+554
+00:10:42,630 --> 00:10:42,640
+going to blend together. But what I
+ 
+
+555
+00:10:42,640 --> 00:10:44,949
+going to blend together. But what I
+noticed is when I did last frame, first
+
+556
+00:10:44,949 --> 00:10:44,959
+noticed is when I did last frame, first
+ 
+
+557
+00:10:44,959 --> 00:10:47,990
+noticed is when I did last frame, first
+frame, and actually used the last frame,
+
+558
+00:10:47,990 --> 00:10:48,000
+frame, and actually used the last frame,
+ 
+
+559
+00:10:48,000 --> 00:10:50,389
+frame, and actually used the last frame,
+I still had to trim up the clips in a
+
+560
+00:10:50,389 --> 00:10:50,399
+I still had to trim up the clips in a
+ 
+
+561
+00:10:50,399 --> 00:10:52,870
+I still had to trim up the clips in a
+video editing program. It it wasn't a
+
+562
+00:10:52,870 --> 00:10:52,880
+video editing program. It it wasn't a
+ 
+
+563
+00:10:52,880 --> 00:10:55,829
+video editing program. It it wasn't a
+seamless single clip. Um, I had to
+
+564
+00:10:55,829 --> 00:10:55,839
+seamless single clip. Um, I had to
+ 
+
+565
+00:10:55,839 --> 00:10:57,670
+seamless single clip. Um, I had to
+download each individual clip and trim
+
+566
+00:10:57,670 --> 00:10:57,680
+download each individual clip and trim
+ 
+
+567
+00:10:57,680 --> 00:10:59,430
+download each individual clip and trim
+them up. And since I have to do that
+
+568
+00:10:59,430 --> 00:10:59,440
+them up. And since I have to do that
+ 
+
+569
+00:10:59,440 --> 00:11:01,269
+them up. And since I have to do that
+anyway, I may as well try and find the
+
+570
+00:11:01,269 --> 00:11:01,279
+anyway, I may as well try and find the
+ 
+
+571
+00:11:01,279 --> 00:11:03,750
+anyway, I may as well try and find the
+best clip that I can. So, let's use this
+
+572
+00:11:03,750 --> 00:11:03,760
+best clip that I can. So, let's use this
+ 
+
+573
+00:11:03,760 --> 00:11:05,269
+best clip that I can. So, let's use this
+frame as asset. And I don't want to go
+
+574
+00:11:05,269 --> 00:11:05,279
+frame as asset. And I don't want to go
+ 
+
+575
+00:11:05,279 --> 00:11:07,269
+frame as asset. And I don't want to go
+too far back as she talks almost all the
+
+576
+00:11:07,269 --> 00:11:07,279
+too far back as she talks almost all the
+ 
+
+577
+00:11:07,279 --> 00:11:11,269
+too far back as she talks almost all the
+way to the end. Let's see. less travel.
+
+578
+00:11:11,269 --> 00:11:11,279
+way to the end. Let's see. less travel.
+ 
+
+579
+00:11:11,279 --> 00:11:13,590
+way to the end. Let's see. less travel.
+>> Yeah. So, we've got like a like a
+
+580
+00:11:13,590 --> 00:11:13,600
+>> Yeah. So, we've got like a like a
+ 
+
+581
+00:11:13,600 --> 00:11:16,310
+>> Yeah. So, we've got like a like a
+quarter of a second or so. So, that's a
+
+582
+00:11:16,310 --> 00:11:16,320
+quarter of a second or so. So, that's a
+ 
+
+583
+00:11:16,320 --> 00:11:18,150
+quarter of a second or so. So, that's a
+pretty good shot there, right? All
+
+584
+00:11:18,150 --> 00:11:18,160
+pretty good shot there, right? All
+ 
+
+585
+00:11:18,160 --> 00:11:20,310
+pretty good shot there, right? All
+right. So, we'll use this frame as the
+
+586
+00:11:20,310 --> 00:11:20,320
+right. So, we'll use this frame as the
+ 
+
+587
+00:11:20,320 --> 00:11:23,030
+right. So, we'll use this frame as the
+asset. I like this too cuz she's looking
+
+588
+00:11:23,030 --> 00:11:23,040
+asset. I like this too cuz she's looking
+ 
+
+589
+00:11:23,040 --> 00:11:24,389
+asset. I like this too cuz she's looking
+at the camera. So, hopefully this will
+
+590
+00:11:24,389 --> 00:11:24,399
+at the camera. So, hopefully this will
+ 
+
+591
+00:11:24,399 --> 00:11:26,310
+at the camera. So, hopefully this will
+help keep her consistent. So, if this
+
+592
+00:11:26,310 --> 00:11:26,320
+help keep her consistent. So, if this
+ 
+
+593
+00:11:26,320 --> 00:11:27,829
+help keep her consistent. So, if this
+makes sense, we've got our first clip
+
+594
+00:11:27,829 --> 00:11:27,839
+makes sense, we've got our first clip
+ 
+
+595
+00:11:27,839 --> 00:11:29,990
+makes sense, we've got our first clip
+here. We've saved this frame as an
+
+596
+00:11:29,990 --> 00:11:30,000
+here. We've saved this frame as an
+ 
+
+597
+00:11:30,000 --> 00:11:31,750
+here. We've saved this frame as an
+asset. So, now we're using this last
+
+598
+00:11:31,750 --> 00:11:31,760
+asset. So, now we're using this last
+ 
+
+599
+00:11:31,760 --> 00:11:34,630
+asset. So, now we're using this last
+frame or almost last frame as our first
+
+600
+00:11:34,630 --> 00:11:34,640
+frame or almost last frame as our first
+ 
+
+601
+00:11:34,640 --> 00:11:36,949
+frame or almost last frame as our first
+frame over here. So, now motion tracking
+
+602
+00:11:36,949 --> 00:11:36,959
+frame over here. So, now motion tracking
+ 
+
+603
+00:11:36,959 --> 00:11:38,710
+frame over here. So, now motion tracking
+shot of the woman walking. She says,
+
+604
+00:11:38,710 --> 00:11:38,720
+shot of the woman walking. She says,
+ 
+
+605
+00:11:38,720 --> 00:11:40,230
+shot of the woman walking. She says,
+"Everyone was so sure they'd take the
+
+606
+00:11:40,230 --> 00:11:40,240
+"Everyone was so sure they'd take the
+ 
+
+607
+00:11:40,240 --> 00:11:43,350
+"Everyone was so sure they'd take the
+road less traveled, including me." So,
+
+608
+00:11:43,350 --> 00:11:43,360
+road less traveled, including me." So,
+ 
+
+609
+00:11:43,360 --> 00:11:46,150
+road less traveled, including me." So,
+we've switched over here to V3 fast
+
+610
+00:11:46,150 --> 00:11:46,160
+we've switched over here to V3 fast
+ 
+
+611
+00:11:46,160 --> 00:11:48,790
+we've switched over here to V3 fast
+mode. I'm going to switch back to V3
+
+612
+00:11:48,790 --> 00:11:48,800
+mode. I'm going to switch back to V3
+ 
+
+613
+00:11:48,800 --> 00:11:50,949
+mode. I'm going to switch back to V3
+quality mode. So, I'm not sure why it
+
+614
+00:11:50,949 --> 00:11:50,959
+quality mode. So, I'm not sure why it
+ 
+
+615
+00:11:50,959 --> 00:11:52,389
+quality mode. So, I'm not sure why it
+switched over, but it did. And as you
+
+616
+00:11:52,389 --> 00:11:52,399
+switched over, but it did. And as you
+ 
+
+617
+00:11:52,399 --> 00:11:54,150
+switched over, but it did. And as you
+can see, we're going from 20 to 100
+
+618
+00:11:54,150 --> 00:11:54,160
+can see, we're going from 20 to 100
+ 
+
+619
+00:11:54,160 --> 00:11:55,990
+can see, we're going from 20 to 100
+credits again. And now, let's run this
+
+620
+00:11:55,990 --> 00:11:56,000
+credits again. And now, let's run this
+ 
+
+621
+00:11:56,000 --> 00:11:58,150
+credits again. And now, let's run this
+one.
+
+622
+00:11:58,150 --> 00:11:58,160
+one.
+ 
+
+623
+00:11:58,160 --> 00:12:00,470
+one.
+>> Everyone was so sure they'll take the
+
+624
+00:12:00,470 --> 00:12:00,480
+>> Everyone was so sure they'll take the
+ 
+
+625
+00:12:00,480 --> 00:12:04,790
+>> Everyone was so sure they'll take the
+road less traveled, me included. Already
+
+626
+00:12:04,790 --> 00:12:04,800
+road less traveled, me included. Already
+ 
+
+627
+00:12:04,800 --> 00:12:08,150
+road less traveled, me included. Already
+we can kind of see between that and that
+
+628
+00:12:08,150 --> 00:12:08,160
+we can kind of see between that and that
+ 
+
+629
+00:12:08,160 --> 00:12:10,870
+we can kind of see between that and that
+it's kind of the same, but we we I can
+
+630
+00:12:10,870 --> 00:12:10,880
+it's kind of the same, but we we I can
+ 
+
+631
+00:12:10,880 --> 00:12:12,470
+it's kind of the same, but we we I can
+tell we're going to we're losing it a
+
+632
+00:12:12,470 --> 00:12:12,480
+tell we're going to we're losing it a
+ 
+
+633
+00:12:12,480 --> 00:12:14,550
+tell we're going to we're losing it a
+little bit, right? Um let's try that,
+
+634
+00:12:14,550 --> 00:12:14,560
+little bit, right? Um let's try that,
+ 
+
+635
+00:12:14,560 --> 00:12:16,790
+little bit, right? Um let's try that,
+but this time let's trim it up a little
+
+636
+00:12:16,790 --> 00:12:16,800
+but this time let's trim it up a little
+ 
+
+637
+00:12:16,800 --> 00:12:19,509
+but this time let's trim it up a little
+bit. So, we've trimmed it and we'll save
+
+638
+00:12:19,509 --> 00:12:19,519
+bit. So, we've trimmed it and we'll save
+ 
+
+639
+00:12:19,519 --> 00:12:21,829
+bit. So, we've trimmed it and we'll save
+frame as asset
+
+640
+00:12:21,829 --> 00:12:21,839
+frame as asset
+ 
+
+641
+00:12:21,839 --> 00:12:24,230
+frame as asset
+and click that and then say motion
+
+642
+00:12:24,230 --> 00:12:24,240
+and click that and then say motion
+ 
+
+643
+00:12:24,240 --> 00:12:26,069
+and click that and then say motion
+tracking. Now, one thing that I've
+
+644
+00:12:26,069 --> 00:12:26,079
+tracking. Now, one thing that I've
+ 
+
+645
+00:12:26,079 --> 00:12:27,670
+tracking. Now, one thing that I've
+noticed is like sometimes you can add
+
+646
+00:12:27,670 --> 00:12:27,680
+noticed is like sometimes you can add
+ 
+
+647
+00:12:27,680 --> 00:12:29,990
+noticed is like sometimes you can add
+words in there like regretfully uh to
+
+648
+00:12:29,990 --> 00:12:30,000
+words in there like regretfully uh to
+ 
+
+649
+00:12:30,000 --> 00:12:31,110
+words in there like regretfully uh to
+try and give her a little bit of
+
+650
+00:12:31,110 --> 00:12:31,120
+try and give her a little bit of
+ 
+
+651
+00:12:31,120 --> 00:12:32,870
+try and give her a little bit of
+emotion. Sometimes it works, sometimes
+
+652
+00:12:32,870 --> 00:12:32,880
+emotion. Sometimes it works, sometimes
+ 
+
+653
+00:12:32,880 --> 00:12:34,150
+emotion. Sometimes it works, sometimes
+it doesn't. But let's see how this
+
+654
+00:12:34,150 --> 00:12:34,160
+it doesn't. But let's see how this
+ 
+
+655
+00:12:34,160 --> 00:12:35,190
+it doesn't. But let's see how this
+works.
+
+656
+00:12:35,190 --> 00:12:35,200
+works.
+ 
+
+657
+00:12:35,200 --> 00:12:38,949
+works.
+>> But that's not how things turned out.
+
+658
+00:12:38,949 --> 00:12:38,959
+>> But that's not how things turned out.
+ 
+
+659
+00:12:38,959 --> 00:12:40,790
+>> But that's not how things turned out.
+I've always taken the road most
+
+660
+00:12:40,790 --> 00:12:40,800
+I've always taken the road most
+ 
+
+661
+00:12:40,800 --> 00:12:42,790
+I've always taken the road most
+traveled.
+
+662
+00:12:42,790 --> 00:12:42,800
+traveled.
+ 
+
+663
+00:12:42,800 --> 00:12:47,110
+traveled.
+>> If you've ever used VO3, you know this,
+
+664
+00:12:47,110 --> 00:12:47,120
+>> If you've ever used VO3, you know this,
+ 
+
+665
+00:12:47,120 --> 00:12:49,750
+>> If you've ever used VO3, you know this,
+and I have had a lot of people tell me
+
+666
+00:12:49,750 --> 00:12:49,760
+and I have had a lot of people tell me
+ 
+
+667
+00:12:49,760 --> 00:12:51,910
+and I have had a lot of people tell me
+all of the things that you can do to not
+
+668
+00:12:51,910 --> 00:12:51,920
+all of the things that you can do to not
+ 
+
+669
+00:12:51,920 --> 00:12:53,990
+all of the things that you can do to not
+get subtitles. And I've tried all of
+
+670
+00:12:53,990 --> 00:12:54,000
+get subtitles. And I've tried all of
+ 
+
+671
+00:12:54,000 --> 00:12:57,430
+get subtitles. And I've tried all of
+them, and nothing works 100%. I kind of
+
+672
+00:12:57,430 --> 00:12:57,440
+them, and nothing works 100%. I kind of
+ 
+
+673
+00:12:57,440 --> 00:12:59,190
+them, and nothing works 100%. I kind of
+get the impression that not putting
+
+674
+00:12:59,190 --> 00:12:59,200
+get the impression that not putting
+ 
+
+675
+00:12:59,200 --> 00:13:02,550
+get the impression that not putting
+quotes in helps a little bit, but as you
+
+676
+00:13:02,550 --> 00:13:02,560
+quotes in helps a little bit, but as you
+ 
+
+677
+00:13:02,560 --> 00:13:04,230
+quotes in helps a little bit, but as you
+can see in that one, there are no
+
+678
+00:13:04,230 --> 00:13:04,240
+can see in that one, there are no
+ 
+
+679
+00:13:04,240 --> 00:13:06,470
+can see in that one, there are no
+quotes. And I've tried the same thing by
+
+680
+00:13:06,470 --> 00:13:06,480
+quotes. And I've tried the same thing by
+ 
+
+681
+00:13:06,480 --> 00:13:08,629
+quotes. And I've tried the same thing by
+saying no subtitles, and I still get
+
+682
+00:13:08,629 --> 00:13:08,639
+saying no subtitles, and I still get
+ 
+
+683
+00:13:08,639 --> 00:13:11,670
+saying no subtitles, and I still get
+subtitles. So, so if I were doing this
+
+684
+00:13:11,670 --> 00:13:11,680
+subtitles. So, so if I were doing this
+ 
+
+685
+00:13:11,680 --> 00:13:13,829
+subtitles. So, so if I were doing this
+for real and not for this tutorial, I
+
+686
+00:13:13,829 --> 00:13:13,839
+for real and not for this tutorial, I
+ 
+
+687
+00:13:13,839 --> 00:13:15,990
+for real and not for this tutorial, I
+would redo this one. Uh, but since
+
+688
+00:13:15,990 --> 00:13:16,000
+would redo this one. Uh, but since
+ 
+
+689
+00:13:16,000 --> 00:13:18,470
+would redo this one. Uh, but since
+there's not captions on this final frame
+
+690
+00:13:18,470 --> 00:13:18,480
+there's not captions on this final frame
+ 
+
+691
+00:13:18,480 --> 00:13:19,910
+there's not captions on this final frame
+that we want to use, I'm just going to
+
+692
+00:13:19,910 --> 00:13:19,920
+that we want to use, I'm just going to
+ 
+
+693
+00:13:19,920 --> 00:13:21,509
+that we want to use, I'm just going to
+keep them for now. That's actually a
+
+694
+00:13:21,509 --> 00:13:21,519
+keep them for now. That's actually a
+ 
+
+695
+00:13:21,519 --> 00:13:23,350
+keep them for now. That's actually a
+pretty good shot. I think you can kind
+
+696
+00:13:23,350 --> 00:13:23,360
+pretty good shot. I think you can kind
+ 
+
+697
+00:13:23,360 --> 00:13:25,030
+pretty good shot. I think you can kind
+of tell she's walking and she's smiling
+
+698
+00:13:25,030 --> 00:13:25,040
+of tell she's walking and she's smiling
+ 
+
+699
+00:13:25,040 --> 00:13:26,629
+of tell she's walking and she's smiling
+a little bit. Let's actually use the
+
+700
+00:13:26,629 --> 00:13:26,639
+a little bit. Let's actually use the
+ 
+
+701
+00:13:26,639 --> 00:13:29,509
+a little bit. Let's actually use the
+final frame this time. Now, I did this a
+
+702
+00:13:29,509 --> 00:13:29,519
+final frame this time. Now, I did this a
+ 
+
+703
+00:13:29,519 --> 00:13:31,350
+final frame this time. Now, I did this a
+little bit later in mind, but I wanted
+
+704
+00:13:31,350 --> 00:13:31,360
+little bit later in mind, but I wanted
+ 
+
+705
+00:13:31,360 --> 00:13:33,829
+little bit later in mind, but I wanted
+to slowly introduce things that are
+
+706
+00:13:33,829 --> 00:13:33,839
+to slowly introduce things that are
+ 
+
+707
+00:13:33,839 --> 00:13:35,670
+to slowly introduce things that are
+changing. Um, so we can say motion
+
+708
+00:13:35,670 --> 00:13:35,680
+changing. Um, so we can say motion
+ 
+
+709
+00:13:35,680 --> 00:13:38,550
+changing. Um, so we can say motion
+tracking shot of the woman walking. So,
+
+710
+00:13:38,550 --> 00:13:38,560
+tracking shot of the woman walking. So,
+ 
+
+711
+00:13:38,560 --> 00:13:40,629
+tracking shot of the woman walking. So,
+now we can introduce other elements that
+
+712
+00:13:40,629 --> 00:13:40,639
+now we can introduce other elements that
+ 
+
+713
+00:13:40,639 --> 00:13:42,949
+now we can introduce other elements that
+will be showing up as she's walking.
+
+714
+00:13:42,949 --> 00:13:42,959
+will be showing up as she's walking.
+ 
+
+715
+00:13:42,959 --> 00:13:44,470
+will be showing up as she's walking.
+>> I did all the things I was supposed to
+
+716
+00:13:44,470 --> 00:13:44,480
+>> I did all the things I was supposed to
+ 
+
+717
+00:13:44,480 --> 00:13:46,550
+>> I did all the things I was supposed to
+do. Got a job, got married, got
+
+718
+00:13:46,550 --> 00:13:46,560
+do. Got a job, got married, got
+ 
+
+719
+00:13:46,560 --> 00:13:48,470
+do. Got a job, got married, got
+divorced.
+
+720
+00:13:48,470 --> 00:13:48,480
+divorced.
+ 
+
+721
+00:13:48,480 --> 00:13:50,870
+divorced.
+Rinse and repeat.
+
+722
+00:13:50,870 --> 00:13:50,880
+Rinse and repeat.
+ 
+
+723
+00:13:50,880 --> 00:13:53,509
+Rinse and repeat.
+So, on the pro side, I love the fact
+
+724
+00:13:53,509 --> 00:13:53,519
+So, on the pro side, I love the fact
+ 
+
+725
+00:13:53,519 --> 00:13:56,150
+So, on the pro side, I love the fact
+that we switched to this profile view
+
+726
+00:13:56,150 --> 00:13:56,160
+that we switched to this profile view
+ 
+
+727
+00:13:56,160 --> 00:13:57,670
+that we switched to this profile view
+and we have this person in the park
+
+728
+00:13:57,670 --> 00:13:57,680
+and we have this person in the park
+ 
+
+729
+00:13:57,680 --> 00:14:00,710
+and we have this person in the park
+bench like the prompt said. Um, on the
+
+730
+00:14:00,710 --> 00:14:00,720
+bench like the prompt said. Um, on the
+ 
+
+731
+00:14:00,720 --> 00:14:03,590
+bench like the prompt said. Um, on the
+con side, the talking, if you just look
+
+732
+00:14:03,590 --> 00:14:03,600
+con side, the talking, if you just look
+ 
+
+733
+00:14:03,600 --> 00:14:06,870
+con side, the talking, if you just look
+at it in general, it's fine, but when
+
+734
+00:14:06,870 --> 00:14:06,880
+at it in general, it's fine, but when
+ 
+
+735
+00:14:06,880 --> 00:14:09,990
+at it in general, it's fine, but when
+she's talking, it seems like maybe she's
+
+736
+00:14:09,990 --> 00:14:10,000
+she's talking, it seems like maybe she's
+ 
+
+737
+00:14:10,000 --> 00:14:11,590
+she's talking, it seems like maybe she's
+talking to the interviewer over here and
+
+738
+00:14:11,590 --> 00:14:11,600
+talking to the interviewer over here and
+ 
+
+739
+00:14:11,600 --> 00:14:13,430
+talking to the interviewer over here and
+the camera moved to the side. We have a
+
+740
+00:14:13,430 --> 00:14:13,440
+the camera moved to the side. We have a
+ 
+
+741
+00:14:13,440 --> 00:14:14,710
+the camera moved to the side. We have a
+lot to work with here because she says
+
+742
+00:14:14,710 --> 00:14:14,720
+lot to work with here because she says
+ 
+
+743
+00:14:14,720 --> 00:14:16,870
+lot to work with here because she says
+rinse and repeat here. I think she got
+
+744
+00:14:16,870 --> 00:14:16,880
+rinse and repeat here. I think she got
+ 
+
+745
+00:14:16,880 --> 00:14:19,430
+rinse and repeat here. I think she got
+some extra piercings, too, maybe. All
+
+746
+00:14:19,430 --> 00:14:19,440
+some extra piercings, too, maybe. All
+ 
+
+747
+00:14:19,440 --> 00:14:21,670
+some extra piercings, too, maybe. All
+right, let's kind of play off of this
+
+748
+00:14:21,670 --> 00:14:21,680
+right, let's kind of play off of this
+ 
+
+749
+00:14:21,680 --> 00:14:23,750
+right, let's kind of play off of this
+and let's have someone holding a boom
+
+750
+00:14:23,750 --> 00:14:23,760
+and let's have someone holding a boom
+ 
+
+751
+00:14:23,760 --> 00:14:26,150
+and let's have someone holding a boom
+mic. Like like the camera person moved
+
+752
+00:14:26,150 --> 00:14:26,160
+mic. Like like the camera person moved
+ 
+
+753
+00:14:26,160 --> 00:14:27,829
+mic. Like like the camera person moved
+over. I imagine there's someone holding
+
+754
+00:14:27,829 --> 00:14:27,839
+over. I imagine there's someone holding
+ 
+
+755
+00:14:27,839 --> 00:14:29,509
+over. I imagine there's someone holding
+a boom mic over here and there's an
+
+756
+00:14:29,509 --> 00:14:29,519
+a boom mic over here and there's an
+ 
+
+757
+00:14:29,519 --> 00:14:31,670
+a boom mic over here and there's an
+interviewer here and we're the camera.
+
+758
+00:14:31,670 --> 00:14:31,680
+interviewer here and we're the camera.
+ 
+
+759
+00:14:31,680 --> 00:14:34,550
+interviewer here and we're the camera.
+>> But I like where I'm at now
+
+760
+00:14:34,550 --> 00:14:34,560
+>> But I like where I'm at now
+ 
+
+761
+00:14:34,560 --> 00:14:37,829
+>> But I like where I'm at now
+and I only got here because my road took
+
+762
+00:14:37,829 --> 00:14:37,839
+and I only got here because my road took
+ 
+
+763
+00:14:37,839 --> 00:14:39,189
+and I only got here because my road took
+me here.
+
+764
+00:14:39,189 --> 00:14:39,199
+me here.
+ 
+
+765
+00:14:39,199 --> 00:14:40,550
+me here.
+>> And let's update the script a little
+
+766
+00:14:40,550 --> 00:14:40,560
+>> And let's update the script a little
+ 
+
+767
+00:14:40,560 --> 00:14:42,710
+>> And let's update the script a little
+bit. I It was like 11:00 p.m. at night
+
+768
+00:14:42,710 --> 00:14:42,720
+bit. I It was like 11:00 p.m. at night
+ 
+
+769
+00:14:42,720 --> 00:14:44,230
+bit. I It was like 11:00 p.m. at night
+when I was writing this. So, let's just
+
+770
+00:14:44,230 --> 00:14:44,240
+when I was writing this. So, let's just
+ 
+
+771
+00:14:44,240 --> 00:14:45,509
+when I was writing this. So, let's just
+change it. I'm not going to change it
+
+772
+00:14:45,509 --> 00:14:45,519
+change it. I'm not going to change it
+ 
+
+773
+00:14:45,519 --> 00:14:47,269
+change it. I'm not going to change it
+too much, but let's just have her say,
+
+774
+00:14:47,269 --> 00:14:47,279
+too much, but let's just have her say,
+ 
+
+775
+00:14:47,279 --> 00:14:48,230
+too much, but let's just have her say,
+um,
+
+776
+00:14:48,230 --> 00:14:48,240
+um,
+ 
+
+777
+00:14:48,240 --> 00:14:51,269
+um,
+>> and why wouldn't I?
+
+778
+00:14:51,269 --> 00:14:51,279
+>> and why wouldn't I?
+ 
+
+779
+00:14:51,279 --> 00:14:55,590
+>> and why wouldn't I?
+This road made me younger in 60 seconds.
+
+780
+00:14:55,590 --> 00:14:55,600
+This road made me younger in 60 seconds.
+ 
+
+781
+00:14:55,600 --> 00:14:57,110
+This road made me younger in 60 seconds.
+>> So, I think you get the idea of how to
+
+782
+00:14:57,110 --> 00:14:57,120
+>> So, I think you get the idea of how to
+ 
+
+783
+00:14:57,120 --> 00:15:00,629
+>> So, I think you get the idea of how to
+do it. So, is V3 quality perfect? No.
+
+784
+00:15:00,629 --> 00:15:00,639
+do it. So, is V3 quality perfect? No.
+ 
+
+785
+00:15:00,639 --> 00:15:02,629
+do it. So, is V3 quality perfect? No.
+But it's definitely a lot better than
+
+786
+00:15:02,629 --> 00:15:02,639
+But it's definitely a lot better than
+ 
+
+787
+00:15:02,639 --> 00:15:05,590
+But it's definitely a lot better than
+the fast mode in terms of taking the
+
+788
+00:15:05,590 --> 00:15:05,600
+the fast mode in terms of taking the
+ 
+
+789
+00:15:05,600 --> 00:15:07,590
+the fast mode in terms of taking the
+last frame and using it as the first
+
+790
+00:15:07,590 --> 00:15:07,600
+last frame and using it as the first
+ 
+
+791
+00:15:07,600 --> 00:15:10,710
+last frame and using it as the first
+frame. The tradeoff there is that it's
+
+792
+00:15:10,710 --> 00:15:10,720
+frame. The tradeoff there is that it's
+ 
+
+793
+00:15:10,720 --> 00:15:13,829
+frame. The tradeoff there is that it's
+much more credit intensive. So, it's
+
+794
+00:15:13,829 --> 00:15:13,839
+much more credit intensive. So, it's
+ 
+
+795
+00:15:13,839 --> 00:15:16,069
+much more credit intensive. So, it's
+five to one like I said. So, you can do
+
+796
+00:15:16,069 --> 00:15:16,079
+five to one like I said. So, you can do
+ 
+
+797
+00:15:16,079 --> 00:15:19,430
+five to one like I said. So, you can do
+a lot more iterating with the fast mode.
+
+798
+00:15:19,430 --> 00:15:19,440
+a lot more iterating with the fast mode.
+ 
+
+799
+00:15:19,440 --> 00:15:20,870
+a lot more iterating with the fast mode.
+I hope this was helpful. I hope this
+
+800
+00:15:20,870 --> 00:15:20,880
+I hope this was helpful. I hope this
+ 
+
+801
+00:15:20,880 --> 00:15:23,509
+I hope this was helpful. I hope this
+helps you uh create single continuous
+
+802
+00:15:23,509 --> 00:15:23,519
+helps you uh create single continuous
+ 
+
+803
+00:15:23,519 --> 00:15:25,910
+helps you uh create single continuous
+shots using either of the methods,
+
+804
+00:15:25,910 --> 00:15:25,920
+shots using either of the methods,
+ 
+
+805
+00:15:25,920 --> 00:15:27,590
+shots using either of the methods,
+whether you're extending a clip or
+
+806
+00:15:27,590 --> 00:15:27,600
+whether you're extending a clip or
+ 
+
+807
+00:15:27,600 --> 00:15:29,110
+whether you're extending a clip or
+whether you're doing the last frame
+
+808
+00:15:29,110 --> 00:15:29,120
+whether you're doing the last frame
+ 
+
+809
+00:15:29,120 --> 00:15:30,949
+whether you're doing the last frame
+first frame or maybe you're doing a
+
+810
+00:15:30,949 --> 00:15:30,959
+first frame or maybe you're doing a
+ 
+
+811
+00:15:30,959 --> 00:15:33,590
+first frame or maybe you're doing a
+combination of both. I don't know. U but
+
+812
+00:15:33,590 --> 00:15:33,600
+combination of both. I don't know. U but
+ 
+
+813
+00:15:33,600 --> 00:15:35,509
+combination of both. I don't know. U but
+hopefully that helps you understand how
+
+814
+00:15:35,509 --> 00:15:35,519
+hopefully that helps you understand how
+ 
+
+815
+00:15:35,519 --> 00:15:37,030
+hopefully that helps you understand how
+people are doing these really cool
+
+816
+00:15:37,030 --> 00:15:37,040
+people are doing these really cool
+ 
+
+817
+00:15:37,040 --> 00:15:39,910
+people are doing these really cool
+shots. And that's it for me. Uh do you
+
+818
+00:15:39,910 --> 00:15:39,920
+shots. And that's it for me. Uh do you
+ 
+
+819
+00:15:39,920 --> 00:15:41,910
+shots. And that's it for me. Uh do you
+have any final words?
+
+820
+00:15:41,910 --> 00:15:41,920
+have any final words?
+ 
+
+821
+00:15:41,920 --> 00:15:45,030
+have any final words?
+Sub subscribe to AI video school and
+
+822
+00:15:45,030 --> 00:15:45,040
+Sub subscribe to AI video school and
+ 
+
+823
+00:15:45,040 --> 00:15:59,530
+Sub subscribe to AI video school and
+come along for the along for the ride.
+
+824
+00:15:59,530 --> 00:15:59,540
+
+ 
+
+825
+00:15:59,540 --> 00:16:00,460
+
+[Applause]
+
+826
+00:16:00,460 --> 00:16:00,470
+[Applause]
+ 
+
+827
+00:16:00,470 --> 00:16:02,770
+[Applause]
+[Music]
+
+828
+00:16:02,770 --> 00:16:02,780
+[Music]
+ 
+
+829
+00:16:02,780 --> 00:16:06,140
+[Music]
+[Applause]
+
+830
+00:16:06,140 --> 00:16:06,150
+[Applause]
+ 
+
+831
+00:16:06,150 --> 00:16:11,080
+[Applause]
+[Music]
+

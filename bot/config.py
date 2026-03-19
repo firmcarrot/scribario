@@ -36,6 +36,17 @@ class Settings(BaseSettings):
     postiz_api_key: str = ""
     postiz_org_id: str = ""
     postiz_session_token: str = ""
+    postiz_jwt_secret: str = ""
+
+    # OAuth connect proxy
+    connect_base_url: str = "https://connect.scribario.com"
+
+    # Stripe
+    stripe_api_key: str = ""
+    stripe_webhook_secret: str = ""
+    stripe_starter_price_id: str = ""
+    stripe_growth_price_id: str = ""
+    stripe_pro_price_id: str = ""
 
     # Redis (FSM storage for bot state)
     redis_url: str = "redis://localhost:6379/0"
@@ -46,6 +57,10 @@ class Settings(BaseSettings):
 
     # Long video pipeline
     long_video_max_cost_usd: float = 10.0
+
+    # Autopilot hard ceilings
+    autopilot_max_daily_posts: int = 10
+    autopilot_max_monthly_cost_usd: float = 100.0
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 

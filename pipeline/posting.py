@@ -13,6 +13,49 @@ from bot.config import get_settings
 logger = logging.getLogger(__name__)
 
 
+def _extract_post_ids(response_data: object) -> dict[str, str]:
+    """Best-effort extraction of post IDs from Postiz API response.
+
+    Postiz response shape varies — this handles common patterns.
+    Returns mapping of platform/index -> post_id.
+    """
+    ids: dict[str, str] = {}
+
+    if isinstance(response_data, dict):
+        # Single post response: {"id": "...", "postId": "..."}
+        for key in ("id", "postId", "post_id"):
+            if key in response_data:
+                ids["0"] = str(response_data[key])
+                break
+
+        # Nested posts: {"posts": [{"id": "...", "platform": "..."}]}
+        if "posts" in response_data and isinstance(response_data["posts"], list):
+            for i, post in enumerate(response_data["posts"]):
+                if isinstance(post, dict):
+                    post_id = post.get("id") or post.get("postId")
+                    platform = (
+                        post.get("platform") or post.get("identifier")
+                    )
+                    if post_id:
+                        if platform:
+                            ids[platform] = str(post_id)
+                        ids[str(i)] = str(post_id)
+
+    elif isinstance(response_data, list):
+        # Array response: [{"postId": "..."}]
+        for i, item in enumerate(response_data):
+            if isinstance(item, dict):
+                post_id = (
+                    item.get("id")
+                    or item.get("postId")
+                    or item.get("post_id")
+                )
+                if post_id:
+                    ids[str(i)] = str(post_id)
+
+    return ids
+
+
 @dataclass
 class PostingResult:
     """Result from posting to a platform."""
@@ -139,14 +182,24 @@ class PostizClient:
                 response.raise_for_status()
                 data = response.json()
 
-            logger.info("Postiz post submitted", extra={"platforms": list(platform_to_integration.keys()), "response": str(data)[:200]})
+            logger.info(
+                "Postiz post submitted",
+                extra={
+                    "platforms": list(platform_to_integration.keys()),
+                    "response": str(data)[:200],
+                },
+            )
+
+            # Try to extract post IDs from Postiz response
+            post_ids = _extract_post_ids(data)
 
             # Mark all as successful
-            for platform, _ in posts:
+            for i, (platform, _) in enumerate(posts):
+                post_id = post_ids.get(platform) or post_ids.get(str(i))
                 results.append(
                     PostingResult(
                         platform=platform,
-                        platform_post_id=None,
+                        platform_post_id=post_id,
                         platform_url=None,
                         success=True,
                     )

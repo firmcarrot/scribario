@@ -1,0 +1,2615 @@
+1
+00:00:00,480 --> 00:00:02,050
+
+Let's get started.
+
+2
+00:00:02,050 --> 00:00:02,060
+Let's get started.
+ 
+
+3
+00:00:02,060 --> 00:00:13,270
+Let's get started.
+[Music]
+
+4
+00:00:13,270 --> 00:00:13,280
+[Music]
+ 
+
+5
+00:00:13,280 --> 00:00:14,870
+[Music]
+>> Hey, what's up guys? I found this beer
+
+6
+00:00:14,870 --> 00:00:14,880
+>> Hey, what's up guys? I found this beer
+ 
+
+7
+00:00:14,880 --> 00:00:16,150
+>> Hey, what's up guys? I found this beer
+left over from some campers and I'm
+
+8
+00:00:16,150 --> 00:00:16,160
+left over from some campers and I'm
+ 
+
+9
+00:00:16,160 --> 00:00:17,029
+left over from some campers and I'm
+totally wasted.
+
+10
+00:00:17,029 --> 00:00:17,039
+totally wasted.
+ 
+
+11
+00:00:17,039 --> 00:00:20,230
+totally wasted.
+>> No way. This is wild. Collab of the
+
+12
+00:00:20,230 --> 00:00:20,240
+>> No way. This is wild. Collab of the
+ 
+
+13
+00:00:20,240 --> 00:00:21,990
+>> No way. This is wild. Collab of the
+century. Let's go.
+
+14
+00:00:21,990 --> 00:00:22,000
+century. Let's go.
+ 
+
+15
+00:00:22,000 --> 00:00:23,509
+century. Let's go.
+>> Everything that you have seen is
+
+16
+00:00:23,509 --> 00:00:23,519
+>> Everything that you have seen is
+ 
+
+17
+00:00:23,519 --> 00:00:25,590
+>> Everything that you have seen is
+completely AI generated, fully
+
+18
+00:00:25,590 --> 00:00:25,600
+completely AI generated, fully
+ 
+
+19
+00:00:25,600 --> 00:00:28,070
+completely AI generated, fully
+automated, and the best part, it's free.
+
+20
+00:00:28,070 --> 00:00:28,080
+automated, and the best part, it's free.
+ 
+
+21
+00:00:28,080 --> 00:00:30,470
+automated, and the best part, it's free.
+So today, let's build an automation
+
+22
+00:00:30,470 --> 00:00:30,480
+So today, let's build an automation
+ 
+
+23
+00:00:30,480 --> 00:00:32,950
+So today, let's build an automation
+using Google's most powerful video tool,
+
+24
+00:00:32,950 --> 00:00:32,960
+using Google's most powerful video tool,
+ 
+
+25
+00:00:32,960 --> 00:00:35,510
+using Google's most powerful video tool,
+which is VO3. And we're going to use any
+
+26
+00:00:35,510 --> 00:00:35,520
+which is VO3. And we're going to use any
+ 
+
+27
+00:00:35,520 --> 00:00:37,430
+which is VO3. And we're going to use any
+as well, an automation tool. And guess
+
+28
+00:00:37,430 --> 00:00:37,440
+as well, an automation tool. And guess
+ 
+
+29
+00:00:37,440 --> 00:00:39,270
+as well, an automation tool. And guess
+what? We're going to make everything for
+
+30
+00:00:39,270 --> 00:00:39,280
+what? We're going to make everything for
+ 
+
+31
+00:00:39,280 --> 00:00:41,670
+what? We're going to make everything for
+absolutely free. And hey, if you stick
+
+32
+00:00:41,670 --> 00:00:41,680
+absolutely free. And hey, if you stick
+ 
+
+33
+00:00:41,680 --> 00:00:43,430
+absolutely free. And hey, if you stick
+around till the end, there's a huge,
+
+34
+00:00:43,430 --> 00:00:43,440
+around till the end, there's a huge,
+ 
+
+35
+00:00:43,440 --> 00:00:44,950
+around till the end, there's a huge,
+huge surprise waiting for you, and you
+
+36
+00:00:44,950 --> 00:00:44,960
+huge surprise waiting for you, and you
+ 
+
+37
+00:00:44,960 --> 00:00:46,600
+huge surprise waiting for you, and you
+don't want to miss that.
+
+38
+00:00:46,600 --> 00:00:46,610
+don't want to miss that.
+ 
+
+39
+00:00:46,610 --> 00:00:48,549
+don't want to miss that.
+[Music]
+
+40
+00:00:48,549 --> 00:00:48,559
+[Music]
+ 
+
+41
+00:00:48,559 --> 00:00:49,990
+[Music]
+All right, chapter one. We're going to
+
+42
+00:00:49,990 --> 00:00:50,000
+All right, chapter one. We're going to
+ 
+
+43
+00:00:50,000 --> 00:00:52,549
+All right, chapter one. We're going to
+get access to V3. All right, guys. So,
+
+44
+00:00:52,549 --> 00:00:52,559
+get access to V3. All right, guys. So,
+ 
+
+45
+00:00:52,559 --> 00:00:54,630
+get access to V3. All right, guys. So,
+here's the deal. We found a Google Cloud
+
+46
+00:00:54,630 --> 00:00:54,640
+here's the deal. We found a Google Cloud
+ 
+
+47
+00:00:54,640 --> 00:00:57,350
+here's the deal. We found a Google Cloud
+Platform, and it's about to get crazy.
+
+48
+00:00:57,350 --> 00:00:57,360
+Platform, and it's about to get crazy.
+ 
+
+49
+00:00:57,360 --> 00:00:59,029
+Platform, and it's about to get crazy.
+You can make mind-blowing videos using
+
+50
+00:00:59,029 --> 00:00:59,039
+You can make mind-blowing videos using
+ 
+
+51
+00:00:59,039 --> 00:01:01,430
+You can make mind-blowing videos using
+Google's V3 model through Google Vertex
+
+52
+00:01:01,430 --> 00:01:01,440
+Google's V3 model through Google Vertex
+ 
+
+53
+00:01:01,440 --> 00:01:03,270
+Google's V3 model through Google Vertex
+AI Studio. And here's how you get
+
+54
+00:01:03,270 --> 00:01:03,280
+AI Studio. And here's how you get
+ 
+
+55
+00:01:03,280 --> 00:01:04,549
+AI Studio. And here's how you get
+started. All right. So, the first thing
+
+56
+00:01:04,549 --> 00:01:04,559
+started. All right. So, the first thing
+ 
+
+57
+00:01:04,559 --> 00:01:06,310
+started. All right. So, the first thing
+you need to do is head over to Google
+
+58
+00:01:06,310 --> 00:01:06,320
+you need to do is head over to Google
+ 
+
+59
+00:01:06,320 --> 00:01:09,190
+you need to do is head over to Google
+Cloud Console. Create a free account.
+
+60
+00:01:09,190 --> 00:01:09,200
+Cloud Console. Create a free account.
+ 
+
+61
+00:01:09,200 --> 00:01:11,830
+Cloud Console. Create a free account.
+Yes, it's absolutely free. Yo, and get
+
+62
+00:01:11,830 --> 00:01:11,840
+Yes, it's absolutely free. Yo, and get
+ 
+
+63
+00:01:11,840 --> 00:01:13,270
+Yes, it's absolutely free. Yo, and get
+this. When you create an account, you
+
+64
+00:01:13,270 --> 00:01:13,280
+this. When you create an account, you
+ 
+
+65
+00:01:13,280 --> 00:01:16,390
+this. When you create an account, you
+get $300 worth of free credits for 90
+
+66
+00:01:16,390 --> 00:01:16,400
+get $300 worth of free credits for 90
+ 
+
+67
+00:01:16,400 --> 00:01:18,469
+get $300 worth of free credits for 90
+days. That's more than enough to get
+
+68
+00:01:18,469 --> 00:01:18,479
+days. That's more than enough to get
+ 
+
+69
+00:01:18,479 --> 00:01:20,230
+days. That's more than enough to get
+crazy with your experiments. All right.
+
+70
+00:01:20,230 --> 00:01:20,240
+crazy with your experiments. All right.
+ 
+
+71
+00:01:20,240 --> 00:01:21,429
+crazy with your experiments. All right.
+So, once you're in, you can check out
+
+72
+00:01:21,429 --> 00:01:21,439
+So, once you're in, you can check out
+ 
+
+73
+00:01:21,439 --> 00:01:22,950
+So, once you're in, you can check out
+the sidebar menu. It has all of the
+
+74
+00:01:22,950 --> 00:01:22,960
+the sidebar menu. It has all of the
+ 
+
+75
+00:01:22,960 --> 00:01:24,550
+the sidebar menu. It has all of the
+Google tools, but for this video, we're
+
+76
+00:01:24,550 --> 00:01:24,560
+Google tools, but for this video, we're
+ 
+
+77
+00:01:24,560 --> 00:01:26,710
+Google tools, but for this video, we're
+just going to be sticking to Vertex AI.
+
+78
+00:01:26,710 --> 00:01:26,720
+just going to be sticking to Vertex AI.
+ 
+
+79
+00:01:26,720 --> 00:01:29,109
+just going to be sticking to Vertex AI.
+All right. So, click Vertex AI. From
+
+80
+00:01:29,109 --> 00:01:29,119
+All right. So, click Vertex AI. From
+ 
+
+81
+00:01:29,119 --> 00:01:31,670
+All right. So, click Vertex AI. From
+here, go to media studio and then
+
+82
+00:01:31,670 --> 00:01:31,680
+here, go to media studio and then
+ 
+
+83
+00:01:31,680 --> 00:01:34,310
+here, go to media studio and then
+generate video. Boom. Sorted. You're in.
+
+84
+00:01:34,310 --> 00:01:34,320
+generate video. Boom. Sorted. You're in.
+ 
+
+85
+00:01:34,320 --> 00:01:35,910
+generate video. Boom. Sorted. You're in.
+Now, this is where the magic happens cuz
+
+86
+00:01:35,910 --> 00:01:35,920
+Now, this is where the magic happens cuz
+ 
+
+87
+00:01:35,920 --> 00:01:37,990
+Now, this is where the magic happens cuz
+now you can select V3 from the models
+
+88
+00:01:37,990 --> 00:01:38,000
+now you can select V3 from the models
+ 
+
+89
+00:01:38,000 --> 00:01:39,510
+now you can select V3 from the models
+available. Type a prompt and you're good
+
+90
+00:01:39,510 --> 00:01:39,520
+available. Type a prompt and you're good
+ 
+
+91
+00:01:39,520 --> 00:01:41,749
+available. Type a prompt and you're good
+to go. All right. So, check this out. A
+
+92
+00:01:41,749 --> 00:01:41,759
+to go. All right. So, check this out. A
+ 
+
+93
+00:01:41,759 --> 00:01:44,550
+to go. All right. So, check this out. A
+cinematic shot of a Yeti vlogging in the
+
+94
+00:01:44,550 --> 00:01:44,560
+cinematic shot of a Yeti vlogging in the
+ 
+
+95
+00:01:44,560 --> 00:01:46,149
+cinematic shot of a Yeti vlogging in the
+Himalayas.
+
+96
+00:01:46,149 --> 00:01:46,159
+Himalayas.
+ 
+
+97
+00:01:46,159 --> 00:01:48,230
+Himalayas.
+4K
+
+98
+00:01:48,230 --> 00:01:48,240
+4K
+ 
+
+99
+00:01:48,240 --> 00:01:49,830
+4K
+dramatic lighting. That's all we're
+
+100
+00:01:49,830 --> 00:01:49,840
+dramatic lighting. That's all we're
+ 
+
+101
+00:01:49,840 --> 00:01:51,510
+dramatic lighting. That's all we're
+going to do for now. And let's see what
+
+102
+00:01:51,510 --> 00:01:51,520
+going to do for now. And let's see what
+ 
+
+103
+00:01:51,520 --> 00:01:53,910
+going to do for now. And let's see what
+it chs out.
+
+104
+00:01:53,910 --> 00:01:53,920
+it chs out.
+ 
+
+105
+00:01:53,920 --> 00:01:56,310
+it chs out.
+>> Welcome back to my vlog. And today we're
+
+106
+00:01:56,310 --> 00:01:56,320
+>> Welcome back to my vlog. And today we're
+ 
+
+107
+00:01:56,320 --> 00:02:00,709
+>> Welcome back to my vlog. And today we're
+up in the Himalayas.
+
+108
+00:02:00,709 --> 00:02:00,719
+
+ 
+
+109
+00:02:00,719 --> 00:02:02,069
+
+You know, I'm actually comparing this to
+
+110
+00:02:02,069 --> 00:02:02,079
+You know, I'm actually comparing this to
+ 
+
+111
+00:02:02,079 --> 00:02:03,590
+You know, I'm actually comparing this to
+the other Yeti videos that I've seen.
+
+112
+00:02:03,590 --> 00:02:03,600
+the other Yeti videos that I've seen.
+ 
+
+113
+00:02:03,600 --> 00:02:04,550
+the other Yeti videos that I've seen.
+And this one actually looks like the
+
+114
+00:02:04,550 --> 00:02:04,560
+And this one actually looks like the
+ 
+
+115
+00:02:04,560 --> 00:02:05,990
+And this one actually looks like the
+Yeti. The other ones look like oranguta
+
+116
+00:02:05,990 --> 00:02:06,000
+Yeti. The other ones look like oranguta
+ 
+
+117
+00:02:06,000 --> 00:02:07,749
+Yeti. The other ones look like oranguta
+tanks and stuff. It's pretty wild,
+
+118
+00:02:07,749 --> 00:02:07,759
+tanks and stuff. It's pretty wild,
+ 
+
+119
+00:02:07,759 --> 00:02:10,389
+tanks and stuff. It's pretty wild,
+right? But let's be real. Doing this
+
+120
+00:02:10,389 --> 00:02:10,399
+right? But let's be real. Doing this
+ 
+
+121
+00:02:10,399 --> 00:02:12,470
+right? But let's be real. Doing this
+manually is cool, but sometimes it takes
+
+122
+00:02:12,470 --> 00:02:12,480
+manually is cool, but sometimes it takes
+ 
+
+123
+00:02:12,480 --> 00:02:14,550
+manually is cool, but sometimes it takes
+too much time. So here's our game plan.
+
+124
+00:02:14,550 --> 00:02:14,560
+too much time. So here's our game plan.
+ 
+
+125
+00:02:14,560 --> 00:02:16,390
+too much time. So here's our game plan.
+Instead of generating videos one by one,
+
+126
+00:02:16,390 --> 00:02:16,400
+Instead of generating videos one by one,
+ 
+
+127
+00:02:16,400 --> 00:02:17,830
+Instead of generating videos one by one,
+we're going to automate the entire
+
+128
+00:02:17,830 --> 00:02:17,840
+we're going to automate the entire
+ 
+
+129
+00:02:17,840 --> 00:02:20,710
+we're going to automate the entire
+process from idea to prompt to final
+
+130
+00:02:20,710 --> 00:02:20,720
+process from idea to prompt to final
+ 
+
+131
+00:02:20,720 --> 00:02:22,630
+process from idea to prompt to final
+generation and store everything in a
+
+132
+00:02:22,630 --> 00:02:22,640
+generation and store everything in a
+ 
+
+133
+00:02:22,640 --> 00:02:25,750
+generation and store everything in a
+Google sheet which is the automation.
+
+134
+00:02:25,750 --> 00:02:25,760
+Google sheet which is the automation.
+ 
+
+135
+00:02:25,760 --> 00:02:28,150
+Google sheet which is the automation.
+For the automation, let's use any free
+
+136
+00:02:28,150 --> 00:02:28,160
+For the automation, let's use any free
+ 
+
+137
+00:02:28,160 --> 00:02:30,309
+For the automation, let's use any free
+and open source. It works like magic.
+
+138
+00:02:30,309 --> 00:02:30,319
+and open source. It works like magic.
+ 
+
+139
+00:02:30,319 --> 00:02:32,229
+and open source. It works like magic.
+All you need to do is drag, drop, and
+
+140
+00:02:32,229 --> 00:02:32,239
+All you need to do is drag, drop, and
+ 
+
+141
+00:02:32,239 --> 00:02:34,309
+All you need to do is drag, drop, and
+connect. All right. So before diving in,
+
+142
+00:02:34,309 --> 00:02:34,319
+connect. All right. So before diving in,
+ 
+
+143
+00:02:34,319 --> 00:02:35,910
+connect. All right. So before diving in,
+let's break the entire automation
+
+144
+00:02:35,910 --> 00:02:35,920
+let's break the entire automation
+ 
+
+145
+00:02:35,920 --> 00:02:37,670
+let's break the entire automation
+process into three simple steps. The
+
+146
+00:02:37,670 --> 00:02:37,680
+process into three simple steps. The
+ 
+
+147
+00:02:37,680 --> 00:02:39,110
+process into three simple steps. The
+first one going to be idea and prompt
+
+148
+00:02:39,110 --> 00:02:39,120
+first one going to be idea and prompt
+ 
+
+149
+00:02:39,120 --> 00:02:40,550
+first one going to be idea and prompt
+generation. Second is going to be video
+
+150
+00:02:40,550 --> 00:02:40,560
+generation. Second is going to be video
+ 
+
+151
+00:02:40,560 --> 00:02:41,910
+generation. Second is going to be video
+generation. And the third one is going
+
+152
+00:02:41,910 --> 00:02:41,920
+generation. And the third one is going
+ 
+
+153
+00:02:41,920 --> 00:02:43,910
+generation. And the third one is going
+to be storing everything. If you're new
+
+154
+00:02:43,910 --> 00:02:43,920
+to be storing everything. If you're new
+ 
+
+155
+00:02:43,920 --> 00:02:45,509
+to be storing everything. If you're new
+to the channel, then make sure you check
+
+156
+00:02:45,509 --> 00:02:45,519
+to the channel, then make sure you check
+ 
+
+157
+00:02:45,519 --> 00:02:47,509
+to the channel, then make sure you check
+out this video where we've used N10
+
+158
+00:02:47,509 --> 00:02:47,519
+out this video where we've used N10
+ 
+
+159
+00:02:47,519 --> 00:02:48,710
+out this video where we've used N10
+before and we've gone into complete
+
+160
+00:02:48,710 --> 00:02:48,720
+before and we've gone into complete
+ 
+
+161
+00:02:48,720 --> 00:02:49,750
+before and we've gone into complete
+detail. So, if you feel like you're
+
+162
+00:02:49,750 --> 00:02:49,760
+detail. So, if you feel like you're
+ 
+
+163
+00:02:49,760 --> 00:02:51,110
+detail. So, if you feel like you're
+getting a little lost, please check out
+
+164
+00:02:51,110 --> 00:02:51,120
+getting a little lost, please check out
+ 
+
+165
+00:02:51,120 --> 00:02:52,309
+getting a little lost, please check out
+this video and then come back to this
+
+166
+00:02:52,309 --> 00:02:52,319
+this video and then come back to this
+ 
+
+167
+00:02:52,319 --> 00:02:53,750
+this video and then come back to this
+one. So, now we're tackling the first
+
+168
+00:02:53,750 --> 00:02:53,760
+one. So, now we're tackling the first
+ 
+
+169
+00:02:53,760 --> 00:02:55,350
+one. So, now we're tackling the first
+step, which is idea and prompt
+
+170
+00:02:55,350 --> 00:02:55,360
+step, which is idea and prompt
+ 
+
+171
+00:02:55,360 --> 00:02:57,030
+step, which is idea and prompt
+generation. All right. So, what we're
+
+172
+00:02:57,030 --> 00:02:57,040
+generation. All right. So, what we're
+ 
+
+173
+00:02:57,040 --> 00:02:58,150
+generation. All right. So, what we're
+going to do is we're going to start by
+
+174
+00:02:58,150 --> 00:02:58,160
+going to do is we're going to start by
+ 
+
+175
+00:02:58,160 --> 00:03:00,229
+going to do is we're going to start by
+putting a trigger. Now, you can either
+
+176
+00:03:00,229 --> 00:03:00,239
+putting a trigger. Now, you can either
+ 
+
+177
+00:03:00,239 --> 00:03:01,670
+putting a trigger. Now, you can either
+set a manual trigger or a schedule
+
+178
+00:03:01,670 --> 00:03:01,680
+set a manual trigger or a schedule
+ 
+
+179
+00:03:01,680 --> 00:03:03,509
+set a manual trigger or a schedule
+trigger that runs daily or on a custom
+
+180
+00:03:03,509 --> 00:03:03,519
+trigger that runs daily or on a custom
+ 
+
+181
+00:03:03,519 --> 00:03:04,949
+trigger that runs daily or on a custom
+schedule, whatever you want. We're going
+
+182
+00:03:04,949 --> 00:03:04,959
+schedule, whatever you want. We're going
+ 
+
+183
+00:03:04,959 --> 00:03:06,390
+schedule, whatever you want. We're going
+to go with a schedule trigger so the
+
+184
+00:03:06,390 --> 00:03:06,400
+to go with a schedule trigger so the
+ 
+
+185
+00:03:06,400 --> 00:03:07,990
+to go with a schedule trigger so the
+workflow runs on its own again and
+
+186
+00:03:07,990 --> 00:03:08,000
+workflow runs on its own again and
+ 
+
+187
+00:03:08,000 --> 00:03:09,990
+workflow runs on its own again and
+again. Whenever the trigger fires, we
+
+188
+00:03:09,990 --> 00:03:10,000
+again. Whenever the trigger fires, we
+ 
+
+189
+00:03:10,000 --> 00:03:12,390
+again. Whenever the trigger fires, we
+need an AI agent to start the process
+
+190
+00:03:12,390 --> 00:03:12,400
+need an AI agent to start the process
+ 
+
+191
+00:03:12,400 --> 00:03:14,550
+need an AI agent to start the process
+because we need a fresh idea to make the
+
+192
+00:03:14,550 --> 00:03:14,560
+because we need a fresh idea to make the
+ 
+
+193
+00:03:14,560 --> 00:03:16,390
+because we need a fresh idea to make the
+video. All right. So now we're going to
+
+194
+00:03:16,390 --> 00:03:16,400
+video. All right. So now we're going to
+ 
+
+195
+00:03:16,400 --> 00:03:18,470
+video. All right. So now we're going to
+set up an agent node with Google Gemini
+
+196
+00:03:18,470 --> 00:03:18,480
+set up an agent node with Google Gemini
+ 
+
+197
+00:03:18,480 --> 00:03:22,149
+set up an agent node with Google Gemini
+as our AI model and let's name it as
+
+198
+00:03:22,149 --> 00:03:22,159
+as our AI model and let's name it as
+ 
+
+199
+00:03:22,159 --> 00:03:25,350
+as our AI model and let's name it as
+ideas AI agent. Also going further for
+
+200
+00:03:25,350 --> 00:03:25,360
+ideas AI agent. Also going further for
+ 
+
+201
+00:03:25,360 --> 00:03:27,190
+ideas AI agent. Also going further for
+every user message, system message or
+
+202
+00:03:27,190 --> 00:03:27,200
+every user message, system message or
+ 
+
+203
+00:03:27,200 --> 00:03:29,030
+every user message, system message or
+JSON or anything we've already made a
+
+204
+00:03:29,030 --> 00:03:29,040
+JSON or anything we've already made a
+ 
+
+205
+00:03:29,040 --> 00:03:31,430
+JSON or anything we've already made a
+document right here and we'll keep copy
+
+206
+00:03:31,430 --> 00:03:31,440
+document right here and we'll keep copy
+ 
+
+207
+00:03:31,440 --> 00:03:34,229
+document right here and we'll keep copy
+pasting whatever we need from there. So
+
+208
+00:03:34,229 --> 00:03:34,239
+pasting whatever we need from there. So
+ 
+
+209
+00:03:34,239 --> 00:03:35,430
+pasting whatever we need from there. So
+for this what I'm going to do is I'm
+
+210
+00:03:35,430 --> 00:03:35,440
+for this what I'm going to do is I'm
+ 
+
+211
+00:03:35,440 --> 00:03:39,509
+for this what I'm going to do is I'm
+going to put in give me as many ideas of
+
+212
+00:03:39,509 --> 00:03:39,519
+going to put in give me as many ideas of
+ 
+
+213
+00:03:39,519 --> 00:03:42,229
+going to put in give me as many ideas of
+a yeti speaking to a camera and doing a
+
+214
+00:03:42,229 --> 00:03:42,239
+a yeti speaking to a camera and doing a
+ 
+
+215
+00:03:42,239 --> 00:03:45,190
+a yeti speaking to a camera and doing a
+vlog. Okay. So that I've put in the user
+
+216
+00:03:45,190 --> 00:03:45,200
+vlog. Okay. So that I've put in the user
+ 
+
+217
+00:03:45,200 --> 00:03:47,750
+vlog. Okay. So that I've put in the user
+message area. But you can ask for
+
+218
+00:03:47,750 --> 00:03:47,760
+message area. But you can ask for
+ 
+
+219
+00:03:47,760 --> 00:03:49,030
+message area. But you can ask for
+anything. You can literally do anything
+
+220
+00:03:49,030 --> 00:03:49,040
+anything. You can literally do anything
+ 
+
+221
+00:03:49,040 --> 00:03:50,630
+anything. You can literally do anything
+you want. You can ask for a man on the
+
+222
+00:03:50,630 --> 00:03:50,640
+you want. You can ask for a man on the
+ 
+
+223
+00:03:50,640 --> 00:03:52,149
+you want. You can ask for a man on the
+streets of New York talking to random
+
+224
+00:03:52,149 --> 00:03:52,159
+streets of New York talking to random
+ 
+
+225
+00:03:52,159 --> 00:03:53,750
+streets of New York talking to random
+people. You can ask for an alien talking
+
+226
+00:03:53,750 --> 00:03:53,760
+people. You can ask for an alien talking
+ 
+
+227
+00:03:53,760 --> 00:03:55,910
+people. You can ask for an alien talking
+to other aliens in a box pop style. Or
+
+228
+00:03:55,910 --> 00:03:55,920
+to other aliens in a box pop style. Or
+ 
+
+229
+00:03:55,920 --> 00:03:57,270
+to other aliens in a box pop style. Or
+if you want something controversial then
+
+230
+00:03:57,270 --> 00:03:57,280
+if you want something controversial then
+ 
+
+231
+00:03:57,280 --> 00:03:58,789
+if you want something controversial then
+you can even do a dude on the beach in
+
+232
+00:03:58,789 --> 00:03:58,799
+you can even do a dude on the beach in
+ 
+
+233
+00:03:58,799 --> 00:04:00,470
+you can even do a dude on the beach in
+Goa not letting anyone surf. Anything.
+
+234
+00:04:00,470 --> 00:04:00,480
+Goa not letting anyone surf. Anything.
+ 
+
+235
+00:04:00,480 --> 00:04:02,390
+Goa not letting anyone surf. Anything.
+It's up to you. So let's just do a quick
+
+236
+00:04:02,390 --> 00:04:02,400
+It's up to you. So let's just do a quick
+ 
+
+237
+00:04:02,400 --> 00:04:03,990
+It's up to you. So let's just do a quick
+recap. We've got the trigger and we've
+
+238
+00:04:03,990 --> 00:04:04,000
+recap. We've got the trigger and we've
+ 
+
+239
+00:04:04,000 --> 00:04:06,070
+recap. We've got the trigger and we've
+got the agent node. So now what we need
+
+240
+00:04:06,070 --> 00:04:06,080
+got the agent node. So now what we need
+ 
+
+241
+00:04:06,080 --> 00:04:09,270
+got the agent node. So now what we need
+to do is add a think tool. So this node
+
+242
+00:04:09,270 --> 00:04:09,280
+to do is add a think tool. So this node
+ 
+
+243
+00:04:09,280 --> 00:04:11,270
+to do is add a think tool. So this node
+invites the AI agent to think before
+
+244
+00:04:11,270 --> 00:04:11,280
+invites the AI agent to think before
+ 
+
+245
+00:04:11,280 --> 00:04:13,110
+invites the AI agent to think before
+answering. It's especially useful for
+
+246
+00:04:13,110 --> 00:04:13,120
+answering. It's especially useful for
+ 
+
+247
+00:04:13,120 --> 00:04:14,869
+answering. It's especially useful for
+complex prompts. All right. What this
+
+248
+00:04:14,869 --> 00:04:14,879
+complex prompts. All right. What this
+ 
+
+249
+00:04:14,879 --> 00:04:17,110
+complex prompts. All right. What this
+basically does is it lets the AI talk to
+
+250
+00:04:17,110 --> 00:04:17,120
+basically does is it lets the AI talk to
+ 
+
+251
+00:04:17,120 --> 00:04:18,870
+basically does is it lets the AI talk to
+itself first before spitting out a
+
+252
+00:04:18,870 --> 00:04:18,880
+itself first before spitting out a
+ 
+
+253
+00:04:18,880 --> 00:04:20,949
+itself first before spitting out a
+response. We want these ideas in a
+
+254
+00:04:20,949 --> 00:04:20,959
+response. We want these ideas in a
+ 
+
+255
+00:04:20,959 --> 00:04:22,870
+response. We want these ideas in a
+structured format. So we'll edit the
+
+256
+00:04:22,870 --> 00:04:22,880
+structured format. So we'll edit the
+ 
+
+257
+00:04:22,880 --> 00:04:25,110
+structured format. So we'll edit the
+JSON output and pass it accordingly.
+
+258
+00:04:25,110 --> 00:04:25,120
+JSON output and pass it accordingly.
+ 
+
+259
+00:04:25,120 --> 00:04:26,629
+JSON output and pass it accordingly.
+We'll also quickly update our system
+
+260
+00:04:26,629 --> 00:04:26,639
+We'll also quickly update our system
+ 
+
+261
+00:04:26,639 --> 00:04:29,030
+We'll also quickly update our system
+message in these to reflect that. So now
+
+262
+00:04:29,030 --> 00:04:29,040
+message in these to reflect that. So now
+ 
+
+263
+00:04:29,040 --> 00:04:30,550
+message in these to reflect that. So now
+we need to set up our Google sheet for
+
+264
+00:04:30,550 --> 00:04:30,560
+we need to set up our Google sheet for
+ 
+
+265
+00:04:30,560 --> 00:04:31,990
+we need to set up our Google sheet for
+storing all the information we got from
+
+266
+00:04:31,990 --> 00:04:32,000
+storing all the information we got from
+ 
+
+267
+00:04:32,000 --> 00:04:33,830
+storing all the information we got from
+the AI agent we just set up. So now
+
+268
+00:04:33,830 --> 00:04:33,840
+the AI agent we just set up. So now
+ 
+
+269
+00:04:33,840 --> 00:04:35,270
+the AI agent we just set up. So now
+let's go to the Google drive and create
+
+270
+00:04:35,270 --> 00:04:35,280
+let's go to the Google drive and create
+ 
+
+271
+00:04:35,280 --> 00:04:39,430
+let's go to the Google drive and create
+a sheet named V3 NA10 automation.
+
+272
+00:04:39,430 --> 00:04:39,440
+a sheet named V3 NA10 automation.
+ 
+
+273
+00:04:39,440 --> 00:04:40,950
+a sheet named V3 NA10 automation.
+We'll update all the columns in the
+
+274
+00:04:40,950 --> 00:04:40,960
+We'll update all the columns in the
+ 
+
+275
+00:04:40,960 --> 00:04:42,710
+We'll update all the columns in the
+sheet based on the JSON output we expect
+
+276
+00:04:42,710 --> 00:04:42,720
+sheet based on the JSON output we expect
+ 
+
+277
+00:04:42,720 --> 00:04:45,830
+sheet based on the JSON output we expect
+and connect them all inside of any.
+
+278
+00:04:45,830 --> 00:04:45,840
+and connect them all inside of any.
+ 
+
+279
+00:04:45,840 --> 00:04:48,070
+and connect them all inside of any.
+So the Google Sheets node in any just
+
+280
+00:04:48,070 --> 00:04:48,080
+So the Google Sheets node in any just
+ 
+
+281
+00:04:48,080 --> 00:04:50,070
+So the Google Sheets node in any just
+tells it to work on that sheet. We won't
+
+282
+00:04:50,070 --> 00:04:50,080
+tells it to work on that sheet. We won't
+ 
+
+283
+00:04:50,080 --> 00:04:52,070
+tells it to work on that sheet. We won't
+ask it to create or delete spreadsheets.
+
+284
+00:04:52,070 --> 00:04:52,080
+ask it to create or delete spreadsheets.
+ 
+
+285
+00:04:52,080 --> 00:04:53,990
+ask it to create or delete spreadsheets.
+We're just going to append and update
+
+286
+00:04:53,990 --> 00:04:54,000
+We're just going to append and update
+ 
+
+287
+00:04:54,000 --> 00:04:55,590
+We're just going to append and update
+rows in the spreadsheet that we've
+
+288
+00:04:55,590 --> 00:04:55,600
+rows in the spreadsheet that we've
+ 
+
+289
+00:04:55,600 --> 00:04:58,550
+rows in the spreadsheet that we've
+already created. Okay, so we've already
+
+290
+00:04:58,550 --> 00:04:58,560
+already created. Okay, so we've already
+ 
+
+291
+00:04:58,560 --> 00:05:00,150
+already created. Okay, so we've already
+linked our credentials to connect with
+
+292
+00:05:00,150 --> 00:05:00,160
+linked our credentials to connect with
+ 
+
+293
+00:05:00,160 --> 00:05:01,670
+linked our credentials to connect with
+Google.
+
+294
+00:05:01,670 --> 00:05:01,680
+Google.
+ 
+
+295
+00:05:01,680 --> 00:05:03,030
+Google.
+Now we just need to map out all of the
+
+296
+00:05:03,030 --> 00:05:03,040
+Now we just need to map out all of the
+ 
+
+297
+00:05:03,040 --> 00:05:04,790
+Now we just need to map out all of the
+columns manually. All right, so just
+
+298
+00:05:04,790 --> 00:05:04,800
+columns manually. All right, so just
+ 
+
+299
+00:05:04,800 --> 00:05:07,189
+columns manually. All right, so just
+take a look over here. Just follow what
+
+300
+00:05:07,189 --> 00:05:07,199
+take a look over here. Just follow what
+ 
+
+301
+00:05:07,199 --> 00:05:09,430
+take a look over here. Just follow what
+I'm doing.
+
+302
+00:05:09,430 --> 00:05:09,440
+I'm doing.
+ 
+
+303
+00:05:09,440 --> 00:05:11,270
+I'm doing.
+Cool. So now we've built the entire idea
+
+304
+00:05:11,270 --> 00:05:11,280
+Cool. So now we've built the entire idea
+ 
+
+305
+00:05:11,280 --> 00:05:12,710
+Cool. So now we've built the entire idea
+generation pipeline and we're going to
+
+306
+00:05:12,710 --> 00:05:12,720
+generation pipeline and we're going to
+ 
+
+307
+00:05:12,720 --> 00:05:14,150
+generation pipeline and we're going to
+be storing all the ideas in Google
+
+308
+00:05:14,150 --> 00:05:14,160
+be storing all the ideas in Google
+ 
+
+309
+00:05:14,160 --> 00:05:15,510
+be storing all the ideas in Google
+Sheets itself. Okay. So let's try to
+
+310
+00:05:15,510 --> 00:05:15,520
+Sheets itself. Okay. So let's try to
+ 
+
+311
+00:05:15,520 --> 00:05:18,469
+Sheets itself. Okay. So let's try to
+execute it once to check if it works.
+
+312
+00:05:18,469 --> 00:05:18,479
+execute it once to check if it works.
+ 
+
+313
+00:05:18,479 --> 00:05:20,150
+execute it once to check if it works.
+Sorted. It works. And you can see our
+
+314
+00:05:20,150 --> 00:05:20,160
+Sorted. It works. And you can see our
+ 
+
+315
+00:05:20,160 --> 00:05:22,469
+Sorted. It works. And you can see our
+first idea right there in the sheet. All
+
+316
+00:05:22,469 --> 00:05:22,479
+first idea right there in the sheet. All
+ 
+
+317
+00:05:22,479 --> 00:05:24,310
+first idea right there in the sheet. All
+right. So now we want another AI agent
+
+318
+00:05:24,310 --> 00:05:24,320
+right. So now we want another AI agent
+ 
+
+319
+00:05:24,320 --> 00:05:25,670
+right. So now we want another AI agent
+and this one we're going to name the
+
+320
+00:05:25,670 --> 00:05:25,680
+and this one we're going to name the
+ 
+
+321
+00:05:25,680 --> 00:05:27,830
+and this one we're going to name the
+prompts AI agent. This one will generate
+
+322
+00:05:27,830 --> 00:05:27,840
+prompts AI agent. This one will generate
+ 
+
+323
+00:05:27,840 --> 00:05:29,830
+prompts AI agent. This one will generate
+prompts from the ideas that we've given
+
+324
+00:05:29,830 --> 00:05:29,840
+prompts from the ideas that we've given
+ 
+
+325
+00:05:29,840 --> 00:05:31,670
+prompts from the ideas that we've given
+because we've got the ideas now and we
+
+326
+00:05:31,670 --> 00:05:31,680
+because we've got the ideas now and we
+ 
+
+327
+00:05:31,680 --> 00:05:33,189
+because we've got the ideas now and we
+need the actual prompts to send to
+
+328
+00:05:33,189 --> 00:05:33,199
+need the actual prompts to send to
+ 
+
+329
+00:05:33,199 --> 00:05:35,350
+need the actual prompts to send to
+Vertex Studio. Okay, again we're going
+
+330
+00:05:35,350 --> 00:05:35,360
+Vertex Studio. Okay, again we're going
+ 
+
+331
+00:05:35,360 --> 00:05:36,629
+Vertex Studio. Okay, again we're going
+to go back to our notion sheet where
+
+332
+00:05:36,629 --> 00:05:36,639
+to go back to our notion sheet where
+ 
+
+333
+00:05:36,639 --> 00:05:38,390
+to go back to our notion sheet where
+I've put all of the user messages and
+
+334
+00:05:38,390 --> 00:05:38,400
+I've put all of the user messages and
+ 
+
+335
+00:05:38,400 --> 00:05:39,670
+I've put all of the user messages and
+we're going to copy this user message
+
+336
+00:05:39,670 --> 00:05:39,680
+we're going to copy this user message
+ 
+
+337
+00:05:39,680 --> 00:05:42,310
+we're going to copy this user message
+and paste it here.
+
+338
+00:05:42,310 --> 00:05:42,320
+and paste it here.
+ 
+
+339
+00:05:42,320 --> 00:05:43,670
+and paste it here.
+So we've already figured out the thing
+
+340
+00:05:43,670 --> 00:05:43,680
+So we've already figured out the thing
+ 
+
+341
+00:05:43,680 --> 00:05:44,870
+So we've already figured out the thing
+tool and the model that we're going to
+
+342
+00:05:44,870 --> 00:05:44,880
+tool and the model that we're going to
+ 
+
+343
+00:05:44,880 --> 00:05:46,390
+tool and the model that we're going to
+be using. So we're just going to connect
+
+344
+00:05:46,390 --> 00:05:46,400
+be using. So we're just going to connect
+ 
+
+345
+00:05:46,400 --> 00:05:48,550
+be using. So we're just going to connect
+them to the prompts AI agent. Now we're
+
+346
+00:05:48,550 --> 00:05:48,560
+them to the prompts AI agent. Now we're
+ 
+
+347
+00:05:48,560 --> 00:05:50,070
+them to the prompts AI agent. Now we're
+on to step two, which is video
+
+348
+00:05:50,070 --> 00:05:50,080
+on to step two, which is video
+ 
+
+349
+00:05:50,080 --> 00:05:51,909
+on to step two, which is video
+generation. Now, Google Vortex currently
+
+350
+00:05:51,909 --> 00:05:51,919
+generation. Now, Google Vortex currently
+ 
+
+351
+00:05:51,919 --> 00:05:53,749
+generation. Now, Google Vortex currently
+has no direct integration with any 10.
+
+352
+00:05:53,749 --> 00:05:53,759
+has no direct integration with any 10.
+ 
+
+353
+00:05:53,759 --> 00:05:55,029
+has no direct integration with any 10.
+So, we're going to have to manually
+
+354
+00:05:55,029 --> 00:05:55,039
+So, we're going to have to manually
+ 
+
+355
+00:05:55,039 --> 00:05:57,110
+So, we're going to have to manually
+create an integration using an HTTP
+
+356
+00:05:57,110 --> 00:05:57,120
+create an integration using an HTTP
+ 
+
+357
+00:05:57,120 --> 00:05:59,430
+create an integration using an HTTP
+request. All right. So, we're going to
+
+358
+00:05:59,430 --> 00:05:59,440
+request. All right. So, we're going to
+ 
+
+359
+00:05:59,440 --> 00:06:00,629
+request. All right. So, we're going to
+need to gather some values from your
+
+360
+00:06:00,629 --> 00:06:00,639
+need to gather some values from your
+ 
+
+361
+00:06:00,639 --> 00:06:02,310
+need to gather some values from your
+Google proud project. And in order to do
+
+362
+00:06:02,310 --> 00:06:02,320
+Google proud project. And in order to do
+ 
+
+363
+00:06:02,320 --> 00:06:03,749
+Google proud project. And in order to do
+that, you'll find this button called get
+
+364
+00:06:03,749 --> 00:06:03,759
+that, you'll find this button called get
+ 
+
+365
+00:06:03,759 --> 00:06:05,350
+that, you'll find this button called get
+code. So, once you click on the get code
+
+366
+00:06:05,350 --> 00:06:05,360
+code. So, once you click on the get code
+ 
+
+367
+00:06:05,360 --> 00:06:06,790
+code. So, once you click on the get code
+button, you have access to details like
+
+368
+00:06:06,790 --> 00:06:06,800
+button, you have access to details like
+ 
+
+369
+00:06:06,800 --> 00:06:08,469
+button, you have access to details like
+your project ID, your location, your
+
+370
+00:06:08,469 --> 00:06:08,479
+your project ID, your location, your
+ 
+
+371
+00:06:08,479 --> 00:06:10,629
+your project ID, your location, your
+model, and your API endpoint. An
+
+372
+00:06:10,629 --> 00:06:10,639
+model, and your API endpoint. An
+ 
+
+373
+00:06:10,639 --> 00:06:11,990
+model, and your API endpoint. An
+important point to note over here is
+
+374
+00:06:11,990 --> 00:06:12,000
+important point to note over here is
+ 
+
+375
+00:06:12,000 --> 00:06:13,510
+important point to note over here is
+you're also going to need your access
+
+376
+00:06:13,510 --> 00:06:13,520
+you're also going to need your access
+ 
+
+377
+00:06:13,520 --> 00:06:15,270
+you're also going to need your access
+token. So, make sure you open cloud
+
+378
+00:06:15,270 --> 00:06:15,280
+token. So, make sure you open cloud
+ 
+
+379
+00:06:15,280 --> 00:06:18,390
+token. So, make sure you open cloud
+shell and run this code. And once you
+
+380
+00:06:18,390 --> 00:06:18,400
+shell and run this code. And once you
+ 
+
+381
+00:06:18,400 --> 00:06:20,469
+shell and run this code. And once you
+run this line, you'll get a huge access
+
+382
+00:06:20,469 --> 00:06:20,479
+run this line, you'll get a huge access
+ 
+
+383
+00:06:20,479 --> 00:06:21,990
+run this line, you'll get a huge access
+token from the cloud shell and you can
+
+384
+00:06:21,990 --> 00:06:22,000
+token from the cloud shell and you can
+ 
+
+385
+00:06:22,000 --> 00:06:24,309
+token from the cloud shell and you can
+use it. All right. So now that we've got
+
+386
+00:06:24,309 --> 00:06:24,319
+use it. All right. So now that we've got
+ 
+
+387
+00:06:24,319 --> 00:06:25,510
+use it. All right. So now that we've got
+all of these details, we're going to
+
+388
+00:06:25,510 --> 00:06:25,520
+all of these details, we're going to
+ 
+
+389
+00:06:25,520 --> 00:06:27,670
+all of these details, we're going to
+need a wait node to let V3 generate the
+
+390
+00:06:27,670 --> 00:06:27,680
+need a wait node to let V3 generate the
+ 
+
+391
+00:06:27,680 --> 00:06:29,350
+need a wait node to let V3 generate the
+video before we fetch it. This usually
+
+392
+00:06:29,350 --> 00:06:29,360
+video before we fetch it. This usually
+ 
+
+393
+00:06:29,360 --> 00:06:31,430
+video before we fetch it. This usually
+takes like less than 60 seconds for VO
+
+394
+00:06:31,430 --> 00:06:31,440
+takes like less than 60 seconds for VO
+ 
+
+395
+00:06:31,440 --> 00:06:33,670
+takes like less than 60 seconds for VO
+to render the video. So once the video
+
+396
+00:06:33,670 --> 00:06:33,680
+to render the video. So once the video
+ 
+
+397
+00:06:33,680 --> 00:06:35,670
+to render the video. So once the video
+is done, we need to fetch it. So add
+
+398
+00:06:35,670 --> 00:06:35,680
+is done, we need to fetch it. So add
+ 
+
+399
+00:06:35,680 --> 00:06:39,590
+is done, we need to fetch it. So add
+another HTTP request node in N8N.
+
+400
+00:06:39,590 --> 00:06:39,600
+another HTTP request node in N8N.
+ 
+
+401
+00:06:39,600 --> 00:06:40,550
+another HTTP request node in N8N.
+And we're going to use the same
+
+402
+00:06:40,550 --> 00:06:40,560
+And we're going to use the same
+ 
+
+403
+00:06:40,560 --> 00:06:41,830
+And we're going to use the same
+endpoint, but this time we're going to
+
+404
+00:06:41,830 --> 00:06:41,840
+endpoint, but this time we're going to
+ 
+
+405
+00:06:41,840 --> 00:06:45,110
+endpoint, but this time we're going to
+be asking, hey Vio, is my Yeti ready?
+
+406
+00:06:45,110 --> 00:06:45,120
+be asking, hey Vio, is my Yeti ready?
+ 
+
+407
+00:06:45,120 --> 00:06:46,950
+be asking, hey Vio, is my Yeti ready?
+Fair enough.
+
+408
+00:06:46,950 --> 00:06:46,960
+Fair enough.
+ 
+
+409
+00:06:46,960 --> 00:06:48,309
+Fair enough.
+After you enter that, you're going to
+
+410
+00:06:48,309 --> 00:06:48,319
+After you enter that, you're going to
+ 
+
+411
+00:06:48,319 --> 00:06:50,870
+After you enter that, you're going to
+get a base 64 encoded video file in the
+
+412
+00:06:50,870 --> 00:06:50,880
+get a base 64 encoded video file in the
+ 
+
+413
+00:06:50,880 --> 00:06:52,950
+get a base 64 encoded video file in the
+response. So now we're going to decode
+
+414
+00:06:52,950 --> 00:06:52,960
+response. So now we're going to decode
+ 
+
+415
+00:06:52,960 --> 00:06:55,029
+response. So now we're going to decode
+whatever this B 64 encoded video file
+
+416
+00:06:55,029 --> 00:06:55,039
+whatever this B 64 encoded video file
+ 
+
+417
+00:06:55,039 --> 00:06:56,629
+whatever this B 64 encoded video file
+is. And to decode it, we're going to
+
+418
+00:06:56,629 --> 00:06:56,639
+is. And to decode it, we're going to
+ 
+
+419
+00:06:56,639 --> 00:06:59,029
+is. And to decode it, we're going to
+convert it into ampp4 file using N10's
+
+420
+00:06:59,029 --> 00:06:59,039
+convert it into ampp4 file using N10's
+ 
+
+421
+00:06:59,039 --> 00:07:01,430
+convert it into ampp4 file using N10's
+built-in functions. You've got to pack
+
+422
+00:07:01,430 --> 00:07:01,440
+built-in functions. You've got to pack
+ 
+
+423
+00:07:01,440 --> 00:07:03,670
+built-in functions. You've got to pack
+extra yak butter for the high passes.
+
+424
+00:07:03,670 --> 00:07:03,680
+extra yak butter for the high passes.
+ 
+
+425
+00:07:03,680 --> 00:07:05,189
+extra yak butter for the high passes.
+Trust me on this one. Now we're moving
+
+426
+00:07:05,189 --> 00:07:05,199
+Trust me on this one. Now we're moving
+ 
+
+427
+00:07:05,199 --> 00:07:07,589
+Trust me on this one. Now we're moving
+on to step three. Upload a drive log the
+
+428
+00:07:07,589 --> 00:07:07,599
+on to step three. Upload a drive log the
+ 
+
+429
+00:07:07,599 --> 00:07:09,990
+on to step three. Upload a drive log the
+sheet. So now let's add the Google Drive
+
+430
+00:07:09,990 --> 00:07:10,000
+sheet. So now let's add the Google Drive
+ 
+
+431
+00:07:10,000 --> 00:07:13,589
+sheet. So now let's add the Google Drive
+node to upload the MP4 file.
+
+432
+00:07:13,589 --> 00:07:13,599
+node to upload the MP4 file.
+ 
+
+433
+00:07:13,599 --> 00:07:17,909
+node to upload the MP4 file.
+Let's name the file same as the idea.
+
+434
+00:07:17,909 --> 00:07:17,919
+Let's name the file same as the idea.
+ 
+
+435
+00:07:17,919 --> 00:07:19,510
+Let's name the file same as the idea.
+Now, finally, we're going to add the
+
+436
+00:07:19,510 --> 00:07:19,520
+Now, finally, we're going to add the
+ 
+
+437
+00:07:19,520 --> 00:07:21,510
+Now, finally, we're going to add the
+Google sheet note to update our previous
+
+438
+00:07:21,510 --> 00:07:21,520
+Google sheet note to update our previous
+ 
+
+439
+00:07:21,520 --> 00:07:23,350
+Google sheet note to update our previous
+Google sheet with the sharable drive
+
+440
+00:07:23,350 --> 00:07:23,360
+Google sheet with the sharable drive
+ 
+
+441
+00:07:23,360 --> 00:07:26,230
+Google sheet with the sharable drive
+link. All right. And you're done with
+
+442
+00:07:26,230 --> 00:07:26,240
+link. All right. And you're done with
+ 
+
+443
+00:07:26,240 --> 00:07:28,629
+link. All right. And you're done with
+that. You now have a fully logged,
+
+444
+00:07:28,629 --> 00:07:28,639
+that. You now have a fully logged,
+ 
+
+445
+00:07:28,639 --> 00:07:31,110
+that. You now have a fully logged,
+autogenerated voowered Yeti video
+
+446
+00:07:31,110 --> 00:07:31,120
+autogenerated voowered Yeti video
+ 
+
+447
+00:07:31,120 --> 00:07:33,670
+autogenerated voowered Yeti video
+pipeline. Insane.
+
+448
+00:07:33,670 --> 00:07:33,680
+pipeline. Insane.
+ 
+
+449
+00:07:33,680 --> 00:07:34,390
+pipeline. Insane.
+Too long.
+
+450
+00:07:34,390 --> 00:07:34,400
+Too long.
+ 
+
+451
+00:07:34,400 --> 00:07:36,230
+Too long.
+>> Yeah, a little bit too long.
+
+452
+00:07:36,230 --> 00:07:36,240
+>> Yeah, a little bit too long.
+ 
+
+453
+00:07:36,240 --> 00:07:38,390
+>> Yeah, a little bit too long.
+>> So, now you have a fully logged video
+
+454
+00:07:38,390 --> 00:07:38,400
+>> So, now you have a fully logged video
+ 
+
+455
+00:07:38,400 --> 00:07:39,909
+>> So, now you have a fully logged video
+generation model that you can use for
+
+456
+00:07:39,909 --> 00:07:39,919
+generation model that you can use for
+ 
+
+457
+00:07:39,919 --> 00:07:41,510
+generation model that you can use for
+anything. We've used it for Vieti
+
+458
+00:07:41,510 --> 00:07:41,520
+anything. We've used it for Vieti
+ 
+
+459
+00:07:41,520 --> 00:07:42,710
+anything. We've used it for Vieti
+specifically, but you can use it for
+
+460
+00:07:42,710 --> 00:07:42,720
+specifically, but you can use it for
+ 
+
+461
+00:07:42,720 --> 00:07:44,070
+specifically, but you can use it for
+absolutely anything. Create a faceless
+
+462
+00:07:44,070 --> 00:07:44,080
+absolutely anything. Create a faceless
+ 
+
+463
+00:07:44,080 --> 00:07:45,749
+absolutely anything. Create a faceless
+account, get millions of followers, and
+
+464
+00:07:45,749 --> 00:07:45,759
+account, get millions of followers, and
+ 
+
+465
+00:07:45,759 --> 00:07:49,749
+account, get millions of followers, and
+get some cash money, bro. The surprise.
+
+466
+00:07:49,749 --> 00:07:49,759
+get some cash money, bro. The surprise.
+ 
+
+467
+00:07:49,759 --> 00:07:50,950
+get some cash money, bro. The surprise.
+I know a lot of you have been waiting
+
+468
+00:07:50,950 --> 00:07:50,960
+I know a lot of you have been waiting
+ 
+
+469
+00:07:50,960 --> 00:07:52,390
+I know a lot of you have been waiting
+for it, so here you go. All right, that
+
+470
+00:07:52,390 --> 00:07:52,400
+for it, so here you go. All right, that
+ 
+
+471
+00:07:52,400 --> 00:07:53,589
+for it, so here you go. All right, that
+was a lot. And you could follow all of
+
+472
+00:07:53,589 --> 00:07:53,599
+was a lot. And you could follow all of
+ 
+
+473
+00:07:53,599 --> 00:07:55,189
+was a lot. And you could follow all of
+that step by step, or you could also use
+
+474
+00:07:55,189 --> 00:07:55,199
+that step by step, or you could also use
+ 
+
+475
+00:07:55,199 --> 00:07:56,790
+that step by step, or you could also use
+the surprise. We've linked the exact
+
+476
+00:07:56,790 --> 00:07:56,800
+the surprise. We've linked the exact
+ 
+
+477
+00:07:56,800 --> 00:07:58,230
+the surprise. We've linked the exact
+anytime and JSON file for the entire
+
+478
+00:07:58,230 --> 00:07:58,240
+anytime and JSON file for the entire
+ 
+
+479
+00:07:58,240 --> 00:07:59,589
+anytime and JSON file for the entire
+workflow in the description. So, if
+
+480
+00:07:59,589 --> 00:07:59,599
+workflow in the description. So, if
+ 
+
+481
+00:07:59,599 --> 00:08:00,629
+workflow in the description. So, if
+you're thinking about getting a little
+
+482
+00:08:00,629 --> 00:08:00,639
+you're thinking about getting a little
+ 
+
+483
+00:08:00,639 --> 00:08:01,990
+you're thinking about getting a little
+creative with your ideas, make sure you
+
+484
+00:08:01,990 --> 00:08:02,000
+creative with your ideas, make sure you
+ 
+
+485
+00:08:02,000 --> 00:08:03,110
+creative with your ideas, make sure you
+try it out and let us know what you
+
+486
+00:08:03,110 --> 00:08:03,120
+try it out and let us know what you
+ 
+
+487
+00:08:03,120 --> 00:08:04,790
+try it out and let us know what you
+think. You can literally import it and
+
+488
+00:08:04,790 --> 00:08:04,800
+think. You can literally import it and
+ 
+
+489
+00:08:04,800 --> 00:08:06,869
+think. You can literally import it and
+have this entire AI video engine running
+
+490
+00:08:06,869 --> 00:08:06,879
+have this entire AI video engine running
+ 
+
+491
+00:08:06,879 --> 00:08:09,350
+have this entire AI video engine running
+in less than 10 minutes. No repeating
+
+492
+00:08:09,350 --> 00:08:09,360
+in less than 10 minutes. No repeating
+ 
+
+493
+00:08:09,360 --> 00:08:11,830
+in less than 10 minutes. No repeating
+steps, no copying prompts. Just import,
+
+494
+00:08:11,830 --> 00:08:11,840
+steps, no copying prompts. Just import,
+ 
+
+495
+00:08:11,840 --> 00:08:13,830
+steps, no copying prompts. Just import,
+connect your credentials and go. All
+
+496
+00:08:13,830 --> 00:08:13,840
+connect your credentials and go. All
+ 
+
+497
+00:08:13,840 --> 00:08:15,749
+connect your credentials and go. All
+right. So with Jugard Pro Max, we
+
+498
+00:08:15,749 --> 00:08:15,759
+right. So with Jugard Pro Max, we
+ 
+
+499
+00:08:15,759 --> 00:08:17,749
+right. So with Jugard Pro Max, we
+managed to show you how to use Google V3
+
+500
+00:08:17,749 --> 00:08:17,759
+managed to show you how to use Google V3
+ 
+
+501
+00:08:17,759 --> 00:08:19,909
+managed to show you how to use Google V3
+in India to generate cinematic AI
+
+502
+00:08:19,909 --> 00:08:19,919
+in India to generate cinematic AI
+ 
+
+503
+00:08:19,919 --> 00:08:21,909
+in India to generate cinematic AI
+videos. We automated the full pipeline
+
+504
+00:08:21,909 --> 00:08:21,919
+videos. We automated the full pipeline
+ 
+
+505
+00:08:21,919 --> 00:08:24,230
+videos. We automated the full pipeline
+using any. And we even linked the exact
+
+506
+00:08:24,230 --> 00:08:24,240
+using any. And we even linked the exact
+ 
+
+507
+00:08:24,240 --> 00:08:25,990
+using any. And we even linked the exact
+JSON setup so you don't have to start
+
+508
+00:08:25,990 --> 00:08:26,000
+JSON setup so you don't have to start
+ 
+
+509
+00:08:26,000 --> 00:08:27,830
+JSON setup so you don't have to start
+from scratch. And now you can build your
+
+510
+00:08:27,830 --> 00:08:27,840
+from scratch. And now you can build your
+ 
+
+511
+00:08:27,840 --> 00:08:30,070
+from scratch. And now you can build your
+own idea to video engine in under 10
+
+512
+00:08:30,070 --> 00:08:30,080
+own idea to video engine in under 10
+ 
+
+513
+00:08:30,080 --> 00:08:31,749
+own idea to video engine in under 10
+minutes. If this helped you, make sure
+
+514
+00:08:31,749 --> 00:08:31,759
+minutes. If this helped you, make sure
+ 
+
+515
+00:08:31,759 --> 00:08:33,190
+minutes. If this helped you, make sure
+you hit like and subscribe. But more
+
+516
+00:08:33,190 --> 00:08:33,200
+you hit like and subscribe. But more
+ 
+
+517
+00:08:33,200 --> 00:08:35,190
+you hit like and subscribe. But more
+importantly, drop your wildest video
+
+518
+00:08:35,190 --> 00:08:35,200
+importantly, drop your wildest video
+ 
+
+519
+00:08:35,200 --> 00:08:36,949
+importantly, drop your wildest video
+channel idea in the comments. Make it
+
+520
+00:08:36,949 --> 00:08:36,959
+channel idea in the comments. Make it
+ 
+
+521
+00:08:36,959 --> 00:08:38,790
+channel idea in the comments. Make it
+weird. Make it original. Just don't make
+
+522
+00:08:38,790 --> 00:08:38,800
+weird. Make it original. Just don't make
+ 
+
+523
+00:08:38,800 --> 00:08:41,279
+weird. Make it original. Just don't make
+it boring.
+

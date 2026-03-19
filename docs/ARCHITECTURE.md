@@ -43,7 +43,8 @@ The Telegram interface built with aiogram 3.x and aiogram-dialog.
 | `config.py` | pydantic-settings — all config from environment variables |
 | `db.py` | Supabase client + database helper functions |
 | `handlers/intake.py` | Free-text message handler — parses user intent, enqueues job |
-| `handlers/approval.py` | Callback query handler — processes Approve / Reject / Regenerate |
+| `handlers/approval.py` | Callback query handler — processes Approve / Reject / Regenerate. Exposes `approve_draft()` and `approve_video_draft()` shared functions used by both manual and autopilot flows. |
+| `handlers/autopilot.py` | /autopilot, /pause, /resume commands + FSM setup flow (mode → schedule → platforms) |
 | `handlers/onboarding.py` | /start and brand setup flow |
 | `handlers/photos.py` | Reference photo upload handler |
 | `dialogs/onboarding.py` | aiogram-dialog state machine for brand profile setup |
@@ -65,7 +66,7 @@ The AI brain. Turns any user request into a structured `GenerationPlan`.
 |---|---|
 | `models.py` | `GenerationPlan`, `ScenePlan`, `FramePrompt`, `AnimationPrompt`, `ContentFormat`, `VeoMode` |
 | `engine.py` | `generate_plan()` — single Claude Sonnet call with tool_use structured output |
-| `system_prompt.py` | Layered prompt builder: role + format rules + scene rules + ref image strategy + quality rules + brand voice |
+| `system_prompt.py` | Layered prompt builder: role + format rules + scene rules + ref image strategy + quality rules + brand voice. Includes Layer 11 (learned preferences, edit lessons, formula performance) when data exists |
 | `asset_resolver.py` | Load + categorize tenant assets (product photos, people photos, logo) |
 | `intake.py` | `check_intake()` — Claude Haiku classifier (proceed / ask_for_asset / ask_for_clarity) |
 | `voice_pool.py` | Gender-aware voice selection from tenant's voice pool JSONB |
@@ -79,9 +80,31 @@ The content generation engine. Called by workers, never by the bot directly.
 | `orchestrator.py` | Coordinates the full caption → image → draft flow (image posts) |
 | `caption_gen.py` | Claude API client — generates 3 caption + visual prompt options (legacy, still used for `revise_caption()`) |
 | `image_gen.py` | Kie.ai Nano Banana 2 client — generates images in parallel |
-| `brand_voice.py` | Loads brand profile + few-shot examples from DB |
+| `brand_voice.py` | Loads brand profile + few-shot examples (recency-weighted, formula-diverse) + learned preferences + edit lessons from DB |
 | `brand_gen.py` | AI-assisted brand profile generation from website scraping |
 | `posting.py` | Postiz posting wrapper |
+| `topic_engine.py` | Claude Haiku topic generation for autopilot + moderation + keyword dedup |
+| `schedule_parser.py` | Natural language schedule → validated cron expression (preset-only, no SQL injection) |
+
+### Learning Engine (`pipeline/learning/`)
+
+The invisible self-improvement system. Extracts learning signals from every user interaction — approvals, edits, and engagement — without any additional user effort. All learning happens backstage.
+
+| File | Responsibility |
+|---|---|
+| `structural_diff.py` | Pure Python caption feature extraction (word count, emoji, formula, sentence length) + pairwise diff between chosen and rejected options |
+| `preference_engine.py` | Accumulates preference signals from approvals and edits. Upserts into `preference_signals` with confidence = occurrences / total_opportunities |
+| `edit_analyzer.py` | Fire-and-forget Claude Haiku analysis of edit triples (original → instruction → result). Extracts concrete structural changes (~$0.001/edit) |
+| `engagement_scorer.py` | Weighted engagement score: `(likes + comments×3 + shares×5) / views × 1000`, capped at 10.0 |
+| `formula_tracker.py` | Aggregates formula performance stats (approval rate, avg engagement, edit rate) from feedback_events + few_shot_examples |
+
+**Key design decisions:**
+- Learning is always fire-and-forget — never blocks the user's approval or edit flow
+- Edit patterns are high-confidence signals (user actively changed something) — 2 occurrences = hard rule
+- Approval patterns are low-confidence (could be coincidence) — 8+ consistent picks = soft nudge
+- Engagement data is audience truth — overrides approval patterns
+- The Wildcard Rule: always 1 of 3 caption options must break from learned patterns (prevents filter bubble)
+- Lessons only, never bad examples — injecting "bad" captions into context primes Claude to mimic them
 
 ### Long Video Pipeline (`pipeline/long_video/`) — DEPRECATED
 
@@ -114,6 +137,10 @@ A long-running async process that polls pgmq queues and dispatches job handlers.
 | `jobs/generate_image.py` | Image-only generation |
 | `jobs/generate_video.py` | Video generation for existing image drafts ("Make Video" button on image previews) |
 | `jobs/post_content.py` | Calls Postiz to publish an approved draft |
+| `jobs/autopilot_dispatch.py` | Single dispatcher — queries due tenants, fans out per-tenant generation jobs |
+| `jobs/autopilot_generate.py` | Per-tenant generation — topic gen, guardrails (daily/weekly/monthly limits), failure tracking |
+| `jobs/autopilot_timeout.py` | Smart Queue sweep — auto-approves previews past their timeout deadline |
+| `jobs/autopilot_digest.py` | Weekly summary sent to all autopilot-enabled tenants |
 
 Workers run as a systemd service on the VPS. The polling interval and concurrency are configurable via environment variables.
 
@@ -122,7 +149,7 @@ Workers run as a systemd service on the VPS. The polling interval and concurrenc
 Supabase provides Postgres, row-level security, pgmq for queuing, and pg_cron for scheduled jobs.
 
 - **pgmq** handles the job queue with at-least-once delivery and automatic visibility timeouts
-- **pg_cron** will handle scheduled posting in Phase 2
+- **pg_cron** runs 3 autopilot cron jobs (dispatch every 5min, timeout sweep every 5min, weekly digest Sundays 9am UTC)
 - **Supabase Storage** holds generated images
 - **Supabase Vault** will hold OAuth tokens (encrypted at rest)
 
@@ -300,6 +327,161 @@ label text             -- 'product', 'owner', 'partner', 'other'
 uploaded_at timestamptz
 ```
 
+### Autopilot Tables
+
+**`autopilot_configs`** — One row per tenant — autopilot mode, schedule, limits
+```
+id uuid PK
+tenant_id uuid FK UNIQUE
+mode autopilot_mode    -- 'off', 'full_autopilot', 'smart_queue'
+schedule_cron text     -- validated cron expression (UTC)
+schedule_description text  -- human-readable ("Mon/Wed/Fri at 10:00 AM")
+timezone text          -- IANA timezone for schedule display
+platform_targets text[]
+smart_queue_timeout_minutes int  -- default 120
+daily_post_limit int   -- default 3 (hard ceiling: 10)
+weekly_post_limit int  -- default 15
+monthly_cost_cap_usd numeric  -- default 50 (hard ceiling: 100)
+content_mix jsonb      -- {"promotional": 40, "educational": 30, ...}
+consecutive_failures int  -- auto-pause at 3
+paused_at timestamptz  -- NULL when active
+next_run_at timestamptz  -- dispatcher checks this
+warmup_posts_remaining int  -- first 5 = Smart Queue regardless
+```
+
+**`autopilot_topics`** — Generated topics and their lifecycle
+```
+id uuid PK
+tenant_id uuid FK
+topic text
+category text          -- matches content_mix keys
+status topic_status    -- queued → generating → previewing → posted/rejected/failed
+content_request_id uuid FK  -- linked content_request
+draft_id uuid FK       -- linked content_draft
+auto_approve_at timestamptz  -- Smart Queue deadline
+```
+
+**`autopilot_runs`** — Run history for auditing
+```
+id uuid PK
+tenant_id uuid FK
+triggered_at timestamptz
+topics_generated int
+posts_created int
+posts_failed int
+cost_usd numeric
+```
+
+### Learning Tables
+
+**`preference_signals`** — Accumulated learning from user behavior
+```
+id uuid PK
+tenant_id uuid FK
+signal_type text        -- 'approval_structural', 'edit_pattern', 'engagement'
+feature text            -- 'word_count', 'formula', 'emoji', etc.
+value text              -- 'short', 'hook_story_offer', 'no_emoji'
+occurrences int         -- times this preference was observed
+total_opportunities int -- times it could have been observed
+confidence float        -- occurrences / total_opportunities
+lesson_text text        -- Haiku-generated lesson (edit patterns only)
+last_seen_at timestamptz
+```
+
+**`feedback_events`** (extended columns)
+```
+chosen_option_idx int       -- which option was picked (0-indexed)
+chosen_formula text         -- formula of the chosen option
+original_caption text       -- caption before edit
+edit_instruction text       -- user's edit instruction
+all_options jsonb           -- all 3 caption variant dicts (for structural diff)
+```
+
+**`few_shot_examples`** (extended columns)
+```
+formula text                -- copywriting formula used
+draft_id uuid FK            -- links to content_drafts for engagement tracking
+```
+
+**`engagement_metrics`** (extended columns)
+```
+tenant_id uuid FK           -- for tenant-scoped queries
+draft_id uuid FK            -- links to content_drafts
+```
+
+---
+
+## Autopilot Architecture
+
+Autopilot uses a **single dispatcher pattern** instead of per-tenant pg_cron jobs (which don't scale and are vulnerable to SQL injection).
+
+```
+pg_cron (every 5 min)
+ └─► INSERT 'autopilot_dispatch' job into job_queue
+      └─► Worker picks up dispatch job
+           └─► Query autopilot_configs WHERE next_run_at <= now() AND not paused
+                └─► For each due tenant: INSERT 'autopilot_generate' job
+                     └─► Worker picks up per-tenant job
+                          ├─► Check guardrails (daily/weekly limits, cost cap)
+                          ├─► Claude Haiku generates topic (deduped against last 14 days)
+                          ├─► Full Autopilot: Haiku moderation pass
+                          ├─► Create content_request + enqueue generate_content
+                          └─► Smart Queue: set auto_approve_at = now + timeout
+
+pg_cron (every 5 min)
+ └─► INSERT 'autopilot_timeout' job
+      └─► Query topics WHERE status='previewing' AND auto_approve_at <= now()
+           └─► Atomic conditional update (claim topic)
+                └─► Call approve_draft() → enqueue posting
+                     └─► Notify tenant: "Autopilot auto-posted: ..."
+```
+
+**Safety guardrails:**
+- Daily post limit (default 3, hard ceiling 10)
+- Weekly post limit (default 15)
+- Monthly cost cap (default $50, hard ceiling $100)
+- Auto-pause after 3 consecutive failures + Telegram notification
+- Warmup period: first 5 posts always use Smart Queue (even in Full Autopilot mode)
+- Full Autopilot: Claude Haiku moderation pass rejects potentially offensive content
+- Atomic conditional updates prevent race conditions between user actions and timeout sweep
+
+---
+
+## Learning Architecture
+
+The Invisible Learning Engine operates on three signal types, each with different confidence thresholds:
+
+```
+APPROVAL SIGNAL (low confidence — needs 8+ observations)
+  User picks Option 2
+  └─► Structural Diff: compare features of all 3 options
+       ├─► Chosen: short, punchy_one_liner, no emoji
+       └─► Rejected: long, hook_story_offer, has emoji
+            └─► Upsert preference_signals: word_count=short (1/1)
+                 After 8+ consistent picks → soft nudge in prompt
+
+EDIT SIGNAL (high confidence — needs 2-3 observations)
+  User edits: "make it shorter, remove exclamation marks"
+  └─► Claude Haiku analyzes the triple (original → instruction → result)
+       └─► Extracts: {"feature": "exclamation", "value": "none"}
+            └─► Upsert preference_signals at confidence 0.5 (first edit)
+                 After 2nd consistent edit → confidence 0.75 → hard rule
+
+ENGAGEMENT SIGNAL (audience truth — needs 5+ posts)
+  Platform API returns: 47 likes, 12 comments, 3 shares, 890 views
+  └─► Compute engagement score: (47 + 12×3 + 3×5) / 890 × 1000 = 100.2 → 10.0
+       └─► Update few_shot_examples.engagement_score
+            └─► Overrides approval patterns if audience disagrees
+```
+
+Learned preferences are injected into the system prompt as **Layer 11**:
+- **Hard rules** (from edits): "Keep captions under 60 words", "No exclamation marks"
+- **Soft preferences** (from approvals): "You tend to pick question hooks (8 of 11 times)"
+- **Formula performance** (from stats): ranked formulas with approval rate + engagement score
+- **Wildcard enforcement**: Option 3 always uses a formula NOT in the top 2
+
+Few-shot example selection uses recency decay with floor (`max(score × 0.95^days, score × 0.3)`) and formula diversity (max 2 examples per formula).
+
 ---
 
 ## Queue System (pgmq)
@@ -311,6 +493,10 @@ Scribario uses [pgmq](https://github.com/tembo-io/pgmq) — a Postgres-native me
 | Queue | Producer | Consumer | Job Type |
 |---|---|---|---|
 | `content_generation` | `intake.py` | `generate_content.py` | Run pipeline (image or inline video), store draft, send preview |
+| `content_generation` | pg_cron (5min) | `autopilot_dispatch.py` | Query due tenants, enqueue per-tenant generation |
+| `content_generation` | `autopilot_dispatch.py` | `autopilot_generate.py` | Generate topic + enqueue content pipeline for one tenant |
+| `content_generation` | pg_cron (5min) | `autopilot_timeout.py` | Auto-approve Smart Queue previews past deadline |
+| `content_generation` | pg_cron (Sun 9am) | `autopilot_digest.py` | Send weekly summary to autopilot tenants |
 | `posting` | `approval.py` | `post_content.py` | Post approved draft via Postiz |
 
 **Visibility timeout:** Jobs become visible again after 30s if not explicitly deleted, providing automatic retry on worker crash.
@@ -401,6 +587,28 @@ OAuth tokens for social accounts are stored in Supabase Vault (encrypted) and re
 | Nano Banana 2 scene image (1 @ $0.04) | $0.04 |
 | Veo Fast via Kie.ai | $0.40 |
 | **Total** | **~$0.50** |
+
+### Autopilot Post (topic + image post, auto-generated)
+
+| Component | Cost |
+|-----------|------|
+| Topic generation (Haiku) | $0.0003 |
+| Moderation check (Haiku, Full Autopilot only) | $0.0001 |
+| Prompt Engine (Sonnet) | $0.04 |
+| Nano Banana 2 images (3 @ $0.04) | $0.12 |
+| **Total** | **~$0.16** |
+
+*Autopilot adds ~$0.0004 per post for topic generation + moderation. The bulk of the cost is the same image pipeline as manual posts.*
+
+### Learning (per interaction, invisible)
+
+| Component | Cost |
+|-----------|------|
+| Structural diff (approval) | $0 (pure Python) |
+| Edit analysis (Haiku) | $0.001 |
+| Preference accumulation | $0 (DB upsert) |
+| **Total per approval** | **$0** |
+| **Total per edit** | **~$0.001** |
 
 ### Long Video (4 scenes, ~30s) — DEPRECATED
 
