@@ -443,7 +443,10 @@ class TestCmdBrand:
         call_text = message.answer.call_args[0][0]
         assert "Mondo Shrimp" in call_text
         assert "bold" in call_text
-        assert "coming soon" in call_text
+        assert "edit" in call_text.lower()  # edit buttons prompt
+        # Should have inline keyboard with edit buttons
+        reply_markup = message.answer.call_args[1].get("reply_markup")
+        assert reply_markup is not None
 
     @pytest.mark.asyncio
     async def test_brand_blocks_incomplete_onboarding(self):

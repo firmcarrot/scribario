@@ -16,6 +16,12 @@ class OnboardingSG(StatesGroup):
     complete = State()
 
 
+class BrandEditSG(StatesGroup):
+    """Brand profile editing states."""
+
+    waiting_for_value = State()
+
+
 class CaptionEditSG(StatesGroup):
     """Caption editing dialog states."""
 

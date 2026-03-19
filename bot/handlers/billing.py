@@ -57,7 +57,6 @@ PLANS = {
 TOPOFFS = {
     "images": {"name": "+10 Image Posts", "price": "$5", "credits": 10},
     "short_videos": {"name": "+5 Short Videos", "price": "$12", "credits": 5},
-    "long_video": {"name": "+1 Long Video", "price": "$6", "credits": 1},
 }
 
 

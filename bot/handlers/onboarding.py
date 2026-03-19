@@ -114,7 +114,7 @@ async def cmd_connect(message: Message) -> None:
 
 @router.message(Command("brand"))
 async def cmd_brand(message: Message) -> None:
-    """Handle /brand — show current brand profile (editing coming soon)."""
+    """Handle /brand — show current brand profile with edit buttons."""
     user = message.from_user
     if not user:
         return
@@ -143,16 +143,43 @@ async def cmd_brand(message: Message) -> None:
         )
         return
 
-    tone = ", ".join(profile.tone_words) if profile.tone_words else "(not set)"
-    do_items = "\n".join(f"  - {d}" for d in profile.do_list) if profile.do_list else "  (none)"
-    dont_items = "\n".join(f"  - {d}" for d in profile.dont_list) if profile.dont_list else "  (none)"
+    await _send_brand_profile(message, profile, tenant_id)
 
-    await message.answer(
+
+async def _send_brand_profile(
+    target: Message, profile: object, tenant_id: str,
+) -> None:
+    """Send formatted brand profile with edit buttons."""
+    tone = ", ".join(profile.tone_words) if profile.tone_words else "(not set)"
+    audience = profile.audience_description or "(not set)"
+    do_items = "\n".join(f"  • {d}" for d in profile.do_list) if profile.do_list else "  (none)"
+    dont_items = "\n".join(f"  • {d}" for d in profile.dont_list) if profile.dont_list else "  (none)"
+
+    text = (
         f"<b>Brand Profile: {profile.name}</b>\n\n"
         f"<b>Tone:</b> {tone}\n"
-        f"<b>Audience:</b> {profile.audience_description}\n\n"
-        f"<b>Do:</b>\n{do_items}\n\n"
-        f"<b>Don't:</b>\n{dont_items}\n\n"
-        "<i>Brand profile editing coming soon. For now, use /start to redo onboarding.</i>",
+        f"<b>Audience:</b> {audience}\n\n"
+        f"<b>Always do:</b>\n{do_items}\n\n"
+        f"<b>Never do:</b>\n{dont_items}\n\n"
+        "<i>Tap a button below to edit any field.</i>"
+    )
+
+    buttons = [
+        [
+            InlineKeyboardButton(text="✏️ Name", callback_data=f"brand_edit:name:{tenant_id}"),
+            InlineKeyboardButton(text="✏️ Tone", callback_data=f"brand_edit:tone:{tenant_id}"),
+        ],
+        [
+            InlineKeyboardButton(text="✏️ Audience", callback_data=f"brand_edit:audience:{tenant_id}"),
+        ],
+        [
+            InlineKeyboardButton(text="✏️ Always Do", callback_data=f"brand_edit:dos:{tenant_id}"),
+            InlineKeyboardButton(text="✏️ Never Do", callback_data=f"brand_edit:donts:{tenant_id}"),
+        ],
+    ]
+
+    await target.answer(
+        text,
         parse_mode="HTML",
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons),
     )
