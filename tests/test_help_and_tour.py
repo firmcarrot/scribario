@@ -19,35 +19,42 @@ class TestHelpCommand:
 
     @pytest.mark.asyncio
     async def test_help_returns_message(self):
-        """handle_help should answer with a non-empty HTML message."""
+        """handle_help should answer with a two-part HTML message."""
         message = AsyncMock()
         message.from_user = MagicMock(id=123)
 
         await handle_help(message)
 
-        message.answer.assert_called_once()
-        text = message.answer.call_args[1].get("text") or message.answer.call_args[0][0]
+        assert message.answer.call_count == 2, "Help is split into two messages"
+        text = message.answer.call_args_list[0][0][0]
         assert len(text) > 200, "Help text should be substantial"
-        assert "HTML" in str(message.answer.call_args) or True  # parse_mode check
 
     @pytest.mark.asyncio
     async def test_help_mentions_key_features(self):
-        """Help text should mention all major features."""
+        """Help text should mention all major features across both parts."""
         message = AsyncMock()
         message.from_user = MagicMock(id=123)
 
         await handle_help(message)
 
-        text = message.answer.call_args[0][0]
+        # Combine both message parts for feature checks
+        all_text = " ".join(
+            call[0][0] for call in message.answer.call_args_list
+        )
         # Key features that users need to know about
-        assert "schedule" in text.lower() or "friday" in text.lower()
-        assert "style" in text.lower() or "cinematic" in text.lower()
-        assert "video" in text.lower() or "reel" in text.lower()
-        assert "autopilot" in text.lower()
-        assert "/history" in text
-        assert "/timezone" in text
-        assert "/autopilot" in text
-        assert "/help" in text or "help" in text.lower()
+        assert "schedule" in all_text.lower() or "friday" in all_text.lower()
+        assert "style" in all_text.lower() or "cinematic" in all_text.lower()
+        assert "video" in all_text.lower() or "reel" in all_text.lower()
+        assert "autopilot" in all_text.lower()
+        assert "/history" in all_text
+        assert "/timezone" in all_text
+        assert "/autopilot" in all_text
+        assert "/help" in all_text or "help" in all_text.lower()
+        # Billing features (new)
+        assert "/subscribe" in all_text
+        assert "/billing" in all_text
+        assert "/topoff" in all_text
+        assert "/usage" in all_text
 
 
 class TestOnboardingTour:

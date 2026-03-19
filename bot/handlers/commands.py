@@ -124,57 +124,94 @@ async def handle_timezone(message: Message) -> None:
 @router.message(Command("help"))
 async def handle_help(message: Message) -> None:
     """Show a comprehensive guide to all Scribario features."""
-    await message.answer(
-        "<b>Scribario — Quick Guide</b>\n\n"
-        ""
-        "<b>Creating Posts</b>\n"
-        "Just type what you want to post:\n"
-        '<i>"Post about our weekend special"</i>\n'
-        '<i>"Announce we just hit 500 orders"</i>\n\n'
-        ""
-        "<b>Scheduling</b>\n"
-        "Include a time and I'll queue it:\n"
-        '<i>"Post this Friday at 3pm"</i>\n'
-        '<i>"Schedule for tomorrow at noon"</i>\n\n'
-        ""
-        "<b>Style Control</b>\n"
+    # Split into two messages to stay under Telegram's 4096-char limit
+    part1 = (
+        "<b>Scribario — Complete Guide</b>\n\n"
+        "Scribario turns a text message into a polished social media "
+        "post — image, caption, and all — published automatically.\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>📝 Creating Posts</b>\n"
+        "Just type what you want to post in plain English:\n"
+        '<i>"Post about our weekend shrimp special"</i>\n'
+        '<i>"We just hit 500 orders — celebrate it"</i>\n'
+        '<i>"Hiring a part-time kitchen assistant"</i>\n\n'
+        "I'll generate 3 unique caption + image options in ~30 seconds. "
+        "Pick the one you like.\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>📅 Scheduling</b>\n"
+        "Include a date/time and I'll queue it:\n"
+        '<i>"Post this Friday at 9am"</i>\n'
+        '<i>"Schedule for tomorrow at noon"</i>\n'
+        "Uses your timezone (set with /timezone).\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>🎨 Style Control</b>\n"
         "Add style words to guide the image:\n"
         '<i>"Make it cinematic and moody"</i>\n'
         '<i>"Watercolor style, bright colors"</i>\n'
-        "Styles: photorealistic, cinematic, cartoon, watercolor\n\n"
-        ""
-        "<b>Platform Targeting</b>\n"
-        "Specify where to post:\n"
+        "Styles: photorealistic, cinematic, cartoon, watercolor, "
+        "illustrated, flat design, overhead, lifestyle\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>🎯 Platform Targeting</b>\n"
+        "By default, posts go to all connected platforms. Narrow it:\n"
         '<i>"Post to Instagram only"</i>\n'
-        '<i>"Facebook and Instagram"</i>\n\n'
-        ""
-        "<b>Video Content</b>\n"
-        "Include video keywords:\n"
+        '<i>"Facebook and LinkedIn"</i>\n\n'
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>🎬 Video Content</b>\n"
+        "Include a video keyword and I'll create a short clip:\n"
         '<i>"Make a video reel about our new menu"</i>\n'
-        '<i>"Animate something for National Donut Day"</i>\n'
-        "Keywords: video, reel, clip, animate\n\n"
-        ""
-        "<b>Reference Photos</b>\n"
-        "Send a photo to use as creative direction.\n"
-        "The AI will match the style, lighting, and composition.\n\n"
-        ""
-        "<b>After Preview</b>\n"
-        "When you see your 3 options, you can:\n"
-        "  Approve — post immediately\n"
-        "  Edit — revise the caption\n"
-        "  New Image — regenerate just the image\n"
-        "  Reject All — discard everything\n"
-        "  Regenerate — get 3 brand new options\n\n"
-        ""
-        "<b>Commands</b>\n"
-        "/autopilot — set up automatic posting\n"
-        "/history — see your last 10 posts\n"
-        "/timezone — view or change your timezone\n"
-        "/connect — add social platform accounts\n"
-        "/brand — view your brand profile\n"
-        "/help — show this guide\n",
-        parse_mode="HTML",
+        '<i>"Animate something fun for National Donut Day"</i>\n'
+        'Keywords: video, reel, clip, animate\n'
+        '"Reel", "story", "tiktok", "shorts" → vertical (9:16)\n'
+        "Video takes 1-3 minutes.\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>📸 Reference Photos</b>\n"
+        "Send a photo and the AI uses it as creative direction — "
+        "matching style, lighting, and composition. Manage your photos "
+        "with /photos.\n"
     )
+
+    part2 = (
+        "<b>✅ Preview Actions</b>\n"
+        "When you see your 3 options:\n"
+        "  <b>Approve #1/2/3</b> — publish that option immediately\n"
+        "  <b>Edit</b> — revise the caption, then re-preview\n"
+        "  <b>New Image</b> — keep the caption, regenerate just the photo\n"
+        "  <b>Make Video</b> — turn an image preview into a video\n"
+        "  <b>Reject All</b> — discard everything, nothing posts\n"
+        "  <b>Regenerate</b> — get 3 completely new options\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>🤖 Autopilot</b>\n"
+        "/autopilot — set up AI-powered auto-posting on a schedule\n"
+        "Two modes:\n"
+        "  <b>Smart Queue</b> — preview first, auto-posts in 2 hours\n"
+        "  <b>Full Autopilot</b> — generates and posts, no approval\n"
+        "/pause — stop autopilot immediately\n"
+        "/resume — restart your schedule\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>💳 Billing</b>\n"
+        "/subscribe — choose Starter ($29), Growth ($59), or Pro ($99)\n"
+        "/upgrade — move to a higher plan (prorated)\n"
+        "/topoff — buy extra credits when you need more\n"
+        "/usage — see how many posts and videos you have left\n"
+        "/billing — manage payment, view invoices, cancel\n\n"
+        "Credits reset on your billing anniversary each month. "
+        "Bonus credits from top-offs never expire.\n\n"
+        "━━━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>⚙️ Setup & Info</b>\n"
+        "/start — begin onboarding + brand setup\n"
+        "/connect — link Facebook, Instagram, and more\n"
+        "/brand — update your brand voice and tone\n"
+        "/logo — upload or change your brand logo\n"
+        "/photos — manage reference photos\n"
+        "/library — browse unchosen options (post for free)\n"
+        "/history — view your last 10 posted items\n"
+        "/status — check recent request status\n"
+        "/timezone — set your local timezone\n"
+        "/help — this guide\n"
+    )
+
+    await message.answer(part1, parse_mode="HTML")
+    await message.answer(part2, parse_mode="HTML")
 
 
 @router.message(Command("status"))

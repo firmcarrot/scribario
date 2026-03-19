@@ -6,6 +6,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+from aiogram.types import BotCommand
 from aiogram.fsm.storage.redis import DefaultKeyBuilder, RedisStorage
 from aiogram_dialog import setup_dialogs
 
@@ -55,6 +56,28 @@ async def main() -> None:
 
     bot = create_bot()
     dp = create_dispatcher()
+
+    # Register the command menu users see in Telegram
+    await bot.set_my_commands([
+        BotCommand(command="help", description="How to use Scribario"),
+        BotCommand(command="start", description="Begin onboarding + brand setup"),
+        BotCommand(command="connect", description="Link social media accounts"),
+        BotCommand(command="brand", description="Update brand voice settings"),
+        BotCommand(command="logo", description="Upload or update brand logo"),
+        BotCommand(command="photos", description="Manage reference photos"),
+        BotCommand(command="library", description="Browse saved content options"),
+        BotCommand(command="history", description="View last 10 posted items"),
+        BotCommand(command="subscribe", description="Choose a plan"),
+        BotCommand(command="upgrade", description="Upgrade to a higher tier"),
+        BotCommand(command="topoff", description="Buy extra credits"),
+        BotCommand(command="usage", description="View credits + progress bars"),
+        BotCommand(command="billing", description="Manage payment & invoices"),
+        BotCommand(command="autopilot", description="Set up auto-posting"),
+        BotCommand(command="pause", description="Stop autopilot"),
+        BotCommand(command="resume", description="Restart autopilot"),
+        BotCommand(command="status", description="Check recent request status"),
+        BotCommand(command="timezone", description="Set your local timezone"),
+    ])
 
     # Drop pending updates on startup to avoid processing stale messages
     await bot.delete_webhook(drop_pending_updates=True)
