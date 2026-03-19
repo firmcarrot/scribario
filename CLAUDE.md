@@ -8,7 +8,6 @@ Business owners text → AI generates image/video + copy → preview → approve
 - **Bot:** Python 3.11+, aiogram 3.x, aiogram_dialog
 - **FSM Storage:** Redis 7 (`redis://localhost:6379/0`) — required for caption edit state to survive restarts
 - **Pipeline/Worker:** Python, httpx, anthropic SDK
-- **Edge Functions:** Deno/TypeScript (Supabase)
 - **Database:** Supabase Postgres + pgmq + pg_cron
 - **Posting:** Postiz (self-hosted Docker)
 - **Image Gen:** Kie.ai (Nano Banana 2), Gemini fallback
@@ -69,7 +68,6 @@ NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
 - **Region:** us-east-1
 - **Extensions:** pgmq, pg_cron, pg_net
 - **Migrations:** `supabase/migrations/` — timestamp from MCP, never invented
-- **Edge Functions:** Deno, <400s, 256MB. Heavy work → enqueue to pgmq → worker handles it
 - **RLS:** tenant_id on every table, RLS policies enforced
 - **Vault:** OAuth tokens stored encrypted, never in plain columns
 

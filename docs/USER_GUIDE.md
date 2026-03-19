@@ -266,7 +266,7 @@ Annual plans save 20%. Credits reset on your billing anniversary (not the 1st of
 |---|---|
 | `/subscribe` | Choose a plan and subscribe via Stripe Checkout |
 | `/upgrade` | Upgrade to a higher tier (prorated) |
-| `/topoff` | Buy extra credits: +10 images ($5), +5 videos ($12), +1 long video ($6) — max 3 per category/month |
+| `/topoff` | Buy extra credits: +10 images ($5), +5 videos ($12) — max 3 per category/month |
 | `/usage` | See your current usage with visual progress bars |
 | `/billing` | Open the Stripe Customer Portal to manage payment methods, view invoices, or cancel |
 

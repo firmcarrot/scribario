@@ -55,6 +55,11 @@ The Telegram interface built with aiogram 3.x and aiogram-dialog.
 | `services/budget.py` | Budget enforcement — `check_can_generate()`, `check_can_generate_video()`, per-tenant billing cycle resets |
 | `services/stripe_service.py` | Stripe Checkout session creation, Customer Portal links, price resolution |
 | `handlers/billing.py` | `/subscribe`, `/upgrade`, `/topoff`, `/usage`, `/billing` commands |
+| `handlers/brand_edit.py` | FSM-based inline brand profile editing (callback + value handlers) |
+| `handlers/caption_edit.py` | Caption editing flow — user edits caption text before approving |
+| `handlers/commands.py` | `/help`, `/history`, `/status`, `/timezone` commands |
+| `handlers/logo.py` | `/logo` command — upload or change brand logo |
+| `handlers/library.py` | `/library` command — browse unchosen options, post for free |
 
 **Key design decisions:**
 - Bot never calls Claude or Kie.ai directly — it only writes to the database and enqueues jobs
@@ -249,23 +254,30 @@ All tables include `tenant_id uuid NOT NULL` with RLS policies enforcing tenant 
 ```
 id uuid PK
 name text
-plan_tier text             -- 'free_trial', 'starter', 'growth', 'pro'
-subscription_status text   -- 'active', 'past_due', 'canceled', 'trialing'
+slug text
+auto_approve_after interval  -- for Smart Queue autopilot
+website_url text
+timezone text              -- IANA timezone (e.g. 'America/New_York')
+plan_tier plan_tier        -- 'free_trial', 'starter', 'growth', 'pro'
+subscription_status subscription_status -- 'active', 'past_due', 'canceled', 'trialing'
 stripe_customer_id text
 stripe_subscription_id text
-monthly_post_limit int
-monthly_posts_used int
-monthly_posts_reset_at timestamptz
-video_credits_remaining int
 trial_posts_used int
 trial_posts_limit int      -- default 5
 trial_video_limit int      -- default 1
+trial_videos_used int
+video_credits_remaining int
+monthly_post_limit int
+monthly_posts_used int
+monthly_posts_reset_at timestamptz
+monthly_cost_hard_limit_usd numeric
+billing_started_at timestamptz
+current_period_end timestamptz        -- Stripe billing anniversary
+canceled_at timestamptz               -- set when cancellation scheduled
 bonus_posts int            -- persist until used, never reset
 bonus_videos int           -- persist until used, never reset
 bonus_posts_purchased_this_month int  -- resets on renewal (cap enforcement)
 bonus_videos_purchased_this_month int -- resets on renewal (cap enforcement)
-current_period_end timestamptz        -- Stripe billing anniversary
-canceled_at timestamptz               -- set when cancellation scheduled
 created_at timestamptz
 ```
 
@@ -298,19 +310,25 @@ voice_pool jsonb       -- [{voice_id, gender, style_label}] — gender-aware rot
 id uuid PK
 tenant_id uuid FK
 platform text
+content_type text      -- e.g. 'organic', 'promotional'
 caption text
-visual_description text
-performance_score float  -- for ranking examples
+image_url text
+engagement_score numeric -- real engagement data (replaces hardcoded 1.0)
+formula text           -- copywriting formula used (e.g. 'hook_story_offer')
+draft_id uuid FK       -- links to content_drafts for engagement tracking
+created_at timestamptz
 ```
 
 **`content_requests`** — Every post request from a user
 ```
 id uuid PK
 tenant_id uuid FK
-telegram_user_id bigint
+source content_source  -- 'manual', 'autopilot'
 intent text            -- raw user message
-platform_targets text[]
-status text            -- pending → generating → preview_sent → done
+platform_targets text[] DEFAULT '{instagram}'
+due_at timestamptz     -- scheduled post time (NULL = immediate)
+status content_request_status -- pending → generating → preview_sent → done
+style_override text    -- optional style hints from user
 generate_video boolean DEFAULT false  -- when true, video is generated inline with captions
 video_aspect_ratio text               -- e.g. '9:16', '16:9', '1:1' (preserved on regenerate)
 created_at timestamptz
@@ -321,9 +339,13 @@ created_at timestamptz
 id uuid PK
 request_id uuid FK
 tenant_id uuid FK
-options jsonb          -- array of {caption, image_url, visual_prompt}
-approved_option int    -- which option the user picked (1-3)
-status text            -- preview_sent → approved → posting → posted
+caption_variants jsonb DEFAULT '[]' -- array of {caption, visual_prompt, formula, ...}
+image_urls text[]      -- Supabase Storage URLs for generated images
+video_url text         -- Supabase Storage URL for generated video (NULL for image posts)
+voiceover_url text     -- TTS audio URL (NULL for most posts)
+platform_versions jsonb DEFAULT '{}' -- platform-specific caption variants
+status content_draft_status -- generating → preview_sent → approved → posting → posted
+created_at timestamptz
 ```
 
 **`posting_jobs`** — One row per platform per posting attempt
@@ -332,9 +354,29 @@ id uuid PK
 draft_id uuid FK
 tenant_id uuid FK
 platform text
-status text            -- queued → posting → posted → failed
-postiz_post_id text    -- returned by Postiz on success
+asset_urls text[]      -- Supabase Storage URLs for media to post
+caption text           -- approved caption text
+scheduled_for timestamptz -- NULL = post immediately
+status posting_job_status -- queued → posting → posted → failed
+idempotency_key text   -- hash(request_id + job_type) prevents double-processing
+retry_count int
+max_retries int
+created_at timestamptz
+```
+
+**`posting_results`** — Per-platform result of each posting attempt
+```
+id uuid PK
+job_id uuid FK
+posting_job_id uuid FK
+tenant_id uuid FK
+platform text
+platform_post_id text  -- returned by Postiz on success (for engagement polling)
+platform_url text      -- public URL of the posted content
+success boolean
+error_message text
 posted_at timestamptz
+created_at timestamptz
 ```
 
 **`reference_photos`** — User-uploaded creative reference images
@@ -424,12 +466,6 @@ chosen_formula text         -- formula of the chosen option
 original_caption text       -- caption before edit
 edit_instruction text       -- user's edit instruction
 all_options jsonb           -- all 3 caption variant dicts (for structural diff)
-```
-
-**`few_shot_examples`** (extended columns)
-```
-formula text                -- copywriting formula used
-draft_id uuid FK            -- links to content_drafts for engagement tracking
 ```
 
 **`engagement_metrics`** (extended columns)
@@ -620,7 +656,6 @@ Stripe billing is integrated via Stripe Checkout (hosted payment pages) with web
 **Top-off bundles** (one-time, capped at 3 per category per month):
 - +10 image posts: $5
 - +5 short videos: $12
-- +1 long video: $6
 
 ### Webhook Flow
 
