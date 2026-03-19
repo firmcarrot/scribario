@@ -200,7 +200,7 @@ async def handle_help(message: Message) -> None:
         "<b>⚙️ Setup & Info</b>\n"
         "/start — begin onboarding + brand setup\n"
         "/connect — link Facebook, Instagram, and more\n"
-        "/brand — update your brand voice and tone\n"
+        "/brand — view and edit your brand voice (name, tone, audience, dos/donts)\n"
         "/logo — upload or change your brand logo\n"
         "/photos — manage reference photos\n"
         "/library — browse unchosen options (post for free)\n"
