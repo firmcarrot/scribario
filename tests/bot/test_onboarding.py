@@ -70,6 +70,18 @@ class TestIntakeOnboardingGuard:
             patch("bot.handlers.intake.get_tenant_by_telegram_user", return_value=membership),
             patch("bot.handlers.intake.create_content_request", return_value={"id": "cr1"}),
             patch("bot.handlers.intake.enqueue_job", return_value={"id": "j1"}),
+            patch("bot.handlers.intake.check_intake",
+                  new_callable=AsyncMock,
+                  return_value=MagicMock(action="proceed")),
+            patch("bot.handlers.intake._pending_post_photos", {}),
+            patch("bot.services.rate_limiter.is_rate_limited",
+                  new_callable=AsyncMock, return_value=False),
+            patch("bot.services.budget.check_can_generate",
+                  new_callable=AsyncMock, return_value=(True, "")),
+            patch("bot.services.budget.check_can_generate_video",
+                  new_callable=AsyncMock, return_value=(True, "")),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
         ):
             await handle_content_request(message)
 
@@ -384,11 +396,10 @@ class TestSendPlatformButtons:
         from bot.handlers.onboarding import send_platform_buttons
 
         bot = AsyncMock()
+        mock_settings = MagicMock()
+        mock_settings.connect_base_url = "https://connect.scribario.com"
 
-        with patch(
-            "bot.handlers.onboarding.get_oauth_url",
-            return_value="https://example.com/oauth/facebook?long_enough_url",
-        ):
+        with patch("bot.config.get_settings", return_value=mock_settings):
             await send_platform_buttons(bot, 456)
 
         bot.send_message.assert_called()

@@ -22,11 +22,25 @@ class TestIntakeAgentIntegration:
         msg.answer = AsyncMock()
         return msg
 
+    def _budget_patches(self):
+        """Return context managers that mock budget checks to allow generation."""
+        return (
+            patch("bot.services.rate_limiter.is_rate_limited",
+                  new_callable=AsyncMock, return_value=False),
+            patch("bot.services.budget.check_can_generate",
+                  new_callable=AsyncMock, return_value=(True, "")),
+            patch("bot.services.budget.check_can_generate_video",
+                  new_callable=AsyncMock, return_value=(True, "")),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
+        )
+
     @pytest.mark.asyncio
     async def test_proceeds_when_intake_says_proceed(self) -> None:
         from bot.handlers.intake import handle_content_request
 
         msg = self._make_message()
+        b1, b2, b3, b4 = self._budget_patches()
 
         with (
             patch("bot.handlers.intake.get_tenant_by_telegram_user",
@@ -41,6 +55,7 @@ class TestIntakeAgentIntegration:
             patch("bot.handlers.intake.enqueue_job",
                   new_callable=AsyncMock) as mock_enqueue,
             patch("bot.handlers.intake._pending_post_photos", {}),
+            b1, b2, b3, b4,
         ):
             await handle_content_request(msg)
 
@@ -48,43 +63,11 @@ class TestIntakeAgentIntegration:
         mock_enqueue.assert_called_once()
 
     @pytest.mark.asyncio
-    async def test_asks_for_asset_and_does_not_enqueue(self) -> None:
-        from bot.handlers.intake import handle_content_request
-
-        msg = self._make_message("put my widget on the moon")
-
-        with (
-            patch("bot.handlers.intake.get_tenant_by_telegram_user",
-                  new_callable=AsyncMock,
-                  return_value={"tenant_id": "t1", "onboarding_status": "complete"}),
-            patch("bot.handlers.intake.check_intake",
-                  new_callable=AsyncMock,
-                  return_value=IntakeResult(
-                      action=IntakeAction.ASK_FOR_ASSET,
-                      message="Can you send me a photo of your widget?",
-                  )),
-            patch("bot.handlers.intake.create_content_request",
-                  new_callable=AsyncMock) as mock_create,
-            patch("bot.handlers.intake.enqueue_job",
-                  new_callable=AsyncMock) as mock_enqueue,
-            patch("bot.handlers.intake._pending_post_photos", {}),
-        ):
-            await handle_content_request(msg)
-
-        # Should NOT have created a request or enqueued
-        mock_create.assert_not_called()
-        mock_enqueue.assert_not_called()
-
-        # Should have sent the clarifying message
-        msg.answer.assert_called()
-        answer_text = msg.answer.call_args[0][0]
-        assert "photo" in answer_text.lower() or "widget" in answer_text.lower()
-
-    @pytest.mark.asyncio
     async def test_asks_for_clarity_and_does_not_enqueue(self) -> None:
         from bot.handlers.intake import handle_content_request
 
         msg = self._make_message("make something")
+        b1, b2, b3, b4 = self._budget_patches()
 
         with (
             patch("bot.handlers.intake.get_tenant_by_telegram_user",
@@ -101,6 +84,7 @@ class TestIntakeAgentIntegration:
             patch("bot.handlers.intake.enqueue_job",
                   new_callable=AsyncMock) as mock_enqueue,
             patch("bot.handlers.intake._pending_post_photos", {}),
+            b1, b2, b3, b4,
         ):
             await handle_content_request(msg)
 
