@@ -3,7 +3,7 @@
 **Your AI social media team — in a Telegram bot.**
 
 [![Website](https://img.shields.io/badge/web-scribario.com-FF6B4A)](https://scribario.com)
-[![Tests](https://img.shields.io/badge/tests-755%20passing-brightgreen)](tests/)
+[![Tests](https://img.shields.io/badge/tests-755%2B%20passing-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Telegram](https://img.shields.io/badge/bot-%40ScribarioBot-2CA5E0?logo=telegram)](https://t.me/ScribarioBot)
@@ -39,12 +39,14 @@ Business owners describe what they want to post. Scribario generates three uniqu
 - **Posting confirmation** — Telegram message after every successful post with exact platform names
 - **Multi-platform publishing** — Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, Threads
 - **Multi-tenant architecture** — every business gets isolated data, brand profiles, and posting credentials
+- **Stripe billing** — /subscribe, /upgrade, /topoff, /billing with Customer Portal, per-tenant billing cycles
+- **Usage tracking** — /usage with visual progress bars, 80% usage warnings, bonus credit top-offs
 - **Fully self-hosted** — your API keys, your data, your infrastructure
 - **Reference photo support** — send a photo as creative direction for the image style
 - **Image-only regeneration** — 🖼️ New Image per option — regenerates the photo, keeps the caption
 - **Short-form video** — say "make a video reel" and get a video + 3 caption options in one preview
 - **Autopilot Mode** — set it and forget it: AI generates and posts content on a schedule (Smart Queue with preview + Full Autopilot)
-- **755 tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
+- **755+ tests, 0 regressions** — TDD-first codebase, FSM state persisted in Redis
 
 ---
 
@@ -56,10 +58,12 @@ Business owners describe what they want to post. Scribario generates three uniqu
 | Caption generation | [Anthropic Claude API](https://www.anthropic.com/) |
 | Image generation | [Kie.ai Nano Banana 2](https://kie.ai/) |
 | Social publishing | [Postiz](https://postiz.app/) (self-hosted) |
+| Billing | [Stripe](https://stripe.com/) (Checkout + Customer Portal + Webhooks) |
 | Database + queues | [Supabase](https://supabase.com/) (Postgres + pgmq + pg_cron) |
 | FSM state storage | [Redis 7](https://redis.io/) (survives restarts) |
 | Date parsing | [dateparser](https://dateparser.readthedocs.io/) |
 | Background workers | Python async workers polling pgmq |
+| OAuth + webhooks | [connect_server.py](scripts/connect_server.py) (Starlette ASGI, nginx) |
 | Infrastructure | Hostinger VPS, systemd |
 | Testing | pytest + pytest-asyncio |
 | Type checking | mypy --strict |
@@ -128,9 +132,12 @@ python -m bot.main
 ```
 scribario/
 ├── bot/                # Telegram bot (aiogram 3.x)
+│   ├── handlers/       # Message + callback handlers (intake, approval, billing, autopilot)
+│   └── services/       # Budget enforcement, Stripe service, Telegram builders
 ├── pipeline/           # Content generation pipeline (Claude + Kie.ai)
 │   └── learning/       # Invisible AI learning engine
 ├── worker/             # Background job processor (pgmq poller)
+├── scripts/            # connect_server.py (OAuth proxy + Stripe webhooks)
 ├── web/                # Marketing website (Next.js 16, Vercel)
 ├── supabase/           # Database migrations and edge functions
 ├── tests/              # 755+ automated tests
@@ -146,9 +153,9 @@ scribario/
 Scribario is in active development with a live beta deployment serving its first client.
 
 - **Phase 1:** Complete — core pipeline, Facebook/Instagram posting, multi-tenant, Redis FSM
-- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation, unified short-form video pipeline, content library, autopilot mode (755 tests). Long video generation has been deprecated in favor of the unified pipeline.
-- **Phase 2.5:** Complete — Invisible Learning Engine: structural diff, preference accumulation, edit analysis, formula tracking, wildcard enforcement, Layer 11 prompt injection (755 tests)
-- **Phase 3:** Planned — analytics, agency dashboard, Meta App Review for public Instagram access
+- **Phase 2:** Complete — scheduling, style system, caption editing, image-only regen, platform selection, /history, brand voice learning, posting confirmation, unified short-form video pipeline, content library, autopilot mode, Stripe billing (755+ tests). Long video generation has been deprecated in favor of the unified pipeline.
+- **Phase 2.5:** Complete — Invisible Learning Engine: structural diff, preference accumulation, edit analysis, formula tracking, wildcard enforcement, Layer 11 prompt injection
+- **Phase 3:** In progress — analytics, agency dashboard, Meta App Review for public Instagram access
 
 See the full roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)
 

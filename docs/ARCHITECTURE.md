@@ -52,6 +52,9 @@ The Telegram interface built with aiogram 3.x and aiogram-dialog.
 | `services/postiz.py` | Postiz API client |
 | `services/postiz_oauth.py` | OAuth flow for connecting social accounts |
 | `services/storage.py` | Supabase Storage upload helpers |
+| `services/budget.py` | Budget enforcement — `check_can_generate()`, `check_can_generate_video()`, per-tenant billing cycle resets |
+| `services/stripe_service.py` | Stripe Checkout session creation, Customer Portal links, price resolution |
+| `handlers/billing.py` | `/subscribe`, `/upgrade`, `/topoff`, `/usage`, `/billing` commands |
 
 **Key design decisions:**
 - Bot never calls Claude or Kie.ai directly — it only writes to the database and enqueues jobs
@@ -246,7 +249,23 @@ All tables include `tenant_id uuid NOT NULL` with RLS policies enforcing tenant 
 ```
 id uuid PK
 name text
-plan text  -- 'free_beta', 'starter', 'growth', 'pro'
+plan_tier text             -- 'free_trial', 'starter', 'growth', 'pro'
+subscription_status text   -- 'active', 'past_due', 'canceled', 'trialing'
+stripe_customer_id text
+stripe_subscription_id text
+monthly_post_limit int
+monthly_posts_used int
+monthly_posts_reset_at timestamptz
+video_credits_remaining int
+trial_posts_used int
+trial_posts_limit int      -- default 5
+trial_video_limit int      -- default 1
+bonus_posts int            -- persist until used, never reset
+bonus_videos int           -- persist until used, never reset
+bonus_posts_purchased_this_month int  -- resets on renewal (cap enforcement)
+bonus_videos_purchased_this_month int -- resets on renewal (cap enforcement)
+current_period_end timestamptz        -- Stripe billing anniversary
+canceled_at timestamptz               -- set when cancellation scheduled
 created_at timestamptz
 ```
 
@@ -325,6 +344,16 @@ tenant_id uuid FK
 storage_path text      -- Supabase Storage path
 label text             -- 'product', 'owner', 'partner', 'other'
 uploaded_at timestamptz
+```
+
+### Billing Tables
+
+**`stripe_events`** — Webhook idempotency tracking
+```
+id uuid PK
+event_id text UNIQUE      -- Stripe event ID (e.g. evt_xxx)
+event_type text
+processed_at timestamptz
 ```
 
 ### Autopilot Tables
@@ -563,6 +592,66 @@ OAuth tokens for social accounts are stored in Supabase Vault (encrypted) and re
   - `nginx + Let's Encrypt` — SSL termination
 - **Supabase** (managed) — Postgres + Storage + pgmq + pg_cron
 - **Domain:** scribario.com → VPS
+
+---
+
+## Billing Architecture
+
+Stripe billing is integrated via Stripe Checkout (hosted payment pages) with webhook-driven state management.
+
+### Components
+
+| File | Responsibility |
+|---|---|
+| `bot/services/stripe_service.py` | Create Checkout sessions (subscription + one-time), Customer Portal links, tier/price resolution |
+| `bot/services/budget.py` | Gate content generation (`check_can_generate`, `check_can_generate_video`), deduct credits, per-tenant billing cycle resets |
+| `bot/handlers/billing.py` | Bot commands: `/subscribe`, `/upgrade`, `/topoff`, `/usage`, `/billing` |
+| `scripts/connect_server.py` | Stripe webhook endpoint + success page at `connect.scribario.com` |
+
+### Subscription Tiers
+
+| Tier | Monthly | Annual (20% off) | Image Posts | Video Credits |
+|---|---|---|---|---|
+| Starter | $29/mo | $278/yr | 15/mo | 5/mo |
+| Growth | $59/mo | $566/yr | 40/mo | 15/mo |
+| Pro | $99/mo | $950/yr | 100/mo | 40/mo |
+| Free Trial | — | — | 5 total | 1 total |
+
+**Top-off bundles** (one-time, capped at 3 per category per month):
+- +10 image posts: $5
+- +5 short videos: $12
+- +1 long video: $6
+
+### Webhook Flow
+
+Stripe events are received at `connect.scribario.com/stripe/webhook` with signature verification and idempotency via `stripe_events` table.
+
+| Event | Handler | Effect |
+|---|---|---|
+| `checkout.session.completed` | `_handle_checkout_completed` | Create/update tenant: set `stripe_customer_id`, `stripe_subscription_id`, `plan_tier`, `subscription_status`, allocate credits |
+| `invoice.paid` | `_handle_invoice_paid` | **Primary reset mechanism**: on renewal (`billing_reason=subscription_cycle`), reset `monthly_posts_used`, `video_credits_remaining`, `bonus_*_purchased_this_month` counters. Update `current_period_end`. |
+| `invoice.payment_failed` | `_handle_payment_failed` | Set `subscription_status=past_due` |
+| `customer.subscription.updated` | `_handle_subscription_updated` | Tier changes (upgrade/downgrade): update `plan_tier`, reallocate credits |
+| `customer.subscription.deleted` | `_handle_subscription_deleted` | Set `subscription_status=canceled`, `plan_tier=free_trial` |
+
+### Per-Tenant Billing Cycles
+
+Credits reset on each tenant's **billing anniversary** (stored in `current_period_end`), NOT the 1st of the month. The `invoice.paid` webhook is the primary reset mechanism. `budget.py._maybe_reset_monthly()` is a belt-and-suspenders fallback that checks `current_period_end` on every budget check.
+
+**Bonus credits persist until used** — they are never zeroed on monthly reset (user paid for them). Only `bonus_*_purchased_this_month` counters (which enforce the 3-per-category cap) reset on renewal.
+
+### Credit Deduction Timing
+
+Credits are deducted **after successful generation** in the worker job (`generate_content.py`, `generate_video.py`), not before. This prevents users from losing credits on failed generation jobs.
+
+### Atomic RPCs
+
+| RPC | Purpose |
+|---|---|
+| `consume_post_credit` | Atomic post credit deduction with FOR UPDATE lock |
+| `decrement_video_credit` | Atomic video credit deduction |
+| `apply_topoff_credits` | Atomic top-off application |
+| `check_topoff_cap` | Enforce 3-per-category monthly cap |
 
 ---
 

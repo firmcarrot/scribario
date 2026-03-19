@@ -243,6 +243,43 @@ Every Sunday morning, you'll get a summary:
 
 ---
 
+## Billing & Subscription
+
+### Plans
+
+| Plan | Price | Image Posts | Video Credits |
+|---|---|---|---|
+| **Free Trial** | Free | 5 posts total | 1 video total |
+| **Starter** | $29/mo ($278/yr) | 15/mo | 5/mo |
+| **Growth** | $59/mo ($566/yr) | 40/mo | 15/mo |
+| **Pro** | $99/mo ($950/yr) | 100/mo | 40/mo |
+
+Annual plans save 20%. Credits reset on your billing anniversary (not the 1st of the month).
+
+### Billing Commands
+
+| Command | What it does |
+|---|---|
+| `/subscribe` | Choose a plan and subscribe via Stripe Checkout |
+| `/upgrade` | Upgrade to a higher tier (prorated) |
+| `/topoff` | Buy extra credits: +10 images ($5), +5 videos ($12), +1 long video ($6) — max 3 per category/month |
+| `/usage` | See your current usage with visual progress bars |
+| `/billing` | Open the Stripe Customer Portal to manage payment methods, view invoices, or cancel |
+
+### How Usage Works
+
+- **Image posts** and **video credits** reset each billing cycle
+- **Bonus credits** (from top-offs) persist until used — they never expire or reset
+- At **80% usage**, Scribario sends a warning so you can top off before running out
+- When you **cancel**, your subscription stays active until the end of the current billing period — no refunds, but you keep what you paid for
+
+### Upgrading and Downgrading
+
+- **Upgrade:** Takes effect immediately. You get the new tier's credit limits right away. Stripe prorates the charge.
+- **Downgrade:** Managed through the Customer Portal (`/billing`). Takes effect at next billing cycle.
+
+---
+
 ## Sending Reference Photos
 
 You can send a photo directly to the bot to use as creative direction for your images. The AI will use your photo as a style reference — matching the lighting, color tone, composition, or subject matter.
@@ -292,6 +329,18 @@ Yes — use `/autopilot` to set up Autopilot Mode. You can choose Smart Queue (p
 **Is my content saved?**
 
 Yes — all requests, drafts, and approved posts are saved to your account. Post history and analytics are coming in Phase 2.
+
+**What happens when I run out of credits?**
+
+Scribario will let you know when you're at 80% usage. If you hit the limit, use `/topoff` to buy more credits instantly, or wait for your next billing cycle to reset. Bonus credits from top-offs never expire.
+
+**How do I cancel my subscription?**
+
+Type `/billing` to open the Stripe Customer Portal. You can cancel there. Your access continues until the end of the current billing period — no refunds, but you keep what you paid for.
+
+**When do my credits reset?**
+
+On your billing anniversary — the same day each month that you subscribed. Not the 1st of the month.
 
 **Who can use my bot?**
 

@@ -47,7 +47,9 @@ Making Scribario useful enough that clients don't want to churn.
 - [x] **Instagram Reels support** — vertical video (9:16) for Reels, Stories, TikTok, Shorts
 - [x] **Content Library** — unchosen options auto-saved for free reuse
 - [x] **Autopilot Mode** — AI generates and posts on a schedule. Two modes: Smart Queue (2hr preview + auto-post) and Full Autopilot (zero touch). Single dispatcher pattern, Claude Haiku topic engine + moderation, preset-only schedule parser, atomic conditional updates, auto-pause after 3 failures, warmup period (first 5 = Smart Queue), daily/weekly/monthly guardrails, weekly digest.
-- [x] **647 tests**, Redis FSM storage, full type checking
+- [x] **Stripe billing** — `/subscribe`, `/upgrade`, `/topoff`, `/billing` with Customer Portal, per-tenant billing cycles, 80% usage warnings, bonus credit top-offs
+- [x] **Usage tracking** — `/usage` with visual progress bars, real-time credit display
+- [x] **755+ tests**, Redis FSM storage, full type checking
 
 Still in Phase 2 (needs external API access or infrastructure):
 - [ ] **Bluesky integration** — AT Protocol OAuth — no review required, pending implementation
@@ -129,9 +131,12 @@ Scribario is solving a real, recurring pain: small and medium businesses know th
 **Current traction:**
 - First beta client live, posting to Facebook + Instagram
 - End-to-end working: message → preview → approve → live post in under 45 seconds
-- 566 automated tests, production-grade architecture from day one
+- Stripe billing live with 3 tiers, annual plans, and top-off bundles
+- 755+ automated tests, production-grade architecture from day one
 
 **Revenue model:**
-- SaaS subscription tiers (Starter / Growth / Pro) based on post volume
-- Agency tier with white-label and multi-client management
+- SaaS subscription tiers: Starter ($29/mo), Growth ($59/mo), Pro ($99/mo) — annual pricing at 20% off
+- Free trial: 5 posts + 1 video, no time limit
+- Top-off bundles for overage (+10 images $5, +5 videos $12)
+- Agency tier with white-label and multi-client management (planned)
 - AI API costs are bundled into subscription pricing — no BYOK, no complexity for clients
