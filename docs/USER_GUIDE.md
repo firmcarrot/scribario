@@ -12,6 +12,10 @@ No design tools. No copywriting. No scheduling headaches. Just text your bot.
 
 ---
 
+**Command Reference Diagram:** See [`scribario-commands.png`](./scribario-commands.png) for a visual overview of all commands and actions.
+
+---
+
 ## Getting Started with @ScribarioBot
 
 ### Step 1: Open Telegram and find your bot
