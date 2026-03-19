@@ -135,8 +135,12 @@ async def handle_generate_content(message: dict) -> None:
 
     # Calculate actual cost from token usage if available, else use flat estimate
     if plan_result.input_tokens and plan_result.output_tokens:
-        # Sonnet pricing: $3/M input, $15/M output
-        engine_cost = (plan_result.input_tokens * 3.0 / 1_000_000) + (plan_result.output_tokens * 15.0 / 1_000_000)
+        from pipeline.cost_utils import compute_anthropic_cost
+        engine_cost = compute_anthropic_cost(
+            plan_result.model or "claude-sonnet-4-20250514",
+            plan_result.input_tokens,
+            plan_result.output_tokens,
+        )
     else:
         engine_cost = ENGINE_COST_USD
 
@@ -206,6 +210,7 @@ async def handle_generate_content(message: dict) -> None:
     # If video generation was requested, generate inline (not a separate job)
     video_url: str | None = None
     if message.get("generate_video"):
+        from pipeline.cost_utils import compute_anthropic_cost
         from pipeline.video_gen import VideoGenerationService
         from pipeline.video_prompt_gen import VIDEO_PROMPT_COST_USD, generate_video_prompt
         from worker.jobs.generate_video import update_draft_video_url
@@ -214,18 +219,30 @@ async def handle_generate_content(message: dict) -> None:
         first_image_url = images[0] if images and images[0] else None
 
         try:
-            video_prompt = await generate_video_prompt(
+            vp_result = await generate_video_prompt(
                 intent=intent,
                 brand_profile=profile,
                 visual_prompt=plan.scenes[0].start_frame.prompt if plan.scenes else None,
                 aspect_ratio=video_aspect,
                 reference_has_image=bool(first_image_url),
             )
+            video_prompt = vp_result.text
+
+            if vp_result.input_tokens and vp_result.output_tokens:
+                vp_cost = compute_anthropic_cost(
+                    vp_result.model, vp_result.input_tokens, vp_result.output_tokens
+                )
+            else:
+                vp_cost = VIDEO_PROMPT_COST_USD
+
             await log_usage_event(
                 tenant_id=tenant_id,
                 event_type="video_prompt_generation",
                 provider="anthropic",
-                cost_usd=VIDEO_PROMPT_COST_USD,
+                cost_usd=vp_cost,
+                input_tokens=vp_result.input_tokens,
+                output_tokens=vp_result.output_tokens,
+                model=vp_result.model,
                 metadata={"request_id": request_id, "prompt_len": len(video_prompt)},
             )
         except Exception as exc:
@@ -278,6 +295,12 @@ async def handle_generate_content(message: dict) -> None:
             "draft_id": draft_id,
             "status": "previewing",
         }).eq("id", autopilot_topic_id).execute()
+
+    # Increment post count AFTER successful generation (not before)
+    from bot.services.budget import increment_post_count, decrement_video_credit
+    await increment_post_count(tenant_id)
+    if video_url:
+        await decrement_video_credit(tenant_id)
 
     # Send preview to Telegram
     telegram_chat_id = message.get("telegram_chat_id")

@@ -350,11 +350,6 @@ async def handle_content_request(message: Message) -> None:
         scheduled_for=scheduled_time,
     )
 
-    # Increment post counters (trial + monthly)
-    from bot.services.budget import increment_post_count
-
-    await increment_post_count(tenant_id)
-
     photo_note = " I'll use your photo as a reference." if pending_photo else ""
     schedule_note = (
         f"\n\nI'll post this on <b>{format_scheduled_time_for_user(scheduled_time, tenant_timezone)}</b>."
@@ -371,6 +366,16 @@ async def handle_content_request(message: Message) -> None:
         f"I'll send you a preview with options to approve.{schedule_note}",
         parse_mode="HTML",
     )
+
+    # 80% usage warning (non-blocking)
+    try:
+        from bot.services.budget import get_usage_warning
+
+        warning = await get_usage_warning(tenant_id)
+        if warning:
+            await message.answer(warning, parse_mode="HTML")
+    except Exception:
+        pass  # Never block content generation for a warning
 
 
 @router.message()

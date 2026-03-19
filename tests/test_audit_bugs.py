@@ -17,34 +17,32 @@ class TestRateLimiting:
     @pytest.mark.asyncio
     async def test_rate_limiter_rejects_after_limit(self):
         """Rate limiter should reject requests after hitting the limit."""
-        from bot.handlers.intake import _rate_limiter
+        from bot.services.rate_limiter import is_rate_limited
 
-        user_id = 99999
-        # Clear any existing state
-        _rate_limiter.pop(user_id, None)
+        mock_redis = MagicMock()
+        mock_pipe = MagicMock()
+        # pipe methods (zremrangebyscore, zcard, zadd, expire) are sync queue ops
+        # only execute() is awaited
+        mock_pipe.execute = AsyncMock(return_value=[None, 6, None, None])  # zcard=6 > default 5
+        mock_redis.pipeline.return_value = mock_pipe
 
-        # First 5 should be allowed (default limit)
-        for _ in range(5):
-            assert _check_rate_limit(user_id) is True
-
-        # 6th should be rejected
-        assert _check_rate_limit(user_id) is False
+        with patch("bot.services.rate_limiter._get_redis", return_value=mock_redis):
+            result = await is_rate_limited(user_id=99999)
+            assert result is True
 
     @pytest.mark.asyncio
-    async def test_rate_limiter_resets_after_window(self):
-        """Rate limiter should reset after the time window."""
-        from bot.handlers.intake import _rate_limiter
+    async def test_rate_limiter_allows_under_limit(self):
+        """Rate limiter should allow requests under the limit."""
+        from bot.services.rate_limiter import is_rate_limited
 
-        user_id = 99998
-        _rate_limiter.pop(user_id, None)
+        mock_redis = MagicMock()
+        mock_pipe = MagicMock()
+        mock_pipe.execute = AsyncMock(return_value=[None, 3, None, None])  # zcard=3 < default 5
+        mock_redis.pipeline.return_value = mock_pipe
 
-        # Fill up the limit
-        for _ in range(5):
-            _check_rate_limit(user_id)
-
-        # Simulate time passing by clearing old entries
-        _rate_limiter[user_id] = []
-        assert _check_rate_limit(user_id) is True
+        with patch("bot.services.rate_limiter._get_redis", return_value=mock_redis):
+            result = await is_rate_limited(user_id=99998)
+            assert result is False
 
 
 class TestPhotoWithIntentPlatformDetection:

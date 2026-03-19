@@ -17,6 +17,7 @@ from pipeline.prompt_engine.models import (
 )
 from pipeline.prompt_engine.engine import (
     ENGINE_COST_USD,
+    PlanResult,
     generate_plan,
     _parse_tool_response,
 )
@@ -220,8 +221,11 @@ class TestGeneratePlan:
                 platform_targets=["instagram"],
             )
 
-        assert isinstance(plan, GenerationPlan)
-        assert plan.title == "Mondo Monday"
+        assert isinstance(plan, PlanResult)
+        assert isinstance(plan.plan, GenerationPlan)
+        assert plan.plan.title == "Mondo Monday"
+        assert plan.input_tokens is not None
+        assert plan.output_tokens is not None
 
         # Verify tool_use was passed in the API call
         call_kwargs = mock_client.messages.create.call_args.kwargs

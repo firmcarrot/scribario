@@ -6,6 +6,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
+from pipeline.prompt_engine.engine import PlanResult
 from pipeline.prompt_engine.models import (
     ContentFormat,
     FramePrompt,
@@ -15,6 +16,7 @@ from pipeline.prompt_engine.models import (
     ScenePlan,
 )
 from pipeline.video_gen import VideoResult
+from pipeline.video_prompt_gen import VideoPromptResult
 
 
 def _make_plan(num_scenes: int = 3) -> GenerationPlan:
@@ -100,7 +102,7 @@ def _common_patches(mock_img_service=None, plan=None):
         "gen_plan": patch(
             "worker.jobs.generate_content.generate_plan",
             new_callable=AsyncMock,
-            return_value=plan,
+            return_value=PlanResult(plan=plan, input_tokens=1000, output_tokens=500, model="claude-sonnet-4-20250514"),
         ),
         "img_service": patch(
             "worker.jobs.generate_content.ImageGenerationService",
@@ -117,6 +119,14 @@ def _common_patches(mock_img_service=None, plan=None):
         ),
         "send_preview": patch(
             "worker.jobs.generate_content._send_preview",
+            new_callable=AsyncMock,
+        ),
+        "increment_post": patch(
+            "bot.services.budget.increment_post_count",
+            new_callable=AsyncMock,
+        ),
+        "decrement_credit": patch(
+            "bot.services.budget.decrement_video_credit",
             new_callable=AsyncMock,
         ),
     }
@@ -148,6 +158,8 @@ class TestInlineVideoGeneration:
             patches["log_usage"],
             patches["create_draft"],
             patches["send_preview"] as mock_preview,
+            patches["increment_post"],
+            patches["decrement_credit"],
             patch(
                 "pipeline.video_gen.VideoGenerationService",
                 return_value=mock_video_service,
@@ -155,7 +167,7 @@ class TestInlineVideoGeneration:
             patch(
                 "pipeline.video_prompt_gen.generate_video_prompt",
                 new_callable=AsyncMock,
-                return_value="Optimized video prompt",
+                return_value=VideoPromptResult(text="Optimized video prompt", input_tokens=500, output_tokens=100),
             ),
             patch(
                 "worker.jobs.generate_video.update_draft_video_url",
@@ -198,6 +210,8 @@ class TestInlineVideoGeneration:
             patches["log_usage"],
             patches["create_draft"],
             patches["send_preview"],
+            patches["increment_post"],
+            patches["decrement_credit"],
             patch(
                 "pipeline.video_gen.VideoGenerationService",
                 return_value=mock_video_service,
@@ -205,7 +219,7 @@ class TestInlineVideoGeneration:
             patch(
                 "pipeline.video_prompt_gen.generate_video_prompt",
                 new_callable=AsyncMock,
-                return_value="prompt",
+                return_value=VideoPromptResult(text="prompt", input_tokens=500, output_tokens=100),
             ),
             patch(
                 "worker.jobs.generate_video.update_draft_video_url",
@@ -239,6 +253,8 @@ class TestInlineVideoGeneration:
             patches["log_usage"],
             patches["create_draft"],
             patches["send_preview"] as mock_preview,
+            patches["increment_post"],
+            patches["decrement_credit"],
             patch(
                 "pipeline.video_gen.VideoGenerationService",
                 return_value=mock_video_service,
@@ -246,7 +262,7 @@ class TestInlineVideoGeneration:
             patch(
                 "pipeline.video_prompt_gen.generate_video_prompt",
                 new_callable=AsyncMock,
-                return_value="prompt",
+                return_value=VideoPromptResult(text="prompt", input_tokens=500, output_tokens=100),
             ),
             patch(
                 "worker.jobs.generate_video.update_draft_video_url",
@@ -277,6 +293,8 @@ class TestInlineVideoGeneration:
             patches["log_usage"],
             patches["create_draft"],
             patches["send_preview"] as mock_preview,
+            patches["increment_post"],
+            patches["decrement_credit"],
         ):
             from worker.jobs.generate_content import handle_generate_content
 

@@ -25,7 +25,8 @@ from bot.db import (
     update_autopilot_run,
     update_autopilot_topic_status,
 )
-from pipeline.topic_engine import TOPIC_GEN_COST_USD, generate_topic, moderate_content
+from pipeline.cost_utils import compute_anthropic_cost
+from pipeline.topic_engine import MODERATION_COST_USD, TOPIC_GEN_COST_USD, generate_topic, moderate_content
 
 logger = logging.getLogger(__name__)
 
@@ -195,11 +196,21 @@ async def handle_autopilot_generate(message: dict) -> None:
             recent_topics=recent_topics,
         )
 
+        t_in = topic_result.get("input_tokens") or 0
+        t_out = topic_result.get("output_tokens") or 0
+        if t_in and t_out:
+            topic_cost = compute_anthropic_cost("claude-haiku-4-5-20251001", t_in, t_out)
+        else:
+            topic_cost = TOPIC_GEN_COST_USD  # fallback
+
         await log_usage_event(
             tenant_id=tenant_id,
             event_type="autopilot_topic_gen",
             provider="anthropic",
-            cost_usd=TOPIC_GEN_COST_USD,
+            cost_usd=topic_cost,
+            input_tokens=t_in or None,
+            output_tokens=t_out or None,
+            model="claude-haiku-4-5-20251001",
             metadata={"topic": topic_result["topic"], "category": topic_result["category"]},
         )
 
@@ -209,6 +220,27 @@ async def handle_autopilot_generate(message: dict) -> None:
 
         if is_full_auto and warmup_remaining <= 0:
             mod_result = await moderate_content(topic_result["topic"])
+
+            # Log moderation cost
+            mod_in = mod_result.get("input_tokens") or 0
+            mod_out = mod_result.get("output_tokens") or 0
+            if mod_in and mod_out:
+                mod_cost = compute_anthropic_cost("claude-haiku-4-5-20251001", mod_in, mod_out)
+            else:
+                mod_cost = MODERATION_COST_USD  # fallback
+            try:
+                await log_usage_event(
+                    tenant_id=tenant_id,
+                    event_type="content_moderation",
+                    provider="anthropic",
+                    cost_usd=mod_cost,
+                    input_tokens=mod_in or None,
+                    output_tokens=mod_out or None,
+                    model="claude-haiku-4-5-20251001",
+                )
+            except Exception:
+                logger.exception("Failed to log moderation cost")
+
             if not mod_result.get("safe", True):
                 logger.warning(
                     "Topic failed moderation",
@@ -292,7 +324,7 @@ async def handle_autopilot_generate(message: dict) -> None:
         await update_autopilot_run(
             run["id"],
             topics_generated=1,
-            cost_usd=float(TOPIC_GEN_COST_USD),
+            cost_usd=float(topic_cost),
         )
 
         await _reset_failures(tenant_id)

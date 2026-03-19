@@ -12,6 +12,7 @@ from bot.db import create_approval_request, get_draft, log_usage_event, update_d
 from bot.services.telegram import build_video_preview_keyboard
 from pipeline.brand_voice import BrandProfile, load_brand_profile
 from pipeline.video_gen import VideoGenerationService
+from pipeline.cost_utils import compute_anthropic_cost
 from pipeline.video_prompt_gen import VIDEO_PROMPT_COST_USD, generate_video_prompt
 
 logger = logging.getLogger(__name__)
@@ -76,17 +77,30 @@ async def handle_generate_video(message: dict) -> None:
 
     # Optimize prompt via Claude (falls back to raw prompt on failure)
     try:
-        optimized_prompt = await generate_video_prompt(
+        vp_result = await generate_video_prompt(
             intent=prompt,
             brand_profile=profile,
             aspect_ratio=aspect_ratio,
             reference_has_image=bool(image_urls),
         )
+        optimized_prompt = vp_result.text
+
+        # Log with real token cost if available, else fallback
+        if vp_result.input_tokens and vp_result.output_tokens:
+            vp_cost = compute_anthropic_cost(
+                vp_result.model, vp_result.input_tokens, vp_result.output_tokens
+            )
+        else:
+            vp_cost = VIDEO_PROMPT_COST_USD
+
         await log_usage_event(
             tenant_id=tenant_id,
             event_type="video_prompt_generation",
             provider="anthropic",
-            cost_usd=VIDEO_PROMPT_COST_USD,
+            cost_usd=vp_cost,
+            input_tokens=vp_result.input_tokens,
+            output_tokens=vp_result.output_tokens,
+            model=vp_result.model,
             metadata={"draft_id": draft_id, "prompt_len": len(optimized_prompt)},
         )
     except Exception as exc:
@@ -108,6 +122,10 @@ async def handle_generate_video(message: dict) -> None:
 
     # Store video URL on the draft
     await update_draft_video_url(draft_id, result.url)
+
+    # Deduct video credit AFTER successful generation
+    from bot.services.budget import decrement_video_credit
+    await decrement_video_credit(tenant_id)
 
     logger.info(
         "Video generation complete",

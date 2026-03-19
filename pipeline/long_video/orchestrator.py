@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from bot.config import get_settings
 from bot.db import log_usage_event
 from pipeline.brand_voice import BrandProfile, load_brand_profile, load_few_shot_examples
+from pipeline.cost_utils import compute_anthropic_cost
 from pipeline.long_video.clip_gen import generate_all_clips
 from pipeline.long_video.frame_gen import generate_all_frames
 from pipeline.long_video.models import (
@@ -109,12 +110,32 @@ async def run_pipeline(
             examples = await load_few_shot_examples(tenant_id)
             assets = await resolve_assets(tenant_id)
             try:
-                generation_plan = await generate_plan(
+                plan_result = await generate_plan(
                     intent=intent,
                     profile=profile,
                     examples=examples,
                     assets=assets,
                 )
+                generation_plan = plan_result.plan
+
+                # Log plan generation cost (GAP 6)
+                if plan_result.input_tokens and plan_result.output_tokens:
+                    plan_cost = compute_anthropic_cost(
+                        plan_result.model or "claude-sonnet-4-20250514",
+                        plan_result.input_tokens,
+                        plan_result.output_tokens,
+                    )
+                    running_cost += plan_cost
+                    await log_usage_event(
+                        tenant_id=tenant_id,
+                        event_type="long_video_plan_gen",
+                        provider="anthropic",
+                        cost_usd=plan_cost,
+                        input_tokens=plan_result.input_tokens,
+                        output_tokens=plan_result.output_tokens,
+                        model=plan_result.model,
+                        metadata={"project_id": project_id},
+                    )
             except Exception:
                 logger.warning(
                     "Prompt engine failed, falling back to legacy script_gen",
@@ -124,17 +145,17 @@ async def run_pipeline(
         if generation_plan is not None:
             from pipeline.prompt_engine.plan_adapter import plan_to_script
             script = plan_to_script(generation_plan)
+            # Cost already logged as long_video_plan_gen above
         else:
             script = await generate_script(intent, profile)
-        running_cost += SCRIPT_GEN_COST_USD
-
-        await log_usage_event(
-            tenant_id=tenant_id,
-            event_type="script_gen",
-            provider="anthropic",
-            cost_usd=SCRIPT_GEN_COST_USD,
-            metadata={"project_id": project_id, "title": script.title},
-        )
+            running_cost += SCRIPT_GEN_COST_USD
+            await log_usage_event(
+                tenant_id=tenant_id,
+                event_type="script_gen",
+                provider="anthropic",
+                cost_usd=SCRIPT_GEN_COST_USD,
+                metadata={"project_id": project_id, "title": script.title},
+            )
 
         _check_cost(running_cost, max_cost)
 
@@ -232,6 +253,23 @@ async def run_pipeline(
         for sr in sfx_results:
             if sr is not None:
                 running_cost += sr.cost_usd
+
+        # Log SFX cost (GAP 5)
+        sfx_total_cost = sum(sr.cost_usd for sr in sfx_results if sr is not None)
+        if sfx_total_cost > 0:
+            try:
+                await log_usage_event(
+                    tenant_id=tenant_id,
+                    event_type="sfx_generation",
+                    provider="elevenlabs",
+                    cost_usd=sfx_total_cost,
+                    metadata={
+                        "project_id": project_id,
+                        "clips": sum(1 for sr in sfx_results if sr is not None),
+                    },
+                )
+            except Exception:
+                logger.exception("Failed to log SFX cost")
 
         _check_cost(running_cost, max_cost)
 

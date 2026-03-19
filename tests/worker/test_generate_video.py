@@ -8,6 +8,7 @@ import pytest
 
 from pipeline.brand_voice import BrandProfile
 from pipeline.video_gen import VideoResult
+from pipeline.video_prompt_gen import VideoPromptResult
 
 
 def _default_patches():
@@ -20,6 +21,7 @@ def _default_patches():
         "preview": patch("worker.jobs.generate_video._send_video_preview", new_callable=AsyncMock),
         "load_profile": patch("worker.jobs.generate_video.load_brand_profile", new_callable=AsyncMock),
         "gen_prompt": patch("worker.jobs.generate_video.generate_video_prompt", new_callable=AsyncMock),
+        "decrement_credit": patch("bot.services.budget.decrement_video_credit", new_callable=AsyncMock),
     }
 
 
@@ -45,6 +47,7 @@ class TestHandleGenerateVideo:
             patches["preview"] as mock_preview,
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(return_value=mock_video_result)
@@ -58,7 +61,7 @@ class TestHandleGenerateVideo:
                 do_list=[],
                 dont_list=[],
             )
-            mock_gen_prompt.return_value = "Cinematic close-up of hot sauce. Audio: sizzle."
+            mock_gen_prompt.return_value = VideoPromptResult(text="Cinematic close-up of hot sauce. Audio: sizzle.", input_tokens=500, output_tokens=100)
 
             mock_get_draft.return_value = {
                 "id": "draft-1",
@@ -110,13 +113,14 @@ class TestHandleGenerateVideo:
             patches["preview"],
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(return_value=mock_video_result)
             mock_service_cls.return_value = mock_service
 
             mock_load_profile.return_value = None  # triggers default profile
-            mock_gen_prompt.return_value = "Optimized product showcase prompt."
+            mock_gen_prompt.return_value = VideoPromptResult(text="Optimized product showcase prompt.", input_tokens=500, output_tokens=100)
 
             mock_get_draft.return_value = {
                 "id": "draft-1",
@@ -164,13 +168,14 @@ class TestHandleGenerateVideo:
             patches["preview"] as mock_preview,
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(return_value=mock_video_result)
             mock_service_cls.return_value = mock_service
 
             mock_load_profile.return_value = None
-            mock_gen_prompt.return_value = "Optimized prompt."
+            mock_gen_prompt.return_value = VideoPromptResult(text="Optimized prompt.", input_tokens=500, output_tokens=100)
 
             mock_get_draft.return_value = {
                 "id": "draft-1",
@@ -204,6 +209,7 @@ class TestHandleGenerateVideo:
             patches["preview"],
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(
@@ -212,7 +218,7 @@ class TestHandleGenerateVideo:
             mock_service_cls.return_value = mock_service
 
             mock_load_profile.return_value = None
-            mock_gen_prompt.return_value = "Optimized prompt."
+            mock_gen_prompt.return_value = VideoPromptResult(text="Optimized prompt.", input_tokens=500, output_tokens=100)
 
             mock_get_draft.return_value = {
                 "id": "draft-1",
@@ -250,6 +256,7 @@ class TestHandleGenerateVideo:
             patches["preview"],
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(return_value=mock_video_result)
@@ -313,13 +320,14 @@ class TestHandleGenerateVideo:
             patches["preview"],
             patches["load_profile"] as mock_load_profile,
             patches["gen_prompt"] as mock_gen_prompt,
+            patches["decrement_credit"],
         ):
             mock_service = AsyncMock()
             mock_service.generate = AsyncMock(return_value=mock_video_result)
             mock_service_cls.return_value = mock_service
 
             mock_load_profile.return_value = mock_profile
-            mock_gen_prompt.return_value = "Branded prompt."
+            mock_gen_prompt.return_value = VideoPromptResult(text="Branded prompt.", input_tokens=500, output_tokens=100)
 
             mock_get_draft.return_value = {
                 "id": "draft-1",

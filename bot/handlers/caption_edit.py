@@ -12,6 +12,7 @@ from bot.db import (
     create_feedback_event,
     get_draft,
     get_tenant_by_telegram_user,
+    log_usage_event,
     update_draft_caption,
 )
 from bot.dialogs.states import CaptionEditSG
@@ -159,11 +160,30 @@ async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
 
     # Save the revised caption
     try:
-        await update_draft_caption(draft_id, option_idx, revised)
+        await update_draft_caption(draft_id, option_idx, revised.text)
     except Exception:
         logger.exception("Failed to save revised caption", extra={"draft_id": draft_id})
         await message.answer("Something went wrong saving the revision. Please try again.")
         return
+
+    # Log caption revision cost (AFTER primary op succeeds)
+    try:
+        from pipeline.cost_utils import compute_anthropic_cost
+
+        cost = compute_anthropic_cost(
+            revised.model, revised.input_tokens or 0, revised.output_tokens or 0
+        )
+        await log_usage_event(
+            tenant_id=tenant_id,
+            event_type="caption_revision",
+            provider="anthropic",
+            cost_usd=cost,
+            input_tokens=revised.input_tokens,
+            output_tokens=revised.output_tokens,
+            model=revised.model,
+        )
+    except Exception:
+        logger.exception("Failed to log caption revision cost")
 
     # Log feedback event for brand voice learning
     try:
@@ -171,7 +191,7 @@ async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
             draft_id=draft_id,
             tenant_id=tenant_id,
             action="edit",
-            edited_caption=revised,
+            edited_caption=revised.text,
             original_caption=current_caption,
             edit_instruction=instruction,
         )
@@ -186,7 +206,7 @@ async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
             tenant_id=tenant_id,
             original_caption=current_caption,
             edit_instruction=instruction,
-            edited_caption=revised,
+            edited_caption=revised.text,
         )
     except Exception:
         pass  # Learning is non-critical
@@ -213,7 +233,7 @@ async def handle_edit_instruction(message: Message, state: FSMContext) -> None:
     )
 
     # Truncate the raw caption before wrapping in HTML to avoid cutting mid-tag
-    display_caption = revised if len(revised) <= 950 else revised[:947] + "..."
+    display_caption = revised.text if len(revised.text) <= 950 else revised.text[:947] + "..."
     caption_text = f"<b>Revised caption:</b>\n\n{display_caption}"
 
     image_urls = draft.get("image_urls") or []

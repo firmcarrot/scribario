@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 import re
+from dataclasses import dataclass
 
 import anthropic
 
@@ -16,8 +17,21 @@ from pipeline.brand_voice import BrandProfile, format_brand_context
 
 logger = logging.getLogger(__name__)
 
-# Approximate cost per Claude Sonnet prompt generation call
+# Approximate cost per Claude Sonnet prompt generation call (fallback)
 VIDEO_PROMPT_COST_USD = 0.02
+
+
+@dataclass
+class VideoPromptResult:
+    """Video prompt with API usage metadata for cost tracking."""
+
+    text: str
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    model: str = "claude-sonnet-4-20250514"
+
+    def __str__(self) -> str:
+        return self.text
 
 VIDEO_PROMPT_SYSTEM = """You are an expert cinematographer and video prompt engineer specializing in \
 AI video generation with Google Veo 3.1.
@@ -77,7 +91,7 @@ async def generate_video_prompt(
     visual_prompt: str | None = None,
     aspect_ratio: str = "16:9",
     reference_has_image: bool = False,
-) -> str:
+) -> VideoPromptResult:
     """Transform a user intent into a Veo 3.1-optimized video prompt.
 
     Args:
@@ -88,8 +102,8 @@ async def generate_video_prompt(
         reference_has_image: Whether a reference image will be used.
 
     Returns:
-        An optimized video prompt string (100-150 words).
-        On failure, falls back to visual_prompt or intent.
+        VideoPromptResult with prompt text and token usage for cost tracking.
+        On failure, falls back to visual_prompt or intent with None tokens.
     """
     brand_context = format_brand_context(brand_profile, [])
 
@@ -128,14 +142,18 @@ async def generate_video_prompt(
 
     user_message = "\n".join(parts)
 
+    model = "claude-sonnet-4-20250514"
     try:
         client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
         response = await client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model=model,
             max_tokens=500,
             system=VIDEO_PROMPT_SYSTEM,
             messages=[{"role": "user", "content": user_message}],
         )
+
+        input_tokens = getattr(response.usage, "input_tokens", None)
+        output_tokens = getattr(response.usage, "output_tokens", None)
 
         text_content = ""
         for block in response.content:
@@ -152,16 +170,26 @@ async def generate_video_prompt(
 
         logger.info(
             "Video prompt generated",
-            extra={"intent": intent[:50], "word_count": len(result.split())},
+            extra={
+                "intent": intent[:50],
+                "word_count": len(result.split()),
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+            },
         )
-        return result
+        return VideoPromptResult(
+            text=result,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            model=model,
+        )
 
     except Exception as exc:
         logger.warning(
             "Video prompt gen failed, using fallback",
             extra={"error": str(exc), "intent": intent[:50]},
         )
-        return visual_prompt or intent
+        return VideoPromptResult(text=visual_prompt or intent)
 
 
 # Patterns that indicate text-in-scene instructions (Veo renders these as gibberish)

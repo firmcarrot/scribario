@@ -52,6 +52,19 @@ class CaptionResponse:
     model: str | None = None
 
 
+@dataclass
+class RevisionResult:
+    """Revised caption with API usage metadata for cost tracking."""
+
+    text: str
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    model: str = "claude-haiku-4-5-20251001"
+
+    def __str__(self) -> str:
+        return self.text
+
+
 async def generate_captions(
     intent: str,
     profile: BrandProfile,
@@ -162,7 +175,7 @@ async def revise_caption(
     instruction: str,
     profile: BrandProfile,
     examples: list[FewShotExample],
-) -> str:
+) -> RevisionResult:
     """Revise a caption using Claude based on a user instruction.
 
     Args:
@@ -172,7 +185,7 @@ async def revise_caption(
         examples: Few-shot examples of real posts.
 
     Returns:
-        The revised caption as a plain string.
+        RevisionResult with revised text and token usage for cost tracking.
     """
     brand_context = format_brand_context(profile, examples)
 
@@ -185,14 +198,18 @@ async def revise_caption(
     )
 
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
+    model = "claude-haiku-4-5-20251001"
 
     try:
         response = await client.messages.create(
-            model="claude-haiku-4-5-20251001",
+            model=model,
             max_tokens=500,
             system=REVISE_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_message}],
         )
+
+        input_tokens = getattr(response.usage, "input_tokens", None)
+        output_tokens = getattr(response.usage, "output_tokens", None)
 
         text_content = ""
         for block in response.content:
@@ -202,9 +219,19 @@ async def revise_caption(
         result = text_content.strip()
         logger.info(
             "Caption revised",
-            extra={"instruction": instruction[:50], "original_len": len(current_caption)},
+            extra={
+                "instruction": instruction[:50],
+                "original_len": len(current_caption),
+                "input_tokens": input_tokens,
+                "output_tokens": output_tokens,
+            },
         )
-        return result
+        return RevisionResult(
+            text=result,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            model=model,
+        )
 
     except anthropic.APIError as e:
         logger.error("Anthropic API error during revision", extra={"error": str(e)})

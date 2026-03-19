@@ -8,6 +8,7 @@ import pytest
 
 from bot.dialogs.states import CaptionEditSG
 from bot.services.telegram import build_preview_keyboard
+from pipeline.caption_gen import RevisionResult
 
 
 class TestCaptionEditState:
@@ -187,8 +188,9 @@ class TestHandleEditInstruction:
             patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
             patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
             patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
-            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Short! 🔥")) as mock_revise,
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value=RevisionResult(text="Short! 🔥", input_tokens=100, output_tokens=20))) as mock_revise,
             patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+            patch("bot.handlers.caption_edit.log_usage_event", AsyncMock()),
         ):
             await handle_edit_instruction(message, state)
 
@@ -216,8 +218,9 @@ class TestHandleEditInstruction:
             patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
             patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
             patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
-            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Caption with emojis 🔥🌶️")),
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value=RevisionResult(text="Caption with emojis 🔥🌶️", input_tokens=100, output_tokens=20))),
             patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+            patch("bot.handlers.caption_edit.log_usage_event", AsyncMock()),
         ):
             await handle_edit_instruction(message, state)
 
@@ -248,8 +251,9 @@ class TestHandleEditInstruction:
             patch("bot.handlers.caption_edit.get_tenant_by_telegram_user", AsyncMock(return_value={"tenant_id": "tenant-abc"})),
             patch("bot.handlers.caption_edit.load_brand_profile", AsyncMock(return_value=MagicMock())),
             patch("bot.handlers.caption_edit.load_few_shot_examples", AsyncMock(return_value=[])),
-            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value="Revised!")),
+            patch("bot.handlers.caption_edit.revise_caption", AsyncMock(return_value=RevisionResult(text="Revised!", input_tokens=100, output_tokens=20))),
             patch("bot.handlers.caption_edit.update_draft_caption", AsyncMock()),
+            patch("bot.handlers.caption_edit.log_usage_event", AsyncMock()),
         ):
             await handle_edit_instruction(message, state)
 

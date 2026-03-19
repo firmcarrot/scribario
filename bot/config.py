@@ -44,9 +44,21 @@ class Settings(BaseSettings):
     # Stripe
     stripe_api_key: str = ""
     stripe_webhook_secret: str = ""
+    stripe_publishable_key: str = ""
+    # Monthly subscription price IDs
     stripe_starter_price_id: str = ""
     stripe_growth_price_id: str = ""
     stripe_pro_price_id: str = ""
+    # Annual subscription price IDs
+    stripe_starter_annual_price_id: str = ""
+    stripe_growth_annual_price_id: str = ""
+    stripe_pro_annual_price_id: str = ""
+    # Top-off one-time price IDs
+    stripe_topoff_images_price_id: str = ""
+    stripe_topoff_short_videos_price_id: str = ""
+    stripe_topoff_long_video_price_id: str = ""
+    # Customer Portal
+    stripe_portal_config_id: str = ""
 
     # Redis (FSM storage for bot state)
     redis_url: str = "redis://localhost:6379/0"

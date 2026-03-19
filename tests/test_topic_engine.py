@@ -41,8 +41,12 @@ class TestGenerateTopic:
     ):
         with patch("pipeline.topic_engine._call_claude") as mock_claude:
             mock_claude.return_value = {
-                "topic": "5 ways our Widget saves you time",
-                "category": "educational",
+                "data": {
+                    "topic": "5 ways our Widget saves you time",
+                    "category": "educational",
+                },
+                "input_tokens": 200,
+                "output_tokens": 50,
             }
             result = await generate_topic(
                 tenant_id="test-tenant",
@@ -62,8 +66,8 @@ class TestGenerateTopic:
         with patch("pipeline.topic_engine._call_claude") as mock_claude:
             # First call returns duplicate, second returns unique
             mock_claude.side_effect = [
-                {"topic": "5 ways Widget saves time", "category": "educational"},
-                {"topic": "Behind the scenes at our factory", "category": "behind_the_scenes"},
+                {"data": {"topic": "5 ways Widget saves time", "category": "educational"}, "input_tokens": 200, "output_tokens": 50},
+                {"data": {"topic": "Behind the scenes at our factory", "category": "behind_the_scenes"}, "input_tokens": 200, "output_tokens": 50},
             ]
             result = await generate_topic(
                 tenant_id="test-tenant",

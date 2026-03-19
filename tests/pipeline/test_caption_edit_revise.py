@@ -7,6 +7,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from pipeline.brand_voice import BrandProfile, FewShotExample
+from pipeline.caption_gen import RevisionResult
 
 
 class TestReviseCaption:
@@ -50,8 +51,10 @@ class TestReviseCaption:
                 examples=self._make_examples(),
             )
 
-        assert isinstance(result, str)
-        assert result == "Short and punchy! 🔥 #MondoShrimp"
+        assert isinstance(result, RevisionResult)
+        assert result.text == "Short and punchy! 🔥 #MondoShrimp"
+        assert result.input_tokens is not None
+        assert result.output_tokens is not None
 
     @pytest.mark.asyncio
     async def test_revise_caption_uses_haiku_model(self):
@@ -119,7 +122,7 @@ class TestReviseCaption:
                 examples=[],
             )
 
-        assert result == "Trimmed result"
+        assert result.text == "Trimmed result"
 
     @pytest.mark.asyncio
     async def test_revise_caption_propagates_api_error(self):

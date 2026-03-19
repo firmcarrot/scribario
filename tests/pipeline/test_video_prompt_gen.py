@@ -8,6 +8,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from pipeline.brand_voice import BrandProfile
+from pipeline.video_prompt_gen import VideoPromptResult
 
 
 def _make_profile(**overrides) -> BrandProfile:
@@ -67,8 +68,8 @@ class TestGenerateVideoPrompt:
                 brand_profile=_make_profile(),
             )
 
-        assert isinstance(result, str)
-        assert len(result) > 0
+        assert isinstance(result, VideoPromptResult)
+        assert len(result.text) > 0
 
     @pytest.mark.asyncio
     async def test_prompt_includes_camera_terms(self):
@@ -99,8 +100,8 @@ class TestGenerateVideoPrompt:
             "establishing", "push-in", "pull-back", "orbit", "reveal",
             "wide", "medium shot", "low angle", "high angle",
         ]
-        found = any(term in result.lower() for term in camera_terms)
-        assert found, f"No camera terms found in: {result}"
+        found = any(term in result.text.lower() for term in camera_terms)
+        assert found, f"No camera terms found in: {result.text}"
 
     @pytest.mark.asyncio
     async def test_brand_name_incorporated(self):
@@ -181,7 +182,7 @@ class TestGenerateVideoPrompt:
                 visual_prompt=None,
             )
 
-        assert len(result) > 0
+        assert len(result.text) > 0
 
     @pytest.mark.asyncio
     async def test_aspect_ratio_passed_to_claude(self):
@@ -258,7 +259,9 @@ class TestGenerateVideoPrompt:
             )
 
         # Should fall back to visual_prompt
-        assert result == "golden shrimp on a plate"
+        assert isinstance(result, VideoPromptResult)
+        assert result.text == "golden shrimp on a plate"
+        assert result.input_tokens is None
 
     @pytest.mark.asyncio
     async def test_claude_api_failure_fallback_to_intent(self):
@@ -278,7 +281,8 @@ class TestGenerateVideoPrompt:
                 visual_prompt=None,
             )
 
-        assert result == "shrimp special"
+        assert isinstance(result, VideoPromptResult)
+        assert result.text == "shrimp special"
 
 
 class TestPostProcessing:
@@ -371,7 +375,7 @@ class TestPostProcessing:
             )
 
         # Should fall back to raw (unsanitized) Claude output
-        assert result == all_forbidden.strip()
+        assert result.text == all_forbidden.strip()
 
 
 class TestSystemPrompt:

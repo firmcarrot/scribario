@@ -1,0 +1,5 @@
+-- Originally scheduled a global monthly reset cron job, but that's wrong.
+-- Each tenant resets on THEIR billing cycle (via invoice.paid webhook).
+-- The _maybe_reset_monthly fallback in budget.py uses current_period_end.
+-- This migration is intentionally empty — the cron job was created and then
+-- removed after review. Keeping file for migration history continuity.

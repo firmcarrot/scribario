@@ -55,11 +55,11 @@ async function getSystemHealthData() {
         () => ({ count: null, data: null, error: null }),
       ),
 
-    // Failed jobs count (24h)
+    // Failed jobs count (24h) — includes "dead" (max retries exceeded)
     db
       .from("job_queue")
       .select("id", { count: "exact", head: true })
-      .eq("status", "failed")
+      .in("status", ["failed", "dead"])
       .gte("created_at", twentyFourHoursAgo.toISOString())
       .then(
         (res) => res,
@@ -70,7 +70,7 @@ async function getSystemHealthData() {
     db
       .from("job_queue")
       .select("id, error_message, created_at, tenant_id, job_type")
-      .eq("status", "failed")
+      .in("status", ["failed", "dead"])
       .gte("created_at", twentyFourHoursAgo.toISOString())
       .order("created_at", { ascending: false })
       .limit(20)

@@ -6,6 +6,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
+from pipeline.prompt_engine.engine import PlanResult
 from pipeline.prompt_engine.models import (
     ContentFormat,
     FramePrompt,
@@ -87,7 +88,7 @@ class TestHandleGenerateContentWithPromptEngine:
                       logo_url=None,
                   )),
             patch("worker.jobs.generate_content.generate_plan",
-                  new_callable=AsyncMock, return_value=plan) as mock_gen_plan,
+                  new_callable=AsyncMock, return_value=PlanResult(plan=plan, input_tokens=1000, output_tokens=500, model="claude-sonnet-4-20250514")) as mock_gen_plan,
             patch("worker.jobs.generate_content.ImageGenerationService",
                   return_value=mock_image_service),
             patch("worker.jobs.generate_content.log_usage_event",
@@ -97,6 +98,10 @@ class TestHandleGenerateContentWithPromptEngine:
             patch("worker.jobs.generate_content.update_content_request_status",
                   new_callable=AsyncMock),
             patch("worker.jobs.generate_content._send_preview",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.decrement_video_credit",
                   new_callable=AsyncMock),
         ):
             await handle_generate_content(_base_message())
@@ -130,7 +135,7 @@ class TestHandleGenerateContentWithPromptEngine:
                       product_photos=[], people_photos=[], other_photos=[], logo_url=None,
                   )),
             patch("worker.jobs.generate_content.generate_plan",
-                  new_callable=AsyncMock, return_value=plan),
+                  new_callable=AsyncMock, return_value=PlanResult(plan=plan, input_tokens=1000, output_tokens=500, model="claude-sonnet-4-20250514")),
             patch("worker.jobs.generate_content.ImageGenerationService",
                   return_value=mock_image_service),
             patch("worker.jobs.generate_content.log_usage_event",
@@ -138,6 +143,10 @@ class TestHandleGenerateContentWithPromptEngine:
             patch("worker.jobs.generate_content.create_content_draft",
                   new_callable=AsyncMock, return_value={"id": "draft-1"}),
             patch("worker.jobs.generate_content._send_preview",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.decrement_video_credit",
                   new_callable=AsyncMock),
         ):
             await handle_generate_content(_base_message())
@@ -175,7 +184,7 @@ class TestHandleGenerateContentWithPromptEngine:
                       people_photos=[], other_photos=[], logo_url=None,
                   )),
             patch("worker.jobs.generate_content.generate_plan",
-                  new_callable=AsyncMock, return_value=plan),
+                  new_callable=AsyncMock, return_value=PlanResult(plan=plan, input_tokens=1000, output_tokens=500, model="claude-sonnet-4-20250514")),
             patch("worker.jobs.generate_content.ImageGenerationService",
                   return_value=mock_image_service),
             patch("worker.jobs.generate_content.log_usage_event",
@@ -183,6 +192,10 @@ class TestHandleGenerateContentWithPromptEngine:
             patch("worker.jobs.generate_content.create_content_draft",
                   new_callable=AsyncMock, return_value={"id": "draft-1"}),
             patch("worker.jobs.generate_content._send_preview",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.decrement_video_credit",
                   new_callable=AsyncMock),
         ):
             await handle_generate_content(_base_message())
@@ -216,7 +229,7 @@ class TestHandleGenerateContentWithPromptEngine:
                       product_photos=[], people_photos=[], other_photos=[], logo_url=None,
                   )),
             patch("worker.jobs.generate_content.generate_plan",
-                  new_callable=AsyncMock, return_value=plan),
+                  new_callable=AsyncMock, return_value=PlanResult(plan=plan, input_tokens=1000, output_tokens=500, model="claude-sonnet-4-20250514")),
             patch("worker.jobs.generate_content.ImageGenerationService",
                   return_value=mock_image_service),
             patch("worker.jobs.generate_content.log_usage_event",
@@ -224,6 +237,10 @@ class TestHandleGenerateContentWithPromptEngine:
             patch("worker.jobs.generate_content.create_content_draft",
                   new_callable=AsyncMock, return_value={"id": "draft-1"}) as mock_draft,
             patch("worker.jobs.generate_content._send_preview",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.increment_post_count",
+                  new_callable=AsyncMock),
+            patch("bot.services.budget.decrement_video_credit",
                   new_callable=AsyncMock),
         ):
             await handle_generate_content(_base_message())

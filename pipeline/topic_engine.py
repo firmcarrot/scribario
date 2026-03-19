@@ -21,7 +21,10 @@ MODERATION_COST_USD = 0.0001
 
 
 async def _call_claude(prompt: str, system: str) -> dict:
-    """Call Claude Haiku for topic generation. Returns parsed JSON dict."""
+    """Call Claude Haiku for topic generation.
+
+    Returns: {"data": <parsed JSON>, "input_tokens": int, "output_tokens": int}
+    """
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
     response = await client.messages.create(
         model="claude-haiku-4-5-20251001",
@@ -39,11 +42,18 @@ async def _call_claude(prompt: str, system: str) -> dict:
         text = text[:-3]
     if text.startswith("json"):
         text = text[4:]
-    return json.loads(text.strip())
+    return {
+        "data": json.loads(text.strip()),
+        "input_tokens": getattr(response.usage, "input_tokens", None),
+        "output_tokens": getattr(response.usage, "output_tokens", None),
+    }
 
 
 async def _call_claude_moderation(content: str) -> dict:
-    """Call Claude Haiku to moderate content for safety. Returns {safe, reason}."""
+    """Call Claude Haiku to moderate content for safety.
+
+    Returns: {safe, reason, input_tokens, output_tokens}
+    """
     client = anthropic.AsyncAnthropic(api_key=get_settings().anthropic_api_key)
     response = await client.messages.create(
         model="claude-haiku-4-5-20251001",
@@ -66,7 +76,10 @@ async def _call_claude_moderation(content: str) -> dict:
         text = text[:-3]
     if text.startswith("json"):
         text = text[4:]
-    return json.loads(text.strip())
+    result = json.loads(text.strip())
+    result["input_tokens"] = getattr(response.usage, "input_tokens", None)
+    result["output_tokens"] = getattr(response.usage, "output_tokens", None)
+    return result
 
 
 def _is_too_similar(topic: str, recent_topics: list[str], threshold: float = 0.6) -> bool:
@@ -153,8 +166,13 @@ async def generate_topic(
     prompt += recent_str
     prompt += "\n\nGenerate one specific, creative post topic for this brand."
 
+    total_input_tokens = 0
+    total_output_tokens = 0
     for attempt in range(max_retries):
-        result = await _call_claude(prompt, system)
+        raw = await _call_claude(prompt, system)
+        result = raw["data"]
+        total_input_tokens += raw.get("input_tokens") or 0
+        total_output_tokens += raw.get("output_tokens") or 0
         topic = result.get("topic", "")
         result_category = result.get("category", category)
 
@@ -163,7 +181,12 @@ async def generate_topic(
             result_category = category
 
         if not _is_too_similar(topic, recent_topics):
-            return {"topic": topic, "category": result_category}
+            return {
+                "topic": topic,
+                "category": result_category,
+                "input_tokens": total_input_tokens,
+                "output_tokens": total_output_tokens,
+            }
 
         logger.info(
             "Topic too similar to recent, retrying",
@@ -171,7 +194,12 @@ async def generate_topic(
         )
 
     # Last resort: use whatever we got
-    return {"topic": result.get("topic", ""), "category": result.get("category", category)}
+    return {
+        "topic": result.get("topic", ""),
+        "category": result.get("category", category),
+        "input_tokens": total_input_tokens,
+        "output_tokens": total_output_tokens,
+    }
 
 
 async def moderate_content(content: str) -> dict:

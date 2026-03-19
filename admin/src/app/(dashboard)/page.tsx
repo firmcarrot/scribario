@@ -37,10 +37,10 @@ async function getDashboardData() {
     db.from("tenants")
       .select("id, plan_tier, subscription_status"),
 
-    // Failed jobs in last 24h
+    // Failed jobs in last 24h (worker uses "dead" for max-retries-exceeded, "failed" for transient)
     db.from("job_queue")
       .select("id", { count: "exact", head: true })
-      .eq("status", "failed")
+      .in("status", ["failed", "dead"])
       .gte("created_at", yesterday.toISOString()),
 
     // Daily cost for last 30 days (RPC may not exist yet)
