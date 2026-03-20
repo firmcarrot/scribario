@@ -208,6 +208,7 @@ async def main() -> None:
     from worker.jobs.autopilot_generate import handle_autopilot_generate
     from worker.jobs.autopilot_timeout import handle_autopilot_timeout
     from worker.jobs.autopilot_digest import handle_autopilot_digest
+    from worker.jobs.fetch_engagement import handle_fetch_engagement
 
     register_handler("generate_content", handle_generate_content)
     register_handler("generate_caption", handle_generate_caption)
@@ -219,6 +220,7 @@ async def main() -> None:
     register_handler("autopilot_generate", handle_autopilot_generate)
     register_handler("autopilot_timeout", handle_autopilot_timeout)
     register_handler("autopilot_digest", handle_autopilot_digest)
+    register_handler("fetch_engagement", handle_fetch_engagement)
     # generate_long_video handler removed — long video is deprecated
 
     worker = Worker()

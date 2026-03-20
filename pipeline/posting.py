@@ -16,42 +16,61 @@ logger = logging.getLogger(__name__)
 def _extract_post_ids(response_data: object) -> dict[str, str]:
     """Best-effort extraction of post IDs from Postiz API response.
 
-    Postiz response shape varies — this handles common patterns.
-    Returns mapping of platform/index -> post_id.
+    Postiz response shape (confirmed from live data):
+    - Each post has: i (postiz ID), u (platform URL), ri (native post ID),
+      s (status), n.pi (platform identifier)
+    - Response is either {"posts": [...]} or a flat list [...]
+
+    Returns mapping with keys like:
+    - "{platform}" -> postiz ID (e.g., "facebook" -> "abc123")
+    - "{platform}_url" -> platform URL
+    - "{platform}_native" -> native post ID
+    - "{index}" -> postiz ID (fallback when platform unknown)
     """
     ids: dict[str, str] = {}
 
+    if not isinstance(response_data, (dict, list)):
+        return ids
+
+    # Normalize to a list of post dicts
+    # Postiz uses "p" for the posts list endpoint, "posts" for the create response
+    posts: list[dict] = []
     if isinstance(response_data, dict):
-        # Single post response: {"id": "...", "postId": "..."}
-        for key in ("id", "postId", "post_id"):
-            if key in response_data:
-                ids["0"] = str(response_data[key])
-                break
-
-        # Nested posts: {"posts": [{"id": "...", "platform": "..."}]}
-        if "posts" in response_data and isinstance(response_data["posts"], list):
-            for i, post in enumerate(response_data["posts"]):
-                if isinstance(post, dict):
-                    post_id = post.get("id") or post.get("postId")
-                    platform = (
-                        post.get("platform") or post.get("identifier")
-                    )
-                    if post_id:
-                        if platform:
-                            ids[platform] = str(post_id)
-                        ids[str(i)] = str(post_id)
-
+        raw_posts = response_data.get("posts") or response_data.get("p")
+        if isinstance(raw_posts, list):
+            posts = [p for p in raw_posts if isinstance(p, dict)]
     elif isinstance(response_data, list):
-        # Array response: [{"postId": "..."}]
-        for i, item in enumerate(response_data):
-            if isinstance(item, dict):
-                post_id = (
-                    item.get("id")
-                    or item.get("postId")
-                    or item.get("post_id")
-                )
-                if post_id:
-                    ids[str(i)] = str(post_id)
+        posts = [p for p in response_data if isinstance(p, dict)]
+
+    for i, post in enumerate(posts):
+        # Extract postiz ID: prefer 'i' (Postiz format), fall back to 'id'/'postId'
+        post_id = post.get("i") or post.get("id") or post.get("postId") or post.get("post_id")
+        if not post_id:
+            continue
+        post_id = str(post_id)
+
+        # Extract platform identifier from nested 'n.pi' or flat fields
+        platform: str | None = None
+        n_data = post.get("n")
+        if isinstance(n_data, dict):
+            platform = n_data.get("pi") or n_data.get("identifier")
+        if not platform:
+            platform = post.get("platform") or post.get("identifier")
+
+        # Store by platform name if available, otherwise by index
+        if platform:
+            ids[platform] = post_id
+        ids[str(i)] = post_id
+
+        # Extract platform URL from 'u' field
+        url = post.get("u")
+        if url and platform:
+            ids[f"{platform}_url"] = str(url)
+
+        # Extract native post ID from 'ri' field
+        native_id = post.get("ri")
+        if native_id and platform:
+            ids[f"{platform}_native"] = str(native_id)
 
     return ids
 
@@ -196,11 +215,12 @@ class PostizClient:
             # Mark all as successful
             for i, (platform, _) in enumerate(posts):
                 post_id = post_ids.get(platform) or post_ids.get(str(i))
+                platform_url = post_ids.get(f"{platform}_url")
                 results.append(
                     PostingResult(
                         platform=platform,
                         platform_post_id=post_id,
-                        platform_url=None,
+                        platform_url=platform_url,
                         success=True,
                     )
                 )
