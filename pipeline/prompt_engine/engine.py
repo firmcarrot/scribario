@@ -123,7 +123,7 @@ _TOOL_SCHEMA = {
                                 "asset_url": {"type": "string"},
                                 "slot_type": {
                                     "type": "string",
-                                    "enum": ["object_fidelity", "character_consistency"],
+                                    "enum": ["object_fidelity", "character_consistency", "logo_reference"],
                                 },
                             },
                         },
@@ -149,9 +149,6 @@ _TOOL_SCHEMA = {
             "composite_instruction": {
                 "type": "object",
                 "properties": {
-                    "logo_overlay": {"type": "boolean", "default": False},
-                    "logo_position": {"type": "string", "default": "bottom_right"},
-                    "logo_opacity": {"type": "number", "default": 0.7},
                     "text_overlay": {"type": ["string", "null"]},
                     "text_position": {"type": "string", "default": "bottom_center"},
                 },

@@ -61,30 +61,21 @@ class TestLogoPhotoHandler:
         msg.photo[-1].file_unique_id = "big_photo_unique"
         msg.answer = AsyncMock()
 
-        # Mock bot.get_file to return a file object with file_path
-        mock_file = MagicMock()
-        mock_file.file_path = "photos/file_123.jpg"
-        msg.bot = MagicMock()
-        msg.bot.get_file = AsyncMock(return_value=mock_file)
-
         with (
             patch("bot.handlers.logo.get_settings") as mock_settings,
-            patch("bot.handlers.logo.download_and_store",
+            patch("bot.handlers.logo.save_logo_from_telegram",
                   new_callable=AsyncMock,
-                  return_value="reference-photos/t1/logo_big_photo_unique.jpg") as mock_store,
-            patch("bot.handlers.logo._update_logo_path",
-                  new_callable=AsyncMock) as mock_update,
+                  return_value="reference-photos/t1/logo_big_photo_unique.jpg") as mock_save,
         ):
             mock_settings.return_value.telegram_bot_token = "test-token"
             await handle_logo_photo(msg)
 
-        # Verify download_and_store called with correct signature
-        mock_store.assert_called_once_with(
-            download_url="https://api.telegram.org/file/bottest-token/photos/file_123.jpg",
+        mock_save.assert_called_once_with(
+            bot_token="test-token",
+            file_id="big_photo_file_id",
+            file_unique_id="big_photo_unique",
             tenant_id="t1",
-            file_unique_id="logo_big_photo_unique",
         )
-        mock_update.assert_called_once_with("t1", "reference-photos/t1/logo_big_photo_unique.jpg")
         msg.answer.assert_called_once()
         assert "logo" in msg.answer.call_args[0][0].lower()
         assert 12345 not in _pending_logo_uploads
@@ -116,10 +107,13 @@ class TestLogoPhotoHandler:
         msg.photo[-1].file_id = "file_id"
         msg.photo[-1].file_unique_id = "unique_id"
         msg.answer = AsyncMock()
-        msg.bot = MagicMock()
-        msg.bot.get_file = AsyncMock(side_effect=RuntimeError("Telegram API down"))
 
-        with patch("bot.handlers.logo.get_settings") as mock_settings:
+        with (
+            patch("bot.handlers.logo.get_settings") as mock_settings,
+            patch("bot.handlers.logo.save_logo_from_telegram",
+                  new_callable=AsyncMock,
+                  side_effect=RuntimeError("Telegram API down")),
+        ):
             mock_settings.return_value.telegram_bot_token = "test-token"
             await handle_logo_photo(msg)
 

@@ -3,10 +3,13 @@
 Flow:
 1. Welcome — explain what Scribario does
 2. Business Name — ask for their business name
-3. Website URL — ask for their website (triggers scrape + brand gen inline)
+3. Timezone — select timezone for scheduling
+4. Website URL — ask for their website (triggers scrape + brand gen inline)
    OR skip (creates basic profile from business name only)
-4. Profile Review — show generated profile, ask for confirmation
-5. Complete — welcome them, prompt to connect platforms
+5. Profile Review — show generated profile, ask for confirmation
+6. Logo Upload — optional logo photo upload (skip available)
+7. Tour — quick feature tour
+8. Complete — welcome them, prompt to connect platforms
 
 NOTE: The "scraping" state exists only as a visual placeholder. All scraping
 and brand generation happens inline in on_website_url_input before switching
@@ -327,7 +330,7 @@ async def on_skip_website(
             )
         return
 
-    await manager.switch_to(OnboardingSG.tour)
+    await manager.switch_to(OnboardingSG.logo_upload)
 
 
 async def on_website_url_input(
@@ -466,7 +469,7 @@ async def on_website_url_input(
         except Exception:
             logger.exception("Fallback tenant creation also failed")
 
-        await manager.switch_to(OnboardingSG.tour)
+        await manager.switch_to(OnboardingSG.logo_upload)
 
 
 async def on_approve_profile(
@@ -504,6 +507,54 @@ async def on_approve_profile(
         _background_tasks.add(task)
         task.add_done_callback(_background_tasks.discard)
 
+    await manager.switch_to(OnboardingSG.logo_upload)
+
+
+async def on_logo_photo_input(
+    message: Message, widget: MessageInput, manager: DialogManager
+) -> None:
+    """User sent a photo during logo upload step."""
+    from bot.config import get_settings
+    from bot.handlers.logo import save_logo_from_telegram
+
+    tenant_id = manager.dialog_data.get("tenant_id")
+    if not tenant_id:
+        await message.answer("Something went wrong. Please try /start again.")
+        return
+
+    photo = message.photo[-1] if message.photo else None
+    # Also accept document (PNG/SVG uploads come as documents)
+    doc = message.document if not photo else None
+
+    if not photo and not doc:
+        await message.answer("Please send a photo of your logo, or tap Skip.")
+        return
+
+    file_id = photo.file_id if photo else doc.file_id
+    file_unique_id = photo.file_unique_id if photo else doc.file_unique_id
+
+    try:
+        await save_logo_from_telegram(
+            bot_token=get_settings().telegram_bot_token,
+            file_id=file_id,
+            file_unique_id=file_unique_id,
+            tenant_id=tenant_id,
+        )
+        await message.answer(
+            "Logo saved! It'll be creatively woven into your images — "
+            "think latte art, laptop stickers, signs in the background."
+        )
+    except Exception:
+        logger.exception("Logo save failed during onboarding", extra={"tenant_id": tenant_id})
+        await message.answer("Couldn't save the logo, but no worries — you can add it later with /logo.")
+
+    await manager.switch_to(OnboardingSG.tour)
+
+
+async def on_skip_logo(
+    callback: CallbackQuery, button: Button, manager: DialogManager
+) -> None:
+    """User skipped logo upload."""
     await manager.switch_to(OnboardingSG.tour)
 
 
@@ -654,6 +705,18 @@ dialog = Dialog(
         Button(Const("Try Again"), id="reject_profile", on_click=on_reject_profile),
         state=OnboardingSG.profile_review,
         getter=get_profile_review_data,
+    ),
+    Window(
+        Const(
+            "<b>Got a logo?</b>\n\n"
+            "Send me your logo as a photo and I'll creatively weave it into "
+            "your generated images — think latte art, laptop stickers, "
+            "signs in the background.\n\n"
+            "You can also add or change it later with /logo."
+        ),
+        MessageInput(on_logo_photo_input, content_types=["photo", "document"]),
+        Button(Const("Skip"), id="skip_logo", on_click=on_skip_logo),
+        state=OnboardingSG.logo_upload,
     ),
     Window(
         Const(

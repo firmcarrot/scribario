@@ -12,6 +12,7 @@ class OnboardingSG(StatesGroup):
     website_url = State()
     scraping = State()
     profile_review = State()
+    logo_upload = State()
     tour = State()
     complete = State()
 

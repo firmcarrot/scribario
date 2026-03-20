@@ -23,6 +23,7 @@ class VeoMode(StrEnum):
 class RefSlotType(StrEnum):
     OBJECT_FIDELITY = "object_fidelity"
     CHARACTER_CONSISTENCY = "character_consistency"
+    LOGO_REFERENCE = "logo_reference"
 
 
 @dataclass
@@ -52,6 +53,9 @@ class AnimationPrompt:
 
 @dataclass
 class CompositeInstruction:
+    # DEPRECATED: logo integration is now prompt-based via reference images.
+    # These fields are kept for backwards compatibility but are no longer
+    # set by the prompt engine or used by the rendering pipeline.
     logo_overlay: bool = False
     logo_position: str = "bottom_right"
     logo_opacity: float = 0.7
@@ -127,9 +131,16 @@ class GenerationPlan:
                     errors.append(f"Scene {scene.index}: animation required for video")
 
             # Reference image cap per scene (across start + end frames)
-            total_refs = len(scene.start_frame.reference_images)
+            # Logo references don't count toward the cap
+            total_refs = sum(
+                1 for r in scene.start_frame.reference_images
+                if r.slot_type != RefSlotType.LOGO_REFERENCE
+            )
             if scene.end_frame:
-                total_refs += len(scene.end_frame.reference_images)
+                total_refs += sum(
+                    1 for r in scene.end_frame.reference_images
+                    if r.slot_type != RefSlotType.LOGO_REFERENCE
+                )
             if total_refs > MAX_REF_IMAGES_PER_SCENE:
                 errors.append(
                     f"Scene {scene.index}: {total_refs} reference images exceeds "

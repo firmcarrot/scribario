@@ -33,6 +33,39 @@ async def _update_logo_path(tenant_id: str, storage_path: str) -> None:
     ).eq("tenant_id", tenant_id).execute()
 
 
+async def save_logo_from_telegram(
+    bot_token: str,
+    file_id: str,
+    file_unique_id: str,
+    tenant_id: str,
+) -> str:
+    """Download a Telegram photo/document and save as tenant logo.
+
+    Shared utility used by both /logo command and onboarding flow.
+
+    Returns:
+        The storage path of the saved logo.
+    """
+    from aiogram import Bot
+
+    bot = Bot(token=bot_token)
+    try:
+        file = await bot.get_file(file_id)
+        download_url = f"https://api.telegram.org/file/bot{bot_token}/{file.file_path}"
+
+        storage_path = await download_and_store(
+            download_url=download_url,
+            tenant_id=tenant_id,
+            file_unique_id=f"logo_{file_unique_id}",
+        )
+
+        await _update_logo_path(tenant_id, storage_path)
+        logger.info("Logo saved", extra={"tenant_id": tenant_id, "path": storage_path})
+        return storage_path
+    finally:
+        await bot.session.close()
+
+
 @router.message(Command("logo"))
 async def cmd_logo(message: Message) -> None:
     """Handle /logo command — prompt user to send their logo image."""
@@ -53,7 +86,8 @@ async def cmd_logo(message: Message) -> None:
 
     await message.answer(
         "Send me your logo as a photo and I'll save it.\n"
-        "It'll appear as a watermark on your generated content."
+        "It'll be creatively integrated into your generated images — "
+        "think latte art, laptop stickers, signs in the background."
     )
 
 
@@ -70,21 +104,15 @@ async def handle_logo_photo(message: Message) -> None:
     photo = message.photo[-1]
 
     try:
-        # Get Telegram file URL (same pattern as photos.py:_download_photo)
-        file = await message.bot.get_file(photo.file_id)
-        token = get_settings().telegram_bot_token
-        download_url = f"https://api.telegram.org/file/bot{token}/{file.file_path}"
-
-        storage_path = await download_and_store(
-            download_url=download_url,
+        await save_logo_from_telegram(
+            bot_token=get_settings().telegram_bot_token,
+            file_id=photo.file_id,
+            file_unique_id=photo.file_unique_id,
             tenant_id=tenant_id,
-            file_unique_id=f"logo_{photo.file_unique_id}",
         )
-
-        await _update_logo_path(tenant_id, storage_path)
-
-        await message.answer("Your logo has been saved! It'll be used in your content.")
-        logger.info("Logo saved", extra={"tenant_id": tenant_id, "path": storage_path})
+        await message.answer(
+            "Your logo has been saved! It'll be creatively woven into your content."
+        )
 
     except Exception:
         logger.exception("Failed to save logo", extra={"tenant_id": tenant_id})

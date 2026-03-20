@@ -29,7 +29,7 @@ from pipeline.brand_voice import (
 from pipeline.image_gen import ImageGenerationService
 from pipeline.prompt_engine.asset_resolver import resolve_assets
 from pipeline.prompt_engine.engine import ENGINE_COST_USD, PlanResult, generate_plan
-from pipeline.prompt_engine.models import RefImageAssignment, ScenePlan
+from pipeline.prompt_engine.models import RefImageAssignment, RefSlotType, ScenePlan
 
 logger = logging.getLogger(__name__)
 
@@ -127,6 +127,21 @@ async def handle_generate_content(message: dict) -> None:
             platform_targets=platform_targets,
         )
         plan = plan_result.plan
+
+        # Logo presence validation: warn if logo available but not used in any scene
+        if assets.logo_url:
+            logo_in_any_scene = any(
+                any(
+                    r.slot_type == RefSlotType.LOGO_REFERENCE
+                    for r in scene.start_frame.reference_images
+                )
+                for scene in plan.scenes
+            )
+            if not logo_in_any_scene:
+                logger.warning(
+                    "Logo available but not included in any scene's reference images",
+                    extra={"request_id": request_id, "tenant_id": tenant_id},
+                )
     except Exception:
         logger.exception("Prompt engine failed", extra={"request_id": request_id})
         await update_content_request_status(request_id, "failed")

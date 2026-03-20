@@ -47,7 +47,8 @@ _REF_IMAGE_STRATEGY = """\
 
 Product photos → use as object_fidelity reference images (max 10 per scene).
 People photos → use as character_consistency reference images (max 4 per scene).
-Total reference images per scene: max 14.
+Brand logo → use as logo_reference (max 1 per scene, does NOT count toward the 14-image cap).
+Total reference images per scene: max 14 (excluding logo).
 
 Distribute references intelligently:
 - Product hero scenes: use all available product photos
@@ -172,6 +173,39 @@ Rules:
   a playful brand with a corporate monotone narrator"""
 
 
+# --- Logo Integration Layer (conditional — only when tenant has a logo) ---
+_LOGO_INTEGRATION_LAYER = """\
+## Logo Integration (IMPORTANT)
+
+The brand has uploaded a logo (included in the available assets below).
+You MUST include this logo as a reference image on EVERY scene's start_frame
+using slot_type "logo_reference".
+
+In each scene's start_frame prompt, describe WHERE and HOW the logo appears
+naturally in the scene. The logo must feel like a real-world object in the
+environment, NOT a watermark or overlay.
+
+### Creative Placement Rules
+
+- The logo should be a BACKGROUND or AMBIENT detail — never the focal point
+- VARY the placement across scenes — never repeat the same trick twice:
+  * Sticker on a laptop, phone case, or water bottle
+  * Sign, poster, or neon light in the background
+  * Embossed or etched into a wooden surface, counter, or wall
+  * Printed on a coffee cup, shopping bag, or packaging
+  * Latte art, chalk drawing, or carved into food presentation
+  * Badge, pin, or embroidered on clothing
+  * Reflected in glass, painted on a mural, or on a flag
+- The viewer should notice the CONTENT first, and only on second glance
+  discover the logo naturally embedded in the scene
+- If a scene's composition truly cannot accommodate the logo naturally
+  (extreme abstract close-up), you may omit it from that ONE scene,
+  but include it in at least 1 scene per plan
+- NEVER describe it as a "watermark", "overlay", or "stamp"
+- In the prompt, refer to it as "the brand's logo from the reference image"
+  so the image generator reproduces it faithfully"""
+
+
 def _build_asset_context(manifest: AssetManifest) -> str:
     """Build the asset availability section of the system prompt."""
     parts: list[str] = ["## Available Assets"]
@@ -191,10 +225,14 @@ def _build_asset_context(manifest: AssetManifest) -> str:
         parts.append("\nNo people photos available.")
 
     if manifest.logo_url:
-        parts.append(f"\nLogo available: {manifest.logo_url}")
-        parts.append("Set composite.logo_overlay=True on scenes where the logo should appear.")
+        parts.append(f"\nBrand logo (use as logo_reference): {manifest.logo_url}")
+        parts.append(
+            "Include this URL as a reference image with slot_type 'logo_reference' "
+            "on each scene's start_frame. Describe its natural placement in the prompt. "
+            "See Logo Integration instructions above."
+        )
     else:
-        parts.append("\nNo logo available. Set logo_overlay=False on all scenes.")
+        parts.append("\nNo logo available. Do not describe any logo in scene prompts.")
 
     return "\n".join(parts)
 
@@ -233,8 +271,13 @@ def build_system_prompt(
         _CAPTION_QUALITY_RULES,
         _VOICE_STYLE_RULES,
         f"## Brand Context\n\n{brand_context}",
-        asset_context,
     ]
+
+    # Logo integration layer — only when tenant has a logo (saves tokens otherwise)
+    if manifest.logo_url:
+        layers.append(_LOGO_INTEGRATION_LAYER)
+
+    layers.append(asset_context)
 
     # Layer 11: Learned preferences (only when data exists)
     layer_11_parts = [
