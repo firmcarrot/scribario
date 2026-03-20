@@ -99,6 +99,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // Verify user is an admin
+  const db = (await import("@/lib/supabase/server")).createServiceClient();
+  const { data: adminRow } = await db
+    .from("admin_users")
+    .select("id")
+    .eq("user_id", user.id)
+    .single();
+  if (!adminRow) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+  }
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return NextResponse.json(

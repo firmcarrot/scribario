@@ -1,5 +1,6 @@
 import MetricCard from "@/components/charts/MetricCard";
 import { createServiceClient } from "@/lib/supabase/server";
+import { AnalyticsCharts } from "./AnalyticsCharts";
 
 async function getAnalyticsData() {
   const db = createServiceClient();
@@ -134,6 +135,14 @@ async function getAnalyticsData() {
   const totalFeedback = totalFeedbackResult.count ?? 0;
   const approvalRate = totalFeedback > 0 ? (approveCount / totalFeedback) * 100 : 0;
 
+  // Daily analytics for charts (RPC may not exist yet)
+  const dailyAnalyticsResult = await Promise.resolve(
+    db.rpc("get_daily_analytics_30d")
+  ).then(
+    (res) => res,
+    () => ({ data: null }),
+  );
+
   return {
     dau,
     wau,
@@ -146,6 +155,7 @@ async function getAnalyticsData() {
     regenerateCount,
     totalFeedback,
     approvalRate,
+    dailyAnalytics: dailyAnalyticsResult?.data || [],
   };
 }
 
@@ -180,6 +190,9 @@ export default async function AnalyticsPage() {
           ))}
         </div>
       </section>
+
+      {/* Activity Charts */}
+      <AnalyticsCharts data={data.dailyAnalytics} />
 
       {/* Feature Usage */}
       <section>

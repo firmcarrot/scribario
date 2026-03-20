@@ -1,6 +1,7 @@
 import { createServiceClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { TenantActions } from "./TenantActions";
 
 async function getTenant(id: string) {
   const db = createServiceClient();
@@ -67,6 +68,9 @@ export default async function TenantDetailPage({ params }: { params: Promise<{ i
           </div>
         ))}
       </div>
+
+      {/* Admin Actions */}
+      <TenantActions tenant={tenant} />
 
       {/* Recent content requests */}
       <div className="rounded-lg border overflow-hidden" style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}>

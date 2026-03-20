@@ -9,6 +9,8 @@ import {
   Video,
   Zap,
 } from "lucide-react";
+import { BudgetAlerts } from "./BudgetAlerts";
+import { AnomalyDetector } from "./AnomalyDetector";
 
 interface FailedJob {
   id: string;
@@ -137,6 +139,44 @@ async function getSystemHealthData() {
     0,
   );
 
+  // Budget alerts (RPC may not exist yet)
+  const budgetAlertsResult = await Promise.resolve(
+    db.rpc("get_budget_alerts")
+  ).then(
+    (res) => res,
+    () => ({ data: null }),
+  );
+
+  // Anomaly detection: get daily costs for last 14 days
+  const dailyCostResult = await Promise.resolve(
+    db.rpc("get_daily_costs_30d")
+  ).then(
+    (res) => res,
+    () => ({ data: null }),
+  );
+
+  let anomaly: { detected: boolean; todayCost: number; avgCost: number; multiplier: number } | null = null;
+  const dailyCosts = (dailyCostResult?.data || []) as { day: string; total_cost: number }[];
+  if (dailyCosts.length >= 8) {
+    // Last 14 days excluding today
+    const history = dailyCosts.slice(-15, -1);
+    const todayData = dailyCosts[dailyCosts.length - 1];
+    const todayCost = Number(todayData?.total_cost || 0);
+    const avgCost = history.length > 0
+      ? history.reduce((s, d) => s + Number(d.total_cost), 0) / history.length
+      : 0;
+
+    // Flag if today > 10x average AND > $1 absolute (avoid noise on tiny amounts)
+    if (avgCost > 0 && todayCost > avgCost * 10 && todayCost > 1) {
+      anomaly = {
+        detected: true,
+        todayCost,
+        avgCost,
+        multiplier: todayCost / avgCost,
+      };
+    }
+  }
+
   return {
     queueDepth,
     processing,
@@ -147,6 +187,8 @@ async function getSystemHealthData() {
     totalPosts,
     autopilotActive,
     videoCreditsTotal,
+    budgetAlerts: budgetAlertsResult?.data || [],
+    anomaly,
   };
 }
 
@@ -191,6 +233,12 @@ export default async function SystemPage() {
           {overallHealthy ? "All Systems Operational" : "Attention Needed"}
         </div>
       </div>
+
+      {/* Anomaly Alert */}
+      <AnomalyDetector anomaly={data.anomaly} />
+
+      {/* Budget Alerts */}
+      <BudgetAlerts alerts={data.budgetAlerts} />
 
       {/* Metric Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

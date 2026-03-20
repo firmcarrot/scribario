@@ -1,6 +1,13 @@
 "use server";
 
-import { createServiceClient } from "@/lib/supabase/server";
+import { createServiceClient, createServerSupabaseClient } from "@/lib/supabase/server";
+
+async function requireAdmin() {
+  const supabase = await createServerSupabaseClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) throw new Error("Unauthorized");
+  return user;
+}
 
 interface BlogPostData {
   title: string;
@@ -17,6 +24,7 @@ interface BlogPostData {
 }
 
 export async function saveBlogPost(data: BlogPostData) {
+  await requireAdmin();
   const db = createServiceClient();
 
   const { error } = await db.from("blog_posts").insert({
@@ -31,6 +39,7 @@ export async function saveBlogPost(data: BlogPostData) {
 }
 
 export async function updateBlogPost(id: string, data: Partial<BlogPostData>) {
+  await requireAdmin();
   const db = createServiceClient();
 
   const updateData: Record<string, unknown> = { ...data, updated_at: new Date().toISOString() };

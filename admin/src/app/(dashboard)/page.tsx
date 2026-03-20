@@ -2,6 +2,7 @@ import MetricCard from "@/components/charts/MetricCard";
 import { CostChart } from "@/components/charts/CostChart";
 import { TenantEconomicsTable } from "@/components/charts/TenantEconomicsTable";
 import { createServiceClient } from "@/lib/supabase/server";
+import { RealtimeRefresher } from "./RealtimeRefresher";
 
 // Plan pricing for MRR calculation
 const PLAN_PRICES: Record<string, number> = {
@@ -134,6 +135,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="flex flex-col gap-8">
+      <RealtimeRefresher />
       <h1 className="text-2xl font-bold">Dashboard</h1>
 
       {/* KPI Cards */}
@@ -159,8 +161,8 @@ export default async function DashboardPage() {
         </p>
       </div>
 
-      {/* Cost Chart placeholder — will use Recharts when we have daily data */}
-      <CostChart />
+      {/* Cost Chart */}
+      <CostChart data={data.dailyCosts} />
 
       {/* Per-Tenant Economics */}
       <TenantEconomicsTable tenants={data.tenantEconomics} planPrices={PLAN_PRICES} />

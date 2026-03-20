@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   FileText,
+  Calendar,
   Search,
   BarChart3,
   Users,
@@ -17,6 +18,7 @@ import { useState } from "react";
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/blog", label: "Blog", icon: FileText },
+  { href: "/blog/calendar", label: "Calendar", icon: Calendar },
   { href: "/keywords", label: "Keywords", icon: Search },
   { href: "/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/tenants", label: "Tenants", icon: Users },
