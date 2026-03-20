@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { posts } from "@/content/blog/posts";
+import { supabase } from "@/lib/supabase";
 import { Footer } from "@/components/sections/Footer";
+
+export const revalidate = 3600; // ISR: revalidate every hour
 
 export const metadata: Metadata = {
   title: "Blog — Social Media Tips & AI Automation | Scribario",
@@ -20,7 +22,35 @@ const breadcrumbSchema = {
   ],
 };
 
-export default function BlogPage() {
+interface BlogPost {
+  slug: string;
+  title: string;
+  description: string;
+  published_at: string;
+  author: string;
+  reading_time: string | null;
+  image_url: string | null;
+  image_alt: string | null;
+}
+
+async function getPosts(): Promise<BlogPost[]> {
+  const { data, error } = await supabase
+    .from("blog_posts")
+    .select("slug, title, description, published_at, author, reading_time, image_url, image_alt")
+    .eq("status", "published")
+    .order("published_at", { ascending: false });
+
+  if (error) {
+    console.error("Failed to fetch blog posts:", error);
+    return [];
+  }
+
+  return data || [];
+}
+
+export default async function BlogPage() {
+  const posts = await getPosts();
+
   return (
     <main id="main-content">
       <script
@@ -99,11 +129,11 @@ export default function BlogPage() {
                 overflow: "hidden",
               }}
             >
-              {post.image && (
+              {post.image_url && (
                 <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
                   <Image
-                    src={post.image}
-                    alt={post.imageAlt}
+                    src={post.image_url}
+                    alt={post.image_alt || post.title}
                     fill
                     className="object-cover group-hover:scale-[1.03] transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -120,22 +150,24 @@ export default function BlogPage() {
                     color: "var(--text-secondary)",
                   }}
                 >
-                  {new Date(post.date).toLocaleDateString("en-US", {
+                  {new Date(post.published_at).toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
                     year: "numeric",
                   })}
                 </span>
-                <span
-                  className="font-mono"
-                  style={{
-                    fontSize: "0.7rem",
-                    letterSpacing: "0.08em",
-                    color: "var(--accent)",
-                  }}
-                >
-                  {post.readingTime}
-                </span>
+                {post.reading_time && (
+                  <span
+                    className="font-mono"
+                    style={{
+                      fontSize: "0.7rem",
+                      letterSpacing: "0.08em",
+                      color: "var(--accent)",
+                    }}
+                  >
+                    {post.reading_time}
+                  </span>
+                )}
               </div>
 
               <h2

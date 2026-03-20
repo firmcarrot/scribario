@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { CountUp } from "@/components/ui/CountUp";
 
 const stats = [
-  { end: 47000, suffix: "+", label: "Posts generated", description: "and counting" },
-  { end: 9, suffix: "", label: "Platforms", description: "connected" },
   { end: 30, suffix: "s", label: "Average time", description: "idea to published" },
+  { end: 3, suffix: "", label: "Options", description: "every single post" },
   { end: 5, suffix: "", label: "Caption formulas", description: "matched to your voice" },
+  { end: 4, suffix: "", label: "Art styles", description: "AI-generated images" },
 ];
 
 export function SocialProof() {
@@ -54,7 +54,7 @@ export function SocialProof() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Built for speed. Proven at scale.
+          Built for speed. Designed for simplicity.
         </motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 md:gap-12">

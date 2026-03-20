@@ -10,7 +10,7 @@ import Image from "next/image";
 const features = [
   { text: "Text what you want", num: "01", desc: "Describe your post in plain language via Telegram" },
   { text: "AI creates 3 options", num: "02", desc: "Get three publish-ready captions and images instantly" },
-  { text: "One tap publishes", num: "03", desc: "Approve and post to every platform simultaneously" },
+  { text: "One tap publishes", num: "03", desc: "Approve and post to Facebook — more platforms coming soon" },
 ];
 
 export function Hero() {
@@ -212,7 +212,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             Text what you want. Get three publish-ready options — captions, images, video.
-            One tap publishes everywhere. 30 seconds, start to finish.
+            One tap publishes to Facebook. 30 seconds, start to finish.
           </motion.p>
 
           {/* Dual CTAs */}

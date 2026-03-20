@@ -6,13 +6,13 @@ import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from
 /* ── Plan Data ── */
 const plans = [
   {
-    name: "Free",
-    description: "Try it out. See the magic.",
+    name: "Free Trial",
+    description: "See the magic. No card required.",
     monthlyPrice: 0,
     annualPrice: 0,
     features: [
-      "First 5 posts free — no card required",
-      "1 connected platform",
+      "5 posts + 1 video — no credit card",
+      "Facebook publishing",
       "AI-generated captions",
       "AI-generated images",
       "Basic brand voice",
@@ -21,38 +21,59 @@ const plans = [
     popular: false,
   },
   {
-    name: "Pro",
+    name: "Starter",
     description: "For creators who mean business.",
-    monthlyPrice: 19,
-    annualPrice: 15,
+    monthlyPrice: 29,
+    annualPrice: 23,
     features: [
-      "Unlimited posts",
-      "All platforms connected",
+      "30 posts per month",
+      "Facebook (more platforms coming soon)",
       "AI-generated captions",
       "AI-generated images",
       "Custom brand voice",
       "Video generation — $5 each",
+      "Autopilot mode — set it and forget it",
+    ],
+    cta: "Get Starter",
+    popular: false,
+  },
+  {
+    name: "Growth",
+    description: "Scale your content engine.",
+    monthlyPrice: 59,
+    annualPrice: 47,
+    features: [
+      "60 posts per month",
+      "Facebook (more platforms coming soon)",
+      "AI-generated captions",
+      "AI-generated images",
+      "Custom brand voice",
+      "15 videos included, then $5 each",
+      "Autopilot mode",
+      "Content library & history",
       "Priority support",
     ],
-    cta: "Get Pro",
+    cta: "Get Growth",
     popular: true,
   },
   {
-    name: "Business",
-    description: "Scale across brands and locations.",
-    monthlyPrice: 49,
-    annualPrice: 39,
+    name: "Pro",
+    description: "For power users and agencies.",
+    monthlyPrice: 99,
+    annualPrice: 79,
     features: [
-      "Unlimited posts",
-      "All platforms connected",
+      "150 posts per month",
+      "Facebook (more platforms coming soon)",
       "AI-generated captions",
       "AI-generated images",
       "Custom + multi-brand voice",
-      "5 videos included, then $4 each",
+      "40 videos included, then $5 each",
+      "Autopilot mode",
+      "Content library & history",
       "Priority support",
       "Dedicated onboarding",
     ],
-    cta: "Go Business",
+    cta: "Get Pro",
     popular: false,
   },
 ];
@@ -61,11 +82,11 @@ const plans = [
 const faqs = [
   {
     q: "What platforms do you support?",
-    a: "Facebook, Instagram, X (Twitter), LinkedIn, and more coming soon. Connect them all from inside Telegram.",
+    a: "Facebook is fully connected right now. More platforms are coming soon — we'll let you know as they go live.",
   },
   {
     q: "How does video generation work?",
-    a: "Text what you want — a product showcase, a promo reel, a behind-the-scenes clip. Our AI creates a 30-second video matched to your brand. Available on Pro ($5/video) and Business (5 included).",
+    a: "Text what you want — a product showcase, a promo reel, a behind-the-scenes clip. Our AI creates a short video (5-10 seconds) matched to your brand. Available as an add-on on all paid plans.",
   },
   {
     q: "Can I cancel anytime?",
@@ -76,8 +97,12 @@ const faqs = [
     a: "No. Everything happens inside Telegram. Just open the Scribario bot and start texting. Works on any phone, tablet, or desktop.",
   },
   {
-    q: "What happens after my 5 free posts?",
-    a: "After your first 5 posts, you'll be prompted to choose a plan. Your connected platforms and brand voice settings stay saved — just pick a plan to keep posting.",
+    q: "What happens after my free trial?",
+    a: "After your 5 free posts and 1 free video, you'll be prompted to choose a plan. No time limit on the trial — take as long as you need. Your connected platforms and brand voice settings stay saved.",
+  },
+  {
+    q: "What is Autopilot mode?",
+    a: "Set a posting schedule and Scribario auto-generates and publishes content on your behalf. You stay in control — pause or resume anytime with /pause and /resume. It's like having a social media manager that never sleeps.",
   },
   {
     q: "How is this different from Canva or Buffer?",
@@ -659,8 +684,8 @@ export default function PricingPage() {
               background: "rgba(255,255,255,0.02)",
             }}
           >
-            Need video? Pro and Business plans unlock{" "}
-            <span style={{ color: "var(--accent)" }}>AI video generation</span> — from $5 per video.
+            All paid plans unlock{" "}
+            <span style={{ color: "var(--accent)" }}>AI video generation</span> — $5 per video, or included with Growth and Pro.
           </p>
         </motion.div>
 

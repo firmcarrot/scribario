@@ -7,7 +7,7 @@ const milestones = [
   { label: "Idea", detail: "What if social media took 30 seconds instead of 3 hours?" },
   { label: "Prototype", detail: "First Telegram bot generates captions with Claude AI" },
   { label: "Image Gen", detail: "Nano Banana 2 integration — AI images matched to every post" },
-  { label: "Multi-Platform", detail: "One tap publishes to Facebook, Instagram, and more" },
+  { label: "Facebook Live", detail: "First platform fully connected — more coming soon" },
   { label: "Video", detail: "AI video generation with voiceover, SFX, and logo watermarks" },
   { label: "Brand Voice", detail: "System learns your tone from every approved post" },
 ];
@@ -15,7 +15,7 @@ const milestones = [
 const techStack = [
   { name: "Claude AI", role: "Caption writing, conversation understanding, brand voice matching" },
   { name: "Nano Banana 2", role: "AI image generation — photorealistic, cinematic, watercolor, cartoon" },
-  { name: "Veo 3.1", role: "Short-form and long-form video generation" },
+  { name: "Veo 3.1", role: "Short-form video generation (5-10 second clips)" },
   { name: "ElevenLabs", role: "AI voiceover for video content" },
   { name: "Telegram Bot API", role: "Your interface — no app to download, no dashboard to learn" },
 ];
@@ -215,7 +215,7 @@ export function AboutContent() {
             There&apos;s no dashboard to learn, no design tool to master, no scheduling
             calendar to maintain. You text what you want to post, and the AI creates
             three publish-ready options with captions, images, and platform-specific
-            formatting. Approve one, and it&apos;s live on every platform in seconds.
+            formatting. Approve one, and it&apos;s live on Facebook in seconds.
           </motion.p>
 
           <motion.p

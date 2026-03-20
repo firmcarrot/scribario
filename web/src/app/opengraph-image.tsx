@@ -73,7 +73,7 @@ export default async function Image() {
             lineHeight: 1.5,
           }}
         >
-          Text what you want. AI creates 3 options. One tap publishes everywhere.
+          Text what you want. AI creates 3 options. One tap publishes to Facebook.
         </p>
 
         <div

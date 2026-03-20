@@ -25,7 +25,7 @@ const faqSchema = {
       name: "Which platforms does it publish to?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Facebook, Instagram, LinkedIn, X (Twitter), TikTok, YouTube, Bluesky, Pinterest, and Threads. You can publish to all of them at once or say 'post to Instagram and Facebook only' — natural language targeting.",
+        text: "Facebook is fully connected right now. More platforms — Instagram, LinkedIn, X, TikTok, and others — are coming soon.",
       },
     },
     {
@@ -49,7 +49,7 @@ const faqSchema = {
       name: "What about video content?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Scribario generates both short-form reels (8-second clips) and long-form video (15-60 seconds) with AI voiceover, sound effects, and your logo watermark. Just describe the video you want — same text conversation, same 30-second workflow.",
+        text: "Scribario generates short-form video clips (5-10 seconds) with AI. Just describe the video you want — same text conversation, same 30-second workflow. Available as an add-on on all paid plans.",
       },
     },
     {

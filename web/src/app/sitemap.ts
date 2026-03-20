@@ -1,10 +1,17 @@
 import type { MetadataRoute } from "next";
-import { posts } from "@/content/blog/posts";
+import { supabase } from "@/lib/supabase";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Fetch published blog slugs from Supabase
+  const { data: blogPosts } = await supabase
+    .from("blog_posts")
+    .select("slug, published_at")
+    .eq("status", "published")
+    .order("published_at", { ascending: false });
+
+  const blogEntries: MetadataRoute.Sitemap = (blogPosts || []).map((post) => ({
     url: `https://scribario.com/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.published_at),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));

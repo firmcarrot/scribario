@@ -76,7 +76,7 @@ export function Footer() {
                 letterSpacing: "-0.01em",
               }}
             >
-              AI social media automation via Telegram. Text what you want, get three options, publish everywhere.
+              AI social media automation via Telegram. Text what you want, get three options, publish to Facebook.
             </p>
           </div>
 

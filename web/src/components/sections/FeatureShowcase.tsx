@@ -15,15 +15,15 @@ const features = [
   {
     label: "Visual AI",
     title: "AI Images & Video",
-    description: "Photorealistic, cinematic, watercolor, cartoon — pick a style or let your brand default decide. Upload reference photos for consistency. Short-form reels and long-form video with voiceover, SFX, and logo overlay.",
+    description: "Photorealistic, cinematic, watercolor, cartoon — pick a style or let your brand default decide. Upload reference photos for consistency. Short-form video clips (5-10 seconds) available as an add-on.",
     accent: "var(--accent-secondary)",
     imageSrc: "/images/feat-images.webp",
     imageAlt: "Four versions of the same coffee shop in different AI art styles — photorealistic, cinematic, watercolor, and cartoon — showing Scribario's style system",
   },
   {
     label: "Publishing",
-    title: "9 Platforms, One Tap",
-    description: "Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, Threads. Say \"post to Instagram and Facebook\" or just hit approve — it goes everywhere.",
+    title: "Publish to Facebook",
+    description: "Facebook is fully connected. More platforms — Instagram, LinkedIn, X, TikTok, and others — are coming soon. Just hit approve and it's live.",
     accent: "var(--accent)",
     imageSrc: "/images/feat-platforms.webp",
     imageAlt: "Nine 3D social media platform icons arranged in a circle on a white desk — Facebook, Instagram, LinkedIn, TikTok, YouTube, and more — all connected through one tap",

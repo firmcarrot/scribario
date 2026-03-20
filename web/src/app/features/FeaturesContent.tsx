@@ -39,14 +39,8 @@ const featureGroups: FeatureGroup[] = [
       {
         name: "Short-Form Video",
         detail:
-          "Tap \"Make Video\" on any post to generate an 8-second reel. Start frame, end frame, smooth animation. Ready for Instagram Reels, TikTok, YouTube Shorts.",
+          "Tap \"Make Video\" on any post to generate a 5-10 second clip. Start frame, end frame, smooth animation. Available as an add-on on all paid plans.",
         icon: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z",
-      },
-      {
-        name: "Long-Form Video",
-        detail:
-          "15–60 second videos with AI voiceover, sound effects, multi-scene scripting, and your logo watermark. Describe the video you want — Scribario writes, shoots, and edits it.",
-        icon: "M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z",
       },
     ],
   },
@@ -86,7 +80,7 @@ const featureGroups: FeatureGroup[] = [
     label: "Brand & Publishing",
     title: "Your brand, everywhere, automatically.",
     description:
-      "Connect once. Scribario handles formatting, hashtags, and platform-specific requirements across every channel.",
+      "Connect once. Scribario handles formatting, hashtags, and platform-specific requirements. Facebook is live — more channels coming soon.",
     features: [
       {
         name: "Brand Voice Learning",
@@ -101,15 +95,15 @@ const featureGroups: FeatureGroup[] = [
         icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
       },
       {
-        name: "9-Platform Publishing",
+        name: "Facebook Publishing",
         detail:
-          "Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, Threads. One tap publishes everywhere. Each platform gets properly formatted content — right dimensions, right hashtag counts, right character limits.",
+          "Facebook is fully connected. More platforms — Instagram, LinkedIn, X, TikTok, and others — are coming soon. Each platform will get properly formatted content when it goes live.",
         icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9",
       },
       {
         name: "Platform Targeting",
         detail:
-          "Say \"post to Instagram and Facebook only\" — natural language targeting. Or publish everywhere with a single tap. You control where each post goes without navigating platform-specific dashboards.",
+          "Natural language controls for where and when to post. Currently publishing to Facebook, with more platforms coming soon. You control everything from the chat — no dashboards.",
         icon: "M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z",
       },
     ],
@@ -127,9 +121,15 @@ const featureGroups: FeatureGroup[] = [
         icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
       },
       {
-        name: "Post History",
+        name: "Autopilot Mode",
         detail:
-          "Type /history to see your last 10 posts — date, platforms, caption preview. Track what you've published without leaving the conversation.",
+          "Set a posting schedule and Scribario auto-generates and publishes content on your behalf. Pause or resume anytime with /pause and /resume. Like having a social media manager that never sleeps.",
+        icon: "M13 10V3L4 14h7v7l9-11h-7z",
+      },
+      {
+        name: "Content Library",
+        detail:
+          "Type /library to browse your past content and reuse what worked. Type /history to see your last 10 posts — date, platforms, caption preview. Track everything without leaving the conversation.",
         icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
       },
     ],
@@ -160,7 +160,7 @@ const faqItems = [
   {
     question: "How much does video generation cost?",
     answer:
-      "Short-form videos (8-second reels) and long-form videos (15-60 seconds) are available on Pro ($5/video) and Business (5 included, then $4/video) plans. Each video includes AI voiceover, sound effects, and your logo watermark.",
+      "Short-form video clips (5-10 seconds) are available as an add-on on all paid plans at $5/video, or included with Growth and Pro plans. Each video is AI-generated from your description.",
   },
 ];
 

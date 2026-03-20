@@ -51,7 +51,7 @@ export function PlatformBar({ variant = "light" }: PlatformBarProps) {
           color: labelColor,
         }}
       >
-        Publish to 9 platforms
+        Publish to Facebook · More platforms coming soon
       </p>
       <div
         className="flex flex-wrap justify-center gap-5 md:gap-6"

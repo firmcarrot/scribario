@@ -27,20 +27,20 @@ export const comparisons: Record<string, ComparisonPage> = {
     introparagraphs: [
       "Buffer has been a staple of social media management since 2010. It does one thing well: scheduling posts you've already created. You write the caption, design the image in Canva, upload everything to Buffer, and pick a time. It's a reliable publishing queue.",
       "The problem is that scheduling is the easiest part of social media. The hard part — coming up with ideas, writing captions that sound like you, creating images that stop the scroll — Buffer doesn't touch. You still need a writer, a designer, and 30-60 minutes per post.",
-      "Scribario replaces the entire workflow. Text what you want to post in Telegram, get three publish-ready options with AI-generated captions and images, approve with one tap, and it's live on up to 9 platforms. The content creation that Buffer assumes you've already done? Scribario does it in 30 seconds.",
+      "Scribario replaces the entire workflow. Text what you want to post in Telegram, get three publish-ready options with AI-generated captions and images, approve with one tap, and it's live on Facebook (with more platforms coming soon). The content creation that Buffer assumes you've already done? Scribario does it in 30 seconds.",
     ],
     comparisonRows: [
       { feature: "Creates captions", scribario: "AI-generated, 3 unique options", competitor: "No — you write them" },
       { feature: "Creates images", scribario: "AI-generated, 4 art styles", competitor: "No — you design them" },
-      { feature: "Creates video", scribario: "AI short-form + long-form", competitor: "No" },
+      { feature: "Creates video", scribario: "AI short-form clips (5-10 seconds)", competitor: "No" },
       { feature: "Interface", scribario: "Telegram text conversation", competitor: "Web dashboard" },
       { feature: "Learning curve", scribario: "None — just text what you want", competitor: "Moderate — dashboard navigation" },
       { feature: "Brand voice", scribario: "AI learns from approved posts", competitor: "Manual style guide" },
       { feature: "Scheduling", scribario: "Natural language (\"post Friday 9am\")", competitor: "Calendar drag-and-drop" },
-      { feature: "Platforms", scribario: "9 platforms", competitor: "8 platforms" },
+      { feature: "Platforms", scribario: "Facebook (more platforms coming soon)", competitor: "8 platforms" },
       { feature: "Content creation time", scribario: "30 seconds", competitor: "30-60 minutes (separate from Buffer)" },
       { feature: "Free plan", scribario: "First 5 posts free", competitor: "3 channels, 10 posts/channel" },
-      { feature: "Paid plans start at", scribario: "$19/month", competitor: "$6/month/channel" },
+      { feature: "Paid plans start at", scribario: "$29/month", competitor: "$6/month/channel" },
     ],
     advantages: [
       {
@@ -65,7 +65,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       },
       {
         title: "Video content without a video editor",
-        description: "Buffer has zero video creation capabilities. Scribario generates short-form and long-form video content from the same text prompt. No editing software, no stock footage subscriptions, no production skills required.",
+        description: "Buffer has zero video creation capabilities. Scribario generates short-form video clips (5-10 seconds) from the same text prompt. No editing software, no stock footage subscriptions, no production skills required.",
       },
     ],
     faq: [
@@ -79,7 +79,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       },
       {
         question: "Is Scribario more expensive than Buffer?",
-        answer: "Buffer starts at $6/month per channel. For 5 channels, that's $30/month — and you still need to create the content yourself. Scribario Pro is $19/month for unlimited posts across all platforms, content creation included.",
+        answer: "Buffer starts at $6/month per channel. For 5 channels, that's $30/month — and you still need to create the content yourself. Scribario Starter is $29/month for 30 posts, content creation included. Try it free first — 5 posts and 1 video, no credit card required.",
       },
       {
         question: "How does Scribario's brand voice learning compare to Buffer's style guide?",
@@ -87,7 +87,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       },
       {
         question: "Can I edit the content Scribario creates before posting?",
-        answer: "Absolutely. Scribario gives you 3 caption options and 4 image styles for every post. You pick what you like, and you can edit any caption directly in the Telegram chat before approving. It's collaborative, not autopilot.",
+        answer: "Absolutely. Scribario gives you 3 caption options and 4 image styles for every post. You pick what you like, and you can edit any caption directly in the Telegram chat before approving. And when you're ready to go hands-free, Autopilot mode (/autopilot) lets you auto-post on a schedule — pause and resume anytime.",
       },
       {
         question: "What happens to my scheduled posts if I cancel?",
@@ -118,12 +118,12 @@ export const comparisons: Record<string, ComparisonPage> = {
       { feature: "Interface", scribario: "Telegram text", competitor: "Complex web dashboard" },
       { feature: "Setup time", scribario: "10 seconds", competitor: "30+ minutes" },
       { feature: "Learning curve", scribario: "None", competitor: "Steep — training recommended" },
-      { feature: "Team features", scribario: "Business plan multi-brand", competitor: "Built for teams — approvals, roles, workflows" },
+      { feature: "Team features", scribario: "Pro plan multi-brand", competitor: "Built for teams — approvals, roles, workflows" },
       { feature: "Analytics", scribario: "Post history", competitor: "Advanced — reports, benchmarks, sentiment" },
       { feature: "Social listening", scribario: "No", competitor: "Yes" },
       { feature: "AI content", scribario: "Full creation — captions, images, video", competitor: "OwlyWriter AI — caption suggestions only" },
-      { feature: "Platforms", scribario: "9 platforms", competitor: "10+ platforms" },
-      { feature: "Pricing", scribario: "Free / $19 / $49", competitor: "$99/month minimum" },
+      { feature: "Platforms", scribario: "Facebook (more coming soon)", competitor: "10+ platforms" },
+      { feature: "Pricing", scribario: "Free / $29 / $59 / $99", competitor: "$99/month minimum" },
     ],
     advantages: [
       {
@@ -131,8 +131,8 @@ export const comparisons: Record<string, ComparisonPage> = {
         description: "Hootsuite has approval workflows, team permissions, and content calendars because it's designed for marketing departments. If you're one person running a business, that's overhead you don't need.",
       },
       {
-        title: "$99/month vs $19/month",
-        description: "Hootsuite's cheapest plan is $99/month. Scribario Pro is $19/month with unlimited posts and AI content creation. For small businesses, that's $960/year in savings.",
+        title: "$99/month vs $29/month",
+        description: "Hootsuite's cheapest plan is $99/month. Scribario Starter is $29/month with 30 posts and AI content creation. For small businesses, that's $840/year in savings.",
       },
       {
         title: "Content creation is the hard part",
@@ -162,22 +162,22 @@ export const comparisons: Record<string, ComparisonPage> = {
       },
       {
         question: "Can Scribario replace Hootsuite for a team?",
-        answer: "For small teams (1-3 people), yes — especially on the Business plan with multi-brand support. For enterprise teams with approval workflows and compliance requirements, Hootsuite is purpose-built for that.",
+        answer: "For small teams (1-3 people), yes — especially on the Pro plan with multi-brand support. For enterprise teams with approval workflows and compliance requirements, Hootsuite is purpose-built for that.",
       },
       {
         question: "I'm locked into an annual Hootsuite contract. What should I do?",
-        answer: "Try Scribario's free tier (5 posts) while your Hootsuite contract runs. Compare the quality and time savings side by side. When your Hootsuite renewal comes up, you'll have real data to decide. Most users switch within the first week of trying Scribario.",
+        answer: "Try Scribario's free tier (5 posts) while your Hootsuite contract runs. Compare the quality and time savings side by side. When your Hootsuite renewal comes up, you'll have real data to decide. You'll have real data to decide.",
       },
       {
         question: "Does Scribario support the same platforms as Hootsuite?",
-        answer: "Scribario supports 9 major platforms including Instagram, Facebook, X/Twitter, LinkedIn, TikTok, Pinterest, YouTube, Threads, and Bluesky. Hootsuite supports a few more niche platforms. For most small businesses, Scribario covers every platform they actually use.",
+        answer: "Scribario currently supports Facebook, with Instagram, X/Twitter, LinkedIn, TikTok, and more platforms coming soon. Hootsuite supports 10+ platforms today. If multi-platform publishing is critical right now, Hootsuite has the edge — but Scribario's content creation capabilities are unmatched.",
       },
       {
         question: "Can Scribario create video content? Hootsuite can't.",
-        answer: "Correct — Hootsuite is purely a management tool with no content creation. Scribario generates both short-form and long-form video from a text description. Video is a premium add-on at $5 per video, with no editing software or production skills required.",
+        answer: "Correct — Hootsuite is purely a management tool with no content creation. Scribario generates short-form video clips (5-10 seconds) from a text description. Video is a premium add-on at $5 per video, with no editing software or production skills required.",
       },
     ],
-    bottomLine: "Hootsuite is excellent at what it does — managing social media for teams. But if you're a one-person business paying $99/month for features you'll never use, you're burning money on complexity. Scribario costs $19/month, creates the content for you, and the entire interface is a text conversation. For small businesses, simpler isn't a compromise — it's an advantage.",
+    bottomLine: "Hootsuite is excellent at what it does — managing social media for teams. But if you're a one-person business paying $99/month for features you'll never use, you're burning money on complexity. Scribario starts at $29/month, creates the content for you, and the entire interface is a text conversation. For small businesses, simpler isn't a compromise — it's an advantage.",
     ctaCopy: "Try the simpler alternative",
     keywords: ["Hootsuite alternative", "Scribario vs Hootsuite", "cheaper than Hootsuite"],
   },
@@ -200,15 +200,15 @@ export const comparisons: Record<string, ComparisonPage> = {
       { feature: "Content creation", scribario: "AI creates everything from text", competitor: "You design from templates" },
       { feature: "Caption writing", scribario: "AI-written, 5 formula types", competitor: "You write them" },
       { feature: "Image creation", scribario: "AI-generated, original", competitor: "Template-based, stock photos" },
-      { feature: "Video creation", scribario: "AI short-form + long-form", competitor: "Template-based video editor" },
+      { feature: "Video creation", scribario: "AI short-form clips (5-10 seconds)", competitor: "Template-based video editor" },
       { feature: "Design skill needed", scribario: "None", competitor: "Some — template customization" },
       { feature: "Time per post", scribario: "30 seconds", competitor: "10-30 minutes" },
       { feature: "Brand consistency", scribario: "AI learns your voice automatically", competitor: "Brand Kit (manual setup)" },
-      { feature: "Publishing", scribario: "Direct to 9 platforms", competitor: "Content Planner (scheduling only)" },
+      { feature: "Publishing", scribario: "Direct to Facebook (more platforms coming soon)", competitor: "Content Planner (scheduling only)" },
       { feature: "Originality", scribario: "Every post is unique", competitor: "Templates look similar across users" },
       { feature: "Interface", scribario: "Telegram text", competitor: "Drag-and-drop editor" },
       { feature: "Free plan", scribario: "First 5 posts free", competitor: "Limited templates" },
-      { feature: "Paid plans", scribario: "$19/month", competitor: "$13/month" },
+      { feature: "Paid plans", scribario: "$29/month", competitor: "$13/month" },
     ],
     advantages: [
       {
@@ -225,7 +225,7 @@ export const comparisons: Record<string, ComparisonPage> = {
       },
       {
         title: "Publishing built in",
-        description: "Canva recently added a content planner, but it's basic scheduling. Scribario publishes to 9 platforms with platform-specific formatting, natural language scheduling, and one-tap approval.",
+        description: "Canva recently added a content planner, but it's basic scheduling. Scribario publishes to Facebook (with more platforms coming soon), with natural language scheduling, Autopilot mode for hands-free posting, and one-tap approval.",
       },
       {
         title: "Reference photos beat stock libraries",
@@ -239,7 +239,7 @@ export const comparisons: Record<string, ComparisonPage> = {
     faq: [
       {
         question: "Canva is cheaper. Why pay more for Scribario?",
-        answer: "Canva Pro is $13/month for design tools. But you still need 10-30 minutes per post, plus you'll likely need a caption writer and scheduling tool. Scribario Pro is $19/month for complete content creation and publishing in 30 seconds. The time savings alone justify the difference.",
+        answer: "Canva Pro is $13/month for design tools. But you still need 10-30 minutes per post, plus you'll likely need a caption writer and scheduling tool. Scribario Starter is $29/month for complete content creation and publishing in 30 seconds. The time savings alone justify the difference.",
       },
       {
         question: "Can I import my Canva designs into Scribario?",
@@ -262,7 +262,7 @@ export const comparisons: Record<string, ComparisonPage> = {
         answer: "No — and it's not trying to. Canva is a general-purpose design tool for presentations, flyers, business cards, and more. Scribario is laser-focused on social media content creation and publishing. If social media is your main Canva use case, Scribario is faster and produces more original results. Keep Canva for everything else.",
       },
     ],
-    bottomLine: "Canva is a fantastic design tool — keep it for presentations, flyers, and business cards. But for daily social media content, you don't need a blank canvas and 30 minutes of design time. You need finished posts in 30 seconds. Scribario creates original captions, generates unique images, and publishes to 9 platforms from a single text message. It's not a design tool — it's the end of needing one for social media.",
+    bottomLine: "Canva is a fantastic design tool — keep it for presentations, flyers, and business cards. But for daily social media content, you don't need a blank canvas and 30 minutes of design time. You need finished posts in 30 seconds. Scribario creates original captions, generates unique images, and publishes to Facebook (with more platforms coming soon) from a single text message. It's not a design tool — it's the end of needing one for social media.",
     ctaCopy: "Skip the templates",
     keywords: ["Canva alternative for social media", "Scribario vs Canva", "better than Canva for social media"],
   },

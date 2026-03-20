@@ -5,7 +5,7 @@ import { Footer } from "@/components/sections/Footer";
 export const metadata: Metadata = {
   title: "How Scribario Works — Auto Post to Social Media via Telegram",
   description:
-    "Text what you want to post in Telegram. Get three AI-generated options with captions and images. Approve one. Published to all platforms in 30 seconds.",
+    "Text what you want to post in Telegram. Get three AI-generated options with captions and images. Approve one. Published to Facebook in 30 seconds.",
   alternates: { canonical: "https://scribario.com/how-it-works" },
 };
 
@@ -42,7 +42,7 @@ const faqSchema = {
       name: "Can I manage multiple brands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, on the Business plan. Each brand has its own voice profile, style settings, and connected platforms. Switch between brands within the same Telegram conversation.",
+        text: "Yes, on the Pro plan. Each brand has its own voice profile, style settings, and connected platforms. Switch between brands within the same Telegram conversation.",
       },
     },
     {

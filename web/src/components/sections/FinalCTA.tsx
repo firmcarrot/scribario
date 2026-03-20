@@ -18,7 +18,7 @@ const faqItems = [
   },
   {
     question: "Which platforms does it publish to?",
-    answer: "Facebook, Instagram, LinkedIn, X (Twitter), TikTok, YouTube, Bluesky, Pinterest, and Threads. You can publish to all of them at once or say 'post to Instagram and Facebook only' — natural language targeting.",
+    answer: "Facebook is fully connected right now. More platforms — Instagram, LinkedIn, X, TikTok, and others — are coming soon.",
   },
   {
     question: "How is this different from Buffer or Hootsuite?",
@@ -30,7 +30,7 @@ const faqItems = [
   },
   {
     question: "What about video content?",
-    answer: "Scribario generates both short-form reels (8-second clips) and long-form video (15-60 seconds) with AI voiceover, sound effects, and your logo watermark. Just describe the video you want — same text conversation, same 30-second workflow.",
+    answer: "Scribario generates short-form video clips (5-10 seconds) with AI. Just describe the video you want — same text conversation, same 30-second workflow. Available as an add-on on all paid plans.",
   },
   {
     question: "Can I manage my social media from Telegram?",
@@ -260,7 +260,7 @@ export function FinalCTA() {
           }}
         >
           No content calendar. No design tools. No agency retainers.
-          One text. Every platform. Done.
+          One text. Published. Done.
         </p>
       </div>
 

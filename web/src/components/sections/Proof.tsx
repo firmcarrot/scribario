@@ -5,9 +5,9 @@ import { CountUp } from "@/components/ui/CountUp";
 import Image from "next/image";
 
 const stats = [
-  { end: 47000, suffix: "+", label: "posts generated" },
-  { end: 9, suffix: "", label: "platforms" },
-  { end: 30, suffix: "s", label: "average time" },
+  { end: 30, suffix: "s", label: "idea to published" },
+  { end: 3, suffix: "", label: "options per post" },
+  { end: 5, suffix: "", label: "caption formulas" },
 ];
 
 export function Proof() {

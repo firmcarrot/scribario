@@ -36,10 +36,10 @@ const steps = [
     number: "04",
     title: "Published everywhere. Done.",
     detail:
-      "One tap publishes to Facebook, Instagram, LinkedIn, X, TikTok, YouTube, Bluesky, Pinterest, and Threads — all at once, or targeted to specific platforms. Each post is formatted for that platform's requirements. Want to schedule it? Just say \"post this Friday at 9am.\"",
-    example: "\"Post to Instagram and Facebook only, schedule for tomorrow at noon\"",
+      "One tap publishes to Facebook — with more platforms coming soon. Each post is formatted for the platform's requirements. Want to schedule it? Just say \"post this Friday at 9am.\" Or set up Autopilot and let Scribario post on a schedule automatically.",
+    example: "\"Post to Facebook, schedule for tomorrow at noon\"",
     imageSrc: "/images/hiw-step4.webp",
-    imageAlt: "Phone on desk surrounded by nine social media platform icons with checkmarks — Scribario publishes to all platforms in one tap",
+    imageAlt: "Phone on desk showing a published Facebook post — Scribario publishes with one tap",
   },
 ];
 
@@ -73,7 +73,7 @@ const faqItems = [
   {
     question: "Can I manage multiple brands?",
     answer:
-      "Yes, on the Business plan. Each brand has its own voice profile, style settings, and connected platforms. Switch between brands within the same Telegram conversation.",
+      "Yes, on the Pro plan. Each brand has its own voice profile, style settings, and connected platforms. Switch between brands within the same Telegram conversation.",
   },
   {
     question: "What happens if I don't like any of the three options?",

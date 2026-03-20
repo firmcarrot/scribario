@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { posts } from "@/content/blog/posts";
+import { supabase } from "@/lib/supabase";
 
 export const alt = "Scribario Blog";
 export const size = { width: 1200, height: 630 };
@@ -7,9 +7,14 @@ export const contentType = "image/png";
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const { data: post } = await supabase
+    .from("blog_posts")
+    .select("title, reading_time")
+    .eq("slug", slug)
+    .eq("status", "published")
+    .single();
   const title = post?.title ?? "Scribario Blog";
-  const readTime = post?.readingTime ?? "";
+  const readTime = post?.reading_time ?? "";
 
   return new ImageResponse(
     (

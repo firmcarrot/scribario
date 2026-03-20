@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s — Scribario",
   },
   description:
-    "Text what you want. AI creates 3 unique caption + image options. One tap publishes everywhere. Social media on autopilot from Telegram.",
+    "Text what you want. AI creates 3 unique caption + image options. One tap publishes to Facebook. Social media on autopilot from Telegram.",
   metadataBase: new URL("https://scribario.com"),
   applicationName: "Scribario",
   keywords: [
@@ -24,11 +24,8 @@ export const metadata: Metadata = {
     "AI images",
     "social media marketing",
     "content automation",
-    "multi-platform posting",
     "Facebook automation",
-    "Instagram automation",
-    "LinkedIn automation",
-    "TikTok automation",
+    "autopilot posting",
     "small business social media",
     "social media AI tool",
   ],
@@ -38,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Scribario — AI Social Media Automation via Telegram",
     description:
-      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to 9 platforms in 30 seconds — no tools, no agency.",
+      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to Facebook in 30 seconds — no tools, no agency.",
     url: "https://scribario.com",
     siteName: "Scribario",
     images: [
@@ -58,7 +55,7 @@ export const metadata: Metadata = {
     creator: "@scribario",
     title: "Scribario — AI Social Media Automation via Telegram",
     description:
-      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to 9 platforms in 30 seconds — no tools, no agency.",
+      "AI social media automation via Telegram. Text your idea, get 3 publish-ready posts with captions and images, and publish to Facebook in 30 seconds — no tools, no agency.",
     images: ["/opengraph-image"],
   },
   robots: {
@@ -160,14 +157,14 @@ export default function RootLayout({
                   applicationCategory: "BusinessApplication",
                   operatingSystem: "Web, Telegram",
                   description:
-                    "AI-powered social media automation. Text what you want, AI creates 3 unique options, one tap publishes everywhere — in 30 seconds.",
+                    "AI-powered social media automation. Text what you want, AI creates 3 unique options, one tap publishes to Facebook — in 30 seconds.",
                   url: "https://scribario.com",
                   offers: {
                     "@type": "AggregateOffer",
                     lowPrice: "0",
-                    highPrice: "49",
+                    highPrice: "99",
                     priceCurrency: "USD",
-                    offerCount: "3",
+                    offerCount: "4",
                   },
                   publisher: {
                     "@id": "https://scribario.com/#organization",
@@ -176,7 +173,7 @@ export default function RootLayout({
                     "AI-generated social media captions",
                     "AI-generated images",
                     "AI-generated short-form video",
-                    "Multi-platform publishing",
+                    "Facebook publishing",
                     "Telegram bot interface",
                     "Brand voice customization",
                     "One-tap approval and posting",

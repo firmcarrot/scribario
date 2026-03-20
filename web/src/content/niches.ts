@@ -47,7 +47,7 @@ export const niches: Record<string, NichePage> = {
       },
       {
         title: "Seasonal menu launches",
-        description: "New summer menu? Text the highlights and get a visual campaign across Instagram, Facebook, and Google — all formatted for each platform.",
+        description: "New summer menu? Text the highlights and get a visual campaign on Facebook — with Instagram, Google, and more platforms coming soon.",
       },
       {
         title: "Behind-the-scenes content",
@@ -107,7 +107,7 @@ export const niches: Record<string, NichePage> = {
       },
       {
         question: "Does it work for multi-location restaurants?",
-        answer: "Yes, on the Business plan. Each location can have its own brand voice, menu items, and connected platforms while managed from a single Telegram conversation.",
+        answer: "Yes, on the Pro plan. Each location can have its own brand voice, menu items, and connected platforms while managed from a single Telegram conversation.",
       },
       {
         question: "Can I post daily specials that change every day?",
@@ -115,7 +115,7 @@ export const niches: Record<string, NichePage> = {
       },
       {
         question: "What about Instagram Stories and Reels?",
-        answer: "Scribario creates static posts and short-form video reels. For Instagram Stories, the image content works perfectly — just approve and post.",
+        answer: "Instagram support is coming soon. Currently Scribario publishes to Facebook. The AI already creates content optimized for different formats — static posts and short-form video clips — so when Instagram goes live, your content will be ready.",
       },
       {
         question: "Does it handle different cuisines and dietary labels?",
@@ -134,7 +134,7 @@ export const niches: Record<string, NichePage> = {
     slug: "real-estate",
     metaTitle: "Social Media for Real Estate — AI Posts",
     metaDescription:
-      "Listings, open houses, market updates — published across 9 platforms from a Telegram text. AI-generated real estate content that actually sells.",
+      "Listings, open houses, market updates — published to Facebook from a Telegram text. AI-generated real estate content that actually sells.",
     title: "Real Estate",
     subtitle: "Your listings deserve better than a template.",
     heroHeadline: "Social media for",
@@ -152,7 +152,7 @@ export const niches: Record<string, NichePage> = {
     benefits: [
       {
         title: "Listing announcements in seconds",
-        description: "Text the address, price, and key features. Get three unique posts with AI-generated property visuals — ready for Instagram, Facebook, and LinkedIn.",
+        description: "Text the address, price, and key features. Get three unique posts with AI-generated property visuals — ready for Facebook, with more platforms coming soon.",
       },
       {
         title: "Open house promotion",
@@ -224,11 +224,11 @@ export const niches: Record<string, NichePage> = {
       },
       {
         question: "Can I post to Zillow or Realtor.com?",
-        answer: "Scribario publishes to social media platforms (Facebook, Instagram, LinkedIn, etc.), not listing portals. Your MLS feed handles Zillow/Realtor.com — Scribario handles the social marketing.",
+        answer: "Scribario currently publishes to Facebook, with Instagram, LinkedIn, and more platforms coming soon. Your MLS feed handles Zillow/Realtor.com — Scribario handles the social marketing.",
       },
       {
         question: "Does it work for teams?",
-        answer: "Yes, on the Business plan. Each agent can have their own brand voice while sharing the team's visual style and connected platforms.",
+        answer: "Yes, on the Pro plan. Each agent can have their own brand voice while sharing the team's visual style and connected platforms.",
       },
       {
         question: "Can it handle commercial real estate content?",
@@ -341,11 +341,11 @@ export const niches: Record<string, NichePage> = {
       },
       {
         question: "What about Instagram-specific features?",
-        answer: "Scribario optimizes for Instagram automatically — right image dimensions, hashtag count (up to 30), and caption length. It also creates content for Reels.",
+        answer: "Instagram support is coming soon. Currently Scribario publishes to Facebook, with Instagram and other platforms on the roadmap. The AI already optimizes image dimensions, hashtag counts, and captions for each platform as they're added.",
       },
       {
         question: "Can each stylist on my team post separately?",
-        answer: "Yes, on the Business plan. Each stylist gets their own Telegram conversation with their own brand voice and specialty tags, but all posts publish to your salon's shared social accounts. Individual stylists can also connect their personal accounts.",
+        answer: "Yes, on the Pro plan. Each stylist gets their own Telegram conversation with their own brand voice and specialty tags, but all posts publish to your salon's shared social accounts. Individual stylists can also connect their personal accounts.",
       },
       {
         question: "Does it understand hair and beauty terminology?",
@@ -394,7 +394,7 @@ export const niches: Record<string, NichePage> = {
       },
       {
         title: "Multi-platform publishing in one step",
-        description: "One text message, nine platforms. Scribario formats your content correctly for Instagram, Facebook, LinkedIn, X, Google Business, and more — no resizing, no rewriting, no logging into each app.",
+        description: "One text message, published to Facebook — with Instagram, LinkedIn, X, and more platforms coming soon. No resizing, no rewriting, no logging into separate apps.",
       },
       {
         title: "Brand voice that sounds like you, not a robot",
@@ -404,7 +404,7 @@ export const niches: Record<string, NichePage> = {
     useCases: [
       {
         title: "Product Announcements",
-        description: "New product, new service, new offering — text it and it's live on every platform.",
+        description: "New product, new service, new offering — text it and it's live on Facebook.",
         example: "\"We just launched our new organic candle line — lavender, cedar, and vanilla, $28 each\"",
         image: "/images/posts/sb-product.webp",
       },
@@ -442,7 +442,7 @@ export const niches: Record<string, NichePage> = {
     faq: [
       {
         question: "Is this really free to start?",
-        answer: "Yes. 5 posts per month, one connected platform, no credit card. Enough to see exactly what Scribario creates before you commit to a paid plan.",
+        answer: "Yes. Your free trial includes 5 posts and 1 video — no time limit, no credit card required. Enough to see exactly what Scribario creates before you commit to a paid plan.",
       },
       {
         question: "What type of small business works best?",
@@ -454,7 +454,7 @@ export const niches: Record<string, NichePage> = {
       },
       {
         question: "How does it compare to hiring a freelancer?",
-        answer: "A social media freelancer costs $500-$2,000/month for 3-5 posts per week. Scribario Pro is $19/month for unlimited posts. The quality is comparable — and you get results in seconds instead of days.",
+        answer: "A social media freelancer costs $500-$2,000/month for 3-5 posts per week. Scribario Starter is $29/month for 30 posts. The quality is comparable — and you get results in seconds instead of days.",
       },
       {
         question: "Can I review posts before they go live?",

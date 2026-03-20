@@ -36,7 +36,7 @@ Real automation means you describe what you want to post — in plain English �
 - **Caption writing** with five different formula types (Hook-Story-Offer, PAS, Punchy, Story-Lesson, List/Value Drop)
 - **Image generation** matched to your brand's visual style
 - **Platform formatting** — right dimensions, hashtag counts, and character limits for each network
-- **Publishing** to all your connected platforms with one tap
+- **Publishing** to Facebook with one tap (more platforms coming soon)
 
 The entire workflow takes 30 seconds. Not 30 minutes of design + writing + scheduling.
 
@@ -142,7 +142,7 @@ You snap a photo of tonight's special. You open Telegram and text: "Tonight's sp
 
 In 30 seconds, you get three completely different posts — each with a professionally written caption matched to your restaurant's voice, an enhanced version of your photo formatted for each platform, and the right hashtags for your area.
 
-You tap Approve on the one you like. It's live on Instagram, Facebook, and Google Business Profile before the first ticket comes in.
+You tap Approve on the one you like. It's live on Facebook before the first ticket comes in — with more platforms like Instagram and Google Business Profile coming soon.
 
 ## Real photos, AI captions
 
@@ -176,7 +176,7 @@ You don't need an agency. You don't need a marketing degree. You need 30 seconds
     slug: "ai-vs-social-media-agency",
     title: "AI vs. Social Media Agencies: A Cost and Quality Comparison",
     description:
-      "Social media agencies charge $1,500-5,000/month. AI automation costs $19. Here's an honest comparison of what you get — and what you lose.",
+      "Social media agencies charge $1,500-5,000/month. AI automation starts at $29. Here's an honest comparison of what you get — and what you lose.",
     date: "2026-03-10",
     author: "Scribario Team",
     keywords: ["social media agency cost", "AI vs agency", "social media management pricing"],
@@ -224,15 +224,14 @@ Let's compare the real numbers:
 - Cost per post: $100-130
 - Response time for new post: 24-48 hours (needs approval workflow)
 
-**AI automation (Scribario Pro):**
+**AI automation (Scribario Starter):**
 - Setup: $0
-- Monthly: $19
-- Annual cost: $228
-- Posts per month: Unlimited
+- Monthly: $29 (or save 20% with annual billing)
+- Annual cost: $278
+- Posts per month: 30
 - Cost per post: <$1
 - Response time for new post: 30 seconds
-
-That's a 98.7% cost reduction at the Pro tier.
+- Free trial: 5 posts + 1 video, no credit card required
 
 ## But is AI content as good as agency content?
 
@@ -259,7 +258,7 @@ If you're spending $10,000+/month on marketing and need a full-service team, an 
 
 ## The hybrid approach
 
-Some of our users take a hybrid approach: they use Scribario for daily content (the routine posts that keep the algorithm happy) and hire a freelance strategist for quarterly planning sessions. Total cost: $19/month + $500/quarter = $2,228/year. That's 88% less than even a budget agency, with better daily execution.
+Some of our users take a hybrid approach: they use Scribario for daily content (the routine posts that keep the algorithm happy) and hire a freelance strategist for quarterly planning sessions. Total cost: $29/month + $500/quarter = $2,348/year. That's 87% less than even a budget agency, with better daily execution.
 
 ## The bottom line
 
@@ -319,8 +318,8 @@ Later started as an Instagram planner and expanded. It's visual-first, which is 
 
 Like Buffer, it doesn't create content — it organizes content you've already created.
 
-**Scribario ($0-49/month)**
-Scribario takes a fundamentally different approach. There's no dashboard, no calendar, no drag-and-drop interface. You text what you want to post in Telegram, AI creates three options with captions and images, you approve one, and it publishes everywhere.
+**Scribario ($0-99/month)**
+Scribario takes a fundamentally different approach. There's no dashboard, no calendar, no drag-and-drop interface. You text what you want to post in Telegram, AI creates three options with captions and images, you approve one, and it publishes to Facebook.
 
 The entire workflow happens in a chat interface. There's nothing to learn, nothing to install, and no browser tab to keep open.
 
@@ -344,7 +343,7 @@ Here's what each tool actually includes:
 - Buffer: No
 - Hootsuite: No
 - Later: No
-- Scribario: Yes — short-form reels and long-form with voiceover
+- Scribario: Yes — short-form video clips (5-10 seconds)
 
 **Brand voice learning:**
 - Buffer: No
@@ -356,7 +355,7 @@ Here's what each tool actually includes:
 - Buffer: 8 (Facebook, Instagram, LinkedIn, X, Pinterest, TikTok, YouTube, Threads)
 - Hootsuite: 8+ with enterprise integrations
 - Later: 7 (Facebook, Instagram, LinkedIn, X, Pinterest, TikTok, YouTube)
-- Scribario: 9 (Facebook, Instagram, LinkedIn, X, Pinterest, TikTok, YouTube, Bluesky, Threads)
+- Scribario: Facebook (Instagram, LinkedIn, X, and more coming soon)
 
 **Natural language scheduling:**
 - Buffer: No (calendar picker)
@@ -449,7 +448,7 @@ Scribario: Generates three options, each with a professional caption and an enha
 
 You: Tap "Approve" on option 2.
 
-Scribario: "Published to Instagram, Facebook, and Pinterest."
+Scribario: "Published to Facebook."
 
 Total time: 30 seconds. Total interface learned: none.
 

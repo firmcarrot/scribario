@@ -2,27 +2,61 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { posts } from "@/content/blog/posts";
+import { supabase } from "@/lib/supabase";
 import { Footer } from "@/components/sections/Footer";
 
-export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
+export const revalidate = 3600; // ISR: revalidate every hour
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  description: string;
+  body: string;
+  published_at: string;
+  author: string;
+  reading_time: string | null;
+  image_url: string | null;
+  image_alt: string | null;
+  keywords: string[];
+  seo_title: string | null;
+  seo_description: string | null;
+}
+
+async function getPost(slug: string): Promise<BlogPost | null> {
+  const { data, error } = await supabase
+    .from("blog_posts")
+    .select("*")
+    .eq("slug", slug)
+    .eq("status", "published")
+    .single();
+
+  if (error || !data) return null;
+  return data;
+}
+
+export async function generateStaticParams() {
+  const { data } = await supabase
+    .from("blog_posts")
+    .select("slug")
+    .eq("status", "published");
+
+  return (data || []).map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const post = await getPost(slug);
   if (!post) return { title: "Post Not Found" };
 
   return {
-    title: post.title,
-    description: post.description,
+    title: post.seo_title || post.title,
+    description: post.seo_description || post.description,
     alternates: { canonical: `https://scribario.com/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
-      description: post.description,
+      title: post.seo_title || post.title,
+      description: post.seo_description || post.description,
       type: "article",
-      publishedTime: post.date,
+      publishedTime: post.published_at,
       authors: [post.author],
     },
   };
@@ -30,7 +64,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = posts.find((p) => p.slug === slug);
+  const post = await getPost(slug);
   if (!post) notFound();
 
   const breadcrumbSchema = {
@@ -48,7 +82,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "@type": "Article",
     headline: post.title,
     description: post.description,
-    datePublished: post.date,
+    datePublished: post.published_at,
     author: { "@type": "Organization", name: "Scribario", url: "https://scribario.com" },
     publisher: { "@type": "Organization", name: "Scribario", url: "https://scribario.com", logo: { "@type": "ImageObject", url: "https://scribario.com/icon-512" } },
     mainEntityOfPage: `https://scribario.com/blog/${post.slug}`,
@@ -86,22 +120,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               color: "var(--text-secondary)",
             }}
           >
-            {new Date(post.date).toLocaleDateString("en-US", {
+            {new Date(post.published_at).toLocaleDateString("en-US", {
               month: "long",
               day: "numeric",
               year: "numeric",
             })}
           </span>
-          <span
-            className="font-mono"
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.08em",
-              color: "var(--accent)",
-            }}
-          >
-            {post.readingTime}
-          </span>
+          {post.reading_time && (
+            <span
+              className="font-mono"
+              style={{
+                fontSize: "0.75rem",
+                letterSpacing: "0.08em",
+                color: "var(--accent)",
+              }}
+            >
+              {post.reading_time}
+            </span>
+          )}
         </div>
 
         {/* Title */}
@@ -132,14 +168,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </p>
 
         {/* Hero image */}
-        {post.image && (
+        {post.image_url && (
           <div
             className="relative rounded-2xl overflow-hidden"
             style={{ aspectRatio: "16/9", marginBottom: "var(--content-gap)" }}
           >
             <Image
-              src={post.image}
-              alt={post.imageAlt}
+              src={post.image_url}
+              alt={post.image_alt || post.title}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 800px"
@@ -296,7 +332,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               lineHeight: 1.6,
             }}
           >
-            Try Scribario free — text what you want to post, get three options, publish everywhere.
+            Try Scribario free — text what you want to post, get three options, publish to Facebook.
           </p>
           <a
             href="https://t.me/ScribarioBot"
