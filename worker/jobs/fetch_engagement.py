@@ -135,7 +135,118 @@ async def handle_fetch_engagement(message: dict) -> None:
 
         fetched += 1
 
+    # 6. Phase 4C: Aggregate engagement by formula per tenant → preference_signals
+    await _upsert_engagement_preference_signals(client, posts)
+
     logger.info(
         "Engagement fetch complete",
         extra={"fetched": fetched, "failed": failed, "total": len(posts)},
     )
+
+
+async def _upsert_engagement_preference_signals(client: object, posts: list[dict]) -> None:
+    """Aggregate engagement scores by formula per tenant and upsert into preference_signals.
+
+    This is Phase 4C of the learning system: engagement data becomes "audience truth"
+    that overrides approval patterns. For each formula with 5+ posts and engagement data,
+    we create a preference_signal with signal_type='engagement'.
+    """
+    from collections import defaultdict
+
+    # Collect (tenant_id, draft_id) pairs from posts that have both
+    tenant_drafts: dict[str, list[str]] = defaultdict(list)
+    for post in posts:
+        tenant_id = post.get("tenant_id")
+        posting_job_id = post.get("posting_job_id")
+        if tenant_id and posting_job_id:
+            tenant_drafts[tenant_id].append(posting_job_id)
+
+    if not tenant_drafts:
+        return
+
+    now = datetime.now(UTC).isoformat()
+
+    for tenant_id in tenant_drafts:
+        try:
+            # Get engagement scores per formula for this tenant
+            # Join: few_shot_examples (has formula + engagement_score + draft_id)
+            result = (
+                client.table("few_shot_examples")
+                .select("formula, engagement_score")
+                .eq("tenant_id", tenant_id)
+                .not_.is_("formula", "null")
+                .not_.is_("engagement_score", "null")
+                .execute()
+            )
+
+            if not result.data:
+                continue
+
+            # Aggregate by formula
+            formula_scores: dict[str, list[float]] = defaultdict(list)
+            for row in result.data:
+                formula = row.get("formula")
+                score = row.get("engagement_score")
+                if formula and score is not None and score > 0:
+                    formula_scores[formula].append(float(score))
+
+            # Only create signals for formulas with 5+ data points
+            for formula, scores in formula_scores.items():
+                if len(scores) < 5:
+                    continue
+
+                avg_score = sum(scores) / len(scores)
+                # Normalize to 0-1 confidence: score/10 (engagement is 0-10 scale)
+                confidence = min(round(avg_score / 10.0, 3), 1.0)
+
+                # Upsert into preference_signals
+                existing = (
+                    client.table("preference_signals")
+                    .select("id, occurrences, total_opportunities")
+                    .eq("tenant_id", tenant_id)
+                    .eq("signal_type", "engagement")
+                    .eq("feature", "formula")
+                    .eq("value", formula)
+                    .limit(1)
+                    .execute()
+                )
+
+                if existing.data:
+                    row = existing.data[0]
+                    (
+                        client.table("preference_signals")
+                        .update({
+                            "occurrences": len(scores),
+                            "total_opportunities": len(scores),
+                            "confidence": confidence,
+                            "last_seen_at": now,
+                            "updated_at": now,
+                        })
+                        .eq("id", row["id"])
+                        .execute()
+                    )
+                else:
+                    (
+                        client.table("preference_signals")
+                        .insert({
+                            "tenant_id": tenant_id,
+                            "signal_type": "engagement",
+                            "feature": "formula",
+                            "value": formula,
+                            "occurrences": len(scores),
+                            "total_opportunities": len(scores),
+                            "confidence": confidence,
+                            "last_seen_at": now,
+                        })
+                        .execute()
+                    )
+
+            logger.info(
+                "Upserted engagement preference signals",
+                extra={"tenant_id": tenant_id, "formulas": len(formula_scores)},
+            )
+        except Exception:
+            logger.exception(
+                "Failed to upsert engagement preference signals for tenant",
+                extra={"tenant_id": tenant_id},
+            )

@@ -14,6 +14,12 @@ async def accumulate_approval_signals(
     """Extract structural preferences from an approval and upsert into preference_signals.
 
     Called async after every approval. Non-blocking, non-critical.
+
+    For each discriminating feature dimension:
+    - The CHOSEN value gets occurrences+1 AND total_opportunities+1
+    - The REJECTED values get ONLY total_opportunities+1 (no occurrences bump)
+    This way confidence = occurrences / total_opportunities reflects true preference rate.
+    E.g., picking "short" 6 of 10 times → confidence = 0.6, not 1.0.
     """
     from bot.db import get_supabase_client
     from pipeline.learning.structural_diff import compute_pairwise_diff, extract_features
@@ -32,55 +38,41 @@ async def accumulate_approval_signals(
         client = get_supabase_client()
         now = datetime.now(UTC).isoformat()
 
-        for feature, value in diffs.items():
-            # Upsert: increment occurrences and total_opportunities
-            # First try to get existing
-            existing = (
-                client.table("preference_signals")
-                .select("id, occurrences, total_opportunities")
-                .eq("tenant_id", tenant_id)
-                .eq("signal_type", "approval_structural")
-                .eq("feature", feature)
-                .eq("value", value)
-                .limit(1)
-                .execute()
+        # Collect all rejected values per feature for the "losing" side
+        from pipeline.learning.structural_diff import _bucket_word_count
+
+        rejected_values_by_feature: dict[str, set[str]] = {}
+        for feature in diffs:
+            vals: set[str] = set()
+            for rf in rejected_features:
+                if feature == "word_count_bucket":
+                    vals.add(_bucket_word_count(rf.word_count))
+                elif feature == "formula":
+                    vals.add(rf.formula)
+                elif feature == "emoji":
+                    vals.add("has_emoji" if rf.has_emoji else "no_emoji")
+                elif feature == "question_hook":
+                    vals.add("uses_question" if rf.question_mark_count > 0 else "no_question")
+                elif feature == "exclamation":
+                    vals.add("has_exclamation" if rf.exclamation_count > 0 else "no_exclamation")
+                elif feature == "hashtag_density":
+                    vals.add("many_hashtags" if rf.hashtag_count > 3 else "few_hashtags")
+            rejected_values_by_feature[feature] = vals
+
+        for feature, chosen_value in diffs.items():
+            # Winning side: increment both occurrences and total_opportunities
+            _upsert_approval_signal(
+                client, tenant_id, feature, chosen_value, now,
+                increment_occurrences=True,
             )
 
-            if existing.data:
-                row = existing.data[0]
-                new_occ = row["occurrences"] + 1
-                new_total = row["total_opportunities"] + 1
-                (
-                    client.table("preference_signals")
-                    .update(
-                        {
-                            "occurrences": new_occ,
-                            "total_opportunities": new_total,
-                            "confidence": round(new_occ / new_total, 3),
-                            "last_seen_at": now,
-                            "updated_at": now,
-                        }
+            # Losing side(s): increment only total_opportunities
+            for rejected_value in rejected_values_by_feature.get(feature, set()):
+                if rejected_value != chosen_value:
+                    _upsert_approval_signal(
+                        client, tenant_id, feature, rejected_value, now,
+                        increment_occurrences=False,
                     )
-                    .eq("id", row["id"])
-                    .execute()
-                )
-            else:
-                (
-                    client.table("preference_signals")
-                    .insert(
-                        {
-                            "tenant_id": tenant_id,
-                            "signal_type": "approval_structural",
-                            "feature": feature,
-                            "value": value,
-                            "occurrences": 1,
-                            "total_opportunities": 1,
-                            "confidence": 1.0,
-                            "last_seen_at": now,
-                        }
-                    )
-                    .execute()
-                )
 
         logger.info(
             "Accumulated approval signals",
@@ -88,6 +80,63 @@ async def accumulate_approval_signals(
         )
     except Exception:
         logger.exception("Failed to accumulate approval signals -- non-fatal")
+
+
+def _upsert_approval_signal(
+    client: object,
+    tenant_id: str,
+    feature: str,
+    value: str,
+    now: str,
+    increment_occurrences: bool,
+) -> None:
+    """Upsert a single approval_structural signal row."""
+    existing = (
+        client.table("preference_signals")
+        .select("id, occurrences, total_opportunities")
+        .eq("tenant_id", tenant_id)
+        .eq("signal_type", "approval_structural")
+        .eq("feature", feature)
+        .eq("value", value)
+        .limit(1)
+        .execute()
+    )
+
+    if existing.data:
+        row = existing.data[0]
+        new_occ = row["occurrences"] + (1 if increment_occurrences else 0)
+        new_total = row["total_opportunities"] + 1
+        (
+            client.table("preference_signals")
+            .update(
+                {
+                    "occurrences": new_occ,
+                    "total_opportunities": new_total,
+                    "confidence": round(new_occ / new_total, 3),
+                    "last_seen_at": now,
+                    "updated_at": now,
+                }
+            )
+            .eq("id", row["id"])
+            .execute()
+        )
+    else:
+        (
+            client.table("preference_signals")
+            .insert(
+                {
+                    "tenant_id": tenant_id,
+                    "signal_type": "approval_structural",
+                    "feature": feature,
+                    "value": value,
+                    "occurrences": 1 if increment_occurrences else 0,
+                    "total_opportunities": 1,
+                    "confidence": 1.0 if increment_occurrences else 0.0,
+                    "last_seen_at": now,
+                }
+            )
+            .execute()
+        )
 
 
 async def accumulate_edit_signal(

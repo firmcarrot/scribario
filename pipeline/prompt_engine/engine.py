@@ -271,8 +271,10 @@ async def _build_formula_performance_block(tenant_id: str) -> tuple[str, list[st
             return "", None
 
         # Sort by engagement (if available) then approval rate
+        # Treat None engagement as -1 so formulas WITH engagement data
+        # always rank above those without, regardless of approval rate
         def sort_key(fs):  # noqa: ANN001, ANN202
-            eng = fs.avg_engagement if fs.avg_engagement is not None else 0.0
+            eng = fs.avg_engagement if fs.avg_engagement is not None else -1.0
             return (eng, fs.approval_rate)
 
         sorted_stats = sorted(stats.values(), key=sort_key, reverse=True)
@@ -319,7 +321,7 @@ async def generate_plan(
     examples: list[FewShotExample],
     assets: AssetManifest,
     platform_targets: list[str] | None = None,
-) -> GenerationPlan:
+) -> PlanResult:
     """Generate a complete content plan using Claude Sonnet with tool_use.
 
     Args:
@@ -330,7 +332,7 @@ async def generate_plan(
         platform_targets: Target platforms (or None for all).
 
     Returns:
-        A validated GenerationPlan ready for pipeline consumption.
+        PlanResult with the validated GenerationPlan + token usage metadata.
 
     Raises:
         ValueError: If Claude's response fails parsing or validation.

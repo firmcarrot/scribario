@@ -12,7 +12,9 @@ class FakeSupabaseTable:
     def __init__(self, data: list | None = None):
         self._data = data or []
         self._inserted: dict | None = None
+        self._all_inserts: list[dict] = []
         self._updated: dict | None = None
+        self._all_updates: list[dict] = []
 
     def select(self, *a: object, **kw: object) -> FakeSupabaseTable:
         return self
@@ -38,10 +40,12 @@ class FakeSupabaseTable:
 
     def insert(self, data: dict) -> FakeSupabaseTable:
         self._inserted = data
+        self._all_inserts.append(data)
         return self
 
     def update(self, data: dict) -> FakeSupabaseTable:
         self._updated = data
+        self._all_updates.append(data)
         return self
 
     def in_(self, *a: object, **kw: object) -> FakeSupabaseTable:
@@ -85,10 +89,15 @@ class TestAccumulateApprovalSignals:
 
         await accumulate_approval_signals("tenant-1", 0, [chosen, rejected_1, rejected_2])
 
-        assert pref_table._inserted is not None
-        assert pref_table._inserted["occurrences"] == 1
-        assert pref_table._inserted["total_opportunities"] == 1
-        assert pref_table._inserted["signal_type"] == "approval_structural"
+        # Multiple inserts: winning side (occurrences=1) + losing sides (occurrences=0)
+        assert len(pref_table._all_inserts) > 0
+        winning_inserts = [i for i in pref_table._all_inserts if i["occurrences"] == 1]
+        assert len(winning_inserts) >= 1, "Expected at least one winning-side insert"
+        assert winning_inserts[0]["total_opportunities"] == 1
+        assert winning_inserts[0]["signal_type"] == "approval_structural"
+        # Losing side inserts should have occurrences=0
+        losing_inserts = [i for i in pref_table._all_inserts if i["occurrences"] == 0]
+        assert all(i["total_opportunities"] == 1 for i in losing_inserts)
 
     @pytest.mark.asyncio
     async def test_second_approval_increments(self, monkeypatch: pytest.MonkeyPatch):
@@ -108,9 +117,11 @@ class TestAccumulateApprovalSignals:
 
         await accumulate_approval_signals("tenant-1", 0, [chosen, rejected])
 
-        assert pref_table._updated is not None
-        assert pref_table._updated["occurrences"] == 2
-        assert pref_table._updated["total_opportunities"] == 2
+        # Multiple updates: winning side (occurrences incremented) + losing sides
+        assert len(pref_table._all_updates) > 0
+        winning_updates = [u for u in pref_table._all_updates if u["occurrences"] == 2]
+        assert len(winning_updates) >= 1, "Expected winning-side update with occurrences=2"
+        assert winning_updates[0]["total_opportunities"] == 2
 
     @pytest.mark.asyncio
     async def test_non_discriminating_features_not_stored(self, monkeypatch: pytest.MonkeyPatch):
