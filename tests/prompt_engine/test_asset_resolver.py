@@ -69,8 +69,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=mock_photos),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value=None),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=(None, None)),
         ):
             manifest = await resolve_assets(TENANT_ID)
 
@@ -86,8 +86,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=[]),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value=None),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=(None, None)),
         ):
             manifest = await resolve_assets(
                 TENANT_ID,
@@ -110,8 +110,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=mock_photos),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value=None),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=(None, None)),
         ):
             manifest = await resolve_assets(TENANT_ID)
 
@@ -130,8 +130,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=mock_photos),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value=None),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=(None, None)),
         ):
             manifest = await resolve_assets(TENANT_ID)
 
@@ -144,8 +144,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=[]),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value="https://signed/logo.png"),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=("https://signed/logo.png", "square")),
         ):
             manifest = await resolve_assets(TENANT_ID)
 
@@ -159,8 +159,8 @@ class TestResolveAssets:
                   new_callable=AsyncMock, return_value=[]),
             patch("pipeline.prompt_engine.asset_resolver.get_signed_urls_for_generation",
                   side_effect=lambda paths: [f"https://signed/{p}" for p in paths]),
-            patch("pipeline.prompt_engine.asset_resolver._load_logo_url",
-                  new_callable=AsyncMock, return_value=None),
+            patch("pipeline.prompt_engine.asset_resolver._load_logo",
+                  new_callable=AsyncMock, return_value=(None, None)),
         ):
             manifest = await resolve_assets(TENANT_ID)
 

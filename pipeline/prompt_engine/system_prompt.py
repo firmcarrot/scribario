@@ -203,7 +203,14 @@ environment, NOT a watermark or overlay.
   but include it in at least 1 scene per plan
 - NEVER describe it as a "watermark", "overlay", or "stamp"
 - In the prompt, refer to it as "the brand's logo from the reference image"
-  so the image generator reproduces it faithfully"""
+  so the image generator reproduces it faithfully
+
+### DO NOT (bad placements to avoid)
+- Floating logo in the corner of the image
+- Transparent logo overlay covering the scene
+- Logo as the main subject or focal point
+- Logo stamped/placed on top of the finished scene
+- Generic "branded content" layout with logo prominently displayed"""
 
 
 def _build_asset_context(manifest: AssetManifest) -> str:
@@ -225,7 +232,15 @@ def _build_asset_context(manifest: AssetManifest) -> str:
         parts.append("\nNo people photos available.")
 
     if manifest.logo_url:
-        parts.append(f"\nBrand logo (use as logo_reference): {manifest.logo_url}")
+        shape_desc = ""
+        if manifest.logo_shape == "horizontal":
+            shape_desc = " (wide/horizontal wordmark — works well on signs, banners, laptop stickers)"
+        elif manifest.logo_shape == "vertical":
+            shape_desc = " (tall/vertical mark — works well on flags, badges, phone cases)"
+        elif manifest.logo_shape == "square":
+            shape_desc = " (square icon — works well as latte art, stamps, pins, stickers)"
+
+        parts.append(f"\nBrand logo{shape_desc} (use as logo_reference): {manifest.logo_url}")
         parts.append(
             "Include this URL as a reference image with slot_type 'logo_reference' "
             "on each scene's start_frame. Describe its natural placement in the prompt. "

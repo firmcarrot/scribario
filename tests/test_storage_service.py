@@ -20,9 +20,10 @@ class TestStripExif:
         img.save(buf, format="JPEG")
         original = buf.getvalue()
 
-        result = strip_exif(original)
-        assert isinstance(result, bytes)
-        assert len(result) > 0
+        result_bytes, content_type = strip_exif(original)
+        assert isinstance(result_bytes, bytes)
+        assert len(result_bytes) > 0
+        assert content_type == "image/jpeg"
 
     def test_returns_bytes(self):
         from PIL import Image
@@ -33,8 +34,9 @@ class TestStripExif:
         img = Image.new("RGB", (20, 20), color=(0, 255, 0))
         img.save(buf, format="JPEG")
 
-        result = strip_exif(buf.getvalue())
-        assert isinstance(result, bytes)
+        result_bytes, content_type = strip_exif(buf.getvalue())
+        assert isinstance(result_bytes, bytes)
+        assert content_type == "image/jpeg"
 
     def test_preserves_image_content(self):
         from PIL import Image
@@ -45,10 +47,36 @@ class TestStripExif:
         img = Image.new("RGB", (5, 5), color=(128, 64, 32))
         img.save(buf, format="JPEG")
 
-        result = strip_exif(buf.getvalue())
+        result_bytes, _ = strip_exif(buf.getvalue())
         # Should still be a valid image
-        reopened = Image.open(io.BytesIO(result))
+        reopened = Image.open(io.BytesIO(result_bytes))
         assert reopened.size == (5, 5)
+
+    def test_preserves_png_alpha_when_requested(self):
+        from PIL import Image
+
+        from bot.services.storage import strip_exif
+
+        buf = io.BytesIO()
+        img = Image.new("RGBA", (10, 10), color=(255, 0, 0, 128))
+        img.save(buf, format="PNG")
+
+        result_bytes, content_type = strip_exif(buf.getvalue(), preserve_alpha=True)
+        assert content_type == "image/png"
+        reopened = Image.open(io.BytesIO(result_bytes))
+        assert reopened.mode == "RGBA"
+
+    def test_converts_rgba_to_jpeg_by_default(self):
+        from PIL import Image
+
+        from bot.services.storage import strip_exif
+
+        buf = io.BytesIO()
+        img = Image.new("RGBA", (10, 10), color=(255, 0, 0, 128))
+        img.save(buf, format="PNG")
+
+        result_bytes, content_type = strip_exif(buf.getvalue(), preserve_alpha=False)
+        assert content_type == "image/jpeg"
 
 
 class TestBuildStoragePath:

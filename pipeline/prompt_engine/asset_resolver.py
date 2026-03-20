@@ -25,6 +25,7 @@ class AssetManifest:
     people_photos: list[str]
     other_photos: list[str]
     logo_url: str | None = None
+    logo_shape: str | None = None  # "square", "horizontal", or "vertical"
 
     @property
     def all_urls(self) -> list[str]:
@@ -35,26 +36,31 @@ class AssetManifest:
         return len(self.product_photos) + len(self.people_photos) + len(self.other_photos)
 
 
-async def _load_logo_url(tenant_id: str) -> str | None:
-    """Load logo signed URL from brand_profiles.logo_storage_path."""
+async def _load_logo(tenant_id: str) -> tuple[str | None, str | None]:
+    """Load logo signed URL and shape hint from brand_profiles.
+
+    Returns:
+        (logo_url, logo_shape) tuple. Both may be None.
+    """
     from bot.db import get_supabase_client
 
     try:
         client = get_supabase_client()
         result = (
             client.table("brand_profiles")
-            .select("logo_storage_path")
+            .select("logo_storage_path, logo_shape")
             .eq("tenant_id", tenant_id)
             .limit(1)
             .execute()
         )
         if result.data and result.data[0].get("logo_storage_path"):
             path = result.data[0]["logo_storage_path"]
+            shape = result.data[0].get("logo_shape")
             urls = get_signed_urls_for_generation([path])
-            return urls[0] if urls else None
+            return (urls[0] if urls else None), shape
     except Exception:
-        logger.exception("Failed to load logo URL", extra={"tenant_id": tenant_id})
-    return None
+        logger.exception("Failed to load logo", extra={"tenant_id": tenant_id})
+    return None, None
 
 
 async def resolve_assets(
@@ -111,11 +117,12 @@ async def resolve_assets(
         other_urls = []
 
     # Load logo
-    logo_url = await _load_logo_url(tenant_id)
+    logo_url, logo_shape = await _load_logo(tenant_id)
 
     return AssetManifest(
         product_photos=product_urls,
         people_photos=people_urls,
         other_photos=other_urls,
         logo_url=logo_url,
+        logo_shape=logo_shape,
     )

@@ -514,8 +514,7 @@ async def on_logo_photo_input(
     message: Message, widget: MessageInput, manager: DialogManager
 ) -> None:
     """User sent a photo during logo upload step."""
-    from bot.config import get_settings
-    from bot.handlers.logo import save_logo_from_telegram
+    from bot.handlers.logo import _ALLOWED_LOGO_MIMES, save_logo_from_telegram
 
     tenant_id = manager.dialog_data.get("tenant_id")
     if not tenant_id:
@@ -530,12 +529,22 @@ async def on_logo_photo_input(
         await message.answer("Please send a photo of your logo, or tap Skip.")
         return
 
+    # Validate document MIME type (photos are always images)
+    if doc:
+        mime = doc.mime_type or ""
+        if mime not in _ALLOWED_LOGO_MIMES:
+            await message.answer(
+                "That doesn't look like an image file. "
+                "Please send a PNG, JPEG, or WebP image, or tap Skip."
+            )
+            return
+
     file_id = photo.file_id if photo else doc.file_id
     file_unique_id = photo.file_unique_id if photo else doc.file_unique_id
 
     try:
         await save_logo_from_telegram(
-            bot_token=get_settings().telegram_bot_token,
+            bot=message.bot,
             file_id=file_id,
             file_unique_id=file_unique_id,
             tenant_id=tenant_id,
@@ -544,6 +553,9 @@ async def on_logo_photo_input(
             "Logo saved! It'll be creatively woven into your images — "
             "think latte art, laptop stickers, signs in the background."
         )
+    except ValueError as e:
+        logger.warning("Logo rejected during onboarding", extra={"tenant_id": tenant_id, "reason": str(e)})
+        await message.answer(f"Couldn't use that file: {e}\nYou can add a logo later with /logo.")
     except Exception:
         logger.exception("Logo save failed during onboarding", extra={"tenant_id": tenant_id})
         await message.answer("Couldn't save the logo, but no worries — you can add it later with /logo.")

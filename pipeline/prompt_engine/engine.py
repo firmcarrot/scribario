@@ -158,7 +158,9 @@ _TOOL_SCHEMA = {
 }
 
 
-def _parse_tool_response(response: object) -> GenerationPlan:
+def _parse_tool_response(
+    response: object, *, logo_available: bool = False,
+) -> GenerationPlan:
     """Parse Claude's tool_use response into a validated GenerationPlan.
 
     Raises:
@@ -210,7 +212,7 @@ def _parse_tool_response(response: object) -> GenerationPlan:
     )
 
     # Validate
-    errors = plan.validate()
+    errors = plan.validate(logo_available=logo_available)
     if errors:
         raise ValueError(f"GenerationPlan validation failed: {'; '.join(errors)}")
 
@@ -243,10 +245,10 @@ def _parse_animation(data: dict) -> AnimationPrompt:
 def _parse_composite(data: dict | None) -> CompositeInstruction:
     if not data:
         return CompositeInstruction()
+    # NOTE: logo_overlay/logo_position/logo_opacity are deprecated —
+    # logo integration is now prompt-based via reference images.
+    # Only parse text overlay fields from Claude's response.
     return CompositeInstruction(
-        logo_overlay=data.get("logo_overlay", False),
-        logo_position=data.get("logo_position", "bottom_right"),
-        logo_opacity=data.get("logo_opacity", 0.7),
         text_overlay=data.get("text_overlay"),
         text_position=data.get("text_position", "bottom_center"),
     )
@@ -379,7 +381,7 @@ async def generate_plan(
         tool_choice={"type": "tool", "name": "create_generation_plan"},
     )
 
-    plan = _parse_tool_response(response)
+    plan = _parse_tool_response(response, logo_available=bool(assets.logo_url))
 
     # Extract token usage for cost tracking
     input_tokens = getattr(response.usage, "input_tokens", None)

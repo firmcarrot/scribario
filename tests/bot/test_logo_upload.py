@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+import time
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from bot.handlers.logo import _pending_logo_uploads, router
+from bot.handlers.logo import _pending_logo_uploads, _get_pending, _set_pending, router
 
 
 class TestLogoCommand:
@@ -27,7 +28,7 @@ class TestLogoCommand:
         msg.answer.assert_called_once()
         answer_text = msg.answer.call_args[0][0]
         assert "logo" in answer_text.lower()
-        assert 12345 in _pending_logo_uploads
+        assert _get_pending(12345) == "t1"
 
     @pytest.mark.asyncio
     async def test_logo_command_rejects_unauthenticated(self) -> None:
@@ -43,7 +44,20 @@ class TestLogoCommand:
             await cmd_logo(msg)
 
         msg.answer.assert_called_once()
-        assert 99999 not in _pending_logo_uploads
+        assert _get_pending(99999) is None
+
+
+class TestPendingTTL:
+    def test_fresh_entry_returns_tenant(self) -> None:
+        _set_pending(11111, "t1")
+        assert _get_pending(11111) == "t1"
+        _pending_logo_uploads.pop(11111, None)
+
+    def test_expired_entry_returns_none(self) -> None:
+        # Manually insert an expired entry
+        _pending_logo_uploads[22222] = ("t2", time.monotonic() - 400)
+        assert _get_pending(22222) is None
+        assert 22222 not in _pending_logo_uploads
 
 
 class TestLogoPhotoHandler:
@@ -51,7 +65,7 @@ class TestLogoPhotoHandler:
     async def test_stores_logo_and_updates_db(self) -> None:
         from bot.handlers.logo import handle_logo_photo
 
-        _pending_logo_uploads[12345] = "t1"
+        _set_pending(12345, "t1")
 
         msg = MagicMock()
         msg.from_user = MagicMock()
@@ -60,25 +74,22 @@ class TestLogoPhotoHandler:
         msg.photo[-1].file_id = "big_photo_file_id"
         msg.photo[-1].file_unique_id = "big_photo_unique"
         msg.answer = AsyncMock()
+        msg.bot = MagicMock()
 
-        with (
-            patch("bot.handlers.logo.get_settings") as mock_settings,
-            patch("bot.handlers.logo.save_logo_from_telegram",
-                  new_callable=AsyncMock,
-                  return_value="reference-photos/t1/logo_big_photo_unique.jpg") as mock_save,
-        ):
-            mock_settings.return_value.telegram_bot_token = "test-token"
+        with patch("bot.handlers.logo.save_logo_from_telegram",
+                    new_callable=AsyncMock,
+                    return_value="reference-photos/t1/logo_big_photo_unique.jpg") as mock_save:
             await handle_logo_photo(msg)
 
         mock_save.assert_called_once_with(
-            bot_token="test-token",
+            bot=msg.bot,
             file_id="big_photo_file_id",
             file_unique_id="big_photo_unique",
             tenant_id="t1",
         )
         msg.answer.assert_called_once()
         assert "logo" in msg.answer.call_args[0][0].lower()
-        assert 12345 not in _pending_logo_uploads
+        assert _get_pending(12345) is None
 
     @pytest.mark.asyncio
     async def test_ignores_photo_without_pending(self) -> None:
@@ -98,7 +109,7 @@ class TestLogoPhotoHandler:
         """Error during download/store should send error message, not crash."""
         from bot.handlers.logo import handle_logo_photo
 
-        _pending_logo_uploads[77777] = "t2"
+        _set_pending(77777, "t2")
 
         msg = MagicMock()
         msg.from_user = MagicMock()
@@ -107,16 +118,56 @@ class TestLogoPhotoHandler:
         msg.photo[-1].file_id = "file_id"
         msg.photo[-1].file_unique_id = "unique_id"
         msg.answer = AsyncMock()
+        msg.bot = MagicMock()
 
-        with (
-            patch("bot.handlers.logo.get_settings") as mock_settings,
-            patch("bot.handlers.logo.save_logo_from_telegram",
-                  new_callable=AsyncMock,
-                  side_effect=RuntimeError("Telegram API down")),
-        ):
-            mock_settings.return_value.telegram_bot_token = "test-token"
+        with patch("bot.handlers.logo.save_logo_from_telegram",
+                    new_callable=AsyncMock,
+                    side_effect=RuntimeError("Telegram API down")):
             await handle_logo_photo(msg)
 
         msg.answer.assert_called_once()
         assert "wrong" in msg.answer.call_args[0][0].lower()
-        assert 77777 not in _pending_logo_uploads
+        assert _get_pending(77777) is None
+
+    @pytest.mark.asyncio
+    async def test_handles_value_error(self) -> None:
+        """ValueError (bad file) should show specific rejection message."""
+        from bot.handlers.logo import handle_logo_photo
+
+        _set_pending(88888, "t3")
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 88888
+        msg.photo = [MagicMock()]
+        msg.photo[-1].file_id = "file_id"
+        msg.photo[-1].file_unique_id = "unique_id"
+        msg.answer = AsyncMock()
+        msg.bot = MagicMock()
+
+        with patch("bot.handlers.logo.save_logo_from_telegram",
+                    new_callable=AsyncMock,
+                    side_effect=ValueError("File too large")):
+            await handle_logo_photo(msg)
+
+        msg.answer.assert_called_once()
+        assert "file too large" in msg.answer.call_args[0][0].lower()
+
+    @pytest.mark.asyncio
+    async def test_expired_pending_ignored(self) -> None:
+        """Photo sent after TTL expires should be ignored."""
+        from bot.handlers.logo import handle_logo_photo
+
+        # Manually insert expired entry
+        _pending_logo_uploads[55555] = ("t1", time.monotonic() - 400)
+
+        msg = MagicMock()
+        msg.from_user = MagicMock()
+        msg.from_user.id = 55555
+        msg.photo = [MagicMock()]
+        msg.answer = AsyncMock()
+
+        await handle_logo_photo(msg)
+
+        # Should not have tried to save
+        msg.answer.assert_not_called()

@@ -97,8 +97,12 @@ class GenerationPlan:
     aspect_ratio: str = "16:9"
     transition_style: str = "fade"
 
-    def validate(self) -> list[str]:
-        """Return a list of validation errors (empty = valid)."""
+    def validate(self, *, logo_available: bool = False) -> list[str]:
+        """Return a list of validation errors (empty = valid).
+
+        Args:
+            logo_available: If True, at least one scene must include a logo_reference.
+        """
         errors: list[str] = []
 
         # Captions check
@@ -145,6 +149,21 @@ class GenerationPlan:
                 errors.append(
                     f"Scene {scene.index}: {total_refs} reference images exceeds "
                     f"max {MAX_REF_IMAGES_PER_SCENE}"
+                )
+
+        # Logo presence check — if logo is available, at least one scene must use it
+        if logo_available:
+            logo_in_any_scene = any(
+                any(
+                    r.slot_type == RefSlotType.LOGO_REFERENCE
+                    for r in scene.start_frame.reference_images
+                )
+                for scene in self.scenes
+            )
+            if not logo_in_any_scene:
+                errors.append(
+                    "Logo available but not included in any scene — "
+                    "add logo_reference to at least one scene's start_frame"
                 )
 
         return errors

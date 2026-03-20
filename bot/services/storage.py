@@ -26,22 +26,47 @@ STORAGE_BUCKET = "reference-photos"
 SIGNED_URL_TTL = 600  # 10 minutes — plenty for Kie.ai to fetch
 
 
-def strip_exif(image_bytes: bytes) -> bytes:
-    """Remove EXIF metadata from image bytes. Returns clean JPEG bytes.
+def strip_exif(image_bytes: bytes, preserve_alpha: bool = False) -> tuple[bytes, str]:
+    """Remove EXIF metadata from image bytes.
 
     Strips GPS coordinates, device model, timestamps, and other metadata
     that could compromise user privacy.
+
+    Args:
+        image_bytes: Raw image bytes.
+        preserve_alpha: If True, keep PNG format for images with transparency
+            (important for logos). If False, always convert to JPEG.
+
+    Returns:
+        (clean_bytes, content_type) tuple. content_type is "image/png" or "image/jpeg".
     """
     img = Image.open(io.BytesIO(image_bytes))
-    # Convert to RGB to ensure compatibility (handles RGBA, P mode, etc.)
-    if img.mode not in ("RGB", "L"):
-        img = img.convert("RGB")
+
+    # Determine output format: preserve PNG if alpha channel exists and requested
+    has_alpha = img.mode in ("RGBA", "LA", "PA") or (
+        img.mode == "P" and "transparency" in img.info
+    )
+    use_png = preserve_alpha and has_alpha
+
+    if use_png:
+        # Keep RGBA for transparency
+        if img.mode != "RGBA":
+            img = img.convert("RGBA")
+    else:
+        # Convert to RGB for JPEG
+        if img.mode not in ("RGB", "L"):
+            img = img.convert("RGB")
+
     # Create new image with same pixel data but no metadata
     clean = Image.new(img.mode, img.size)
     clean.putdata(list(img.getdata()))
     buf = io.BytesIO()
-    clean.save(buf, format="JPEG", quality=92)
-    return buf.getvalue()
+    if use_png:
+        clean.save(buf, format="PNG", optimize=True)
+        return buf.getvalue(), "image/png"
+    else:
+        clean.save(buf, format="JPEG", quality=92)
+        return buf.getvalue(), "image/jpeg"
 
 
 def build_storage_path(tenant_id: str, file_unique_id: str) -> str:
@@ -72,10 +97,14 @@ def get_signed_url(storage_path: str, expires_in: int = SIGNED_URL_TTL) -> str:
     return signed_url
 
 
+MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10 MB — reject oversized uploads
+
+
 async def download_and_store(
     download_url: str,
     tenant_id: str,
     file_unique_id: str,
+    preserve_alpha: bool = False,
 ) -> str:
     """Download photo from Telegram, strip EXIF, upload to Supabase Storage.
 
@@ -83,9 +112,13 @@ async def download_and_store(
         download_url: Temporary Telegram file download URL (60-min TTL).
         tenant_id: Tenant UUID for scoped storage path.
         file_unique_id: Telegram's stable file_unique_id for deduplication.
+        preserve_alpha: If True, keep PNG format for images with transparency (logos).
 
     Returns:
         storage_path: Permanent path in Supabase Storage (use get_signed_url to access).
+
+    Raises:
+        ValueError: If the downloaded file exceeds MAX_UPLOAD_SIZE or is not a valid image.
     """
     # Download from Telegram
     async with httpx.AsyncClient(timeout=60.0) as http:
@@ -93,13 +126,28 @@ async def download_and_store(
         response.raise_for_status()
         image_bytes = response.content
 
+    if len(image_bytes) > MAX_UPLOAD_SIZE:
+        raise ValueError(
+            f"File too large ({len(image_bytes)} bytes, max {MAX_UPLOAD_SIZE})"
+        )
+
+    # Validate it's actually an image
+    try:
+        with Image.open(io.BytesIO(image_bytes)) as test_img:
+            test_img.verify()
+    except Exception as e:
+        raise ValueError(f"File is not a valid image: {e}") from e
+
     logger.info(
         "Downloaded photo from Telegram",
         extra={"file_unique_id": file_unique_id, "size_bytes": len(image_bytes)},
     )
 
     # Strip EXIF for privacy
-    clean_bytes = strip_exif(image_bytes)
+    clean_bytes, content_type = strip_exif(image_bytes, preserve_alpha=preserve_alpha)
+
+    # Determine file extension from content type
+    ext = "png" if content_type == "image/png" else "jpg"
 
     logger.info(
         "EXIF stripped",
@@ -107,16 +155,17 @@ async def download_and_store(
             "file_unique_id": file_unique_id,
             "original_size": len(image_bytes),
             "clean_size": len(clean_bytes),
+            "content_type": content_type,
         },
     )
 
     # Upload to private Supabase Storage bucket
-    storage_path = build_storage_path(tenant_id=tenant_id, file_unique_id=file_unique_id)
+    storage_path = f"reference-photos/{tenant_id}/{file_unique_id}.{ext}"
     client = get_supabase_client()
     client.storage.from_(STORAGE_BUCKET).upload(
         storage_path,
         clean_bytes,
-        file_options={"content-type": "image/jpeg", "upsert": "true"},
+        file_options={"content-type": content_type, "upsert": "true"},
     )
 
     logger.info(
