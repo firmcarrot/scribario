@@ -88,3 +88,17 @@ This removes the private-only restriction:
 ## Cost
 
 Free — no paid tier for Content Posting API.
+
+## Compliance Checklist (Updated March 21, 2026)
+
+| Requirement | Status | Details |
+|---|---|---|
+| Privacy Policy references TikTok data usage | ✅ | Privacy Policy Section 4 |
+| TikTok Developer Terms compliance | ✅ | ToS Section 4 |
+| AITGC labeling for AI-generated content | ✅ | ToS Section 6c — TikTok requires `is_aigc=true` flag |
+| Per-platform revocation instructions | ✅ | Privacy Policy Section 8 |
+| Data retention policy documented | ✅ | Privacy Policy Section 5 |
+| privacy@scribario.com email | ⬜ | Ron setting up forwarding |
+| App created on developers.tiktok.com | ⬜ | Not started |
+| Sandbox testing complete | ⬜ | Blocked on app creation |
+| Production audit submitted | ⬜ | Blocked on sandbox testing |

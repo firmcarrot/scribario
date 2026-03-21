@@ -120,9 +120,24 @@ Typical review: 5-15 business days. Incomplete submissions take longer.
 
 Free — both App Review and Business Verification.
 
+## Compliance Checklist (Updated March 21, 2026)
+
+| Requirement | Status | Details |
+|---|---|---|
+| Privacy Policy URL | ✅ | scribario.com/privacy (v1.1) |
+| Data Deletion Callback | ✅ | `POST /api/meta-data-deletion` — HMAC-SHA256 verified |
+| Deletion Status URL | ✅ | `GET /data-deletion-status?code=XXX` |
+| Per-platform revocation instructions | ✅ | Privacy Policy Section 8 |
+| AI content labeling disclosure | ✅ | ToS Section 6c |
+| Data Use Checkup | ⬜ | Complete after App Review submission |
+| Business Verification | ⬜ | Requires LLC docs |
+| FACEBOOK_APP_SECRET on Vercel | ⬜ | Needed for deletion callback |
+| privacy@scribario.com email | ⬜ | Ron setting up forwarding |
+
 ## Scribario-Specific Notes
 
 - We use Postiz for posting, which handles the OAuth flow and API calls
 - We need `pages_manage_posts` + `instagram_content_publish` at minimum
-- Our privacy policy at scribario.com must specifically cover Meta data usage
+- Our privacy policy at scribario.com/privacy specifically covers Meta data deletion callback flow
 - Screencast should show: Telegram bot → content generation → preview → approve → post appears on Facebook/Instagram
+- Data Deletion Callback URL for Meta App Dashboard: `https://scribario.com/api/meta-data-deletion`

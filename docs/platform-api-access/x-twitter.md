@@ -75,3 +75,16 @@ Credits-based — check console.x.com for current per-endpoint pricing. No publi
 ## Timeline
 
 Account approval: days. API access: instant after credits purchased.
+
+## Compliance Checklist (Updated March 21, 2026)
+
+| Requirement | Status | Details |
+|---|---|---|
+| Privacy Policy references X/Twitter data usage | ✅ | Privacy Policy Section 4 |
+| X Automation Rules referenced in ToS | ✅ | ToS Section 4 |
+| Per-platform revocation instructions | ✅ | Privacy Policy Section 8 |
+| Data retention policy documented | ✅ | Privacy Policy Section 5 |
+| Anti-surveillance clause | ✅ | ToS Section 4 |
+| privacy@scribario.com email | ⬜ | Ron setting up forwarding |
+| Developer account applied | ⬜ | Not started — deferred until revenue |
+| Credits purchased | ⬜ | Deferred — cost-gated |

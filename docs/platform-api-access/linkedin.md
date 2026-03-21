@@ -81,3 +81,17 @@ All API calls require `Linkedin-Version: YYYYMM` header. New versions release mo
 ## Cost
 
 Free — no paid tiers for Community Management API.
+
+## Compliance Checklist (Updated March 21, 2026)
+
+| Requirement | Status | Details |
+|---|---|---|
+| Privacy Policy references LinkedIn data usage | ✅ | Privacy Policy Section 4 |
+| LinkedIn Marketing API Terms referenced in ToS | ✅ | ToS Section 4 |
+| Per-platform revocation instructions | ✅ | Privacy Policy Section 8 |
+| Data retention policy documented | ✅ | Privacy Policy Section 5 |
+| privacy@scribario.com email | ⬜ | Ron setting up forwarding |
+| LinkedIn Page created for Scribario | ⬜ | Needed to associate app |
+| Developer app created | ⬜ | Not started |
+| "Share on LinkedIn" product added | ⬜ | Blocked on app creation |
+| Community Management API applied | ⬜ | Requires legal org (LLC) |

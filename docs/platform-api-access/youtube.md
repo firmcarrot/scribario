@@ -92,3 +92,18 @@ For posting tool: `youtube.upload` alone is sufficient.
 ## Cost
 
 Free but quota-limited. Quota increases free after audit approval.
+
+## Compliance Checklist (Updated March 21, 2026)
+
+| Requirement | Status | Details |
+|---|---|---|
+| Privacy Policy references Google Privacy Policy | ✅ | Link to policies.google.com/privacy in Privacy Policy Section 4 |
+| YouTube ToS referenced in Terms of Service | ✅ | ToS Section 5 |
+| Google API Services User Data Policy compliance | ✅ | Limited Use statement in Privacy Policy Section 4 |
+| YouTube data retention policy documented | ✅ | Privacy Policy Section 5 — deleted within 30 days of revocation |
+| Revocation instructions for users | ✅ | Privacy Policy Section 8 — myaccount.google.com/permissions |
+| AI content labeling for YouTube | ✅ | ToS Section 6c |
+| YouTube API data deletion on revocation | ✅ | Privacy Policy Section 6 |
+| Domain verified in Google Search Console | ⬜ | Ron needs to verify scribario.com |
+| OAuth Consent Screen configured | ⬜ | Needs Google Cloud project |
+| privacy@scribario.com email | ⬜ | Ron setting up forwarding |
