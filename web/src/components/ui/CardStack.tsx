@@ -92,6 +92,11 @@ export function CardStack<T extends CardStackItem>({
   const cardWidth = viewportWidth > 0 ? Math.min(cardWidthProp, viewportWidth - 48) : cardWidthProp;
   const cardHeight = Math.round(cardHeightProp * (cardWidth / cardWidthProp));
 
+  // Responsive: fewer side cards + less overlap on mobile
+  const effectiveMaxVisible = viewportWidth > 0 && viewportWidth < 640 ? Math.min(maxVisible, 3) : viewportWidth < 768 ? Math.min(maxVisible, 5) : maxVisible;
+  const effectiveOverlap = viewportWidth > 0 && viewportWidth < 640 ? Math.min(overlap, 0.35) : overlap;
+  const effectiveSpreadDeg = viewportWidth > 0 && viewportWidth < 640 ? Math.min(spreadDeg, 20) : spreadDeg;
+
   const [active, setActive] = React.useState(() => wrapIndex(initialIndex, len));
   const [hovering, setHovering] = React.useState(false);
 
@@ -105,9 +110,9 @@ export function CardStack<T extends CardStackItem>({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
-  const maxOffset = Math.max(0, Math.floor(maxVisible / 2));
-  const cardSpacing = Math.max(10, Math.round(cardWidth * (1 - overlap)));
-  const stepDeg = maxOffset > 0 ? spreadDeg / maxOffset : 0;
+  const maxOffset = Math.max(0, Math.floor(effectiveMaxVisible / 2));
+  const cardSpacing = Math.max(10, Math.round(cardWidth * (1 - effectiveOverlap)));
+  const stepDeg = maxOffset > 0 ? effectiveSpreadDeg / maxOffset : 0;
 
   const canGoPrev = loop || active > 0;
   const canGoNext = loop || active < len - 1;

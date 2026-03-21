@@ -97,7 +97,7 @@ export function HowItWorks() {
           ref={clipRef}
           className="relative overflow-hidden"
           style={{
-            clipPath: `inset(0px 64px round 45px)`,
+            clipPath: `inset(0px clamp(16px, 5vw, 64px) round clamp(24px, 3vw, 45px))`,
             willChange: "clip-path",
             backgroundColor: "var(--bg-alt)",
           }}

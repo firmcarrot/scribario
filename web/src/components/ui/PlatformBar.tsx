@@ -54,14 +54,14 @@ export function PlatformBar({ variant = "light" }: PlatformBarProps) {
         Publish to Facebook · More platforms coming soon
       </p>
       <div
-        className="flex flex-wrap justify-center gap-5 md:gap-6"
+        className="flex flex-wrap justify-center gap-3 sm:gap-5 md:gap-6 max-w-[280px] sm:max-w-none mx-auto"
         style={{ color }}
       >
         {platforms.map((p) => (
           <div
             key={p.name}
             title={p.name}
-            className="transition-opacity duration-200 hover:opacity-70"
+            className="transition-opacity duration-200 hover:opacity-70 scale-[0.8] sm:scale-100"
             style={{ opacity: 0.6 }}
           >
             {p.icon}
