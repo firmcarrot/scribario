@@ -32,7 +32,7 @@ export default function TermsPage() {
           Terms of Service
         </h1>
         <p className="mb-12" style={{ color: "var(--text-secondary)", fontSize: "0.95rem" }}>
-          Effective Date: March 12, 2026 &middot; Version 1.0
+          Effective Date: March 21, 2026 &middot; Version 1.1
         </p>
 
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
@@ -77,6 +77,15 @@ export default function TermsPage() {
               <li>Not infringe on intellectual property rights</li>
               <li>Not use the Service for any illegal purpose</li>
               <li>Not reverse-engineer, decompile, or attempt to extract OAuth tokens or API credentials</li>
+              <li>Not use the Service for surveillance, tracking, or monitoring of individuals</li>
+            </ul>
+            <h4>Platform-Specific Rules</h4>
+            <p>When posting via Scribario, you must also comply with each platform&apos;s specific policies:</p>
+            <ul>
+              <li><strong>X (Twitter):</strong> You must comply with X&apos;s <a href="https://developer.x.com/en/developer-terms/policy" target="_blank" rel="noopener noreferrer">Automation Rules</a>. Automated posts must not be duplicative, must not target users without consent, and must not be used for coordinated inauthentic activity.</li>
+              <li><strong>TikTok:</strong> All AI-generated content must be disclosed using TikTok&apos;s labeling tools.</li>
+              <li><strong>LinkedIn:</strong> Posts must comply with LinkedIn&apos;s <a href="https://www.linkedin.com/legal/l/marketing-api-terms" target="_blank" rel="noopener noreferrer">Marketing API Terms</a>. Content must be professional and not misleading.</li>
+              <li><strong>YouTube:</strong> Uploaded content must comply with YouTube&apos;s <a href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" target="_blank" rel="noopener noreferrer">Community Guidelines</a>.</li>
             </ul>
           </Section>
 
@@ -85,7 +94,10 @@ export default function TermsPage() {
               Scribario connects to your social media accounts via OAuth, an industry-standard authorization protocol. When you connect a platform, you grant permission directly to that platform — Scribario never sees or stores your platform passwords. We request only the minimum permissions necessary to provide the Service.
             </p>
             <p>
-              You can revoke Scribario&apos;s access at any time via each platform&apos;s settings. Scribario is not affiliated with or endorsed by Meta, LinkedIn, TikTok, Bluesky, or any other connected platform. These platforms may change their APIs at any time, which may affect service availability.
+              You can revoke Scribario&apos;s access at any time via each platform&apos;s settings (see our <a href="/privacy#revoke">Privacy Policy Section 8</a> for detailed instructions per platform). Scribario is not affiliated with or endorsed by Meta, Google, LinkedIn, TikTok, Bluesky, Pinterest, X, or any other connected platform. These platforms may change their APIs at any time, which may affect service availability.
+            </p>
+            <p>
+              By using Scribario&apos;s YouTube integration, you also agree to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> and acknowledge that your data is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a>.
             </p>
           </Section>
 
@@ -100,8 +112,14 @@ export default function TermsPage() {
             </p>
             <h4>6c. AI Disclosure Obligations</h4>
             <p>
-              Various platforms and jurisdictions require disclosure of AI-generated content. This includes TikTok&apos;s synthetic media labeling requirements, the EU AI Act Article 50 (effective August 2026), and Meta&apos;s AI content labeling for ads. You are responsible for adding required AI disclosure labels to your published content.
+              Various platforms and jurisdictions require disclosure of AI-generated content. You are responsible for complying with all applicable AI labeling requirements, including but not limited to:
             </p>
+            <ul>
+              <li><strong>TikTok:</strong> AI-generated content (AITGC) must be labeled using TikTok&apos;s synthetic media disclosure tools. Failure to label may result in content removal.</li>
+              <li><strong>Meta (Facebook/Instagram):</strong> AI-generated content used in ads must be labeled per Meta&apos;s AI content labeling policy.</li>
+              <li><strong>YouTube:</strong> Altered or synthetic content that could be mistaken for real must be disclosed per YouTube&apos;s policies.</li>
+              <li><strong>EU AI Act Article 50:</strong> Content generated by AI systems must be labeled as such (effective August 2026).</li>
+            </ul>
           </Section>
 
           <Section title="7. User Content License">

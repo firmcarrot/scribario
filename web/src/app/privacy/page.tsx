@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           Privacy Policy
         </h1>
         <p className="mb-12" style={{ color: "var(--text-secondary)", fontSize: "0.95rem" }}>
-          Effective Date: March 12, 2026 &middot; Version 1.0
+          Effective Date: March 21, 2026 &middot; Version 1.1
         </p>
 
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
@@ -82,12 +82,21 @@ export default function PrivacyPage() {
                 <tr><td>Anthropic (Claude)</td><td>Text prompts, brand data</td><td>Caption and script generation</td></tr>
                 <tr><td>Kie.ai</td><td>Image prompts</td><td>Image generation</td></tr>
                 <tr><td>ElevenLabs</td><td>Text scripts</td><td>Voice synthesis for video</td></tr>
+                <tr><td>Google (YouTube API Services)</td><td>Video content, channel metadata</td><td>Video publishing via YouTube API</td></tr>
                 <tr><td>Supabase</td><td>All stored data</td><td>Database hosting</td></tr>
                 <tr><td>Vercel</td><td>Static assets</td><td>Website hosting</td></tr>
                 <tr><td>Stripe</td><td>Billing data</td><td>Payment processing</td></tr>
-                <tr><td>Meta, TikTok, LinkedIn, Bluesky, YouTube, Pinterest, X</td><td>Post content</td><td>Publishing via API</td></tr>
+                <tr><td>Meta (Facebook, Instagram)</td><td>Post content, page data</td><td>Publishing via Meta Graph API</td></tr>
+                <tr><td>TikTok</td><td>Video and post content</td><td>Publishing via TikTok Content Posting API</td></tr>
+                <tr><td>LinkedIn</td><td>Post content, profile data</td><td>Publishing via LinkedIn Marketing API</td></tr>
+                <tr><td>X (formerly Twitter)</td><td>Post content</td><td>Publishing via X API</td></tr>
+                <tr><td>Pinterest</td><td>Pin content, images</td><td>Publishing via Pinterest API</td></tr>
+                <tr><td>Bluesky</td><td>Post content</td><td>Publishing via AT Protocol</td></tr>
               </tbody>
             </table>
+            <p>
+              Scribario&apos;s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. Your use of YouTube features is also subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a>.
+            </p>
           </Section>
 
           <Section title="5. Data Retention">
@@ -96,7 +105,9 @@ export default function PrivacyPage() {
               <li>Billing records: 7 years (tax compliance)</li>
               <li>LinkedIn profile data: maximum 24 hours</li>
               <li>LinkedIn social activity data: maximum 48 hours</li>
+              <li>YouTube/Google API data: retained only as long as necessary to provide the Service; deleted within 30 days of account deletion or access revocation</li>
               <li>AI-generated content: retained while your account is active</li>
+              <li>OAuth tokens: deleted immediately upon disconnection or account deletion</li>
             </ul>
           </Section>
 
@@ -104,11 +115,17 @@ export default function PrivacyPage() {
             <p>
               You may request deletion of your data at any time by emailing privacy@scribario.com or using the in-app deletion feature.
             </p>
+            <h4>Meta (Facebook/Instagram) Data Deletion</h4>
             <p>
-              We comply with Meta&apos;s Data Deletion Callback requirement — when you remove Scribario from your Meta account, we automatically receive and process the deletion request.
+              We comply with Meta&apos;s Data Deletion Callback requirement. When you remove Scribario from your Meta account settings, Meta sends us an automated deletion request. We process the request, delete all associated data, and provide you with a confirmation code and a status URL at <code>https://scribario.com/data-deletion-status</code> where you can verify deletion progress.
             </p>
+            <h4>YouTube/Google Data Deletion</h4>
             <p>
-              Deletion timeline: 30 days (GDPR), 45 days (CCPA). Some data may be retained in anonymized form for aggregate analytics, and billing records are retained for 7 years per tax law.
+              You may revoke Scribario&apos;s access to your YouTube data at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google&apos;s security settings</a>. Upon revocation, we delete all YouTube API data within 30 days.
+            </p>
+            <h4>Deletion Timeline</h4>
+            <p>
+              GDPR: 30 days. CCPA: 45 days. Some data may be retained in anonymized form for aggregate analytics, and billing records are retained for 7 years per tax law.
             </p>
           </Section>
 
@@ -120,7 +137,20 @@ export default function PrivacyPage() {
             <p>To exercise any of these rights, contact privacy@scribario.com. We will respond within 30 days (GDPR) or 45 days (CCPA).</p>
           </Section>
 
-          <Section title="8. Security">
+          <Section title="8. How to Revoke Platform Access">
+            <p>You can disconnect Scribario from any connected platform at any time. Upon disconnection, we delete the associated OAuth tokens immediately.</p>
+            <ul>
+              <li><strong>Facebook/Instagram:</strong> Go to <a href="https://www.facebook.com/settings?tab=business_tools" target="_blank" rel="noopener noreferrer">Facebook Settings → Business Integrations</a> → find Scribario → Remove</li>
+              <li><strong>YouTube/Google:</strong> Go to <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account → Security → Third-party apps</a> → find Scribario → Remove Access</li>
+              <li><strong>TikTok:</strong> Go to TikTok → Settings → Security → Manage App Permissions → find Scribario → Revoke</li>
+              <li><strong>LinkedIn:</strong> Go to <a href="https://www.linkedin.com/psettings/permitted-services" target="_blank" rel="noopener noreferrer">LinkedIn Settings → Data Privacy → Permitted Services</a> → find Scribario → Remove</li>
+              <li><strong>X (Twitter):</strong> Go to <a href="https://twitter.com/settings/connected_apps" target="_blank" rel="noopener noreferrer">X Settings → Security → Connected Apps</a> → find Scribario → Revoke Access</li>
+              <li><strong>Pinterest:</strong> Go to Pinterest → Settings → Security → Apps → find Scribario → Remove</li>
+              <li><strong>Bluesky:</strong> Go to Bluesky → Settings → App Passwords → revoke the password used for Scribario</li>
+            </ul>
+          </Section>
+
+          <Section title="9. Security">
             <p>
               We protect your data using encryption in transit (TLS) and at rest (particularly OAuth tokens). We implement access controls and follow security best practices. In the event of a data breach, we will notify the relevant supervisory authority within 72 hours as required by GDPR.
             </p>
@@ -129,43 +159,52 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section title="9. International Data Transfers">
+          <Section title="10. International Data Transfers">
             <p>
               Our servers are located in the United States. If you are located outside the US, your data will be transferred to the US for processing. We rely on the EU-U.S. Data Privacy Framework and/or Standard Contractual Clauses to ensure adequate protection for international transfers.
             </p>
           </Section>
 
-          <Section title="10. Cookies">
+          <Section title="11. Cookies">
             <p>
-              We use essential cookies for session management and authentication. We may use analytics cookies to understand how the Service is used. EU users will be presented with a cookie consent mechanism for non-essential cookies.
+              We use only essential cookies required for the Service to function (session management, authentication). We do not use tracking cookies, advertising cookies, or third-party analytics cookies. Because we use only strictly necessary cookies, no consent banner is required under GDPR.
             </p>
           </Section>
 
-          <Section title="11. Children's Privacy">
+          <Section title="12. Children&apos;s Privacy">
             <p>
               The Service is not directed to individuals under 18 years of age. We do not knowingly collect personal data from minors. If we discover that we have inadvertently collected data from a minor, we will delete it immediately.
             </p>
           </Section>
 
-          <Section title="12. AI-Specific Disclosures">
+          <Section title="13. AI-Specific Disclosures">
             <p>
               Scribario uses Anthropic&apos;s Claude for text and script generation, Kie.ai for image generation, and ElevenLabs for voice synthesis in video content. Your prompts sent via these APIs are not used to train AI models (per each provider&apos;s API terms). AI-generated content may not be copyrightable under current law. We comply with the EU AI Act Article 50 transparency requirements.
             </p>
           </Section>
 
-          <Section title="13. Bluesky / AT Protocol Disclosures">
+          <Section title="14. Bluesky / AT Protocol Disclosures">
             <p>
               Content posted to Bluesky is public and may be replicated across servers within the AT Protocol network. Deletion of content on the decentralized network is not guaranteed, as other servers may retain copies.
             </p>
           </Section>
 
-          <Section title="14. Changes to This Policy">
+          <Section title="15. YouTube API Services Disclosures">
+            <p>
+              Scribario uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank" rel="noopener noreferrer">YouTube API Services</a> to publish video content to YouTube on your behalf. By using Scribario&apos;s YouTube integration, you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>. Your data obtained through YouTube API Services is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a>.
+            </p>
+            <p>
+              We access only the YouTube API scopes necessary to upload videos and manage your channel content. We do not access your viewing history, subscriptions, or personal YouTube data beyond what is required for publishing. You may revoke access at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google&apos;s security settings</a>, and we will delete all associated data within 30 days.
+            </p>
+          </Section>
+
+          <Section title="16. Changes to This Policy">
             <p>
               We will provide 30 days notice for material changes to this Privacy Policy via email. We retain historical versions of this policy as required by Meta.
             </p>
           </Section>
 
-          <Section title="15. Contact">
+          <Section title="17. Contact">
             <p>
               For privacy-related questions or to exercise your rights:<br />
               Scribario LLC<br />
