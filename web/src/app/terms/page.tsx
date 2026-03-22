@@ -38,7 +38,7 @@ export default function TermsPage() {
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
           <Section title="1. Introduction & Acceptance">
             <p>
-              Welcome to Scribario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a social media automation platform operated by Scribario LLC. These Terms of Service (&quot;Terms&quot;) govern your access to and use of the Scribario platform, including our Telegram bot, web application, and all related services (collectively, the &quot;Service&quot;).
+              Welcome to Scribario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a social media automation platform operated by Scribario. These Terms of Service (&quot;Terms&quot;) govern your access to and use of the Scribario platform, including our Telegram bot, web application, and all related services (collectively, the &quot;Service&quot;).
             </p>
             <p>
               By creating an account, accessing, or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service. Your continued use of the Service after any modifications to these Terms constitutes acceptance of those changes.
@@ -148,7 +148,7 @@ export default function TermsPage() {
 
           <Section title="10. Intellectual Property">
             <p>
-              The Scribario brand, platform, and all associated intellectual property belong to Scribario LLC. Platform API data remains the property of the respective platforms. AI-generated outputs are not guaranteed to be copyrightable.
+              The Scribario brand, platform, and all associated intellectual property belong to Scribario. Platform API data remains the property of the respective platforms. AI-generated outputs are not guaranteed to be copyrightable.
             </p>
           </Section>
 
@@ -188,9 +188,7 @@ export default function TermsPage() {
           <Section title="16. Contact">
             <p>
               For questions about these Terms, contact us at:<br />
-              Scribario LLC<br />
-              Email: privacy@scribario.com<br />
-              Address: 1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001
+              Email: privacy@scribario.com
             </p>
           </Section>
         </div>

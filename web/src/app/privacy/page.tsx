@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
           <Section title="1. Controller Identity">
             <p>
-              Scribario LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), located at 1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001, is the data controller responsible for your personal data. For privacy-related inquiries, contact our Data Protection Officer at privacy@scribario.com.
+              Scribario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is the data controller responsible for your personal data. For privacy-related inquiries, contact us at privacy@scribario.com.
             </p>
           </Section>
 
@@ -207,8 +207,6 @@ export default function PrivacyPage() {
           <Section title="17. Contact">
             <p>
               For privacy-related questions or to exercise your rights:<br />
-              Scribario LLC<br />
-              1603 Capitol Ave, Suite 310 #1540, Cheyenne, WY 82001<br />
               Email: privacy@scribario.com<br />
               <br />
               EU residents have the right to lodge a complaint with their local supervisory authority.
