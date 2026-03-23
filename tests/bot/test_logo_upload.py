@@ -92,7 +92,9 @@ class TestLogoPhotoHandler:
         assert _get_pending(12345) is None
 
     @pytest.mark.asyncio
-    async def test_ignores_photo_without_pending(self) -> None:
+    async def test_skips_photo_without_pending(self) -> None:
+        from aiogram.dispatcher.event.bases import SkipHandler
+
         from bot.handlers.logo import handle_logo_photo
 
         _pending_logo_uploads.clear()
@@ -102,7 +104,8 @@ class TestLogoPhotoHandler:
         msg.from_user.id = 99999
         msg.photo = [MagicMock()]
 
-        result = await handle_logo_photo(msg)
+        with pytest.raises(SkipHandler):
+            await handle_logo_photo(msg)
 
     @pytest.mark.asyncio
     async def test_handles_download_error(self) -> None:
@@ -154,8 +157,10 @@ class TestLogoPhotoHandler:
         assert "file too large" in msg.answer.call_args[0][0].lower()
 
     @pytest.mark.asyncio
-    async def test_expired_pending_ignored(self) -> None:
-        """Photo sent after TTL expires should be ignored."""
+    async def test_expired_pending_skips(self) -> None:
+        """Photo sent after TTL expires should raise SkipHandler."""
+        from aiogram.dispatcher.event.bases import SkipHandler
+
         from bot.handlers.logo import handle_logo_photo
 
         # Manually insert expired entry
@@ -167,7 +172,8 @@ class TestLogoPhotoHandler:
         msg.photo = [MagicMock()]
         msg.answer = AsyncMock()
 
-        await handle_logo_photo(msg)
+        with pytest.raises(SkipHandler):
+            await handle_logo_photo(msg)
 
         # Should not have tried to save
         msg.answer.assert_not_called()

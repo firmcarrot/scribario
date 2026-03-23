@@ -7,6 +7,7 @@ import time
 
 from aiogram import Bot, F, Router
 from aiogram.filters import Command
+from aiogram.dispatcher.event.bases import SkipHandler
 from aiogram.types import Message
 
 from bot.config import get_settings
@@ -161,7 +162,7 @@ async def handle_logo_photo(message: Message) -> None:
 
     tenant_id = _get_pending(user.id)
     if not tenant_id:
-        return
+        raise SkipHandler
 
     _pending_logo_uploads.pop(user.id, None)
 

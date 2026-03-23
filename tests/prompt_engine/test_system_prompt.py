@@ -51,7 +51,7 @@ class TestBuildSystemPrompt:
 
     def test_contains_scene_count_rules(self) -> None:
         prompt = build_system_prompt(_profile(), _examples(), _manifest())
-        assert "1-3" in prompt  # IMAGE_POST scene range
+        assert "exactly 3" in prompt  # IMAGE_POST scene range
         assert "2-6" in prompt  # LONG_VIDEO scene range
 
     def test_contains_reference_image_strategy(self) -> None:

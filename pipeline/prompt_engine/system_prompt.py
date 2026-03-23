@@ -21,7 +21,7 @@ _FORMAT_RULES = """\
 Choose one content_format based on the user's intent:
 
 - IMAGE_POST: Default for simple product shots, announcements, quotes, static visuals.
-  Scenes: 1-3 static images + captions. No animation, voiceover, or SFX.
+  Scenes: exactly 3 static images + captions. No animation, voiceover, or SFX.
 - SHORT_VIDEO: For "reel", "clip", "short video", or single-scene motion requests.
   Scenes: exactly 1 scene with animation. Duration: 5-10 seconds.
 - LONG_VIDEO: For "video", "ad", "commercial", "showcase", multi-scene requests.
@@ -34,7 +34,7 @@ implies motion (verbs like "show", "demonstrate", "walk through")."""
 _SCENE_RULES = """\
 ## Scene Count Rules
 
-- IMAGE_POST: 1-3 scenes (each produces one static image)
+- IMAGE_POST: exactly 3 scenes (each produces one static image)
 - SHORT_VIDEO: exactly 1 scene
 - LONG_VIDEO: 2-6 scenes (aim for 4 as default)
 
@@ -81,6 +81,9 @@ For image prompts (start_frame, end_frame):
 - Never include text-in-scene — text overlays are handled by compositing
 - Describe one clear subject and composition per prompt
 - Include lighting, angle, and mood descriptors
+- ALWAYS use the EXACT business name from the Brand Context below — never invent,
+  abbreviate, or substitute brand names. If the brand is "Scribario", every caption
+  and image prompt must say "Scribario", not "ScribBot" or "Scrib" or anything else.
 
 For animation prompts:
 - Use motion verbs: "glides", "pushes in", "orbits", "reveals"
