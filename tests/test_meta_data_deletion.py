@@ -60,28 +60,20 @@ class TestSignedRequestParsing:
 
 
 class TestGenerateConfirmationCode:
-    """generate_confirmation_code returns deterministic, URL-safe codes."""
+    """generate_confirmation_code returns random, URL-safe codes."""
 
     def test_returns_string(self):
         from scripts.meta_data_deletion import generate_confirmation_code
 
-        code = generate_confirmation_code("12345")
+        code = generate_confirmation_code()
         assert isinstance(code, str)
-        assert len(code) > 0
+        assert len(code) == 12
 
-    def test_deterministic(self):
+    def test_unique_each_call(self):
         from scripts.meta_data_deletion import generate_confirmation_code
 
-        code1 = generate_confirmation_code("12345")
-        code2 = generate_confirmation_code("12345")
-        assert code1 == code2
-
-    def test_different_users_different_codes(self):
-        from scripts.meta_data_deletion import generate_confirmation_code
-
-        code1 = generate_confirmation_code("111")
-        code2 = generate_confirmation_code("222")
-        assert code1 != code2
+        codes = {generate_confirmation_code() for _ in range(100)}
+        assert len(codes) == 100  # all unique
 
 
 class TestBuildDeletionResponse:
@@ -90,14 +82,14 @@ class TestBuildDeletionResponse:
     def test_response_shape(self):
         from scripts.meta_data_deletion import build_deletion_response
 
-        resp = build_deletion_response("12345")
+        resp = build_deletion_response("abc123def456")
         assert "url" in resp
         assert "confirmation_code" in resp
+        assert resp["confirmation_code"] == "abc123def456"
         assert "scribario.com/data-deletion-status" in resp["url"]
-        assert resp["confirmation_code"] in resp["url"]
 
     def test_contains_code_in_url(self):
         from scripts.meta_data_deletion import build_deletion_response
 
-        resp = build_deletion_response("12345")
-        assert f"code={resp['confirmation_code']}" in resp["url"]
+        resp = build_deletion_response("mycode12345x")
+        assert "code=mycode12345x" in resp["url"]

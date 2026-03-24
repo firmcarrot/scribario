@@ -2,7 +2,7 @@
 
 Used by connect_server.py to handle POST /meta/data-deletion.
 Meta sends a signed_request when a user deauthorizes the app.
-We verify the HMAC, delete their data, and return a confirmation.
+We verify the HMAC, log the request, and return a confirmation.
 
 Spec: https://developers.facebook.com/docs/development/create-an-app/app-dashboard/data-deletion-callback
 """
@@ -14,6 +14,7 @@ import hashlib
 import hmac
 import json
 import logging
+import uuid
 
 logger = logging.getLogger(__name__)
 
@@ -53,19 +54,17 @@ def parse_signed_request(signed_request: str, app_secret: str) -> dict | None:
         return None
 
 
-def generate_confirmation_code(user_id: str) -> str:
-    """Generate a deterministic confirmation code for a Meta user deletion request."""
-    raw = hashlib.sha256(f"scribario-deletion:{user_id}".encode()).hexdigest()
-    return raw[:12]
+def generate_confirmation_code() -> str:
+    """Generate a random, URL-safe confirmation code."""
+    return uuid.uuid4().hex[:12]
 
 
-def build_deletion_response(user_id: str) -> dict:
+def build_deletion_response(confirmation_code: str) -> dict:
     """Build the JSON response Meta expects from a data deletion callback.
 
     Returns: {"url": "https://scribario.com/data-deletion-status?code=XXX", "confirmation_code": "XXX"}
     """
-    code = generate_confirmation_code(user_id)
     return {
-        "url": f"https://scribario.com/data-deletion-status?code={code}",
-        "confirmation_code": code,
+        "url": f"https://scribario.com/data-deletion-status?code={confirmation_code}",
+        "confirmation_code": confirmation_code,
     }

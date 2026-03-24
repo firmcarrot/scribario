@@ -888,9 +888,15 @@ async def app(scope: dict, receive: object, send: object) -> None:
             return
 
         meta_user_id = str(payload.get("user_id", ""))
+        if not meta_user_id:
+            await respond(400, "application/json", '{"error":"missing user_id in payload"}')
+            return
+
         logger.info("Meta data deletion request for user_id=%s", meta_user_id)
 
-        response = build_deletion_response(meta_user_id)
+        from scripts.meta_data_deletion import generate_confirmation_code
+        confirmation_code = generate_confirmation_code()
+        response = build_deletion_response(confirmation_code)
 
         # Log deletion request for compliance tracking
         try:
@@ -898,7 +904,7 @@ async def app(scope: dict, receive: object, send: object) -> None:
             sb.table("data_deletion_requests").insert({
                 "platform": "meta",
                 "platform_user_id": meta_user_id,
-                "confirmation_code": response["confirmation_code"],
+                "confirmation_code": confirmation_code,
             }).execute()
             logger.info("Logged Meta data deletion request for user_id=%s", meta_user_id)
         except Exception:
