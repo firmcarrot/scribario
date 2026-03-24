@@ -32,6 +32,9 @@ POSTIZ_JWT_SECRET = os.environ.get("POSTIZ_JWT_SECRET", "")
 SCRIBARIO_BASE_URL = os.environ.get("SCRIBARIO_BASE_URL", "https://connect.scribario.com")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 
+# Meta (Facebook/Instagram)
+FACEBOOK_APP_SECRET = os.environ.get("FACEBOOK_APP_SECRET", "")
+
 # Stripe
 STRIPE_API_KEY = os.environ.get("STRIPE_API_KEY", "")
 STRIPE_WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
@@ -849,6 +852,59 @@ async def app(scope: dict, receive: object, send: object) -> None:
 
         await respond(200, "text/html", SUBSCRIBED_HTML.format(
             title=title, message=msg))
+        return
+
+    # POST /meta/data-deletion — Meta Data Deletion Callback
+    if method == "POST" and path == "/meta/data-deletion":
+        body = b""
+        while True:
+            message = await receive()
+            body += message.get("body", b"")
+            if not message.get("more_body", False):
+                break
+
+        if not FACEBOOK_APP_SECRET:
+            logger.error("FACEBOOK_APP_SECRET not set — cannot process data deletion")
+            await respond(500, "application/json", '{"error":"server misconfigured"}')
+            return
+
+        # Parse form-encoded body: signed_request=XXX
+        from urllib.parse import parse_qs as _parse_qs
+        form_data = _parse_qs(body.decode())
+        signed_request = form_data.get("signed_request", [""])[0]
+
+        if not signed_request:
+            await respond(400, "application/json", '{"error":"missing signed_request"}')
+            return
+
+        from scripts.meta_data_deletion import (
+            build_deletion_response,
+            parse_signed_request,
+        )
+
+        payload = parse_signed_request(signed_request, FACEBOOK_APP_SECRET)
+        if not payload:
+            await respond(403, "application/json", '{"error":"invalid signature"}')
+            return
+
+        meta_user_id = str(payload.get("user_id", ""))
+        logger.info("Meta data deletion request for user_id=%s", meta_user_id)
+
+        response = build_deletion_response(meta_user_id)
+
+        # Log deletion request for compliance tracking
+        try:
+            sb = _get_supabase()
+            sb.table("data_deletion_requests").insert({
+                "platform": "meta",
+                "platform_user_id": meta_user_id,
+                "confirmation_code": response["confirmation_code"],
+            }).execute()
+            logger.info("Logged Meta data deletion request for user_id=%s", meta_user_id)
+        except Exception:
+            logger.exception("Failed to log Meta deletion request for user_id=%s", meta_user_id)
+
+        await respond(200, "application/json", json.dumps(response))
         return
 
     # Health check
