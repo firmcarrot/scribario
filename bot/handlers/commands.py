@@ -207,6 +207,8 @@ async def handle_help(message: Message) -> None:
         "/history — view your last 10 posted items\n"
         "/status — check recent request status\n"
         "/timezone — set your local timezone\n"
+        "/feedback — report a bug or suggest an idea\n"
+        "/ticket — check ticket status (e.g. /ticket SC-00001)\n"
         "/help — this guide\n"
     )
 

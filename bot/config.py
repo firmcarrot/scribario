@@ -74,6 +74,9 @@ class Settings(BaseSettings):
     autopilot_max_daily_posts: int = 10
     autopilot_max_monthly_cost_usd: float = 100.0
 
+    # Admin
+    admin_telegram_user_id: int = 7560539974
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
 

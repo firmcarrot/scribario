@@ -27,3 +27,9 @@ class CaptionEditSG(StatesGroup):
     """Caption editing dialog states."""
 
     waiting_for_edit_instruction = State()
+
+
+class FeedbackSG(StatesGroup):
+    """Feedback submission flow."""
+
+    waiting_for_description = State()

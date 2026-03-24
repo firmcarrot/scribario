@@ -12,7 +12,7 @@ from aiogram_dialog import setup_dialogs
 
 from bot.config import get_settings
 from bot.dialogs.onboarding import dialog as onboarding_dialog
-from bot.handlers import approval, autopilot, billing, brand_edit, caption_edit, commands, intake, library, logo, onboarding, photos
+from bot.handlers import approval, autopilot, billing, brand_edit, caption_edit, commands, feedback, intake, library, logo, onboarding, photos
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +37,7 @@ def create_dispatcher() -> Dispatcher:
     dp.include_router(billing.router)    # /subscribe, /billing, /upgrade — before intake
     dp.include_router(autopilot.router)   # /autopilot, /pause, /resume — before intake
     # long_video router removed — short-form video is now inline in generate_content
+    dp.include_router(feedback.router)   # /feedback, /ticket — before intake
     dp.include_router(logo.router)        # /logo command + photo capture
     dp.include_router(brand_edit.router)   # brand profile editing FSM — before intake
     dp.include_router(caption_edit.router)  # FSM edit state — before approval/intake
@@ -78,6 +79,8 @@ async def main() -> None:
         BotCommand(command="resume", description="Restart autopilot"),
         BotCommand(command="status", description="Check recent request status"),
         BotCommand(command="timezone", description="Set your local timezone"),
+        BotCommand(command="feedback", description="Report a bug or suggest an idea"),
+        BotCommand(command="ticket", description="Check ticket status"),
     ])
 
     # Drop pending updates on startup to avoid processing stale messages

@@ -1185,6 +1185,73 @@ async def get_autopilot_weekly_summary(tenant_id: str) -> dict:
     }
 
 
+# --- Support ticket functions ---
+
+
+async def create_support_ticket(
+    tenant_id: str,
+    category: str,
+    description: str,
+    creator_telegram_user_id: int,
+    creator_telegram_chat_id: int,
+) -> dict:
+    """Create a support ticket. Returns full row including auto-generated ticket_number."""
+    client = get_supabase_client()
+    result = (
+        client.table("support_tickets")
+        .insert({
+            "tenant_id": tenant_id,
+            "category": category,
+            "description": description,
+            "creator_telegram_user_id": creator_telegram_user_id,
+            "creator_telegram_chat_id": creator_telegram_chat_id,
+        })
+        .execute()
+    )
+    return result.data[0]
+
+
+async def get_support_ticket_by_number(
+    ticket_number: str,
+    tenant_id: str | None = None,
+) -> dict | None:
+    """Look up a support ticket by ticket_number (case-insensitive).
+
+    When tenant_id is provided, scopes to that tenant (prevents cross-tenant leak).
+    Admin lookups pass tenant_id=None to see any ticket.
+    """
+    client = get_supabase_client()
+    query = (
+        client.table("support_tickets")
+        .select("*")
+        .eq("ticket_number", ticket_number.upper())
+    )
+    if tenant_id is not None:
+        query = query.eq("tenant_id", tenant_id)
+    result = query.limit(1).execute()
+    if result.data:
+        return result.data[0]
+    return None
+
+
+async def get_user_tickets(
+    creator_telegram_user_id: int,
+    limit: int = 5,
+    tenant_id: str | None = None,
+) -> list[dict]:
+    """Get recent support tickets for a user, newest first."""
+    client = get_supabase_client()
+    query = (
+        client.table("support_tickets")
+        .select("*")
+        .eq("creator_telegram_user_id", creator_telegram_user_id)
+    )
+    if tenant_id is not None:
+        query = query.eq("tenant_id", tenant_id)
+    result = query.order("created_at", desc=True).limit(limit).execute()
+    return result.data or []
+
+
 async def advance_next_run_at(tenant_id: str) -> None:
     """Calculate and set the next run time from cron schedule + timezone.
 
