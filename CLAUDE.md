@@ -34,8 +34,12 @@ pipeline/             # Content generation pipeline
     engagement_scorer.py # Engagement score computation
 worker/               # Background job worker
   jobs/               # Job handlers (generate, post, etc.)
+scripts/              # Server scripts
+  connect_server.py   # ASGI webhooks server (Stripe, Meta)
+  meta_data_deletion.py # Meta signed_request parsing
 supabase/             # Supabase config + migrations
 tests/                # Pytest test suite
+web/                  # Next.js marketing website (scribario.com)
 ```
 
 ## Coding Standards (Python)
@@ -99,6 +103,39 @@ NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST.
 - Preview shows: video + 3 caption options with `approve_video:{draft_id}:{option}` buttons
 - "Make Video" button on image previews still works via separate `generate_video` job
 - Regenerate preserves video flag from original request
+
+## Stripe Billing (March 2026)
+- 3 tiers: Starter $29/mo, Growth $59/mo, Pro $99/mo + annual 20% off
+- Webhooks on connect_server.py: checkout, invoice, subscription lifecycle
+- Bot commands: /subscribe, /billing, /usage, /topoff, /upgrade
+- Per-tenant billing cycles, bonus credits persist until used
+- Test mode active — live swap pending
+
+## Feedback System (March 2026)
+- `/feedback` → [Bug | Idea] → describe → ticket created → admin notified
+- `/ticket SC-00001` → check status, or `/ticket` for recent list
+- `support_tickets` table with auto-generated ticket numbers (SC-00001+)
+- Admin alert sent to Ron's chat (plain text, no buttons)
+
+## Connect Server (March 2026)
+- ASGI app at `scripts/connect_server.py`, port 8100
+- Hosted on VPS behind nginx at `connect.scribario.com`
+- Routes: Stripe webhooks, Meta data deletion callback (`POST /meta/data-deletion`)
+- Meta callback: HMAC-SHA256 signed_request verification, logs to `data_deletion_requests` table
+
+## Legal Entity
+- **Company:** DarkArc Technologies LLC (Wyoming, EIN 41-5082561)
+- **Domain:** darkarctech.com
+- Scribario is a product/brand of DarkArc Technologies LLC
+- Public site references "DarkArc Technologies LLC" in legal pages + footer only
+- **DO NOT expose tech stack on public-facing pages** — use generic descriptions (AI text engine, AI image engine, etc.)
+
+## Deployment
+- **Website:** Vercel (auto-deploys from `main`)
+- **Bot + Worker:** VPS at 31.97.13.213 (Hostinger), systemd services
+- **Connect server:** Same VPS, `scribario-connect.service`
+- **No git on VPS** — deploy via `scp` + `systemctl restart`
+- **Postiz:** Docker on VPS at `postiz.scribario.com`
 
 ## Git
 - Branch: `main`
