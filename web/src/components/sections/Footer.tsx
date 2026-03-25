@@ -124,7 +124,7 @@ export function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
         >
           <p style={{ color: "rgba(255,255,255,0.2)", fontSize: "0.8rem" }}>
-            &copy; {new Date().getFullYear()} Scribario. All rights reserved.
+            &copy; {new Date().getFullYear()} DarkArc Technologies LLC. All rights reserved.
           </p>
           <p style={{ color: "rgba(255,255,255,0.2)", fontSize: "0.8rem" }}>
             Made with Telegram + AI

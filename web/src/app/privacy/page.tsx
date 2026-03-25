@@ -38,7 +38,7 @@ export default function PrivacyPage() {
         <div className="legal-content" style={{ color: "var(--text)", lineHeight: 1.8, fontSize: "0.95rem" }}>
           <Section title="1. Controller Identity">
             <p>
-              Scribario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is the data controller responsible for your personal data. For privacy-related inquiries, contact us at privacy@scribario.com.
+              Scribario (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), a product of DarkArc Technologies LLC, is the data controller responsible for your personal data. For privacy-related inquiries, contact us at privacy@scribario.com.
             </p>
           </Section>
 
@@ -207,6 +207,7 @@ export default function PrivacyPage() {
           <Section title="17. Contact">
             <p>
               For privacy-related questions or to exercise your rights:<br />
+              DarkArc Technologies LLC<br />
               Email: privacy@scribario.com<br />
               <br />
               EU residents have the right to lodge a complaint with their local supervisory authority.
