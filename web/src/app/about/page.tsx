@@ -5,7 +5,7 @@ import { Footer } from "@/components/sections/Footer";
 export const metadata: Metadata = {
   title: "About Scribario — AI Social Media Automation via Telegram",
   description:
-    "Scribario turns a Telegram text into publish-ready social media content. Built on Claude AI, Nano Banana 2, and Veo 3.1. Currently publishing to Facebook, with more platforms coming soon.",
+    "Scribario turns a Telegram text into publish-ready social media content. AI-powered captions, images, and video — currently publishing to Facebook, with more platforms coming soon.",
   alternates: { canonical: "https://scribario.com/about" },
 };
 

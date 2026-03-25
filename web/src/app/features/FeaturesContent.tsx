@@ -33,7 +33,7 @@ const featureGroups: FeatureGroup[] = [
       {
         name: "AI Images",
         detail:
-          "Powered by Nano Banana 2. Four style modes — photorealistic, cinematic, watercolor, cartoon — with per-post override or brand-level defaults. Upload reference photos for visual consistency.",
+          "Four style modes — photorealistic, cinematic, watercolor, cartoon — with per-post override or brand-level defaults. Upload reference photos for visual consistency.",
         icon: "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z",
       },
       {
@@ -145,7 +145,7 @@ const faqItems = [
   {
     question: "What AI models power Scribario?",
     answer:
-      "Claude AI for caption writing and conversation understanding. Nano Banana 2 for image generation. Veo 3.1 for video generation. ElevenLabs for voiceover. The multi-model pipeline means each component uses the best AI for that specific task.",
+      "Purpose-built AI for every task — text, images, video, and voiceover. The multi-model pipeline means each component uses the best AI for that specific job, not a one-size-fits-all approach.",
   },
   {
     question: "How does brand voice learning work?",

@@ -5,19 +5,19 @@ import Image from "next/image";
 
 const milestones = [
   { label: "Idea", detail: "What if social media took 30 seconds instead of 3 hours?" },
-  { label: "Prototype", detail: "First Telegram bot generates captions with Claude AI" },
-  { label: "Image Gen", detail: "Nano Banana 2 integration — AI images matched to every post" },
+  { label: "Prototype", detail: "First Telegram bot generates AI-powered captions" },
+  { label: "Image Gen", detail: "AI image generation — matched to every post automatically" },
   { label: "Facebook Live", detail: "First platform fully connected — more coming soon" },
   { label: "Video", detail: "AI video generation with voiceover, SFX, and logo watermarks" },
   { label: "Brand Voice", detail: "System learns your tone from every approved post" },
 ];
 
 const techStack = [
-  { name: "Claude AI", role: "Caption writing, conversation understanding, brand voice matching" },
-  { name: "Nano Banana 2", role: "AI image generation — photorealistic, cinematic, watercolor, cartoon" },
-  { name: "Veo 3.1", role: "Short-form video generation (5-10 second clips)" },
-  { name: "ElevenLabs", role: "AI voiceover for video content" },
-  { name: "Telegram Bot API", role: "Your interface — no app to download, no dashboard to learn" },
+  { name: "AI Text Engine", role: "Caption writing, conversation understanding, brand voice matching" },
+  { name: "AI Image Engine", role: "Image generation — photorealistic, cinematic, watercolor, cartoon" },
+  { name: "AI Video Engine", role: "Short-form video generation (5-10 second clips)" },
+  { name: "AI Voice Engine", role: "Natural voiceover for video content" },
+  { name: "Telegram", role: "Your interface — no app to download, no dashboard to learn" },
 ];
 
 export function AboutContent() {

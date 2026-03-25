@@ -68,7 +68,7 @@ export default function PrivacyPage() {
               <li><strong>Consent:</strong> Marketing emails (opt-in only)</li>
             </ul>
             <p>
-              <strong>We do not sell your personal data.</strong> We do not use your content to train AI models. Anthropic&apos;s API terms confirm that API inputs are not used for model training by default.
+              <strong>We do not sell your personal data.</strong> We do not use your content to train AI models. Our AI providers&apos; API terms confirm that API inputs are not used for model training by default.
             </p>
           </Section>
 
@@ -79,19 +79,19 @@ export default function PrivacyPage() {
                 <tr><th>Subprocessor</th><th>Data Received</th><th>Purpose</th></tr>
               </thead>
               <tbody>
-                <tr><td>Anthropic (Claude)</td><td>Text prompts, brand data</td><td>Caption and script generation</td></tr>
-                <tr><td>Kie.ai</td><td>Image prompts</td><td>Image generation</td></tr>
-                <tr><td>ElevenLabs</td><td>Text scripts</td><td>Voice synthesis for video</td></tr>
+                <tr><td>AI text generation provider</td><td>Text prompts, brand data</td><td>Caption and script generation</td></tr>
+                <tr><td>AI image generation provider</td><td>Image prompts</td><td>Image generation</td></tr>
+                <tr><td>AI voice synthesis provider</td><td>Text scripts</td><td>Voice synthesis for video</td></tr>
                 <tr><td>Google (YouTube API Services)</td><td>Video content, channel metadata</td><td>Video publishing via YouTube API</td></tr>
-                <tr><td>Supabase</td><td>All stored data</td><td>Database hosting</td></tr>
-                <tr><td>Vercel</td><td>Static assets</td><td>Website hosting</td></tr>
+                <tr><td>Cloud database provider</td><td>All stored data</td><td>Database hosting</td></tr>
+                <tr><td>Web hosting provider</td><td>Static assets</td><td>Website hosting</td></tr>
                 <tr><td>Stripe</td><td>Billing data</td><td>Payment processing</td></tr>
-                <tr><td>Meta (Facebook, Instagram)</td><td>Post content, page data</td><td>Publishing via Meta Graph API</td></tr>
-                <tr><td>TikTok</td><td>Video and post content</td><td>Publishing via TikTok Content Posting API</td></tr>
-                <tr><td>LinkedIn</td><td>Post content, profile data</td><td>Publishing via LinkedIn Marketing API</td></tr>
+                <tr><td>Meta (Facebook, Instagram)</td><td>Post content, page data</td><td>Publishing via Meta API</td></tr>
+                <tr><td>TikTok</td><td>Video and post content</td><td>Publishing via TikTok API</td></tr>
+                <tr><td>LinkedIn</td><td>Post content, profile data</td><td>Publishing via LinkedIn API</td></tr>
                 <tr><td>X (formerly Twitter)</td><td>Post content</td><td>Publishing via X API</td></tr>
                 <tr><td>Pinterest</td><td>Pin content, images</td><td>Publishing via Pinterest API</td></tr>
-                <tr><td>Bluesky</td><td>Post content</td><td>Publishing via AT Protocol</td></tr>
+                <tr><td>Bluesky</td><td>Post content</td><td>Publishing via Bluesky API</td></tr>
               </tbody>
             </table>
             <p>
@@ -179,7 +179,7 @@ export default function PrivacyPage() {
 
           <Section title="13. AI-Specific Disclosures">
             <p>
-              Scribario uses Anthropic&apos;s Claude for text and script generation, Kie.ai for image generation, and ElevenLabs for voice synthesis in video content. Your prompts sent via these APIs are not used to train AI models (per each provider&apos;s API terms). AI-generated content may not be copyrightable under current law. We comply with the EU AI Act Article 50 transparency requirements.
+              Scribario uses third-party AI services for text generation, image generation, and voice synthesis. Your prompts sent via these APIs are not used to train AI models (per each provider&apos;s API terms). AI-generated content may not be copyrightable under current law. We comply with the EU AI Act Article 50 transparency requirements.
             </p>
           </Section>
 

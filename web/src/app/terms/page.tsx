@@ -58,7 +58,7 @@ export default function TermsPage() {
               <li>Scheduled posting and content management</li>
             </ul>
             <p>
-              <strong>AI Disclosure:</strong> Scribario uses artificial intelligence (including Anthropic&apos;s Claude for text and script generation, Kie.ai for image generation, and ElevenLabs for voice synthesis) to create content. All content is AI-generated and should be reviewed before publishing.
+              <strong>AI Disclosure:</strong> Scribario uses artificial intelligence for text generation, image generation, and voice synthesis to create content. All content is AI-generated and should be reviewed before publishing.
             </p>
           </Section>
 
@@ -104,7 +104,7 @@ export default function TermsPage() {
           <Section title="6. AI-Generated Content">
             <h4>6a. Content Ownership</h4>
             <p>
-              AI-generated outputs may not be copyrightable under current U.S. Copyright Office guidance. We grant you a broad license to use all content generated through the Service. Note that other users may receive similar outputs from similar prompts. Third-party IP terms (such as Kie.ai&apos;s terms) apply to generated images.
+              AI-generated outputs may not be copyrightable under current U.S. Copyright Office guidance. We grant you a broad license to use all content generated through the Service. Note that other users may receive similar outputs from similar prompts. Third-party IP terms from our AI providers apply to generated content.
             </p>
             <h4>6b. Accuracy & Liability</h4>
             <p>
