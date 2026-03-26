@@ -91,11 +91,13 @@ export const niches: Record<string, NichePage> = {
         title: "Catering & Private Events",
         description: "Promote your catering menu or private dining options to corporate clients and event planners browsing social media.",
         example: "\"Post about our catering: corporate lunch packages starting at $18/person, 24hr notice, free delivery within 10 miles\"",
+        image: "/images/posts/catering.webp",
       },
       {
         title: "New Menu Item Teasers",
         description: "Build anticipation for upcoming dishes with teaser posts that get regulars excited and drive opening-week orders.",
         example: "\"Teaser post: something new dropping Friday — smoked wagyu brisket tacos, limited run, follow us to find out when\"",
+        image: "/images/posts/menu-teaser.webp",
       },
     ],
     faq: [
@@ -202,11 +204,13 @@ export const niches: Record<string, NichePage> = {
         title: "Price Reduction Alerts",
         description: "Price drops need immediate visibility. Alert your followers the moment a listing is adjusted to recapture buyers who were on the fence.",
         example: "\"Price reduced: 456 Maple Dr now $649K, down from $675K — motivated seller, won't last at this price\"",
+        image: "/images/posts/re-pricedrop.webp",
       },
       {
         title: "Homebuyer & Seller Tips",
         description: "Educational content positions you as a trusted advisor, not just a salesperson. Share mortgage tips, staging advice, and market explainers that earn follows and referrals.",
         example: "\"Post a tip for first-time buyers: why getting pre-approved before house hunting saves you weeks and heartbreak\"",
+        image: "/images/posts/re-tips.webp",
       },
     ],
     faq: [
@@ -313,11 +317,13 @@ export const niches: Record<string, NichePage> = {
         title: "Client Appreciation & Loyalty Rewards",
         description: "Reward loyal clients publicly and encourage repeat visits with exclusive social-only offers.",
         example: "\"Post: Refer a friend this month and both of you get 20% off your next color service — DM us to claim\"",
+        image: "/images/posts/salon-loyalty.webp",
       },
       {
         title: "Wedding & Event Packages",
         description: "Bridal season drives high-ticket bookings. Promote trial sessions, bridal party packages, and prom specials to capture event-driven revenue.",
         example: "\"Promote our bridal package: trial session + wedding day styling for bride + 4 bridesmaids, $650, booking now for summer\"",
+        image: "/images/posts/salon-bridal.webp",
       },
     ],
     faq: [
@@ -424,11 +430,13 @@ export const niches: Record<string, NichePage> = {
         title: "Behind-the-Scenes & Story Posts",
         description: "Show the human side of your business — packing orders, setting up the shop, testing a new recipe. Authenticity drives engagement more than polish.",
         example: "\"Post a behind-the-scenes: packing 50 orders tonight for our biggest drop yet, show the team working late\"",
+        image: "/images/posts/sb-bts.webp",
       },
       {
         title: "Hiring & Team Announcements",
         description: "Attract talent and show growth with posts that celebrate new hires and open positions. Your social feed is a recruiting tool whether you realize it or not.",
         example: "\"We're hiring a part-time barista, weekends, $17/hr plus tips, apply in person or DM us\"",
+        image: "/images/posts/sb-hiring.webp",
       },
     ],
     faq: [
