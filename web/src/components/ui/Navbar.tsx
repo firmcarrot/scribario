@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const NAV_LINKS = [
   { href: "/features", label: "Features" },
@@ -86,14 +86,18 @@ export function Navbar() {
       className="fixed top-0 left-0 w-full transition-all duration-300"
       style={{
         zIndex: 9999,
-        backgroundColor: scrolled
-          ? (onDark ? "rgba(10,10,15,0.85)" : "rgba(255,255,255,0.85)")
-          : "transparent",
-        backdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(20px) saturate(180%)" : "none",
-        borderBottom: scrolled
-          ? (onDark ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(0,0,0,0.06)")
-          : "1px solid transparent",
+        backgroundColor: menuOpen
+          ? "rgba(10,10,15,0.97)"
+          : scrolled
+            ? (onDark ? "rgba(10,10,15,0.85)" : "rgba(255,255,255,0.85)")
+            : "transparent",
+        backdropFilter: (scrolled || menuOpen) ? "blur(20px) saturate(180%)" : "none",
+        WebkitBackdropFilter: (scrolled || menuOpen) ? "blur(20px) saturate(180%)" : "none",
+        borderBottom: menuOpen
+          ? "1px solid rgba(255,255,255,0.08)"
+          : scrolled
+            ? (onDark ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(0,0,0,0.06)")
+            : "1px solid transparent",
       }}
     >
       <div
@@ -198,81 +202,79 @@ export function Navbar() {
       </button>
       </div>
 
-      {/* Mobile overlay menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            className="min-[750px]:hidden fixed inset-0"
-            style={{
-              top: 0,
-              zIndex: 9998,
-              backgroundColor: "rgba(10,10,15,0.97)",
-              backdropFilter: "blur(24px)",
-              WebkitBackdropFilter: "blur(24px)",
-            }}
+      {/* Mobile overlay menu — solid bg, no opacity animation on container */}
+      {menuOpen && (
+        <div
+          className="min-[750px]:hidden"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: "100vw",
+            height: "100dvh",
+            zIndex: 9998,
+            backgroundColor: "#0A0A0F",
+          }}
+        >
+          <nav
+            className="flex flex-col items-center justify-center gap-6"
+            style={{ height: "100dvh", paddingBottom: "env(safe-area-inset-bottom)" }}
           >
-            <nav
-              className="flex flex-col items-center justify-center gap-6"
-              style={{ height: "100dvh", paddingBottom: "env(safe-area-inset-bottom)" }}
-            >
-              {NAV_LINKS.map((link, i) => (
-                <motion.div
-                  key={link.href}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.06 * i, duration: 0.25 }}
-                >
-                  <Link
-                    href={link.href}
-                    onClick={closeMenu}
-                    className="block text-center transition-opacity hover:opacity-70"
-                    style={{
-                      color: "rgba(255,255,255,0.85)",
-                      fontSize: "1.5rem",
-                      fontWeight: 500,
-                      letterSpacing: "-0.02em",
-                      minHeight: 48,
-                      lineHeight: "48px",
-                    }}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
+            {NAV_LINKS.map((link, i) => (
               <motion.div
+                key={link.href}
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.06 * NAV_LINKS.length, duration: 0.25 }}
+                transition={{ delay: 0.06 * i, duration: 0.25 }}
               >
-                <a
-                  href="https://t.me/ScribarioBot"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={link.href}
                   onClick={closeMenu}
-                  className="inline-block transition-opacity hover:opacity-90"
+                  className="block text-center transition-opacity hover:opacity-70"
                   style={{
-                    marginTop: 8,
-                    padding: "14px 36px",
-                    borderRadius: 999,
-                    backgroundColor: "#FF6B4A",
-                    color: "#fff",
-                    fontSize: "1.125rem",
-                    fontWeight: 600,
-                    letterSpacing: "-0.01em",
-                    textAlign: "center",
+                    color: "rgba(255,255,255,0.85)",
+                    fontSize: "1.5rem",
+                    fontWeight: 500,
+                    letterSpacing: "-0.02em",
+                    minHeight: 48,
+                    lineHeight: "48px",
                   }}
                 >
-                  Try it free →
-                </a>
+                  {link.label}
+                </Link>
               </motion.div>
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            ))}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.06 * NAV_LINKS.length, duration: 0.25 }}
+            >
+              <a
+                href="https://t.me/ScribarioBot"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+                className="inline-block transition-opacity hover:opacity-90"
+                style={{
+                  marginTop: 8,
+                  padding: "14px 36px",
+                  borderRadius: 999,
+                  backgroundColor: "#FF6B4A",
+                  color: "#fff",
+                  fontSize: "1.125rem",
+                  fontWeight: 600,
+                  letterSpacing: "-0.01em",
+                  textAlign: "center",
+                }}
+              >
+                Try it free →
+              </a>
+            </motion.div>
+          </nav>
+        </div>
+      )}
     </nav>
   );
 }
